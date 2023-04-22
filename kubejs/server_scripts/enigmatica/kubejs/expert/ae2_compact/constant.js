@@ -1,6 +1,6 @@
 //priority: 1001
 
-const itemsAE = [
+const itemsToRemoveAE = [
     'appliedenergistics2:ender_dust', 
     'appliedenergistics2:flour', 
     'appliedenergistics2:gold_dust', 

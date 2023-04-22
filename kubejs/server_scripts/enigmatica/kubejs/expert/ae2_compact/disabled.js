@@ -6,7 +6,7 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
-    itemsAE.forEach((entry) => {
+    itemsToRemoveAE.forEach((entry) => {
         event.remove({ output: entry });
         event.remove({ input: entry });
     });

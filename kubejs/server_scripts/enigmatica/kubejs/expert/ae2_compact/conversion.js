@@ -44,7 +44,7 @@ onEvent('recipes', (event) => {
         event.shapeless('refinedstorage:' + tran.RS, [
             'appliedenergistics2:' + tran.AE,
             'refinedstorage:quartz_enriched_iron'
-            ]).id(tran.AE + '_to_' + tran.RS);
+            ]).id(id_prefix + tran.AE + '_to_' + tran.RS);
         event.shapeless('appliedenergistics2:' + tran.AE, [
             'refinedstorage:' + tran.RS,
             'appliedenergistics2:sky_dust'
