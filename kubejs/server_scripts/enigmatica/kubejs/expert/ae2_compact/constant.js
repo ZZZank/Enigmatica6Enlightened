@@ -19,6 +19,8 @@ const itemsToRemoveAE = [
     'appliedenergistics2:quartz_ore',
     'appliedenergistics2:charged_quartz_ore',
 
+    'appliedenergistics2:vibration_chamber',
+    'appliedenergistics2:quartz_growth_accelerator',
     'appliedenergistics2:inscriber',
     'appliedenergistics2:crank',
     'appliedenergistics2:grindstone',

@@ -8,7 +8,7 @@ onEvent('recipes', (event) => {
         return;
     }
     const id_prefix = 'enigmatica:expert/ae2_compat/blocks/';
-    const recipeIDs = [
+    const recipesIDs = [
         "appliedenergistics2:network/blocks/interfaces_interface",
         "appliedenergistics2:network/blocks/fluid_interfaces_interface",
         "appliedenergistics2:network/blocks/quantum_link",
@@ -26,8 +26,8 @@ onEvent('recipes', (event) => {
         "appliedenergistics2:network/parts/import_bus_fluid",
         "appliedenergistics2:network/parts/export_bus_fluid"
     ]
-    recipeIDs.forEach((recipeID) => {
-        event.remove({ id: recipeID });
+    recipesIDs.forEach((recipesID) => {
+        event.remove({ id: recipesID });
     });
     const recipes = [
         {
@@ -186,6 +186,7 @@ onEvent('recipes', (event) => {
         event.shaped('appliedenergistics2:' + recipe.output, recipe.inputs, recipe.patterns).id(id_prefix + recipe.output);
     });
 
+
     event.shaped('2x appliedenergistics2:quantum_link',[
             'ETE',
             'ACA',
@@ -196,8 +197,15 @@ onEvent('recipes', (event) => {
             R: 'rftoolsutility:matter_receiver',
             A: 'betterendforge:aeternium_ingot',
             E: '#forge:gears/enderium'
-        }
-    ).id(id_prefix + 'quantum_link');
+        }).id(id_prefix + 'quantum_link');
     
+    event.shaped('8x appliedenergistics2:fluix_glass_cable',[
+            'CCC',
+            'CSC',
+            'CCC'
+        ],{
+            C: 'refinedstorage:cable',
+            S: 'appliedenergistics2:sky_dust'
+        }).id(id_prefix + 'quantum_link');
 
 });
