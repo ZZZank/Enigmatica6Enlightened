@@ -102,9 +102,9 @@
 	wirelessTerminalDrainMultiplier = 1.0
 
 [PowerRatios]
-	ForgeEnergy = 1.0
+	ForgeEnergy = 0.5
 	#Range: 0.01 ~ 1.7976931348623157E308
-	UsageMultiplier = 100.0
+	UsageMultiplier = 40.0
 
 [Condenser]
 	MatterBalls = 256
