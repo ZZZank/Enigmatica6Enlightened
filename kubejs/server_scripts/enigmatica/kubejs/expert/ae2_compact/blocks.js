@@ -186,7 +186,6 @@ onEvent('recipes', (event) => {
         event.shaped('appliedenergistics2:' + recipe.output, recipe.inputs, recipe.patterns).id(id_prefix + recipe.output);
     });
 
-
     event.shaped('2x appliedenergistics2:quantum_link',[
             'ETE',
             'ACA',
