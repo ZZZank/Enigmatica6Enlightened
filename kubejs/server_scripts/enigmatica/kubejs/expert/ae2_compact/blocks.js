@@ -206,6 +206,6 @@ onEvent('recipes', (event) => {
         ],{
             C: 'refinedstorage:cable',
             S: 'appliedenergistics2:sky_dust'
-        }).id(id_prefix + 'quantum_link');
+        }).id(id_prefix + 'fluix_glass_cable8');
 
 });
