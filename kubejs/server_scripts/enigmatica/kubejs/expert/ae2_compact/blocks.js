@@ -22,6 +22,9 @@ onEvent('recipes', (event) => {
         "appliedenergistics2:network/cables/glass_fluix",
         // "appliedenergistics2:network/crafting/molecular_assembler",
         "appliedenergistics2:network/wireless_access_point",
+        "appliedenergistics2:network/parts/storage_bus_fluid",
+        "appliedenergistics2:network/parts/import_bus_fluid",
+        "appliedenergistics2:network/parts/export_bus_fluid"
     ]
     recipeIDs.forEach((recipeID) => {
         event.remove({ id: recipeID });
@@ -54,21 +57,6 @@ onEvent('recipes', (event) => {
                 A: 'refinedstorage:advanced_processor',
                 D: 'refinedstorage:destruction_core',
                 C: 'refinedstorage:construction_core'
-            }
-        },
-        {
-            output: 'quantum_link',
-            inputs: [
-                'ETE',
-                'ACA',
-                'ERE'
-            ],
-            patterns: {
-                T: 'rftoolsutility:matter_transmitter',
-                C: 'kubejs:cpu_core_as_81221',
-                R: 'rftoolsutility:matter_receiver',
-                A: 'betterendforge:aeternium_ingot',
-                E: '#forge:gears/enderium'
             }
         },
         {
@@ -127,7 +115,7 @@ onEvent('recipes', (event) => {
             }
         },
         {
-            output: 'import_bus', 
+            output: 'import_bus',
             inputs: [
                 'SD ',
                 'IC ',
@@ -141,7 +129,7 @@ onEvent('recipes', (event) => {
             }
         },
         {
-            output: 'export_bus', 
+            output: 'export_bus',
             inputs: [
                 'SD ',
                 'IC ',
@@ -153,10 +141,64 @@ onEvent('recipes', (event) => {
                 S: 'occultism:spirit_attuned_gem',
                 C: '#xnet:connectors'
             }
+        },
+        {
+            output: 'fluid_storage_bus',
+            inputs: [
+                'SB ',
+                'G  ',
+                '   '
+            ],
+            patterns: {
+                S: 'appliedenergistics2:storage_bus',
+                G: 'minecraft:green_dye',
+                B: 'minecraft:bucket'
+            }
+        },
+        {
+            output: 'fluid_import_bus',
+            inputs: [
+                'IB ',
+                'G  ',
+                '   '
+            ],
+            patterns: {
+                I: 'appliedenergistics2:import_bus',
+                G: 'minecraft:green_dye',
+                B: 'minecraft:bucket'
+            }
+        },
+        {
+            output: 'fluid_export_bus',
+            inputs: [
+                'EB ',
+                'G  ',
+                '   '
+            ],
+            patterns: {
+                E: 'appliedenergistics2:export_bus',
+                G: 'minecraft:green_dye',
+                B: 'minecraft:bucket'
+            }
         }
     ]
     recipes.forEach((recipe) => {
-        event.shaped('appliedenergistics2:'+recipe.output, recipe.inputs, recipe.patterns).id(id_prefix+recipe.output);
+        event.shaped('appliedenergistics2:' + recipe.output, recipe.inputs, recipe.patterns).id(id_prefix + recipe.output);
     });
+
+
+    event.shaped('2x appliedenergistics2:quantum_link',[
+            'ETE',
+            'ACA',
+            'ERE'
+        ],{
+            T: 'rftoolsutility:matter_transmitter',
+            C: 'kubejs:cpu_core_as_81221',
+            R: 'rftoolsutility:matter_receiver',
+            A: 'betterendforge:aeternium_ingot',
+            E: '#forge:gears/enderium'
+        }
+    ).id(id_prefix + 'quantum_link');
+    
 
 });

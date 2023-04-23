@@ -35,6 +35,10 @@ const itemsToRemoveAE = [
     'appliedenergistics2:calculation_processor_press',
     'appliedenergistics2:engineering_processor_press',
     'appliedenergistics2:logic_processor_press',
-    'appliedenergistics2:silicon_press'
+    'appliedenergistics2:silicon_press',
 
+    'appliedenergistics2:1k_cell_component', 
+    'appliedenergistics2:4k_cell_component', 
+    'appliedenergistics2:1k_fluid_cell_component', 
+    'appliedenergistics2:4k_fluid_cell_component'
 ];
