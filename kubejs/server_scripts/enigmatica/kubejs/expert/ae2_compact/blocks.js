@@ -8,7 +8,7 @@ onEvent('recipes', (event) => {
         return;
     }
     const id_prefix = 'enigmatica:expert/ae2_compat/blocks/';
-    const recipesIDs = [
+    const recipeIDs = [
         "appliedenergistics2:network/blocks/interfaces_interface",
         "appliedenergistics2:network/blocks/fluid_interfaces_interface",
         "appliedenergistics2:network/blocks/quantum_link",
@@ -23,8 +23,8 @@ onEvent('recipes', (event) => {
         // "appliedenergistics2:network/crafting/molecular_assembler",
         "appliedenergistics2:network/wireless_access_point",
     ]
-    recipesIDs.forEach((recipesID) => {
-        event.remove({ id: recipesID });
+    recipeIDs.forEach((recipeID) => {
+        event.remove({ id: recipeID });
     });
     const recipes = [
         {
@@ -143,9 +143,9 @@ onEvent('recipes', (event) => {
         {
             output: 'export_bus', 
             inputs: [
-                'SC ',
+                'SD ',
                 'IC ',
-                'SC '
+                'SD '
             ],
             patterns: {
                 D: 'refinedstorage:construction_core',
