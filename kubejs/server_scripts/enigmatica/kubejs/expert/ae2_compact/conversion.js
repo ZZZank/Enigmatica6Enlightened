@@ -1,6 +1,6 @@
 
 onEvent('recipes', (event) => {
-    if (!Platform.getMods().containsKey("appliedenergistics2")) {
+    if (!isAE2Loaded) {
         return;
     }
     if (global.isExpertMode == false) {

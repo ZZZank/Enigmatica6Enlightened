@@ -1,5 +1,7 @@
 //priority: 1001
 
+const isAE2Loaded = Platform.getMods().containsKey("appliedenergistics2");
+
 const itemsToRemoveAE = [
     'appliedenergistics2:ender_dust', 
     'appliedenergistics2:flour', 
