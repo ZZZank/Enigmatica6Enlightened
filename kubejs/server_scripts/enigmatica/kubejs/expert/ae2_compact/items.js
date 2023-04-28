@@ -9,7 +9,6 @@ onEvent('recipes', (event) => {
     }
     const id_prefix = 'enigmatica:expert/ae2_compat/items/';
     const recipesIDs = [
-        //TODO:: "appliedenergistics2:materials/cardspeed",
         "appliedenergistics2:network/cells/spatial_components",
         "appliedenergistics2:tools/network_memory_card",
         "appliedenergistics2:materials/cardspeed"
