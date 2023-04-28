@@ -16,6 +16,7 @@ onEvent('recipes', (event) => {
         "appliedenergistics2:network/blocks/controller",
         "appliedenergistics2:network/blocks/energy_energy_cell",
         "appliedenergistics2:network/blocks/storage_drive",
+        "appliedenergistics2:network/blocks/spatial_io_pylon",
         "appliedenergistics2:network/parts/storage_bus",
         "appliedenergistics2:network/parts/import_bus",
         "appliedenergistics2:network/parts/export_bus",
@@ -32,12 +33,12 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             output: 'fluid_interface',
-            inputs: [
+            patterns: [
                 'IA ',
                 'GB ',
                 '   '
             ],
-            patterns: {
+            inputs: {
                 I: 'appliedenergistics2:interface',
                 G: 'minecraft:green_dye',
                 A: 'refinedstorage:advanced_processor',
@@ -46,12 +47,12 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'interface',
-            inputs: [
+            patterns: [
                 'MAM',
                 'DSC',
                 'MAM'
             ],
-            patterns: {
+            inputs: {
                 S: 'create:empty_schematic',
                 M: 'create:mechanical_crafter',
                 A: 'refinedstorage:advanced_processor',
@@ -61,12 +62,12 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'energy_acceptor',
-            inputs: [
+            patterns: [
                 'ICI',
                 'CSC',
                 'ICI'
             ],
-            patterns: {
+            inputs: {
                 S: 'tconstruct:slimesteel_ingot',
                 C: 'mekanism:basic_universal_cable',
                 I: 'refinedstorage:quartz_enriched_iron'
@@ -74,12 +75,12 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'energy_cell',
-            inputs: [
+            patterns: [
                 'ACA',
                 'CQC',
                 'ACA'
             ],
-            patterns: {
+            inputs: {
                 C: 'powah:capacitor_basic_large',
                 A: 'astralsorcery:aquamarine',
                 Q: 'appliedenergistics2:quartz_glass'
@@ -87,12 +88,12 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'drive',
-            inputs: [
+            patterns: [
                 'ENE',
                 'LSL',
                 'ENE'
             ],
-            patterns: {
+            inputs: {
                 N: 'extrastorage:neural_processor',
                 E: 'mekanism:elite_control_circuit',
                 L: 'immersiveengineering:logic_unit',
@@ -101,12 +102,12 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'storage_bus',
-            inputs: [
+            patterns: [
                 'SC ',
                 'IB ',
                 'SD '
             ],
-            patterns: {
+            inputs: {
                 B: '#xnet:connectors',
                 C: 'refinedstorage:construction_core',
                 I: 'refinedstorage:improved_processor',
@@ -116,12 +117,12 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'import_bus',
-            inputs: [
+            patterns: [
                 'SD ',
                 'IC ',
                 'SD '
             ],
-            patterns: {
+            inputs: {
                 D: 'refinedstorage:destruction_core',
                 I: 'refinedstorage:improved_processor',
                 S: 'occultism:spirit_attuned_gem',
@@ -130,12 +131,12 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'export_bus',
-            inputs: [
+            patterns: [
                 'SD ',
                 'IC ',
                 'SD '
             ],
-            patterns: {
+            inputs: {
                 D: 'refinedstorage:construction_core',
                 I: 'refinedstorage:improved_processor',
                 S: 'occultism:spirit_attuned_gem',
@@ -144,12 +145,12 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'fluid_storage_bus',
-            inputs: [
+            patterns: [
                 'SB ',
                 'G  ',
                 '   '
             ],
-            patterns: {
+            inputs: {
                 S: 'appliedenergistics2:storage_bus',
                 G: 'minecraft:green_dye',
                 B: 'minecraft:bucket'
@@ -157,12 +158,12 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'fluid_import_bus',
-            inputs: [
+            patterns: [
                 'IB ',
                 'G  ',
                 '   '
             ],
-            patterns: {
+            inputs: {
                 I: 'appliedenergistics2:import_bus',
                 G: 'minecraft:green_dye',
                 B: 'minecraft:bucket'
@@ -170,20 +171,34 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'fluid_export_bus',
-            inputs: [
+            patterns: [
                 'EB ',
                 'G  ',
                 '   '
             ],
-            patterns: {
+            inputs: {
                 E: 'appliedenergistics2:export_bus',
                 G: 'minecraft:green_dye',
                 B: 'minecraft:bucket'
             }
+        },
+        {
+            output: 'spatial_pylon',
+            patterns: [
+                'QFQ',
+                'CTC',
+                'QFQ'
+            ],
+            inputs: {
+                T:'bloodmagic:teleposer', 
+                C:'botania:corporea_spark', 
+                F:'appliedenergistics2:fluix_glass_cable', 
+                Q:'appliedenergistics2:quartz_glass'
+            }
         }
     ]
     recipes.forEach((recipe) => {
-        event.shaped('appliedenergistics2:' + recipe.output, recipe.inputs, recipe.patterns).id(id_prefix + recipe.output);
+        event.shaped('appliedenergistics2:' + recipe.output, recipe.patterns, recipe.inputs).id(id_prefix + recipe.output);
     });
 
 
@@ -206,6 +221,6 @@ onEvent('recipes', (event) => {
         ],{
             C: 'refinedstorage:cable',
             S: 'appliedenergistics2:sky_dust'
-        }).id(id_prefix + 'fluix_glass_cable8');
-
+        }).id(id_prefix + 'fluix_glass_cable');
+    
 });
