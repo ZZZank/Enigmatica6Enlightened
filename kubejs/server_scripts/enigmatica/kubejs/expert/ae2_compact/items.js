@@ -7,16 +7,17 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
-    const id_prefix = 'enigmatica:expert/ae2_compat/blocks/';
+    const id_prefix = 'enigmatica:expert/ae2_compat/items/';
     const recipesIDs = [
         //TODO:: "appliedenergistics2:materials/cardspeed",
         "appliedenergistics2:network/cells/spatial_components",
-        "appliedenergistics2:tools/network_memory_card"
+        "appliedenergistics2:tools/network_memory_card",
+        "appliedenergistics2:materials/cardspeed"
     ]
     recipesIDs.forEach((recipesID) => {
         event.remove({ id: recipesID });
     });
-    
+
     const recipes = [
         {
             output: '2_cubed_spatial_cell_component',
@@ -40,10 +41,10 @@ onEvent('recipes', (event) => {
                 'GGG'
             ],
             inputs: {
-                V:'integrateddynamics:variable',
-                M:'kubejs:memory_basic_filled',
-                Q:'refinedstorage:quartz_enriched_iron',
-                G:'minecraft:gold_ingot'
+                V: 'integrateddynamics:variable',
+                M: 'kubejs:memory_basic_filled',
+                Q: 'refinedstorage:quartz_enriched_iron',
+                G: 'minecraft:gold_ingot'
             }
         }
     ]
@@ -51,5 +52,19 @@ onEvent('recipes', (event) => {
     recipes.forEach((recipe) => {
         event.shaped('appliedenergistics2:' + recipe.output, recipe.patterns, recipe.inputs).id(id_prefix + recipe.output);
     });
+
+    event.shaped('4x appliedenergistics2:speed_card', [
+        'AGA',
+        'GLG',
+        'AGA'
+    ], {
+        A: 'appliedenergistics2:advanced_card',
+        G: 'pneumaticcraft:glycerol',
+        L: {
+            type: 'pneumaticcraft:fluid',
+            tag: 'forge:lubricant',
+            amount: 1000
+        }
+    }).id(id_prefix + 'speed_card');
 
 });
