@@ -11,6 +11,7 @@ onEvent('recipes', (event) => {
     const recipesIDs = [
         //TODO:: "appliedenergistics2:materials/cardspeed",
         "appliedenergistics2:network/cells/spatial_components",
+        "appliedenergistics2:tools/network_memory_card"
     ]
     recipesIDs.forEach((recipesID) => {
         event.remove({ id: recipesID });
@@ -31,6 +32,20 @@ onEvent('recipes', (event) => {
                 S: 'occultism:spirit_attuned_gem'
             }
         },
+        {
+            output: 'memory_card',
+            patterns: [
+                '   ',
+                'VMQ',
+                'GGG'
+            ],
+            inputs: {
+                V:'integrateddynamics:variable',
+                M:'kubejs:memory_basic_filled',
+                Q:'refinedstorage:quartz_enriched_iron',
+                G:'minecraft:gold_ingot'
+            }
+        }
     ]
 
     recipes.forEach((recipe) => {
