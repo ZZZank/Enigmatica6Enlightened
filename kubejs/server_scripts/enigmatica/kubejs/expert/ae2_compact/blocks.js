@@ -63,14 +63,14 @@ onEvent('recipes', (event) => {
         {
             output: 'energy_acceptor',
             patterns: [
-                'ICI',
-                'CSC',
-                'ICI'
+                'SES',
+                'ECE',
+                'SES'
             ],
             inputs: {
                 S: 'tconstruct:slimesteel_ingot',
-                C: 'mekanism:basic_universal_cable',
-                I: 'refinedstorage:quartz_enriched_iron'
+                E: 'mekanism:elite_universal_cable',
+                C: 'powah:capacitor_basic_large'
             }
         },
         {
