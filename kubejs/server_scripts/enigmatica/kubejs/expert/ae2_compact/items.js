@@ -11,7 +11,8 @@ onEvent('recipes', (event) => {
     const recipesIDs = [
         "appliedenergistics2:network/cells/spatial_components",
         "appliedenergistics2:tools/network_memory_card",
-        "appliedenergistics2:materials/cardspeed"
+        "appliedenergistics2:materials/cardspeed",
+        "appliedenergistics2:network/crafting/patterns_blank"
     ]
     recipesIDs.forEach((recipesID) => {
         event.remove({ id: recipesID });
@@ -44,6 +45,21 @@ onEvent('recipes', (event) => {
                 M: 'kubejs:memory_basic_filled',
                 Q: 'refinedstorage:quartz_enriched_iron',
                 G: 'minecraft:gold_ingot'
+            }
+        },
+        {
+            output: 'blank_pattern',
+            patterns: [
+                'QGQ',
+                'GAG',
+                'RSR'
+            ],
+            inputs: {
+                S: 'create:empty_schematic',
+                Q: 'appliedenergistics2:quartz_glass',
+                G: 'minecraft:glowstone_dust',
+                R: 'refinedstorage:quartz_enriched_iron',
+                A: '#forge:gems/aquamarine'
             }
         }
     ]

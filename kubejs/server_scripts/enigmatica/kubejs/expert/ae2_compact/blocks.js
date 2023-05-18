@@ -21,7 +21,7 @@ onEvent('recipes', (event) => {
         "appliedenergistics2:network/parts/import_bus",
         "appliedenergistics2:network/parts/export_bus",
         "appliedenergistics2:network/cables/glass_fluix",
-        // "appliedenergistics2:network/crafting/molecular_assembler",
+        "appliedenergistics2:network/crafting/molecular_assembler",
         "appliedenergistics2:network/wireless_access_point",
         "appliedenergistics2:network/parts/storage_bus_fluid",
         "appliedenergistics2:network/parts/import_bus_fluid",
@@ -48,13 +48,13 @@ onEvent('recipes', (event) => {
         {
             output: 'interface',
             patterns: [
-                'MAM',
+                'EAE',
                 'DSC',
-                'MAM'
+                'EAE'
             ],
             inputs: {
                 S: 'create:empty_schematic',
-                M: 'create:mechanical_crafter',
+                E: 'refinedstorage:quartz_enriched_iron',
                 A: 'refinedstorage:advanced_processor',
                 D: 'refinedstorage:destruction_core',
                 C: 'refinedstorage:construction_core'
@@ -194,6 +194,21 @@ onEvent('recipes', (event) => {
                 C:'botania:corporea_spark', 
                 F:'appliedenergistics2:fluix_glass_cable', 
                 Q:'appliedenergistics2:quartz_glass'
+            }
+        },
+        {
+            output: 'molecular_assembler',
+            patterns: [
+                'MQM',
+                'DWC',
+                'MQM'
+            ],
+            inputs: {
+                C:'refinedstorage:construction_core', 
+                D:'refinedstorage:destruction_core', 
+                Q:'appliedenergistics2:quartz_glass', 
+                W:'#forge:workbenches', 
+                M:'create:mechanical_crafter'
             }
         }
     ]
