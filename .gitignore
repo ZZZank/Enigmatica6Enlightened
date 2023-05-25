@@ -14,7 +14,8 @@ config/masterful_machinery/packs/
 /libraries/
 /ESM/
 /saves/
-screenshots/
+/screenshots/
+/coremods/
 /mods/
 /world/
 /world_backup/
