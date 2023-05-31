@@ -44,11 +44,6 @@ onEvent('recipes', (event) => {
             input: { item: 'minecraft:sandstone' },
             output: { item: 'minecraft:sand' },
             id: 'enigmatica:industrialforegoing/crusher/sandstone_sand'
-        },
-        {
-            input: { item: 'atmospheric:arid_sandstone' },
-            output: { item: 'atmospheric:arid_sand' },
-            id: 'enigmatica:industrialforegoing/crusher/arid_sandstone_sand'
         }
     ];
 

@@ -11,9 +11,6 @@ onEvent('recipes', (event) => {
     const normalAmountInputs = [
         'alexsmobs:banana',
         'ars_nouveau:mana_berry',
-        'atmospheric:aloe_leaves',
-        'atmospheric:passionfruit',
-        'atmospheric:yucca_fruit',
         'betterendforge:blossom_berry',
         'betterendforge:shadow_berry_raw',
         'byg:baobab_fruit',

@@ -63,16 +63,6 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}sand_from_sandstone`
         },
         {
-            input: 'atmospheric:arid_sandstone',
-            outputs: [Item.of('atmospheric:arid_sand', 2).withChance(1.0)],
-            id: `${id_prefix}arid_sand`
-        },
-        {
-            input: 'atmospheric:red_arid_sandstone',
-            outputs: [Item.of('atmospheric:red_arid_sand', 2).withChance(1.0)],
-            id: `${id_prefix}red_arid_sand`
-        },
-        {
             input: 'byg:pink_sandstone',
             outputs: [Item.of('byg:pink_sand', 2).withChance(1.0)],
             id: `${id_prefix}pink_sand`

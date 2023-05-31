@@ -675,56 +675,6 @@ const treeRegistry = [
                 rate: { living: 25, dead: 4 }
             },
             {
-                sapling: 'atmospheric:rosewood_sapling',
-                trunk: 'atmospheric:rosewood_log',
-                leaf: 'atmospheric:rosewood_leaves',
-                substrate: 'dirt',
-                sap: 'thermal:resin',
-                rate: { living: 25, dead: 4 }
-            },
-            {
-                sapling: 'atmospheric:morado_sapling',
-                trunk: 'atmospheric:morado_log',
-                leaf: 'atmospheric:morado_leaves',
-                extraDecoration: 'atmospheric:flowering_morado_leaves',
-                substrate: 'dirt',
-                sap: 'thermal:resin',
-                rate: { living: 25, dead: 4 }
-            },
-            {
-                sapling: 'atmospheric:yucca_sapling',
-                trunk: 'atmospheric:yucca_log',
-                leaf: 'atmospheric:yucca_leaves',
-                fruit: 'atmospheric:yucca_bundle',
-                substrate: 'dirt',
-                sap: 'thermal:resin',
-                rate: { living: 25, dead: 4 }
-            },
-            {
-                sapling: 'atmospheric:kousa_sapling',
-                trunk: 'atmospheric:kousa_log',
-                leaf: 'atmospheric:kousa_leaves',
-                substrate: 'dirt',
-                sap: 'thermal:resin',
-                rate: { living: 25, dead: 4 }
-            },
-            {
-                sapling: 'atmospheric:aspen_sapling',
-                trunk: 'atmospheric:aspen_log',
-                leaf: 'atmospheric:aspen_leaves',
-                substrate: 'dirt',
-                sap: 'thermal:resin',
-                rate: { living: 50, dead: 6 }
-            },
-            {
-                sapling: 'atmospheric:grimwood_sapling',
-                trunk: 'atmospheric:grimwood_log',
-                leaf: 'atmospheric:grimwood_leaves',
-                substrate: 'dirt',
-                sap: 'thermal:resin',
-                rate: { living: 25, dead: 4 }
-            },
-            {
                 sapling: 'upgrade_aquatic:river_sapling',
                 trunk: 'upgrade_aquatic:river_log',
                 leaf: 'upgrade_aquatic:river_leaves',

@@ -36,10 +36,6 @@ const generatableCobblestone = [
     'create:dolomite_cobblestone',
     'create:weathered_limestone_cobblestone',
     'create:limestone_cobblestone',
-    'atmospheric:saffron_travertine',
-    'atmospheric:persimmon_travertine',
-    'atmospheric:peach_travertine',
-    'atmospheric:ivory_travertine'
 ];
 // Items added here will get recipes for Pedestals & Cobblegen Randomizer stonegens.
 const generatableStone = [
@@ -73,8 +69,6 @@ const generatableStone = [
     'create:dolomite',
     'create:weathered_limestone',
     'create:limestone',
-    'atmospheric:red_arid_sandstone',
-    'atmospheric:arid_sandstone',
     'atum:alabaster',
     'atum:porphyry',
     'quark:myalite',

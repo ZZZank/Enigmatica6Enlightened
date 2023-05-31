@@ -38,24 +38,6 @@ onEvent('recipes', (event) => {
             id: 'thermal:machine/pulverizer/pulverizer_black_sandstone'
         },
         {
-            input: 'atmospheric:arid_sandstone',
-            experience: 0.2,
-            outputs: [
-                Item.of('atmospheric:arid_sand', 2),
-                Item.of('emendatusenigmatica:potassium_nitrate_dust').chance(0.3)
-            ],
-            id: 'thermal:machine/pulverizer/pulverizer_arid_sandstone'
-        },
-        {
-            input: 'atmospheric:red_arid_sandstone',
-            experience: 0.2,
-            outputs: [
-                Item.of('atmospheric:red_arid_sand', 2),
-                Item.of('emendatusenigmatica:potassium_nitrate_dust').chance(0.3)
-            ],
-            id: 'thermal:machine/pulverizer/pulverizer_red_arid_sandstone'
-        },
-        {
             input: 'buildinggadgets:construction_block_dense',
             experience: 0.2,
             outputs: [

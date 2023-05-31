@@ -27,16 +27,6 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}black_sand`
         },
         {
-            input: 'atmospheric:arid_sandstone',
-            output: item.of('atmospheric:arid_sand', 2),
-            id: `${id_prefix}arid_sand`
-        },
-        {
-            input: 'atmospheric:red_arid_sandstone',
-            output: item.of('atmospheric:red_arid_sand', 2),
-            id: `${id_prefix}red_arid_sand`
-        },
-        {
             input: '#forge:stone',
             output: 'minecraft:cobblestone',
             id: `${id_prefix}cobblestone`

@@ -3,8 +3,6 @@
         "minecraft:badlands",
         "minecraft:wooded_badlands_plateau",
         "minecraft:badlands_plateau",
-        "atmospheric:rainforest_plateau",
-        "atmospheric:sparse_rainforest_plateau",
         "byg:grassland_plateau"
     ]
 }

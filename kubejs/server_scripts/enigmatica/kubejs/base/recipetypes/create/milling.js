@@ -53,18 +53,6 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}black_sand`
         },
         {
-            input: 'atmospheric:arid_sandstone',
-            outputs: [Item.of('atmospheric:arid_sand')],
-            processingTime: 150,
-            id: `${id_prefix}arid_sand`
-        },
-        {
-            input: 'atmospheric:red_arid_sandstone',
-            outputs: [Item.of('atmospheric:red_arid_sand')],
-            processingTime: 150,
-            id: `${id_prefix}red_arid_sand`
-        },
-        {
             input: '#forge:end_stones',
             outputs: [Item.of('occultism:crushed_end_stone', 4)],
             processingTime: 150,

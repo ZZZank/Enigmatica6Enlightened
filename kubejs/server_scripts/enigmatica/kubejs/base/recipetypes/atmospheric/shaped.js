@@ -1,4 +1,4 @@
-onEvent('recipes', (event) => {
+/* onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/atmospheric/shaped/';
     const recipes = [
         {
@@ -32,3 +32,4 @@ onEvent('recipes', (event) => {
         event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
     });
 });
+ */

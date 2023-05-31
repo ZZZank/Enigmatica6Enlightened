@@ -34,20 +34,6 @@ const cropRegistry = [
                 render: 'minecraft:cactus',
                 plant: 'minecraft:cactus',
                 substrate: 'sand'
-            },
-            {
-                seed: 'atmospheric:aloe_kernels',
-                render: 'atmospheric:aloe_vera',
-                plant: 'atmospheric:aloe_leaves',
-                plantSecondary: 'atmospheric:yellow_blossoms',
-                plantSecondaryRate: 'high',
-                substrate: 'arid_sand'
-            },
-            {
-                seed: 'atmospheric:barrel_cactus',
-                render: 'atmospheric:barrel_cactus',
-                plant: 'atmospheric:barrel_cactus',
-                substrate: 'arid_sand'
             }
         ]
     },
@@ -1456,48 +1442,6 @@ const cropRegistry = [
                 substrate: 'jungle_moss'
             },
             {
-                seed: 'atmospheric:tall_yucca_flower',
-                render: 'atmospheric:tall_yucca_flower',
-                plant: 'atmospheric:tall_yucca_flower',
-                substrate: 'dirt'
-            },
-            {
-                seed: 'atmospheric:gilia',
-                render: 'atmospheric:gilia',
-                plant: 'atmospheric:gilia',
-                substrate: 'dirt'
-            },
-            {
-                seed: 'atmospheric:yucca_flower',
-                render: 'atmospheric:yucca_flower',
-                plant: 'atmospheric:yucca_flower',
-                substrate: 'dirt'
-            },
-            {
-                seed: 'atmospheric:scalding_monkey_brush',
-                render: 'atmospheric:scalding_monkey_brush',
-                plant: 'atmospheric:scalding_monkey_brush',
-                substrate: 'dirt'
-            },
-            {
-                seed: 'atmospheric:hot_monkey_brush',
-                render: 'atmospheric:hot_monkey_brush',
-                plant: 'atmospheric:hot_monkey_brush',
-                substrate: 'dirt'
-            },
-            {
-                seed: 'atmospheric:warm_monkey_brush',
-                render: 'atmospheric:warm_monkey_brush',
-                plant: 'atmospheric:warm_monkey_brush',
-                substrate: 'dirt'
-            },
-            {
-                seed: 'atmospheric:water_hyacinth',
-                render: 'atmospheric:water_hyacinth',
-                plant: 'atmospheric:water_hyacinth',
-                substrate: 'water'
-            },
-            {
                 seed: 'upgrade_aquatic:flowering_rush',
                 render: 'upgrade_aquatic:flowering_rush',
                 plant: 'upgrade_aquatic:flowering_rush',
@@ -2563,12 +2507,6 @@ const cropRegistry = [
                 plantSecondary: 'betterendforge:hydralux_sapling',
                 plantSecondaryRate: 'high',
                 substrate: 'water'
-            },
-            {
-                seed: 'atmospheric:passion_vine',
-                render: 'atmospheric:passion_vine',
-                plant: 'atmospheric:passion_vine',
-                substrate: 'dirt'
             },
             {
                 seed: 'byg:imparius_vine',

@@ -62,18 +62,6 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}black_sand`
         },
         {
-            inputs: [Item.of('atmospheric:arid_sandstone', 1), Ingredient.of('#thermal:crafting/dies/unpacking')],
-            outputs: [Item.of('atmospheric:arid_sand', 4)],
-            energy: 2400,
-            id: `${id_prefix}arid_sand`
-        },
-        {
-            inputs: [Item.of('atmospheric:red_arid_sandstone', 1), Ingredient.of('#thermal:crafting/dies/unpacking')],
-            outputs: [Item.of('atmospheric:red_arid_sand', 4)],
-            energy: 2400,
-            id: `${id_prefix}red_arid_sand`
-        },
-        {
             inputs: [Item.of('betterendforge:dense_snow', 1), Ingredient.of('#thermal:crafting/dies/unpacking')],
             outputs: [Item.of('minecraft:snow_block', 9)],
             energy: 2400,

@@ -1,12 +1,6 @@
 //priority: 1000
 
 const bookshelves = [
-    'atmospheric:aspen_bookshelf',
-    'atmospheric:grimwood_bookshelf',
-    'atmospheric:kousa_bookshelf',
-    'atmospheric:morado_bookshelf',
-    'atmospheric:rosewood_bookshelf',
-    'atmospheric:yucca_bookshelf',
     'betterendforge:dragon_tree_bookshelf',
     'betterendforge:end_lotus_bookshelf',
     'betterendforge:helix_tree_bookshelf',

@@ -65,8 +65,7 @@ onEvent('recipes', (event) => {
         meat: [
             { tag: 'architects_palette:salmon_scales', weight: 50 },
             { tag: 'undergarden:blood_mushroom_globule', weight: 30 },
-            { tag: 'atmospheric:stripped_morado_wood', weight: 15 },
-            { tag: 'architects_palette:rotten_flesh_block', weight: 5 }
+            { tag: 'architects_palette:rotten_flesh_block', weight: 20 }
         ],
         void: [
             { tag: 'betterendforge:violecite', weight: 30 },

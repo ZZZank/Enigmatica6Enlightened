@@ -1,17 +1,5 @@
 {
     "biomes": [
-        "atmospheric:dunes_hills",
-        "atmospheric:dunes",
-        "atmospheric:flourishing_dunes",
-        "atmospheric:petrified_dunes",
-        "atmospheric:rainforest_basin",
-        "atmospheric:rainforest_mountains",
-        "atmospheric:rainforest_plateau",
-        "atmospheric:rainforest",
-        "atmospheric:rocky_dunes_hills",
-        "atmospheric:rocky_dunes",
-        "atmospheric:sparse_rainforest_basin",
-        "atmospheric:sparse_rainforest_plateau",
         "betterendforge:amber_land",
         "betterendforge:blossoming_spires",
         "betterendforge:chorus_forest",

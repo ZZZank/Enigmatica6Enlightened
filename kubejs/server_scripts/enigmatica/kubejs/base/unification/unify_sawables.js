@@ -201,7 +201,6 @@ function thermal_sawing(event, variant, sawDust) {
         variant.modId == 'minecraft' ||
         variant.modId == 'byg' ||
         variant.modId == 'autumnity' ||
-        variant.modId == 'atmospheric' ||
         variant.modId == 'upgrade_aquatic'
     ) {
         return;
