@@ -732,8 +732,6 @@ const disabledItems = [
 
     'pedestals:dustflour',
 
-    'pitg:green_dye',
-
     'pneumaticcraft:wheat_flour',
 
     'projectvibrantjourneys:clam',

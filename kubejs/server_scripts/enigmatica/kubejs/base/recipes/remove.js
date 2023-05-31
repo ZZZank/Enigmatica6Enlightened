@@ -200,7 +200,6 @@ onEvent('recipes', (event) => {
         'morevanillalib:obsidian',
 
         'pedestals:pedestal_cobblegen/blackstone',
-        'pitg:green_dye',
 
         'quark:building/crafting/tallow_from_block',
 
