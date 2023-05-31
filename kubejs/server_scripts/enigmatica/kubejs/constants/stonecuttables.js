@@ -43,7 +43,11 @@ const stonecuttables = [
             'chipped:stone_10',
             'chipped:stone_11',
             'chipped:stone_2',
+<<<<<<< HEAD
             'chipped:stone_1'
+=======
+            'chipped:stone_1',
+>>>>>>> 4c2146360 (update scripts for chisel removal)
         ],
         // items added here can be cut from other blocks of this stone type,
         // but cannot be cut into other blocks from this type
@@ -105,7 +109,11 @@ const stonecuttables = [
             'chipped:andesite_4',
             'chipped:andesite_3',
             'chipped:andesite_2',
+<<<<<<< HEAD
             'chipped:andesite_1'
+=======
+            'chipped:andesite_1',
+>>>>>>> 4c2146360 (update scripts for chisel removal)
         ],
         onlyAsOutput: ['create:andesite_cobblestone'],
         onlyAsInput: ['minecraft:andesite']
@@ -283,7 +291,11 @@ const stonecuttables = [
             'chipped:cobblestone_4',
             'chipped:cobblestone_3',
             'chipped:cobblestone_2',
+<<<<<<< HEAD
             'chipped:cobblestone_1'
+=======
+            'chipped:cobblestone_1',
+>>>>>>> 4c2146360 (update scripts for chisel removal)
         ],
         onlyAsOutput: [],
         onlyAsInput: []
@@ -439,7 +451,11 @@ const stonecuttables = [
             'chipped:diorite_4',
             'chipped:diorite_3',
             'chipped:diorite_2',
+<<<<<<< HEAD
             'chipped:diorite_1'
+=======
+            'chipped:diorite_1',
+>>>>>>> 4c2146360 (update scripts for chisel removal)
         ],
         onlyAsOutput: ['create:diorite_cobblestone'],
         onlyAsInput: ['minecraft:diorite']
@@ -603,7 +619,11 @@ const stonecuttables = [
             'chipped:granite_4',
             'chipped:granite_3',
             'chipped:granite_2',
+<<<<<<< HEAD
             'chipped:granite_1'
+=======
+            'chipped:granite_1',
+>>>>>>> 4c2146360 (update scripts for chisel removal)
         ],
         onlyAsOutput: ['create:granite_cobblestone'],
         onlyAsInput: ['minecraft:granite']
@@ -695,7 +715,11 @@ const stonecuttables = [
             'quark:chiseled_limestone_bricks',
             'quark:limestone_pavement',
             'quark:limestone_pillar',
+<<<<<<< HEAD
             'quark:polished_limestone'
+=======
+            'quark:polished_limestone',
+>>>>>>> 4c2146360 (update scripts for chisel removal)
         ],
         onlyAsOutput: ['create:limestone_cobblestone'],
         onlyAsInput: []
@@ -726,7 +750,11 @@ const stonecuttables = [
             'quark:chiseled_marble_bricks',
             'quark:marble_pavement',
             'quark:marble_pillar',
+<<<<<<< HEAD
             'quark:polished_marble'
+=======
+            'quark:polished_marble',
+>>>>>>> 4c2146360 (update scripts for chisel removal)
         ],
         onlyAsOutput: [],
         onlyAsInput: []
@@ -979,7 +1007,11 @@ const stonecuttables = [
             'chipped:prismarine_4',
             'chipped:prismarine_3',
             'chipped:prismarine_2',
+<<<<<<< HEAD
             'chipped:prismarine_1'
+=======
+            'chipped:prismarine_1',
+>>>>>>> 4c2146360 (update scripts for chisel removal)
         ],
         onlyAsOutput: [],
         onlyAsInput: []
@@ -1016,7 +1048,11 @@ const stonecuttables = [
             'chipped:purpur_block_4',
             'chipped:purpur_block_3',
             'chipped:purpur_block_2',
+<<<<<<< HEAD
             'chipped:purpur_block_1'
+=======
+            'chipped:purpur_block_1',
+>>>>>>> 4c2146360 (update scripts for chisel removal)
         ],
         onlyAsOutput: [],
         onlyAsInput: []
@@ -1045,7 +1081,11 @@ const stonecuttables = [
             'chipped:quartz_block_4',
             'chipped:quartz_block_3',
             'chipped:quartz_block_2',
+<<<<<<< HEAD
             'chipped:quartz_block_1'
+=======
+            'chipped:quartz_block_1',
+>>>>>>> 4c2146360 (update scripts for chisel removal)
         ],
         onlyAsOutput: [],
         onlyAsInput: []
@@ -1118,7 +1158,11 @@ const stonecuttables = [
             'chipped:red_sandstone_4',
             'chipped:red_sandstone_3',
             'chipped:red_sandstone_2',
+<<<<<<< HEAD
             'chipped:red_sandstone_1'
+=======
+            'chipped:red_sandstone_1',
+>>>>>>> 4c2146360 (update scripts for chisel removal)
         ],
         onlyAsOutput: [],
         onlyAsInput: []
@@ -1184,7 +1228,11 @@ const stonecuttables = [
             'chipped:sandstone_4',
             'chipped:sandstone_3',
             'chipped:sandstone_2',
+<<<<<<< HEAD
             'chipped:sandstone_1'
+=======
+            'chipped:sandstone_1',
+>>>>>>> 4c2146360 (update scripts for chisel removal)
         ],
         onlyAsOutput: [],
         onlyAsInput: []
@@ -1757,7 +1805,11 @@ plankTypes.forEach((plankType) => {
     //         stones.push(`chisel:planks/${plankType}/${chiselPlankVariant}`);
     //     });
     // }
+<<<<<<< HEAD
     for (let i = 1; i <= numberChippedVariants; i++) {
+=======
+    for (i = 1; i <= numberChippedVariants; i++) {
+>>>>>>> 4c2146360 (update scripts for chisel removal)
         stones.push(`chipped:${plankType}_planks_${i}`);
     }
     stonecuttables.push({
