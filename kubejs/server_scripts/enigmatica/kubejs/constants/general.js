@@ -30,7 +30,6 @@ const modPriorities = [
     'betterendforge',
     'miniutilities',
     'chipped',
-    'chisel',
     'tconstruct'
 ];
 

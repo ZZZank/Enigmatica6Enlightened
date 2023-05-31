@@ -584,11 +584,6 @@ onEvent('recipes', (event) => {
         {
             output: Item.of('byg:brimstone', 2),
             inputs: ['minecraft:netherrack', 'byg:sythian_wart_block']
-        },
-        {
-            output: 'minecraft:charcoal',
-            inputs: ['#chisel:charcoal'],
-            id: `${id_prefix}charcoal`
         }
     ];
 

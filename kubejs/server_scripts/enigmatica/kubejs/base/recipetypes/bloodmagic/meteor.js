@@ -86,11 +86,10 @@ onEvent('recipes', (event) => {
         ],
         honey: [
             { tag: 'minecraft:yellow_glazed_terracotta', weight: 30 },
-            { tag: 'chisel:wool/yellow/llama', weight: 20 },
-            { tag: 'minecraft:honey_block', weight: 20 },
-            { tag: 'minecraft:honeycomb_block', weight: 10 },
-            { tag: 'minecraft:yellow_terracotta', weight: 10 },
-            { tag: 'minecraft:yellow_concrete', weight: 10 }
+            { tag: 'minecraft:honey_block', weight: 25 },
+            { tag: 'minecraft:honeycomb_block', weight: 15 },
+            { tag: 'minecraft:yellow_terracotta', weight: 15 },
+            { tag: 'minecraft:yellow_concrete', weight: 15 }
         ]
     };
 
@@ -364,14 +363,6 @@ onEvent('recipes', (event) => {
                     minWeight: 0,
                     weightMap: [{ tag: 'betterendforge:smaragdant_crystal', weight: 50 }],
                     fill: 'upgrade_aquatic:luminous_prismarine',
-                    shell: 'botania:livingrock'
-                },
-                {
-                    radius: 4,
-                    additionalWeight: 15,
-                    minWeight: 0,
-                    weightMap: [{ tag: 'chisel:emerald/cellbismuth', weight: 85 }],
-                    fill: 'naturesaura:infused_iron_block',
                     shell: 'botania:livingrock'
                 }
             ],

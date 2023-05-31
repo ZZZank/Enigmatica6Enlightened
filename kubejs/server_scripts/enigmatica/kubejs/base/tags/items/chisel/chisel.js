@@ -1,4 +1,4 @@
-onEvent('item.tags', (event) => {
+/* onEvent('item.tags', (event) => {
     const chiselNamespace = 'chisel';
     event.add(`${chiselNamespace}:glowstone`, ['#chipped:glowstone']);
 
@@ -9,3 +9,4 @@ onEvent('item.tags', (event) => {
             event.add(`${chiselNamespace}:planks/${plankType}`, [`#${chiselNamespace}:${plankType}`]);
         });
 });
+ */

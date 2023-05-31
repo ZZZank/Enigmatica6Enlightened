@@ -502,12 +502,6 @@ onEvent('recipes', (event) => {
         {
             type: 'ingots',
             replace: 'iron',
-            replaceWith: 'tin',
-            items: ['bloodmagic:soulsnare', 'modularrouters:bulk_item_filter', 'chisel:auto_chisel']
-        },
-        {
-            type: 'ingots',
-            replace: 'iron',
             replaceWith: 'osmium',
             items: ['integrateddynamics:part_machine_reader', 'integratedcrafting:crafting/part_interface_crafting']
         },
@@ -535,12 +529,6 @@ onEvent('recipes', (event) => {
                 'modularrouters:blank_upgrade',
                 'modularrouters:blank_module'
             ]
-        },
-        {
-            type: 'nuggets',
-            replace: 'gold',
-            replaceWith: 'silver',
-            items: ['botania:spark', 'chisel:hitech_chisel']
         }
     ];
 
