@@ -132,11 +132,15 @@ const soilRegistry = [
         categories: ['end_stone', 'end_mycelium', 'mushroom'],
         growthModifier: 0.5
     },
+<<<<<<< HEAD
     {
         block: 'byg:imparius_phylium',
         categories: ['end_stone', 'mushroom', 'imparius_phylium'],
         growthModifier: 0.5
     }
+=======
+    { block: 'byg:imparius_phylium', categories: ['end_stone', 'mushroom', 'imparius_phylium'], growthModifier: 0.5 }
+>>>>>>> 8e60939aa (remove Atmosphere and corresponding scripts)
 ];
 
 let dirt_types = ['blood', 'earth', 'ender', 'sky'],
