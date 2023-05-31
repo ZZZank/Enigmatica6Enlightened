@@ -1192,7 +1192,11 @@
         "4": { "block": "immersiveengineering:steel_fence" },
         "5": { "block": "mekanism:block_bronze" },
         "6": { "block": "pneumaticcraft:compressed_brick_tile" },
+<<<<<<< HEAD
         "7": { "block": "tconstruct:black_clear_stained_glass" },
+=======
+        "7": { "block": "glassential:glass_dark" },
+>>>>>>> e9aead4ac (update scripts for connected-glass removal)
         "8": { "block": "immersiveengineering:slab_sheetmetal_steel" },
         "9": { "block": "minecraft:beacon" },
         ":": { "block": "engineersdecor:thick_steel_pole_head" },
