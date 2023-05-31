@@ -1599,9 +1599,6 @@ colors.forEach((color) => {
         `chipped:${color}_stained_glass_2`,
         `chipped:${color}_stained_glass_1`,
         `quark:${color}_framed_glass`,
-        `connectedglass:scratched_glass_${color}`,
-        `connectedglass:clear_glass_${color}`,
-        `connectedglass:borderless_glass_${color}`,
         `minecraft:${color}_stained_glass`
     ];
 

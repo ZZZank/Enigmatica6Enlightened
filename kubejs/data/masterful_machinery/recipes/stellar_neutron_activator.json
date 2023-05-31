@@ -638,7 +638,7 @@
     "legend": {
         "@": { "block": "immersiveengineering:treated_wood_horizontal" },
         "A": { "block": "immersiveengineering:stairs_hempcrete" },
-        "B": { "block": "connectedglass:borderless_glass_light_blue" },
+        "B": { "block": "tconstruct:light_blue_clear_stained_glass" },
         "D": { "block": "pneumaticcraft:display_table" },
         "E": { "block": "integratedterminals:menril_glass" },
         "F": { "block": "powah:niotic_crystal_block" },

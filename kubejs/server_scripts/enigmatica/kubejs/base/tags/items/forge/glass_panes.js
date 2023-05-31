@@ -4,9 +4,6 @@ onEvent('item.tags', (event) => {
             .get(`forge:glass_panes/${color}`)
             .add([
                 `#chipped:${color}_stained_glass_pane`,
-                `connectedglass:borderless_glass_${color}_pane`,
-                `connectedglass:clear_glass_${color}_pane`,
-                `connectedglass:scratched_glass_${color}_pane`,
                 `quark:${color}_framed_glass_pane`
             ]);
     });

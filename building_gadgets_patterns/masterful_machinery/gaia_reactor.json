@@ -33,17 +33,17 @@
                 {
                     "item_type": "buildinggadgets:simple_item",
                     "count": 8,
-                    "item": { "id": "connectedglass:borderless_glass_black" }
+                    "item": { "id": "glassential:glass_dark" }
                 },
                 {
                     "item_type": "buildinggadgets:simple_item",
                     "count": 36,
-                    "item": { "id": "connectedglass:borderless_glass_light_blue" }
+                    "item": { "id": "tconstruct:blue_clear_stained_glass" }
                 },
                 {
                     "item_type": "buildinggadgets:simple_item",
                     "count": 32,
-                    "item": { "id": "connectedglass:borderless_glass_lime" }
+                    "item": { "id": "tconstruct:lime_clear_stained_glass" }
                 },
                 {
                     "item_type": "buildinggadgets:simple_item",
