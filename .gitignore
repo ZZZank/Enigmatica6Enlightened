@@ -234,3 +234,8 @@ config/sodium-extra-options.json
 config/sodium-extra.properties
 config/appliedenergistics2-client.toml
 config/rftoolsstorage-client-1.toml.bak
+config/jei/ingredient-list-mod-sort-order.ini
+config/jei/ingredient-list-mod-sort-order.ini
+config/jei/ingredient-list-type-sort-order.ini
+config/jei/recipe-category-sort-order.ini
+local/ftbchunks/client-config.snbt

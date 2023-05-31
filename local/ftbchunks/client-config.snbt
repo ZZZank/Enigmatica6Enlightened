@@ -17,7 +17,7 @@
 	# Biome blend
 	# Default: "blend_5x5"
 	# Valid values: "none", "blend_3x3", "blend_5x5", "blend_7x7", "blend_9x9", "blend_11x11", "blend_13x13", "blend_15x15"
-	biome_blend: "blend_5x5"
+	biome_blend: "blend_3x3"
 	
 	# Advanced option. Change how often the minimap will refresh icons
 	# Default: 500
@@ -69,8 +69,8 @@
 	rerender_queue_ticks: 60
 	minimap: {
 		# Enable minimap
-		# Default: false
-		enabled: false
+		# Default: true
+		enabled: true
 		
 		# Minimap visibility
 		# Default: 255
@@ -113,7 +113,7 @@
 		# Blurs minimap
 		# Default: "auto"
 		# Valid values: "auto", "on", "off"
-		blur_mode: "auto"
+		blur_mode: "off"
 		
 		# Minimap will not rotate
 		# Default: true
