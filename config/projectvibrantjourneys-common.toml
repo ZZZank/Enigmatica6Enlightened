@@ -58,6 +58,9 @@
 		red_rock_valley = false
 		crystal_lakes = false
 		windswept_cliffs = false
+		meadows = true
+		flooded_woodlands = true
+		stony_fields = true
 
 		#Biome Weights
 		[Settings.Biomes."Biome Weights"]
@@ -83,6 +86,9 @@
 			red_rock_valley_weight = 3
 			crystal_lakes_weight = 3
 			windswept_cliffs_weight = 3
+			meadows_weight = 3
+			flooded_woodlands_weight = 3
+			stony_fields_weight = 3
 
 		#Biome Ambience Settings
 		[Settings.Biomes."Biome Ambience"]
