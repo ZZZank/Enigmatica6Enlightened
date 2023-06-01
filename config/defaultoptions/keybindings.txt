@@ -131,7 +131,6 @@ key_key.buildinggadgets.fuzzy:key.keyboard.unknown:NONE
 key_key.buildinggadgets.connected_area:key.keyboard.unknown:NONE
 key_key.buildinggadgets.rotate_mirror:key.keyboard.unknown:NONE
 key_key.buildinggadgets.material_list:key.keyboard.unknown:NONE
-key_key.dankstorage.construction:key.keyboard.i:NONE
 key_key.plonk.place:key.keyboard.p:NONE
 key_key.cofh.mode_change_increment:key.keyboard.v:NONE
 key_Show comparison tooltip:key.keyboard.left.shift:NONE

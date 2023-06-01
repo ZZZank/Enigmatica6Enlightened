@@ -41,8 +41,6 @@ onEvent('recipes', (event) => {
         /compactmachines:machine_/,
         /create:pressing\/\w*_ingot/,
 
-        /dankstorage:\w_to_\w/,
-
         'darkutils:crafting/rune_damage_player',
         'darkutils:crafting/blank_plate',
         /darkutils:crafting\/export_plate/,

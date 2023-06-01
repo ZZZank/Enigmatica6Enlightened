@@ -408,17 +408,6 @@ onEvent('jei.information', (event) => {
             text: [`Only drops from Ender Dragons after the first one has been killed.`]
         },
         {
-            items: [
-                'dankstorage:1_to_2',
-                'dankstorage:2_to_3',
-                'dankstorage:3_to_4',
-                'dankstorage:4_to_5',
-                'dankstorage:5_to_6',
-                'dankstorage:6_to_7'
-            ],
-            text: [`Sneak Right Click to upgrade a Dank installed in a Dock.`]
-        },
-        {
             items: [Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:dusty_mummbee_bee' })],
             text: [`The Dusty Mummbee can be found inside the Pharaoh's Sarcophagus.`]
         },

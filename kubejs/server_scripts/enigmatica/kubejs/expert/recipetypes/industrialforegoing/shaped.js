@@ -520,8 +520,8 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'mekanism:hdpe_sheet',
                 B: Item.of('thermal:fluid_cell').ignoreNBT(),
-                C: 'tconstruct:piggy_backpack',
-                D: 'dankstorage:dank_3',
+                C: 'sophisticatedbackpacks:diamond_backpack',
+                D: 'occultism:storage_stabilizer_tier2',
                 E: Item.of('thermal:energy_cell').ignoreNBT()
             },
             id: 'industrialforegoing:dissolution_chamber/infinity_backpack'
