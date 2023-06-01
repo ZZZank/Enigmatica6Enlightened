@@ -241,11 +241,11 @@ onEvent('ponder.registry', (event) => {
 
             scene.idle(20);
 
-            // for (let i = 0; i < 3; i++) {
-            //     for (let j = 0; j < 3; j++) {
-            //         scene.world().setBlock([i, 1, j], util.getDefaultState('connectedglass:clear_glass'), false);
-            //     }
-            // }
+            for (let i = 0; i < 3; i++) {
+                for (let j = 0; j < 3; j++) {
+                    scene.world().setBlock([i, 1, j], util.getDefaultState('tconstruct:clear_glass'), false);
+                }
+            }
             scene.world().setBlock([1, 1, 1], util.getDefaultState('minecraft:water'), false);
 
             scene.idle(20);
