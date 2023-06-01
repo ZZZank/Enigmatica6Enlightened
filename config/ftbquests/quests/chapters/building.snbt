@@ -286,13 +286,6 @@
 									value: "cfm"
 								}
 							}
-							{
-								id: "itemfilters:mod"
-								Count: 1b
-								tag: {
-									value: "morecfm"
-								}
-							}
 						]
 					}
 				}
