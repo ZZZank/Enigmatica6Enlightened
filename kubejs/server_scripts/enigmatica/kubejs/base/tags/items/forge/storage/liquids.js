@@ -1,6 +1,5 @@
 onEvent('item.tags', (event) => {
     var items = [
-        'chiselsandbits:bit_storage',
         'rftoolsutility:tank',
         'astralsorcery:chalice',
         'thermal:fluid_cell',

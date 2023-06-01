@@ -394,7 +394,6 @@ const itemsToHide = [
     /rftoolsbase:dimensionalshard_/,
     /theoneprobe:/,
     /upgrade_aquatic:\w+_jelly_torch/,
-    /chiselsandbits:block_bit$/
 ];
 
 let ee_types = ['clump', 'crystal', 'dirty_dust', 'shard', 'fragment', 'gravel'];
