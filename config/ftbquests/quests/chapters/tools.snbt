@@ -1408,62 +1408,6 @@
 			}]
 		}
 		{
-			x: -1.5d
-			y: -13.0d
-			subtitle: "It's Something, Not Sure What"
-			description: ["Magically imbued and magically combined. This tool can absorb mana to increase its power, just like the Terrashatterer."]
-			dependencies: ["0000000000000517"]
-			id: "000000000000047A"
-			tasks: [{
-				id: "000000000000047B"
-				type: "item"
-				item: {
-					id: "aiotbotania:terra_aiot"
-					Count: 1b
-					tag: {
-						mana: 9999
-						Damage: 0
-					}
-				}
-			}]
-			rewards: [{
-				id: "000000000000065E"
-				type: "command"
-				title: "Legendary Botania Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
-				player_command: false
-			}]
-		}
-		{
-			x: -2.0d
-			y: -12.0d
-			subtitle: "Thing of Beauty"
-			description: ["Magically imbued and magically combined. This tool can absorb mana to increase its power, just like the Terrashatterer."]
-			dependencies: ["0000000000000595"]
-			id: "000000000000047C"
-			tasks: [{
-				id: "000000000000047D"
-				type: "item"
-				item: {
-					id: "aiotbotania:alfsteel_aiot"
-					Count: 1b
-					tag: {
-						mana: 9999
-						Damage: 0
-					}
-				}
-			}]
-			rewards: [{
-				id: "000000000000065B"
-				type: "command"
-				title: "Legendary Botania Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
-				player_command: false
-			}]
-		}
-		{
 			title: "Neptunium Armor"
 			icon: {
 				id: "aquaculture:neptunium_helmet"

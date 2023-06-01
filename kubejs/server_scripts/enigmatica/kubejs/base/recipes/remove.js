@@ -24,9 +24,6 @@ onEvent('recipes', (event) => {
     event.remove({ type: 'thermal:compression_fuel' });
 
     var outputRemovals = [
-        'aiotbotania:livingwood_shears',
-        'aiotbotania:livingrock_shears',
-
         'byg:blue_enchanted_crafting_table',
         'byg:green_enchanted_crafting_table',
         'byg:mud_block',

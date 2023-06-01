@@ -9,7 +9,7 @@ onEvent('jei.information', (event) => {
             text: ['Capable of mining Iesnium.']
         },
         {
-            items: ['atum:nebu_hammer', 'mythicbotany:alfsteel_pick', 'aiotbotania:alfsteel_aiot'],
+            items: ['atum:nebu_hammer', 'mythicbotany:alfsteel_pick'],
             text: ['Capable of breaking down Godblocks into Atum Artifacts.']
         },
         {

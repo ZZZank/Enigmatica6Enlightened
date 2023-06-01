@@ -222,8 +222,6 @@ onEvent('server.datapack.high_priority', (event) => {
             mainhands: [
                 { weight: 4, stack: { item: 'occultism:butcher_knife' } },
                 { weight: 2, stack: { item: 'occultism:butcher_knife' } },
-                { weight: 1, stack: { item: 'aiotbotania:livingrock_pickaxe' } },
-                { weight: 1, stack: { item: 'aiotbotania:livingrock_shovel' } }
             ],
             offhands: [{ weight: 3, stack: { item: 'minecraft:shield' } }],
             boots: [{ weight: 3, stack: { item: 'dustrial_decor:cardboard_boots' } }],

@@ -102,9 +102,6 @@ const itemsToHide = [
     'advancedperipherals:me_bridge',
     'advancedperipherals:colony_integrator',
 
-    'aiotbotania:livingwood_shears',
-    'aiotbotania:livingrock_shears',
-
     // Deprecated Ars Arsenal items
     'arsarsenal:aqua_hood',
     'arsarsenal:fire_hood',
