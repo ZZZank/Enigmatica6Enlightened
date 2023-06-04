@@ -6801,7 +6801,7 @@
         ",": { "block": "botania:livingwood_planks" },
         "-": { "block": "quark:turf" },
         ".": { "block": "botania:vivid_grass" },
-        "/": { "tag": "rsgauges:soils" },
+        "/": { "block": "minecraft:grass_path" },
         "0": { "block": "minecraft:podzol" },
         "1": { "block": "botania:dreamwood_planks" },
         "2": { "block": "botania:mossy_livingrock_bricks" },

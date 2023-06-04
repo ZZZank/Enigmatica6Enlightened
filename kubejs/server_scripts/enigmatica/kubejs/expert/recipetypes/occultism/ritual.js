@@ -1145,7 +1145,7 @@ onEvent('recipes', (event) => {
             ritual_dummy: 'kubejs:craft_refill_upgrade',
             ingredients: [
                 'create:chute',
-                'rsgauges:oldfancy_bistableswitch1',
+                'create:analog_lever',
                 'meetyourfight:spectres_eye',
                 '#sophisticatedbackpacks:upgrades/base'
             ],
