@@ -24,7 +24,7 @@ onEvent('recipes', (event) => {
                 C: ['rftoolscontrol:ram_chip', 'kubejs:advanced_ram_chip'],
                 D: 'kubejs:cpu_core_eg_28222',
                 E: 'rftoolscontrol:graphics_card',
-                F: 'rsgauges:industrial_button'
+                F: 'create:linked_controller'
             },
             id: 'computercraft:computer_normal'
         },
