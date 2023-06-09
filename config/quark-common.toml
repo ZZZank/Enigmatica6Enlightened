@@ -2009,7 +2009,7 @@
 					"Is Blacklist" = true
 
 [oddities]
-	"Totem Of Holding" = false
+	"Totem Of Holding" = true
 	Backpack = false
 	"Matrix Enchanting" = false
 	Magnets = false
