@@ -3,10 +3,10 @@
 [general]
 	#Reference position of HUD.
 	#Range: 1 ~ 8
-	hudReferencePos = 3
+	hudReferencePos = 1
 	#Frame rate during reducing.
 	#Range: 1 ~ 60
-	idleFps = 10
+	idleFps = 5
 	#Suppress master volume if the window is inactive.
 	suppressSound = true
 	#Frame rate during GUI screen(Inventory/Menu) is opened.(0:OFF)
@@ -16,12 +16,12 @@
 	enableFpsReducer = true
 	#Waiting time(sec) until reducing FPS. (0:OFF)
 	#Range: 0 ~ 86400
-	waitingTime = 300
+	waitingTime = 60
 	#HUD scale (default: 1.0)
 	#Range: 0.1 ~ 2.0
 	hudScale = 1.0
 	#Enable HUD.
-	hudEnabled = false
+	hudEnabled = true
 	#Detect movement of player position. (0:OFF, 1:Riding/Flying, 2:Always)
 	#Range: 0 ~ 2
 	detectMoving = 1
