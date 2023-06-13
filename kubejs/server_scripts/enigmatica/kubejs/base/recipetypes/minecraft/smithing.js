@@ -1,8 +1,7 @@
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/smithing/';
 
-    const recipes = [
-    ];
+    const recipes = [];
 
     const black_hole_types = ['tank', 'unit'];
     const black_hole_tiers = ['common', 'pity', 'simple', 'advanced', 'supreme'];

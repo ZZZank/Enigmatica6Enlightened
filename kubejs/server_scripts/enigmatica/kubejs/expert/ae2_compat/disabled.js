@@ -1,5 +1,3 @@
-
-
 onEvent('recipes', (event) => {
     if (!isAE2Loaded) {
         return;
@@ -11,5 +9,4 @@ onEvent('recipes', (event) => {
         event.remove({ output: entry });
         event.remove({ input: entry });
     });
-
 });

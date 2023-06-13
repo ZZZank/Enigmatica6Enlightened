@@ -2,7 +2,7 @@ onEvent('item.tags', (event) => {
     event.add('forge:fruits', [
         'ars_nouveau:mana_berry',
         'betterendforge:blossom_berry',
-        'betterendforge:shadow_berry_raw',
+        'betterendforge:shadow_berry_raw'
     ]);
 
     event.add('forge:fruits/mana_berry', ['ars_nouveau:mana_berry']);

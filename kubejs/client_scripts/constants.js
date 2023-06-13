@@ -35,7 +35,7 @@ const generatableCobblestone = [
     'create:gabbro_cobblestone',
     'create:dolomite_cobblestone',
     'create:weathered_limestone_cobblestone',
-    'create:limestone_cobblestone',
+    'create:limestone_cobblestone'
 ];
 // Items added here will get recipes for Pedestals & Cobblegen Randomizer stonegens.
 const generatableStone = [
@@ -393,7 +393,7 @@ const itemsToHide = [
     /powah:\w+_starter/,
     /rftoolsbase:dimensionalshard_/,
     /theoneprobe:/,
-    /upgrade_aquatic:\w+_jelly_torch/,
+    /upgrade_aquatic:\w+_jelly_torch/
 ];
 
 let ee_types = ['clump', 'crystal', 'dirty_dust', 'shard', 'fragment', 'gravel'];
