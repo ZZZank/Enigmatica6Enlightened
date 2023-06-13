@@ -97,7 +97,7 @@
 	wirelessCostMultiplier = 1.0
 	wirelessBaseRange = 64.0
 	wirelessBoosterRangeMultiplier = 1.0
-	wirelessBoosterExp = 1.5
+	wirelessBoosterExp = 2.0
 	wirelessHighWirelessCount = 64.0
 	wirelessTerminalDrainMultiplier = 1.0
 
