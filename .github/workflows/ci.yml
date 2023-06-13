@@ -2,13 +2,13 @@ name: Continuous Integration
 on:
   push:
     branches:
-      - 'develop'
-      - 'master'
+      - 'enlightened_develop'
+      - 'enlightened_master'
       - 'ci/*'
   pull_request:
     branches:
-      - 'develop'
-      - 'master'
+      - 'enlightened_develop'
+      - 'enlightened_master'
       - 'ci/*'
 
 jobs:
