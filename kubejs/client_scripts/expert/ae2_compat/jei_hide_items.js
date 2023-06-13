@@ -1,5 +1,3 @@
-
-
 onEvent('jei.hide.items', (event) => {
     if (!isAE2Loaded) {
         return;
@@ -7,9 +5,8 @@ onEvent('jei.hide.items', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
-    
+
     itemsToHideAE.forEach((entry) => {
         event.hide(entry);
     });
-
 });

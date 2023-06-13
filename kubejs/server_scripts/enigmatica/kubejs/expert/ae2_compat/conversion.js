@@ -1,5 +1,3 @@
-
-
 onEvent('recipes', (event) => {
     if (!isAE2Loaded) {
         return;
@@ -38,19 +36,18 @@ onEvent('recipes', (event) => {
         { RS: '64k_fluid_storage_part', AE: '1k_fluid_cell_component' },
         { RS: '256k_fluid_storage_part', AE: '4k_fluid_cell_component' },
         { RS: '1024k_fluid_storage_part', AE: '16k_fluid_cell_component' },
-        { RS: '4096k_fluid_storage_part', AE: '64k_fluid_cell_component' },
-
-    ]
+        { RS: '4096k_fluid_storage_part', AE: '64k_fluid_cell_component' }
+    ];
 
     trans.forEach((tran) => {
-        event.shapeless('refinedstorage:' + tran.RS, [
-            'appliedenergistics2:' + tran.AE,
-            'refinedstorage:quartz_enriched_iron'
-            ]).id(id_prefix + tran.AE + '_to_' + tran.RS);
-        event.shapeless('appliedenergistics2:' + tran.AE, [
-            'refinedstorage:' + tran.RS,
-            'appliedenergistics2:sky_dust'
-            ]).id(id_prefix + tran.RS + '_to_' + tran.AE);
+        event
+            .shapeless('refinedstorage:' + tran.RS, [
+                'appliedenergistics2:' + tran.AE,
+                'refinedstorage:quartz_enriched_iron'
+            ])
+            .id(id_prefix + tran.AE + '_to_' + tran.RS);
+        event
+            .shapeless('appliedenergistics2:' + tran.AE, ['refinedstorage:' + tran.RS, 'appliedenergistics2:sky_dust'])
+            .id(id_prefix + tran.RS + '_to_' + tran.AE);
     });
-
 });

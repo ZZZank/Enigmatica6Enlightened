@@ -221,7 +221,7 @@ onEvent('server.datapack.high_priority', (event) => {
             tags: ['standard', 'enderman'],
             mainhands: [
                 { weight: 4, stack: { item: 'occultism:butcher_knife' } },
-                { weight: 2, stack: { item: 'occultism:butcher_knife' } },
+                { weight: 2, stack: { item: 'occultism:butcher_knife' } }
             ],
             offhands: [{ weight: 3, stack: { item: 'minecraft:shield' } }],
             boots: [{ weight: 3, stack: { item: 'dustrial_decor:cardboard_boots' } }],

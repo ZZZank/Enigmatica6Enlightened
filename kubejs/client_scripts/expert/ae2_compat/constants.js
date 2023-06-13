@@ -1,22 +1,22 @@
 //priority: 1001
 
-const isAE2Loaded = Platform.getMods().containsKey("appliedenergistics2");
+const isAE2Loaded = Platform.getMods().containsKey('appliedenergistics2');
 
 const itemsToHideAE = [
-    'appliedenergistics2:ender_dust', 
-    'appliedenergistics2:flour', 
-    'appliedenergistics2:gold_dust', 
-    'appliedenergistics2:iron_dust', 
-    'appliedenergistics2:nether_quartz_dust', 
-    'appliedenergistics2:fluix_dust', 
-    'appliedenergistics2:certus_quartz_dust', 
-    
+    'appliedenergistics2:ender_dust',
+    'appliedenergistics2:flour',
+    'appliedenergistics2:gold_dust',
+    'appliedenergistics2:iron_dust',
+    'appliedenergistics2:nether_quartz_dust',
+    'appliedenergistics2:fluix_dust',
+    'appliedenergistics2:certus_quartz_dust',
+
     'appliedenergistics2:fluix_crystal',
     'appliedenergistics2:charged_certus_quartz_crystal',
-    'appliedenergistics2:certus_quartz_crystal', 
-    'appliedenergistics2:purified_certus_quartz_crystal', 
-    'appliedenergistics2:purified_nether_quartz_crystal', 
-    'appliedenergistics2:purified_fluix_crystal',     
+    'appliedenergistics2:certus_quartz_crystal',
+    'appliedenergistics2:purified_certus_quartz_crystal',
+    'appliedenergistics2:purified_nether_quartz_crystal',
+    'appliedenergistics2:purified_fluix_crystal',
 
     'appliedenergistics2:quartz_ore',
     'appliedenergistics2:charged_quartz_ore',
@@ -41,8 +41,8 @@ const itemsToHideAE = [
     'appliedenergistics2:logic_processor_press',
     'appliedenergistics2:silicon_press',
 
-    'appliedenergistics2:1k_cell_component', 
-    'appliedenergistics2:4k_cell_component', 
-    'appliedenergistics2:1k_fluid_cell_component', 
+    'appliedenergistics2:1k_cell_component',
+    'appliedenergistics2:4k_cell_component',
+    'appliedenergistics2:1k_fluid_cell_component',
     'appliedenergistics2:4k_fluid_cell_component'
 ];
