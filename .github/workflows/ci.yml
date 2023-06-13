@@ -146,6 +146,7 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '17'
+          cache: 'gradle'
 
       - run: git clone --branch eol/1.16 https://github.com/KubeJS-Mods/KubeJS.git
       - run: git apply ../.github/actions/ci/patches/kubejs.patch
