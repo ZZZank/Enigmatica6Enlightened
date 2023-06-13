@@ -535,29 +535,29 @@ onEvent('recipes', (event) => {
             inputFluid: 'tconstruct:molten_slimesteel',
             inputFluidAmount: 1296,
             processingTime: 400,
-            outputItem: { item: 'rsinfinitybooster:infinity_card', count: 1 },
+            outputItem: { item: 'aeinfinitybooster:infinity_card', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'rsinfinitybooster:infinity_card'
+            id: 'aeinfinitybooster:infinity_card'
         },
         {
             inputs: [
-                'rsinfinitybooster:infinity_card',
+                'aeinfinitybooster:infinity_card',
                 'powah:ender_gate_nitro',
-                'rsinfinitybooster:infinity_card',
+                'aeinfinitybooster:infinity_card',
                 'powah:ender_gate_nitro',
                 'powah:ender_gate_nitro',
-                'rsinfinitybooster:infinity_card',
+                'aeinfinitybooster:infinity_card',
                 'powah:ender_gate_nitro',
-                'rsinfinitybooster:infinity_card'
+                'aeinfinitybooster:infinity_card'
             ],
             inputFluid: 'kubejs:pink_ender_slime',
             inputFluidAmount: 1250,
             processingTime: 400,
-            outputItem: { item: 'rsinfinitybooster:dimension_card', count: 1 },
+            outputItem: { item: 'aeinfinitybooster:dimension_card', count: 1 },
             outputFluid: '',
             outputFluidAmount: 0,
-            id: 'rsinfinitybooster:dimension_card'
+            id: 'aeinfinitybooster:dimension_card'
         },
         {
             inputs: [

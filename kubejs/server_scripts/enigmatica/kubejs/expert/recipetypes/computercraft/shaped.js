@@ -93,7 +93,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'computercraft:wireless_modem_normal',
                 B: 'rftoolsbase:infused_enderpearl',
-                C: 'rsinfinitybooster:infinity_card'
+                C: 'aeinfinitybooster:infinity_card'
             },
             id: 'computercraft:wireless_modem_advanced'
         }

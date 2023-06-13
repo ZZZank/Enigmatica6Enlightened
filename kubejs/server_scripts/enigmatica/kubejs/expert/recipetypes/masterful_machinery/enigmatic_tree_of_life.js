@@ -206,7 +206,7 @@ onEvent('recipes', (event) => {
                     data: { item: 'extrastorage:block_262144k_fluid', count: 2 }
                 },
                 { type: 'masterfulmachinery:items', data: { item: 'mekanism:quantum_entangloporter', count: 4 } },
-                { type: 'masterfulmachinery:items', data: { item: 'rsinfinitybooster:dimension_card', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'aeinfinitybooster:dimension_card', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'refinedstorage:network_receiver', count: 4 } },
                 { type: 'masterfulmachinery:items', data: { item: 'refinedstorage:network_transmitter', count: 4 } },
                 { type: 'masterfulmachinery:items', data: { item: 'refinedstorage:network_card', count: 4 } },
