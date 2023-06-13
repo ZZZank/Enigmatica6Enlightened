@@ -106,7 +106,8 @@ start_server() {
 	echo ""
 	echo "Starting server"
 	echo "INFO: Starting Server at " $(date -u +%Y-%m-%d_%H:%M:%S) >>serverstart.log 2>&1
-	java -Xmx${MAX_RAM} ${JAVA_ARGS} -jar forge-${MCVER}-${FORGEVER}.jar nogui
+	# java -Xmx${MAX_RAM} ${JAVA_ARGS} -jar forge-${MCVER}-${FORGEVER}.jar nogui
+	java -Xmx${MAX_RAM} ${JAVA_ARGS} -jar forge-${MCVER}-${FORGEVER}.jar nogui -Djava.security.manager=allow -Dfile.encoding=UTF-8 --add-opens java.base/jdk.internal.loader=ALL-UNNAMED --add-opens java.base/java.net=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/java.io=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.lang.reflect=ALL-UNNAMED --add-opens java.base/java.text=ALL-UNNAMED --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/jdk.internal.reflect=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens jdk.naming.dns/com.sun.jndi.dns=ALL-UNNAMED,java.naming --add-opens java.desktop/sun.awt.image=ALL-UNNAMED --add-modules jdk.dynalink --add-opens jdk.dynalink/jdk.dynalink.beans=ALL-UNNAMED --add-modules java.sql.rowset --add-opens java.sql.rowset/javax.sql.rowset.serial=ALL-UNNAMED --add-exports java.base/sun.security.util=ALL-UNNAMED --add-opens java.base/java.util.jar=ALL-UNNAMED
 }
 
 # routine for basic directory checks
