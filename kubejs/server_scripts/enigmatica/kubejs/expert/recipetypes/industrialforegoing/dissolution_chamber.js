@@ -848,7 +848,7 @@ onEvent('recipes', (event) => {
                 'mekanism:hdpe_sheet',
                 'mekanism:hdpe_sheet',
                 '#forge:circuits/advanced',
-                'advancedperipherals:ar_goggles',
+                'ars_nouveau:glyph_sensitive',
                 '#forge:circuits/advanced'
             ],
             inputFluid: 'kubejs:molten_enderium_glass',

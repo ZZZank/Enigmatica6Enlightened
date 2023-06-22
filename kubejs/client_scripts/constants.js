@@ -99,9 +99,6 @@ const colors = [
 ];
 
 const itemsToHide = [
-    'advancedperipherals:me_bridge',
-    'advancedperipherals:colony_integrator',
-
     // Deprecated Ars Arsenal items
     'arsarsenal:aqua_hood',
     'arsarsenal:fire_hood',
