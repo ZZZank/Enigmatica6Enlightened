@@ -1,3 +1,4 @@
+/*
 onEvent('recipes', (event) => {
     if (!isAE2Loaded) {
         return;
@@ -51,3 +52,4 @@ onEvent('recipes', (event) => {
             .id(id_prefix + tran.RS + '_to_' + tran.AE);
     });
 });
+*/
