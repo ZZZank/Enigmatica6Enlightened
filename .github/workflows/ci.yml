@@ -144,7 +144,7 @@ jobs:
       - uses: actions/setup-java@v3
         with:
           distribution: 'zulu'
-          java-version: '16'
+          java-version: '17'
 
       - run: git clone --branch 1605 https://github.com/KubeJS-Mods/KubeJS.git
       - run: git apply ../.github/actions/ci/patches/kubejs.patch
@@ -165,4 +165,4 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: compiled (${{ matrix.repo }})
-          path: ./KubeJS/forge/build/libs/kubejs-forge-1605.3.19-build.9999.jar
+          path: ./KubeJS/forge/build/libs/kubejs-forge-1605.3.20-build.9999.jar
