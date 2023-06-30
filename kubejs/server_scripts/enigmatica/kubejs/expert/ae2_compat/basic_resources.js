@@ -33,7 +33,6 @@ onEvent('recipes', (event) => {
         event.replaceInput(entry.toReplace, entry.replaceWith);
     });
 
-    event.remove({ output: 'appliedenergistics2:fluix_pearl' });
     event.recipes.create
         .compacting('appliedenergistics2:fluix_pearl', [
             'minecraft:ender_pearl',
