@@ -23,7 +23,7 @@ onEvent('recipes', (event) => {
 
     //Remove recipes by their output
     recipeOutputs=[
-        'appliedenergistics2:fluix_pearl'
+        //blank for now
     ]
     recipeOutputs.forEach((recipeOutput) => {
         event.remove({ output: recipeOutput });

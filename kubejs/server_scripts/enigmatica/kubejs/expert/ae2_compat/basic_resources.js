@@ -41,7 +41,7 @@ onEvent('recipes', (event) => {
             'kubejs:dimensional_storage_crystal'
         ])
         .heated()
-        .id(id_prefix + 'activated_dimentional_pearl');
+        .id('appliedenergistics2:network/misc/fluixpearl');
 
     event
         .custom({
