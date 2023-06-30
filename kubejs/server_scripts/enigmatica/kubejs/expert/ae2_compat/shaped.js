@@ -17,17 +17,6 @@ onEvent('recipes', (event) => {
 
     const recipes = [
         {
-            output: 'appliedenergistics2:fluid_interface',
-            patterns: ['IA ', 'GB ', '   '],
-            inputs: {
-                I: 'appliedenergistics2:interface',
-                G: 'minecraft:green_dye',
-                A: 'refinedstorage:advanced_processor',
-                B: 'minecraft:bucket'
-            },
-            id: 'appliedenergistics2:network/blocks/fluid_interfaces_interface'
-        },
-        {
             output: 'appliedenergistics2:interface',
             patterns: ['EAE', 'DSC', 'EAE'],
             inputs: {
@@ -103,36 +92,6 @@ onEvent('recipes', (event) => {
                 C: '#xnet:connectors'
             },
             id: 'appliedenergistics2:network/parts/export_bus'
-        },
-        {
-            output: 'appliedenergistics2:fluid_storage_bus',
-            patterns: ['SB ', 'G  ', '   '],
-            inputs: {
-                S: 'appliedenergistics2:storage_bus',
-                G: 'minecraft:green_dye',
-                B: 'minecraft:bucket'
-            },
-            id: 'appliedenergistics2:network/parts/storage_bus_fluid'
-        },
-        {
-            output: 'appliedenergistics2:fluid_import_bus',
-            patterns: ['IB ', 'G  ', '   '],
-            inputs: {
-                I: 'appliedenergistics2:import_bus',
-                G: 'minecraft:green_dye',
-                B: 'minecraft:bucket'
-            },
-            id: 'appliedenergistics2:network/parts/import_bus_fluid'
-        },
-        {
-            output: 'appliedenergistics2:fluid_export_bus',
-            patterns: ['EB ', 'G  ', '   '],
-            inputs: {
-                E: 'appliedenergistics2:export_bus',
-                G: 'minecraft:green_dye',
-                B: 'minecraft:bucket'
-            },
-            id: 'appliedenergistics2:network/parts/export_bus_fluid'
         },
         {
             output: 'appliedenergistics2:spatial_pylon',
