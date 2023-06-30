@@ -7,14 +7,6 @@ onEvent('recipes', (event) => {
     }
     const id_prefix = 'enigmatica:expert/ae2_compat/shaped/';
 
-    const recipesIDs = [
-        'appliedenergistics2:network/blocks/controller',
-        'appliedenergistics2:network/wireless_access_point'
-    ];
-    recipesIDs.forEach((recipesID) => {
-        event.remove({ id: recipesID });
-    });
-
     const recipes = [
         {
             output: 'appliedenergistics2:interface',
