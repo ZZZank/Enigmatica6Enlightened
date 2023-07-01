@@ -318,7 +318,7 @@
 - [Transport-1.16.5-3.7.0.jar](https://www.curseforge.com/minecraft/mc-mods/transport/files/3386772) (by [Sky_Som](https://www.curseforge.com/members/sky_som/projects))
 - [trashcans-1.0.18-forge-mc1.16.jar](https://www.curseforge.com/minecraft/mc-mods/trash-cans/files/4606888) (by [SuperMartijn642](https://www.curseforge.com/members/supermartijn642/projects))
 - [TravelAnchors-2.4.jar](https://www.curseforge.com/minecraft/mc-mods/travel-anchors/files/3265112) (by [CastCrafter](https://www.curseforge.com/members/castcrafter/projects))
-- [trofers-1.16.5-2.4.0.jar](https://www.curseforge.com/minecraft/mc-mods/trofers/files/3492735) (by [ochotonida](https://www.curseforge.com/members/ochotonida/projects))
+- [trofers-1.16.5-1.1.0.jar](https://www.curseforge.com/minecraft/mc-mods/trofers/files/3424588) (by [ochotonida](https://www.curseforge.com/members/ochotonida/projects))
 - [u_team_core-1.16.5-3.2.1.258.jar](https://www.curseforge.com/minecraft/mc-mods/u-team-core/files/4583205) (by [HyCraftHD](https://www.curseforge.com/members/hycrafthd/projects))
 - [Undergarden-Tetra Patch-1.3.1-1.16.5.jar](https://www.curseforge.com/minecraft/mc-mods/undergarden-tetra-patch/files/4369665) (by [syrikalis](https://www.curseforge.com/members/syrikalis/projects))
 - [upgrade_aquatic-1.16.5-3.1.2.jar](https://www.curseforge.com/minecraft/mc-mods/upgrade-aquatic/files/3561148) (by [TeamAbnormals](https://www.curseforge.com/members/teamabnormals/projects))
