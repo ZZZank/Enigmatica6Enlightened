@@ -125,7 +125,7 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 { item: 'integrateddynamics:variable', count: 3 },
-                { item: 'refinedstorage:construction_core', count: 1 },
+                { item: 'appliedenergistics2:formation_core', count: 1 },
                 { item: 'fluxnetworks:flux_dust', count: 1 }
             ],
             pressure: 2.0,
@@ -135,7 +135,7 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 { item: 'integrateddynamics:variable', count: 3 },
-                { item: 'refinedstorage:destruction_core', count: 1 },
+                { item: 'appliedenergistics2:annihilation_core', count: 1 },
                 { item: 'fluxnetworks:flux_dust', count: 1 }
             ],
             pressure: 2.0,

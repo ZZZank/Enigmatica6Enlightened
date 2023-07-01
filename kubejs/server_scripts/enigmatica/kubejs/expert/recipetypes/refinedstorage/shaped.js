@@ -44,7 +44,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'refinedstorage:cable',
                 B: 'appliedenergistics2:logic_processor',
-                C: 'refinedstorage:destruction_core',
+                C: 'appliedenergistics2:annihilation_core',
                 D: '#xnet:connectors'
             },
             id: 'refinedstorage:importer'
@@ -55,7 +55,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'refinedstorage:cable',
                 B: 'appliedenergistics2:logic_processor',
-                C: 'refinedstorage:construction_core',
+                C: 'appliedenergistics2:formation_core',
                 D: '#xnet:connectors'
             },
             id: 'refinedstorage:exporter'
@@ -66,8 +66,8 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'refinedstorage:cable',
                 B: 'appliedenergistics2:logic_processor',
-                C: 'refinedstorage:construction_core',
-                D: 'refinedstorage:destruction_core',
+                C: 'appliedenergistics2:formation_core',
+                D: 'appliedenergistics2:annihilation_core',
                 E: '#xnet:connectors'
             },
             id: 'refinedstorage:external_storage'
@@ -77,9 +77,9 @@ onEvent('recipes', (event) => {
             pattern: ['ABA', 'CEC', 'ADA'],
             key: {
                 A: 'create:mechanical_crafter',
-                B: 'refinedstorage:construction_core',
+                B: 'appliedenergistics2:formation_core',
                 C: 'appliedenergistics2:engineering_processor',
-                D: 'refinedstorage:destruction_core',
+                D: 'appliedenergistics2:annihilation_core',
                 E: 'refinedstorage:machine_casing'
             },
             id: 'refinedstorage:crafter'
@@ -136,9 +136,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:gears/enderium',
                 B: 'rftoolsutility:matter_transmitter',
-                C: 'refinedstorage:construction_core',
+                C: 'appliedenergistics2:formation_core',
                 D: 'refinedstorage:machine_casing',
-                E: 'refinedstorage:destruction_core',
+                E: 'appliedenergistics2:annihilation_core',
                 F: '#forge:ingots/aeternium',
                 G: 'kubejs:cpu_core_as_81221'
             },
@@ -150,9 +150,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:gears/enderium',
                 B: 'rftoolsutility:matter_receiver',
-                C: 'refinedstorage:construction_core',
+                C: 'appliedenergistics2:formation_core',
                 D: 'refinedstorage:machine_casing',
-                E: 'refinedstorage:destruction_core',
+                E: 'appliedenergistics2:annihilation_core',
                 F: '#forge:ingots/aeternium',
                 G: 'kubejs:cpu_core_as_81221'
             },

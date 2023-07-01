@@ -15,8 +15,8 @@ onEvent('recipes', (event) => {
                 S: 'create:empty_schematic',
                 E: 'refinedstorage:quartz_enriched_iron',
                 A: 'appliedenergistics2:engineering_processor',
-                D: 'refinedstorage:destruction_core',
-                C: 'refinedstorage:construction_core'
+                D: 'appliedenergistics2:annihilation_core',
+                C: 'appliedenergistics2:formation_core'
             },
             id: 'appliedenergistics2:network/blocks/interfaces_interface'
         },
@@ -56,9 +56,9 @@ onEvent('recipes', (event) => {
             patterns: ['SC ', 'IB ', 'SD '],
             inputs: {
                 B: '#xnet:connectors',
-                C: 'refinedstorage:construction_core',
+                C: 'appliedenergistics2:formation_core',
                 I: 'appliedenergistics2:logic_processor',
-                D: 'refinedstorage:destruction_core',
+                D: 'appliedenergistics2:annihilation_core',
                 S: 'occultism:spirit_attuned_gem'
             },
             id: 'appliedenergistics2:network/parts/storage_bus'
@@ -67,7 +67,7 @@ onEvent('recipes', (event) => {
             output: 'appliedenergistics2:import_bus',
             patterns: ['SD ', 'IC ', 'SD '],
             inputs: {
-                D: 'refinedstorage:destruction_core',
+                D: 'appliedenergistics2:annihilation_core',
                 I: 'appliedenergistics2:logic_processor',
                 S: 'occultism:spirit_attuned_gem',
                 C: '#xnet:connectors'
@@ -78,7 +78,7 @@ onEvent('recipes', (event) => {
             output: 'appliedenergistics2:export_bus',
             patterns: ['SD ', 'IC ', 'SD '],
             inputs: {
-                D: 'refinedstorage:construction_core',
+                D: 'appliedenergistics2:formation_core',
                 I: 'appliedenergistics2:logic_processor',
                 S: 'occultism:spirit_attuned_gem',
                 C: '#xnet:connectors'
@@ -100,8 +100,8 @@ onEvent('recipes', (event) => {
             output: 'appliedenergistics2:molecular_assembler',
             patterns: ['MQM', 'DWC', 'MQM'],
             inputs: {
-                C: 'refinedstorage:construction_core',
-                D: 'refinedstorage:destruction_core',
+                C: 'appliedenergistics2:formation_core',
+                D: 'appliedenergistics2:annihilation_core',
                 Q: 'appliedenergistics2:quartz_glass',
                 W: '#forge:workbenches',
                 M: 'create:mechanical_crafter'

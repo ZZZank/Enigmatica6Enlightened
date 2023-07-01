@@ -624,8 +624,8 @@ onEvent('recipes', (event) => {
                 'atum:crystal_glass_pane',
                 '#forge:gears/signalum',
                 '#forge:gears/signalum',
-                'refinedstorage:construction_core',
-                'refinedstorage:construction_core'
+                'appliedenergistics2:formation_core',
+                'appliedenergistics2:formation_core'
             ],
             inputFluid: 'industrialforegoing:latex',
             inputFluidAmount: 1000,

@@ -215,9 +215,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'create:mechanical_crafter',
                 B: 'pneumaticcraft:printed_circuit_board',
-                C: 'refinedstorage:destruction_core',
+                C: 'appliedenergistics2:annihilation_core',
                 D: 'rftoolsbase:machine_frame',
-                E: 'refinedstorage:construction_core'
+                E: 'appliedenergistics2:formation_core'
             },
             id: 'rftoolscontrol:craftingstation'
         },
