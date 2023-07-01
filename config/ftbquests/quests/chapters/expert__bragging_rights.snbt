@@ -26,7 +26,7 @@
 				id: "3A52EC072B3445A2"
 				type: "item"
 				item: {
-					id: "trofers:large_pillar"
+					id: "trofers:large_trophy"
 					Count: 1b
 					tag: {
 						BlockEntityTag: {
@@ -79,7 +79,7 @@
 				id: "693FC941F15A3ACE"
 				type: "item"
 				item: {
-					id: "trofers:large_pillar"
+					id: "trofers:large_trophy"
 					Count: 1b
 					tag: {
 						BlockEntityTag: {
@@ -133,7 +133,7 @@
 				id: "551D5FD396FF093D"
 				type: "item"
 				item: {
-					id: "trofers:large_pillar"
+					id: "trofers:large_trophy"
 					Count: 1b
 					tag: {
 						BlockEntityTag: {
@@ -193,7 +193,7 @@
 				id: "3AB2CF7F89C657B5"
 				type: "item"
 				item: {
-					id: "trofers:large_pillar"
+					id: "trofers:large_trophy"
 					Count: 1b
 					tag: {
 						BlockEntityTag: {
@@ -243,7 +243,7 @@
 				id: "4D3A23023C449286"
 				type: "item"
 				item: {
-					id: "trofers:large_pillar"
+					id: "trofers:large_trophy"
 					Count: 1b
 					tag: {
 						BlockEntityTag: {
@@ -293,7 +293,7 @@
 				id: "2544D1CD29FA3294"
 				type: "item"
 				item: {
-					id: "trofers:large_pillar"
+					id: "trofers:large_trophy"
 					Count: 1b
 					tag: {
 						BlockEntityTag: {
@@ -343,7 +343,7 @@
 				id: "1D9D78838F73FAB1"
 				type: "item"
 				item: {
-					id: "trofers:large_pillar"
+					id: "trofers:large_trophy"
 					Count: 1b
 					tag: {
 						BlockEntityTag: {
@@ -397,7 +397,7 @@
 				id: "0E6C5C79136A434B"
 				type: "item"
 				item: {
-					id: "trofers:large_pillar"
+					id: "trofers:large_trophy"
 					Count: 1b
 					tag: {
 						BlockEntityTag: {
@@ -447,7 +447,7 @@
 				id: "20CD22DE6E8E7067"
 				type: "item"
 				item: {
-					id: "trofers:large_pillar"
+					id: "trofers:large_trophy"
 					Count: 1b
 					tag: {
 						BlockEntityTag: {
@@ -501,7 +501,7 @@
 				id: "541CF497CB5FE81E"
 				type: "item"
 				item: {
-					id: "trofers:large_pillar"
+					id: "trofers:large_trophy"
 					Count: 1b
 					tag: {
 						BlockEntityTag: {
@@ -555,7 +555,7 @@
 				id: "3D93697F45EC1124"
 				type: "item"
 				item: {
-					id: "trofers:large_pillar"
+					id: "trofers:large_trophy"
 					Count: 1b
 					tag: {
 						BlockEntityTag: {
@@ -609,7 +609,7 @@
 				id: "678108C4817B164B"
 				type: "item"
 				item: {
-					id: "trofers:large_pillar"
+					id: "trofers:large_trophy"
 					Count: 1b
 					tag: {
 						BlockEntityTag: {
@@ -688,7 +688,7 @@
 				id: "5C862E67BDEE747A"
 				type: "item"
 				item: {
-					id: "trofers:large_pillar"
+					id: "trofers:large_trophy"
 					Count: 1b
 					tag: {
 						BlockEntityTag: {
