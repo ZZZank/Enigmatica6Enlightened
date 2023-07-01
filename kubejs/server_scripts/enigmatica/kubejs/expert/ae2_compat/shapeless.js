@@ -59,6 +59,13 @@ onEvent('recipes', (event) => {
                 'appliedenergistics2:fluix_block'
             ],
             id: 'appliedenergistics2:misc/deconstruction_fluix_block'
+        },
+        {
+            output: '4x astralsorcery:aquamarine',
+            ingerdients: [
+                'appliedenergistics2:quartz_block'
+            ],
+            id: 'appliedenergistics2:misc/deconstruction_certus_quartz_block'
         }
     ];
 

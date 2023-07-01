@@ -5,7 +5,7 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
-    const id_prefix = 'enigmatica:expert/ae2_compat/shaped/';
+    const id_prefix = 'enigmatica:expert/appliedenergistics2/shaped/';
 
     const recipes = [
         {
@@ -128,6 +128,14 @@ onEvent('recipes', (event) => {
                 S: 'appliedenergistics2:sky_dust'
             },
             id: 'appliedenergistics2:network/cables/glass_fluix'
+        },,
+        {
+            output: 'appliedenergistics2:quartz_block',
+            patterns: ['AA ', 'AA ', '   '],
+            inputs: {
+                A: 'astralsorcery:aquamarine',
+            },
+            id: `${id_prefix}certus_quartz_block`
         }
     ];
     recipes.forEach((recipe) => {
