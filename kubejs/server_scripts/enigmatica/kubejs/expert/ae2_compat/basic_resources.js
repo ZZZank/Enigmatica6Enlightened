@@ -14,9 +14,6 @@ onEvent('recipes', (event) => {
         { toReplace: 'appliedenergistics2:fluix_dust', replaceWith: 'botania:corporea_spark' },
         { toReplace: 'appliedenergistics2:certus_quartz_dust', replaceWith: 'botania:quartz_mana' },
         { toReplace: 'appliedenergistics2:ender_dust', replaceWith: 'emendatusenigmatica:ender_dust' },
-        { toReplace: 'appliedenergistics2:calculation_processor', replaceWith: 'refinedstorage:basic_processor' },
-        { toReplace: 'appliedenergistics2:logic_processor', replaceWith: 'refinedstorage:improved_processor' },
-        { toReplace: 'appliedenergistics2:engineering_processor', replaceWith: 'refinedstorage:advanced_processor' },
     ];
     recipes.forEach((recipe) => {
         event.replaceInput({ mod: 'appliedenergistics2' }, recipe.toReplace, recipe.replaceWith);

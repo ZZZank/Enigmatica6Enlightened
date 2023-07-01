@@ -20,16 +20,16 @@ onEvent('recipes', (event) => {
             inputs: ['appliedenergistics2:printed_calculation_processor', Ingredient.of('#thermal:crafting/dies/coin')],
             output: 'appliedenergistics2:calculation_processor',
             energy: 3000,
-            id: 'refinedstorage:basic_processor'
+            id: 'appliedenergistics2:calculation_processor'
         },
         {
-            inputs: ['refinedstorage:raw_improved_processor', Ingredient.of('#thermal:crafting/dies/coin')],
+            inputs: ['appliedenergistics2:printed_logic_processor', Ingredient.of('#thermal:crafting/dies/coin')],
             output: 'appliedenergistics2:logic_processor',
             energy: 3000 * 2,
-            id: 'refinedstorage:improved_processor'
+            id: 'appliedenergistics2:logic_processor'
         },
         {
-            inputs: ['refinedstorage:raw_advanced_processor', Ingredient.of('#thermal:crafting/dies/coin')],
+            inputs: ['appliedenergistics2:printed_engineering_processor', Ingredient.of('#thermal:crafting/dies/coin')],
             output: 'appliedenergistics2:engineering_processor',
             energy: 3000 * 3,
             id: 'appliedenergistics2:engineering_processor'
