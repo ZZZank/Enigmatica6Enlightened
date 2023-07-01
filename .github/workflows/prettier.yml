@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - 'enlightened_master'
+      - 'enlightened_develop'
       - 'prettier-*'
 
 jobs:
