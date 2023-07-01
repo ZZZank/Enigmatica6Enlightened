@@ -58,7 +58,7 @@ onEvent('recipes', (event) => {
             ingerdients: [
                 'appliedenergistics2:fluix_block'
             ],
-            id: 'appliedenergistics2:misc/deconstrcution_fluix_block'
+            id: 'appliedenergistics2:misc/deconstruction_fluix_block'
         }
     ];
 
