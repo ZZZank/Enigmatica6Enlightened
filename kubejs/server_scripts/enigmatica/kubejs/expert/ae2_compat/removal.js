@@ -22,7 +22,7 @@ onEvent('recipes', (event) => {
     });
 
     //Remove recipes by their output
-    recipeOutputs=[
+    const recipeOutputs=[
         //blank for now
     ]
     recipeOutputs.forEach((recipeOutput) => {
