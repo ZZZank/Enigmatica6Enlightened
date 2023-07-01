@@ -52,6 +52,13 @@ onEvent('recipes', (event) => {
                 'minecraft:bucket'
             ],
             id: 'appliedenergistics2:network/parts/export_bus_fluid'
+        },
+        {
+            output: '4x occultism:spirit_attuned_gem',
+            ingerdients: [
+                'appliedenergistics2:fluix_block'
+            ],
+            id: 'appliedenergistics2:misc/deconstrcution_fluix_block'
         }
     ];
 

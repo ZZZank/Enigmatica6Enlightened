@@ -27,17 +27,18 @@ const itemsToRemoveAE = [
     'appliedenergistics2:crank',
     'appliedenergistics2:grindstone',
 
-    'appliedenergistics2:printed_calculation_processor',
-    'appliedenergistics2:printed_engineering_processor',
-    'appliedenergistics2:printed_logic_processor',
     'appliedenergistics2:printed_silicon',
-    'appliedenergistics2:logic_processor',
-    'appliedenergistics2:calculation_processor',
-    'appliedenergistics2:engineering_processor',
     'appliedenergistics2:silicon',
 
     'appliedenergistics2:calculation_processor_press',
     'appliedenergistics2:engineering_processor_press',
     'appliedenergistics2:logic_processor_press',
-    'appliedenergistics2:silicon_press'
+    'appliedenergistics2:silicon_press',
+
+    'appliedenergistics2:quartz_stairs',
+    'appliedenergistics2:quartz_wall',
+    'appliedenergistics2:chiseled_quartz_block',
+    'appliedenergistics2:quartz_slab',
+    'appliedenergistics2:quartz_pillar',
+    'appliedenergistics2:quartz_block'
 ];
