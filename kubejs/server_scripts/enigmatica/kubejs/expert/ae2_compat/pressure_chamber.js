@@ -12,22 +12,22 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 { item: 'tconstruct:ichor_slime_crystal', count: 1 },
-                { item: 'refinedstorage:basic_processor', count: 1 },
+                { item: 'appliedenergistics2:calculation_processor', count: 1 },
                 { item: 'botania:corporea_spark', count: 1 }
             ],
             pressure: 2.0,
-            results: [{ item: 'refinedstorage:destruction_core', count: 1 }],
-            id: 'refinedstorage:destruction_core'
+            results: [{ item: 'appliedenergistics2:annihilation_core', count: 1 }],
+            id: 'appliedenergistics2:materials/annihilationcore'
         },
         {
             inputs: [
                 { item: 'tconstruct:sky_slime_crystal', count: 1 },
-                { item: 'refinedstorage:basic_processor', count: 1 },
+                { item: 'appliedenergistics2:calculation_processor', count: 1 },
                 { item: 'botania:corporea_spark', count: 1 }
             ],
             pressure: 2.0,
-            results: [{ item: 'refinedstorage:construction_core', count: 1 }],
-            id: 'refinedstorage:construction_core'
+            results: [{ item: 'appliedenergistics2:formation_core', count: 1 }],
+            id: 'appliedenergistics2:materials/formationcore'
         },
         {
             inputs: [
