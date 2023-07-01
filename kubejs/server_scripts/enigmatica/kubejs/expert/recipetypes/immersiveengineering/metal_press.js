@@ -11,22 +11,22 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}thermoelectric_plate`
         },
         {
-            output: 'refinedstorage:basic_processor',
-            input: 'refinedstorage:raw_basic_processor',
+            output: 'appliedenergistics2:calculation_processor',
+            input: 'appliedenergistics2:printed_calculation_processor',
             mold: '#thermal:crafting/dies/coin',
-            id: `${id_prefix}basic_processor`
+            id: `${id_prefix}calculation_processor`
         },
         {
-            output: 'refinedstorage:improved_processor',
-            input: 'refinedstorage:raw_improved_processor',
+            output: 'appliedenergistics2:logic_processor',
+            input: 'appliedenergistics2:printed_logic_processor',
             mold: '#thermal:crafting/dies/coin',
-            id: `${id_prefix}improved_processor`
+            id: `${id_prefix}logic_processor`
         },
         {
-            output: 'refinedstorage:advanced_processor',
-            input: 'refinedstorage:raw_advanced_processor',
+            output: 'appliedenergistics2:engineering_processor',
+            input: 'appliedenergistics2:printed_engineering_processor',
             mold: '#thermal:crafting/dies/coin',
-            id: `${id_prefix}advanced_processor`
+            id: `${id_prefix}engineering_processor`
         },
         {
             output: 'extrastorage:neural_processor',

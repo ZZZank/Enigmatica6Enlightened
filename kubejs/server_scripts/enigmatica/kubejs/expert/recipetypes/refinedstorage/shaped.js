@@ -43,7 +43,7 @@ onEvent('recipes', (event) => {
             pattern: [' C ', 'ADB', ' C '],
             key: {
                 A: 'refinedstorage:cable',
-                B: 'refinedstorage:improved_processor',
+                B: 'appliedenergistics2:logic_processor',
                 C: 'refinedstorage:destruction_core',
                 D: '#xnet:connectors'
             },
@@ -54,7 +54,7 @@ onEvent('recipes', (event) => {
             pattern: [' C ', 'ADB', ' C '],
             key: {
                 A: 'refinedstorage:cable',
-                B: 'refinedstorage:improved_processor',
+                B: 'appliedenergistics2:logic_processor',
                 C: 'refinedstorage:construction_core',
                 D: '#xnet:connectors'
             },
@@ -65,7 +65,7 @@ onEvent('recipes', (event) => {
             pattern: [' C ', 'AEB', ' D '],
             key: {
                 A: 'refinedstorage:cable',
-                B: 'refinedstorage:improved_processor',
+                B: 'appliedenergistics2:logic_processor',
                 C: 'refinedstorage:construction_core',
                 D: 'refinedstorage:destruction_core',
                 E: '#xnet:connectors'
@@ -78,7 +78,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'create:mechanical_crafter',
                 B: 'refinedstorage:construction_core',
-                C: 'refinedstorage:advanced_processor',
+                C: 'appliedenergistics2:engineering_processor',
                 D: 'refinedstorage:destruction_core',
                 E: 'refinedstorage:machine_casing'
             },
@@ -90,7 +90,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:wires/aluminum',
                 B: '#forge:rods/aluminum',
-                C: 'refinedstorage:advanced_processor'
+                C: 'appliedenergistics2:engineering_processor'
             },
             id: 'refinedstorage:wireless_transmitter'
         },
@@ -100,7 +100,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'refinedstorage:quartz_enriched_iron',
                 B: 'refinedstorage:upgrade',
-                C: 'refinedstorage:basic_processor',
+                C: 'appliedenergistics2:calculation_processor',
                 D: 'refinedstorage:wireless_transmitter'
             },
             id: 'refinedstorage:range_upgrade'
@@ -126,7 +126,7 @@ onEvent('recipes', (event) => {
                 A: 'refinedstorage:quartz_enriched_iron',
                 B: 'pneumaticcraft:printed_circuit_board',
                 C: 'refinedstorage:upgrade',
-                D: 'refinedstorage:advanced_processor'
+                D: 'appliedenergistics2:engineering_processor'
             },
             id: 'refinedstorage:network_card'
         },

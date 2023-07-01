@@ -14,7 +14,7 @@ onEvent('recipes', (event) => {
             inputs: {
                 S: 'create:empty_schematic',
                 E: 'refinedstorage:quartz_enriched_iron',
-                A: 'refinedstorage:advanced_processor',
+                A: 'appliedenergistics2:engineering_processor',
                 D: 'refinedstorage:destruction_core',
                 C: 'refinedstorage:construction_core'
             },
@@ -57,7 +57,7 @@ onEvent('recipes', (event) => {
             inputs: {
                 B: '#xnet:connectors',
                 C: 'refinedstorage:construction_core',
-                I: 'refinedstorage:improved_processor',
+                I: 'appliedenergistics2:logic_processor',
                 D: 'refinedstorage:destruction_core',
                 S: 'occultism:spirit_attuned_gem'
             },
@@ -68,7 +68,7 @@ onEvent('recipes', (event) => {
             patterns: ['SD ', 'IC ', 'SD '],
             inputs: {
                 D: 'refinedstorage:destruction_core',
-                I: 'refinedstorage:improved_processor',
+                I: 'appliedenergistics2:logic_processor',
                 S: 'occultism:spirit_attuned_gem',
                 C: '#xnet:connectors'
             },
@@ -79,7 +79,7 @@ onEvent('recipes', (event) => {
             patterns: ['SD ', 'IC ', 'SD '],
             inputs: {
                 D: 'refinedstorage:construction_core',
-                I: 'refinedstorage:improved_processor',
+                I: 'appliedenergistics2:logic_processor',
                 S: 'occultism:spirit_attuned_gem',
                 C: '#xnet:connectors'
             },

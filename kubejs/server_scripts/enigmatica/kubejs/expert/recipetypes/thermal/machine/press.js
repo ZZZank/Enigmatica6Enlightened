@@ -17,22 +17,22 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}hot_compressed_iron_block`
         },
         {
-            inputs: ['refinedstorage:raw_basic_processor', Ingredient.of('#thermal:crafting/dies/coin')],
-            output: 'refinedstorage:basic_processor',
+            inputs: ['appliedenergistics2:printed_calculation_processor', Ingredient.of('#thermal:crafting/dies/coin')],
+            output: 'appliedenergistics2:calculation_processor',
             energy: 3000,
             id: 'refinedstorage:basic_processor'
         },
         {
             inputs: ['refinedstorage:raw_improved_processor', Ingredient.of('#thermal:crafting/dies/coin')],
-            output: 'refinedstorage:improved_processor',
+            output: 'appliedenergistics2:logic_processor',
             energy: 3000 * 2,
             id: 'refinedstorage:improved_processor'
         },
         {
             inputs: ['refinedstorage:raw_advanced_processor', Ingredient.of('#thermal:crafting/dies/coin')],
-            output: 'refinedstorage:advanced_processor',
+            output: 'appliedenergistics2:engineering_processor',
             energy: 3000 * 3,
-            id: 'refinedstorage:advanced_processor'
+            id: 'appliedenergistics2:engineering_processor'
         },
         {
             inputs: ['extrastorage:raw_neural_processor', Ingredient.of('#thermal:crafting/dies/coin')],

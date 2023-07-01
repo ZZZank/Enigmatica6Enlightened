@@ -17,8 +17,6 @@ onEvent('recipes', (event) => {
         { toReplace: 'appliedenergistics2:calculation_processor', replaceWith: 'refinedstorage:basic_processor' },
         { toReplace: 'appliedenergistics2:logic_processor', replaceWith: 'refinedstorage:improved_processor' },
         { toReplace: 'appliedenergistics2:engineering_processor', replaceWith: 'refinedstorage:advanced_processor' },
-        { toReplace: 'appliedenergistics2:formation_core', replaceWith: 'refinedstorage:construction_core' },
-        { toReplace: 'appliedenergistics2:annihilation_core', replaceWith: 'refinedstorage:destruction_core' }
     ];
     recipes.forEach((recipe) => {
         event.replaceInput({ mod: 'appliedenergistics2' }, recipe.toReplace, recipe.replaceWith);

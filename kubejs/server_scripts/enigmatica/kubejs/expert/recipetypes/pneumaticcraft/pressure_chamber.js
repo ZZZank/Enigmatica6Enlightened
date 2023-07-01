@@ -95,7 +95,7 @@ onEvent('recipes', (event) => {
                 { item: 'pneumaticcraft:unassembled_pcb', count: 1 },
                 { item: 'pneumaticcraft:capacitor', count: 2 },
                 { item: 'pneumaticcraft:transistor', count: 2 },
-                { item: 'refinedstorage:basic_processor', count: 1 },
+                { item: 'appliedenergistics2:calculation_processor', count: 1 },
                 { tag: 'forge:wires/lead', count: 1 }
             ],
             pressure: 4.0,

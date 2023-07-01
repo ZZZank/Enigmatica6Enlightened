@@ -37,8 +37,8 @@ onEvent('recipes', (event) => {
                 { item: 'fluxnetworks:flux_dust', count: 1 }
             ],
             pressure: 2.0,
-            results: [{ item: 'refinedstorage:raw_basic_processor', count: 1 }],
-            id: 'refinedstorage:raw_basic_processor'
+            results: [{ item: 'appliedenergistics2:printed_calculation_processor', count: 1 }],
+            id: 'appliedenergistics2:inscriber/calculation_processor_print'
         },
         {
             inputs: [
@@ -48,8 +48,8 @@ onEvent('recipes', (event) => {
                 { item: 'fluxnetworks:flux_dust', count: 1 }
             ],
             pressure: 2.0,
-            results: [{ item: 'refinedstorage:raw_improved_processor', count: 1 }],
-            id: 'refinedstorage:raw_improved_processor'
+            results: [{ item: 'appliedenergistics2:printed_logic_processor', count: 1 }],
+            id: 'appliedenergistics2:inscriber/logic_processor_print'
         },
         {
             inputs: [
@@ -59,8 +59,8 @@ onEvent('recipes', (event) => {
                 { item: 'fluxnetworks:flux_dust', count: 1 }
             ],
             pressure: 2.0,
-            results: [{ item: 'refinedstorage:raw_advanced_processor', count: 1 }],
-            id: 'refinedstorage:raw_advanced_processor'
+            results: [{ item: 'appliedenergistics2:printed_engineering_processor', count: 1 }],
+            id: 'appliedenergistics2:inscriber/engineering_processor_print'
         }
     ];
 

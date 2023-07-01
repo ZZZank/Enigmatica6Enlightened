@@ -20,7 +20,7 @@ onEvent('recipes', (event) => {
             output: 'kubejs:basic_circuit_package',
             pattern: ['AA ', 'BB ', 'CCD'],
             key: {
-                A: 'refinedstorage:improved_processor',
+                A: 'appliedenergistics2:logic_processor',
                 B: 'kubejs:memory_basic_filled',
                 C: 'pneumaticcraft:printed_circuit_board',
                 D: 'mekanism:cardboard_box'
@@ -70,7 +70,7 @@ onEvent('recipes', (event) => {
             pattern: ['BAB', 'ADA', 'BCB'],
             key: {
                 A: '#forge:wires/lead',
-                B: 'refinedstorage:basic_processor',
+                B: 'appliedenergistics2:calculation_processor',
                 C: 'pneumaticcraft:unassembled_pcb',
                 D: 'mekanism:cardboard_box'
             },
@@ -81,7 +81,7 @@ onEvent('recipes', (event) => {
             pattern: ['BAB', 'ADA', 'BCB'],
             key: {
                 A: '#forge:wires/copper',
-                B: 'refinedstorage:improved_processor',
+                B: 'appliedenergistics2:logic_processor',
                 C: 'pneumaticcraft:unassembled_pcb',
                 D: 'mekanism:cardboard_box'
             },
@@ -92,7 +92,7 @@ onEvent('recipes', (event) => {
             pattern: ['BAB', 'ADA', 'BCB'],
             key: {
                 A: '#forge:wires/electrum',
-                B: 'refinedstorage:advanced_processor',
+                B: 'appliedenergistics2:engineering_processor',
                 C: 'pneumaticcraft:unassembled_pcb',
                 D: 'mekanism:cardboard_box'
             },
@@ -169,7 +169,7 @@ onEvent('recipes', (event) => {
             output: 'kubejs:64k_storage_part_package',
             pattern: ['ABA', 'DCD', 'ADA'],
             key: {
-                A: 'refinedstorage:basic_processor',
+                A: 'appliedenergistics2:calculation_processor',
                 B: '#forge:circuits/basic',
                 C: 'mekanism:cardboard_box',
                 D: 'refinedstorage:16k_storage_part'
@@ -180,7 +180,7 @@ onEvent('recipes', (event) => {
             output: 'kubejs:256k_storage_part_package',
             pattern: ['ABA', 'DCD', 'ADA'],
             key: {
-                A: 'refinedstorage:improved_processor',
+                A: 'appliedenergistics2:logic_processor',
                 B: '#forge:circuits/advanced',
                 C: 'mekanism:cardboard_box',
                 D: 'refinedstorage:64k_storage_part'
@@ -191,7 +191,7 @@ onEvent('recipes', (event) => {
             output: 'kubejs:1024k_storage_part_package',
             pattern: ['ABA', 'DCD', 'ADA'],
             key: {
-                A: 'refinedstorage:advanced_processor',
+                A: 'appliedenergistics2:engineering_processor',
                 B: '#forge:circuits/elite',
                 C: 'mekanism:cardboard_box',
                 D: 'extrastorage:storagepart_256k'
@@ -239,7 +239,7 @@ onEvent('recipes', (event) => {
             output: 'kubejs:4096k_fluid_storage_part_package',
             pattern: ['ABA', 'DCD', 'ADA'],
             key: {
-                A: 'refinedstorage:basic_processor',
+                A: 'appliedenergistics2:calculation_processor',
                 B: '#forge:circuits/basic',
                 C: 'mekanism:cardboard_box',
                 D: 'refinedstorage:1024k_fluid_storage_part'
@@ -250,7 +250,7 @@ onEvent('recipes', (event) => {
             output: 'kubejs:16384k_fluid_storage_part_package',
             pattern: ['ABA', 'DCD', 'ADA'],
             key: {
-                A: 'refinedstorage:improved_processor',
+                A: 'appliedenergistics2:logic_processor',
                 B: '#forge:circuits/advanced',
                 C: 'mekanism:cardboard_box',
                 D: 'refinedstorage:4096k_fluid_storage_part'
@@ -261,7 +261,7 @@ onEvent('recipes', (event) => {
             output: 'kubejs:65536k_fluid_storage_part_package',
             pattern: ['ABA', 'DCD', 'ADA'],
             key: {
-                A: 'refinedstorage:advanced_processor',
+                A: 'appliedenergistics2:engineering_processor',
                 B: '#forge:circuits/elite',
                 C: 'mekanism:cardboard_box',
                 D: 'extrastorage:storagepart_16384k_fluid'

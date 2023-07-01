@@ -238,7 +238,7 @@ onEvent('recipes', (event) => {
                 A: 'pneumaticcraft:heat_sink',
                 B: 'pneumaticcraft:turbine_rotor',
                 C: 'pneumaticcraft:printed_circuit_board',
-                D: 'refinedstorage:advanced_processor',
+                D: 'appliedenergistics2:engineering_processor',
                 E: '#forge:nuggets/copper'
             },
             id: 'rftoolscontrol:graphics_card'
@@ -249,7 +249,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'refinedstorage:wireless_transmitter',
                 B: 'pneumaticcraft:printed_circuit_board',
-                C: 'refinedstorage:advanced_processor',
+                C: 'appliedenergistics2:engineering_processor',
                 D: '#forge:nuggets/copper'
             },
             id: 'rftoolscontrol:network_card'

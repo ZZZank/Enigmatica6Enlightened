@@ -21,7 +21,7 @@ onEvent('recipes', (event) => {
             ingerdients: [
                 'appliedenergistics2:interface',
                 'minecraft:green_dye',
-                'refinedstorage:advanced_processor',
+                'appliedenergistics2:engineering_processor',
                 'minecraft:bucket'
             ],
             id: 'appliedenergistics2:network/blocks/fluid_interfaces_interface'

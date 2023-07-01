@@ -13,7 +13,7 @@ onEvent('recipes', (event) => {
             patterns: ['GFG', 'FAF', ' S '],
             inputs: {
                 G: 'minecraft:glowstone_dust',
-                A: 'refinedstorage:advanced_processor',
+                A: 'appliedenergistics2:engineering_processor',
                 F: 'appliedenergistics2:fluix_pearl',
                 S: 'occultism:spirit_attuned_gem'
             },
