@@ -275,7 +275,6 @@
 - [serverconfigupdater-1.3.2.jar](https://www.curseforge.com/minecraft/mc-mods/serverconfig-updater/files/4406457) (by [Darkere](https://www.curseforge.com/members/darkere/projects))
 - [shiftnscrollonmac-1.16.4-0.0.1.s1.jar](https://www.curseforge.com/minecraft/mc-mods/shift-n-scroll-on-mac/files/3164842) (by [desagas](https://www.curseforge.com/members/desagas/projects))
 - [Shrink-1.16.5-1.1.6.jar](https://www.curseforge.com/minecraft/mc-mods/shrink_/files/3526532) (by [Gigabit101](https://www.curseforge.com/members/gigabit101/projects))
-- [simpledelights-1.2.jar](https://www.curseforge.com/minecraft/mc-mods/simple-delights/files/3491446) (by [JesterBlue](https://www.curseforge.com/members/jesterblue/projects))
 - [SimpleDiscordRichPresence-1.4.0-build.3+mc1.16.5.jar](https://www.curseforge.com/minecraft/mc-mods/simple-discord-rich-presence/files/3535218) (by [Sunekaer](https://www.curseforge.com/members/sunekaer/projects))
 - [simplylight-1.16.5-1.4.2-build.32.jar](https://www.curseforge.com/minecraft/mc-mods/simply-light/files/3741456) (by [Flanks255](https://www.curseforge.com/members/flanks255/projects))
 - [sophisticatedbackpacks-1.16.5-3.15.20.755.jar](https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks/files/4167327) (by [P3pp3rF1y](https://www.curseforge.com/members/p3pp3rf1y/projects))
