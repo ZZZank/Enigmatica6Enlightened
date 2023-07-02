@@ -321,13 +321,6 @@
 									"patchouli:book": "pedestals:manual"
 								}
 							}
-							transport: {
-								id: "patchouli:guide_book"
-								Count: 1.0d
-								tag: {
-									"patchouli:book": "transport:guide"
-								}
-							}
 							engineersdecor: {
 								id: "patchouli:guide_book"
 								Count: 1.0d
@@ -647,19 +640,6 @@
 									"patchouli:book": "pedestals:manual"
 									display: {
 										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Pedestals\"}]}"
-									}
-								}
-							}
-							transport: {
-								id: "patchouli:guide_book"
-								Count: 1
-								tag: {
-									"akashictome:displayName": {
-										text: "Advanced Transport"
-									}
-									"patchouli:book": "transport:guide"
-									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Advanced Transport\"}]}"
 									}
 								}
 							}

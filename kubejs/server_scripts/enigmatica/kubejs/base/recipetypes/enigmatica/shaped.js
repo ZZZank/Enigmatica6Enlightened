@@ -445,7 +445,6 @@ onEvent('recipes', (event) => {
                     astralsorcery: { id: 'astralsorcery:wand', Count: 1 },
                     pneumaticcraft: { id: 'pneumaticcraft:pneumatic_wrench', Count: 1 },
                     immersiveengineering: { id: 'immersiveengineering:hammer', Count: 1 },
-                    transport: { id: 'transport:rail_breaker', Count: 1 },
                     botania: { id: 'botania:twig_wand', Count: 1, tag: { color1: 0, color2: 0 } },
                     ars_nouveau: { id: 'ars_nouveau:dominion_wand', Count: 1 },
                     mekanism: { id: 'mekanism:configurator', Count: 1 },

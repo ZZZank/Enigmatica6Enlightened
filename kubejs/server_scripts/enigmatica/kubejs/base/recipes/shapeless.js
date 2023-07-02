@@ -330,17 +330,6 @@ onEvent('recipes', (event) => {
                             }
                         }
                     },
-                    transport: {
-                        id: 'patchouli:guide_book',
-                        Count: 1,
-                        tag: {
-                            'akashictome:displayName': { text: 'Advanced Transport' },
-                            'patchouli:book': 'transport:guide',
-                            display: {
-                                Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Advanced Transport"}]}'
-                            }
-                        }
-                    },
                     engineersdecor: {
                         id: 'patchouli:guide_book',
                         Count: 1,

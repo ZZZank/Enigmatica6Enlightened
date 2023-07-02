@@ -469,7 +469,6 @@ onEvent('recipes', (event) => {
                 'xnet:antenna_dish',
                 'xnet:antenna_base',
                 'xnet:antenna',
-                'transport:fluid_loader',
                 'resourcefulbees:centrifuge_casing',
                 'engineersdecor:metal_bar',
                 'integrateddynamics:drying_basin'
