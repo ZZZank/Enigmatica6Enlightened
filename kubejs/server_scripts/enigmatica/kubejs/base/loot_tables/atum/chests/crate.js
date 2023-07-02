@@ -272,21 +272,6 @@ onEvent('chest.loot_tables', (event) => {
                     count: [1, 6]
                 },
                 {
-                    item: 'simplefarming:jaffa_cake',
-                    weight: 100,
-                    count: [1, 6]
-                },
-                {
-                    item: 'simplefarming:cheese_block',
-                    weight: 100,
-                    count: 1
-                },
-                {
-                    item: 'simplefarming:curry_powder',
-                    weight: 100,
-                    count: [6, 12]
-                },
-                {
                     item: 'farmersdelight:cooked_bacon',
                     weight: 100,
                     count: [6, 12]
@@ -367,18 +352,8 @@ onEvent('chest.loot_tables', (event) => {
                     count: [8, 16]
                 },
                 {
-                    item: 'simplefarming:wine',
-                    weight: 100,
-                    count: [1, 4]
-                },
-                {
-                    item: 'simplefarming:beer',
-                    weight: 100,
-                    count: [1, 4]
-                },
-                {
-                    item: 'simplefarming:cauim',
-                    weight: 100,
+                    item: Item.of('minecraft:potion', '{CustomPotionEffects:[{Ambient:0b,CurativeItems:[],ShowIcon:1b,ShowParticles:1b,Duration:600,Id:-99b,Amplifier:0b}]}'),
+                    weight: 300,
                     count: [1, 4]
                 }
             ]

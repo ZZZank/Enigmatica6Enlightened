@@ -459,18 +459,6 @@ const cropRegistry = [
                 substrate: 'dirt'
             },
             {
-                seed: 'simplefarming:cotton_seeds',
-                render: 'simplefarming:cotton_crop',
-                plant: 'simplefarming:cotton',
-                substrate: 'dirt'
-            },
-            {
-                seed: 'simplefarming:kenaf_seeds',
-                render: 'simplefarming:kenaf_crop',
-                plant: 'simplefarming:kenaf_fiber',
-                substrate: 'dirt'
-            },
-            {
                 seed: 'betterendforge:end_lotus_seed',
                 render: 'betterendforge:end_lotus_flower',
                 plant: 'betterendforge:end_lotus_stem',
@@ -523,18 +511,6 @@ const cropRegistry = [
                 substrate: 'dirt'
             },
             {
-                seed: 'simplefarming:squash_seeds',
-                render: 'simplefarming:squash_crop',
-                plant: 'simplefarming:squash_block',
-                substrate: 'dirt'
-            },
-            {
-                seed: 'simplefarming:zucchini_seeds',
-                render: 'simplefarming:zucchini_crop',
-                plant: 'simplefarming:zucchini',
-                substrate: 'dirt'
-            },
-            {
                 seed: 'undergarden:gloomgourd_seeds',
                 render: 'undergarden:gloomgourd',
                 plant: 'undergarden:gloomgourd',
@@ -555,48 +531,6 @@ const cropRegistry = [
                 seed: 'minecraft:wheat_seeds',
                 render: 'minecraft:wheat',
                 plant: 'minecraft:wheat',
-                substrate: 'dirt'
-            },
-            {
-                seed: 'simplefarming:barley_seeds',
-                render: 'simplefarming:barley_crop',
-                plant: 'simplefarming:barley',
-                substrate: 'dirt'
-            },
-            {
-                seed: 'simplefarming:corn_seeds',
-                render: 'simplefarming:corn_crop',
-                plant: 'simplefarming:corn',
-                substrate: 'dirt'
-            },
-            {
-                seed: 'simplefarming:oat_seeds',
-                render: 'simplefarming:oat_crop',
-                plant: 'simplefarming:oat',
-                substrate: 'dirt'
-            },
-            {
-                seed: 'simplefarming:quinoa_seeds',
-                render: 'simplefarming:quinoa',
-                plant: 'simplefarming:quinoa_seeds',
-                substrate: 'dirt'
-            },
-            {
-                seed: 'simplefarming:rice_seeds',
-                render: 'simplefarming:rice_crop',
-                plant: 'simplefarming:rice',
-                substrate: 'dirt'
-            },
-            {
-                seed: 'simplefarming:rye_seeds',
-                render: 'simplefarming:rye_crop',
-                plant: 'simplefarming:rye',
-                substrate: 'dirt'
-            },
-            {
-                seed: 'simplefarming:sorghum_seeds',
-                render: 'simplefarming:sorghum_crop',
-                plant: 'simplefarming:sorghum',
                 substrate: 'dirt'
             },
             {
@@ -639,60 +573,12 @@ const cropRegistry = [
                 render: 'farmersdelight:cabbages',
                 plant: 'farmersdelight:cabbage',
                 substrate: 'dirt'
-            },
-            {
-                seed: 'simplefarming:lettuce_seeds',
-                render: 'simplefarming:lettuce_crop',
-                plant: 'simplefarming:lettuce',
-                substrate: 'dirt'
-            },
-            {
-                seed: 'simplefarming:spinach_seeds',
-                render: 'simplefarming:spinach_crop',
-                plant: 'simplefarming:spinach',
-                substrate: 'dirt'
             }
         ]
     },
     {
         type: 'crop_legume',
         crops: [
-            {
-                seed: 'simplefarming:broccoli_seeds',
-                render: 'simplefarming:broccoli_crop',
-                plant: 'simplefarming:broccoli',
-                substrate: 'dirt'
-            },
-            {
-                seed: 'simplefarming:cucumber_seeds',
-                render: 'simplefarming:cucumber_crop',
-                plant: 'simplefarming:cucumber',
-                substrate: 'dirt'
-            },
-            {
-                seed: 'simplefarming:eggplant_seeds',
-                render: 'simplefarming:eggplant_crop',
-                plant: 'simplefarming:eggplant',
-                substrate: 'dirt'
-            },
-            {
-                seed: 'simplefarming:pea_seeds',
-                render: 'simplefarming:pea_crop',
-                plant: 'simplefarming:pea_pod',
-                substrate: 'dirt'
-            },
-            {
-                seed: 'simplefarming:pepper_seeds',
-                render: 'simplefarming:pepper_crop',
-                plant: 'simplefarming:pepper',
-                substrate: 'dirt'
-            },
-            {
-                seed: 'simplefarming:soybean_seeds',
-                render: 'simplefarming:soybean_crop',
-                plant: 'simplefarming:soybean',
-                substrate: 'dirt'
-            },
             {
                 seed: 'sushigocrafting:cucumber_seeds',
                 render: 'sushigocrafting:cucumber_crop',
@@ -720,18 +606,6 @@ const cropRegistry = [
                 seed: 'minecraft:melon_seeds',
                 render: 'minecraft:melon',
                 plant: 'minecraft:melon',
-                substrate: 'dirt'
-            },
-            {
-                seed: 'simplefarming:cantaloupe_seeds',
-                render: 'simplefarming:cantaloupe_crop',
-                plant: 'simplefarming:cantaloupe_block',
-                substrate: 'dirt'
-            },
-            {
-                seed: 'simplefarming:honeydew_seeds',
-                render: 'simplefarming:honeydew_crop',
-                plant: 'simplefarming:honeydew_block',
                 substrate: 'dirt'
             }
         ]
@@ -766,60 +640,6 @@ const cropRegistry = [
                 substrate: 'dirt'
             },
             {
-                seed: 'simplefarming:cassava_seeds',
-                render: 'simplefarming:cassava_crop',
-                plant: 'simplefarming:cassava',
-                substrate: 'dirt'
-            },
-            {
-                seed: 'simplefarming:chicory_root',
-                render: 'simplefarming:chicory',
-                plant: 'simplefarming:chicory_root',
-                substrate: 'dirt'
-            },
-            {
-                seed: 'simplefarming:ginger_seeds',
-                render: 'simplefarming:ginger_crop',
-                plant: 'simplefarming:ginger',
-                substrate: 'dirt'
-            },
-            {
-                seed: 'simplefarming:marshmallow_root',
-                render: 'simplefarming:marshmallow',
-                plant: 'simplefarming:marshmallow_root',
-                substrate: 'dirt'
-            },
-            {
-                seed: 'simplefarming:onion_seeds',
-                render: 'simplefarming:onion_crop',
-                plant: 'simplefarming:onion',
-                substrate: 'dirt'
-            },
-            {
-                seed: 'simplefarming:radish_seeds',
-                render: 'simplefarming:radish_crop',
-                plant: 'simplefarming:radish',
-                substrate: 'dirt'
-            },
-            {
-                seed: 'simplefarming:sweet_potato_seeds',
-                render: 'simplefarming:sweet_potato_crop',
-                plant: 'simplefarming:sweet_potato',
-                substrate: 'dirt'
-            },
-            {
-                seed: 'simplefarming:turnip_seeds',
-                render: 'simplefarming:turnip_crop',
-                plant: 'simplefarming:turnip',
-                substrate: 'dirt'
-            },
-            {
-                seed: 'simplefarming:yam_seeds',
-                render: 'simplefarming:yam_crop',
-                plant: 'simplefarming:yam',
-                substrate: 'dirt'
-            },
-            {
                 seed: 'sushigocrafting:wasabi_seeds',
                 render: 'sushigocrafting:wasabi_crop',
                 plant: 'sushigocrafting:wasabi_root',
@@ -830,18 +650,6 @@ const cropRegistry = [
     {
         type: 'crop_seed',
         crops: [
-            {
-                seed: 'simplefarming:cumin_seeds',
-                render: 'simplefarming:cumin',
-                plant: 'simplefarming:cumin_seeds',
-                substrate: 'dirt'
-            },
-            {
-                seed: 'simplefarming:peanut_seeds',
-                render: 'simplefarming:peanut_crop',
-                plant: 'simplefarming:peanut',
-                substrate: 'dirt'
-            },
             {
                 seed: 'sushigocrafting:sesame_seeds',
                 render: 'sushigocrafting:sesame_crop',
@@ -857,12 +665,6 @@ const cropRegistry = [
                 seed: 'farmersdelight:tomato_seeds',
                 render: 'farmersdelight:tomatoes',
                 plant: 'farmersdelight:tomato',
-                substrate: 'dirt'
-            },
-            {
-                seed: 'simplefarming:tomato_seeds',
-                render: 'simplefarming:tomato_crop',
-                plant: 'simplefarming:tomato',
                 substrate: 'dirt'
             }
         ]

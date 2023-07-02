@@ -47,8 +47,6 @@ onEvent('recipes', (event) => {
 
         'powah:uraninite',
 
-        'simplefarming:raw_bacon',
-
         'storagedrawers:conversion_upgrade',
 
         'thermal:bamboo_block'
@@ -208,9 +206,6 @@ onEvent('recipes', (event) => {
         'resourcefulbees:t4_beehive_nests',
         'resourcefulbees:t1_apiary_beehive',
 
-        'simplefarming:apple_pie',
-        'simplefarming:blueberry_pie',
-
         'tconstruct:tools/modifiers/wither_bone_conversion',
         'tconstruct:tables/tinkers_anvil',
         'tconstruct:tables/scorched_anvil',
@@ -262,9 +257,6 @@ onEvent('recipes', (event) => {
 
         'quark:building/crafting/compressed/gunpowder_sack',
         'quark:building/crafting/compressed/charcoal_block_compress',
-
-        'simplefarming:candy',
-        'simplefarming:raw_chicken_wings',
 
         'supplementaries:strings_recipe',
 

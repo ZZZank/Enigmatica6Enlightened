@@ -81,46 +81,6 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}emmer_flour`
         },
         {
-            input: 'simplefarming:barley',
-            outputs: [
-                Item.of('create:wheat_flour'),
-                Item.of('create:wheat_flour', 2).withChance(0.25),
-                Item.of('simplefarming:barley_seeds').withChance(0.25)
-            ],
-            processingTime: 150,
-            id: `${id_prefix}wheat_flour_from_barley`
-        },
-        {
-            input: 'simplefarming:rice',
-            outputs: [
-                Item.of('create:wheat_flour'),
-                Item.of('create:wheat_flour', 2).withChance(0.25),
-                Item.of('simplefarming:rice_seeds').withChance(0.25)
-            ],
-            processingTime: 150,
-            id: `${id_prefix}wheat_flour_from_rice`
-        },
-        {
-            input: 'simplefarming:rye',
-            outputs: [
-                Item.of('create:wheat_flour'),
-                Item.of('create:wheat_flour', 2).withChance(0.25),
-                Item.of('simplefarming:rye_seeds').withChance(0.25)
-            ],
-            processingTime: 150,
-            id: `${id_prefix}wheat_flour_from_rye`
-        },
-        {
-            input: 'simplefarming:oat',
-            outputs: [
-                Item.of('create:wheat_flour'),
-                Item.of('create:wheat_flour', 2).withChance(0.25),
-                Item.of('simplefarming:oat_seeds').withChance(0.25)
-            ],
-            processingTime: 150,
-            id: `${id_prefix}wheat_flour_from_oat`
-        },
-        {
             input: '#forge:coal_petcoke',
             outputs: ['immersivepetroleum:petcoke_dust'],
             processingTime: 150,

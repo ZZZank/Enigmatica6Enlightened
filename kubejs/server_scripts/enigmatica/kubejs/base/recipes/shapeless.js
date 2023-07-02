@@ -4,46 +4,11 @@ onEvent('recipes', (event) => {
         { output: 'botania:enchanted_soil', inputs: ['minecraft:grass_block', 'botania:overgrowth_seed'] },
         { output: 'minecraft:sticky_piston', inputs: ['minecraft:piston', '#forge:slimeballs'] },
         { output: 'minecraft:flint', inputs: ['#forge:gravel', '#forge:gravel', '#forge:gravel'] },
-        { output: 'simplefarming:cornbread', inputs: ['#forge:grain', '#forge:crops/corn', '#forge:grain'] },
         { output: 'minecraft:chest', inputs: ['#forge:chests/wooden'] },
         { output: Item.of('powah:uraninite', 9), inputs: ['#forge:storage_blocks/uraninite'] },
         { output: Item.of('betterendforge:thallasium_nugget', 9), inputs: ['#forge:ingots/thallasium'] },
         { output: Item.of('betterendforge:terminite_nugget', 9), inputs: ['#forge:ingots/terminite'] },
         { output: Item.of('atum:nebu_drop', 9), inputs: ['#forge:ingots/nebu'] },
-        {
-            output: 'simplefarming:fish_sandwich',
-            inputs: [
-                '#forge:bread',
-                'aquaculture:fish_fillet_cooked',
-                'aquaculture:fish_fillet_cooked',
-                '#forge:crops/tomato',
-                '#forge:salad_ingredients'
-            ]
-        },
-        {
-            output: 'simplefarming:blt',
-            inputs: [
-                '#forge:bread',
-                '#forge:cooked_bacon',
-                '#forge:cooked_bacon',
-                '#forge:salad_ingredients',
-                '#forge:crops/tomato'
-            ],
-            id: 'simplefarming:blt'
-        },
-        {
-            output: 'simplefarming:sushi',
-            inputs: [
-                '#forge:grain',
-                'minecraft:dried_kelp',
-                'aquaculture:fish_fillet_raw',
-                'aquaculture:fish_fillet_raw'
-            ]
-        },
-        {
-            output: 'simplefarming:fish_fillet',
-            inputs: ['#forge:grain', '#forge:grain', 'aquaculture:fish_fillet_cooked', 'aquaculture:fish_fillet_cooked']
-        },
         {
             output: Item.of('farmersdelight:milk_bottle', 4),
             inputs: [
@@ -63,10 +28,6 @@ onEvent('recipes', (event) => {
                 'farmersdelight:milk_bottle',
                 'farmersdelight:milk_bottle'
             ]
-        },
-        {
-            output: Item.of('simplefarming:candy', 2),
-            inputs: ['#forge:chocolate_bars', 'minecraft:sugar', 'minecraft:sugar']
         },
         { output: 'minecraft:wheat_seeds', inputs: ['minecraft:wheat'] },
 
@@ -527,11 +488,6 @@ onEvent('recipes', (event) => {
             output: Item.of('eidolon:pewter_blend', 2),
             inputs: ['#forge:dusts/lead', '#forge:dusts/iron'],
             id: 'eidolon:pewter_blend'
-        },
-        {
-            output: Item.of('minecraft:string', 3),
-            inputs: ['#forge:crops/kenaf', '#forge:crops/kenaf', '#forge:crops/kenaf'],
-            id: 'simplefarming:string'
         },
         {
             output: Item.of('minecraft:string', 3),

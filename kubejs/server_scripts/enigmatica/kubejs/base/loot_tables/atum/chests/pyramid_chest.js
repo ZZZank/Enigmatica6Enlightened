@@ -335,18 +335,8 @@ onEvent('chest.loot_tables', (event) => {
                     count: [1, 4]
                 },
                 {
-                    item: 'simplefarming:wine',
-                    weight: 100,
-                    count: [1, 4]
-                },
-                {
-                    item: 'simplefarming:beer',
-                    weight: 100,
-                    count: [1, 4]
-                },
-                {
-                    item: 'simplefarming:cauim',
-                    weight: 100,
+                    item: Item.of('minecraft:potion', '{CustomPotionEffects:[{Ambient:0b,CurativeItems:[],ShowIcon:1b,ShowParticles:1b,Duration:600,Id:-99b,Amplifier:0b}]}'),
+                    weight: 300,
                     count: [1, 4]
                 },
                 {

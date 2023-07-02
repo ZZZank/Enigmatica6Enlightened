@@ -459,9 +459,9 @@ onEvent('recipes', (event) => {
                 'quark:gold_bars',
                 'quark:gold_bars',
                 'tconstruct:sky_cake',
-                'simplefarming:raw_chicken_wings',
+                'farmersdelight:chicken_cuts',
                 'naturesaura:token_anger',
-                'simplefarming:raw_chicken_wings'
+                'farmersdelight:chicken_cuts'
             ],
             result: 'occultism:jei_dummy/none',
             id: 'occultism:ritual/familiar_otherworld_bird'
@@ -610,10 +610,10 @@ onEvent('recipes', (event) => {
                 'quark:gold_bars',
                 'quark:gold_bars',
                 'quark:gold_bars',
-                'simplefarming:scarecrow',
+                'chipped:carved_pumpkin_7',
                 'sushigocrafting:cleaver_knife',
-                'simplefarming:cheese_block',
-                'simplefarming:cheese_block',
+                'materialis:fairy_ingot',
+                'materialis:fairy_ingot',
                 'minecraft:rotten_flesh',
                 'minecraft:rotten_flesh',
                 'minecraft:rotten_flesh',

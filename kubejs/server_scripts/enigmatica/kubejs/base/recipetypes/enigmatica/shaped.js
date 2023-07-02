@@ -231,16 +231,6 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}refinedstorageaddons/wireless_crafting_grid_from_wireless_grid`
         },
         {
-            output: 'simplefarming:fish_and_chips',
-            pattern: [' A ', 'BCB', ' A '],
-            key: {
-                A: '#forge:crops/potato',
-                B: '#forge:grain',
-                C: 'aquaculture:fish_fillet_cooked'
-            },
-            id: `${id_prefix}simplefarming/fish_and_chips`
-        },
-        {
             output: 'minecraft:tube_coral_block',
             pattern: ['AA', 'AA'],
             key: {

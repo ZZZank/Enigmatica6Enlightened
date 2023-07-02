@@ -131,7 +131,6 @@ onEvent('recipes', (event) => {
                     'minecraft:chicken',
                     'minecraft:porkchop',
                     'minecraft:rabbit',
-                    'simplefarming:raw_horse_meat',
                     'environmental:venison',
                     'environmental:duck'
                 ],

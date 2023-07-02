@@ -1,19 +1,8 @@
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/immersiveengineering/squeezer/';
 
-    const recipes = [
-        {
+    const recipes = [{
             inputs: [
-                'simplefarming:cantaloupe_seeds',
-                'simplefarming:cotton_seeds',
-                'simplefarming:cucumber_seeds',
-                'simplefarming:cumin_seeds',
-                'simplefarming:eggplant_seeds',
-                'simplefarming:ginger_seeds',
-                'simplefarming:honeydew_seeds',
-                'simplefarming:kenaf_seeds',
-                'simplefarming:lettuce_seeds',
-                'simplefarming:squash_seeds',
                 'supplementaries:flax_seeds',
                 'atum:flax_seeds',
                 'undergarden:gloomgourd_seeds',
@@ -29,12 +18,6 @@ onEvent('recipes', (event) => {
 
         {
             inputs: [
-                'simplefarming:broccoli_seeds',
-                'simplefarming:onion_seeds',
-                'simplefarming:pea_seeds',
-                'simplefarming:soybean_seeds',
-                'simplefarming:spinach_seeds',
-                'simplefarming:zucchini_seeds',
                 'betterendforge:glowing_pillar_seed',
                 'betterendforge:lumecorn_seed',
                 'betterendforge:lanceleaf_seed',
@@ -51,15 +34,6 @@ onEvent('recipes', (event) => {
 
         {
             inputs: [
-                'simplefarming:carrot_seeds',
-                'simplefarming:cassava_seeds',
-                'simplefarming:pepper_seeds',
-                'simplefarming:potato_seeds',
-                'simplefarming:radish_seeds',
-                'simplefarming:sweet_potato_seeds',
-                'simplefarming:tomato_seeds',
-                'simplefarming:turnip_seeds',
-                'simplefarming:yam_seeds',
                 'occultism:datura_seeds'
             ],
             value: 60
@@ -67,21 +41,12 @@ onEvent('recipes', (event) => {
 
         {
             inputs: [
-                'simplefarming:barley_seeds',
-                'simplefarming:corn_seeds',
-                'simplefarming:oat_seeds',
-                'simplefarming:peanut_seeds',
-                'simplefarming:quinoa_seeds',
-                'simplefarming:rice_seeds',
-                'simplefarming:rye_seeds',
-                'simplefarming:sorghum_seeds',
-                'simplefarming:sunflower_seeds',
                 'atum:emmer_seeds'
             ],
             value: 80
         },
 
-        { inputs: ['simplefarming:grape_seeds'], value: 120 }
+        // { inputs: ['simplefarming:grape_seeds'], value: 120 }
     ];
 
     recipes.forEach((input) => {

@@ -109,7 +109,6 @@ onEvent('recipes', (event) => {
             inputs: [
                 'naturesaura:birth_spirit',
                 'farmersdelight:cabbage_leaf',
-                'simplefarming:lettuce',
                 'minecraft:carrot'
             ],
             entity: 'minecraft:rabbit',

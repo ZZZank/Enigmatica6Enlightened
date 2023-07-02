@@ -404,10 +404,6 @@ function crops_immersiveengineering_cloche(event, type, crop) {
         renderType = 'stem';
     }
 
-    if (crop.plant == 'simplefarming:zucchini' || crop.plant == 'simplefarming:squash_block') {
-        renderType = 'crop';
-    }
-
     if (plantSecondary && crop.plantSecondaryRate != 'low') {
         //add any secondary
         outputs.push(Item.of(plantSecondary, secondaryCount));

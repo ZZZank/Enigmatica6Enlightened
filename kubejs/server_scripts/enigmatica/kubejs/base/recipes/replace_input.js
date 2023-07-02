@@ -84,7 +84,6 @@ onEvent('recipes', (event) => {
     event.replaceInput({}, 'ars_nouveau:mana_gem', '#forge:gems/mana');
     event.replaceInput({}, 'immersiveengineering:slag', '#forge:slag');
     event.replaceInput({}, 'thermal:slag', '#forge:slag');
-    event.replaceInput({}, 'simplefarming:cooked_egg', '#forge:cooked_eggs');
     event.replaceInput({}, 'farmersdelight:fried_egg', '#forge:cooked_eggs');
     event.replaceInput({}, 'farmersdelight:brown_mushroom_colony', '#forge:mushroom_colonies/brown');
     event.replaceInput({}, 'farmersdelight:red_mushroom_colony', '#forge:mushroom_colonies/red');
@@ -99,13 +98,7 @@ onEvent('recipes', (event) => {
     event.replaceInput({}, 'create:dough', '#forge:doughs');
     event.replaceInput({}, 'farmersdelight:wheat_dough', '#forge:doughs');
     event.replaceInput({}, 'create:bar_of_chocolate', '#forge:chocolate_bars');
-    event.replaceInput({}, 'simplefarming:chocolate', '#forge:chocolate_bars');
-    event.replaceInput({}, 'simplefarming:noodles', '#forge:pasta/raw_pasta');
-    event.replaceInput({}, 'simplefarming:jam', '#forge:jams');
-    event.replaceInput({}, 'simplefarming:raw_bacon', '#forge:raw_bacon');
-    event.replaceInput({}, 'simplefarming:cooked_bacon', '#forge:cooked_bacon');
     event.replaceInput({ mod: 'simplefarming' }, 'minecraft:cooked_chicken', '#forge:cooked_chicken');
-    event.replaceInput({ id: '/simplefarming:\\w+burger/' }, 'minecraft:cooked_beef', 'farmersdelight:beef_patty');
     event.replaceInput({}, 'tconstruct:cobalt_nugget', '#forge:nuggets/cobalt');
     event.replaceInput(
         {

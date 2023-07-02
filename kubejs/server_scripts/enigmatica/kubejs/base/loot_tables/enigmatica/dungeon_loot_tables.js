@@ -35,7 +35,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 { item: 'minecraft:ink_sac', weight: 100, amount: [8.0, 16.0] },
                 { item: 'archers_paradox:prismarine_arrow', weight: 25, amount: [32.0, 64.0] },
                 { item: 'farmersdelight:squid_ink_pasta', weight: 100, amount: [1.0, 3.0] },
-                { item: 'simplefarming:sushi', weight: 100, amount: [1.0, 3.0] },
+                { item: 'sushigocrafting:salmon_maki', weight: 100, amount: [1.0, 3.0] },
                 { item: 'minecraft:slime_ball', weight: 100, amount: [1.0, 3.0] },
                 { item: 'upgrade_aquatic:thrasher_tooth', weight: 100, amount: [1.0, 3.0] },
                 { item: 'alexsmobs:fish_oil', weight: 100, amount: [1.0, 3.0] }

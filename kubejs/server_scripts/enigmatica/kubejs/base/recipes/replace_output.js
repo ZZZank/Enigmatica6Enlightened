@@ -9,7 +9,6 @@ onEvent('recipes', (event) => {
         { type: {}, toReplace: 'thermal:sawdust', replaceWith: 'emendatusenigmatica:wood_dust' },
         { type: {}, toReplace: 'refinedstorage:silicon', replaceWith: '#forge:gems/silicon' },
         { type: {}, toReplace: 'create:dough', replaceWith: 'farmersdelight:wheat_dough' },
-        { type: {}, toReplace: 'simplefarming:chocolate', replaceWith: 'create:bar_of_chocolate' },
         { type: {}, toReplace: 'thermal:rubber', replaceWith: 'industrialforegoing:dryrubber' },
         { type: {}, toReplace: 'immersiveengineering:slag', replaceWith: 'thermal:slag' },
         {

@@ -759,28 +759,7 @@ const dyeSources = [
         tertiary: 'minecraft:gray_dye'
     },
     {
-        input: 'simplefarming:blackberries',
-        type: 'tiny',
-        primary: 'minecraft:black_dye',
-        secondary: 'minecraft:black_dye',
-        tertiary: 'minecraft:purple_dye'
-    },
-    {
-        input: 'simplefarming:blueberries',
-        type: 'tiny',
-        primary: 'minecraft:blue_dye',
-        secondary: 'minecraft:blue_dye',
-        tertiary: 'minecraft:purple_dye'
-    },
-    {
-        input: 'simplefarming:raspberries',
-        type: 'tiny',
-        primary: 'minecraft:red_dye',
-        secondary: 'minecraft:red_dye',
-        tertiary: 'minecraft:red_dye'
-    },
-    {
-        input: 'simplefarming:strawberries',
+        input: 'neapolitan:strawberries',
         type: 'tiny',
         primary: 'minecraft:red_dye',
         secondary: 'minecraft:red_dye',
