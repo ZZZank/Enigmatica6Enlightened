@@ -432,7 +432,8 @@ onEvent('recipes', (event) => {
                 'modularrouters:speed_upgrade',
                 'xnet:connector_blue',
                 'xnet:connector_red',
-                'xnet:connector_green'
+                'xnet:connector_green',
+                'farsight_spyglasses:spyglass'
             ]
         },
         {
