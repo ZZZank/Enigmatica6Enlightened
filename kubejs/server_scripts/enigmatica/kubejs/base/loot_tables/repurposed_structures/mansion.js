@@ -24,11 +24,6 @@ onEvent('generic.loot_tables', (event) => {
                     count: [2, 8]
                 },
                 {
-                    item: 'simpledelights:orange_chicken',
-                    weight: 50,
-                    count: [2, 8]
-                },
-                {
                     item: 'immersivecooking:pyttipanna',
                     weight: 50,
                     count: [2, 8]
@@ -83,16 +78,6 @@ onEvent('generic.loot_tables', (event) => {
                 },
                 {
                     item: 'simplefarming:vegetable_curry',
-                    weight: 50,
-                    count: [4, 16]
-                },
-                {
-                    item: 'simpledelights:mango_wings',
-                    weight: 50,
-                    count: [4, 16]
-                },
-                {
-                    item: 'simpledelights:plum_pudding',
                     weight: 50,
                     count: [4, 16]
                 },

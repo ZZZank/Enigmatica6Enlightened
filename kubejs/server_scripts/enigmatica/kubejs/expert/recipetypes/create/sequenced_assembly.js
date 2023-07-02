@@ -258,17 +258,17 @@ onEvent('recipes', (event) => {
                 },
                 {
                     type: 'deploying',
-                    input: ['kubejs:partial_engineering_student_meals', 'simplefarming:vegetable_curry'],
+                    input: ['kubejs:partial_engineering_student_meals', 'sushigocrafting:salmon_maki'],
                     output: 'kubejs:partial_engineering_student_meals'
                 },
                 {
                     type: 'deploying',
-                    input: ['kubejs:partial_engineering_student_meals', 'simpledelights:mango_wings'],
+                    input: ['kubejs:partial_engineering_student_meals', 'neapolitan:adzuki_cake'],
                     output: 'kubejs:partial_engineering_student_meals'
                 },
                 {
                     type: 'deploying',
-                    input: ['kubejs:partial_engineering_student_meals', 'simpledelights:plum_pudding'],
+                    input: ['kubejs:partial_engineering_student_meals', 'neapolitan:mint_milkshake'],
                     output: 'kubejs:partial_engineering_student_meals'
                 },
                 {
@@ -540,12 +540,12 @@ onEvent('recipes', (event) => {
                 },
                 {
                     type: 'deploying',
-                    input: ['kubejs:partial_box_of_thankful_dinners', 'simpledelights:summer_salad'],
+                    input: ['kubejs:partial_box_of_thankful_dinners', 'neapolitan:adzuki_curry'],
                     output: 'kubejs:partial_box_of_thankful_dinners'
                 },
                 {
                     type: 'deploying',
-                    input: ['kubejs:partial_box_of_thankful_dinners', 'simpledelights:sweet_potato_casserole'],
+                    input: ['kubejs:partial_box_of_thankful_dinners', 'create:honeyed_apple'],
                     output: 'kubejs:partial_box_of_thankful_dinners'
                 },
                 {
