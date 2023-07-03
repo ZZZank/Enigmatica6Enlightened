@@ -27,6 +27,16 @@ onEvent('recipes', (event) => {
             id: 'rftoolsutility:screen_controller'
         },
         {
+            output: 'rftoolsutility:screen',
+            pattern: ['AAA', 'ABA', 'CCC'],
+            key: {
+                A: '#forge:glass/black',
+                B: 'rftoolsbase:machine_base',
+                C: 'immersiveengineering:slab_sheetmetal_aluminum'
+            },
+            id: 'rftoolsutility:screen_controller'
+        },
+        {
             output: 'rftoolsutility:module_template',
             pattern: ['ABA', 'BCB', 'ABA'],
             key: {

@@ -1171,41 +1171,6 @@ onEvent('recipes', (event) => {
             ritual_type: 'occultism:craft_with_spirit_name',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             pentacle_id: 'occultism:craft_djinni',
-            duration: 120,
-            ritual_dummy: 'kubejs:craft_turtle_normal',
-            ingredients: [
-                'aquaculture:box_turtle',
-                'computercraft:computer_normal',
-                'create:deployer',
-                'minecraft:furnace',
-                'mekanism:jetpack',
-                'pneumaticcraft:reinforced_chest'
-            ],
-            result: 'computercraft:turtle_normal',
-            id: `${id_prefix}turtle_normal`
-        },
-        {
-            ritual_type: 'occultism:craft_with_spirit_name',
-            activation_item: 'occultism:book_of_binding_bound_djinni',
-            pentacle_id: 'occultism:craft_djinni',
-            duration: 120,
-            ritual_dummy: 'kubejs:craft_turtle_advanced',
-            ingredients: [
-                'aquaculture:box_turtle',
-                'computercraft:computer_advanced',
-                'create:deployer',
-                'minecraft:blast_furnace',
-                'mekanism:jetpack',
-                Item.of('mekanism:jetpack', '{HideFlags:2}').weakNBT(),
-                'pneumaticcraft:reinforced_chest'
-            ],
-            result: 'computercraft:turtle_advanced',
-            id: `${id_prefix}turtle_advanced`
-        },
-        {
-            ritual_type: 'occultism:craft_with_spirit_name',
-            activation_item: 'occultism:book_of_binding_bound_djinni',
-            pentacle_id: 'occultism:craft_djinni',
             duration: 100,
             ritual_dummy: 'kubejs:craft_ender_dagger',
             ingredients: [

@@ -2573,38 +2573,6 @@
 			}]
 		}
 		{
-			title: "Computer Craft: Tweaked"
-			icon: "computercraft:computer_advanced"
-			x: -0.5d
-			y: 2.5d
-			subtitle: "A Computer within a Game within a Computer"
-			description: [
-				"Use the LUA programming language to interact with the world."
-				""
-				""
-				"When you claim this reward, a link will be posted in chat to a video playlist for a basic tutorial on CC. While for an old version, it should still be relevant."
-				"Unfortunately repeatable quests aren't yet implemented so the command will only run once, so be sure to save the link somewhere!"
-			]
-			dependencies: [
-				"30AA6A8DF0B65273"
-				"3468E652B4FE85FA"
-			]
-			optional: true
-			id: "77F743435F64DFEC"
-			tasks: [{
-				id: "4B7B9611F1294D2B"
-				type: "checkmark"
-			}]
-			rewards: [{
-				id: "20E531EBA4E9DA87"
-				type: "command"
-				title: "CC Tutorial Link"
-				icon: "pneumaticcraft:tag_filter"
-				command: "/tellraw @p {\"text\":\"CC Tutorial Link\",\"bold\":true,\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://youtube.com/playlist?list=PLaiPn4ewcbkHYflo2jl0OuNaHK6Mj-koG\"}}"
-				player_command: false
-			}]
-		}
-		{
 			x: -1.0d
 			y: -5.5d
 			description: [

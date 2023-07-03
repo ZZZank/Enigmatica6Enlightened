@@ -458,7 +458,7 @@ onEvent('recipes', (event) => {
             inputs: [
                 { item: 'pneumaticcraft:printed_circuit_board', count: 3 },
                 { item: 'prettypipes:pipe', count: 5 },
-                { item: 'computercraft:monitor_normal', count: 1 },
+                { item: 'rftoolsutility:screen', count: 1 },
                 { item: 'pneumaticcraft:reinforced_stone_slab', count: 3 },
                 { item: 'pneumaticcraft:pneumatic_dynamo', count: 1 },
                 { item: 'mekanism:cardboard_box', count: 1 }
