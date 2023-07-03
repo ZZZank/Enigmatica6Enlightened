@@ -32,7 +32,7 @@ onEvent('recipes', (event) => {
                 D: 'integrateddynamics:menril_berries',
                 E: 'botania:yellow_mushroom'
             },
-            id: 'byg:nightshade_berry_pie_alt'
+            id: 'enigmatica:nightshade_berry_pie_alt'
         },
         {
             output: 'byg:crimson_berry_pie',

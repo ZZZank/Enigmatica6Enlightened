@@ -133,9 +133,9 @@ onEvent('recipes', (event) => {
             output: 'appliedenergistics2:quartz_block',
             patterns: ['AA ', 'AA ', '   '],
             inputs: {
-                A: 'astralsorcery:aquamarine',
+                A: '#forge:gems/aquamarine'
             },
-            id: `${id_prefix}certus_quartz_block`
+            id: `'appliedenergistics2:decorative/certus_quartz_block'`
         }
     ];
     recipes.forEach((recipe) => {

@@ -34,7 +34,7 @@ onEvent('recipes', (event) => {
                 B: 'rftoolsbase:machine_base',
                 C: 'immersiveengineering:slab_sheetmetal_aluminum'
             },
-            id: 'rftoolsutility:screen_controller'
+            id: 'rftoolsutility:screen'
         },
         {
             output: 'rftoolsutility:module_template',

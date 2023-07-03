@@ -17,8 +17,7 @@ onEvent('recipes', (event) => {
         'appliedenergistics2:network/blocks/controller',
         'appliedenergistics2:network/wireless_access_point',
         'appliedenergistics2:decorative/fluix_block_pure',
-        'appliedenergistics2:decorative/certus_quartz_block_pure',
-        'appliedenergistics2:decorative/certus_quartz_block'
+        'appliedenergistics2:decorative/certus_quartz_block_pure'
     ];
     recipeIDs.forEach((recipesID) => {
         event.remove({ id: recipesID });
