@@ -923,9 +923,9 @@ onEvent('recipes', (event) => {
                 'mekanism:ultimate_induction_provider',
                 '#forge:circuits/ultimate',
                 '#forge:circuits/ultimate',
-                'ironjetpacks:nitro_thruster',
+                'pneumaticcraft:jet_boots_upgrade_5',
                 '#forge:pellets/antimatter',
-                'ironjetpacks:nitro_thruster'
+                'powah:energy_discharger_nitro'
             ],
             inputFluid: 'industrialforegoing:ether_gas',
             inputFluidAmount: 16000,
