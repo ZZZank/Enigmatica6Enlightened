@@ -192,6 +192,8 @@ onEvent('recipes', (event) => {
         'morevanillalib:obsidian_shard',
         'morevanillalib:obsidian',
 
+        'neapolitan:chocolate/chocolate_bar',
+
         'pedestals:pedestal_cobblegen/blackstone',
 
         'quark:building/crafting/tallow_from_block',
