@@ -1,30 +1,31 @@
 onEvent('recipes', (event) => {
     const recipes = [
-        { type: {}, toReplace: 'thermal:cinnabar', replaceWith: '#forge:gems/cinnabar' },
-        { type: {}, toReplace: 'thermal:sulfur', replaceWith: '#forge:gems/sulfur' },
-        { type: {}, toReplace: 'thermal:apatite', replaceWith: '#forge:gems/apatite' },
-        { type: {}, toReplace: 'thermal:niter', replaceWith: '#forge:gems/niter' },
-        { type: {}, toReplace: 'thermal:bitumen', replaceWith: '#forge:gems/bitumen' },
-        { type: {}, toReplace: 'thermal:coal_coke', replaceWith: '#forge:gems/coal_coke' },
-        { type: {}, toReplace: 'thermal:sawdust', replaceWith: 'emendatusenigmatica:wood_dust' },
-        { type: {}, toReplace: 'appliedenergistics2:silicon', replaceWith: '#forge:gems/silicon' },
-        { type: {}, toReplace: 'create:dough', replaceWith: 'farmersdelight:wheat_dough' },
-        { type: {}, toReplace: 'thermal:rubber', replaceWith: 'industrialforegoing:dryrubber' },
-        { type: {}, toReplace: 'immersiveengineering:slag', replaceWith: 'thermal:slag' },
+        { filter: {}, toReplace: 'thermal:cinnabar', replaceWith: '#forge:gems/cinnabar' },
+        { filter: {}, toReplace: 'thermal:sulfur', replaceWith: '#forge:gems/sulfur' },
+        { filter: {}, toReplace: 'thermal:apatite', replaceWith: '#forge:gems/apatite' },
+        { filter: {}, toReplace: 'thermal:niter', replaceWith: '#forge:gems/niter' },
+        { filter: {}, toReplace: 'thermal:bitumen', replaceWith: '#forge:gems/bitumen' },
+        { filter: {}, toReplace: 'thermal:coal_coke', replaceWith: '#forge:gems/coal_coke' },
+        { filter: {}, toReplace: 'thermal:sawdust', replaceWith: 'emendatusenigmatica:wood_dust' },
+        { filter: {}, toReplace: 'appliedenergistics2:silicon', replaceWith: '#forge:gems/silicon' },
+        { filter: {}, toReplace: 'create:dough', replaceWith: 'farmersdelight:wheat_dough' },
+        { filter: {}, toReplace: 'thermal:rubber', replaceWith: 'industrialforegoing:dryrubber' },
+        { filter: {}, toReplace: 'immersiveengineering:slag', replaceWith: 'thermal:slag' },
         {
-            type: { mod: 'dustrial_decor' },
+            filter: { mod: 'dustrial_decor' },
             toReplace: 'minecraft:iron_ingot',
             replaceWith: 'dustrial_decor:rusty_iron_ingot'
         },
         {
-            type: { mod: 'dustrial_decor' },
+            filter: { mod: 'dustrial_decor' },
             toReplace: 'minecraft:iron_nugget',
             replaceWith: 'dustrial_decor:rusty_iron_nugget'
-        }
+        },
+        { filter: {}, toReplace: 'create:bar_of_chocolate', replaceWith: 'neapolitan:chocolate_bar' },
     ];
 
     recipes.forEach((recipe) => {
-        event.replaceOutput(recipe.type, recipe.toReplace, recipe.replaceWith);
+        event.replaceOutput(recipe.filter, recipe.toReplace, recipe.replaceWith);
     });
     sharedDies.forEach((die) => {
         event.replaceOutput(

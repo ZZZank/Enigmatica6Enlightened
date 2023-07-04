@@ -97,6 +97,7 @@ onEvent('recipes', (event) => {
     event.replaceInput({}, 'create:dough', '#forge:doughs');
     event.replaceInput({}, 'farmersdelight:wheat_dough', '#forge:doughs');
     event.replaceInput({}, 'create:bar_of_chocolate', '#forge:chocolate_bars');
+    event.replaceInput({}, 'neapolitan:chocolate_bar', '#forge:chocolate_bars');
     event.replaceInput({ mod: 'simplefarming' }, 'minecraft:cooked_chicken', '#forge:cooked_chicken');
     event.replaceInput({}, 'tconstruct:cobalt_nugget', '#forge:nuggets/cobalt');
     event.replaceInput(
