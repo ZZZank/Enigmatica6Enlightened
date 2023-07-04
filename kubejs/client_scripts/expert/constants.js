@@ -27,22 +27,11 @@ const itemsToHideAE = [
     'appliedenergistics2:crank',
     'appliedenergistics2:grindstone',
 
-    'appliedenergistics2:printed_calculation_processor',
-    'appliedenergistics2:printed_engineering_processor',
-    'appliedenergistics2:printed_logic_processor',
     'appliedenergistics2:printed_silicon',
-    'appliedenergistics2:logic_processor',
-    'appliedenergistics2:calculation_processor',
-    'appliedenergistics2:engineering_processor',
     'appliedenergistics2:silicon',
 
     'appliedenergistics2:calculation_processor_press',
     'appliedenergistics2:engineering_processor_press',
     'appliedenergistics2:logic_processor_press',
     'appliedenergistics2:silicon_press',
-
-    'appliedenergistics2:1k_cell_component',
-    'appliedenergistics2:4k_cell_component',
-    'appliedenergistics2:1k_fluid_cell_component',
-    'appliedenergistics2:4k_fluid_cell_component'
 ];
