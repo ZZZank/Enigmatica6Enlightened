@@ -431,7 +431,7 @@ onEvent('recipes', (event) => {
                     thermal: { id: 'thermal:wrench', Count: 1 },
                     rftoolsbase: { id: 'rftoolsbase:smartwrench', Count: 1 },
                     create: { id: 'create:wrench', Count: 1 },
-                    refinedstorage: { id: 'refinedstorage:wrench', Count: 1 },
+                    appliedenergistics2: { id: 'appliedenergistics2:certus_quartz_wrench', Count: 1 },
                     prettypipes: { id: 'prettypipes:wrench', Count: 1 },
                     storagedrawers: { id: 'storagedrawers:drawer_key', Count: 1 },
                     fluxnetworks: { id: 'fluxnetworks:flux_configurator', Count: 1 },

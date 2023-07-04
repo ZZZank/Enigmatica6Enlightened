@@ -294,7 +294,7 @@ const itemsToHide = [
     'quark:biotite_ore',
     'quark:tallow',
 
-    'refinedstorage:silicon',
+    'appliedenergistics2:silicon',
 
     'shrink:shrink_ray',
 

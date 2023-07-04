@@ -173,7 +173,7 @@ onEvent('item.tooltip', (event) => {
             text: [Text.of(`...It caught on in a flash...`).red()]
         },
         {
-            items: ['refinedstorage:silk_touch_upgrade'],
+            items: ['appliedenergistics2:identity_annihilation_plane'],
             text: [Text.of('Does not work on spawners.').red()]
         },
         {
@@ -185,13 +185,6 @@ onEvent('item.tooltip', (event) => {
             text: [Text.of('Fireproof').gold()]
         }
     ];
-
-    refinedStorageItems.forEach((item) => {
-        recipes.push({
-            items: [`refinedstorage:${item}`],
-            text: ['Can be dyed through crafting or by right clicking it with dye in-world.']
-        });
-    });
 
     recipes.forEach((recipe) => {
         event.add(recipe.items, recipe.text);

@@ -292,7 +292,7 @@
 			tasks: [{
 				id: "42384EBFD1848ACD"
 				type: "item"
-				item: "refinedstorage:basic_processor"
+				item: "appliedenergistics2:calculation_processor"
 			}]
 		}
 		{
@@ -311,7 +311,7 @@
 			tasks: [{
 				id: "39703E840E7CE98F"
 				type: "item"
-				item: "refinedstorage:controller"
+				item: "appliedenergistics2:controller"
 			}]
 		}
 		{
@@ -324,7 +324,7 @@
 			tasks: [{
 				id: "51C37065B81DA404"
 				type: "item"
-				item: "refinedstorage:advanced_processor"
+				item: "appliedenergistics2:engineering_processor"
 			}]
 		}
 		{

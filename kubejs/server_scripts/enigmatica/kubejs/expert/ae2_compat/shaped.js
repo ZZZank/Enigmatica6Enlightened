@@ -122,13 +122,26 @@ onEvent('recipes', (event) => {
         },
         {
             output: '8x appliedenergistics2:fluix_glass_cable',
-            patterns: ['CCC', 'CSC', 'CCC'],
+            patterns: ['ADA', 'BCB', 'ADA'],
             inputs: {
-                C: 'refinedstorage:cable',
-                S: 'appliedenergistics2:sky_dust'
+                A: 'occultism:spirit_attuned_gem',
+                B: 'immersiveengineering:connector_bundled',
+                C: 'immersiveengineering:wirecoil_redstone',
+                D: 'prettypipes:pipe'
             },
             id: 'appliedenergistics2:network/cables/glass_fluix'
-        },,
+        },
+        {
+            output: '8x appliedenergistics2:fluix_glass_cable',
+            patterns: ['DBD', 'ACA', 'DBD'],
+            inputs: {
+                A: 'occultism:spirit_attuned_gem',
+                B: 'immersiveengineering:connector_bundled',
+                C: 'immersiveengineering:wirecoil_redstone',
+                D: 'integrateddynamics:cable'
+            },
+            id: `${id_prefix}fluix_cable_alt`
+        },
         {
             output: 'appliedenergistics2:quartz_block',
             patterns: ['AA ', 'AA ', '   '],

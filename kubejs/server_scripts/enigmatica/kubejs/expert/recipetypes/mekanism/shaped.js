@@ -857,7 +857,7 @@ onEvent('recipes', (event) => {
             pattern: [' A ', 'BCB', 'DED'],
             key: {
                 A: 'rftoolsbase:tablet',
-                B: 'refinedstorage:security_card',
+                B: 'appliedenergistics2:security_station',
                 C: '#industrialforegoing:machine_frame/simple',
                 D: '#forge:circuits/advanced',
                 E: 'rftoolspower:cell1'

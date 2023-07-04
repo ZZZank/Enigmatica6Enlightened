@@ -35,7 +35,7 @@
         "mainOutputWeight": 0.6,
         "mainOutputCount": 4,
 
-        "secondaryOutput": "refinedstorage:processor_binding",
+        "secondaryOutput": "tconstruct:sky_slime_crystal",
         "secondaryOutputWeight": 0.02,
         "secondaryOutputCount": 1,
 

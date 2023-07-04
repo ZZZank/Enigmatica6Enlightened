@@ -28,7 +28,6 @@ const itemsToHideAE = [
     'appliedenergistics2:grindstone',
 
     'appliedenergistics2:printed_silicon',
-    'appliedenergistics2:silicon',
 
     'appliedenergistics2:calculation_processor_press',
     'appliedenergistics2:engineering_processor_press',

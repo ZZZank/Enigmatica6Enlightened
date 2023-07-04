@@ -598,10 +598,6 @@ onEvent('jei.information', (event) => {
         );
     });
 
-    refinedStorageItems.forEach((item) => {
-        event.add(`refinedstorage:${item}`, 'Can be dyed through crafting or by right clicking it with dye in-world.');
-    });
-
     generatableCobblestone.forEach((cobblestone) => {
         event.add(
             cobblestone,

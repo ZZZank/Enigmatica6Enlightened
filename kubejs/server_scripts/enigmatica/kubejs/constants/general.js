@@ -17,7 +17,7 @@ const modPriorities = [
     'botania',
     'quark',
     'pedestals',
-    'refinedstorage',
+    'appliedenergistics2',
     'mapperbase',
     'bloodmagic',
     'eidolon',

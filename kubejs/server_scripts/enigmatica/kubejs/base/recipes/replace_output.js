@@ -7,7 +7,7 @@ onEvent('recipes', (event) => {
         { type: {}, toReplace: 'thermal:bitumen', replaceWith: '#forge:gems/bitumen' },
         { type: {}, toReplace: 'thermal:coal_coke', replaceWith: '#forge:gems/coal_coke' },
         { type: {}, toReplace: 'thermal:sawdust', replaceWith: 'emendatusenigmatica:wood_dust' },
-        { type: {}, toReplace: 'refinedstorage:silicon', replaceWith: '#forge:gems/silicon' },
+        { type: {}, toReplace: 'appliedenergistics2:silicon', replaceWith: '#forge:gems/silicon' },
         { type: {}, toReplace: 'create:dough', replaceWith: 'farmersdelight:wheat_dough' },
         { type: {}, toReplace: 'thermal:rubber', replaceWith: 'industrialforegoing:dryrubber' },
         { type: {}, toReplace: 'immersiveengineering:slag', replaceWith: 'thermal:slag' },

@@ -35,8 +35,4 @@ onEvent('jei.hide.items', (event) => {
             event.hide(disabledItem);
         }
     });
-
-    colors.forEach((color) => {
-        event.hide('/refinedstorage:' + color + '\\w/');
-    });
 });

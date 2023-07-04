@@ -39,7 +39,7 @@
         "mainOutputWeight": 0.6,
         "mainOutputCount": 4,
 
-        "secondaryOutput": "refinedstorage:processor_binding",
+        "secondaryOutput": "tconstruct:earth_slime_crystal",
         "secondaryOutputWeight": 0.05,
         "secondaryOutputCount": 1,
 

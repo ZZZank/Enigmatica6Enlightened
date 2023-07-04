@@ -12,10 +12,10 @@ onEvent('item.tags', (event) => {
             .add(/qio_drive/)
             .add(/mekanism:\w+_bin/)
             .add(/framedcompactdrawers:framed/)
-            .add(/refinedstorage:\w+storage/)
-            .add('#refinedstorage:parts/items')
-            .add('#refinedstorage:disks/items')
-            .add('#refinedstorage:storage_blocks/items')
-            .add(/dank_/);
+            .add(/appliedenergistics2:\w+storage_cell/)
+            // .add('#refinedstorage:parts/items')
+            // .add('#refinedstorage:disks/items')
+            // .add('#refinedstorage:storage_blocks/items')
+            // .add(/dank_/);
     });
 });

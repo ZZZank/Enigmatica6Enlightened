@@ -50,17 +50,17 @@ onEvent('recipes', (event) => {
             id: 'astralsorcery:observatory'
         },
         {
-            output: 'refinedstorage:controller',
+            output: 'appliedenergistics2:controller',
             pattern: ['ACACA', 'CDBDC', 'AFEFA', 'CDBDC', 'ACACA'],
             key: {
                 A: 'appliedenergistics2:engineering_processor',
                 B: '#forge:ingots/slimesteel',
                 C: 'xnet:netcable_blue',
                 D: 'refinedstorage:quartz_enriched_iron',
-                E: 'refinedstorage:machine_casing',
+                E: 'create:schematic_and_quill',
                 F: 'immersiveengineering:logic_unit'
             },
-            id: 'refinedstorage:controller'
+            id: 'appliedenergistics2:network/blocks/controller'
         },
         {
             output: Item.of('create:crushing_wheel', 2),
