@@ -9,7 +9,7 @@ occultism = true
 jei = true
 extendedcrafting = true
 fastbenchminusreplacement = false
-refinedstorageaddons = true
+refinedstorageaddons = false
 craftingcraft = false
 toms_storage = false
 refinedstorage = true
@@ -17,5 +17,5 @@ prettypipes = true
 fastsuite = true
 fastbench = true
 cyclic = false
-appliedenergistics2 = false
+appliedenergistics2 = true
 

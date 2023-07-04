@@ -376,7 +376,7 @@
 			y: 6.5d
 			subtitle: "It even has a keybind!"
 			description: [
-				"Wireless Grids are exactly what they sound like: handheld grid access in item form. These are exactly as great as they sound, and they come in all the normal types; for now, make a Wireless Crafting Grid."
+				"TODO: Wireless Grids are exactly what they sound like: handheld grid access in item form. These are exactly as great as they sound, and they come in all the normal types; for now, make a Wireless Crafting Grid."
 				""
 				"These items must be charged, and they only work when near a Wireless Transmitter. These transmitters have a base range of 16 blocks."
 			]

@@ -220,17 +220,6 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}minecraft/hopper`
         },
         {
-            output: 'refinedstorageaddons:wireless_crafting_grid',
-            pattern: ['ABA', 'ACA', 'ADA'],
-            key: {
-                A: 'refinedstorage:quartz_enriched_iron',
-                B: 'refinedstorage:range_upgrade',
-                C: 'refinedstorage:wireless_grid',
-                D: 'minecraft:crafting_table'
-            },
-            id: `${id_prefix}refinedstorageaddons/wireless_crafting_grid_from_wireless_grid`
-        },
-        {
             output: 'minecraft:tube_coral_block',
             pattern: ['AA', 'AA'],
             key: {
