@@ -798,7 +798,7 @@
 			x: -2.5d
 			y: 9.5d
 			subtitle: "You Want How Many?"
-			description: ["An Interface with a Crafting card is pretty good at keeping a small amount of several items in stock, but what if we need to go bigger? Well, now we can. The Requester is an addon block that allows Refined Storage to keep an internal stock of a given item at all times. Want 5000 glass ready and waiting for you? Set up a Requester to do just that. "]
+			description: ["TODO: An Interface with a Crafting card is pretty good at keeping a small amount of several items in stock, but what if we need to go bigger? Well, now we can. The Requester is an addon block that allows Refined Storage to keep an internal stock of a given item at all times. Want 5000 glass ready and waiting for you? Set up a Requester to do just that. "]
 			dependencies: ["0000000000000298"]
 			id: "5DA4C492523C7D72"
 			tasks: [{
