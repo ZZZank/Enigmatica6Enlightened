@@ -109,7 +109,7 @@ onEvent('recipes', (event) => {
             id: 'appliedenergistics2:network/crafting/molecular_assembler'
         },
         {
-            output: '2x appliedenergistics2:quantum_link',
+            output: Item.of('appliedenergistics2:quantum_ring', 16),
             patterns: ['ETE', 'ACA', 'ERE'],
             inputs: {
                 T: 'rftoolsutility:matter_transmitter',
@@ -118,10 +118,10 @@ onEvent('recipes', (event) => {
                 A: 'betterendforge:aeternium_ingot',
                 E: '#forge:gears/enderium'
             },
-            id: 'appliedenergistics2:network/blocks/quantum_link'
+            id: 'appliedenergistics2:network/blocks/quantum_ring'
         },
         {
-            output: '8x appliedenergistics2:fluix_glass_cable',
+            output: Item.of('appliedenergistics2:fluix_glass_cable', 8),
             patterns: ['ADA', 'BCB', 'ADA'],
             inputs: {
                 A: 'occultism:spirit_attuned_gem',
@@ -132,7 +132,7 @@ onEvent('recipes', (event) => {
             id: 'appliedenergistics2:network/cables/glass_fluix'
         },
         {
-            output: '8x appliedenergistics2:fluix_glass_cable',
+            output: Item.of('appliedenergistics2:fluix_glass_cable', 8),
             patterns: ['DBD', 'ACA', 'DBD'],
             inputs: {
                 A: 'occultism:spirit_attuned_gem',
@@ -148,10 +148,10 @@ onEvent('recipes', (event) => {
             inputs: {
                 A: '#forge:gems/aquamarine'
             },
-            id: `'appliedenergistics2:decorative/certus_quartz_block'`
+            id: 'appliedenergistics2:decorative/certus_quartz_block'
         }
     ];
     recipes.forEach((recipe) => {
-        event.shaped(recipe.output, recipe.patterns, recipe.inputs).id(id_prefix + recipe.output);
+        event.shaped(recipe.output, recipe.patterns, recipe.inputs).id(recipe.id);
     });
 });
