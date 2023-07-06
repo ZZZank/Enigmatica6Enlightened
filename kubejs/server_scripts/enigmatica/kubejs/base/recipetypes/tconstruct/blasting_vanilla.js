@@ -12,7 +12,7 @@ onEvent('recipes', (event) => {
     colors.forEach((color) => {
         event
             .blasting(`tconstruct:${color}_clear_stained_glass`, `minecraft:${color}_stained_glass`)
-            .id(`${id_prefix}${color}_glass_to_clear_glass`)
+            .id(`${id_prefix}glass_to_clear_glass_${color}`)
             .xp(0.1);
     });
 
