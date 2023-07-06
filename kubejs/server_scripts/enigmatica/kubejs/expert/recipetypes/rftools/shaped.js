@@ -257,7 +257,7 @@ onEvent('recipes', (event) => {
             output: 'rftoolscontrol:network_card',
             pattern: ['ABC', 'DDD'],
             key: {
-                A: 'refinedstorage:wireless_transmitter',
+                A: 'appliedenergistics2:wireless_access_point',
                 B: 'pneumaticcraft:printed_circuit_board',
                 C: 'appliedenergistics2:engineering_processor',
                 D: '#forge:nuggets/copper'
@@ -276,7 +276,7 @@ onEvent('recipes', (event) => {
             output: 'rftoolscontrol:advanced_network_card',
             pattern: ['ABC'],
             key: {
-                A: 'refinedstorage:range_upgrade',
+                A: 'appliedenergistics2:wireless_booster',
                 B: 'rftoolscontrol:network_card',
                 C: 'extrastorage:neural_processor'
             },

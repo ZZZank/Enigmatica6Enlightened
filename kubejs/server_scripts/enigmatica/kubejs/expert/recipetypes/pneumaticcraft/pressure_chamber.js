@@ -38,17 +38,6 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                { tag: 'forge:ingots/pewter', count: 4 },
-                { item: 'refinedstorage:quartz_enriched_iron', count: 4 },
-                { item: 'tconstruct:seared_brick', count: 4 },
-                { item: 'thermal:machine_frame', count: 1 }
-            ],
-            pressure: 2.5,
-            results: [{ item: 'refinedstorage:machine_casing', count: 2 }],
-            id: 'refinedstorage:machine_casing'
-        },
-        {
-            inputs: [
                 { item: 'powah:blank_card', count: 1 },
                 { tag: 'mekanism:enriched/redstone', count: 1 },
                 { item: 'powah:ender_core', count: 1 }
@@ -70,7 +59,7 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 { tag: 'forge:wires/electrum', count: 1 },
-                { item: 'refinedstorage:raw_basic_processor', count: 2 },
+                { item: 'appliedenergistics2:printed_calculation_processor', count: 2 },
                 { item: 'powah:dielectric_paste', count: 1 },
                 { tag: 'pneumaticcraft:plastic_sheets', count: 1 }
             ],
