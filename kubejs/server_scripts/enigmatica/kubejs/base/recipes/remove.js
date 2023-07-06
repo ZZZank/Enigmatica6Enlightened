@@ -24,6 +24,10 @@ onEvent('recipes', (event) => {
     event.remove({ type: 'thermal:compression_fuel' });
 
     var outputRemovals = [
+        'appliedenergistics2:flour',
+        'appliedenergistics2:gold_dust',
+        'appliedenergistics2:iron_dust',
+
         'byg:blue_enchanted_crafting_table',
         'byg:green_enchanted_crafting_table',
         'byg:mud_block',
@@ -100,6 +104,8 @@ onEvent('recipes', (event) => {
         'create:fill_minecraft_bucket_with_create_honey',
         'create:crushing/dense_construction_block',
         'create:crushing/nether_quartz_ore',
+
+        'create:compat/ae2/milling/ender_pearl',
 
         'compactcrafting:match_proxy',
         'compactcrafting:rescan_proxy',

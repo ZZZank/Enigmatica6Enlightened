@@ -1,7 +1,6 @@
 onEvent('item.tooltip', (event) => {
     /*
     Valid Color Codes:
-    
     .black()
     .darkBlue()
     .darkGreen()
@@ -33,6 +32,14 @@ onEvent('item.tooltip', (event) => {
                 ).red(),
                 Text.of(
                     'hives/apiaries used have been previously placed in-world and recieved NBT.'
+                ).red()
+            ]
+        },
+        {
+            items: 'appliedenergistics2:ender_dust',
+            text: [
+                Text.of(
+                    'Only used for creating Quantum Entangled Singularity'
                 ).red()
             ]
         }

@@ -66,6 +66,13 @@ onEvent('recipes', (event) => {
                 'appliedenergistics2:quartz_block'
             ],
             id: 'appliedenergistics2:misc/deconstruction_certus_quartz_block'
+        },
+        {
+            output: 'appliedenergistics2:ender_dust',
+            ingerdients: [
+                'emendatusenigmatica:ender_dust'
+            ],
+            id: `${id_prefix}ender_dust_ee_to_ae`
         }
     ];
 

@@ -3,10 +3,6 @@
 const isAE2Loaded = Platform.getMods().containsKey('appliedenergistics2');
 
 const itemsToRemoveAE = [
-    'appliedenergistics2:ender_dust',
-    'appliedenergistics2:flour',
-    'appliedenergistics2:gold_dust',
-    'appliedenergistics2:iron_dust',
     'appliedenergistics2:nether_quartz_dust',
     'appliedenergistics2:fluix_dust',
     'appliedenergistics2:certus_quartz_dust',
