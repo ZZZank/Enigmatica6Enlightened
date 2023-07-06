@@ -160,7 +160,7 @@ onEvent('recipes', (event) => {
                 B: 'glassential:glass_ghostly',
                 C: 'mekanism:cardboard_box',
                 D: '#forge:circuits/basic',
-                E: 'refinedstorage:quartz_enriched_iron',
+                E: 'pneumaticcraft:ingot_iron_compressed',
                 F: 'kubejs:dimensional_storage_crystal'
             },
             id: 'refinedstorage:16k_storage_part'
@@ -230,7 +230,7 @@ onEvent('recipes', (event) => {
                 B: 'mekanism:dynamic_tank',
                 C: 'mekanism:cardboard_box',
                 D: '#forge:circuits/basic',
-                E: 'refinedstorage:quartz_enriched_iron',
+                E: 'pneumaticcraft:ingot_iron_compressed',
                 F: 'kubejs:dimensional_storage_crystal'
             },
             id: 'refinedstorage:1024k_fluid_storage_part'

@@ -6,10 +6,10 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:expert/enigmatica/alloying/';
 
     const recipes = [
-        {
-            inputs: ['#forge:ingots/compressed_iron', '#forge:gems/quartz'],
-            output: Item.of('refinedstorage:quartz_enriched_iron', 2)
-        }
+        // {
+        //     inputs: ['#forge:ingots/compressed_iron', '#forge:gems/quartz'],
+        //     output: Item.of('refinedstorage:quartz_enriched_iron', 2)
+        // }
     ];
 
     recipetypes_alloying = (event, recipe) => {

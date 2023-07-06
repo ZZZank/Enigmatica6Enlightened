@@ -8,7 +8,7 @@ onEvent('recipes', (event) => {
 
     const id_prefix = 'enigmatica:expert/ae2_compat/basic_res/';
     const recipes = [
-        { toReplace: 'minecraft:iron_ingot', replaceWith: 'refinedstorage:quartz_enriched_iron' },
+        { toReplace: 'minecraft:iron_ingot', replaceWith: 'pneumaticcraft:ingot_iron_compressed' },
         { toReplace: '#appliedenergistics2:crystals/fluix', replaceWith: 'occultism:spirit_attuned_gem' },
         { toReplace: '#appliedenergistics2:crystals/certus', replaceWith: 'astralsorcery:aquamarine' },
         { toReplace: 'appliedenergistics2:fluix_dust', replaceWith: 'botania:corporea_spark' },

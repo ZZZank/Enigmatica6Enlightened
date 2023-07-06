@@ -25,7 +25,7 @@ onEvent('recipes', (event) => {
             inputs: {
                 V: 'integrateddynamics:variable',
                 M: 'kubejs:memory_basic_filled',
-                Q: 'refinedstorage:quartz_enriched_iron',
+                Q: 'pneumaticcraft:ingot_iron_compressed',
                 G: 'minecraft:gold_ingot'
             },
             id: 'appliedenergistics2:tools/network_memory_card'
@@ -37,7 +37,7 @@ onEvent('recipes', (event) => {
                 S: 'create:empty_schematic',
                 Q: 'appliedenergistics2:quartz_glass',
                 G: 'minecraft:glowstone_dust',
-                R: 'refinedstorage:quartz_enriched_iron',
+                R: 'pneumaticcraft:ingot_iron_compressed',
                 A: '#forge:gems/aquamarine'
             },
             id: 'appliedenergistics2:network/crafting/patterns_blank'

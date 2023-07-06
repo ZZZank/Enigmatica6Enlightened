@@ -13,7 +13,7 @@ onEvent('recipes', (event) => {
             patterns: ['EAE', 'DSC', 'EAE'],
             inputs: {
                 S: 'create:empty_schematic',
-                E: 'refinedstorage:quartz_enriched_iron',
+                E: 'pneumaticcraft:ingot_iron_compressed',
                 A: 'appliedenergistics2:engineering_processor',
                 D: 'appliedenergistics2:annihilation_core',
                 C: 'appliedenergistics2:formation_core'

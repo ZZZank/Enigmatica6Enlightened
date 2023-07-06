@@ -56,7 +56,7 @@ onEvent('recipes', (event) => {
                 A: 'appliedenergistics2:engineering_processor',
                 B: '#forge:ingots/slimesteel',
                 C: 'xnet:netcable_blue',
-                D: 'refinedstorage:quartz_enriched_iron',
+                D: 'pneumaticcraft:ingot_iron_compressed',
                 E: 'create:schematic_and_quill',
                 F: 'immersiveengineering:logic_unit'
             },
@@ -78,7 +78,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:circuits/basic',
                 B: 'appliedenergistics2:engineering_processor',
-                C: 'refinedstorage:quartz_enriched_iron',
+                C: 'pneumaticcraft:ingot_iron_compressed',
                 D: 'occultism:storage_stabilizer_tier1',
                 E: '#xnet:advanced_connectors',
                 F: 'immersiveengineering:logic_unit',
