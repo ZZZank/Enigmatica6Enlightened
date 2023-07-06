@@ -160,6 +160,27 @@ onEvent('recipes', (event) => {
                 A: '#forge:gems/aquamarine'
             },
             id: 'appliedenergistics2:decorative/certus_quartz_block'
+        },
+        {
+            output: 'appliedenergistics2:wireless_access_point',
+            patterns: ['ABA', 'ACA', ' D '],
+            inputs: {
+                A: '#forge:wires/aluminum',
+                B: 'occultism:spirit_attuned_gem',
+                C: 'occultism:wormhole_frame',
+                D: 'appliedenergistics2:engineering_processor'
+            },
+            id: 'appliedenergistics2:network/wireless_access_point'
+        },
+        {
+            output: Item.of('appliedenergistics2:wireless_booster', 2),
+            patterns: ['AAA', 'BCB', 'BBB'],
+            inputs: {
+                A: '#forge:dusts/ender_pearl',
+                B: 'pneumaticcraft:ingot_iron_compressed',
+                C: 'appliedenergistics2:wireless_access_point'
+            },
+            id: 'appliedenergistics2:network/wireless_booster'
         }
     ];
     recipes.forEach((recipe) => {
