@@ -121,6 +121,17 @@ onEvent('recipes', (event) => {
             id: 'appliedenergistics2:network/blocks/quantum_ring'
         },
         {
+            output: Item.of('appliedenergistics2:quantum_link', 2),
+            patterns: ['ABA', 'ACA', 'ADA'],
+            inputs: {
+                A: 'appliedenergistics2:quartz_vibrant_glass',
+                B: 'appliedenergistics2:energy_cell',
+                C: 'appliedenergistics2:2_cubed_spatial_cell_component',
+                D: 'appliedenergistics2:engineering_processor'
+            },
+            id: 'appliedenergistics2:network/blocks/quantum_link'
+        },
+        {
             output: Item.of('appliedenergistics2:fluix_glass_cable', 8),
             patterns: ['ADA', 'BCB', 'ADA'],
             inputs: {
