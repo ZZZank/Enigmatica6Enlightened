@@ -3,6 +3,7 @@
 - [ae2ao-8.1.1-1.16.jar](https://www.curseforge.com/minecraft/mc-mods/forge-ae2-additional-opportunity/files/4076650) (by [DomamaN202](https://www.curseforge.com/members/domaman202/projects))
 - [abnormals_delight-1.16.5-1.2.1.jar](https://www.curseforge.com/minecraft/mc-mods/abnormals-delight/files/3549585) (by [TeamAbnormals](https://www.curseforge.com/members/teamabnormals/projects))
 - [actuallycompatible-0.1.2.jar](https://www.curseforge.com/minecraft/mc-mods/actually-compatible/files/3651579) (by [starmun](https://www.curseforge.com/members/starmun/projects))
+- [AEAdditions-1.16.5-2.0.3.jar](https://www.curseforge.com/minecraft/mc-mods/ae-additions-extra-cells-2-fork/files/3959678) (by [MasterYodAT9G](https://www.curseforge.com/members/masteryodat9g/projects))
 - [AEInfinityBooster-1.16.5-1.0.0+12.jar](https://www.curseforge.com/minecraft/mc-mods/aeinfinitybooster/files/4058639) (by [hexeptiondev](https://www.curseforge.com/members/hexeptiondev/projects))
 - [AI-Improvements-1.16.5-0.5.0.jar](https://www.curseforge.com/minecraft/mc-mods/ai-improvements/files/3798940) (by [QueenOfMissiles](https://www.curseforge.com/members/queenofmissiles/projects))
 - [AkashicTome-1.4-16.jar](https://www.curseforge.com/minecraft/mc-mods/akashic-tome/files/3190372) (by [Vazkii](https://www.curseforge.com/members/vazkii/projects))
