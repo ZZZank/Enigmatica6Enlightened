@@ -518,6 +518,11 @@ onEvent('recipes', (event) => {
         {
             output: Item.of('byg:brimstone', 2),
             inputs: ['minecraft:netherrack', 'byg:sythian_wart_block']
+        },
+        {
+            output: 'appliedenergistics2:ender_dust',
+            inputs: ['emendatusenigmatica:ender_dust'],
+            id: `${id_prefix}ender_dust_ee_to_ae`
         }
     ];
 

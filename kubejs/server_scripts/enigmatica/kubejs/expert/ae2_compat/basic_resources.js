@@ -13,7 +13,6 @@ onEvent('recipes', (event) => {
         { toReplace: '#appliedenergistics2:crystals/certus', replaceWith: 'astralsorcery:aquamarine' },
         { toReplace: 'appliedenergistics2:fluix_dust', replaceWith: 'botania:corporea_spark' },
         { toReplace: 'appliedenergistics2:certus_quartz_dust', replaceWith: 'botania:quartz_mana' },
-        { toReplace: 'appliedenergistics2:ender_dust', replaceWith: 'emendatusenigmatica:ender_dust' },
     ];
     recipes.forEach((recipe) => {
         event.replaceInput({ mod: 'appliedenergistics2' }, recipe.toReplace, recipe.replaceWith);
