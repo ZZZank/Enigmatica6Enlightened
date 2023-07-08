@@ -183,6 +183,10 @@ onEvent('item.tooltip', (event) => {
                 'kubejs:crystalline_dark_oak_wood'
             ],
             text: [Text.of('Fireproof').gold()]
+        },
+        {
+            items: 'appliedenergistics2:ender_dust',
+            text: [Text.of('Only used for creating Quantum Entangled Singularity').red()]
         }
     ];
 

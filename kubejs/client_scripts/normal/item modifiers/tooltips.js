@@ -34,14 +34,6 @@ onEvent('item.tooltip', (event) => {
                     'hives/apiaries used have been previously placed in-world and recieved NBT.'
                 ).red()
             ]
-        },
-        {
-            items: 'appliedenergistics2:ender_dust',
-            text: [
-                Text.of(
-                    'Only used for creating Quantum Entangled Singularity'
-                ).red()
-            ]
         }
     ];
 
