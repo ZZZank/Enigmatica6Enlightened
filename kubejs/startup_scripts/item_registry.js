@@ -345,6 +345,82 @@ onEvent('item.registry', (event) => {
         { name: 'assembly_controller_assembly', texture: 'assembly_package_processing' }
     ];
 
+    let storageParts = [
+        {
+            modID: 'appliedenergistics2',
+            type: '',
+            sizes: ['1k', '4k', '16k', '64k', '1k_fluid', '4k_fluid', '16k_fluid', '64k_fluid']
+        },
+        {
+            modID: 'aeadditions',
+            type: 'item',
+            sizes: [
+                //in K. (1024 means 1024k)
+                '256',
+                '1024',
+                '4096',
+                '16384'
+            ]
+        },
+        {
+            modID: 'aeadditions',
+            type: 'fluid',
+            sizes: [
+                //in K. (1024 means 1024k)
+                '256',
+                '1024',
+                '4096'
+            ]
+        },
+        {
+            modID: 'aeadditions',
+            type: 'chemical',
+            sizes: [
+                //in K. (1024 means 1024k)
+                '1',
+                '4',
+                '16',
+                '64',
+                '256',
+                '1024',
+                '4096'
+            ]
+        }
+    ];
+
+    storageParts.forEach((storage) => {
+        storage.sizes.forEach((size) => {
+            let partName = '';
+            if (storage.modID === 'appliedenergistics2') {
+                partName = `${size}_cell_component`;
+            } else {
+                // 'aeadditions:item_storage_component_256'
+                partName = `${storage.type}_storage_component_${size}`;
+            };
+            let itemssToBeAdded = [
+                {
+                    name: `${partName}_package`,
+                    texture: 'assembly_package_filled'
+                },
+                {
+                    name: `${partName}_assmebly`,
+                    texture: 'assembly_package_processing'
+                },
+                {
+                    name: `batch_${partName}_package`,
+                    texture: 'packing_crate_lime'
+                },
+                {
+                    name: `batch_${partName}_assmebly`,
+                    texture: 'assembly_package_processing'
+                }
+            ];
+            itemssToBeAdded.forEach((prt) => {
+                reusableItemTextures.push(prt);
+            });
+        });
+    });
+
     let metals = [
         'aluminum',
         'cloggrum',

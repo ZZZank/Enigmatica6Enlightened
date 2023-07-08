@@ -16,6 +16,7 @@ onEvent('recipes', (event) => {
     ];
     recipes.forEach((recipe) => {
         event.replaceInput({ mod: 'appliedenergistics2' }, recipe.toReplace, recipe.replaceWith);
+        event.replaceInput({ mod: 'aeadditions' }, recipe.toReplace, recipe.replaceWith);
     });
 
     const dusts = [
