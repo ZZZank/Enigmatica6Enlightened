@@ -6,9 +6,21 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             outputs: [
-                { type: 'masterfulmachinery:items', chance: 1.0, data: { item: 'botania:life_essence', count: 8 } },
-                { type: 'masterfulmachinery:items', chance: 0.5, data: { item: 'botania:life_essence', count: 4 } },
-                { type: 'masterfulmachinery:items', chance: 0.25, data: { item: 'botania:life_essence', count: 2 } },
+                {
+                    type: 'masterfulmachinery:items',
+                    chance: 1.0,
+                    data: { item: 'botania:life_essence', count: 8 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    chance: 0.5,
+                    data: { item: 'botania:life_essence', count: 4 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    chance: 0.25,
+                    data: { item: 'botania:life_essence', count: 2 }
+                },
                 { type: 'masterfulmachinery:botania_mana', data: { amount: 9000 * 300 } }
             ],
             inputs: [

@@ -42,7 +42,7 @@ onEvent('recipes', (event) => {
                 F: 'minecraft:ender_eye'
             },
             id: `${id_prefix}magical_feathers`
-        },
+        }
     ];
 
     powahTiers.forEach(function (tier) {

@@ -17,7 +17,12 @@ onEvent('recipes', (event) => {
             id: `farmersdelight:cooking/stuffed_pumpkin_block`
         },
         {
-            inputs: ['#forge:raw_fishes/perch', 'minecraft:red_mushroom', '#forge:crops/rice', '#forge:crops/tomato'],
+            inputs: [
+                '#forge:raw_fishes/perch',
+                'minecraft:red_mushroom',
+                '#forge:crops/rice',
+                '#forge:crops/tomato'
+            ],
             output: 'abnormals_delight:perch_with_mushrooms',
             container: 'minecraft:bowl',
             count: 1,

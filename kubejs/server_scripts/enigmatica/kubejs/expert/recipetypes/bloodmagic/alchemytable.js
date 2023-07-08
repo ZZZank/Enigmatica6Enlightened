@@ -133,7 +133,12 @@ onEvent('recipes', (event) => {
             id: 'bloodmagic:alchemytable/reagent_lava'
         },
         {
-            inputs: ['#minecraft:saplings', '#minecraft:saplings', 'minecraft:sugar_cane', 'thermal:phytogro'],
+            inputs: [
+                '#minecraft:saplings',
+                '#minecraft:saplings',
+                'minecraft:sugar_cane',
+                'thermal:phytogro'
+            ],
             output: 'bloodmagic:reagentgrowth',
             count: 1,
             syphon: 2000,
@@ -156,7 +161,11 @@ onEvent('recipes', (event) => {
             id: 'bloodmagic:alchemytable/reagent_void'
         },
         {
-            inputs: ['quark:bottled_cloud', 'alexsmobs:tarantula_hawk_wing_fragment', 'ars_nouveau:wilden_wing'],
+            inputs: [
+                'quark:bottled_cloud',
+                'alexsmobs:tarantula_hawk_wing_fragment',
+                'ars_nouveau:wilden_wing'
+            ],
             output: 'bloodmagic:reagentair',
             count: 1,
             syphon: 2000,
@@ -728,7 +737,10 @@ onEvent('recipes', (event) => {
     ];
 
     const patchouli_safe_removals = [
-        { output: 'bloodmagic:itemrouterfiltercomposite', id: 'bloodmagic:alchemytable/composite_router_filter' },
+        {
+            output: 'bloodmagic:itemrouterfiltercomposite',
+            id: 'bloodmagic:alchemytable/composite_router_filter'
+        },
         { output: 'bloodmagic:itemrouterfiltermoditems', id: 'bloodmagic:alchemytable/mod_router_filter' },
         { output: 'bloodmagic:itemrouterfilterenchant', id: 'bloodmagic:alchemytable/enchant_router_filter' },
         { output: 'bloodmagic:itemrouterfilteroredict', id: 'bloodmagic:alchemytable/mod_router_filter' },

@@ -13,7 +13,10 @@ onEvent('recipes', (event) => {
             },
             {
                 input1: Ingredient.of('3x #forge:ingots/aluminum'),
-                secondaries: [Ingredient.of('4x #forge:dusts/lithium'), Ingredient.of('#forge:ingots/copper')],
+                secondaries: [
+                    Ingredient.of('4x #forge:dusts/lithium'),
+                    Ingredient.of('#forge:ingots/copper')
+                ],
                 outputs: [Item.of('4x mekanism:alloy_reinforced')],
                 id: `${id_prefix}alloy_reinforced`
             },
@@ -31,7 +34,10 @@ onEvent('recipes', (event) => {
             },
             {
                 input1: Item.of('powah:energizing_rod_basic').ignoreNBT(),
-                secondaries: ['mekanismgenerators:laser_focus_matrix', Item.of('4x modularrouters:blank_upgrade')],
+                secondaries: [
+                    'mekanismgenerators:laser_focus_matrix',
+                    Item.of('4x modularrouters:blank_upgrade')
+                ],
                 outputs: [Item.of('4x modularrouters:energy_upgrade')],
                 time: 100 * 4,
                 energy: 51200 * 4,
@@ -39,7 +45,10 @@ onEvent('recipes', (event) => {
             },
             {
                 input1: Item.of('powah:energizing_rod_hardened').ignoreNBT(),
-                secondaries: ['mekanismgenerators:laser_focus_matrix', Item.of('10x modularrouters:blank_upgrade')],
+                secondaries: [
+                    'mekanismgenerators:laser_focus_matrix',
+                    Item.of('10x modularrouters:blank_upgrade')
+                ],
                 outputs: [Item.of('10x modularrouters:energy_upgrade')],
                 time: 100 * 10,
                 energy: 51200 * 10,
@@ -47,7 +56,10 @@ onEvent('recipes', (event) => {
             },
             {
                 input1: Item.of('powah:energizing_rod_blazing').ignoreNBT(),
-                secondaries: ['mekanismgenerators:laser_focus_matrix', Item.of('34x modularrouters:blank_upgrade')],
+                secondaries: [
+                    'mekanismgenerators:laser_focus_matrix',
+                    Item.of('34x modularrouters:blank_upgrade')
+                ],
                 outputs: [Item.of('34x modularrouters:energy_upgrade')],
                 time: 100 * 34,
                 energy: 51200 * 34,
@@ -55,7 +67,10 @@ onEvent('recipes', (event) => {
             },
             {
                 input1: Item.of('powah:energizing_rod_niotic').ignoreNBT(),
-                secondaries: ['mekanismgenerators:laser_focus_matrix', Item.of('64x modularrouters:blank_upgrade')],
+                secondaries: [
+                    'mekanismgenerators:laser_focus_matrix',
+                    Item.of('64x modularrouters:blank_upgrade')
+                ],
                 outputs: [Item.of('64x modularrouters:energy_upgrade')],
                 time: 100 * 64,
                 energy: 51200 * 64,

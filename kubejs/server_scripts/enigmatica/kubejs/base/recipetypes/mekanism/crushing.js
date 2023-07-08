@@ -158,7 +158,7 @@ onEvent('recipes', (event) => {
                 'farmersdelight:cabbage_leaf',
                 'farmersdelight:onion',
                 'farmersdelight:tomato',
-                'farmersdelight:cabbage',
+                'farmersdelight:cabbage'
             ]
         },
         {

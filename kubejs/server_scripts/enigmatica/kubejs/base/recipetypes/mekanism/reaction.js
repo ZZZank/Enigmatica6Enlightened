@@ -23,7 +23,10 @@ onEvent('recipes', (event) => {
             id: 'mekanism:reaction/coal_gasification/coals'
         },
         {
-            itemInput: [{ ingredient: { tag: 'forge:dusts/coal' } }, { ingredient: { tag: 'forge:dusts/charcoal' } }],
+            itemInput: [
+                { ingredient: { tag: 'forge:dusts/coal' } },
+                { ingredient: { tag: 'forge:dusts/charcoal' } }
+            ],
             fluidInput: { amount: 100, tag: 'minecraft:water' },
             gasInput: { amount: 100, gas: 'mekanism:oxygen' },
             duration: 100,

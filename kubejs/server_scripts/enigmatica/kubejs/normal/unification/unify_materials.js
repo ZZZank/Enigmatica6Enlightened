@@ -197,7 +197,9 @@ onEvent('recipes', (event) => {
         }
 
         try {
-            secondaryOutput = getPreferredItemInTag(Ingredient.of(`#forge:dusts/${materialProperties.secondary}`)).id;
+            secondaryOutput = getPreferredItemInTag(
+                Ingredient.of(`#forge:dusts/${materialProperties.secondary}`)
+            ).id;
         } catch (err) {
             secondaryOutput = dust;
         }

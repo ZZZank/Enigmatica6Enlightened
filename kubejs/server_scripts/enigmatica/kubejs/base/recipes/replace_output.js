@@ -21,7 +21,7 @@ onEvent('recipes', (event) => {
             toReplace: 'minecraft:iron_nugget',
             replaceWith: 'dustrial_decor:rusty_iron_nugget'
         },
-        { filter: {}, toReplace: 'create:bar_of_chocolate', replaceWith: 'neapolitan:chocolate_bar' },
+        { filter: {}, toReplace: 'create:bar_of_chocolate', replaceWith: 'neapolitan:chocolate_bar' }
     ];
 
     recipes.forEach((recipe) => {

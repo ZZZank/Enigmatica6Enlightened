@@ -34,7 +34,9 @@ if (!config || !config.mode) {
 if (config.mode == 'none') {
     JsonIO.write(configName, defaultConfig);
     config.mode = defaultConfig.mode;
-    console.log(`Overwrote ${configName}, because the mode 'none' was found. Valid modes are 'normal' and 'expert'.`);
+    console.log(
+        `Overwrote ${configName}, because the mode 'none' was found. Valid modes are 'normal' and 'expert'.`
+    );
 }
 
 let packMode = config.mode;

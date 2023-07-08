@@ -69,6 +69,9 @@ onEvent('recipes', (event) => {
         }
     ];
     recipes.forEach((recipe) => {
-        event.recipes.thermal.bottler(recipe.output, [recipe.fluid, recipe.input]).energy(recipe.energy).id(recipe.id);
+        event.recipes.thermal
+            .bottler(recipe.output, [recipe.fluid, recipe.input])
+            .energy(recipe.energy)
+            .id(recipe.id);
     });
 });

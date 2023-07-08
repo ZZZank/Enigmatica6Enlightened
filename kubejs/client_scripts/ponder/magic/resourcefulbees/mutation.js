@@ -98,7 +98,9 @@ onEvent('ponder.registry', (event) => {
                     .overlay()
                     .showText(60)
                     .colored(PonderPalette.WHITE)
-                    .text('Bees that have gathered nectar will drip pollen as they travel back to their hive.')
+                    .text(
+                        'Bees that have gathered nectar will drip pollen as they travel back to their hive.'
+                    )
                     .independent(30);
 
                 scene.idle(20);
@@ -115,9 +117,15 @@ onEvent('ponder.registry', (event) => {
                 //place farmland & crop here once I have IDs
                 scene
                     .world()
-                    .setBlock([1, 0, 1], Block.id('minecraft:farmland').with('moisture', '7').blockState, false);
+                    .setBlock(
+                        [1, 0, 1],
+                        Block.id('minecraft:farmland').with('moisture', '7').blockState,
+                        false
+                    );
                 scene.idle(1);
-                scene.world().setBlock([1, 1, 1], Block.id('minecraft:wheat').with('age', '0').blockState, false);
+                scene
+                    .world()
+                    .setBlock([1, 1, 1], Block.id('minecraft:wheat').with('age', '0').blockState, false);
 
                 scene
                     .overlay()
@@ -132,7 +140,11 @@ onEvent('ponder.registry', (event) => {
                 for (let i = 3; i <= 7; i = i + 2) {
                     scene
                         .world()
-                        .setBlock([1, 1, 1], Block.id('minecraft:wheat').with('age', i.toString()).blockState, false);
+                        .setBlock(
+                            [1, 1, 1],
+                            Block.id('minecraft:wheat').with('age', i.toString()).blockState,
+                            false
+                        );
                     scene.idle(30);
                 }
             }
@@ -391,7 +403,9 @@ onEvent('ponder.registry', (event) => {
                     .overlay()
                     .showText(60)
                     .colored(PonderPalette.WHITE)
-                    .text(`We'll just place this Blaze Bee here and let it collect some nectar from this magma cake...`)
+                    .text(
+                        `We'll just place this Blaze Bee here and let it collect some nectar from this magma cake...`
+                    )
                     .placeNearTarget()
                     .pointAt([2.5, 3.5, 3.5]);
 

@@ -94,7 +94,14 @@ woodVariantsToConstruct.forEach((variant) => {
     var splitVariant = variant.split(':');
     var modId = splitVariant[0];
     var logType = splitVariant[1];
-    var logSuffix, woodSuffix, logBlockStripped, woodBlockStripped, logBlock, woodBlock, plankBlock, slabBlock;
+    var logSuffix,
+        woodSuffix,
+        logBlockStripped,
+        woodBlockStripped,
+        logBlock,
+        woodBlock,
+        plankBlock,
+        slabBlock;
 
     //suffix exceptions
     switch (logType) {

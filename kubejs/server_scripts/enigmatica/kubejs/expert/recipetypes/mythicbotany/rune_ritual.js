@@ -201,7 +201,12 @@ onEvent('recipes', (event) => {
             consume_runes: true,
             mana: 2000000,
             ticks: 1200,
-            inputs: ['botania:sextant', 'botania:astrolabe', 'create:wand_of_symmetry', 'astralsorcery:exchange_wand'],
+            inputs: [
+                'botania:sextant',
+                'botania:astrolabe',
+                'create:wand_of_symmetry',
+                'astralsorcery:exchange_wand'
+            ],
             outputs: ['kubejs:worldshaper_cog'],
             id: `${id_prefix}worldshaper_cog`
         }

@@ -34,7 +34,10 @@ onEvent('generic.loot_tables', (event) => {
                     count: [2, 8]
                 },
                 {
-                    item: Item.of('minecraft:potion', '{CustomPotionEffects:[{Ambient:0b,CurativeItems:[],ShowIcon:1b,ShowParticles:1b,Duration:600,Id:-99b,Amplifier:0b}]}'),
+                    item: Item.of(
+                        'minecraft:potion',
+                        '{CustomPotionEffects:[{Ambient:0b,CurativeItems:[],ShowIcon:1b,ShowParticles:1b,Duration:600,Id:-99b,Amplifier:0b}]}'
+                    ),
                     weight: 300,
                     count: [1, 4]
                 },

@@ -73,14 +73,22 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}wilden_guardian`
         },
         {
-            inputs: ['naturesaura:birth_spirit', 'resourcefulbees:forest_honeycomb', 'valhelsia_structures:bone_pile'],
+            inputs: [
+                'naturesaura:birth_spirit',
+                'resourcefulbees:forest_honeycomb',
+                'valhelsia_structures:bone_pile'
+            ],
             entity: 'ars_nouveau:wilden_hunter',
             aura: 150000,
             time: 120,
             id: `${id_prefix}wilden_hunter`
         },
         {
-            inputs: ['naturesaura:birth_spirit', 'resourcefulbees:forest_honeycomb', 'astralsorcery:nocturnal_powder'],
+            inputs: [
+                'naturesaura:birth_spirit',
+                'resourcefulbees:forest_honeycomb',
+                'astralsorcery:nocturnal_powder'
+            ],
             entity: 'ars_nouveau:wilden_stalker',
             aura: 150000,
             time: 120,
@@ -138,7 +146,11 @@ onEvent('recipes', (event) => {
             id: 'naturesaura:animal_spawner/ghast'
         },
         {
-            inputs: ['naturesaura:birth_spirit', 'resourcefulbees:water_honeycomb', 'minecraft:heart_of_the_sea'],
+            inputs: [
+                'naturesaura:birth_spirit',
+                'resourcefulbees:water_honeycomb',
+                'minecraft:heart_of_the_sea'
+            ],
             entity: 'minecraft:guardian',
             aura: 120000,
             time: 150,
@@ -152,7 +164,11 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}elder_guardian`
         },
         {
-            inputs: ['naturesaura:birth_spirit', 'resourcefulbees:ender_honeycomb', 'archers_paradox:shulker_arrow'],
+            inputs: [
+                'naturesaura:birth_spirit',
+                'resourcefulbees:ender_honeycomb',
+                'archers_paradox:shulker_arrow'
+            ],
             entity: 'minecraft:shulker',
             aura: 150000,
             time: 100,
@@ -194,7 +210,11 @@ onEvent('recipes', (event) => {
             id: 'naturesaura:animal_spawner/cow'
         },
         {
-            inputs: ['naturesaura:birth_spirit', 'resourcefulbees:shepherd_honeycomb', 'minecraft:golden_carrot'],
+            inputs: [
+                'naturesaura:birth_spirit',
+                'resourcefulbees:shepherd_honeycomb',
+                'minecraft:golden_carrot'
+            ],
             entity: 'minecraft:horse',
             aura: 100000,
             time: 100,
@@ -215,14 +235,22 @@ onEvent('recipes', (event) => {
             id: 'naturesaura:animal_spawner/llama'
         },
         {
-            inputs: ['naturesaura:birth_spirit', 'resourcefulbees:shepherd_honeycomb', 'minecraft:wheat_seeds'],
+            inputs: [
+                'naturesaura:birth_spirit',
+                'resourcefulbees:shepherd_honeycomb',
+                'minecraft:wheat_seeds'
+            ],
             entity: 'minecraft:chicken',
             aura: 30000,
             time: 40,
             id: 'naturesaura:animal_spawner/chicken'
         },
         {
-            inputs: ['naturesaura:birth_spirit', 'resourcefulbees:rocky_honeycomb', '#forge:gems/mana_diamond'],
+            inputs: [
+                'naturesaura:birth_spirit',
+                'resourcefulbees:rocky_honeycomb',
+                '#forge:gems/mana_diamond'
+            ],
             entity: 'quark:stoneling',
             aura: 2000000,
             time: 200,

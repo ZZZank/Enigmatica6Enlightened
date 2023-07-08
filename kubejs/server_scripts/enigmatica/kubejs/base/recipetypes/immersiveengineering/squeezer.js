@@ -1,7 +1,8 @@
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/immersiveengineering/squeezer/';
 
-    const recipes = [{
+    const recipes = [
+        {
             inputs: [
                 'supplementaries:flax_seeds',
                 'atum:flax_seeds',
@@ -33,18 +34,14 @@ onEvent('recipes', (event) => {
         },
 
         {
-            inputs: [
-                'occultism:datura_seeds'
-            ],
+            inputs: ['occultism:datura_seeds'],
             value: 60
         },
 
         {
-            inputs: [
-                'atum:emmer_seeds'
-            ],
+            inputs: ['atum:emmer_seeds'],
             value: 80
-        },
+        }
 
         // { inputs: ['simplefarming:grape_seeds'], value: 120 }
     ];

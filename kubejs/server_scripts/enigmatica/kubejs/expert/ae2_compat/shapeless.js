@@ -28,43 +28,27 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'appliedenergistics2:fluid_storage_bus',
-            ingerdients: [
-                'appliedenergistics2:storage_bus',
-                'minecraft:green_dye',
-                'minecraft:bucket'
-            ],
+            ingerdients: ['appliedenergistics2:storage_bus', 'minecraft:green_dye', 'minecraft:bucket'],
             id: 'appliedenergistics2:network/parts/storage_bus_fluid'
         },
         {
             output: 'appliedenergistics2:fluid_import_bus',
-            ingerdients: [
-                'appliedenergistics2:import_bus',
-                'minecraft:green_dye',
-                'minecraft:bucket'
-            ],
+            ingerdients: ['appliedenergistics2:import_bus', 'minecraft:green_dye', 'minecraft:bucket'],
             id: 'appliedenergistics2:network/parts/import_bus_fluid'
         },
         {
             output: 'appliedenergistics2:fluid_export_bus',
-            ingerdients: [
-                'appliedenergistics2:export_bus',
-                'minecraft:green_dye',
-                'minecraft:bucket'
-            ],
+            ingerdients: ['appliedenergistics2:export_bus', 'minecraft:green_dye', 'minecraft:bucket'],
             id: 'appliedenergistics2:network/parts/export_bus_fluid'
         },
         {
             output: '4x occultism:spirit_attuned_gem',
-            ingerdients: [
-                'appliedenergistics2:fluix_block'
-            ],
+            ingerdients: ['appliedenergistics2:fluix_block'],
             id: 'appliedenergistics2:misc/deconstruction_fluix_block'
         },
         {
             output: '4x astralsorcery:aquamarine',
-            ingerdients: [
-                'appliedenergistics2:quartz_block'
-            ],
+            ingerdients: ['appliedenergistics2:quartz_block'],
             id: 'appliedenergistics2:misc/deconstruction_certus_quartz_block'
         }
     ];

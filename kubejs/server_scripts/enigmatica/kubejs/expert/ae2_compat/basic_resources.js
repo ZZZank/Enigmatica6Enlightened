@@ -12,7 +12,7 @@ onEvent('recipes', (event) => {
         { toReplace: '#appliedenergistics2:crystals/fluix', replaceWith: 'occultism:spirit_attuned_gem' },
         { toReplace: '#appliedenergistics2:crystals/certus', replaceWith: 'astralsorcery:aquamarine' },
         { toReplace: 'appliedenergistics2:fluix_dust', replaceWith: 'botania:corporea_spark' },
-        { toReplace: 'appliedenergistics2:certus_quartz_dust', replaceWith: 'botania:quartz_mana' },
+        { toReplace: 'appliedenergistics2:certus_quartz_dust', replaceWith: 'botania:quartz_mana' }
     ];
     recipes.forEach((recipe) => {
         event.replaceInput({ mod: 'appliedenergistics2' }, recipe.toReplace, recipe.replaceWith);
@@ -20,7 +20,10 @@ onEvent('recipes', (event) => {
     });
 
     const dusts = [
-        { toReplace: 'appliedenergistics2:nether_quartz_dust', replaceWith: 'emendatusenigmatica:quartz_dust' },
+        {
+            toReplace: 'appliedenergistics2:nether_quartz_dust',
+            replaceWith: 'emendatusenigmatica:quartz_dust'
+        },
         { toReplace: 'appliedenergistics2:iron_dust', replaceWith: 'emendatusenigmatica:iron_dust' },
         { toReplace: 'appliedenergistics2:gold_dust', replaceWith: 'emendatusenigmatica:gold_dust' }
     ];

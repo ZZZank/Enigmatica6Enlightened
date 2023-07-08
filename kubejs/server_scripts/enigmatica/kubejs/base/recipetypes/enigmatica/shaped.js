@@ -534,7 +534,12 @@ onEvent('recipes', (event) => {
                             C: 'resourcefulbees:forest_honeycomb',
                             B: 'resourcefulbees:wax'
                         })
-                        .id(`${id_prefix}${tree.trunk.replace(':', '_')}_from_${tree.sapling.replace(':', '_')}`);
+                        .id(
+                            `${id_prefix}${tree.trunk.replace(':', '_')}_from_${tree.sapling.replace(
+                                ':',
+                                '_'
+                            )}`
+                        );
                 }
                 if (tree.sapling != 'minecraft:oak_sapling') {
                     event
@@ -543,7 +548,12 @@ onEvent('recipes', (event) => {
                             C: 'resourcefulbees:forest_honeycomb',
                             B: 'resourcefulbees:wax'
                         })
-                        .id(`${id_prefix}${tree.sapling.replace(':', '_')}_from_${tree.sapling.replace(':', '_')}`);
+                        .id(
+                            `${id_prefix}${tree.sapling.replace(':', '_')}_from_${tree.sapling.replace(
+                                ':',
+                                '_'
+                            )}`
+                        );
                 }
                 if (tree.leaf != 'minecraft:oak_leaves') {
                     event
@@ -552,7 +562,12 @@ onEvent('recipes', (event) => {
                             C: 'resourcefulbees:forest_honeycomb',
                             B: 'resourcefulbees:wax'
                         })
-                        .id(`${id_prefix}${tree.leaf.replace(':', '_')}_from_${tree.sapling.replace(':', '_')}`);
+                        .id(
+                            `${id_prefix}${tree.leaf.replace(':', '_')}_from_${tree.sapling.replace(
+                                ':',
+                                '_'
+                            )}`
+                        );
                 }
             });
         }

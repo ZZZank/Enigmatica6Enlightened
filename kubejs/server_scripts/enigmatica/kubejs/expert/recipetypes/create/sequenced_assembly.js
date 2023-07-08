@@ -419,7 +419,10 @@ onEvent('recipes', (event) => {
                 },
                 {
                     type: 'deploying',
-                    input: ['kubejs:partial_foundation_materials', '#immersiveengineering:scaffoldings/steel'],
+                    input: [
+                        'kubejs:partial_foundation_materials',
+                        '#immersiveengineering:scaffoldings/steel'
+                    ],
                     output: 'kubejs:partial_foundation_materials'
                 },
                 {

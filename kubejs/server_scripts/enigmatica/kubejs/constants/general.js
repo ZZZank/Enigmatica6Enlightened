@@ -57,7 +57,17 @@ const colors = [
 
 // Quark Crystal Cluster Colors
 
-const quark_crystal_colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet', 'white', 'black'];
+const quark_crystal_colors = [
+    'red',
+    'orange',
+    'yellow',
+    'green',
+    'blue',
+    'indigo',
+    'violet',
+    'white',
+    'black'
+];
 
 // Used for tag generation
 const createStoneTypes = [

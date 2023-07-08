@@ -668,7 +668,11 @@ const stonecuttables = [
     },
     {
         name: 'lavender_quartz',
-        stones: ['botania:lavender_quartz', 'botania:lavender_quartz_pillar', 'botania:chiseled_lavender_quartz'],
+        stones: [
+            'botania:lavender_quartz',
+            'botania:lavender_quartz_pillar',
+            'botania:chiseled_lavender_quartz'
+        ],
         onlyAsOutput: [],
         onlyAsInput: []
     },
@@ -983,7 +987,12 @@ const stonecuttables = [
     },
     {
         name: 'pumpkin',
-        stones: ['minecraft:pumpkin', 'chipped:pumpkin_nether', 'chipped:pumpkin_end2', 'chipped:pumpkin_end'],
+        stones: [
+            'minecraft:pumpkin',
+            'chipped:pumpkin_nether',
+            'chipped:pumpkin_end2',
+            'chipped:pumpkin_end'
+        ],
         onlyAsOutput: [],
         onlyAsInput: []
     },
@@ -1283,7 +1292,12 @@ const stonecuttables = [
     },
     {
         name: 'soapstone',
-        stones: ['byg:polished_soapstone', 'byg:soapstone_bricks', 'byg:soapstone_pillar', 'byg:soapstone_tile'],
+        stones: [
+            'byg:polished_soapstone',
+            'byg:soapstone_bricks',
+            'byg:soapstone_pillar',
+            'byg:soapstone_tile'
+        ],
         onlyAsOutput: [],
         onlyAsInput: []
     },

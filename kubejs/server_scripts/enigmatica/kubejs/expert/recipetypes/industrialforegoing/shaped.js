@@ -301,7 +301,10 @@ onEvent('recipes', (event) => {
                 A: 'ars_nouveau:glyph_wither',
                 B: 'rftoolsutility:matter_beamer',
                 C: 'rftoolsutility:spawner',
-                D: Item.of('rftoolsutility:syringe', '{mobName:"minecraft:wither",mobId:"minecraft:wither",level:10}'),
+                D: Item.of(
+                    'rftoolsutility:syringe',
+                    '{mobName:"minecraft:wither",mobId:"minecraft:wither",level:10}'
+                ),
                 E: '#industrialforegoing:machine_frame/supreme'
             },
             id: 'industrialforegoing:wither_builder'

@@ -396,7 +396,7 @@ onEvent('item.registry', (event) => {
             } else {
                 // 'aeadditions:item_storage_component_256'
                 partName = `${storage.type}_storage_component_${size}`;
-            };
+            }
             let itemssToBeAdded = [
                 {
                     name: `${partName}_package`,

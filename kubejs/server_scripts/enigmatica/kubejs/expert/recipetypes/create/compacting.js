@@ -6,7 +6,11 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             output: 'modularrouters:item_router',
-            inputs: ['minecraft:observer', 'immersiveengineering:circuit_board', 'modularrouters:augment_core'],
+            inputs: [
+                'minecraft:observer',
+                'immersiveengineering:circuit_board',
+                'modularrouters:augment_core'
+            ],
             heated: true,
             id: 'modularrouters:item_router'
         },

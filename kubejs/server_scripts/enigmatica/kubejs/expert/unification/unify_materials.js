@@ -17,9 +17,15 @@ onEvent('recipes', (event) => {
         let crushed_ore = getPreferredItemInTag(Ingredient.of(`#create:crushed_ores/${material}`)).id;
         var ore = getPreferredItemInTag(Ingredient.of(`#forge:ores/${material}`)).id;
         var mana_cluster = getPreferredItemInTag(Ingredient.of(`#enigmatica:mana_clusters/${material}`)).id;
-        var fulminated_cluster = getPreferredItemInTag(Ingredient.of(`#enigmatica:fulminated_clusters/${material}`)).id;
-        var levigated_material = getPreferredItemInTag(Ingredient.of(`#enigmatica:levigated_materials/${material}`)).id;
-        var crystalline_sliver = getPreferredItemInTag(Ingredient.of(`#enigmatica:crystalline_slivers/${material}`)).id;
+        var fulminated_cluster = getPreferredItemInTag(
+            Ingredient.of(`#enigmatica:fulminated_clusters/${material}`)
+        ).id;
+        var levigated_material = getPreferredItemInTag(
+            Ingredient.of(`#enigmatica:levigated_materials/${material}`)
+        ).id;
+        var crystalline_sliver = getPreferredItemInTag(
+            Ingredient.of(`#enigmatica:crystalline_slivers/${material}`)
+        ).id;
 
         ore_ingot_smelting(event, material, ore, ingot);
         gear_unification(event, material, ingot, gem, gear);
@@ -194,10 +200,18 @@ onEvent('recipes', (event) => {
             .metal_press(`16x ${output}`, `4x ${plate}`, mold)
             .id(`kubejs:immersiveengineering_metal_press_${material}_wire`);
 
-        event.shapeless(Item.of(output, 2), [plate, plate, wireCutters]).id(`kubejs:shaped_crafting_${material}_wire`);
+        event
+            .shapeless(Item.of(output, 2), [plate, plate, wireCutters])
+            .id(`kubejs:shaped_crafting_${material}_wire`);
     }
 
-    function immersiveengineering_ore_processing_with_secondary_outputs(event, material, ore, crushed_ore, ingot) {
+    function immersiveengineering_ore_processing_with_secondary_outputs(
+        event,
+        material,
+        ore,
+        crushed_ore,
+        ingot
+    ) {
         if (ore == air || crushed_ore == air || ingot == air) {
             return;
         }
@@ -262,7 +276,9 @@ onEvent('recipes', (event) => {
 
         try {
             secondary_fulminated_cluster = getPreferredItemInTag(
-                Ingredient.of(`#enigmatica:fulminated_clusters/${oreProcessingSecondaries[material].secondary}`)
+                Ingredient.of(
+                    `#enigmatica:fulminated_clusters/${oreProcessingSecondaries[material].secondary}`
+                )
             ).id;
         } catch (err) {
             secondary_fulminated_cluster = getPreferredItemInTag(

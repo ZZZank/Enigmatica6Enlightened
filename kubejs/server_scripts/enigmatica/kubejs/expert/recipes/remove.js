@@ -308,7 +308,11 @@ onEvent('recipes', (event) => {
     });
 
     event.remove({ type: 'minecraft:crafting_shapeless', output: '#forge:dusts', mod: 'thermal' });
-    event.remove({ type: 'minecraft:crafting_shapeless', output: '#forge:dusts', mod: 'immersiveengineering' });
+    event.remove({
+        type: 'minecraft:crafting_shapeless',
+        output: '#forge:dusts',
+        mod: 'immersiveengineering'
+    });
     event.remove({ type: 'integrateddynamics:drying_basin' });
     event.remove({ type: 'integrateddynamics:mechanical_drying_basin' });
     event.remove({ type: 'integrateddynamics:squeezer' });

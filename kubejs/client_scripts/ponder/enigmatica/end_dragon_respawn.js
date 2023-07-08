@@ -40,8 +40,12 @@ onEvent('ponder.registry', (event) => {
                     .independent(180);
 
                 scene.idle(10);
-                scene.world().setBlocks(util.select().position(4, 5, 4), util.getDefaultState('minecraft:air'), true);
-                scene.world().setBlocks(util.select().position(4, 4, 3), util.getDefaultState('minecraft:air'), true);
+                scene
+                    .world()
+                    .setBlocks(util.select().position(4, 5, 4), util.getDefaultState('minecraft:air'), true);
+                scene
+                    .world()
+                    .setBlocks(util.select().position(4, 4, 3), util.getDefaultState('minecraft:air'), true);
                 scene.idle(60);
 
                 scene
@@ -132,16 +136,32 @@ onEvent('ponder.registry', (event) => {
 
                 scene
                     .world()
-                    .setBlocks(util.select().fromTo(2, 1, 3, 3, 1, 5), util.getDefaultState('minecraft:air'), true);
+                    .setBlocks(
+                        util.select().fromTo(2, 1, 3, 3, 1, 5),
+                        util.getDefaultState('minecraft:air'),
+                        true
+                    );
                 scene
                     .world()
-                    .setBlocks(util.select().fromTo(3, 1, 2, 5, 1, 3), util.getDefaultState('minecraft:air'), true);
+                    .setBlocks(
+                        util.select().fromTo(3, 1, 2, 5, 1, 3),
+                        util.getDefaultState('minecraft:air'),
+                        true
+                    );
                 scene
                     .world()
-                    .setBlocks(util.select().fromTo(3, 1, 5, 5, 1, 6), util.getDefaultState('minecraft:air'), true);
+                    .setBlocks(
+                        util.select().fromTo(3, 1, 5, 5, 1, 6),
+                        util.getDefaultState('minecraft:air'),
+                        true
+                    );
                 scene
                     .world()
-                    .setBlocks(util.select().fromTo(5, 1, 3, 6, 1, 5), util.getDefaultState('minecraft:air'), true);
+                    .setBlocks(
+                        util.select().fromTo(5, 1, 3, 6, 1, 5),
+                        util.getDefaultState('minecraft:air'),
+                        true
+                    );
 
                 scene.idle(100);
             }

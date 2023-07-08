@@ -106,11 +106,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}sky_bee`
         },
         {
-            inputs: [
-                'naturesaura:birth_spirit',
-                'farmersdelight:cabbage_leaf',
-                'minecraft:carrot'
-            ],
+            inputs: ['naturesaura:birth_spirit', 'farmersdelight:cabbage_leaf', 'minecraft:carrot'],
             entity: 'minecraft:rabbit',
             aura: 30000,
             time: 40,
@@ -169,14 +165,24 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}slabfish`
         },
         {
-            inputs: ['naturesaura:birth_spirit', 'minecraft:apple', 'minecraft:allium', 'minecraft:sweet_berries'],
+            inputs: [
+                'naturesaura:birth_spirit',
+                'minecraft:apple',
+                'minecraft:allium',
+                'minecraft:sweet_berries'
+            ],
             entity: 'environmental:deer',
             aura: 50000,
             time: 60,
             id: `${id_prefix}deer`
         },
         {
-            inputs: ['naturesaura:birth_spirit', 'minecraft:seagrass', 'minecraft:egg', 'minecraft:wheat_seeds'],
+            inputs: [
+                'naturesaura:birth_spirit',
+                'minecraft:seagrass',
+                'minecraft:egg',
+                'minecraft:wheat_seeds'
+            ],
             entity: 'environmental:duck',
             aura: 50000,
             time: 60,

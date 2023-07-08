@@ -143,7 +143,11 @@ function mekanism_sawing(event, variant, sawDust) {
 
     data.recipes.forEach((recipe) => {
         fallback_id(
-            event.recipes.mekanism.sawing(Item.of(recipe.output, 6), recipe.input, Item.of(sawDust).chance(0.25)),
+            event.recipes.mekanism.sawing(
+                Item.of(recipe.output, 6),
+                recipe.input,
+                Item.of(sawDust).chance(0.25)
+            ),
             `enigmatica:base/unification/unify_sawables/${arguments.callee.name}/`
         );
     });

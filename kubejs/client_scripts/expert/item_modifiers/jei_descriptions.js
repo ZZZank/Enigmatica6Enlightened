@@ -25,7 +25,9 @@ onEvent('jei.information', (event) => {
                 // I just made it like this to be easily copied from tooltips script
                 Text.of('Disabled in Expert Mode.').red(),
                 Text.of('Liquid Meat can be obtained by "processing" cows.').color('#6e2a2a'),
-                Text.of('Pink Slime can be harvested from a Pink Wither using a Fluid Laser.').color('#da07e6')
+                Text.of('Pink Slime can be harvested from a Pink Wither using a Fluid Laser.').color(
+                    '#da07e6'
+                )
             ]
         },
         {

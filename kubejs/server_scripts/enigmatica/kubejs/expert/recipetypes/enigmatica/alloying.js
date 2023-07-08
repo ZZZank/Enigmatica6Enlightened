@@ -24,7 +24,10 @@ onEvent('recipes', (event) => {
         fallback_id(
             event.custom({
                 type: 'betterendforge:alloying',
-                ingredients: [Ingredient.of(recipe.inputs[0]).toJson(), Ingredient.of(recipe.inputs[1]).toJson()],
+                ingredients: [
+                    Ingredient.of(recipe.inputs[0]).toJson(),
+                    Ingredient.of(recipe.inputs[1]).toJson()
+                ],
                 result: recipe.output,
                 experience: recipe.experience,
                 smelttime: recipe.smelttime
@@ -41,7 +44,9 @@ onEvent('recipes', (event) => {
             id_prefix
         );
         fallback_id(
-            event.recipes.immersiveengineering.arc_furnace([recipe.output], recipe.inputs[0], [recipe.inputs[1]]),
+            event.recipes.immersiveengineering.arc_furnace([recipe.output], recipe.inputs[0], [
+                recipe.inputs[1]
+            ]),
             id_prefix
         );
 

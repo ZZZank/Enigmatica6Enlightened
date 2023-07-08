@@ -6,7 +6,10 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             output: Item.of('modularrouters:sender_module_3'),
-            inputs: [Item.of('modularrouters:sender_module_2').ignoreNBT(), 'integrateddynamics:logic_director'],
+            inputs: [
+                Item.of('modularrouters:sender_module_2').ignoreNBT(),
+                'integrateddynamics:logic_director'
+            ],
             id: 'modularrouters:sender_module_3'
         },
         {
@@ -38,7 +41,11 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'modularrouters:vacuum_module',
-            inputs: ['modularrouters:blank_module', 'minecraft:lodestone', 'pneumaticcraft:omnidirectional_hopper'],
+            inputs: [
+                'modularrouters:blank_module',
+                'minecraft:lodestone',
+                'pneumaticcraft:omnidirectional_hopper'
+            ],
             id: 'modularrouters:vacuum_module'
         },
         {

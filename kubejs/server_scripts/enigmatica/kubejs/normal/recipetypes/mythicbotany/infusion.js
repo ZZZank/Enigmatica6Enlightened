@@ -7,8 +7,12 @@ onEvent('recipes', (event) => {
 
     const recipes = [
         {
-            inputs: [Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:mana_bee' }).weakNBT().toJson()],
-            output: Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:terrestrial_bee' }).toJson(),
+            inputs: [
+                Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:mana_bee' }).weakNBT().toJson()
+            ],
+            output: Item.of('resourcefulbees:bee_jar', {
+                Entity: 'resourcefulbees:terrestrial_bee'
+            }).toJson(),
             mana: 2000000,
             fromColor: 255,
             toColor: 65280,

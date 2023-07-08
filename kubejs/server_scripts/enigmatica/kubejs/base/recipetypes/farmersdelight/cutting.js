@@ -83,7 +83,10 @@ onEvent('recipes', (event) => {
     });
 
     const tillsIntoFarmland = [
-        { type: 'minecraft:farmland', soils: ['minecraft:grass_block', 'minecraft:dirt', 'minecraft:coarse_dirt'] },
+        {
+            type: 'minecraft:farmland',
+            soils: ['minecraft:grass_block', 'minecraft:dirt', 'minecraft:coarse_dirt']
+        },
         { type: 'farmersdelight:rich_soil_farmland', soils: ['farmersdelight:rich_soil'] },
         {
             type: 'undergarden:deepsoil_farmland',

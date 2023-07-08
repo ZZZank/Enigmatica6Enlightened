@@ -153,7 +153,9 @@ onEvent('jei.information', (event) => {
         },
         {
             items: ['architects_palette:chiseled_abyssaline_bricks'],
-            text: ['May be Charged by Right-Clicking with a Heart of the Sea. Used to power Abyssaline blocks.']
+            text: [
+                'May be Charged by Right-Clicking with a Heart of the Sea. Used to power Abyssaline blocks.'
+            ]
         },
         {
             items: [
@@ -184,7 +186,9 @@ onEvent('jei.information', (event) => {
         },
         {
             items: [/upgrade_aquatic:(?!.*dead_coralstone|chiseled)(?=.*_coralstone$)/],
-            text: ['Obtained by placing Coralstone next to living coral and waiting. Requires Silk Touch to harvest.']
+            text: [
+                'Obtained by placing Coralstone next to living coral and waiting. Requires Silk Touch to harvest.'
+            ]
         },
         {
             items: ['upgrade_aquatic:coralstone'],
@@ -320,7 +324,11 @@ onEvent('jei.information', (event) => {
             text: [`Found occasionally growing beneath Deadwood Trees. Requires darkness to grow.`]
         },
         {
-            items: ['immersiveengineering:furnace_heater', 'mekanism:fuelwood_heater', 'mekanism:resistive_heater'],
+            items: [
+                'immersiveengineering:furnace_heater',
+                'mekanism:fuelwood_heater',
+                'mekanism:resistive_heater'
+            ],
             text: [`May be used to provide Heat for PneumaticCraft machines.`]
         },
         {
@@ -355,7 +363,9 @@ onEvent('jei.information', (event) => {
         },
         {
             items: ['astralsorcery:celestial_crystal_cluster'],
-            text: [`Formed by dropping a Rock Crystal or Celestial Crystal in Liquid Starlight with a Stardust.`]
+            text: [
+                `Formed by dropping a Rock Crystal or Celestial Crystal in Liquid Starlight with a Stardust.`
+            ]
         },
         {
             items: ['astralsorcery:celestial_crystal_cluster'],
@@ -433,7 +443,9 @@ onEvent('jei.information', (event) => {
         },
         {
             items: ['eidolon:sanguine_amulet', 'eidolon:sapping_sword'],
-            text: [`For crafting steps, refer to the Sanguine Items section under Rituals in the Ars Ecclesia.`]
+            text: [
+                `For crafting steps, refer to the Sanguine Items section under Rituals in the Ars Ecclesia.`
+            ]
         },
         {
             items: ['atum:papyrus_plant'],
@@ -506,11 +518,25 @@ onEvent('jei.information', (event) => {
         },
         {
             items: ['naturesaura:projectile_generator'],
-            text: [`Valid Projectiles:`, ``, `● Snowballs`, `● Eggs`, `● Arrows`, `● Fire Charges`, `● Spectral Arrows`]
+            text: [
+                `Valid Projectiles:`,
+                ``,
+                `● Snowballs`,
+                `● Eggs`,
+                `● Arrows`,
+                `● Fire Charges`,
+                `● Spectral Arrows`
+            ]
         },
         {
             items: ['naturesaura:projectile_generator'],
-            text: [`● Ender Pearls`, `● Llama Spit`, `● Bottles o' Enchanting`, `● Shulker Bullets`, `● Tridents`]
+            text: [
+                `● Ender Pearls`,
+                `● Llama Spit`,
+                `● Bottles o' Enchanting`,
+                `● Shulker Bullets`,
+                `● Tridents`
+            ]
         },
         {
             items: ['naturesaura:birth_spirit'],
@@ -555,7 +581,14 @@ onEvent('jei.information', (event) => {
         },
         {
             items: ['simplefarming:brewing_barrel'],
-            text: [`Used for brewing various alcoholic beverages.`, ` `, `● Beer`, `● Cauim`, `● Cider`, `● Mead`]
+            text: [
+                `Used for brewing various alcoholic beverages.`,
+                ` `,
+                `● Beer`,
+                `● Cauim`,
+                `● Cider`,
+                `● Mead`
+            ]
         },
         {
             items: ['simplefarming:brewing_barrel'],

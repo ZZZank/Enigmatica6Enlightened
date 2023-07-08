@@ -118,7 +118,9 @@ onEvent('recipes', (event) => {
             .id(`${id_prefix}thermal_pulverizer/${recipe.id_suffix}`);
 
         // mekanism
-        event.recipes.mekanism.enriching(recipe.output, recipe.input).id(`${id_prefix}/pedestals/${recipe.id_suffix}`);
+        event.recipes.mekanism
+            .enriching(recipe.output, recipe.input)
+            .id(`${id_prefix}/pedestals/${recipe.id_suffix}`);
 
         // immersiveengineering
         event.recipes.immersiveengineering

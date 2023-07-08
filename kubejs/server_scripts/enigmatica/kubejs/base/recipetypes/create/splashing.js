@@ -30,7 +30,10 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}rusty_iron_trapdoor`
         },
         {
-            outputs: [Item.of('minecraft:quartz').withChance(0.25), Item.of('minecraft:redstone').withChance(0.05)],
+            outputs: [
+                Item.of('minecraft:quartz').withChance(0.25),
+                Item.of('minecraft:redstone').withChance(0.05)
+            ],
             input: 'byg:quartzite_sand',
             id: `${id_prefix}quartz`
         },
@@ -118,6 +121,8 @@ onEvent('recipes', (event) => {
     });
 
     rusty_items.forEach((item) => {
-        event.recipes.create.splashing([item], item.replace('rusty_', '')).id(`${id_prefix}${item.split(':')[1]}`);
+        event.recipes.create
+            .splashing([item], item.replace('rusty_', ''))
+            .id(`${id_prefix}${item.split(':')[1]}`);
     });
 });

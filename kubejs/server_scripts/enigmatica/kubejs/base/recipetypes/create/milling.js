@@ -100,6 +100,9 @@ onEvent('recipes', (event) => {
         }
     ];
     recipes.forEach((recipe) => {
-        event.recipes.create.milling(recipe.outputs, recipe.input).processingTime(recipe.processingTime).id(recipe.id);
+        event.recipes.create
+            .milling(recipe.outputs, recipe.input)
+            .processingTime(recipe.processingTime)
+            .id(recipe.id);
     });
 });

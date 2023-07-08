@@ -1275,7 +1275,10 @@ onEvent('recipes', (event) => {
                 '#forge:clusters/uranium',
                 '#forge:clusters/uranium'
             ],
-            result: Item.of('kubejs:miner_marid_irradiated', '{rollsPerOperation:4,Damage:0,maxMiningTime:300}'),
+            result: Item.of(
+                'kubejs:miner_marid_irradiated',
+                '{rollsPerOperation:4,Damage:0,maxMiningTime:300}'
+            ),
             id: `${id_prefix}miner_marid_irradiated`
         },
         {
@@ -1472,11 +1475,17 @@ onEvent('recipes', (event) => {
         { name: 'disenchantment', ingredients: ['apotheosis:draconic_endshelf', 'botania:rosa_arcana'] },
         {
             name: 'rocket',
-            ingredients: ['minecraft:firework_rocket', Item.of('alexsmobs:frontier_cap', '{Damage:0]}').weakNBT()]
+            ingredients: [
+                'minecraft:firework_rocket',
+                Item.of('alexsmobs:frontier_cap', '{Damage:0]}').weakNBT()
+            ]
         },
         {
             name: 'death',
-            ingredients: [Item.of('eidolon:reaper_scythe', '{Damage:0]}').weakNBT(), 'naturesaura:chorus_generator']
+            ingredients: [
+                Item.of('eidolon:reaper_scythe', '{Damage:0]}').weakNBT(),
+                'naturesaura:chorus_generator'
+            ]
         },
         { name: 'frosty', ingredients: ['thermal:ice_tnt', 'betterendforge:ancient_emerald_ice'] },
         { name: 'culinary', ingredients: ['create:builders_tea', 'nethers_delight:stuffed_hoglin_item'] },

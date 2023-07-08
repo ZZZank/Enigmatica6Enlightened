@@ -424,7 +424,10 @@ onEvent('recipes', (event) => {
             id: 'mekanism:solar_neutron_activator'
         },
         {
-            output: Item.of('masterfulmachinery:auto_iridescent_altar_starlight_port_astral_starlight_input', 1),
+            output: Item.of(
+                'masterfulmachinery:auto_iridescent_altar_starlight_port_astral_starlight_input',
+                1
+            ),
             pattern: ['ABCBA', 'BADAB', 'CDEDC', 'BADAB', 'ABCBA'],
             key: {
                 A: { tag: 'forge:dusts/starmetal' },

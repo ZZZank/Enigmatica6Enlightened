@@ -65,7 +65,9 @@ onEvent('ponder.registry', (event) => {
                     .overlay()
                     .showText(60)
                     .colored(PonderPalette.WHITE)
-                    .text(`Now enter the portal - you'll find yourself less in hell, more in a damp, dark place.`)
+                    .text(
+                        `Now enter the portal - you'll find yourself less in hell, more in a damp, dark place.`
+                    )
                     .independent(60);
 
                 scene.idle(60);

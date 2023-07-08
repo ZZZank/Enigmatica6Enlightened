@@ -558,7 +558,11 @@ function trees_immersiveengineering_cloche(event, tree) {
         renderType = 'generic';
 
     var input = tree.sapling,
-        outputs = [Item.of(tree.sapling, saplingRate), Item.of(tree.trunk, trunkRate), Item.of(tree.leaf, leafRate)];
+        outputs = [
+            Item.of(tree.sapling, saplingRate),
+            Item.of(tree.trunk, trunkRate),
+            Item.of(tree.leaf, leafRate)
+        ];
 
     var substrate = tree.substrate;
     switch (substrate) {

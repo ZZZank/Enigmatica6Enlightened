@@ -23,10 +23,25 @@ onEvent('server.datapack.high_priority', (event) => {
                         functions: [{ function: 'set_count', count: { min: 6, max: 9 } }],
                         weight: 40
                     },
-                    { type: 'loot_table', name: 'atum:chests/subloot/iron_weapons_25', weight: 15, quality: 2 },
+                    {
+                        type: 'loot_table',
+                        name: 'atum:chests/subloot/iron_weapons_25',
+                        weight: 15,
+                        quality: 2
+                    },
                     { type: 'loot_table', name: 'atum:chests/subloot/iron_armor_25', weight: 15, quality: 2 },
-                    { type: 'loot_table', name: 'atum:chests/subloot/diamond_weapons_35', weight: 10, quality: 2 },
-                    { type: 'loot_table', name: 'atum:chests/subloot/diamond_armor_35', weight: 10, quality: 2 },
+                    {
+                        type: 'loot_table',
+                        name: 'atum:chests/subloot/diamond_weapons_35',
+                        weight: 10,
+                        quality: 2
+                    },
+                    {
+                        type: 'loot_table',
+                        name: 'atum:chests/subloot/diamond_armor_35',
+                        weight: 10,
+                        quality: 2
+                    },
                     {
                         type: 'item',
                         name: 'minecraft:iron_ingot',
@@ -335,7 +350,10 @@ onEvent('chest.loot_tables', (event) => {
                     count: [1, 4]
                 },
                 {
-                    item: Item.of('minecraft:potion', '{CustomPotionEffects:[{Ambient:0b,CurativeItems:[],ShowIcon:1b,ShowParticles:1b,Duration:600,Id:-99b,Amplifier:0b}]}'),
+                    item: Item.of(
+                        'minecraft:potion',
+                        '{CustomPotionEffects:[{Ambient:0b,CurativeItems:[],ShowIcon:1b,ShowParticles:1b,Duration:600,Id:-99b,Amplifier:0b}]}'
+                    ),
                     weight: 300,
                     count: [1, 4]
                 },

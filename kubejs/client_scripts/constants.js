@@ -568,7 +568,10 @@ const recipesToHide = [
     },
     {
         category: 'botania:petals',
-        recipes_by_id: ['mythicbotany:petal_apothecary/wither_aconite', 'mythicbotany:petal_apothecary/raindeletia']
+        recipes_by_id: [
+            'mythicbotany:petal_apothecary/wither_aconite',
+            'mythicbotany:petal_apothecary/raindeletia'
+        ]
     },
     {
         category: 'botania:mana_pool',

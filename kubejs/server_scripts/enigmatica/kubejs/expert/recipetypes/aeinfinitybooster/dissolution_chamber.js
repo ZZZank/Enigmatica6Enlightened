@@ -41,8 +41,8 @@ onEvent('recipes', (event) => {
             outputFluid: '',
             outputFluidAmount: 0,
             id: 'aeinfinitybooster:dimension_card'
-        },
-    ]
+        }
+    ];
     recipes.forEach((recipe) => {
         let ingredients = [];
 

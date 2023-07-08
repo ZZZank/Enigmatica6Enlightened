@@ -413,7 +413,11 @@ onEvent('server.datapack.low_priority', (event) => {
                 { item: 'minecraft:netherite_scrap', weight: 100, amount: [1.0, 4.0] },
                 { item: 'mekanismtools:refined_glowstone_boots', weight: 100, enchantRange: [30.0, 40.0] },
                 { item: 'mekanismtools:refined_glowstone_leggings', weight: 100, enchantRange: [30.0, 40.0] },
-                { item: 'mekanismtools:refined_glowstone_chestplate', weight: 100, enchantRange: [30.0, 40.0] },
+                {
+                    item: 'mekanismtools:refined_glowstone_chestplate',
+                    weight: 100,
+                    enchantRange: [30.0, 40.0]
+                },
                 { item: 'mekanismtools:refined_glowstone_helmet', weight: 100, enchantRange: [30.0, 40.0] },
                 { item: 'mekanismtools:refined_glowstone_sword', weight: 100, enchantRange: [30.0, 40.0] },
                 { item: 'mekanismtools:refined_glowstone_shovel', weight: 100, enchantRange: [30.0, 40.0] },

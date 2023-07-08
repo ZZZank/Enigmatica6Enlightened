@@ -4,7 +4,11 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             type: 'pneumaticcraft:thermo_plant',
-            fluid_input: { type: 'pneumaticcraft:fluid', fluid: 'sophisticatedbackpacks:xp_still', amount: 1000 },
+            fluid_input: {
+                type: 'pneumaticcraft:fluid',
+                fluid: 'sophisticatedbackpacks:xp_still',
+                amount: 1000
+            },
             fluid_output: { fluid: 'industrialforegoing:essence', amount: 1000 },
             pressure: 1.0,
             speed: 5.0,
@@ -31,7 +35,11 @@ onEvent('recipes', (event) => {
         },
         {
             type: 'pneumaticcraft:thermo_plant',
-            fluid_input: { type: 'pneumaticcraft:fluid', fluid: 'pneumaticcraft:memory_essence', amount: 1000 },
+            fluid_input: {
+                type: 'pneumaticcraft:fluid',
+                fluid: 'pneumaticcraft:memory_essence',
+                amount: 1000
+            },
             fluid_output: { fluid: 'sophisticatedbackpacks:xp_still', amount: 1000 },
             pressure: 1.0,
             speed: 5.0,

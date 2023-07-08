@@ -421,7 +421,10 @@ onEvent('recipes', (event) => {
             input = `#forge:storage_blocks/${material}`;
 
         // Crush Blocks to Crushed Ore
-        event.recipes.create.crushing(output, input).processingTime(400).id(`create:crushing/${material}_block`);
+        event.recipes.create
+            .crushing(output, input)
+            .processingTime(400)
+            .id(`create:crushing/${material}_block`);
 
         // Washing
         output = [Item.of(nugget, 10), Item.of(nugget, 5).withChance(0.5)];
@@ -464,7 +467,12 @@ onEvent('recipes', (event) => {
         }
 
         if (block != air) {
-            recipes.push({ type: 'block', amount: 1296, input: `forge:storage_blocks/${material}`, time: 171 });
+            recipes.push({
+                type: 'block',
+                amount: 1296,
+                input: `forge:storage_blocks/${material}`,
+                time: 171
+            });
         }
         if (gem != air) {
             recipes.push({ type: 'gem', amount: 144, input: `forge:gems/${material}`, time: 57 });
@@ -556,7 +564,9 @@ onEvent('recipes', (event) => {
             .shapeless(`emendatusenigmatica:${material}_ore`, [`emendatusenigmatica:${material}_chunk`])
             .id(`enigmatica:base/emendatusenigmatica/${material}_ore`);
         event
-            .shapeless(Item.of(`emendatusenigmatica:${material}_chunk`, 4), [`emendatusenigmatica:${material}_cluster`])
+            .shapeless(Item.of(`emendatusenigmatica:${material}_chunk`, 4), [
+                `emendatusenigmatica:${material}_cluster`
+            ])
             .id(`emendatusenigmatica:chunk_from_cluster/${material}`);
     }
 
@@ -727,7 +737,9 @@ onEvent('recipes', (event) => {
                 return;
         }
 
-        event.recipes.mekanism.enriching(Item.of(output, count), input).id(`mekanism:processing/${material}/from_ore`);
+        event.recipes.mekanism
+            .enriching(Item.of(output, count), input)
+            .id(`mekanism:processing/${material}/from_ore`);
     }
 
     function mekanism_metal_ore_processing(
@@ -809,10 +821,16 @@ onEvent('recipes', (event) => {
 
         // Purifying
         event.recipes.mekanism
-            .purifying(Item.of(mek_clump), `#mekanism:shards/${material}`, { amount: 1, gas: 'mekanism:oxygen' })
+            .purifying(Item.of(mek_clump), `#mekanism:shards/${material}`, {
+                amount: 1,
+                gas: 'mekanism:oxygen'
+            })
             .id(`mekanism:processing/${material}/clump/from_shard`);
         event.recipes.mekanism
-            .purifying(Item.of(mek_clump, 3), `#forge:ores/${material}`, { amount: 1, gas: 'mekanism:oxygen' })
+            .purifying(Item.of(mek_clump, 3), `#forge:ores/${material}`, {
+                amount: 1,
+                gas: 'mekanism:oxygen'
+            })
             .id(`mekanism:processing/${material}/clump/from_ore`);
 
         // Crushing
@@ -1026,7 +1044,9 @@ onEvent('recipes', (event) => {
         }
 
         try {
-            secondaryOutput = getPreferredItemInTag(Ingredient.of(`#forge:dusts/${materialProperties.secondary}`)).id;
+            secondaryOutput = getPreferredItemInTag(
+                Ingredient.of(`#forge:dusts/${materialProperties.secondary}`)
+            ).id;
         } catch (err) {
             secondaryOutput = dust;
         }
@@ -1034,7 +1054,10 @@ onEvent('recipes', (event) => {
             .custom({
                 type: 'ars_nouveau:crush',
                 input: Ingredient.of(input).toJson(),
-                output: [Item.of(primaryOutput, primaryCount).chance(1.0), Item.of(secondaryOutput).chance(0.1)]
+                output: [
+                    Item.of(primaryOutput, primaryCount).chance(1.0),
+                    Item.of(secondaryOutput).chance(0.1)
+                ]
             })
             .id(`ars_nouveau:crushing/${material}_dust_from_ore`);
     }
@@ -1183,7 +1206,9 @@ onEvent('recipes', (event) => {
         }
 
         try {
-            secondaryOutput = getPreferredItemInTag(Ingredient.of(`#forge:dusts/${materialProperties.secondary}`)).id;
+            secondaryOutput = getPreferredItemInTag(
+                Ingredient.of(`#forge:dusts/${materialProperties.secondary}`)
+            ).id;
         } catch (err) {
             secondaryOutput = dust;
         }
@@ -1350,7 +1375,12 @@ onEvent('recipes', (event) => {
             recipes.push({ type: 'nugget', amount: 16, input: `#forge:nuggets/${material}`, energy: 555 });
         }
         if (block != air) {
-            recipes.push({ type: 'block', amount: 1296, input: `#forge:storage_blocks/${material}`, energy: 40000 });
+            recipes.push({
+                type: 'block',
+                amount: 1296,
+                input: `#forge:storage_blocks/${material}`,
+                energy: 40000
+            });
         }
         if (gear != air) {
             recipes.push({ type: 'gear', amount: 576, input: `#forge:gears/${material}`, energy: 20000 });
@@ -1461,13 +1491,23 @@ onEvent('recipes', (event) => {
             });
         }
         if (gear != air) {
-            recipes.push({ type: 'gear', amount: gearAmount, input: `#forge:gears/${material}`, energy: 20000 });
+            recipes.push({
+                type: 'gear',
+                amount: gearAmount,
+                input: `#forge:gears/${material}`,
+                energy: 20000
+            });
         }
         if (rod != air) {
             recipes.push({ type: 'rod', amount: baseAmount, input: `#forge:rods/${material}`, energy: 2500 });
         }
         if (plate != air) {
-            recipes.push({ type: 'plate', amount: baseAmount, input: `#forge:plates/${material}`, energy: 5000 });
+            recipes.push({
+                type: 'plate',
+                amount: baseAmount,
+                input: `#forge:plates/${material}`,
+                energy: 5000
+            });
         }
 
         recipes.forEach((recipe) => {
@@ -1517,7 +1557,9 @@ onEvent('recipes', (event) => {
                     .custom({
                         type: 'tconstruct:casting_table',
                         cast: {
-                            tag: `tconstruct:casts/${cast == 'sand' ? 'single_use' : 'multi_use'}/${recipe.type}`
+                            tag: `tconstruct:casts/${cast == 'sand' ? 'single_use' : 'multi_use'}/${
+                                recipe.type
+                            }`
                         },
                         cast_consumed: cast == 'sand' ? true : false,
                         fluid: {
@@ -1588,7 +1630,9 @@ onEvent('recipes', (event) => {
                     .custom({
                         type: 'tconstruct:casting_table',
                         cast: {
-                            tag: `tconstruct:casts/${cast == 'sand' ? 'single_use' : 'multi_use'}/${recipe.type}`
+                            tag: `tconstruct:casts/${cast == 'sand' ? 'single_use' : 'multi_use'}/${
+                                recipe.type
+                            }`
                         },
                         cast_consumed: cast == 'sand' ? true : false,
                         fluid: { name: `${modId}:molten_${material}`, amount: recipe.amount },

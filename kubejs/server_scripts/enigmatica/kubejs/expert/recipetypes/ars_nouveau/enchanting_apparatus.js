@@ -5,7 +5,12 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:expert/ars_nouveau/enchanting_apparatus/';
     const recipes = [
         {
-            inputs: ['#forge:dusts/silver', '#forge:dusts/silver', '#forge:dusts/silver', '#forge:dusts/silver'],
+            inputs: [
+                '#forge:dusts/silver',
+                '#forge:dusts/silver',
+                '#forge:dusts/silver',
+                '#forge:dusts/silver'
+            ],
             reagent: '#forge:dusts/sulfur',
             sourceCost: 100,
             output: Item.of('4x architects_palette:sunmetal_blend'),

@@ -1,9 +1,7 @@
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/immersiveengineering/fermenter/';
 
-    const lowAmountInputs = [
-        'farmersdelight:pumpkin_slice',
-    ];
+    const lowAmountInputs = ['farmersdelight:pumpkin_slice'];
 
     const normalAmountInputs = [
         'alexsmobs:banana',

@@ -3,7 +3,11 @@ onEvent('recipes', (event) => {
     var data = {
         recipes_unheated: [
             {
-                inputs: ['#minecraft:planks', '#minecraft:planks', Fluid.of('immersiveengineering:creosote', 250)],
+                inputs: [
+                    '#minecraft:planks',
+                    '#minecraft:planks',
+                    Fluid.of('immersiveengineering:creosote', 250)
+                ],
                 output: Item.of('immersiveengineering:treated_wood_horizontal', 2),
                 id: `${id_prefix}treated_wood_horizontal`
             },
@@ -89,7 +93,7 @@ onEvent('recipes', (event) => {
                 inputs: ['#forge:dyes/blue', '#forge:dyes/yellow'],
                 output: Item.of('minecraft:green_dye', 2),
                 id: `${id_prefix}green_dye_from_blue_yellow`
-            },
+            }
         ],
         recipes_heated: [
             {
@@ -108,7 +112,12 @@ onEvent('recipes', (event) => {
                 id: `${id_prefix}bronze_crushed`
             },
             {
-                inputs: ['#forge:ingots/copper', '#forge:ingots/copper', '#forge:ingots/copper', '#forge:ingots/tin'],
+                inputs: [
+                    '#forge:ingots/copper',
+                    '#forge:ingots/copper',
+                    '#forge:ingots/copper',
+                    '#forge:ingots/tin'
+                ],
                 output: Item.of('emendatusenigmatica:bronze_ingot', 4),
                 id: `${id_prefix}bronze_ingot`
             },
@@ -133,7 +142,11 @@ onEvent('recipes', (event) => {
                 id: `${id_prefix}electrum_ingot`
             },
             {
-                inputs: ['#create:crushed_ores/iron', '#create:crushed_ores/iron', '#create:crushed_ores/nickel'],
+                inputs: [
+                    '#create:crushed_ores/iron',
+                    '#create:crushed_ores/iron',
+                    '#create:crushed_ores/nickel'
+                ],
                 output: Item.of('emendatusenigmatica:invar_crushed', 3),
                 id: `${id_prefix}invar_crushed`
             },
@@ -158,12 +171,22 @@ onEvent('recipes', (event) => {
                 id: `${id_prefix}pig_iron_ingot`
             },
             {
-                inputs: ['#forge:ingots/copper', '#forge:ingots/copper', '#forge:ingots/copper', '#forge:ingots/gold'],
+                inputs: [
+                    '#forge:ingots/copper',
+                    '#forge:ingots/copper',
+                    '#forge:ingots/copper',
+                    '#forge:ingots/gold'
+                ],
                 output: Item.of('tconstruct:rose_gold_ingot', 4),
                 id: `${id_prefix}rose_gold_ingot`
             },
             {
-                inputs: ['#forge:ingots/copper', '#forge:ingots/copper', '#forge:ingots/copper', '#forge:glass'],
+                inputs: [
+                    '#forge:ingots/copper',
+                    '#forge:ingots/copper',
+                    '#forge:ingots/copper',
+                    '#forge:glass'
+                ],
                 output: Item.of('tconstruct:tinkers_bronze_ingot', 4),
                 id: `${id_prefix}tinkers_bronze_ingot`
             },
@@ -278,7 +301,12 @@ onEvent('recipes', (event) => {
                 id: `${id_prefix}aeternium_ingot`
             },
             {
-                inputs: ['#forge:ingots/copper', '#forge:ingots/copper', '#forge:ingots/cobalt', '#forge:obsidian'],
+                inputs: [
+                    '#forge:ingots/copper',
+                    '#forge:ingots/copper',
+                    '#forge:ingots/cobalt',
+                    '#forge:obsidian'
+                ],
                 output: Item.of('tconstruct:hepatizon_ingot', 4),
                 id: `${id_prefix}hepatizon_ingot`
             },

@@ -143,7 +143,9 @@ onEvent('ponder.registry', (event) => {
                 scene.addKeyframe();
 
                 let layerHint = new Object();
-                scene.overlay().chaseBoundingBoxOutline(PonderPalette.GREEN, layerHint, AABB.of(3, 1, 3, 4, 2, 4), 90);
+                scene
+                    .overlay()
+                    .chaseBoundingBoxOutline(PonderPalette.GREEN, layerHint, AABB.of(3, 1, 3, 4, 2, 4), 90);
 
                 scene
                     .overlay()
@@ -186,7 +188,9 @@ onEvent('ponder.registry', (event) => {
                     .overlay()
                     .showText(60)
                     .colored(PonderPalette.WHITE)
-                    .text(`Don't have the stone you need? Your stone generator can produce random types of stone!`)
+                    .text(
+                        `Don't have the stone you need? Your stone generator can produce random types of stone!`
+                    )
                     .independent(60);
 
                 scene.idle(30);
@@ -201,7 +205,9 @@ onEvent('ponder.registry', (event) => {
                 var diamondblock = util.getDefaultState('minecraft:diamond_block');
 
                 let layerHint = new Object();
-                scene.overlay().chaseBoundingBoxOutline(PonderPalette.GREEN, layerHint, AABB.of(3, 1, 3, 4, 2, 4), 80);
+                scene
+                    .overlay()
+                    .chaseBoundingBoxOutline(PonderPalette.GREEN, layerHint, AABB.of(3, 1, 3, 4, 2, 4), 80);
 
                 scene
                     .overlay()

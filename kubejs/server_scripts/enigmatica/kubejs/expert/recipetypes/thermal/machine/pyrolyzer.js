@@ -6,7 +6,11 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             input: 'minecraft:coal',
-            outputs: ['emendatusenigmatica:coke_gem', 'thermal:tar', Fluid.of('immersiveengineering:creosote', 250)],
+            outputs: [
+                'emendatusenigmatica:coke_gem',
+                'thermal:tar',
+                Fluid.of('immersiveengineering:creosote', 250)
+            ],
             energy: 12000,
             id: 'thermal:machine/pyrolyzer/pyrolyzer_coal'
         },

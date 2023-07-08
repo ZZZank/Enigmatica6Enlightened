@@ -38,7 +38,12 @@ onEvent('recipes', (event) => {
             spirit_job_type: 'occultism:clear_weather',
             entity_to_summon: 'occultism:djinni',
             ritual_dummy: 'occultism:ritual_dummy/summon_djinni_clear_weather',
-            ingredients: ['#forge:crops/beetroot', '#forge:crops/carrot', '#forge:crops/potato', '#forge:crops/wheat'],
+            ingredients: [
+                '#forge:crops/beetroot',
+                '#forge:crops/carrot',
+                '#forge:crops/potato',
+                '#forge:crops/wheat'
+            ],
             result: 'occultism:jei_dummy/none',
             id: 'occultism:ritual/summon_djinni_clear_weather'
         },
@@ -112,7 +117,9 @@ onEvent('recipes', (event) => {
             pentacle_id: 'occultism:possess_foliot',
             item_to_use: 'occultism:datura',
             entity_to_summon: 'resourcefulbees:otherworldly_bee',
-            ritual_dummy: Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:otherworldly_bee' }).weakNBT(),
+            ritual_dummy: Item.of('resourcefulbees:bee_jar', {
+                Entity: 'resourcefulbees:otherworldly_bee'
+            }).weakNBT(),
             ingredients: [
                 'resourcefulbees:silver_honeycomb',
                 'resourcefulbees:silver_honeycomb',

@@ -11,7 +11,13 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}coal_coke`
         },
         {
-            inputs: ['#forge:clay', '#forge:gravel', '#forge:sand', '#forge:sand', Fluid.of('minecraft:water', 500)],
+            inputs: [
+                '#forge:clay',
+                '#forge:gravel',
+                '#forge:sand',
+                '#forge:sand',
+                Fluid.of('minecraft:water', 500)
+            ],
             output: Fluid.of('immersiveengineering:concrete', 500),
             id: `${id_prefix}concrete`
         },

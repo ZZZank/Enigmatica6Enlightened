@@ -31,6 +31,8 @@ onEvent('recipes', (event) => {
     ];
 
     recipes.forEach((recipe) => {
-        event.recipes.immersiveengineering.metal_press(recipe.output, recipe.input, recipe.mold).id(recipe.id);
+        event.recipes.immersiveengineering
+            .metal_press(recipe.output, recipe.input, recipe.mold)
+            .id(recipe.id);
     });
 });

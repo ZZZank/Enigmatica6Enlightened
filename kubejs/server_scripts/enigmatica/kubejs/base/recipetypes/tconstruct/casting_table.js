@@ -23,7 +23,9 @@ onEvent('recipes', (event) => {
                 name: 'kubejs:molten_cobalt_bee',
                 amount: 500
             },
-            result: Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:cobalt_bee' }).toResultJson(),
+            result: Item.of('resourcefulbees:bee_jar', {
+                Entity: 'resourcefulbees:cobalt_bee'
+            }).toResultJson(),
             cooling_time: 200,
             id: `${id_prefix}cobalt_bee_jar`
         },
@@ -36,7 +38,9 @@ onEvent('recipes', (event) => {
                 name: 'kubejs:liquid_skyslime_bee',
                 amount: 500
             },
-            result: Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:skyslime_bee' }).toResultJson(),
+            result: Item.of('resourcefulbees:bee_jar', {
+                Entity: 'resourcefulbees:skyslime_bee'
+            }).toResultJson(),
             cooling_time: 100,
             id: `${id_prefix}skyslime_bee_jar`
         },
@@ -49,7 +53,9 @@ onEvent('recipes', (event) => {
                 name: 'kubejs:liquid_ichor_bee',
                 amount: 500
             },
-            result: Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:ichor_bee' }).toResultJson(),
+            result: Item.of('resourcefulbees:bee_jar', {
+                Entity: 'resourcefulbees:ichor_bee'
+            }).toResultJson(),
             cooling_time: 100,
             id: `${id_prefix}ichor_bee_jar`
         },
@@ -62,7 +68,9 @@ onEvent('recipes', (event) => {
                 name: 'kubejs:liquid_enderslime_bee',
                 amount: 500
             },
-            result: Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:enderslime_bee' }).toResultJson(),
+            result: Item.of('resourcefulbees:bee_jar', {
+                Entity: 'resourcefulbees:enderslime_bee'
+            }).toResultJson(),
             cooling_time: 100,
             id: `${id_prefix}enderslime_bee_jar`
         }

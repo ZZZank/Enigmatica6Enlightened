@@ -60,16 +60,14 @@ onEvent('ponder.registry', (event) => {
                 scene.idle(100);
 
                 // only show the base first
-                scene
-                    .world()
-                    .hideSection(
-                        util
-                            .select()
-                            .everywhere()
-                            .substract(util.select().layer(0))
-                            .substract(util.select().position(3, 3, 3)),
-                        Facing.down
-                    );
+                scene.world().hideSection(
+                    util
+                        .select()
+                        .everywhere()
+                        .substract(util.select().layer(0))
+                        .substract(util.select().position(3, 3, 3)),
+                    Facing.down
+                );
 
                 scene.addKeyframe();
 
@@ -85,7 +83,9 @@ onEvent('ponder.registry', (event) => {
                         2
                     );
 
-                scene.overlay().chaseBoundingBoxOutline(PonderPalette.GREEN, hintBox, AABB.of(3, 3, 3, 4, 4, 4), 120);
+                scene
+                    .overlay()
+                    .chaseBoundingBoxOutline(PonderPalette.GREEN, hintBox, AABB.of(3, 3, 3, 4, 4, 4), 120);
 
                 scene
                     .overlay()
@@ -111,12 +111,20 @@ onEvent('ponder.registry', (event) => {
                     .placeNearTarget()
                     .pointAt(util.vector().centerOf(5, 5, 5));
 
-                scene.overlay().chaseBoundingBoxOutline(PonderPalette.GREEN, hintBox, AABB.of(1, 1, 1, 6, 6, 6), 120);
+                scene
+                    .overlay()
+                    .chaseBoundingBoxOutline(PonderPalette.GREEN, hintBox, AABB.of(1, 1, 1, 6, 6, 6), 120);
 
                 scene.idle(40);
 
                 // add the drills
-                scene.world().showSection(util.select().layer(3).substract(util.select().position(3, 3, 3)), Facing.up);
+                scene.world().showSection(
+                    util
+                        .select()
+                        .layer(3)
+                        .substract(util.select().position(3, 3, 3)),
+                    Facing.up
+                );
 
                 scene.idle(20);
                 scene.addKeyframe();
@@ -159,7 +167,10 @@ onEvent('ponder.registry', (event) => {
 
                 scene
                     .overlay()
-                    .showControls(new PonderInput([3.5, 4, 3.5], PonderPointing.DOWN).withItem(randomOf(badOres)), 40);
+                    .showControls(
+                        new PonderInput([3.5, 4, 3.5], PonderPointing.DOWN).withItem(randomOf(badOres)),
+                        40
+                    );
 
                 scene
                     .overlay()
@@ -322,7 +333,9 @@ onEvent('ponder.registry', (event) => {
 
                 scene.addKeyframe();
 
-                scene.world().setBlock([3, 3, 3], util.getDefaultState('industrialforegoing:fluid_laser_base'), true);
+                scene
+                    .world()
+                    .setBlock([3, 3, 3], util.getDefaultState('industrialforegoing:fluid_laser_base'), true);
 
                 scene.idle(10);
 
@@ -343,7 +356,9 @@ onEvent('ponder.registry', (event) => {
                         10
                     );
 
-                scene.overlay().chaseBoundingBoxOutline(PonderPalette.GREEN, fluidHint, AABB.of(3, 3, 3, 4, 4, 4), 60);
+                scene
+                    .overlay()
+                    .chaseBoundingBoxOutline(PonderPalette.GREEN, fluidHint, AABB.of(3, 3, 3, 4, 4, 4), 60);
 
                 scene.idle(80);
 
@@ -361,7 +376,9 @@ onEvent('ponder.registry', (event) => {
 
                 scene.idle(100);
 
-                scene.world().setBlocks(util.select().layer(0), util.getDefaultState('minecraft:netherrack'), true);
+                scene
+                    .world()
+                    .setBlocks(util.select().layer(0), util.getDefaultState('minecraft:netherrack'), true);
                 scene.addKeyframe();
 
                 scene
@@ -371,12 +388,18 @@ onEvent('ponder.registry', (event) => {
                     .text('For example, if you place it in any Nether biome...')
                     .pointAt([3.5, 0.5, 3.5]);
 
-                scene.overlay().chaseBoundingBoxOutline(PonderPalette.RED, fluidHint, AABB.of(0, 0, 0, 7, 0, 7), 20);
-                scene.overlay().chaseBoundingBoxOutline(PonderPalette.RED, fluidHint, AABB.of(0, 0, 0, 7, 1, 7), 100);
+                scene
+                    .overlay()
+                    .chaseBoundingBoxOutline(PonderPalette.RED, fluidHint, AABB.of(0, 0, 0, 7, 0, 7), 20);
+                scene
+                    .overlay()
+                    .chaseBoundingBoxOutline(PonderPalette.RED, fluidHint, AABB.of(0, 0, 0, 7, 1, 7), 100);
 
                 scene.idle(70);
 
-                scene.overlay().chaseBoundingBoxOutline(PonderPalette.INPUT, fluidHint, AABB.of(3, 3, 3, 4, 4, 4), 120);
+                scene
+                    .overlay()
+                    .chaseBoundingBoxOutline(PonderPalette.INPUT, fluidHint, AABB.of(3, 3, 3, 4, 4, 4), 120);
 
                 scene
                     .overlay()
@@ -405,7 +428,8 @@ onEvent('ponder.registry', (event) => {
                     .world()
                     .setBlock(
                         tank1,
-                        Block.id('industrialforegoing:common_black_hole_tank').with('subfacing', 'north').blockState,
+                        Block.id('industrialforegoing:common_black_hole_tank').with('subfacing', 'north')
+                            .blockState,
                         true
                     );
 
@@ -477,7 +501,9 @@ onEvent('ponder.registry', (event) => {
 
                 scene.idle(80);
 
-                scene.world().hideSection(util.select().layersFrom(1).substract(util.select().layer(6)), Facing.south);
+                scene
+                    .world()
+                    .hideSection(util.select().layersFrom(1).substract(util.select().layer(6)), Facing.south);
 
                 scene.idle(10);
 
@@ -495,7 +521,9 @@ onEvent('ponder.registry', (event) => {
                         10
                     );
 
-                scene.overlay().chaseBoundingBoxOutline(PonderPalette.GREEN, layerHint, AABB.of(1, 6, 1, 6, 7, 6), 80);
+                scene
+                    .overlay()
+                    .chaseBoundingBoxOutline(PonderPalette.GREEN, layerHint, AABB.of(1, 6, 1, 6, 7, 6), 80);
 
                 scene
                     .overlay()
@@ -540,7 +568,12 @@ onEvent('ponder.registry', (event) => {
 
                 scene
                     .overlay()
-                    .chaseBoundingBoxOutline(PonderPalette.GREEN, layerHint, AABB.of(3, 1, 3, 4, 2, 4), stasisTime);
+                    .chaseBoundingBoxOutline(
+                        PonderPalette.GREEN,
+                        layerHint,
+                        AABB.of(3, 1, 3, 4, 2, 4),
+                        stasisTime
+                    );
 
                 let stasisHint = new Object();
                 scene
@@ -553,20 +586,29 @@ onEvent('ponder.registry', (event) => {
                     );
                 scene
                     .overlay()
-                    .chaseBoundingBoxOutline(PonderPalette.BLUE, stasisHint, AABB.of(2, 2, 2, 5, 5, 5), stasisTime);
+                    .chaseBoundingBoxOutline(
+                        PonderPalette.BLUE,
+                        stasisHint,
+                        AABB.of(2, 2, 2, 5, 5, 5),
+                        stasisTime
+                    );
 
                 scene.idle(stasisTime);
 
                 //scene
                 //  .overlay()
                 //  .chaseBoundingBoxOutline(PonderPalette.RED, stasisHint, AABB.of(3.25, 1.25, 3.25, 3.75, 1.75, 3.75), 5);
-                scene.overlay().chaseBoundingBoxOutline(PonderPalette.RED, stasisHint, AABB.of(3, 1, 3, 4, 2, 4), 90);
+                scene
+                    .overlay()
+                    .chaseBoundingBoxOutline(PonderPalette.RED, stasisHint, AABB.of(3, 1, 3, 4, 2, 4), 90);
 
                 scene
                     .overlay()
                     .showText(80)
                     .colored(PonderPalette.RED)
-                    .text(`Trust me when I say: You DO NOT want to let this thing run out of power for this build.`)
+                    .text(
+                        `Trust me when I say: You DO NOT want to let this thing run out of power for this build.`
+                    )
                     .placeNearTarget()
                     .pointAt([3.5, 1.5, 3.5]);
 
@@ -580,7 +622,9 @@ onEvent('ponder.registry', (event) => {
                     .overlay()
                     .showText(50)
                     .colored(PonderPalette.WHITE)
-                    .text(`Next, we will need a willing test subject. Luckily, I know just the right one for this job!`)
+                    .text(
+                        `Next, we will need a willing test subject. Luckily, I know just the right one for this job!`
+                    )
                     .independent(30);
 
                 scene.world().showSection(util.select().layers(2, 3), Facing.down);
@@ -608,7 +652,9 @@ onEvent('ponder.registry', (event) => {
 
                 scene.idle(20);
 
-                scene.world().setBlocks(util.select().layers(2, 3), util.getDefaultState('minecraft:air'), true);
+                scene
+                    .world()
+                    .setBlocks(util.select().layers(2, 3), util.getDefaultState('minecraft:air'), true);
 
                 var wither = scene.world().createEntity('minecraft:wither', [3.5, 2, 3.5]);
 
@@ -647,7 +693,9 @@ onEvent('ponder.registry', (event) => {
                     .overlay()
                     .showText(70)
                     .colored(PonderPalette.WHITE)
-                    .text(`This will produce Ether Gas, which we will just stow away in a Black Hole Tank for now.`)
+                    .text(
+                        `This will produce Ether Gas, which we will just stow away in a Black Hole Tank for now.`
+                    )
                     .pointAt([3.5, 7, 3.5]);
 
                 scene.idle(80);

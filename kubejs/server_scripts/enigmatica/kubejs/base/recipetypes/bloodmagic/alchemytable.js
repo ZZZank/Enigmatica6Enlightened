@@ -12,7 +12,12 @@ onEvent('recipes', (event) => {
             id: 'bloodmagic:alchemytable/flint_from_gravel'
         },
         {
-            inputs: ['#forge:crops/potato', '#forge:crops/potato', '#forge:crops/potato', 'minecraft:bone_meal'],
+            inputs: [
+                '#forge:crops/potato',
+                '#forge:crops/potato',
+                '#forge:crops/potato',
+                'minecraft:bone_meal'
+            ],
             output: 'bloodmagic:plantoil',
             count: 1,
             syphon: 100,

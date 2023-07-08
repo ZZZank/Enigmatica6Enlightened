@@ -37,7 +37,9 @@ onEvent('recipes', (event) => {
         },
         { output: 'minecraft:crafting_table', inputs: ['#forge:workbenches'] },
         {
-            output: Item.of('patchouli:guide_book', { 'patchouli:book': 'resourcefulbees:fifty_shades_of_bees' }),
+            output: Item.of('patchouli:guide_book', {
+                'patchouli:book': 'resourcefulbees:fifty_shades_of_bees'
+            }),
             inputs: ['minecraft:sugar', 'minecraft:book']
         },
         { output: 'ars_nouveau:mana_gem', inputs: ['emendatusenigmatica:arcane_gem'] },
@@ -61,8 +63,14 @@ onEvent('recipes', (event) => {
         { output: Item.of('#forge:shards/ender'), inputs: ['#forge:ores/ender', 'thermal:earth_charge'] },
         { output: Item.of('#forge:shards/amber'), inputs: ['#forge:ores/amber', 'thermal:earth_charge'] },
 
-        { output: 'emendatusenigmatica:fluorite_dust', inputs: ['thermal:earth_charge', '#forge:ores/fluorite'] },
-        { output: 'emendatusenigmatica:dimensional_dust', inputs: ['thermal:earth_charge', '#forge:ores/dimensional'] },
+        {
+            output: 'emendatusenigmatica:fluorite_dust',
+            inputs: ['thermal:earth_charge', '#forge:ores/fluorite']
+        },
+        {
+            output: 'emendatusenigmatica:dimensional_dust',
+            inputs: ['thermal:earth_charge', '#forge:ores/dimensional']
+        },
         {
             output: 'emendatusenigmatica:potassium_nitrate_dust',
             inputs: ['thermal:earth_charge', '#forge:ores/potassium_nitrate']
@@ -189,7 +197,9 @@ onEvent('recipes', (event) => {
                         id: 'patchouli:guide_book',
                         Count: 1,
                         tag: {
-                            'akashictome:displayName': { text: 'Becoming an Itamae (Sushi Go Crafting Manual)' },
+                            'akashictome:displayName': {
+                                text: 'Becoming an Itamae (Sushi Go Crafting Manual)'
+                            },
                             'patchouli:book': 'sushigocrafting:sushigocrafting',
                             display: {
                                 Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Becoming an Itamae (Sushi Go Crafting Manual)"}]}'
@@ -549,7 +559,10 @@ onEvent('recipes', (event) => {
         otherHopperPots.push('botanypots:hopper_botany_pot');
 
         event
-            .shapeless(`botanypots:${color}_botany_pot`, [Ingredient.of(otherSimplePots), `#forge:dyes/${color}`])
+            .shapeless(`botanypots:${color}_botany_pot`, [
+                Ingredient.of(otherSimplePots),
+                `#forge:dyes/${color}`
+            ])
             .id(`${id_prefix}dye_botany_pot_${color}`);
 
         event
@@ -590,7 +603,10 @@ onEvent('recipes', (event) => {
                 id_prefix
             );
             fallback_id(
-                event.shapeless(`atum:ceramic_wall_${color}`, ['atum:ceramic_wall_white', `#forge:dyes/${color}`]),
+                event.shapeless(`atum:ceramic_wall_${color}`, [
+                    'atum:ceramic_wall_white',
+                    `#forge:dyes/${color}`
+                ]),
                 id_prefix
             );
         }

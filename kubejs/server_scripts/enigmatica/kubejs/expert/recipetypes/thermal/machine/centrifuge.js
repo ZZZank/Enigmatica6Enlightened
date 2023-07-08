@@ -6,7 +6,10 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             input: 'kubejs:ground_meat',
-            outputs: [Item.of('minecraft:bone_meal').withChance(0.15), Fluid.of('industrialforegoing:meat', 100)],
+            outputs: [
+                Item.of('minecraft:bone_meal').withChance(0.15),
+                Fluid.of('industrialforegoing:meat', 100)
+            ],
             energy: 2000,
             id: `${id_prefix}meat`
         }

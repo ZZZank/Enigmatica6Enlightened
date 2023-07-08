@@ -6,8 +6,16 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             outputs: [
-                { type: 'masterfulmachinery:items', chance: 1.0, data: { item: 'kubejs:observatory_lens', count: 1 } },
-                { type: 'masterfulmachinery:items', chance: 0.05, data: { item: 'kubejs:observatory_lens', count: 1 } }
+                {
+                    type: 'masterfulmachinery:items',
+                    chance: 1.0,
+                    data: { item: 'kubejs:observatory_lens', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    chance: 0.05,
+                    data: { item: 'kubejs:observatory_lens', count: 1 }
+                }
             ],
 
             inputs: [

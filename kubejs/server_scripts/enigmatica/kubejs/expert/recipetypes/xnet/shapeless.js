@@ -20,7 +20,12 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'xnet:advanced_connector_routing',
-            inputs: [`xnet:connector_routing`, 'eidolon:ender_calx', '#forge:gems/diamond', '#forge:gems/diamond'],
+            inputs: [
+                `xnet:connector_routing`,
+                'eidolon:ender_calx',
+                '#forge:gems/diamond',
+                '#forge:gems/diamond'
+            ],
             id: 'xnet:advanced_connector_routing'
         }
     ];

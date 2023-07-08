@@ -13,6 +13,8 @@ onEvent('recipes', (event) => {
     ];
 
     recipes.forEach((recipe) => {
-        event.recipes.immersiveengineering.arc_furnace(recipe.outputs, recipe.input1, recipe.secondaries).id(recipe.id);
+        event.recipes.immersiveengineering
+            .arc_furnace(recipe.outputs, recipe.input1, recipe.secondaries)
+            .id(recipe.id);
     });
 });

@@ -5,7 +5,11 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:expert/pneumaticcraft/thermo_plant/';
     const recipes = [
         {
-            fluid_input: { type: 'pneumaticcraft:fluid', fluid: 'undergarden:virulent_mix_source', amount: 4000 },
+            fluid_input: {
+                type: 'pneumaticcraft:fluid',
+                fluid: 'undergarden:virulent_mix_source',
+                amount: 4000
+            },
             item_input: { item: 'occultism:spirit_attuned_gem' },
             item_output: { item: 'occultism:spirit_attuned_crystal', count: 1 },
             pressure: 4.8,
@@ -83,7 +87,11 @@ onEvent('recipes', (event) => {
         {
             item_input: { item: 'atum:crystal_glass' },
             item_output: { item: 'integratedterminals:menril_glass' },
-            fluid_input: { type: 'pneumaticcraft:fluid', fluid: 'integrateddynamics:menril_resin', amount: 1000 },
+            fluid_input: {
+                type: 'pneumaticcraft:fluid',
+                fluid: 'integrateddynamics:menril_resin',
+                amount: 1000
+            },
             pressure: 4.0,
             speed: 0.5,
             exothermic: false,
@@ -93,7 +101,11 @@ onEvent('recipes', (event) => {
         {
             item_input: { item: 'atum:crystal_glass' },
             item_output: { item: 'integratedterminals:chorus_glass' },
-            fluid_input: { type: 'pneumaticcraft:fluid', fluid: 'integrateddynamics:liquid_chorus', amount: 1000 },
+            fluid_input: {
+                type: 'pneumaticcraft:fluid',
+                fluid: 'integrateddynamics:liquid_chorus',
+                amount: 1000
+            },
             pressure: 4.0,
             speed: 0.5,
             exothermic: false,
@@ -146,7 +158,11 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}kvasir_mead`
         },
         {
-            fluid_input: { type: 'pneumaticcraft:fluid', fluid: 'astralsorcery:liquid_starlight', amount: 1000 },
+            fluid_input: {
+                type: 'pneumaticcraft:fluid',
+                fluid: 'astralsorcery:liquid_starlight',
+                amount: 1000
+            },
             item_input: { item: 'kubejs:astrogro' },
             item_output: { item: 'astralsorcery:celestial_crystal', count: 1 },
             pressure: 4.5,

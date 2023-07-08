@@ -97,7 +97,9 @@ onEvent('ponder.registry', (event) => {
                     .overlay()
                     .showText(140)
                     .colored(PonderPalette.WHITE)
-                    .text(`We can set the router to break any cobblestone in front of it for infinite cobblestone!`)
+                    .text(
+                        `We can set the router to break any cobblestone in front of it for infinite cobblestone!`
+                    )
                     .independent(60);
 
                 scene.idle(20);
@@ -143,7 +145,9 @@ onEvent('ponder.registry', (event) => {
                 scene.addKeyframe();
 
                 let layerHint = new Object();
-                scene.overlay().chaseBoundingBoxOutline(PonderPalette.GREEN, layerHint, AABB.of(3, 1, 3, 4, 2, 4), 90);
+                scene
+                    .overlay()
+                    .chaseBoundingBoxOutline(PonderPalette.GREEN, layerHint, AABB.of(3, 1, 3, 4, 2, 4), 90);
 
                 scene
                     .overlay()
@@ -203,7 +207,9 @@ onEvent('ponder.registry', (event) => {
                 var ironblock = util.getDefaultState('minecraft:iron_block');
 
                 let layerHint = new Object();
-                scene.overlay().chaseBoundingBoxOutline(PonderPalette.GREEN, layerHint, AABB.of(3, 1, 3, 4, 2, 4), 80);
+                scene
+                    .overlay()
+                    .chaseBoundingBoxOutline(PonderPalette.GREEN, layerHint, AABB.of(3, 1, 3, 4, 2, 4), 80);
 
                 scene
                     .overlay()
