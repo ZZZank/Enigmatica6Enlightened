@@ -200,10 +200,10 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { item: 'kubejs:dimensional_mastery_shard', count: 1 } }
             ],
             inputs: [
-                { type: 'masterfulmachinery:items', data: { item: 'aeadditions:item_storage_cell_4096', count: 2 } },
+                { type: 'masterfulmachinery:items', data: { item: 'aeadditions:item_storage_cell_1024', count: 2 } },
                 {
                     type: 'masterfulmachinery:items',
-                    data: { item: 'aeadditions:fluid_storage_cell_4096', count: 2 }
+                    data: { item: 'aeadditions:fluid_storage_cell_1024', count: 2 }
                 },
                 { type: 'masterfulmachinery:items', data: { item: 'mekanism:quantum_entangloporter', count: 4 } },
                 { type: 'masterfulmachinery:items', data: { item: 'aeinfinitybooster:dimension_card', count: 1 } },

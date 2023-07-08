@@ -13,9 +13,9 @@ onEvent('item.tags', (event) => {
             .add(/mekanism:\w+_bin/)
             .add(/framedcompactdrawers:framed/)
             .add(/appliedenergistics2:\w+storage_cell/)
-            // .add('#refinedstorage:parts/items')
-            // .add('#refinedstorage:disks/items')
-            // .add('#refinedstorage:storage_blocks/items')
-            // .add(/dank_/);
+            .add(/aeadditions:item_storage_cell_\w+/)
+            .add('#refinedstorage:parts/items')
+            .add('#refinedstorage:disks/items')
+            .add('#refinedstorage:storage_blocks/items');
     });
 });
