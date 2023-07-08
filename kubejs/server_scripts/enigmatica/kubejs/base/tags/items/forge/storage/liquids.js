@@ -24,7 +24,7 @@ onEvent('item.tags', (event) => {
             .add(items)
             .add(/_tank/)
             .add(/fluid_storage/)
-            .add(/extrastorage:\w+_fluid/)
+            .add(/aeadditions:fluid_\w+/)
             .remove(exceptions);
     });
 });

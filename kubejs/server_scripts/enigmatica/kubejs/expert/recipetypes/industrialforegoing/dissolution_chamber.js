@@ -1261,16 +1261,6 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}memory_ultimate_filled`
         },
         {
-            inputs: ['extrastorage:diamond_crafter'],
-            inputFluid: 'tconstruct:molten_netherite',
-            inputFluidAmount: 144 * 9,
-            processingTime: 200,
-            outputItem: { item: 'extrastorage:netherite_crafter', count: 1 },
-            outputFluid: '',
-            outputFluidAmount: 0,
-            id: 'extrastorage:netherite_crafter'
-        },
-        {
             inputs: [
                 'minecraft:light_gray_concrete_powder',
                 'minecraft:light_gray_concrete_powder',
