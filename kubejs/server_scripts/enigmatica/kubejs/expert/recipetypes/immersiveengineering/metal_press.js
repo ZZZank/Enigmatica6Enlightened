@@ -27,12 +27,6 @@ onEvent('recipes', (event) => {
             input: 'appliedenergistics2:printed_engineering_processor',
             mold: '#thermal:crafting/dies/coin',
             id: `${id_prefix}engineering_processor`
-        },
-        {
-            output: 'extrastorage:neural_processor',
-            input: 'extrastorage:raw_neural_processor',
-            mold: '#thermal:crafting/dies/coin',
-            id: `${id_prefix}neural_processor`
         }
     ];
 

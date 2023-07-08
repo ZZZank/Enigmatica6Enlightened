@@ -22,7 +22,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'refinedstorage:quartz_enriched_iron',
                 B: '#forge:circuits/advanced',
-                C: 'extrastorage:neural_processor',
+                C: 'packagedauto:package_component',
                 D: 'thermal:upgrade_augment_1',
                 E: 'refinedstorage:crafter'
             },
@@ -34,7 +34,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'refinedstorage:quartz_enriched_iron',
                 B: '#forge:circuits/elite',
-                C: 'extrastorage:neural_processor',
+                C: 'packagedauto:package_component',
                 D: 'thermal:upgrade_augment_2',
                 E: 'refinedstorage:crafter'
             },
@@ -56,7 +56,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'refinedstorage:quartz_enriched_iron',
                 B: '#forge:circuits/ultimate',
-                C: 'extrastorage:neural_processor',
+                C: 'packagedauto:package_component',
                 D: 'thermal:upgrade_augment_3',
                 E: 'refinedstorage:crafter'
             },

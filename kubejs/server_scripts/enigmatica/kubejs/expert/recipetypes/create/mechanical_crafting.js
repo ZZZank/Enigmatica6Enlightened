@@ -198,7 +198,7 @@ onEvent('recipes', (event) => {
                 D: 'pneumaticcraft:omnidirectional_hopper',
                 E: 'pneumaticcraft:printed_circuit_board',
                 F: '#industrialforegoing:machine_frame/supreme',
-                G: 'extrastorage:neural_processor',
+                G: 'packagedauto:package_component',
                 H: 'powah:player_aerial_pearl'
             },
             id: `${id_prefix}aerial_interface`
@@ -235,7 +235,7 @@ onEvent('recipes', (event) => {
                 A: 'pneumaticcraft:logistics_core',
                 B: 'integrateddynamics:crystalized_menril_block',
                 C: 'integrateddynamics:menril_wood',
-                D: 'extrastorage:neural_processor',
+                D: 'packagedauto:package_component',
                 E: 'kubejs:cpu_core_as_81221',
                 F: 'pneumaticcraft:smart_chest',
                 G: 'refinedstorage:machine_casing',

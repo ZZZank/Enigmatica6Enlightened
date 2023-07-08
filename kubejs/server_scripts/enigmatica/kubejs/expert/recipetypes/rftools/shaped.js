@@ -278,7 +278,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'appliedenergistics2:wireless_booster',
                 B: 'rftoolscontrol:network_card',
-                C: 'extrastorage:neural_processor'
+                C: 'packagedauto:package_component'
             },
             id: 'rftoolscontrol:advanced_network_card'
         },

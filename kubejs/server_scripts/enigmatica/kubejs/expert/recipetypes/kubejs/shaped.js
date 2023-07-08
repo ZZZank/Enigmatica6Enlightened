@@ -202,7 +202,7 @@ onEvent('recipes', (event) => {
             output: 'kubejs:4096k_storage_part_package',
             pattern: ['ABA', 'DCD', 'ADA'],
             key: {
-                A: 'extrastorage:neural_processor',
+                A: 'packagedauto:package_component',
                 B: '#forge:circuits/ultimate',
                 C: 'mekanism:cardboard_box',
                 D: 'extrastorage:storagepart_1024k'
@@ -213,7 +213,7 @@ onEvent('recipes', (event) => {
             output: 'kubejs:16384k_storage_part_package',
             pattern: ['ABA', 'DCD', 'ADA'],
             key: {
-                A: 'extrastorage:neural_processor',
+                A: 'packagedauto:package_component',
                 B: '#forge:circuits/ultimate',
                 C: 'mekanism:cardboard_box',
                 D: 'extrastorage:storagepart_4096k'
@@ -272,7 +272,7 @@ onEvent('recipes', (event) => {
             output: 'kubejs:262144k_fluid_storage_part_package',
             pattern: ['ABA', 'DCD', 'ADA'],
             key: {
-                A: 'extrastorage:neural_processor',
+                A: 'packagedauto:package_component',
                 B: '#forge:circuits/ultimate',
                 C: 'mekanism:cardboard_box',
                 D: 'extrastorage:storagepart_65536k_fluid'
@@ -283,7 +283,7 @@ onEvent('recipes', (event) => {
             output: 'kubejs:1048576k_fluid_storage_part_package',
             pattern: ['ABA', 'DCD', 'ADA'],
             key: {
-                A: 'extrastorage:neural_processor',
+                A: 'packagedauto:package_component',
                 B: '#forge:circuits/ultimate',
                 C: 'mekanism:cardboard_box',
                 D: 'extrastorage:storagepart_262144k_fluid'

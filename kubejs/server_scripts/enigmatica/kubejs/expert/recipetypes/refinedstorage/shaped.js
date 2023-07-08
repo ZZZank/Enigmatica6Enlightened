@@ -163,7 +163,7 @@ onEvent('recipes', (event) => {
             pattern: ['ABA', 'CDC', 'ABA'],
             key: {
                 A: '#forge:circuits/elite',
-                B: 'extrastorage:neural_processor',
+                B: 'packagedauto:package_component',
                 C: 'immersiveengineering:logic_unit',
                 D: 'refinedstorage:machine_casing'
             },

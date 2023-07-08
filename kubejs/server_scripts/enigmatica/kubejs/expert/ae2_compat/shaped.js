@@ -44,7 +44,7 @@ onEvent('recipes', (event) => {
             output: 'appliedenergistics2:drive',
             patterns: ['ENE', 'LSL', 'ENE'],
             inputs: {
-                N: 'extrastorage:neural_processor',
+                N: 'packagedauto:package_component',
                 E: 'mekanism:elite_control_circuit',
                 L: 'immersiveengineering:logic_unit',
                 S: 'appliedenergistics2:sky_dust'

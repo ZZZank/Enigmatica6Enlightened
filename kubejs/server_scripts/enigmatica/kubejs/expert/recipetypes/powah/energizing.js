@@ -47,6 +47,20 @@ onEvent('recipes', (event) => {
         },
         {
             ingredients: [
+                { item: 'ars_nouveau:wixie_charm' },
+                { item: 'appliedenergistics2:engineering_processor' },
+                { item: 'appliedenergistics2:engineering_processor' },
+                { item: 'minecraft:ender_eye' }
+            ],
+            energy: 3000000,
+            result: {
+                item: 'packagedauto:package_component',
+                count: 4
+            },
+            id: 'packagedauto:package_component'
+        },
+        {
+            ingredients: [
                 { tag: 'forge:storage_blocks/dimensional' },
                 { tag: 'forge:gems/diamond' },
                 { item: 'integrateddynamics:crystalized_menril_block' }
@@ -81,7 +95,10 @@ onEvent('recipes', (event) => {
             id: 'powah:energizing/energized_steel'
         },
         {
-            ingredients: [{ tag: 'forge:storage_blocks/froststeel' }, { tag: 'forge:storage_blocks/electrum' }],
+            ingredients: [
+                { tag: 'forge:storage_blocks/froststeel' },
+                { tag: 'forge:storage_blocks/electrum' }
+            ],
             energy: 100000,
             result: {
                 item: 'powah:energized_steel_block',

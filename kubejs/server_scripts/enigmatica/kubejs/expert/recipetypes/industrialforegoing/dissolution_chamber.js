@@ -681,8 +681,8 @@ onEvent('recipes', (event) => {
                 'atum:crystal_glass_pane',
                 '#forge:gears/enderium',
                 '#forge:gears/enderium',
-                'extrastorage:neural_processor',
-                'extrastorage:neural_processor'
+                'packagedauto:package_component',
+                'packagedauto:package_component'
             ],
             inputFluid: 'industrialforegoing:latex',
             inputFluidAmount: 1000,

@@ -35,12 +35,6 @@ onEvent('recipes', (event) => {
             id: 'appliedenergistics2:engineering_processor'
         },
         {
-            inputs: ['extrastorage:raw_neural_processor', Ingredient.of('#thermal:crafting/dies/coin')],
-            output: 'extrastorage:neural_processor',
-            energy: 3000 * 4,
-            id: 'extrastorage:neural_processor'
-        },
-        {
             inputs: ['immersiveengineering:thermoelectric_generator'],
             output: 'powah:thermoelectric_plate',
             energy: 1000,
