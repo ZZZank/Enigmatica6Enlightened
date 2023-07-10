@@ -400,7 +400,7 @@ onEvent('item.registry', (event) => {
             } else {
                 //nothing else for now
             }
-            let itemssToBeAdded = [
+            reusableItemTextures.push(
                 {
                     name: `${partName}_package`,
                     texture: 'assembly_package_filled'
@@ -417,10 +417,7 @@ onEvent('item.registry', (event) => {
                     name: `batch_${partName}_assembly`,
                     texture: 'assembly_package_processing'
                 }
-            ];
-            itemssToBeAdded.forEach((prt) => {
-                reusableItemTextures.push(prt);
-            });
+            );
         });
     });
 
