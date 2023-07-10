@@ -388,14 +388,17 @@ onEvent('item.registry', (event) => {
         }
     ];
 
-    storageParts.forEach((storage) => {
-        storage.sizes.forEach((size) => {
+    storageParts.forEach((storagePart) => {
+        storagePart.sizes.forEach((size) => {
             let partName = '';
-            if (storage.modID === 'appliedenergistics2') {
-                partName = `${size}_cell_component`;
-            } else {
+            if (storagePart.modID == 'appliedenergistics2') {
+                // 'appliedenergistics2:1k_cell_component'
+                partName = `${partSize}_cell_component`;
+            } else if (storagePart.modID == 'aeadditions') {
                 // 'aeadditions:item_storage_component_256'
-                partName = `${storage.type}_storage_component_${size}`;
+                partName = `${storagePart.type}_storage_component_${partSize}`;
+            } else {
+                //nothing else for now
             }
             let itemssToBeAdded = [
                 {
@@ -403,7 +406,7 @@ onEvent('item.registry', (event) => {
                     texture: 'assembly_package_filled'
                 },
                 {
-                    name: `${partName}_assmebly`,
+                    name: `${partName}_assembly`,
                     texture: 'assembly_package_processing'
                 },
                 {
@@ -411,7 +414,7 @@ onEvent('item.registry', (event) => {
                     texture: 'packing_crate_lime'
                 },
                 {
-                    name: `batch_${partName}_assmebly`,
+                    name: `batch_${partName}_assembly`,
                     texture: 'assembly_package_processing'
                 }
             ];
