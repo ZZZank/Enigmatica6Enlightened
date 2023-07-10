@@ -389,7 +389,7 @@ onEvent('item.registry', (event) => {
     ];
 
     storageParts.forEach((storagePart) => {
-        storagePart.sizes.forEach((size) => {
+        storagePart.sizes.forEach((partSize) => {
             let partName = '';
             if (storagePart.modID == 'appliedenergistics2') {
                 // 'appliedenergistics2:1k_cell_component'
@@ -400,6 +400,7 @@ onEvent('item.registry', (event) => {
             } else {
                 //nothing else for now
             }
+
             reusableItemTextures.push(
                 {
                     name: `${partName}_package`,
