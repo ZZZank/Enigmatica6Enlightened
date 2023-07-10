@@ -152,8 +152,8 @@ onEvent('recipes', (event) => {
                 '#botania:runes/earth',
                 'farmersdelight:shepherds_pie_block',
                 '#upgrade_aquatic:bedrolls',
-                '#forge:hay_bales',
-                '#forge:hay_bales',
+                '#chipped:hay_block',
+                '#chipped:hay_block',
                 'betterendforge:dense_snow',
                 'betterendforge:dense_snow',
                 'atum:tefnut_godshard'

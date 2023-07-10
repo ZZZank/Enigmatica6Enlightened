@@ -203,7 +203,7 @@ onEvent('recipes', (event) => {
             id: 'naturesaura:animal_spawner/pig'
         },
         {
-            inputs: ['naturesaura:birth_spirit', 'resourcefulbees:shepherd_honeycomb', '#forge:hay_bales'],
+            inputs: ['naturesaura:birth_spirit', 'resourcefulbees:shepherd_honeycomb', '#chipped:hay_block'],
             entity: 'minecraft:cow',
             aura: 50000,
             time: 60,
