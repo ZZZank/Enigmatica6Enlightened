@@ -6,7 +6,7 @@ onEvent('recipes', (event) => {
         return;
     }
 
-    const id_prefix = 'enigmatica:expert/ae2_compat/basic_res/';
+    const id_prefix = 'enigmatica:expert/appliedenergistics2/basic_res/';
     const recipes = [
         { toReplace: 'minecraft:iron_ingot', replaceWith: 'pneumaticcraft:ingot_iron_compressed' },
         { toReplace: '#appliedenergistics2:crystals/fluix', replaceWith: 'occultism:spirit_attuned_gem' },

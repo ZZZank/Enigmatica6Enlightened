@@ -5,7 +5,7 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
-    const id_prefix = 'enigmatica:expert/ae2/shapeless/';
+    const id_prefix = 'enigmatica:expert/appliedenergistics2/shapeless/';
 
     // {
     //     output:"output",
