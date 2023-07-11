@@ -14,8 +14,5 @@ onEvent('item.tags', (event) => {
             .add(/framedcompactdrawers:framed/)
             .add(/appliedenergistics2:\w+storage_cell/)
             .add(/aeadditions:item_storage_cell_\w+/)
-            .add('#refinedstorage:parts/items')
-            .add('#refinedstorage:disks/items')
-            .add('#refinedstorage:storage_blocks/items');
     });
 });

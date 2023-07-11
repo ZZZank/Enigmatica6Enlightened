@@ -73,20 +73,6 @@ onEvent('recipes', (event) => {
             id: 'create:mechanical_crafting/crushing_wheel'
         },
         {
-            output: 'refinedstorage:disk_drive',
-            pattern: ['ABCBA', 'BDEDB', 'CFGFC', 'BDEDB', 'ABCBA'],
-            key: {
-                A: '#forge:circuits/basic',
-                B: 'appliedenergistics2:engineering_processor',
-                C: 'pneumaticcraft:ingot_iron_compressed',
-                D: 'occultism:storage_stabilizer_tier1',
-                E: '#xnet:advanced_connectors',
-                F: 'immersiveengineering:logic_unit',
-                G: 'refinedstorage:machine_casing'
-            },
-            id: 'refinedstorage:disk_drive'
-        },
-        {
             output: 'powah:energizing_orb',
             pattern: [' AAA ', ' A A ', ' CBC ', 'CCCCC'],
             key: {
@@ -238,7 +224,7 @@ onEvent('recipes', (event) => {
                 D: 'packagedauto:package_component',
                 E: 'kubejs:cpu_core_as_81221',
                 F: 'pneumaticcraft:smart_chest',
-                G: 'refinedstorage:machine_casing',
+                G: 'appliedenergistics2:smooth_sky_stone_chest',
                 H: 'pneumaticcraft:upgrade_matrix',
                 I: 'pneumaticcraft:network_io_port',
                 J: 'pneumaticcraft:network_data_storage'
