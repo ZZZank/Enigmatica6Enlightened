@@ -450,24 +450,6 @@ onEvent('recipes', (event) => {
         },
 
         //Chemical Storage Parts
-        [
-            'aeadditions:chemical_storage_component_1',
-            'aeadditions:chemical_storage_component_4',
-            'aeadditions:chemical_storage_component_16',
-            'aeadditions:chemical_storage_component_64',
-            'aeadditions:chemical_storage_component_256',
-            'aeadditions:chemical_storage_component_1024',
-            'aeadditions:chemical_storage_component_4096'
-        ],
-        [
-            'kubejs:chemical_storage_component_1_package',
-            'kubejs:chemical_storage_component_4_package',
-            'kubejs:chemical_storage_component_16_package',
-            'kubejs:chemical_storage_component_64_package',
-            'kubejs:chemical_storage_component_256_package',
-            'kubejs:chemical_storage_component_1024_package',
-            'kubejs:chemical_storage_component_4096_package'
-        ],
         {
             output: 'kubejs:chemical_storage_component_4_package',
             pattern: ['AAA', 'BCB', 'DEF'],
