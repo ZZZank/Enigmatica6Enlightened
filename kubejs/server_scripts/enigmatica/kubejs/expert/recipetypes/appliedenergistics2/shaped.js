@@ -183,6 +183,7 @@ onEvent('recipes', (event) => {
             id: 'appliedenergistics2:network/wireless_booster'
         }
     ];
+    
     recipes.forEach((recipe) => {
         event.shaped(recipe.output, recipe.patterns, recipe.inputs).id(recipe.id);
     });

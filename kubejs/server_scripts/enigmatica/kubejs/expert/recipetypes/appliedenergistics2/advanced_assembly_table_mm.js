@@ -33,7 +33,7 @@ onEvent('recipes', (event) => {
                     { type: 'masterfulmachinery:pncr_pressure', perTick: true, data: { air: 300 * 4 } }
                 ],
                 ticks: 240,
-                id: `${id_prefix}batch_${partSize}_storage_part_assembly`
+                id: `${id_prefix}batch_${partSize}_package`
             });
         });
     });
