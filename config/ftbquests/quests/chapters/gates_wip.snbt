@@ -269,7 +269,7 @@
 			tasks: [{
 				id: "0000000000000FDE"
 				type: "item"
-				item: "refinedstorage:controller"
+				item: "appliedenergistics2:controller"
 			}]
 		}
 		{
@@ -427,7 +427,7 @@
 			tasks: [{
 				id: "786CC87833A2294A"
 				type: "item"
-				item: "refinedstorage:disk_drive"
+				item: "appliedenergistics2:drive"
 			}]
 		}
 	]

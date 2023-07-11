@@ -73,8 +73,8 @@
 		{
 			title: "Windows and Blinds"
 			icon: "mcwwindows:oak_window2"
-			x: 1.5d
-			y: -3.5d
+			x: 2.0d
+			y: -3.0d
 			description: ["A selection of windows to spruce up both interiors and exteriors."]
 			dependencies: ["3834BBF4818E4ABE"]
 			id: "69264C279D819443"
@@ -97,35 +97,9 @@
 			}]
 		}
 		{
-			title: "Roofs, Tiles, and Gutters"
-			icon: "mcwroofs:oak_roof"
-			x: 0.5d
-			y: -4.0d
-			description: ["A selection of blocks for building complex roof shapes."]
-			dependencies: ["3834BBF4818E4ABE"]
-			id: "294FF399D036000C"
-			tasks: [{
-				id: "23D124F0ABC86469"
-				type: "item"
-				title: "Macaw's Roofs"
-				item: {
-					id: "itemfilters:mod"
-					Count: 1b
-					tag: {
-						value: "mcwroofs"
-					}
-				}
-			}]
-			rewards: [{
-				id: "4EBBC5E559BB1D57"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
 			title: "Trapdoors"
 			icon: "mcwtrpdoors:oak_cottage_trapdoor"
-			x: -0.5d
+			x: 0.0d
 			y: -4.0d
 			description: ["A selection of fancy trapdoors to suit any occasion."]
 			dependencies: ["3834BBF4818E4ABE"]
@@ -151,7 +125,7 @@
 		{
 			title: "Doors"
 			icon: "mcwdoors:oak_cottage_door"
-			x: -1.5d
+			x: -1.0d
 			y: -3.5d
 			description: ["A selection of fancy doors to suit any occasion."]
 			dependencies: ["3834BBF4818E4ABE"]
@@ -177,8 +151,8 @@
 		{
 			title: "Fences and Walls"
 			icon: "mcwfences:oak_picket_fence"
-			x: 2.0d
-			y: -2.5d
+			x: 1.0d
+			y: -3.5d
 			description: ["A selection of fancy fences and walls to suit any decorative needs."]
 			dependencies: ["3834BBF4818E4ABE"]
 			id: "1A8ADC65B09E9539"
@@ -204,7 +178,7 @@
 			title: "Bridges"
 			icon: "mcwbridges:oak_log_bridge_middle"
 			x: -2.0d
-			y: -2.5d
+			y: -3.0d
 			description: ["A selection of blocks for making small foot bridges and rail bridges."]
 			dependencies: ["3834BBF4818E4ABE"]
 			id: "5CC123276DD545C8"
@@ -278,15 +252,13 @@
 					id: "itemfilters:or"
 					Count: 1b
 					tag: {
-						items: [
-							{
-								id: "itemfilters:mod"
-								Count: 1b
-								tag: {
-									value: "cfm"
-								}
+						items: [{
+							id: "itemfilters:mod"
+							Count: 1b
+							tag: {
+								value: "cfm"
 							}
-						]
+						}]
 					}
 				}
 			}]
