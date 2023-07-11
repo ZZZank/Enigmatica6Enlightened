@@ -312,7 +312,7 @@ onEvent('recipes', (event) => {
                 E: 'pneumaticcraft:ingot_iron_compressed',
                 F: 'kubejs:dimensional_storage_crystal'
             },
-            id: 'appliedenergistics2:network/cells/storage_components_cell_4k_part'
+            id: 'appliedenergistics2:network/cells/fluid_storage_components_cell_4k_part'
         },
         {
             output: 'kubejs:16k_fluid_cell_component_package',
@@ -323,7 +323,7 @@ onEvent('recipes', (event) => {
                 C: 'mekanism:cardboard_box',
                 D: 'appliedenergistics2:4k_fluid_cell_component'
             },
-            id: 'appliedenergistics2:network/cells/storage_components_cell_16k_part'
+            id: 'appliedenergistics2:network/cells/fluid_storage_components_cell_16k_part'
         },
         {
             output: 'kubejs:16k_fluid_cell_component_package',
@@ -334,7 +334,7 @@ onEvent('recipes', (event) => {
                 C: 'mekanism:cardboard_box',
                 D: 'appliedenergistics2:4k_fluid_cell_component'
             },
-            id: 'appliedenergistics2:network/cells/storage_components_cell_16k_part'
+            id: 'appliedenergistics2:network/cells/fluid_storage_components_cell_16k_part'
         },
         {
             output: 'kubejs:64k_fluid_cell_component_package',
@@ -345,7 +345,7 @@ onEvent('recipes', (event) => {
                 C: 'mekanism:cardboard_box',
                 D: 'appliedenergistics2:16k_fluid_cell_component'
             },
-            id: 'appliedenergistics2:network/cells/storage_components_cell_64k_part'
+            id: 'appliedenergistics2:network/cells/fluid_storage_components_cell_64k_part'
         },
         {
             output: 'kubejs:fluid_storage_component_256_package',
