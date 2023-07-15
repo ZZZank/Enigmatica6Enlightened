@@ -118,7 +118,6 @@ onEvent('recipes', (event) => {
         { filter: {}, toReplace: 'environmental:cattail', replaceWith: '#forge:cattails' },
         { filter: {}, toReplace: 'pneumaticcraft:wheat_flour', replaceWith: '#forge:dusts/flour' },
         { filter: {}, toReplace: 'create:wheat_flour', replaceWith: '#forge:dusts/flour' },
-        { filter: {}, toReplace: 'pedestals:dustflour', replaceWith: '#forge:dusts/flour' },
         { filter: {}, toReplace: 'create:dough', replaceWith: '#forge:doughs' },
         { filter: {}, toReplace: 'farmersdelight:wheat_dough', replaceWith: '#forge:doughs' },
         { filter: {}, toReplace: 'create:bar_of_chocolate', replaceWith: '#forge:chocolate_bars' },
