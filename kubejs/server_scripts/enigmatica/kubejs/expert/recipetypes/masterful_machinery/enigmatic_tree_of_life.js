@@ -441,7 +441,7 @@ onEvent('recipes', (event) => {
                 },
                 { type: 'masterfulmachinery:items', data: { item: 'kubejs:mining_gadget_kit', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'kubejs:flux_bore_kit', count: 1 } },
-                { type: 'masterfulmachinery:items', data: { item: 'kubejs:diy_create_quarry', count: 2 } },
+                { type: 'masterfulmachinery:items', data: { item: 'kubejs:diy_create_quarry', count: 1 } },
                 {
                     type: 'masterfulmachinery:botania_mana',
                     consumeInstantly: true,
