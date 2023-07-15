@@ -709,29 +709,6 @@
 		}
 		{
 			x: 4.5d
-			y: 0.0d
-			description: [
-				"Travel by land can be dangerous with all these beasts roaming around. "
-				""
-				"A good boat is invaluable when out exploring for useful tools. Consider crafting one for fast travel across oceans and travelling deep inland on the many rivers that cross the land. "
-			]
-			dependencies: ["1D574D041D9164AD"]
-			id: "1348985516A60B72"
-			tasks: [{
-				id: "31BE7B445BC9FC71"
-				type: "item"
-				title: "Small Ships"
-				item: {
-					id: "itemfilters:id_regex"
-					Count: 1b
-					tag: {
-						value: "smallships:(?!\\w*(?:sail_item))"
-					}
-				}
-			}]
-		}
-		{
-			x: 4.5d
 			y: 7.0d
 			shape: "diamond"
 			description: ["Keep it coming!"]

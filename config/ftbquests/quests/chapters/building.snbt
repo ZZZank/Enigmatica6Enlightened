@@ -1544,14 +1544,7 @@
 			tasks: [{
 				id: "7E626988261D7522"
 				type: "item"
-				title: "Connected Glass"
-				item: {
-					id: "itemfilters:mod"
-					Count: 1b
-					tag: {
-						value: "sophisticatedbackpacks"
-					}
-				}
+				item: "tconstruct:clear_glass"
 			}]
 			rewards: [{
 				id: "73CEB3BC6963B644"
