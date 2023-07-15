@@ -77,9 +77,9 @@ onEvent('recipes', (event) => {
         ars_nouveau_metal_ore_crushing(event, material, ore, dust, ingot);
         ars_nouveau_ingot_gem_crushing(event, material, ingot, dust, gem);
 
-        pedestals_gem_ore_crushing(event, material, ore, dust, shard, gem);
-        pedestals_metal_ore_crushing(event, material, ore, ingot, dust);
-        pedestals_ingot_gem_crushing(event, material, ingot, dust, gem);
+        // pedestals_gem_ore_crushing(event, material, ore, dust, shard, gem);
+        // pedestals_metal_ore_crushing(event, material, ore, ingot, dust);
+        // pedestals_ingot_gem_crushing(event, material, ingot, dust, gem);
 
         thermal_metal_ore_pulverizing(event, material, ore, dust, ingot);
         thermal_gem_ore_pulverizing(event, material, ore, dust, gem, shard);
@@ -1138,15 +1138,6 @@ onEvent('recipes', (event) => {
             input = `forge:ores/${material}`,
             output = dust,
             count = 2;
-
-        event
-            .custom({
-                type: 'occultism:crushing',
-                ingredient: { tag: input },
-                result: { item: output, count: count },
-                crushing_time: 100
-            })
-            .id(`occultism:crushing/${material}_dust`);
 
         event
             .custom({

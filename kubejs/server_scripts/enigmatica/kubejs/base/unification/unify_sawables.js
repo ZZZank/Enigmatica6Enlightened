@@ -7,7 +7,7 @@ onEvent('recipes', (event) => {
         create_cutting(event, variant, sawDust, treeBark);
         immersiveengineering_sawing(event, variant, sawDust, treeBark);
         mekanism_sawing(event, variant, sawDust);
-        pedestal_sawing(event, variant);
+        // pedestal_sawing(event, variant);
         thermal_sawing(event, variant, sawDust);
     });
 });

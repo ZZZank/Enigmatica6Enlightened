@@ -10,7 +10,7 @@ onEvent('recipes', (event) => {
         //integrateddynamics_dye_squeezing(event, recipe, id_prefix);
         mekanism_dye_enriching(event, recipe, id_prefix);
         mekanism_pigment_extracting(event, recipe, id_prefix);
-        pedestals_dye_crushing(event, recipe, id_prefix);
+        // pedestals_dye_crushing(event, recipe, id_prefix);
         thermal_dye_centrifuge(event, recipe, id_prefix);
         atum_quern_milling(event, recipe, id_prefix);
         shapeless_dye_crafting(event, recipe, id_prefix);
