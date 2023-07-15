@@ -15,7 +15,7 @@ onEvent('recipes', (event) => {
         { toReplace: 'appliedenergistics2:fluix_dust', replaceWith: 'botania:corporea_spark' },
         { toReplace: 'appliedenergistics2:certus_quartz_dust', replaceWith: 'botania:quartz_mana' }
     ];
-    
+
     const dusts = [
         {
             toReplace: 'appliedenergistics2:nether_quartz_dust',

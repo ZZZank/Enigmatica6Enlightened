@@ -31,7 +31,7 @@ onEvent('jei.information', (event) => {
             ]
         },
         {
-            items: ['appliedenergistics2:1k_cell_component','appliedenergistics2:1k_fluid_cell_component'],
+            items: ['appliedenergistics2:1k_cell_component', 'appliedenergistics2:1k_fluid_cell_component'],
             text: ['Crafting is disabled in Expert, begin with the 4k one.']
         },
         {
@@ -72,7 +72,7 @@ onEvent('jei.information', (event) => {
         /powah:energy_cable_/,
         'eidolon:crucible',
         'eidolon:wooden_brewing_stand',
-        'engineersdecor:factory_placer',
+        'engineersdecor:factory_placer'
     ];
     disabledItems.forEach((item) => {
         event.add(

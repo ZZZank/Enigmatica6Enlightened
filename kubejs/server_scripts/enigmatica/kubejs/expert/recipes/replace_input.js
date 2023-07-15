@@ -130,7 +130,7 @@ onEvent('recipes', (event) => {
             replaceWith: 'botania:corporea_spark'
         },
         {
-            filter: { mod: 'aeadditions'},
+            filter: { mod: 'aeadditions' },
             toReplace: '#forge:dyes/yellow',
             replaceWith: 'mekanism:enriched_gold'
         }

@@ -5,8 +5,7 @@ onEvent('recipes', (event) => {
 
     const id_prefix = 'enigmatica:expert/enigmatica/alloying/';
 
-    const recipes = [
-    ];
+    const recipes = [];
 
     recipetypes_alloying = (event, recipe) => {
         if (!recipe.smelttime) {

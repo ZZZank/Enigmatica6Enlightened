@@ -13,6 +13,6 @@ onEvent('item.tags', (event) => {
             .add(/mekanism:\w+_bin/)
             .add(/framedcompactdrawers:framed/)
             .add(/appliedenergistics2:\w+storage_cell/)
-            .add(/aeadditions:item_storage_cell_\w+/)
+            .add(/aeadditions:item_storage_cell_\w+/);
     });
 });
