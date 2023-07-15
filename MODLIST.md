@@ -259,7 +259,6 @@
 - [rftoolsutility-1.16-3.1.16.jar](https://www.curseforge.com/minecraft/mc-mods/rftools-utility/files/3813656) (by [McJty](https://www.curseforge.com/members/mcjty/projects))
 - [rhino-forge-1605.1.5-build.75.jar](https://www.curseforge.com/minecraft/mc-mods/rhino/files/3525704) (by [LatvianModder](https://www.curseforge.com/members/latvianmodder/projects))
 - [RoadRunner-mc1.16.5-1.4.1.jar](https://www.curseforge.com/minecraft/mc-mods/roadrunner/files/3683120) (by [MaxNeedsSnacks](https://www.curseforge.com/members/maxneedssnacks/projects))
-- [RSInfinityBooster-1.16.5-1.1+13.jar](https://www.curseforge.com/minecraft/mc-mods/rsinfinitybooster/files/3613350) (by [hexeptiondev](https://www.curseforge.com/members/hexeptiondev/projects))
 - [rubidium-0.2.12.jar](https://www.curseforge.com/minecraft/mc-mods/rubidium/files/4568759) (by [Asek3](https://www.curseforge.com/members/asek3/projects))
 - [Runelic-1.16.5-7.0.3.jar](https://www.curseforge.com/minecraft/mc-mods/runelic/files/3732254) (by [DarkhaxDev](https://www.curseforge.com/members/darkhaxdev/projects))
 - [SaveYourPets-1.16.2-1.0.0.7.jar](https://www.curseforge.com/minecraft/mc-mods/save-your-pets/files/3626454) (by [MacTso](https://www.curseforge.com/members/mactso/projects))
