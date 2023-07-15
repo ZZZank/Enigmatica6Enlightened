@@ -275,63 +275,6 @@ onEvent('recipes', (event) => {
         });
     });
 
-    let storageParts = [
-        {
-            modID: 'refinedstorage',
-            sizes: ['1k', '4k', '16k', '64k', '64k_fluid', '256k_fluid', '1024k_fluid', '4096k_fluid']
-        },
-        {
-            modID: 'extrastorage',
-            sizes: [
-                '256k',
-                '1024k',
-                '4096k',
-                '16384k',
-                '16384k_fluid',
-                '65536k_fluid',
-                '262144k_fluid',
-                '1048576k_fluid'
-            ]
-        }
-    ];
-
-    storageParts.forEach((storagePart) => {
-        storagePart.sizes.forEach((partSize) => {
-            let storagePartID = `${storagePart.modID}:${partSize}_storage_part`;
-
-            if (storagePart.modID == 'extrastorage') {
-                storagePartID = `${storagePart.modID}:storagepart_${partSize}`;
-            }
-            recipes.push(
-                {
-                    input: { item: `kubejs:${partSize}_storage_part_package`, count: 1 },
-                    output: { item: `kubejs:${partSize}_storage_part_assembly`, count: 1 },
-                    program: 'drill',
-                    id: `${id_prefix}${partSize}_storage_part_assembly`
-                },
-                {
-                    input: { item: `kubejs:${partSize}_storage_part_assembly`, count: 1 },
-                    output: { item: storagePartID, count: 1 },
-                    program: 'laser',
-                    id: `${id_prefix}${partSize}_storage_part`
-                },
-
-                {
-                    input: { item: `kubejs:batch_${partSize}_storage_part_package`, count: 1 },
-                    output: { item: `kubejs:batch_${partSize}_storage_part_assembly`, count: 1 },
-                    program: 'drill',
-                    id: `${id_prefix}batch_${partSize}_storage_part_assembly`
-                },
-                {
-                    input: { item: `kubejs:batch_${partSize}_storage_part_assembly`, count: 1 },
-                    output: { item: storagePartID, count: 30 },
-                    program: 'laser',
-                    id: `${id_prefix}batch_${partSize}_storage_part`
-                }
-            );
-        });
-    });
-
     let masteries = [
         'automation',
         'botanical',
