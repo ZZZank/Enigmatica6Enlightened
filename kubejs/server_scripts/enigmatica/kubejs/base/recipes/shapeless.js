@@ -290,17 +290,6 @@ onEvent('recipes', (event) => {
                             }
                         }
                     },
-                    pedestals: {
-                        id: 'patchouli:guide_book',
-                        Count: 1,
-                        tag: {
-                            'akashictome:displayName': { text: 'Pedestals' },
-                            'patchouli:book': 'pedestals:manual',
-                            display: {
-                                Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Pedestals"}]}'
-                            }
-                        }
-                    },
                     engineersdecor: {
                         id: 'patchouli:guide_book',
                         Count: 1,

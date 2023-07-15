@@ -23,12 +23,6 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}gold_trapdoor`
         },
         {
-            input: { item: 'supplementaries:gold_trapdoor', count: 5 },
-            output: { item: 'pedestals:coin/default', count: 10 },
-            program: 'laser',
-            id: 'pedestals:upgrades/itempedestalupgradedefault'
-        },
-        {
             input: { item: 'kubejs:basic_circuit_package', count: 1 },
             output: { item: 'kubejs:basic_circuit_assembly', count: 1 },
             program: 'drill',

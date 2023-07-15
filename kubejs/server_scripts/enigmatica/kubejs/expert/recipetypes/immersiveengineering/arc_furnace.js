@@ -179,42 +179,6 @@ onEvent('recipes', (event) => {
                 id: `${id_prefix}null_book`
             },
             {
-                input1: 'thermal:rf_coil',
-                secondaries: [Item.of('8x minecraft:book')],
-                outputs: [Item.of('8x pedestals:bookmagnet')],
-                id: `${id_prefix}bookmagnet`
-            },
-            {
-                input1: '#forge:ingots/invar',
-                secondaries: [Item.of('8x minecraft:book')],
-                outputs: [Item.of('8x pedestals:bookarea')],
-                id: `${id_prefix}bookarea`
-            },
-            {
-                input1: '#forge:ingots/lumium',
-                secondaries: [Item.of('8x minecraft:book')],
-                outputs: [Item.of('8x pedestals:bookrange')],
-                id: `${id_prefix}bookrange`
-            },
-            {
-                input1: '#forge:ingots/terminite',
-                secondaries: [Item.of('8x minecraft:book')],
-                outputs: [Item.of('8x pedestals:bookspeed')],
-                id: `${id_prefix}bookspeed`
-            },
-            {
-                input1: '#forge:ingots/infused_iron',
-                secondaries: [Item.of('8x minecraft:book')],
-                outputs: [Item.of('8x pedestals:bookcapacity')],
-                id: `${id_prefix}bookcapacity`
-            },
-            {
-                input1: '#forge:ingots/refined_radiance',
-                secondaries: [Item.of('8x minecraft:book')],
-                outputs: [Item.of('8x pedestals:bookadvanced')],
-                id: `${id_prefix}bookadvanced`
-            },
-            {
                 input1: 'quark:white_crystal_cluster',
                 secondaries: [Item.of('4x glassential:glass_ghostly')],
                 outputs: [Item.of('4x atum:crystal_glass')],

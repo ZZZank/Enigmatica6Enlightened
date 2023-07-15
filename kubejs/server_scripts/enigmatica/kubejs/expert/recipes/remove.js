@@ -106,13 +106,6 @@ onEvent('recipes', (event) => {
 
         /naturesaura:animal_spawner\/sheep_/,
 
-        'pedestals:ingot_gold_from_upgrades',
-        'pedestals:upgrades/breaker2',
-        'pedestals:upgrades/crafter1mk2',
-        'pedestals:upgrades/recycler',
-        'pedestals:upgrades/rfexpgen',
-        'pedestals:upgrades/rffuelgen',
-
         'pneumaticcraft:explosion_crafting/compressed_iron_block',
         'pneumaticcraft:explosion_crafting/compressed_iron_ingot',
         'pneumaticcraft:speed_upgrade',

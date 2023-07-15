@@ -200,8 +200,6 @@ onEvent('recipes', (event) => {
 
         'neapolitan:chocolate/chocolate_bar',
 
-        'pedestals:pedestal_cobblegen/blackstone',
-
         'quark:building/crafting/tallow_from_block',
 
         'resourcefulbees:t1_beehive',
@@ -419,7 +417,6 @@ onEvent('recipes', (event) => {
         mod: 'thermal',
         type: 'minecraft:crafting_shapeless'
     });
-    event.remove({ type: 'pedestals:pedestal_crushing', output: '#forge:dyes' });
     event.remove({ type: 'create:milling', output: '#forge:dyes' });
     event.remove({ type: 'create:crushing', output: '#forge:dyes' });
     event.remove({ type: 'mekanism:enriching', output: '#forge:dyes' });

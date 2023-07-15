@@ -71,8 +71,6 @@ const disabledItems = [
     'mythicbotany:wither_aconite',
     'mythicbotany:wither_aconite_floating',
 
-    'pedestals:dustflour',
-
     'pneumaticcraft:wheat_flour',
 
     'projectvibrantjourneys:clam',

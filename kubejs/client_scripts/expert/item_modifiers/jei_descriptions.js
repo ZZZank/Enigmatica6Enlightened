@@ -73,8 +73,6 @@ onEvent('jei.information', (event) => {
         'eidolon:crucible',
         'eidolon:wooden_brewing_stand',
         'engineersdecor:factory_placer',
-        'pedestals:coin/rfexpgen',
-        'pedestals:coin/rffuelgen'
     ];
     disabledItems.forEach((item) => {
         event.add(

@@ -104,36 +104,6 @@ onEvent('recipes', (event) => {
             id: `${idPrefix}null_book`
         },
         {
-            inputs: [Item.of('8x minecraft:book'), 'thermal:rf_coil'],
-            output: Item.of('8x pedestals:bookmagnet'),
-            id: 'pedestals:bookmagnet'
-        },
-        {
-            inputs: [Item.of('8x minecraft:book'), '#forge:ingots/invar'],
-            output: Item.of('8x pedestals:bookarea'),
-            id: 'pedestals:bookarea'
-        },
-        {
-            inputs: [Item.of('8x minecraft:book'), '#forge:ingots/lumium'],
-            output: Item.of('8x pedestals:bookrange'),
-            id: 'pedestals:bookrange'
-        },
-        {
-            inputs: [Item.of('8x minecraft:book'), '#forge:ingots/terminite'],
-            output: Item.of('8x pedestals:bookspeed'),
-            id: 'pedestals:bookspeed'
-        },
-        {
-            inputs: [Item.of('8x minecraft:book'), '#forge:ingots/infused_iron'],
-            output: Item.of('8x pedestals:bookcapacity'),
-            id: 'pedestals:bookcapacity'
-        },
-        {
-            inputs: [Item.of('8x minecraft:book'), '#forge:ingots/refined_radiance'],
-            output: Item.of('8x pedestals:bookadvanced'),
-            id: 'pedestals:bookadvanced'
-        },
-        {
             inputs: [Ingredient.of('2x #forge:ingots/terminite'), '#forge:dusts/diamond'],
             output: Item.of('2x emendatusenigmatica:enderium_ingot'),
             id: `${idPrefix}enderium_ingot`

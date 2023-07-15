@@ -265,20 +265,6 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                { item: 'pedestals:pedestal/stone333', count: 1 },
-                { item: 'pedestals:coin/quarry', count: 1 },
-                { item: 'pedestals:bookspeed', count: 1 },
-                { item: 'pedestals:bookrange', count: 1 },
-                { item: 'pedestals:bookarea', count: 1 },
-                { item: 'pedestals:bookcapacity', count: 1 },
-                { item: 'mekanism:cardboard_box', count: 1 }
-            ],
-            pressure: 4.5,
-            results: [{ item: 'kubejs:diy_pedestal_quarry', count: 1 }],
-            id: `${id_prefix}diy_pedestal_quarry`
-        },
-        {
-            inputs: [
                 { item: 'mekanism:mekasuit_helmet', count: 1 },
                 { item: 'mekanism:module_energy_unit', count: 2 },
                 { item: 'mekanism:module_vision_enhancement_unit', count: 4 },

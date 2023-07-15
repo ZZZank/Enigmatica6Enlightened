@@ -31,7 +31,6 @@ onEvent('item.tags', (event) => {
     event.get('forge:dusts/netherite_scrap').remove('bloodmagic:sand_netherite');
 
     event.add('forge:dusts/flour', 'create:wheat_flour');
-    event.add('forge:dusts/flour', 'pedestals:dustflour');
 
     // Temporary until EE adapts this change
     event.get('forge:chunks/arcane').remove('emendatusenigmatica:arcane_chunk');

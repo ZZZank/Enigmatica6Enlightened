@@ -86,60 +86,6 @@ onEvent('recipes', (event) => {
             id: 'resourcefulbees:t4_apiary'
         },
         {
-            output: Item.of('pedestals:coin/xpenchanter', 1),
-            pattern: ['AA_AA', 'ACB_A', '_DED_', 'A_FCA', 'AA_AA'],
-            key: {
-                A: { item: 'ars_nouveau:greater_experience_gem' },
-                B: { item: 'botania:gaia_pylon' },
-                C: { tag: 'botania:runes/vanaheim' },
-                D: { tag: 'botania:runes/mana' },
-                E: { item: 'pedestals:coin/default' },
-                F: { item: 'ars_nouveau:glyph_pickup' }
-            },
-            relay_inputs: [
-                { item: 'eidolon:shadow_gem' },
-                { item: 'eidolon:gold_inlay' },
-                { item: 'eidolon:gold_inlay' }
-            ],
-            altar_type: 3,
-            duration: 600,
-            starlight: 7500,
-            focus_constellation: 'astralsorcery:lucerna',
-            effects: [
-                'astralsorcery:built_in_effect_discovery_central_beam',
-                'astralsorcery:gateway_edge',
-                'astralsorcery:built_in_effect_attunement_sparkle'
-            ],
-            id: 'pedestals:upgrades/enchanter'
-        },
-        {
-            output: Item.of('pedestals:coin/xpanvil', 1),
-            pattern: ['AA_AA', 'ACB_A', '_DED_', 'A_FCA', 'AA_AA'],
-            key: {
-                A: { item: 'ars_nouveau:greater_experience_gem' },
-                B: { item: 'mythicbotany:alfsteel_pylon' },
-                C: { tag: 'botania:runes/vanaheim' },
-                D: { tag: 'botania:runes/mana' },
-                E: { item: 'pedestals:coin/default' },
-                F: { item: 'ars_nouveau:glyph_pickup' }
-            },
-            relay_inputs: [
-                { item: 'betterendforge:aeternium_hammer' },
-                { item: 'minecraft:netherite_ingot' },
-                { item: 'minecraft:netherite_ingot' }
-            ],
-            altar_type: 3,
-            duration: 600,
-            starlight: 7500,
-            focus_constellation: 'astralsorcery:fornax',
-            effects: [
-                'astralsorcery:built_in_effect_discovery_central_beam',
-                'astralsorcery:gateway_edge',
-                'astralsorcery:built_in_effect_attunement_sparkle'
-            ],
-            id: 'pedestals:upgrades/anvil'
-        },
-        {
             output: Item.of('astralsorcery:mantle', 1),
             pattern: ['_____', 'A_B_A', 'ACDCA', 'ECFCE', 'E___E'],
             key: {
