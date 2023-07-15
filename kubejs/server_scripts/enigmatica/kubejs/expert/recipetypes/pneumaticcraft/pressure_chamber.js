@@ -265,6 +265,22 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
+                { item: 'minecraft:chest_minecart', count: 1 },
+                { item: 'create:mechanical_drill', count: 64 },
+                { item: 'minecraft:powered_rail', count: 12 },
+                { item: 'minecraft:redstone_torch', count: 12 },
+                { item: 'create:linear_chassis', count: 64 },
+                { item: 'create:deployer', count: 32 },
+                { item: 'create:mechanical_plough', count: 2 },
+                { item: 'enderstorage:ender_chest', count: 2 },
+                { item: 'mekanism:cardboard_box', count: 1 }
+            ],
+            pressure: 4.5,
+            results: [{ item: 'kubejs:diy_create_quarry', count: 1 }],
+            id: `${id_prefix}diy_create_quarry`
+        },
+        {
+            inputs: [
                 { item: 'mekanism:mekasuit_helmet', count: 1 },
                 { item: 'mekanism:module_energy_unit', count: 2 },
                 { item: 'mekanism:module_vision_enhancement_unit', count: 4 },
