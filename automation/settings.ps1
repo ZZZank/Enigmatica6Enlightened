@@ -9,31 +9,31 @@ $INSTANCE_ROOT = ("$PSScriptRoot/.." | Resolve-Path)
 #  CURSEFORGE ACCOUNT SETTINGS
 # =====================================================================//
 
-$CURSEFORGE_USER = "NillerMedDild"
+$CURSEFORGE_USER = "zzz_zank"
 
 # For details see: https://www.curseforge.com/account/api-tokens
 # Defined in secrets.ps1 
 # $CURSEFORGE_TOKEN = 
 
 # ProjectID can be found on the modpack's Curseforge Projects page, under "About This Project"
-$CURSEFORGE_PROJECT_ID = 389471
+$CURSEFORGE_PROJECT_ID = 889819
 
 # =====================================================================//
 #  MAIN MODPACK SETTINGS
 # =====================================================================//
 
 # This is the modpack name as seen in it's CurseForge url: https://www.curseforge.com/minecraft/modpacks/[enigmatica6]
-$MODPACK_NAME = "Enigmatica6"
+$MODPACK_NAME = "Enigmatica6Enlightened"
 
 # Name of the Modpack in the ZIP File
-$CLIENT_NAME = "Enigmatica6"
+$CLIENT_NAME = "Enigmatica6Enlightened"
 
 # Version Of The Modpack
-$MODPACK_VERSION = "1.8.0"
+$MODPACK_VERSION = "2.0.0"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
-$LAST_MODPACK_VERSION = "1.7.1"
+$LAST_MODPACK_VERSION = "1.8.0"
 
 # =====================================================================//
 #  CHANGELOG SETTINGS
