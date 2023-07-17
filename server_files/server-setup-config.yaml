@@ -4,10 +4,10 @@ _specver: 2
 # modpack related settings, changes the supposed to change the visual appearance of the launcher
 modpack:
     # Name of the mod pack, that is displayed in various places where it fits
-    name: Enigmatica 6
+    name: Enigmatica 6 Enlightened
 
     # Description
-    description: Play with new mods and old favorites in Minecraft 1.16.5! Enigmatica 6 offers a boatload of custom content including quests!
+    description: Play with new mods and old favorites in Minecraft 1.16.5! Enigmatica 6 Enlightened offers a boatload of custom content including quests!
 
 # settings regarding the installation of the modpack
 install:

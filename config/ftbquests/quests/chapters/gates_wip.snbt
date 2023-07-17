@@ -9,13 +9,13 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "Enigmatica 6: Expert"
+			title: "Enigmatica 6 Enlightened: Expert"
 			icon: "mekanism:robit"
 			x: 0.0d
 			y: 0.0d
 			shape: "rsquare"
 			description: [
-				"Welcome to Enigmatica 6: Expert mode!"
+				"Welcome to Enigmatica 6 Enlightened: Expert mode!"
 				""
 				"The Goal of E6E is to complete all quests in the Bragging Rights chapter. Good luck, and have fun :D"
 				"- Niller"
