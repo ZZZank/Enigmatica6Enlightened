@@ -226,9 +226,6 @@ config/configswapper.json
 config/betterendforge/client.json
 config/Mekanism/tiers.toml
 pregen/supporters.json
-config/modernfix-mixins.properties
-config/modernfix-common.toml
-config/rubidium-mixins.properties
 config/rubidium-options.json
 config/sodium-extra-options.json
 config/sodium-extra.properties
