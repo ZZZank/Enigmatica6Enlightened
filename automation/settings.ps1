@@ -23,10 +23,10 @@ $CURSEFORGE_PROJECT_ID = 889819
 # =====================================================================//
 
 # This is the modpack name as seen in it's CurseForge url: https://www.curseforge.com/minecraft/modpacks/[enigmatica6]
-$MODPACK_NAME = "Enigmatica6Enlightened"
+$MODPACK_NAME = "Enigmatica6Unofficial"
 
 # Name of the Modpack in the ZIP File
-$CLIENT_NAME = "Enigmatica6Enlightened"
+$CLIENT_NAME = "Enigmatica6Unofficial"
 
 # Version Of The Modpack
 $MODPACK_VERSION = "2.0.0"
@@ -59,23 +59,23 @@ $CLIENT_CHANGELOG = "The Changelog is currently being written, it should be done
 $GAME_VERSIONS = @(8203)
 
 # Can be "alpha", "beta" or "release"
-$CLIENT_RELEASE_TYPE = "alpha"
+$CLIENT_RELEASE_TYPE = "beta"
 
 #=====================================================================//
 #  DEPENDENCIES URL
 #=====================================================================//
 
 # File name of the latest https://github.com/TheRandomLabs/ChangelogGenerator/releases
-$CHANGELOG_GENERATOR_JAR = "ModListCreator-4.0.2-fatjar.jar"
+$CHANGELOG_GENERATOR_JAR = "ModListCreator-4.1.0-fatjar.jar"
 
 # File name of the latest https://github.com/MelanX/ModListCreator/releases
-$MODLIST_CREATOR_JAR = "ModListCreator-4.0.2-fatjar.jar"
+$MODLIST_CREATOR_JAR = "ModListCreator-4.1.0-fatjar.jar"
 
 #=====================================================================//
 #  CLIENT FILE SETTINGS
 #=====================================================================//
 
-$CLIENT_FILE_AUTHOR = "EnigmaticaModpacks"
+$CLIENT_FILE_AUTHOR = "zzz_zank"
 
 $FOLDERS_TO_INCLUDE_IN_CLIENT_FILES = @("building_gadgets_patterns",
 	"config",
@@ -195,7 +195,7 @@ $ENABLE_CLIENT_FILE_MODULE = $true
 # Toggle the modpack uploader on/off
 # Setting this to $false will also disable the Server File and Changelog Generator Modules.
 # Default: $true
-$ENABLE_MODPACK_UPLOADER_MODULE = $true
+$ENABLE_MODPACK_UPLOADER_MODULE = $false
 
 # Toggle server file feature on/off
 # Default: $true
@@ -232,7 +232,7 @@ $ENABLE_ALWAYS_UPDATE_JARS = $false
 # This will create a new release on your issue-tracker when using the modpack uploader.
 # See below link for info:
 # Default: $false
-$ENABLE_GITHUB_RELEASE_MODULE = $true	
+$ENABLE_GITHUB_RELEASE_MODULE = $false	
 
 # =====================================================================//
 #  ADVANCED
@@ -247,7 +247,7 @@ $CLIENT_ZIP_NAME = "$CLIENT_NAME-$MODPACK_VERSION"
 $LAST_MODPACK_ZIP_NAME = "$CLIENT_NAME-$LAST_MODPACK_VERSION"
 
 # Default: "$CLIENT_NAME $MODPACK_VERSION"
-$CLIENT_FILE_DISPLAY_NAME = "Enigmatica 6 Enlightened $MODPACK_VERSION"
+$CLIENT_FILE_DISPLAY_NAME = "Enigmatica 6 Unofficial $MODPACK_VERSION"
 
 # Can be "markdown", "text" or "html"
 # Default: $CLIENT_CHANGELOG_TYPE
@@ -265,7 +265,7 @@ $SERVER_RELEASE_TYPE = $CLIENT_RELEASE_TYPE
 $SERVER_ZIP_NAME = "$CLIENT_NAME`Server-$MODPACK_VERSION"
 
 # Default: $SERVER_FILENAME
-$SERVER_FILE_DISPLAY_NAME = "Enigmatica 6 Enlightened Server $MODPACK_VERSION"
+$SERVER_FILE_DISPLAY_NAME = "Enigmatica 6 Unofficial Server $MODPACK_VERSION"
 
 # Path to the ModListCreators output file
 $MODLIST_PATH = "$INSTANCE_ROOT/changelogs/modlist_$MODPACK_VERSION.md"

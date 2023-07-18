@@ -4,7 +4,7 @@ _specver: 2
 # modpack related settings, changes the supposed to change the visual appearance of the launcher
 modpack:
     # Name of the mod pack, that is displayed in various places where it fits
-    name: Enigmatica 6 Enlightened Expert
+    name: Enigmatica 6 Unofficial Expert
 
     # Description
     description: A quest-guided expert modpack for Minecraft 1.16.5 - Progress through a series of gated mods, automate complex recipes and build massive structures in order to make the ultimate artifact - The Creative Worldshaper
