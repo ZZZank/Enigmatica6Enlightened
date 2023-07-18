@@ -10,7 +10,7 @@ $minecraftInstanceFile = "minecraftinstance.json"
 $overridesFolder = "overrides"
 $secretsFile = "secrets.ps1"
 
-function Validate-SecretsFile {
+function ValidateSecretsFile {
     if (!(Test-Path "$PSScriptRoot\$secretsFile")) {
         Write-Host "You need a valid CurseForge API Token in a $secretsFile file" -ForegroundColor Red
         Write-Host "Creating $secretsFile" -ForegroundColor Cyan
@@ -397,7 +397,7 @@ $startLocation = Get-Location
 Set-Location $INSTANCE_ROOT
 
 Test-ForDependencies
-Validate-SecretsFile
+ValidateSecretsFile
 
 if ($uploadExpertMode) {
     $CURSEFORGE_PROJECT_ID = 889901

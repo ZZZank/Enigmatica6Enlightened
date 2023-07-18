@@ -1,7 +1,7 @@
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
 $secretsFile = "secrets.ps1"
-function Validate-SecretsFile {
+function ValidateSecretsFile {
     if (!(Test-Path "$PSScriptRoot\$secretsFile")) {
         Write-Host "You need a valid CurseForge API Token in a $secretsFile file" -ForegroundColor Red
         Write-Host "Creating $secretsFile" -ForegroundColor Cyan
@@ -45,7 +45,7 @@ function Merge-DevelopIntoMasterPrompt {
     Write-Host "Please Merge Develop into Master, and then Master into Develop"
 }
 
-Validate-SecretsFile
+ValidateSecretsFile
 Close-FixedIssues
 Merge-DevelopIntoMasterPrompt
 
