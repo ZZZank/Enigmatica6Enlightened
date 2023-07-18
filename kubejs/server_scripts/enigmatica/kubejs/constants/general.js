@@ -81,7 +81,6 @@ const createStoneTypes = [
 ];
 
 const sign_wood_type_blacklist = [
-    'aspen',
     'bloodshroom',
     'cherry',
     'deadwood',
@@ -114,7 +113,6 @@ const sign_wood_type_blacklist = [
 ];
 
 const chest_wood_type_blacklist = [
-    'aspen',
     'cherry',
     'dragon_tree',
     'driftwood',
