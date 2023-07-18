@@ -68,6 +68,9 @@ _Using Forge-1.16.5-36.2.39_ | _[Mod Updates](https://github.com/ZZZank/Enigmati
   * [Transport](https://www.curseforge.com/minecraft/mc-mods/transport) (by [Sky_Som](https://www.curseforge.com/members/Sky_Som/projects))
   * [TrashSlot](https://www.curseforge.com/minecraft/mc-mods/trashslot) (by [BlayTheNinth](https://www.curseforge.com/members/BlayTheNinth/projects))
 
+**Other changes**
+    Too many. If you are interested in it, see the Github commit history. 
+
 ---
 
 ### Enigmatica 6 & Enigmatica 6: Expert v1.8.0
