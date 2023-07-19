@@ -1,3 +1,12 @@
+### Enigmatica6Unofficial & Enigmatica6UnofficialExpert v2.0.1
+
+_Using Forge-1.16.5-36.2.39_ | _[Mod Updates](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/changelog_mods_2.0.1.md)_ | _[Modlist](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/modlist_2.0.1.md)_
+
+**Fixed Bugs**
+
+-   Unable to craft chest using Aspen Planks
+-   xxxx's Delight gives nothing
+
 ### Enigmatica6Enlightened & Enigmatica6EnlightenedExpert v2.0.0
 
 _Using Forge-1.16.5-36.2.39_ | _[Mod Updates](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/changelog_mods_2.0.0.md)_ | _[Modlist](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/modlist_2.0.0.md)_
