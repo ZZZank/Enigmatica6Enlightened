@@ -746,10 +746,12 @@
 				item: "naturesaura:animal_container"
 			}]
 			rewards: [{
-				id: "000000000000032B"
-				type: "item"
-				title: "Industrial Dimmer"
-				item: "rsgauges:industrial_dimmer"
+				id: "0000000000000362"
+				type: "command"
+				title: "Rare Nature's Aura Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_rare"
+				player_command: false
 			}]
 		}
 		{
