@@ -259,7 +259,7 @@
 			}]
 		}
 		{
-			title: "Refined Storage: Automation"
+			title: "Applied Energistics: Automation"
 			x: -0.625d
 			y: 5.0d
 			shape: "diamond"
@@ -402,7 +402,7 @@
 			}]
 		}
 		{
-			title: "Refined Storage: Digital Storage"
+			title: "Applied Energistics: Digital Storage"
 			x: 0.625d
 			y: 5.0d
 			shape: "diamond"
