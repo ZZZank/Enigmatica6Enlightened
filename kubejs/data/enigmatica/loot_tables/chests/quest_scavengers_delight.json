@@ -40,17 +40,6 @@
                 {
                     "type": "minecraft:item",
                     "weight": 1,
-                    "name": "simplefarming:kenaf_fiber",
-                    "functions": [
-                        {
-                            "function": "set_count",
-                            "count": 16
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
                     "name": "minecraft:glass",
                     "functions": [
                         {

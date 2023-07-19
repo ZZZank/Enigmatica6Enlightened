@@ -1,5 +1,5 @@
 {
-    "flower": "simplefarming:corn_crop",
+    "flower": "neapolitan:vanilla_vine",
     "creator": "GenerikB",
     "lore": "Pecker!",
     "loreColor": "#FFA500",
@@ -55,7 +55,7 @@
         "isBreedable": true,
         "parent1": "slimy",
         "parent2": "creeper",
-        "feedItem": "simplefarming:cornbread",
+        "feedItem": "neapolitan:vanilla_pods",
         "feedAmount": 1,
         "childGrowthDelay": -24000,
         "breedDelay": 6000

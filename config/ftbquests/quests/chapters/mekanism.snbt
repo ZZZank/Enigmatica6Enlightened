@@ -471,8 +471,8 @@
 				{
 					id: "000000000000082C"
 					type: "item"
-					title: "Orange"
-					item: "simplefarming:orange"
+					title: "Banana"
+					item: "neapolitan:banana"
 					count: 16
 				}
 			]
@@ -1421,7 +1421,7 @@
 					id: "000000000000082E"
 					type: "item"
 					title: "Peanut Butter Cookie"
-					item: "simplefarming:peanut_butter_cookie"
+					item: "abnormals_delight:mulberry_cookie"
 					count: 3
 				}
 				{

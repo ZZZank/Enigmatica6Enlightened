@@ -1,10 +1,6 @@
 onEvent('jei.information', (event) => {
     const recipes = [
         {
-            items: ['simplefarming:cheese_slice'],
-            text: ['Obtained by right-clicking a Wheel of Cheese.']
-        },
-        {
             items: ['farmersdelight:ham'],
             text: ['Obtained by killing Pigs or Hoglins with a knife.']
         },
@@ -59,10 +55,6 @@ onEvent('jei.information', (event) => {
             text: [
                 'Found naturally in Ice Starfields in the End, it can convert adjacent water blocks to Emerald Ice and those to Dense Emerald Ice.'
             ]
-        },
-        {
-            items: ['simplefarming:habanero'],
-            text: ['A very rare drop from farming Peppers.']
         },
         {
             items: ['mekanismgenerators:fusion_reactor_controller'],
@@ -579,44 +571,7 @@ onEvent('jei.information', (event) => {
             items: ['farmersdelight:roast_chicken'],
             text: [`Obtained by right-clicking a placed Roast Chicken with a Bowl.`]
         },
-        {
-            items: ['simplefarming:brewing_barrel'],
-            text: [
-                `Used for brewing various alcoholic beverages.`,
-                ` `,
-                `● Beer`,
-                `● Cauim`,
-                `● Cider`,
-                `● Mead`
-            ]
-        },
-        {
-            items: ['simplefarming:brewing_barrel'],
-            text: [`● Sake`, `● Tiswin`, `● Vodka`, `● Whiskey`, `● Wine`]
-        }
     ];
-
-    const simplefarming_beverages = [
-        { type: 'beer', ingredient: 'Barley', effect: 'Strength' },
-        { type: 'cauim', ingredient: 'Cassava', effect: 'Jump Boost' },
-        { type: 'cider', ingredient: 'Apples', effect: 'Luck' },
-        { type: 'mead', ingredient: 'Honeycomb', effect: 'Haste' },
-        { type: 'sake', ingredient: 'Rice', effect: 'Speed' },
-        { type: 'tiswin', ingredient: 'Cactus Fruit', effect: 'a Health Boost' },
-        { type: 'vodka', ingredient: 'Potatoes', effect: 'Resistance' },
-        { type: 'whiskey', ingredient: 'Wheat', effect: 'Absorption' },
-        { type: 'wine', ingredient: 'Grapes', effect: 'Regeneration' }
-    ];
-
-    simplefarming_beverages.forEach((beverage) => {
-        recipes.push({
-            items: [`simplefarming:${beverage.type}`],
-            text: [
-                `Brewed by right-clicking ${beverage.ingredient} into a Brewing Barrel.`,
-                `Grants the imbiber ${beverage.effect}.`
-            ]
-        });
-    });
 
     recipes.forEach((recipe) => {
         recipe.items.forEach((item) => {
