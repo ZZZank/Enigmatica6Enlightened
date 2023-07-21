@@ -547,47 +547,27 @@
 				{
 					id: "53FB7E9EE2F64323"
 					type: "item"
-					item: "simplefarming:beer"
+					item: "neapolitan:vanilla_milkshake"
 				}
 				{
 					id: "314E867E74A0A658"
 					type: "item"
-					item: "simplefarming:wine"
+					item: "neapolitan:chocolate_milkshake"
 				}
 				{
 					id: "5C9415F6EFAA203C"
 					type: "item"
-					item: "simplefarming:whiskey"
+					item: "neapolitan:strawberry_milkshake"
 				}
 				{
 					id: "293E3264D9BC1836"
 					type: "item"
-					item: "simplefarming:mead"
+					item: "neapolitan:banana_milkshake"
 				}
 				{
 					id: "454E1AEBCCD2B768"
 					type: "item"
-					item: "simplefarming:vodka"
-				}
-				{
-					id: "3AE7ECDC030B78F6"
-					type: "item"
-					item: "simplefarming:sake"
-				}
-				{
-					id: "020E1FF6FF8532FA"
-					type: "item"
-					item: "simplefarming:cider"
-				}
-				{
-					id: "022D696626C1C290"
-					type: "item"
-					item: "simplefarming:cauim"
-				}
-				{
-					id: "421FEBBA8B18E8BF"
-					type: "item"
-					item: "simplefarming:tiswin"
+					item: "neapolitan:mint_milkshake"
 				}
 			]
 		}
