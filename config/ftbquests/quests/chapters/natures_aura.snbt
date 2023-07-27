@@ -100,7 +100,7 @@
 				""
 				"Refer to the Book of Natural Aura for specific instructions on building the ritual."
 				""
-				"Note: Enigmatica 6 has replaced the default saplings used in the Ritual of the Forest as a result of interactions with other mods preventing their growth being detected. The Quark saplings used in their place are always detected and may be found uncommonly in the world with a bit of exploration. They may also be purchased from the Market."
+				"Note: Enlightened 6 has replaced the default saplings used in the Ritual of the Forest as a result of interactions with other mods preventing their growth being detected. The Quark saplings used in their place are always detected and may be found uncommonly in the world with a bit of exploration. They may also be purchased from the Market."
 			]
 			dependencies: ["00000000000000A4"]
 			id: "00000000000000A2"
@@ -226,7 +226,7 @@
 				""
 				"Refer to the Book of Natural Aura's section on the Natural Altar and the Crimson Altar for a preview of the required structure."
 				""
-				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Enlightened 6 instance folder to assist with this multiblock."
 			]
 			dependencies: ["00000000000002BF"]
 			dependency_requirement: "all_started"
@@ -766,7 +766,7 @@
 				""
 				"Once built, simply throw down the reagents atop the altar. If there's enough Aura, the ritual will proceed automatically."
 				""
-				"Note: Building Gadget's Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
+				"Note: Building Gadget's Patterns and Create Schematics are available in your Enlightened 6 instance folder to assist with this multiblock."
 			]
 			hide_dependency_lines: true
 			dependencies: ["000000000000037F"]

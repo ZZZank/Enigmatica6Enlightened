@@ -77,7 +77,7 @@ onEvent('jei.information', (event) => {
     disabledItems.forEach((item) => {
         event.add(
             item,
-            "This item has been disabled in Expert mode, if you managed to obtain it please report it on Enigmatica 6 Unofficial's issue tracker: https://github.com/ZZZank/Enigmatica6Enlightened/issues"
+            "This item has been disabled in Expert mode, if you managed to obtain it please report it on Enlightened 6's issue tracker: https://github.com/ZZZank/Enigmatica6Enlightened/issues"
         );
     });
 });

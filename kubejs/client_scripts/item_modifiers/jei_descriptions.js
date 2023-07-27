@@ -468,7 +468,7 @@ onEvent('jei.information', (event) => {
         {
             items: [/masterfulmachinery:\w+_controller/],
             text: [
-                `Use the included Building Gadgets patterns found in the "building_gadgets_patterns" folder of Enigmatica 6 instance folder.`,
+                `Use the included Building Gadgets patterns found in the "building_gadgets_patterns" folder of Enlightened 6 instance folder.`,
                 ` `,
                 'May be rotated, but not mirrored.'
             ]
@@ -582,7 +582,7 @@ onEvent('jei.information', (event) => {
     disabledItems.forEach((item) => {
         event.add(
             item,
-            "This item has been disabled, if you managed to obtain it please report it on Enigmatica 6 Unofficial's issue tracker: https://github.com/ZZZank/Enigmatica6Enlightened/issues"
+            "This item has been disabled, if you managed to obtain it please report it on Enlightened 6's issue tracker: https://github.com/ZZZank/Enigmatica6Enlightened/issues"
         );
     });
 

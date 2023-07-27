@@ -403,13 +403,13 @@ if ($uploadExpertMode) {
     $CURSEFORGE_PROJECT_ID = 889901
     $SERVER_FILES_FOLDER = "$INSTANCE_ROOT/server_files_expert"
     $SERVER_SETUP_CONFIG_PATH = "$SERVER_FILES_FOLDER/server-setup-config.yaml"
-    $MODPACK_NAME = "Enigmatica6UnofficialExpert"
-    $CLIENT_NAME = "Enigmatica6UnofficialExpert"
+    $MODPACK_NAME = "Enlightened6Expert"
+    $CLIENT_NAME = "Enlightened6Expert"
     $CLIENT_ZIP_NAME = "$CLIENT_NAME-$MODPACK_VERSION"
     $SERVER_ZIP_NAME = "$CLIENT_NAME`Server-$MODPACK_VERSION"
     $LAST_MODPACK_ZIP_NAME = "$CLIENT_NAME-$LAST_MODPACK_VERSION"
-    $CLIENT_FILE_DISPLAY_NAME = "Enigmatica 6 Unofficial Expert $MODPACK_VERSION"
-    $SERVER_FILE_DISPLAY_NAME = "Enigmatica 6 Unofficial Expert Server $MODPACK_VERSION"
+    $CLIENT_FILE_DISPLAY_NAME = "Enlightened 6 Expert $MODPACK_VERSION"
+    $SERVER_FILE_DISPLAY_NAME = "Enlightened 6 Expert Server $MODPACK_VERSION"
 
     Switch-DefaultModeTo -mode "expert"
 }
