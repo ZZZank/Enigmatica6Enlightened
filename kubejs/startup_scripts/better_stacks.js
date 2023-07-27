@@ -17,6 +17,8 @@ onEvent('item.modification', (event) => {
         'minecraft:honey_bottle',
         'minecraft:egg',
 
+        'neapolitan:adzuki_curry',
+
         'powah:charged_snowball',
 
         'resourcefulbees:bee_jar',
