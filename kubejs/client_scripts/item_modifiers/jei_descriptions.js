@@ -570,7 +570,7 @@ onEvent('jei.information', (event) => {
         {
             items: ['farmersdelight:roast_chicken'],
             text: [`Obtained by right-clicking a placed Roast Chicken with a Bowl.`]
-        },
+        }
     ];
 
     recipes.forEach((recipe) => {
