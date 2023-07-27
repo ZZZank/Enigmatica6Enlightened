@@ -15,6 +15,7 @@ config/masterful_machinery/packs/
 /ESM/
 /saves/
 /screenshots/
+/tconplanner/
 /coremods/
 /mods/
 /modernfix/
@@ -169,7 +170,6 @@ automation/ModListCreator-1.2.1.jar
 .github_changelog_generator
 local/ftbultimine-client.snbt
 hidden-players.json
-tconplanner/bookmark.dat
 
 config/findme-client.toml
 config/PregenConfig.toml
