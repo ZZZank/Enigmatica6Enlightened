@@ -1,5 +1,7 @@
 ## Enlightened6 & Enlightened6Expert - 2.0.1 -> 2.1.0
 
+_Using Forge-1.16.5-36.2.39_ | _[Mod Updates](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/changelog_mods_2.1.0.md)_ | _[Modlist](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/modlist_2.1.0.md)_
+
 ### Mods Added
 
   * [Chunk Sending[Forge/Fabric]](https://www.curseforge.com/minecraft/mc-mods/chunk-sending-forge-fabric) (by [someaddon](https://www.curseforge.com/members/someaddon/projects))
