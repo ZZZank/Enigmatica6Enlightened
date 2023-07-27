@@ -15,11 +15,6 @@ onEvent('recipes', (event) => {
             output: 'quark:root',
             inputs: ['minecraft:vine', '#forge:dyes/brown'],
             id: `${id_prefix}quark_root`
-        },
-        {
-            output: Item.of('refinedstorage:quartz_enriched_iron', 4),
-            inputs: ['#forge:ingots/iron', '#forge:ingots/iron', '#forge:ingots/iron', '#forge:gems/quartz'],
-            id: 'refinedstorage:quartz_enriched_iron'
         }
     ];
 

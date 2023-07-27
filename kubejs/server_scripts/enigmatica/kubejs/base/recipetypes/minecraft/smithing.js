@@ -1,14 +1,7 @@
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/smithing/';
 
-    const recipes = [
-        {
-            input1: Item.of('aiotbotania:terra_aiot', '{Damage:0}').weakNBT(),
-            input2: 'kubejs:quintuple_alfsteel_ingot',
-            output: 'aiotbotania:alfsteel_aiot',
-            id: `${id_prefix}alfsteel_aiot`
-        }
-    ];
+    const recipes = [];
 
     const black_hole_types = ['tank', 'unit'];
     const black_hole_tiers = ['common', 'pity', 'simple', 'advanced', 'supreme'];

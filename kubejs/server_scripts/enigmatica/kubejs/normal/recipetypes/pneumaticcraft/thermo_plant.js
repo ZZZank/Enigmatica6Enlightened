@@ -44,7 +44,11 @@ onEvent('recipes', (event) => {
             type: 'pneumaticcraft:thermo_plant',
             item_input: { tag: 'forge:glass/colorless' },
             item_output: { item: 'integratedterminals:menril_glass' },
-            fluid_input: { type: 'pneumaticcraft:fluid', fluid: 'integrateddynamics:menril_resin', amount: 1000 },
+            fluid_input: {
+                type: 'pneumaticcraft:fluid',
+                fluid: 'integrateddynamics:menril_resin',
+                amount: 1000
+            },
             pressure: 3.0,
             exothermic: false,
             temperature: { min_temp: 1273 },
@@ -54,7 +58,11 @@ onEvent('recipes', (event) => {
             type: 'pneumaticcraft:thermo_plant',
             item_input: { tag: 'forge:glass/colorless' },
             item_output: { item: 'integratedterminals:chorus_glass' },
-            fluid_input: { type: 'pneumaticcraft:fluid', fluid: 'integrateddynamics:liquid_chorus', amount: 1000 },
+            fluid_input: {
+                type: 'pneumaticcraft:fluid',
+                fluid: 'integrateddynamics:liquid_chorus',
+                amount: 1000
+            },
             pressure: 3.0,
             exothermic: false,
             temperature: { min_temp: 1273 },

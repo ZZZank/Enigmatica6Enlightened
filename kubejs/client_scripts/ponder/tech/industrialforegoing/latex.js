@@ -39,9 +39,13 @@ onEvent('ponder.registry', (event) => {
                 scene.idle(60);
 
                 // hide basically everything except for the acacia log
-                scene
-                    .world()
-                    .hideSection(util.select().layersFrom(1).substract(util.select().position(4, 1, 4)), Facing.up);
+                scene.world().hideSection(
+                    util
+                        .select()
+                        .layersFrom(1)
+                        .substract(util.select().position(4, 1, 4)),
+                    Facing.up
+                );
 
                 scene.idle(10);
 
@@ -65,7 +69,9 @@ onEvent('ponder.registry', (event) => {
                     .overlay()
                     .showText(80)
                     .colored(PonderPalette.INPUT)
-                    .text('To get started, you need to place a Fluid Extractor against a log of wood, such as Acacia.')
+                    .text(
+                        'To get started, you need to place a Fluid Extractor against a log of wood, such as Acacia.'
+                    )
                     .pointAt(util.vector().topOf(4, 1, 3));
 
                 scene.idle(80);
@@ -76,7 +82,13 @@ onEvent('ponder.registry', (event) => {
 
                 scene.world().moveSection(ex1, util.vector().of(-1, 0, 0), 10);
 
-                scene.world().setBlock(util.grid().at(5, 1, 4), Block.id('oak_log').with('axis', 'y').blockState, true);
+                scene
+                    .world()
+                    .setBlock(
+                        util.grid().at(5, 1, 4),
+                        Block.id('oak_log').with('axis', 'y').blockState,
+                        true
+                    );
                 scene
                     .world()
                     .setBlock(
@@ -104,7 +116,8 @@ onEvent('ponder.registry', (event) => {
                     .world()
                     .setBlock(
                         tank1,
-                        Block.id('industrialforegoing:common_black_hole_tank').with('subfacing', 'north').blockState,
+                        Block.id('industrialforegoing:common_black_hole_tank').with('subfacing', 'north')
+                            .blockState,
                         true
                     );
                 scene.idle(20);
@@ -117,7 +130,8 @@ onEvent('ponder.registry', (event) => {
                     .world()
                     .setBlock(
                         tank2,
-                        Block.id('industrialforegoing:common_black_hole_tank').with('subfacing', 'north').blockState,
+                        Block.id('industrialforegoing:common_black_hole_tank').with('subfacing', 'north')
+                            .blockState,
                         true
                     );
                 scene.idle(20);
@@ -173,7 +187,9 @@ onEvent('ponder.registry', (event) => {
                     .overlay()
                     .showText(60)
                     .colored(PonderPalette.BLUE)
-                    .text('So, now that you have a bunch of Latex, the question becomes: What do you do with it?')
+                    .text(
+                        'So, now that you have a bunch of Latex, the question becomes: What do you do with it?'
+                    )
                     .placeNearTarget()
                     .pointAt(util.vector().topOf(4, 3, 4));
 
@@ -300,7 +316,8 @@ onEvent('ponder.registry', (event) => {
                     .world()
                     .setBlock(
                         util.grid().at(4, 1, 2),
-                        Block.id('industrialforegoing:supreme_black_hole_unit').with('subfacing', 'west').blockState,
+                        Block.id('industrialforegoing:supreme_black_hole_unit').with('subfacing', 'west')
+                            .blockState,
                         false
                     );
 
@@ -319,13 +336,18 @@ onEvent('ponder.registry', (event) => {
 
                 scene
                     .world()
-                    .setBlock(util.grid().at(4, 1, 3), util.getDefaultState('minecraft:crafting_table'), false);
+                    .setBlock(
+                        util.grid().at(4, 1, 3),
+                        util.getDefaultState('minecraft:crafting_table'),
+                        false
+                    );
 
                 scene
                     .world()
                     .setBlock(
                         util.grid().at(4, 1, 4),
-                        Block.id('industrialforegoing:advanced_black_hole_unit').with('subfacing', 'west').blockState,
+                        Block.id('industrialforegoing:advanced_black_hole_unit').with('subfacing', 'west')
+                            .blockState,
                         false
                     );
 
@@ -341,7 +363,8 @@ onEvent('ponder.registry', (event) => {
                     .world()
                     .setBlock(
                         util.grid().at(4, 1, 6),
-                        Block.id('industrialforegoing:simple_black_hole_unit').with('subfacing', 'west').blockState,
+                        Block.id('industrialforegoing:simple_black_hole_unit').with('subfacing', 'west')
+                            .blockState,
                         false
                     );
 
@@ -370,7 +393,9 @@ onEvent('ponder.registry', (event) => {
                         30
                     );
 
-                scene.overlay().showOutline(PonderPalette.GREEN, procline, util.select().position(4, 1, 3), 30);
+                scene
+                    .overlay()
+                    .showOutline(PonderPalette.GREEN, procline, util.select().position(4, 1, 3), 30);
 
                 scene.idle(20);
 
@@ -415,7 +440,9 @@ onEvent('ponder.registry', (event) => {
                         30
                     );
 
-                scene.overlay().showOutline(PonderPalette.GREEN, procline, util.select().position(4, 1, 5), 30);
+                scene
+                    .overlay()
+                    .showOutline(PonderPalette.GREEN, procline, util.select().position(4, 1, 5), 30);
 
                 scene.idle(20);
 

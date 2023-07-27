@@ -38,17 +38,6 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                { tag: 'forge:ingots/pewter', count: 4 },
-                { item: 'refinedstorage:quartz_enriched_iron', count: 4 },
-                { item: 'tconstruct:seared_brick', count: 4 },
-                { item: 'thermal:machine_frame', count: 1 }
-            ],
-            pressure: 2.5,
-            results: [{ item: 'refinedstorage:machine_casing', count: 2 }],
-            id: 'refinedstorage:machine_casing'
-        },
-        {
-            inputs: [
                 { item: 'powah:blank_card', count: 1 },
                 { tag: 'mekanism:enriched/redstone', count: 1 },
                 { item: 'powah:ender_core', count: 1 }
@@ -70,7 +59,7 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 { tag: 'forge:wires/electrum', count: 1 },
-                { item: 'refinedstorage:raw_basic_processor', count: 2 },
+                { item: 'appliedenergistics2:printed_calculation_processor', count: 2 },
                 { item: 'powah:dielectric_paste', count: 1 },
                 { tag: 'pneumaticcraft:plastic_sheets', count: 1 }
             ],
@@ -95,7 +84,7 @@ onEvent('recipes', (event) => {
                 { item: 'pneumaticcraft:unassembled_pcb', count: 1 },
                 { item: 'pneumaticcraft:capacitor', count: 2 },
                 { item: 'pneumaticcraft:transistor', count: 2 },
-                { item: 'refinedstorage:basic_processor', count: 1 },
+                { item: 'appliedenergistics2:calculation_processor', count: 1 },
                 { tag: 'forge:wires/lead', count: 1 }
             ],
             pressure: 4.0,
@@ -124,61 +113,8 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                { item: 'tconstruct:ichor_slime_crystal', count: 1 },
-                { item: 'refinedstorage:basic_processor', count: 1 },
-                { item: 'botania:corporea_spark', count: 1 }
-            ],
-            pressure: 2.0,
-            results: [{ item: 'refinedstorage:destruction_core', count: 1 }],
-            id: 'refinedstorage:destruction_core'
-        },
-        {
-            inputs: [
-                { item: 'tconstruct:sky_slime_crystal', count: 1 },
-                { item: 'refinedstorage:basic_processor', count: 1 },
-                { item: 'botania:corporea_spark', count: 1 }
-            ],
-            pressure: 2.0,
-            results: [{ item: 'refinedstorage:construction_core', count: 1 }],
-            id: 'refinedstorage:construction_core'
-        },
-        {
-            inputs: [
-                { tag: 'forge:coins/tin', count: 1 },
-                { tag: 'forge:gems/silicon', count: 1 },
-                { item: 'refinedstorage:processor_binding', count: 1 },
-                { item: 'fluxnetworks:flux_dust', count: 1 }
-            ],
-            pressure: 2.0,
-            results: [{ item: 'refinedstorage:raw_basic_processor', count: 1 }],
-            id: 'refinedstorage:raw_basic_processor'
-        },
-        {
-            inputs: [
-                { tag: 'forge:coins/lumium', count: 1 },
-                { tag: 'forge:gems/silicon', count: 1 },
-                { item: 'refinedstorage:processor_binding', count: 1 },
-                { item: 'fluxnetworks:flux_dust', count: 1 }
-            ],
-            pressure: 2.0,
-            results: [{ item: 'refinedstorage:raw_improved_processor', count: 1 }],
-            id: 'refinedstorage:raw_improved_processor'
-        },
-        {
-            inputs: [
-                { tag: 'forge:coins/enderium', count: 1 },
-                { tag: 'forge:gems/silicon', count: 1 },
-                { item: 'refinedstorage:processor_binding', count: 1 },
-                { item: 'fluxnetworks:flux_dust', count: 1 }
-            ],
-            pressure: 2.0,
-            results: [{ item: 'refinedstorage:raw_advanced_processor', count: 1 }],
-            id: 'refinedstorage:raw_advanced_processor'
-        },
-        {
-            inputs: [
                 { item: 'integrateddynamics:variable', count: 3 },
-                { item: 'refinedstorage:construction_core', count: 1 },
+                { item: 'appliedenergistics2:formation_core', count: 1 },
                 { item: 'fluxnetworks:flux_dust', count: 1 }
             ],
             pressure: 2.0,
@@ -188,7 +124,7 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 { item: 'integrateddynamics:variable', count: 3 },
-                { item: 'refinedstorage:destruction_core', count: 1 },
+                { item: 'appliedenergistics2:annihilation_core', count: 1 },
                 { item: 'fluxnetworks:flux_dust', count: 1 }
             ],
             pressure: 2.0,
@@ -329,17 +265,19 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                { item: 'pedestals:pedestal/stone333', count: 1 },
-                { item: 'pedestals:coin/quarry', count: 1 },
-                { item: 'pedestals:bookspeed', count: 1 },
-                { item: 'pedestals:bookrange', count: 1 },
-                { item: 'pedestals:bookarea', count: 1 },
-                { item: 'pedestals:bookcapacity', count: 1 },
+                { item: 'minecraft:chest_minecart', count: 1 },
+                { item: 'create:mechanical_drill', count: 64 },
+                { item: 'minecraft:powered_rail', count: 12 },
+                { item: 'minecraft:redstone_torch', count: 12 },
+                { item: 'create:linear_chassis', count: 64 },
+                { item: 'create:deployer', count: 32 },
+                { item: 'create:mechanical_plough', count: 2 },
+                { item: 'enderstorage:ender_chest', count: 2 },
                 { item: 'mekanism:cardboard_box', count: 1 }
             ],
             pressure: 4.5,
-            results: [{ item: 'kubejs:diy_pedestal_quarry', count: 1 }],
-            id: `${id_prefix}diy_pedestal_quarry`
+            results: [{ item: 'kubejs:diy_create_quarry', count: 1 }],
+            id: `${id_prefix}diy_create_quarry`
         },
         {
             inputs: [
@@ -511,7 +449,7 @@ onEvent('recipes', (event) => {
             inputs: [
                 { item: 'pneumaticcraft:printed_circuit_board', count: 3 },
                 { item: 'prettypipes:pipe', count: 5 },
-                { item: 'computercraft:monitor_normal', count: 1 },
+                { item: 'rftoolsutility:screen', count: 1 },
                 { item: 'pneumaticcraft:reinforced_stone_slab', count: 3 },
                 { item: 'pneumaticcraft:pneumatic_dynamo', count: 1 },
                 { item: 'mekanism:cardboard_box', count: 1 }

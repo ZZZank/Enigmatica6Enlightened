@@ -3,7 +3,8 @@ name: Prettier
 on:
   push:
     branches:
-      - 'develop'
+      - 'enlightened_master'
+      - 'enlightened_develop'
       - 'prettier-*'
 
 jobs:

@@ -35,11 +35,7 @@ const generatableCobblestone = [
     'create:gabbro_cobblestone',
     'create:dolomite_cobblestone',
     'create:weathered_limestone_cobblestone',
-    'create:limestone_cobblestone',
-    'atmospheric:saffron_travertine',
-    'atmospheric:persimmon_travertine',
-    'atmospheric:peach_travertine',
-    'atmospheric:ivory_travertine'
+    'create:limestone_cobblestone'
 ];
 // Items added here will get recipes for Pedestals & Cobblegen Randomizer stonegens.
 const generatableStone = [
@@ -73,8 +69,6 @@ const generatableStone = [
     'create:dolomite',
     'create:weathered_limestone',
     'create:limestone',
-    'atmospheric:red_arid_sandstone',
-    'atmospheric:arid_sandstone',
     'atum:alabaster',
     'atum:porphyry',
     'quark:myalite',
@@ -105,12 +99,6 @@ const colors = [
 ];
 
 const itemsToHide = [
-    'advancedperipherals:me_bridge',
-    'advancedperipherals:colony_integrator',
-
-    'aiotbotania:livingwood_shears',
-    'aiotbotania:livingrock_shears',
-
     // Deprecated Ars Arsenal items
     'arsarsenal:aqua_hood',
     'arsarsenal:fire_hood',
@@ -247,54 +235,6 @@ const itemsToHide = [
 
     'mekanism:fluorite_gem',
 
-    // Deprecated Pedestals Items
-    'pedestals:coin/fmagnetmodb',
-    'pedestals:coin/fmagnetmod',
-    'pedestals:coin/fmagnetitemstackb',
-    'pedestals:coin/fluidpumpfilterblacklist',
-    'pedestals:coin/fluidrelayblocked',
-    'pedestals:coin/rfquarry',
-    'pedestals:coin/rfquarryb',
-    'pedestals:coin/rfrelayblocked',
-    'pedestals:coin/xprelayblocked',
-    'pedestals:coin/fmagnetitem',
-    'pedestals:coin/fmagnetitemb',
-    'pedestals:coin/fmagnetitemstack',
-    'pedestals:coin/fluidpumpfilter',
-    'pedestals:coin/fluidfilterblacklist',
-    'pedestals:coin/fluidfilter',
-    'pedestals:coin/enderfilteredexactimport',
-    'pedestals:coin/enderfilteredfuzzyimport',
-    'pedestals:coin/enderfilteredmodimport',
-    'pedestals:coin/enderfilteredenchantedimport',
-    'pedestals:coin/enderfilteredfoodimport',
-    'pedestals:coin/fexportenchanted',
-    'pedestals:coin/filterenchantedfuzzy',
-    'pedestals:coin/filterenchantedfuzzyb',
-    'pedestals:coin/filterenchantedexact',
-    'pedestals:coin/filterenchantedexactb',
-    'pedestals:coin/filterenchantedcount',
-    'pedestals:coin/fexportitem',
-    'pedestals:coin/fexportitemstack',
-    'pedestals:coin/fexportmod',
-    'pedestals:coin/fexportfood',
-    'pedestals:coin/filterenchantedb',
-    'pedestals:coin/filterenchanted',
-    'pedestals:coin/filterdurabilityless',
-    'pedestals:coin/filterdurability',
-    'pedestals:coin/filterfoodb',
-    'pedestals:coin/filterfood',
-    'pedestals:coin/filtermodb',
-    'pedestals:coin/filtermod',
-    'pedestals:coin/filtertagb',
-    'pedestals:coin/filtertag',
-    'pedestals:coin/filteritemstackb',
-    'pedestals:coin/filteritemstack',
-    'pedestals:coin/filteritemb',
-    'pedestals:coin/filteritem',
-    'pedestals:coin/quarryb',
-    'pedestals:coin/restriction',
-
     'powah:uraninite_ore',
     'powah:uraninite_ore_dense',
     'powah:uraninite_ore_poor',
@@ -306,12 +246,9 @@ const itemsToHide = [
     'quark:biotite_ore',
     'quark:tallow',
 
-    'refinedstorage:silicon',
+    'appliedenergistics2:silicon',
 
     'shrink:shrink_ray',
-
-    'simplefarming:apple_pie',
-    'simplefarming:blueberry_pie',
 
     'supplementaries:pedestal',
     'supplementaries:crank',
@@ -384,7 +321,6 @@ const itemsToHide = [
     /thermal:\w+_nugget/,
     /thermal:\w+_ore/,
     /thermal:\w+_plate/,
-    /pedestals:dust/,
     /mekanism:\w+_ore/,
     /minecraft:\w+_ore/,
     /immersiveengineering:plate_/,
@@ -402,8 +338,7 @@ const itemsToHide = [
     /powah:\w+_starter/,
     /rftoolsbase:dimensionalshard_/,
     /theoneprobe:/,
-    /upgrade_aquatic:\w+_jelly_torch/,
-    /chiselsandbits:block_bit$/
+    /upgrade_aquatic:\w+_jelly_torch/
 ];
 
 let ee_types = ['clump', 'crystal', 'dirty_dust', 'shard', 'fragment', 'gravel'];
@@ -581,7 +516,10 @@ const recipesToHide = [
     },
     {
         category: 'botania:petals',
-        recipes_by_id: ['mythicbotany:petal_apothecary/wither_aconite', 'mythicbotany:petal_apothecary/raindeletia']
+        recipes_by_id: [
+            'mythicbotany:petal_apothecary/wither_aconite',
+            'mythicbotany:petal_apothecary/raindeletia'
+        ]
     },
     {
         category: 'botania:mana_pool',
@@ -685,30 +623,6 @@ const disabledItems = [
 
     'integrateddynamics:part_entity_writer',
 
-    'ironjetpacks:strap',
-    'ironjetpacks:basic_coil',
-    'ironjetpacks:advanced_coil',
-    'ironjetpacks:elite_coil',
-    'ironjetpacks:ultimate_coil',
-    'ironjetpacks:hardened_cell',
-    'ironjetpacks:hardened_capacitor',
-    'ironjetpacks:invar_cell',
-    'ironjetpacks:invar_capacitor',
-    'ironjetpacks:blazing_cell',
-    'ironjetpacks:blazing_capacitor',
-    'ironjetpacks:signalum_cell',
-    'ironjetpacks:signalum_capacitor',
-    'ironjetpacks:niotic_cell',
-    'ironjetpacks:niotic_capacitor',
-    'ironjetpacks:lumium_cell',
-    'ironjetpacks:lumium_capacitor',
-    'ironjetpacks:spirited_cell',
-    'ironjetpacks:spirited_capacitor',
-    'ironjetpacks:enderium_cell',
-    'ironjetpacks:enderium_capacitor',
-    'ironjetpacks:nitro_cell',
-    'ironjetpacks:nitro_capacitor',
-
     'losttrinkets:magical_herbs',
     'losttrinkets:octopick',
     'losttrinkets:tea_leaf',
@@ -730,10 +644,6 @@ const disabledItems = [
     'mythicbotany:wither_aconite',
     'mythicbotany:wither_aconite_floating',
 
-    'pedestals:dustflour',
-
-    'pitg:green_dye',
-
     'pneumaticcraft:wheat_flour',
 
     'projectvibrantjourneys:clam',
@@ -750,12 +660,6 @@ const disabledItems = [
     'thermal:potato_block',
     'thermal:sugar_cane_block',
     'thermal:apple_block',
-
-    'simplefarming:raw_bacon',
-    'simplefarming:cooked_bacon',
-    'simplefarming:cooked_egg',
-    'simplefarming:noodles',
-    'simplefarming:chocolate',
 
     'storagedrawers:conversion_upgrade'
 ];

@@ -1,6 +1,5 @@
 onEvent('block.tags', (event) => {
     event.add('minecraft:leaves/coniferous', [
-        'atmospheric:aspen_leaves',
         'byg:brown_zelkova_leaves',
         'byg:aspen_leaves',
         'byg:fir_leaves',

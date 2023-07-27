@@ -55,12 +55,6 @@
         "salt": 1549795968,
         "disabled": false
       },
-      "atmospheric:arid_shrine": {
-        "spacing": 32,
-        "separation": 8,
-        "salt": 304972544,
-        "disabled": false
-      },
       "bettermineshafts:mineshaft": {
         "spacing": 1,
         "separation": 0,

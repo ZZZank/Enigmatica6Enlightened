@@ -19,7 +19,8 @@ onEvent('recipes', (event) => {
     ];
 
     recipes.forEach((recipe) => {
-        let constructed_input = recipe.input.charAt(0) == '#' ? { tag: recipe.input.slice(1) } : { item: recipe.input };
+        let constructed_input =
+            recipe.input.charAt(0) == '#' ? { tag: recipe.input.slice(1) } : { item: recipe.input };
         if (recipe.input_count) {
             constructed_input.type = 'pneumaticcraft:stacked_item';
             constructed_input.count = recipe.input_count;

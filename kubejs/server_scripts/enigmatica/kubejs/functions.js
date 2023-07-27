@@ -44,7 +44,9 @@ function compareIndices(a, b, tag) {
         if (mod == b) return 1; // if a comes after b, then idx(a) > idx(b), so 1
     }
 
-    console.error('[' + a + ', ' + b + '] were both unaccounted for in mod unification' + (tag ? ' for ' + tag : '!'));
+    console.error(
+        '[' + a + ', ' + b + '] were both unaccounted for in mod unification' + (tag ? ' for ' + tag : '!')
+    );
     return 0;
 }
 

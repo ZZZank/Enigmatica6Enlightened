@@ -7,7 +7,7 @@ onEvent('recipes', (event) => {
         create_cutting(event, variant, sawDust, treeBark);
         immersiveengineering_sawing(event, variant, sawDust, treeBark);
         mekanism_sawing(event, variant, sawDust);
-        pedestal_sawing(event, variant);
+        // pedestal_sawing(event, variant);
         thermal_sawing(event, variant, sawDust);
     });
 });
@@ -143,7 +143,11 @@ function mekanism_sawing(event, variant, sawDust) {
 
     data.recipes.forEach((recipe) => {
         fallback_id(
-            event.recipes.mekanism.sawing(Item.of(recipe.output, 6), recipe.input, Item.of(sawDust).chance(0.25)),
+            event.recipes.mekanism.sawing(
+                Item.of(recipe.output, 6),
+                recipe.input,
+                Item.of(sawDust).chance(0.25)
+            ),
             `enigmatica:base/unification/unify_sawables/${arguments.callee.name}/`
         );
     });
@@ -201,7 +205,6 @@ function thermal_sawing(event, variant, sawDust) {
         variant.modId == 'minecraft' ||
         variant.modId == 'byg' ||
         variant.modId == 'autumnity' ||
-        variant.modId == 'atmospheric' ||
         variant.modId == 'upgrade_aquatic'
     ) {
         return;

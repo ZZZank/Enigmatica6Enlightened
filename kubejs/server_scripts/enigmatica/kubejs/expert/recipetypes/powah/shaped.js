@@ -57,7 +57,7 @@ onEvent('recipes', (event) => {
             output: `powah:energizing_rod_basic`,
             pattern: [' A ', 'BCB', 'BDB'],
             key: {
-                A: 'refinedstorage:quartz_enriched_iron_block',
+                A: 'appliedenergistics2:charged_staff',
                 B: 'powah:capacitor_basic_large',
                 C: 'immersiveengineering:tesla_coil',
                 D: 'immersiveengineering:coil_lv'
@@ -241,7 +241,7 @@ onEvent('recipes', (event) => {
                     output: `powah:energizing_rod_${tier}`,
                     pattern: [' A ', 'BCB', 'BDB'],
                     key: {
-                        A: 'refinedstorage:quartz_enriched_iron_block',
+                        A: 'appliedenergistics2:charged_staff',
                         B: capacitor,
                         C: previousTierRod,
                         D: wire_coil

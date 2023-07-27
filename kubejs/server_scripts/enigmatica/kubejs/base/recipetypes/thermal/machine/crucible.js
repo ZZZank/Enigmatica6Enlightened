@@ -151,7 +151,9 @@ onEvent('recipes', (event) => {
         let honey = honeyVariety.split(':')[1];
         recipes.push({
             output: Fluid.of(honeyVariety, 1000),
-            input: Item.of(honeyVariety == 'resourcefulbees:honey' ? 'minecraft:honey_block' : `${honeyVariety}_block`),
+            input: Item.of(
+                honeyVariety == 'resourcefulbees:honey' ? 'minecraft:honey_block' : `${honeyVariety}_block`
+            ),
             energy: 2000,
             id: `thermal:machine/crucible/crucible_${honey}_block_to_${honey}`
         });

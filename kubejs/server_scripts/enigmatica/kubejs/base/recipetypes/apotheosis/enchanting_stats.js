@@ -208,6 +208,9 @@ onEvent('server.datapack.high_priority', (event) => {
     });
 
     enchantingBlocks.forEach((enchantingBlock) => {
-        event.addJson(`apotheosis:enchanting_stats/${enchantingBlock.block.replace(':', '_')}.json`, enchantingBlock);
+        event.addJson(
+            `apotheosis:enchanting_stats/${enchantingBlock.block.replace(':', '_')}.json`,
+            enchantingBlock
+        );
     });
 });

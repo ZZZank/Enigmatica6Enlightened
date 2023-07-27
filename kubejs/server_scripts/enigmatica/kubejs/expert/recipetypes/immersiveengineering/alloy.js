@@ -62,12 +62,18 @@ onEvent('recipes', (event) => {
             id: `${idPrefix}armor_feet_book`
         },
         {
-            inputs: [Item.of('16x minecraft:book'), Item.of('botania:livingwood_bow', '{Damage:0}').weakNBT()],
+            inputs: [
+                Item.of('16x minecraft:book'),
+                Item.of('botania:livingwood_bow', '{Damage:0}').weakNBT()
+            ],
             output: Item.of('16x apotheosis:bow_book'),
             id: `${idPrefix}bow_book`
         },
         {
-            inputs: [Item.of('16x minecraft:book'), Item.of('aquaculture:gold_fishing_rod', '{Damage:0}').weakNBT()],
+            inputs: [
+                Item.of('16x minecraft:book'),
+                Item.of('aquaculture:gold_fishing_rod', '{Damage:0}').weakNBT()
+            ],
             output: Item.of('16x apotheosis:fishing_rod_book'),
             id: `${idPrefix}fishing_rod_book`
         },
@@ -98,57 +104,39 @@ onEvent('recipes', (event) => {
             id: `${idPrefix}null_book`
         },
         {
-            inputs: [Item.of('8x minecraft:book'), 'thermal:rf_coil'],
-            output: Item.of('8x pedestals:bookmagnet'),
-            id: 'pedestals:bookmagnet'
-        },
-        {
-            inputs: [Item.of('8x minecraft:book'), '#forge:ingots/invar'],
-            output: Item.of('8x pedestals:bookarea'),
-            id: 'pedestals:bookarea'
-        },
-        {
-            inputs: [Item.of('8x minecraft:book'), '#forge:ingots/lumium'],
-            output: Item.of('8x pedestals:bookrange'),
-            id: 'pedestals:bookrange'
-        },
-        {
-            inputs: [Item.of('8x minecraft:book'), '#forge:ingots/terminite'],
-            output: Item.of('8x pedestals:bookspeed'),
-            id: 'pedestals:bookspeed'
-        },
-        {
-            inputs: [Item.of('8x minecraft:book'), '#forge:ingots/infused_iron'],
-            output: Item.of('8x pedestals:bookcapacity'),
-            id: 'pedestals:bookcapacity'
-        },
-        {
-            inputs: [Item.of('8x minecraft:book'), '#forge:ingots/refined_radiance'],
-            output: Item.of('8x pedestals:bookadvanced'),
-            id: 'pedestals:bookadvanced'
-        },
-        {
             inputs: [Ingredient.of('2x #forge:ingots/terminite'), '#forge:dusts/diamond'],
             output: Item.of('2x emendatusenigmatica:enderium_ingot'),
             id: `${idPrefix}enderium_ingot`
         },
         {
-            inputs: [Ingredient.of('2x #forge:storage_blocks/terminite'), Ingredient.of('9x #forge:dusts/diamond')],
+            inputs: [
+                Ingredient.of('2x #forge:storage_blocks/terminite'),
+                Ingredient.of('9x #forge:dusts/diamond')
+            ],
             output: Item.of('2x emendatusenigmatica:enderium_block'),
             id: `${idPrefix}enderium_block`
         },
         {
-            inputs: [Item.of('3x modularrouters:blank_module'), Item.of('3x prettypipes:high_retrieval_module')],
+            inputs: [
+                Item.of('3x modularrouters:blank_module'),
+                Item.of('3x prettypipes:high_retrieval_module')
+            ],
             output: Item.of('3x modularrouters:puller_module_1'),
             id: 'modularrouters:puller_module_1'
         },
         {
-            inputs: [Item.of('3x modularrouters:blank_module'), Item.of('3x prettypipes:high_extraction_module')],
+            inputs: [
+                Item.of('3x modularrouters:blank_module'),
+                Item.of('3x prettypipes:high_extraction_module')
+            ],
             output: Item.of('3x modularrouters:sender_module_1'),
             id: 'modularrouters:sender_module_1'
         },
         {
-            inputs: [Item.of('3x modularrouters:blank_module'), Item.of('3x ppfluids:high_fluid_retrieval_module')],
+            inputs: [
+                Item.of('3x modularrouters:blank_module'),
+                Item.of('3x ppfluids:high_fluid_retrieval_module')
+            ],
             output: Item.of('3x modularrouters:fluid_module'),
             id: 'modularrouters:fluid_module'
         },
@@ -160,6 +148,8 @@ onEvent('recipes', (event) => {
     ];
 
     recipes.forEach((recipe) => {
-        event.recipes.immersiveengineering.alloy(recipe.output, recipe.inputs[0], recipe.inputs[1]).id(recipe.id);
+        event.recipes.immersiveengineering
+            .alloy(recipe.output, recipe.inputs[0], recipe.inputs[1])
+            .id(recipe.id);
     });
 });

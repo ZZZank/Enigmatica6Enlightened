@@ -220,9 +220,9 @@ onEvent('recipes', (event) => {
                 'architects_palette:sunstone',
                 'ars_nouveau:glyph_amplify',
                 'ars_nouveau:glyph_projectile',
-                'rsgauges:arrow_target',
+                'minecraft:target',
                 'naturesaura:token_anger',
-                'rsgauges:arrow_target',
+                'minecraft:target',
                 'naturesaura:token_anger'
             ],
             output: 'naturesaura:projectile_generator',

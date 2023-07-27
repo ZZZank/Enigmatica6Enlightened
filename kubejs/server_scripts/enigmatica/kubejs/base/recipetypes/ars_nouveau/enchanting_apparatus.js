@@ -20,6 +20,8 @@ onEvent('recipes', (event) => {
         }
     ];
     recipes.forEach((recipe) => {
-        event.recipes.ars_nouveau.enchanting_apparatus(recipe.output, recipe.reagent, recipe.inputs).id(recipe.id);
+        event.recipes.ars_nouveau
+            .enchanting_apparatus(recipe.output, recipe.reagent, recipe.inputs)
+            .id(recipe.id);
     });
 });

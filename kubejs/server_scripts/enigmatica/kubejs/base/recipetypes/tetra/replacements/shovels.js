@@ -69,19 +69,9 @@ onEvent('server.datapack.low_priority', (event) => {
                 stick: 'jacaranda'
             },
             {
-                item: 'aiotbotania:terra_shovel',
-                material: 'terrasteel',
-                stick: 'terrasteel'
-            },
-            {
                 item: 'aquaculture:neptunium_shovel',
                 material: 'neptunium',
                 stick: 'neptunium'
-            },
-            {
-                item: 'aiotbotania:alfsteel_shovel',
-                material: 'alfsteel',
-                stick: 'alfsteel'
             }
         ]
     };

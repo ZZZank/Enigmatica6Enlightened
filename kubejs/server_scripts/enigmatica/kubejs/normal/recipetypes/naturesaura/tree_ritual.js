@@ -44,14 +44,24 @@ onEvent('recipes', (event) => {
             id: 'naturesaura:tree_ritual/cache_powder'
         },
         {
-            ingredients: ['naturesaura:gold_powder', 'naturesaura:gold_powder', '#forge:ingots/sky', 'minecraft:egg'],
+            ingredients: [
+                'naturesaura:gold_powder',
+                'naturesaura:gold_powder',
+                '#forge:ingots/sky',
+                'minecraft:egg'
+            ],
             sapling: 'quark:lavender_blossom_sapling',
             output: Item.of('naturesaura:effect_powder', 8, '{effect:"naturesaura:animal"}'),
             time: 400,
             id: 'naturesaura:tree_ritual/animal_powder'
         },
         {
-            ingredients: ['naturesaura:gold_powder', 'naturesaura:gold_powder', '#forge:ingots/sky', 'minecraft:wheat'],
+            ingredients: [
+                'naturesaura:gold_powder',
+                'naturesaura:gold_powder',
+                '#forge:ingots/sky',
+                'minecraft:wheat'
+            ],
             sapling: 'quark:yellow_blossom_sapling',
             output: Item.of('naturesaura:effect_powder', 24, '{effect:"naturesaura:plant_boost"}'),
             time: 400,
@@ -131,7 +141,6 @@ onEvent('recipes', (event) => {
                     'minecraft:chicken',
                     'minecraft:porkchop',
                     'minecraft:rabbit',
-                    'simplefarming:raw_horse_meat',
                     'environmental:venison',
                     'environmental:duck'
                 ],

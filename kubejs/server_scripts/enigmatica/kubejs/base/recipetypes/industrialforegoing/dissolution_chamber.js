@@ -73,7 +73,9 @@ onEvent('recipes', (event) => {
             inputFluid: 'industrialforegoing:pink_slime',
             inputFluidAmount: 1000,
             processingTime: 600,
-            outputItem: Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:industrious_bee' }).toJson(),
+            outputItem: Item.of('resourcefulbees:bee_jar', {
+                Entity: 'resourcefulbees:industrious_bee'
+            }).toJson(),
             outputFluid: '',
             outputFluidAmount: 0
         }

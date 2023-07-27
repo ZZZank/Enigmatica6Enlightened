@@ -14,8 +14,11 @@ config/masterful_machinery/packs/
 /libraries/
 /ESM/
 /saves/
-screenshots/
+/screenshots/
+/tconplanner/
+/coremods/
 /mods/
+/modernfix/
 /world/
 /world_backup/
 /data/
@@ -167,7 +170,6 @@ automation/ModListCreator-1.2.1.jar
 .github_changelog_generator
 local/ftbultimine-client.snbt
 hidden-players.json
-tconplanner/bookmark.dat
 
 config/findme-client.toml
 config/PregenConfig.toml
@@ -224,3 +226,11 @@ config/configswapper.json
 config/betterendforge/client.json
 config/Mekanism/tiers.toml
 pregen/supporters.json
+config/rubidium-options.json
+config/appliedenergistics2-client.toml
+config/jei/ingredient-list-mod-sort-order.ini
+config/jei/ingredient-list-mod-sort-order.ini
+config/jei/ingredient-list-type-sort-order.ini
+config/jei/recipe-category-sort-order.ini
+local/ftbchunks/client-config.snbt
+launcher_profiles.json

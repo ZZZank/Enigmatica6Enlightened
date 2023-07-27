@@ -27,6 +27,16 @@ onEvent('recipes', (event) => {
             id: 'rftoolsutility:screen_controller'
         },
         {
+            output: 'rftoolsutility:screen',
+            pattern: ['AAA', 'ABA', 'CCC'],
+            key: {
+                A: '#forge:glass/black',
+                B: 'rftoolsbase:machine_base',
+                C: 'immersiveengineering:slab_sheetmetal_aluminum'
+            },
+            id: 'rftoolsutility:screen'
+        },
+        {
             output: 'rftoolsutility:module_template',
             pattern: ['ABA', 'BCB', 'ABA'],
             key: {
@@ -215,9 +225,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'create:mechanical_crafter',
                 B: 'pneumaticcraft:printed_circuit_board',
-                C: 'refinedstorage:destruction_core',
+                C: 'appliedenergistics2:annihilation_core',
                 D: 'rftoolsbase:machine_frame',
-                E: 'refinedstorage:construction_core'
+                E: 'appliedenergistics2:formation_core'
             },
             id: 'rftoolscontrol:craftingstation'
         },
@@ -238,7 +248,7 @@ onEvent('recipes', (event) => {
                 A: 'pneumaticcraft:heat_sink',
                 B: 'pneumaticcraft:turbine_rotor',
                 C: 'pneumaticcraft:printed_circuit_board',
-                D: 'refinedstorage:advanced_processor',
+                D: 'appliedenergistics2:engineering_processor',
                 E: '#forge:nuggets/copper'
             },
             id: 'rftoolscontrol:graphics_card'
@@ -247,9 +257,9 @@ onEvent('recipes', (event) => {
             output: 'rftoolscontrol:network_card',
             pattern: ['ABC', 'DDD'],
             key: {
-                A: 'refinedstorage:wireless_transmitter',
+                A: 'appliedenergistics2:wireless_access_point',
                 B: 'pneumaticcraft:printed_circuit_board',
-                C: 'refinedstorage:advanced_processor',
+                C: 'appliedenergistics2:engineering_processor',
                 D: '#forge:nuggets/copper'
             },
             id: 'rftoolscontrol:network_card'
@@ -266,9 +276,9 @@ onEvent('recipes', (event) => {
             output: 'rftoolscontrol:advanced_network_card',
             pattern: ['ABC'],
             key: {
-                A: 'refinedstorage:range_upgrade',
+                A: 'appliedenergistics2:wireless_booster',
                 B: 'rftoolscontrol:network_card',
-                C: 'extrastorage:neural_processor'
+                C: 'packagedauto:package_component'
             },
             id: 'rftoolscontrol:advanced_network_card'
         },

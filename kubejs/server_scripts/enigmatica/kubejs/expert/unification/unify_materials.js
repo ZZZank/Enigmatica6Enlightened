@@ -2,6 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
+    const id_prefix = 'enigmatica:expert/unification/unify_materials/';
 
     materialsToUnify.forEach((material) => {
         var ingot = getPreferredItemInTag(Ingredient.of(`#forge:ingots/${material}`)).id;
@@ -16,10 +17,17 @@ onEvent('recipes', (event) => {
         let crushed_ore = getPreferredItemInTag(Ingredient.of(`#create:crushed_ores/${material}`)).id;
         var ore = getPreferredItemInTag(Ingredient.of(`#forge:ores/${material}`)).id;
         var mana_cluster = getPreferredItemInTag(Ingredient.of(`#enigmatica:mana_clusters/${material}`)).id;
-        var fulminated_cluster = getPreferredItemInTag(Ingredient.of(`#enigmatica:fulminated_clusters/${material}`)).id;
-        var levigated_material = getPreferredItemInTag(Ingredient.of(`#enigmatica:levigated_materials/${material}`)).id;
-        var crystalline_sliver = getPreferredItemInTag(Ingredient.of(`#enigmatica:crystalline_slivers/${material}`)).id;
+        var fulminated_cluster = getPreferredItemInTag(
+            Ingredient.of(`#enigmatica:fulminated_clusters/${material}`)
+        ).id;
+        var levigated_material = getPreferredItemInTag(
+            Ingredient.of(`#enigmatica:levigated_materials/${material}`)
+        ).id;
+        var crystalline_sliver = getPreferredItemInTag(
+            Ingredient.of(`#enigmatica:crystalline_slivers/${material}`)
+        ).id;
 
+        ore_ingot_smelting(event, material, ore, ingot);
         gear_unification(event, material, ingot, gem, gear);
         rod_unification(event, material, ingot, gem, rod, plate);
         plate_unification(event, material, ingot, gem, plate);
@@ -39,6 +47,28 @@ onEvent('recipes', (event) => {
             crystalline_sliver
         );
     });
+
+    function ore_ingot_smelting(event, material, ore, ingot) {
+        if (ore == air || ingot == air) {
+            return;
+        }
+
+        blacklistedMaterials = ['ender'];
+
+        for (var i = 0; i < blacklistedMaterials.length; i++) {
+            if (blacklistedMaterials[i] == material) {
+                return;
+            }
+        }
+
+        var output = ingot,
+            input = `#forge:ores/${material}`;
+        event.blasting(output, input).xp(0.7).id(`${id_prefix}blasting/${material}/ingot/from_ore`);
+
+        event.recipes.mekanism.smelting(output, input).id(`${id_prefix}smelting/${material}/ingot/from_ore`);
+
+        event.recipes.thermal.furnace(output, input).id(`${id_prefix}furnace/${material}/ingot/from_ore`);
+    }
 
     function gear_unification(event, material, ingot, gem, gear) {
         if (gear == air) {
@@ -170,10 +200,18 @@ onEvent('recipes', (event) => {
             .metal_press(`16x ${output}`, `4x ${plate}`, mold)
             .id(`kubejs:immersiveengineering_metal_press_${material}_wire`);
 
-        event.shapeless(Item.of(output, 2), [plate, plate, wireCutters]).id(`kubejs:shaped_crafting_${material}_wire`);
+        event
+            .shapeless(Item.of(output, 2), [plate, plate, wireCutters])
+            .id(`kubejs:shaped_crafting_${material}_wire`);
     }
 
-    function immersiveengineering_ore_processing_with_secondary_outputs(event, material, ore, crushed_ore, ingot) {
+    function immersiveengineering_ore_processing_with_secondary_outputs(
+        event,
+        material,
+        ore,
+        crushed_ore,
+        ingot
+    ) {
         if (ore == air || crushed_ore == air || ingot == air) {
             return;
         }
@@ -238,7 +276,9 @@ onEvent('recipes', (event) => {
 
         try {
             secondary_fulminated_cluster = getPreferredItemInTag(
-                Ingredient.of(`#enigmatica:fulminated_clusters/${oreProcessingSecondaries[material].secondary}`)
+                Ingredient.of(
+                    `#enigmatica:fulminated_clusters/${oreProcessingSecondaries[material].secondary}`
+                )
             ).id;
         } catch (err) {
             secondary_fulminated_cluster = getPreferredItemInTag(

@@ -19,6 +19,8 @@ onEvent('recipes', (event) => {
     ];
 
     recipes.forEach((recipe) => {
-        event.recipes.immersiveengineering.blast_furnace(recipe.output, recipe.input, recipe.slag).id(recipe.id);
+        event.recipes.immersiveengineering
+            .blast_furnace(recipe.output, recipe.input, recipe.slag)
+            .id(recipe.id);
     });
 });

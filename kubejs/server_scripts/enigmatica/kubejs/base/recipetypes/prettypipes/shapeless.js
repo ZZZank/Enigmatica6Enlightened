@@ -27,6 +27,8 @@ onEvent('recipes', (event) => {
     ];
 
     moduletype.forEach((module) => {
-        event.shapeless(module, [Item.of(module).ignoreNBT()]).id(`${id_prefix}${module.split(':')[1]}_clearnbt`);
+        event
+            .shapeless(module, [Item.of(module).ignoreNBT()])
+            .id(`${id_prefix}${module.split(':')[1]}_clearnbt`);
     });
 });

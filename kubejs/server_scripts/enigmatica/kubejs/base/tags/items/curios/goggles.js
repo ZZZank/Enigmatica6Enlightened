@@ -3,7 +3,6 @@ onEvent('item.tags', (event) => {
         'artifacts:night_vision_goggles',
         'botania:cosmetic_engineer_goggles',
         'botania:monocle',
-        'advancedperipherals:ar_goggles',
         'occultism:otherworld_goggles'
     ]);
 });

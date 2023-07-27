@@ -15,7 +15,6 @@ onEvent('item.tags', (event) => {
         'minecraft:magma_block',
         'minecraft:shroomlight',
         'naturesaura:light_staff',
-        'rsgauges:sensitive_glass_block',
         'simplylight:edge_light',
         'simplylight:edge_light_top',
         'simplylight:lightbulb',
@@ -25,7 +24,7 @@ onEvent('item.tags', (event) => {
         'undergarden:shimmerweed',
         'betterendforge:glowing_pillar_luminophor'
     ];
-    var exceptions = ['occultism:magic_lamp_empty', 'rsgauges:industrial_alarm_lamp'];
+    var exceptions = ['occultism:magic_lamp_empty'];
 
     event
         .get('forge:lights')
@@ -49,7 +48,6 @@ onEvent('item.tags', (event) => {
         .add(/chandelier/)
         .add(/brazier/)
         .add('#chipped:glowstone')
-        .add('#chisel:glowstone')
         .add('#chipped:sea_lantern')
         .add('#chipped:shroomlight')
         .add(/neon_light/)

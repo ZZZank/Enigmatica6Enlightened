@@ -99,7 +99,10 @@ onEvent('recipes', (event) => {
         },
         {
             input1: Ingredient.of('#forge:ingots/silver', 1),
-            secondaries: [Ingredient.of('#forge:ingots/copper', 3), Ingredient.of('#forge:dusts/redstone', 4)],
+            secondaries: [
+                Ingredient.of('#forge:ingots/copper', 3),
+                Ingredient.of('#forge:dusts/redstone', 4)
+            ],
             outputs: [Item.of('emendatusenigmatica:signalum_ingot', 4)],
             id: `${id_prefix}signalum_ingot`
         },
@@ -112,6 +115,8 @@ onEvent('recipes', (event) => {
     ];
 
     recipes.forEach((recipe) => {
-        event.recipes.immersiveengineering.arc_furnace(recipe.outputs, recipe.input1, recipe.secondaries).id(recipe.id);
+        event.recipes.immersiveengineering
+            .arc_furnace(recipe.outputs, recipe.input1, recipe.secondaries)
+            .id(recipe.id);
     });
 });

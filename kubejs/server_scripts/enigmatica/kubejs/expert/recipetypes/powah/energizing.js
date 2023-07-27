@@ -48,16 +48,16 @@ onEvent('recipes', (event) => {
         {
             ingredients: [
                 { item: 'ars_nouveau:wixie_charm' },
-                { item: 'refinedstorage:raw_advanced_processor' },
-                { item: 'refinedstorage:raw_advanced_processor' },
-                { item: 'refinedstorage:raw_advanced_processor' }
+                { item: 'appliedenergistics2:engineering_processor' },
+                { item: 'appliedenergistics2:engineering_processor' },
+                { item: 'minecraft:ender_eye' }
             ],
             energy: 3000000,
             result: {
-                item: 'extrastorage:raw_neural_processor',
-                count: 3
+                item: 'packagedauto:package_component',
+                count: 4
             },
-            id: 'extrastorage:raw_neural_processor'
+            id: 'packagedauto:package_component'
         },
         {
             ingredients: [
@@ -95,7 +95,10 @@ onEvent('recipes', (event) => {
             id: 'powah:energizing/energized_steel'
         },
         {
-            ingredients: [{ tag: 'forge:storage_blocks/froststeel' }, { tag: 'forge:storage_blocks/electrum' }],
+            ingredients: [
+                { tag: 'forge:storage_blocks/froststeel' },
+                { tag: 'forge:storage_blocks/electrum' }
+            ],
             energy: 100000,
             result: {
                 item: 'powah:energized_steel_block',

@@ -62,30 +62,6 @@ const disabledItems = [
 
     'integrateddynamics:part_entity_writer',
 
-    'ironjetpacks:strap',
-    'ironjetpacks:basic_coil',
-    'ironjetpacks:advanced_coil',
-    'ironjetpacks:elite_coil',
-    'ironjetpacks:ultimate_coil',
-    'ironjetpacks:hardened_cell',
-    'ironjetpacks:hardened_capacitor',
-    'ironjetpacks:invar_cell',
-    'ironjetpacks:invar_capacitor',
-    'ironjetpacks:blazing_cell',
-    'ironjetpacks:blazing_capacitor',
-    'ironjetpacks:signalum_cell',
-    'ironjetpacks:signalum_capacitor',
-    'ironjetpacks:niotic_cell',
-    'ironjetpacks:niotic_capacitor',
-    'ironjetpacks:lumium_cell',
-    'ironjetpacks:lumium_capacitor',
-    'ironjetpacks:spirited_cell',
-    'ironjetpacks:spirited_capacitor',
-    'ironjetpacks:enderium_cell',
-    'ironjetpacks:enderium_capacitor',
-    'ironjetpacks:nitro_cell',
-    'ironjetpacks:nitro_capacitor',
-
     'mekanism:sawdust',
     'mekanism:dust_lapis_lazuli',
     'mekanism:dust_lithium',
@@ -94,10 +70,6 @@ const disabledItems = [
     'mythicbotany:raindeletia_floating',
     'mythicbotany:wither_aconite',
     'mythicbotany:wither_aconite_floating',
-
-    'pedestals:dustflour',
-
-    'pitg:green_dye',
 
     'pneumaticcraft:wheat_flour',
 
@@ -114,10 +86,5 @@ const disabledItems = [
     'thermal:carrot_block',
     'thermal:potato_block',
     'thermal:sugar_cane_block',
-    'thermal:apple_block',
-    'simplefarming:raw_bacon',
-    'simplefarming:cooked_bacon',
-    'simplefarming:cooked_egg',
-    'simplefarming:noodles',
-    'simplefarming:chocolate'
+    'thermal:apple_block'
 ];

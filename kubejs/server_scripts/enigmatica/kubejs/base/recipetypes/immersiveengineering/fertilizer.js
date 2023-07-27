@@ -32,6 +32,9 @@ onEvent('recipes', (event) => {
     };
 
     data.recipes.forEach((recipe) => {
-        event.recipes.immersiveengineering.fertilizer(recipe.input).growthModifier(recipe.growthModifier).id(recipe.id);
+        event.recipes.immersiveengineering
+            .fertilizer(recipe.input)
+            .growthModifier(recipe.growthModifier)
+            .id(recipe.id);
     });
 });

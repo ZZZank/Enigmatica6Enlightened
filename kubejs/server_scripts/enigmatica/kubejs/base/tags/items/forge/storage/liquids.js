@@ -1,6 +1,5 @@
 onEvent('item.tags', (event) => {
     var items = [
-        'chiselsandbits:bit_storage',
         'rftoolsutility:tank',
         'astralsorcery:chalice',
         'thermal:fluid_cell',
@@ -25,7 +24,7 @@ onEvent('item.tags', (event) => {
             .add(items)
             .add(/_tank/)
             .add(/fluid_storage/)
-            .add(/extrastorage:\w+_fluid/)
+            .add(/aeadditions:fluid_\w+/)
             .remove(exceptions);
     });
 });

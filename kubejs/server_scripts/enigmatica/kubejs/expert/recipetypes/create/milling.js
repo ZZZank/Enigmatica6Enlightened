@@ -11,6 +11,8 @@ onEvent('recipes', (event) => {
                   .milling(recipe.output, recipe.inputs)
                   .id(recipe.id)
                   .processingTime(recipe.processingTime)
-            : event.recipes.create.milling(recipe.output, recipe.inputs).processingTime(recipe.processingTime);
+            : event.recipes.create
+                  .milling(recipe.output, recipe.inputs)
+                  .processingTime(recipe.processingTime);
     });
 });

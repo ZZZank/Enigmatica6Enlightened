@@ -459,9 +459,9 @@ onEvent('recipes', (event) => {
                 'quark:gold_bars',
                 'quark:gold_bars',
                 'tconstruct:sky_cake',
-                'simplefarming:raw_chicken_wings',
+                'farmersdelight:chicken_cuts',
                 'naturesaura:token_anger',
-                'simplefarming:raw_chicken_wings'
+                'farmersdelight:chicken_cuts'
             ],
             result: 'occultism:jei_dummy/none',
             id: 'occultism:ritual/familiar_otherworld_bird'
@@ -610,10 +610,10 @@ onEvent('recipes', (event) => {
                 'quark:gold_bars',
                 'quark:gold_bars',
                 'quark:gold_bars',
-                'simplefarming:scarecrow',
+                'chipped:carved_pumpkin_7',
                 'sushigocrafting:cleaver_knife',
-                'simplefarming:cheese_block',
-                'simplefarming:cheese_block',
+                'materialis:fairy_ingot',
+                'materialis:fairy_ingot',
                 'minecraft:rotten_flesh',
                 'minecraft:rotten_flesh',
                 'minecraft:rotten_flesh',
@@ -1145,7 +1145,7 @@ onEvent('recipes', (event) => {
             ritual_dummy: 'kubejs:craft_refill_upgrade',
             ingredients: [
                 'create:chute',
-                'rsgauges:oldfancy_bistableswitch1',
+                'create:analog_lever',
                 'meetyourfight:spectres_eye',
                 '#sophisticatedbackpacks:upgrades/base'
             ],
@@ -1166,41 +1166,6 @@ onEvent('recipes', (event) => {
             ],
             result: 'ars_nouveau:glyph_sentientharm',
             id: `${id_prefix}glyph_sentientharm`
-        },
-        {
-            ritual_type: 'occultism:craft_with_spirit_name',
-            activation_item: 'occultism:book_of_binding_bound_djinni',
-            pentacle_id: 'occultism:craft_djinni',
-            duration: 120,
-            ritual_dummy: 'kubejs:craft_turtle_normal',
-            ingredients: [
-                'aquaculture:box_turtle',
-                'computercraft:computer_normal',
-                'create:deployer',
-                'minecraft:furnace',
-                'mekanism:jetpack',
-                'pneumaticcraft:reinforced_chest'
-            ],
-            result: 'computercraft:turtle_normal',
-            id: `${id_prefix}turtle_normal`
-        },
-        {
-            ritual_type: 'occultism:craft_with_spirit_name',
-            activation_item: 'occultism:book_of_binding_bound_djinni',
-            pentacle_id: 'occultism:craft_djinni',
-            duration: 120,
-            ritual_dummy: 'kubejs:craft_turtle_advanced',
-            ingredients: [
-                'aquaculture:box_turtle',
-                'computercraft:computer_advanced',
-                'create:deployer',
-                'minecraft:blast_furnace',
-                'mekanism:jetpack',
-                Item.of('mekanism:jetpack', '{HideFlags:2}').weakNBT(),
-                'pneumaticcraft:reinforced_chest'
-            ],
-            result: 'computercraft:turtle_advanced',
-            id: `${id_prefix}turtle_advanced`
         },
         {
             ritual_type: 'occultism:craft_with_spirit_name',
@@ -1310,7 +1275,10 @@ onEvent('recipes', (event) => {
                 '#forge:clusters/uranium',
                 '#forge:clusters/uranium'
             ],
-            result: Item.of('kubejs:miner_marid_irradiated', '{rollsPerOperation:4,Damage:0,maxMiningTime:300}'),
+            result: Item.of(
+                'kubejs:miner_marid_irradiated',
+                '{rollsPerOperation:4,Damage:0,maxMiningTime:300}'
+            ),
             id: `${id_prefix}miner_marid_irradiated`
         },
         {
@@ -1507,11 +1475,17 @@ onEvent('recipes', (event) => {
         { name: 'disenchantment', ingredients: ['apotheosis:draconic_endshelf', 'botania:rosa_arcana'] },
         {
             name: 'rocket',
-            ingredients: ['minecraft:firework_rocket', Item.of('alexsmobs:frontier_cap', '{Damage:0]}').weakNBT()]
+            ingredients: [
+                'minecraft:firework_rocket',
+                Item.of('alexsmobs:frontier_cap', '{Damage:0]}').weakNBT()
+            ]
         },
         {
             name: 'death',
-            ingredients: [Item.of('eidolon:reaper_scythe', '{Damage:0]}').weakNBT(), 'naturesaura:chorus_generator']
+            ingredients: [
+                Item.of('eidolon:reaper_scythe', '{Damage:0]}').weakNBT(),
+                'naturesaura:chorus_generator'
+            ]
         },
         { name: 'frosty', ingredients: ['thermal:ice_tnt', 'betterendforge:ancient_emerald_ice'] },
         { name: 'culinary', ingredients: ['create:builders_tea', 'nethers_delight:stuffed_hoglin_item'] },

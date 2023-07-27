@@ -120,7 +120,10 @@ onEvent('recipes', (event) => {
             id: 'thermal:compat/tconstruct/smelter_alloy_tconstruct_slimesteel_ingot'
         },
         {
-            inputs: [Ingredient.of('#forge:ingots/cobalt', 3), Ingredient.of('#forge:ingots/netherite_scrap', 1)],
+            inputs: [
+                Ingredient.of('#forge:ingots/cobalt', 3),
+                Ingredient.of('#forge:ingots/netherite_scrap', 1)
+            ],
             outputs: [Item.of('tconstruct:manyullyn_ingot', 4)],
             id: 'thermal:compat/tconstruct/smelter_alloy_tconstruct_manyullyn_ingot'
         },

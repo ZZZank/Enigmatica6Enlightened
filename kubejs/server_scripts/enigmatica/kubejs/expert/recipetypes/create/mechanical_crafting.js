@@ -50,17 +50,17 @@ onEvent('recipes', (event) => {
             id: 'astralsorcery:observatory'
         },
         {
-            output: 'refinedstorage:controller',
+            output: 'appliedenergistics2:controller',
             pattern: ['ACACA', 'CDBDC', 'AFEFA', 'CDBDC', 'ACACA'],
             key: {
-                A: 'refinedstorage:advanced_processor',
+                A: 'appliedenergistics2:engineering_processor',
                 B: '#forge:ingots/slimesteel',
                 C: 'xnet:netcable_blue',
-                D: 'refinedstorage:quartz_enriched_iron',
-                E: 'refinedstorage:machine_casing',
+                D: 'pneumaticcraft:ingot_iron_compressed',
+                E: 'create:schematic_and_quill',
                 F: 'immersiveengineering:logic_unit'
             },
-            id: 'refinedstorage:controller'
+            id: 'appliedenergistics2:network/blocks/controller'
         },
         {
             output: Item.of('create:crushing_wheel', 2),
@@ -71,20 +71,6 @@ onEvent('recipes', (event) => {
                 P: 'create:brass_casing'
             },
             id: 'create:mechanical_crafting/crushing_wheel'
-        },
-        {
-            output: 'refinedstorage:disk_drive',
-            pattern: ['ABCBA', 'BDEDB', 'CFGFC', 'BDEDB', 'ABCBA'],
-            key: {
-                A: '#forge:circuits/basic',
-                B: 'refinedstorage:advanced_processor',
-                C: 'refinedstorage:quartz_enriched_iron',
-                D: 'occultism:storage_stabilizer_tier1',
-                E: '#xnet:advanced_connectors',
-                F: 'immersiveengineering:logic_unit',
-                G: 'refinedstorage:machine_casing'
-            },
-            id: 'refinedstorage:disk_drive'
         },
         {
             output: 'powah:energizing_orb',
@@ -170,7 +156,7 @@ onEvent('recipes', (event) => {
             pattern: [' AAA', 'ACCB', 'AC  ', 'DEDD'],
             key: {
                 A: 'prettypipes:pipe',
-                B: 'computercraft:monitor_normal',
+                B: 'rftoolsutility:screen',
                 C: 'pneumaticcraft:printed_circuit_board',
                 D: 'pneumaticcraft:reinforced_stone_slab',
                 E: Item.of('pneumaticcraft:pneumatic_dynamo').ignoreNBT()
@@ -198,7 +184,7 @@ onEvent('recipes', (event) => {
                 D: 'pneumaticcraft:omnidirectional_hopper',
                 E: 'pneumaticcraft:printed_circuit_board',
                 F: '#industrialforegoing:machine_frame/supreme',
-                G: 'extrastorage:neural_processor',
+                G: 'packagedauto:package_component',
                 H: 'powah:player_aerial_pearl'
             },
             id: `${id_prefix}aerial_interface`
@@ -235,10 +221,10 @@ onEvent('recipes', (event) => {
                 A: 'pneumaticcraft:logistics_core',
                 B: 'integrateddynamics:crystalized_menril_block',
                 C: 'integrateddynamics:menril_wood',
-                D: 'extrastorage:neural_processor',
+                D: 'packagedauto:package_component',
                 E: 'kubejs:cpu_core_as_81221',
                 F: 'pneumaticcraft:smart_chest',
-                G: 'refinedstorage:machine_casing',
+                G: 'appliedenergistics2:smooth_sky_stone_chest',
                 H: 'pneumaticcraft:upgrade_matrix',
                 I: 'pneumaticcraft:network_io_port',
                 J: 'pneumaticcraft:network_data_storage'

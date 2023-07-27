@@ -523,44 +523,6 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                'refinedstorage:range_upgrade',
-                'refinedstorage:range_upgrade',
-                'refinedstorage:range_upgrade',
-                'xnet:antenna_dish',
-                'xnet:antenna_dish',
-                '#forge:ingots/aeternium',
-                '#forge:ingots/aeternium',
-                '#forge:ingots/aeternium'
-            ],
-            inputFluid: 'tconstruct:molten_slimesteel',
-            inputFluidAmount: 1296,
-            processingTime: 400,
-            outputItem: { item: 'rsinfinitybooster:infinity_card', count: 1 },
-            outputFluid: '',
-            outputFluidAmount: 0,
-            id: 'rsinfinitybooster:infinity_card'
-        },
-        {
-            inputs: [
-                'rsinfinitybooster:infinity_card',
-                'powah:ender_gate_nitro',
-                'rsinfinitybooster:infinity_card',
-                'powah:ender_gate_nitro',
-                'powah:ender_gate_nitro',
-                'rsinfinitybooster:infinity_card',
-                'powah:ender_gate_nitro',
-                'rsinfinitybooster:infinity_card'
-            ],
-            inputFluid: 'kubejs:pink_ender_slime',
-            inputFluidAmount: 1250,
-            processingTime: 400,
-            outputItem: { item: 'rsinfinitybooster:dimension_card', count: 1 },
-            outputFluid: '',
-            outputFluidAmount: 0,
-            id: 'rsinfinitybooster:dimension_card'
-        },
-        {
-            inputs: [
                 '#forge:plastic',
                 '#industrialforegoing:machine_frame/pity',
                 '#forge:plastic',
@@ -662,8 +624,8 @@ onEvent('recipes', (event) => {
                 'atum:crystal_glass_pane',
                 '#forge:gears/signalum',
                 '#forge:gears/signalum',
-                'refinedstorage:construction_core',
-                'refinedstorage:construction_core'
+                'appliedenergistics2:formation_core',
+                'appliedenergistics2:formation_core'
             ],
             inputFluid: 'industrialforegoing:latex',
             inputFluidAmount: 1000,
@@ -719,8 +681,8 @@ onEvent('recipes', (event) => {
                 'atum:crystal_glass_pane',
                 '#forge:gears/enderium',
                 '#forge:gears/enderium',
-                'extrastorage:neural_processor',
-                'extrastorage:neural_processor'
+                'packagedauto:package_component',
+                'packagedauto:package_component'
             ],
             inputFluid: 'industrialforegoing:latex',
             inputFluidAmount: 1000,
@@ -886,7 +848,7 @@ onEvent('recipes', (event) => {
                 'mekanism:hdpe_sheet',
                 'mekanism:hdpe_sheet',
                 '#forge:circuits/advanced',
-                'advancedperipherals:ar_goggles',
+                'ars_nouveau:glyph_sensitive',
                 '#forge:circuits/advanced'
             ],
             inputFluid: 'kubejs:molten_enderium_glass',
@@ -961,9 +923,9 @@ onEvent('recipes', (event) => {
                 'mekanism:ultimate_induction_provider',
                 '#forge:circuits/ultimate',
                 '#forge:circuits/ultimate',
-                'ironjetpacks:nitro_thruster',
+                'pneumaticcraft:jet_boots_upgrade_5',
                 '#forge:pellets/antimatter',
-                'ironjetpacks:nitro_thruster'
+                'powah:energy_discharger_nitro'
             ],
             inputFluid: 'industrialforegoing:ether_gas',
             inputFluidAmount: 16000,
@@ -1297,16 +1259,6 @@ onEvent('recipes', (event) => {
             outputFluid: '',
             outputFluidAmount: 0,
             id: `${id_prefix}memory_ultimate_filled`
-        },
-        {
-            inputs: ['extrastorage:diamond_crafter'],
-            inputFluid: 'tconstruct:molten_netherite',
-            inputFluidAmount: 144 * 9,
-            processingTime: 200,
-            outputItem: { item: 'extrastorage:netherite_crafter', count: 1 },
-            outputFluid: '',
-            outputFluidAmount: 0,
-            id: 'extrastorage:netherite_crafter'
         },
         {
             inputs: [

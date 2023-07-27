@@ -10,7 +10,7 @@ $minecraftInstanceFile = "minecraftinstance.json"
 $overridesFolder = "overrides"
 $secretsFile = "secrets.ps1"
 
-function Validate-SecretsFile {
+function ValidateSecretsFile {
     if (!(Test-Path "$PSScriptRoot\$secretsFile")) {
         Write-Host "You need a valid CurseForge API Token in a $secretsFile file" -ForegroundColor Red
         Write-Host "Creating $secretsFile" -ForegroundColor Cyan
@@ -397,19 +397,19 @@ $startLocation = Get-Location
 Set-Location $INSTANCE_ROOT
 
 Test-ForDependencies
-Validate-SecretsFile
+ValidateSecretsFile
 
 if ($uploadExpertMode) {
-    $CURSEFORGE_PROJECT_ID = 585046
+    $CURSEFORGE_PROJECT_ID = 889901
     $SERVER_FILES_FOLDER = "$INSTANCE_ROOT/server_files_expert"
     $SERVER_SETUP_CONFIG_PATH = "$SERVER_FILES_FOLDER/server-setup-config.yaml"
-    $MODPACK_NAME = "Enigmatica6Expert"
-    $CLIENT_NAME = "Enigmatica6Expert"
+    $MODPACK_NAME = "Enlightened6Expert"
+    $CLIENT_NAME = "Enlightened6Expert"
     $CLIENT_ZIP_NAME = "$CLIENT_NAME-$MODPACK_VERSION"
     $SERVER_ZIP_NAME = "$CLIENT_NAME`Server-$MODPACK_VERSION"
     $LAST_MODPACK_ZIP_NAME = "$CLIENT_NAME-$LAST_MODPACK_VERSION"
-    $CLIENT_FILE_DISPLAY_NAME = "Enigmatica 6 Expert $MODPACK_VERSION"
-    $SERVER_FILE_DISPLAY_NAME = "Enigmatica 6 Expert Server $MODPACK_VERSION"
+    $CLIENT_FILE_DISPLAY_NAME = "Enlightened 6 Expert $MODPACK_VERSION"
+    $SERVER_FILE_DISPLAY_NAME = "Enlightened 6 Expert Server $MODPACK_VERSION"
 
     Switch-DefaultModeTo -mode "expert"
 }

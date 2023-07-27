@@ -30,18 +30,8 @@ onEvent('recipes', (event) => {
         'botania:mana_infusion/mana_diamond_block',
         'byg:compat/create/black_sand_from_crushing',
 
-        'computercraft:computer_advanced_upgrade',
-        'computercraft:turtle_advanced_upgrade',
-        'computercraft:turtle_normal',
-        'computercraft:turtle_advanced',
-        'computercraft:pocket_computer_normal',
-        'computercraft:pocket_computer_advanced',
-        'computercraft:pocket_computer_advanced_upgrade',
-
         /compactmachines:machine_/,
         /create:pressing\/\w*_ingot/,
-
-        /dankstorage:\w_to_\w/,
 
         'darkutils:crafting/rune_damage_player',
         'darkutils:crafting/blank_plate',
@@ -116,13 +106,6 @@ onEvent('recipes', (event) => {
 
         /naturesaura:animal_spawner\/sheep_/,
 
-        'pedestals:ingot_gold_from_upgrades',
-        'pedestals:upgrades/breaker2',
-        'pedestals:upgrades/crafter1mk2',
-        'pedestals:upgrades/recycler',
-        'pedestals:upgrades/rfexpgen',
-        'pedestals:upgrades/rffuelgen',
-
         'pneumaticcraft:explosion_crafting/compressed_iron_block',
         'pneumaticcraft:explosion_crafting/compressed_iron_ingot',
         'pneumaticcraft:speed_upgrade',
@@ -138,12 +121,6 @@ onEvent('recipes', (event) => {
         'quark:building/crafting/candles/candle_basic',
         'quark:building/crafting/red_nether_bricks_util',
         'quark:tools/crafting/runes/rainbow_rune',
-
-        'refinedstorage:quartz_enriched_iron',
-        'refinedstorage:1k_storage_part',
-        'refinedstorage:4k_storage_part',
-        'refinedstorage:64k_fluid_storage_part',
-        'refinedstorage:256k_fluid_storage_part',
 
         'rftoolscontrol:cpu_core_500',
         'rftoolscontrol:cpu_core_1000',
@@ -318,7 +295,11 @@ onEvent('recipes', (event) => {
     });
 
     event.remove({ type: 'minecraft:crafting_shapeless', output: '#forge:dusts', mod: 'thermal' });
-    event.remove({ type: 'minecraft:crafting_shapeless', output: '#forge:dusts', mod: 'immersiveengineering' });
+    event.remove({
+        type: 'minecraft:crafting_shapeless',
+        output: '#forge:dusts',
+        mod: 'immersiveengineering'
+    });
     event.remove({ type: 'integrateddynamics:drying_basin' });
     event.remove({ type: 'integrateddynamics:mechanical_drying_basin' });
     event.remove({ type: 'integrateddynamics:squeezer' });

@@ -241,7 +241,9 @@ onEvent('recipes', (event) => {
         }
     ];
 
-    const patchouli_safe_removals = [{ output: 'bloodmagic:teleposerfocus', id: 'bloodmagic:altar/teleposer_focus' }];
+    const patchouli_safe_removals = [
+        { output: 'bloodmagic:teleposerfocus', id: 'bloodmagic:altar/teleposer_focus' }
+    ];
 
     patchouli_safe_removals.forEach((recipe) => {
         event.recipes.bloodmagic

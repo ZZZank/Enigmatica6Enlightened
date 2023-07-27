@@ -2,7 +2,6 @@ onEvent('item.tags', (event) => {
     const small_meats = [
             'atum:quail',
             'farmersdelight:mutton_chops',
-            'simplefarming:raw_chicken_wings',
             'farmersdelight:chicken_cuts',
             'farmersdelight:bacon',
             'quark:frog_leg',
@@ -11,7 +10,6 @@ onEvent('item.tags', (event) => {
         medium_meats = ['environmental:duck', 'minecraft:chicken', 'minecraft:rabbit'],
         large_meats = [
             'undergarden:raw_dweller_meat',
-            'simplefarming:raw_horse_meat',
             'atum:camel',
             'environmental:venison',
             'alexsmobs:kangaroo_meat',

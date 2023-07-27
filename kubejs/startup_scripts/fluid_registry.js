@@ -136,9 +136,17 @@ onEvent('fluid.registry', (event) => {
 
     generalFluids.forEach((fluid) => {
         if (fluid.type == 'thick') {
-            event.create(fluid.id).textureThick(fluid.texture).bucketColor(fluid.texture).displayName(fluid.display);
+            event
+                .create(fluid.id)
+                .textureThick(fluid.texture)
+                .bucketColor(fluid.texture)
+                .displayName(fluid.display);
         } else if (fluid.type == 'thin') {
-            event.create(fluid.id).textureThin(fluid.texture).bucketColor(fluid.texture).displayName(fluid.display);
+            event
+                .create(fluid.id)
+                .textureThin(fluid.texture)
+                .bucketColor(fluid.texture)
+                .displayName(fluid.display);
         } /*
         else if (fluid.type == 'custom') {
             event.create(fluid.id).displayName(fluid.display).textureStill(fluid.still).textureFlowing(fluid.flowing).bucketColor(fluid.color)

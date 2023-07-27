@@ -1593,13 +1593,6 @@
 					consume_items: true
 				}
 				{
-					id: "469924BD6C490BF2"
-					type: "item"
-					item: "simplefarming:fish_and_chips"
-					count: 2863L
-					consume_items: true
-				}
-				{
 					id: "174E223CF910A58D"
 					type: "item"
 					item: "farmersdelight:steak_and_potatoes"
@@ -1610,13 +1603,6 @@
 					id: "19B011AE9B837D9E"
 					type: "item"
 					item: "farmersdelight:stuffed_potato"
-					count: 2863L
-					consume_items: true
-				}
-				{
-					id: "5BAE86CC78F24DFD"
-					type: "item"
-					item: "simplefarming:potato_knish"
 					count: 2863L
 					consume_items: true
 				}
@@ -1635,6 +1621,13 @@
 					id: "18DA6C0BF3BF2334"
 					type: "item"
 					item: "farmersdelight:wild_potatoes"
+					count: 2863L
+					consume_items: true
+				}
+				{
+					id: "5BAE86CC78F24DFD"
+					type: "item"
+					item: "botania:cell_block"
 					count: 2863L
 					consume_items: true
 				}

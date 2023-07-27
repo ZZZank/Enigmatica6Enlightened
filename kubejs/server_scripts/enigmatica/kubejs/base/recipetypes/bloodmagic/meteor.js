@@ -65,8 +65,7 @@ onEvent('recipes', (event) => {
         meat: [
             { tag: 'architects_palette:salmon_scales', weight: 50 },
             { tag: 'undergarden:blood_mushroom_globule', weight: 30 },
-            { tag: 'atmospheric:stripped_morado_wood', weight: 15 },
-            { tag: 'architects_palette:rotten_flesh_block', weight: 5 }
+            { tag: 'architects_palette:rotten_flesh_block', weight: 20 }
         ],
         void: [
             { tag: 'betterendforge:violecite', weight: 30 },
@@ -87,11 +86,10 @@ onEvent('recipes', (event) => {
         ],
         honey: [
             { tag: 'minecraft:yellow_glazed_terracotta', weight: 30 },
-            { tag: 'chisel:wool/yellow/llama', weight: 20 },
-            { tag: 'minecraft:honey_block', weight: 20 },
-            { tag: 'minecraft:honeycomb_block', weight: 10 },
-            { tag: 'minecraft:yellow_terracotta', weight: 10 },
-            { tag: 'minecraft:yellow_concrete', weight: 10 }
+            { tag: 'minecraft:honey_block', weight: 25 },
+            { tag: 'minecraft:honeycomb_block', weight: 15 },
+            { tag: 'minecraft:yellow_terracotta', weight: 15 },
+            { tag: 'minecraft:yellow_concrete', weight: 15 }
         ]
     };
 
@@ -365,14 +363,6 @@ onEvent('recipes', (event) => {
                     minWeight: 0,
                     weightMap: [{ tag: 'betterendforge:smaragdant_crystal', weight: 50 }],
                     fill: 'upgrade_aquatic:luminous_prismarine',
-                    shell: 'botania:livingrock'
-                },
-                {
-                    radius: 4,
-                    additionalWeight: 15,
-                    minWeight: 0,
-                    weightMap: [{ tag: 'chisel:emerald/cellbismuth', weight: 85 }],
-                    fill: 'naturesaura:infused_iron_block',
                     shell: 'botania:livingrock'
                 }
             ],

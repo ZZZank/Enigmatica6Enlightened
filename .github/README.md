@@ -1,6 +1,8 @@
-# Enigmatica 6
+# Enigmatica 6 Enlightened 
 
-This is the official repository and issue-tracker for the modpack Enigmatica 6, for Minecraft 1.16.5
+This is the official repository and issue-tracker for the modpack Enigmatica 6 Enlightened (E6En), for Minecraft 1.16.5
+
+Note: This modpack is NOT Enigmatica 6 (E6), and support is not provided by EnigmaticaModpack Team. If you encounter problems while playing E6En, please report issues here.
 
 ### Table of Contents
 
@@ -96,9 +98,9 @@ Re-run the script `update-server` whenever you want to update to a new modpack v
 -   Anything put in the `overrides` folder will be copied into the root folder when the `update-server` script is finished - I recommend you put any changed configs and added mods there.
 
 ## Links
+Not avaliable yet. 
+-   [CurseForge (normal)](url)
 
--   [CurseForge (normal)](https://www.curseforge.com/minecraft/modpacks/enigmatica6)
+-   [CurseForge (expert)](url)
 
--   [CurseForge (expert)](https://www.curseforge.com/minecraft/modpacks/enigmatica6expert)
-
--   [Discord](https://discord.gg/HnWNd7X)
+-   [Discord](url)

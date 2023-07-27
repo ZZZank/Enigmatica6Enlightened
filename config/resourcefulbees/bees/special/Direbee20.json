@@ -1,5 +1,5 @@
 {
-    "flower": "atmospheric:yucca_flower",
+    "flower": "byg:snowdrops",
     "creator": "direwolf20",
     "lore": "How cool is that?",
     "loreColor": "#00AAAA",
@@ -56,7 +56,6 @@
                         {"Slot":2,"id":"minecraft:cobblestone","Count":64},
                         {"Slot":3,"id":"minecraft:cobblestone","Count":64},
                         {"Slot":4,"id":"minecraft:cobblestone","Count":48},
-                        {"Slot":5,"id":"connectedglass:borderless_glass","Count":16},
                         {"Slot":6,"id":"minecraft:oak_door","Count":1},
                         {"Slot":7,"id":"torchmaster:feral_flare_lantern","Count":1}
                     ]

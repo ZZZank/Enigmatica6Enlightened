@@ -1,7 +1,6 @@
 onEvent('item.tooltip', (event) => {
     /*
     Valid Color Codes:
-    
     .black()
     .darkBlue()
     .darkGreen()

@@ -98,22 +98,6 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}sand_from_sandstone`
         },
         {
-            input: 'atmospheric:arid_sandstone',
-            output: 'atmospheric:arid_sand',
-            count: 2,
-            time: 100,
-            ignore_crushing_multiplier: true,
-            id: `${id_prefix}arid_sand`
-        },
-        {
-            input: 'atmospheric:red_arid_sandstone',
-            output: 'atmospheric:red_arid_sand',
-            count: 2,
-            time: 100,
-            ignore_crushing_multiplier: true,
-            id: `${id_prefix}red_arid_sand`
-        },
-        {
             input: 'byg:pink_sandstone',
             output: 'byg:pink_sand',
             count: 2,

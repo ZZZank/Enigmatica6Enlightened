@@ -9,7 +9,7 @@ onEvent('jei.information', (event) => {
             text: ['Capable of mining Iesnium.']
         },
         {
-            items: ['atum:nebu_hammer', 'mythicbotany:alfsteel_pick', 'aiotbotania:alfsteel_aiot'],
+            items: ['atum:nebu_hammer', 'mythicbotany:alfsteel_pick'],
             text: ['Capable of breaking down Godblocks into Atum Artifacts.']
         },
         {
@@ -25,16 +25,14 @@ onEvent('jei.information', (event) => {
                 // I just made it like this to be easily copied from tooltips script
                 Text.of('Disabled in Expert Mode.').red(),
                 Text.of('Liquid Meat can be obtained by "processing" cows.').color('#6e2a2a'),
-                Text.of('Pink Slime can be harvested from a Pink Wither using a Fluid Laser.').color('#da07e6')
+                Text.of('Pink Slime can be harvested from a Pink Wither using a Fluid Laser.').color(
+                    '#da07e6'
+                )
             ]
         },
         {
-            items: ['refinedstorage:4k_storage_part', 'refinedstorage:1k_storage_part'],
-            text: ['Crafting is disabled in Expert, begin with the 16k Storage Part.']
-        },
-        {
-            items: ['refinedstorage:256k_fluid_storage_part', 'refinedstorage:64k_fluid_storage_part'],
-            text: ['Crafting is disabled in Expert, begin with the 1024k Fluid Storage Part.']
+            items: ['appliedenergistics2:1k_cell_component', 'appliedenergistics2:1k_fluid_cell_component'],
+            text: ['Crafting is disabled in Expert, begin with the 4k one.']
         },
         {
             items: [
@@ -74,14 +72,12 @@ onEvent('jei.information', (event) => {
         /powah:energy_cable_/,
         'eidolon:crucible',
         'eidolon:wooden_brewing_stand',
-        'engineersdecor:factory_placer',
-        'pedestals:coin/rfexpgen',
-        'pedestals:coin/rffuelgen'
+        'engineersdecor:factory_placer'
     ];
     disabledItems.forEach((item) => {
         event.add(
             item,
-            "This item has been disabled in Expert mode, if you managed to obtain it please report it on Enigmatica 6's issue tracker: https://github.com/NillerMedDild/Enigmatica6/issues"
+            "This item has been disabled in Expert mode, if you managed to obtain it please report it on Enlightened 6's issue tracker: https://github.com/ZZZank/Enigmatica6Enlightened/issues"
         );
     });
 });

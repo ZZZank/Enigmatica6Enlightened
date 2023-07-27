@@ -24,11 +24,6 @@ onEvent('generic.loot_tables', (event) => {
                     count: [2, 8]
                 },
                 {
-                    item: 'simpledelights:orange_chicken',
-                    weight: 50,
-                    count: [2, 8]
-                },
-                {
                     item: 'immersivecooking:pyttipanna',
                     weight: 50,
                     count: [2, 8]
@@ -39,9 +34,12 @@ onEvent('generic.loot_tables', (event) => {
                     count: [2, 8]
                 },
                 {
-                    item: 'simplefarming:sake',
-                    weight: 40,
-                    count: [1, 2]
+                    item: Item.of(
+                        'minecraft:potion',
+                        '{CustomPotionEffects:[{Ambient:0b,CurativeItems:[],ShowIcon:1b,ShowParticles:1b,Duration:600,Id:-99b,Amplifier:0b}]}'
+                    ),
+                    weight: 300,
+                    count: [1, 4]
                 },
                 {
                     item: Item.of(
@@ -82,17 +80,7 @@ onEvent('generic.loot_tables', (event) => {
                     count: [4, 8]
                 },
                 {
-                    item: 'simplefarming:vegetable_curry',
-                    weight: 50,
-                    count: [4, 16]
-                },
-                {
-                    item: 'simpledelights:mango_wings',
-                    weight: 50,
-                    count: [4, 16]
-                },
-                {
-                    item: 'simpledelights:plum_pudding',
+                    item: 'sushigocrafting:salmon_maki',
                     weight: 50,
                     count: [4, 16]
                 },
@@ -132,17 +120,12 @@ onEvent('generic.loot_tables', (event) => {
                     count: [4, 16]
                 },
                 {
-                    item: 'simplefarming:pork_curry',
+                    item: 'farmersdelight:fried_rice',
                     weight: 50,
                     count: [4, 16]
                 },
                 {
-                    item: 'simplefarming:italian_beef',
-                    weight: 50,
-                    count: [4, 16]
-                },
-                {
-                    item: 'simplefarming:beef_and_broccoli',
+                    item: 'farmersdelight:hamburger',
                     weight: 50,
                     count: [4, 16]
                 },

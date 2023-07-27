@@ -1,0 +1,24 @@
+#Disable all channels logic. If true amount of used channels is always 0.
+DisableChannels = false
+
+[Cells]
+	CellFireResistance = false
+	CellExplosionResistance = false
+	PortableCellFireResistance = false
+	PortableCellExplosionResistance = false
+	ItemsPerByte = 8
+	MbPerByte = 8000
+
+[Controllers]
+	#Control all controller limits. If is false, any variant of controller structure is correct.
+	ControllerLimits = true
+	#If is false, possible structure with cross pattern, i.e. two neighbors on two or three axes.
+	ControllerCross = false
+	#If is true, possible connect to one me net multiple controller structure.
+	MultipleControllers = false
+
+	[Controllers.ControllerSizeLimits]
+		Max_X = 7
+		Max_Y = 7
+		Max_Z = 7
+

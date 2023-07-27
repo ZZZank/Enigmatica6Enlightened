@@ -40,14 +40,14 @@
 			}]
 		}
 		{
-			title: "Refined Storage"
+			title: "Applied Energistics 2"
 			x: 1.0d
 			y: -5.0d
 			subtitle: "Energy Mass Conversion in a Square"
 			description: [
-				"Taking storage into the digital age, Refined Storage allows for the storage of items and fluids on disk drives with wireless access and transfer capabilities. It can also interface with most machines and inventories to expand its capabilities. "
+				"Taking storage into the digital age, Applied Energistics 2 allows for the storage of items and fluids on disk drives with wireless access and transfer capabilities. It can also interface with most machines and inventories to expand its capabilities. "
 				""
-				"Proceed to the Refined Storage quests for more help in getting started with this expansive mod."
+				"Proceed to the Applied Energistics 2 quests for more help in getting started with this expansive mod."
 			]
 			dependencies: ["00000000000003FF"]
 			dependency_requirement: "one_completed"
@@ -55,7 +55,7 @@
 			tasks: [{
 				id: "0000000000000699"
 				type: "item"
-				item: "refinedstorage:controller"
+				item: "appliedenergistics2:controller"
 			}]
 			rewards: [{
 				id: "00000000000006FB"
@@ -952,105 +952,14 @@
 			}]
 		}
 		{
-			title: "Tank Null"
-			icon: {
-				id: "tanknull:tank_1"
-				Count: 1b
-				tag: {
-					fluidinv: { }
-				}
-			}
-			x: -0.5d
-			y: -3.5d
-			description: [
-				"The Tank is the ultimate portable fluid storage solution. It can pick up and place fluids, store multiple fluids, and even automatically absorb nearby fluids."
-				""
-				"Use alt + right click to swap between filling/emptying mode, and hold shift + scroll to switch the active tank. Use the keybind (default: o) to set some options like sponge mode."
-				""
-				"You can use the Tank Null Dock to access the Tank as a block, just right click the Tank into the dock. Shift + right click to pop the Tank out of the dock again."
-			]
-			dependencies: ["568DC3ECDB943C47"]
-			id: "5D02087F29AA5454"
-			tasks: [{
-				id: "09AE24315524F720"
-				type: "item"
-				title: "Any Tank"
-				item: {
-					id: "itemfilters:or"
-					Count: 1b
-					tag: {
-						items: [
-							{
-								id: "tanknull:tank_1"
-								Count: 1b
-								tag: {
-									fluidinv: { }
-								}
-							}
-							{
-								id: "tanknull:tank_2"
-								Count: 1b
-								tag: {
-									fluidinv: { }
-								}
-							}
-							{
-								id: "tanknull:tank_3"
-								Count: 1b
-								tag: {
-									fluidinv: { }
-								}
-							}
-							{
-								id: "tanknull:tank_4"
-								Count: 1b
-								tag: {
-									fluidinv: { }
-								}
-							}
-							{
-								id: "tanknull:tank_5"
-								Count: 1b
-								tag: {
-									fluidinv: { }
-								}
-							}
-							{
-								id: "tanknull:tank_6"
-								Count: 1b
-								tag: {
-									fluidinv: { }
-								}
-							}
-							{
-								id: "tanknull:tank_7"
-								Count: 1b
-								tag: {
-									fluidinv: { }
-								}
-							}
-						]
-					}
-				}
-			}]
-			rewards: [{
-				id: "6B430A2095F38839"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-				player_command: false
-			}]
-		}
-		{
 			title: "Fluid Storage Disk"
-			icon: "refinedstorage:64k_fluid_storage_disk"
+			icon: "appliedenergistics2:64k_fluid_storage_cell"
 			x: 2.5d
 			y: -3.5d
 			description: [
-				"Fluids can be stored directly in an RS system too, with fluid disk drives. Just place the disk in a normal disk drive."
+				"Fluids can be stored directly in an AE system too, with fluid disk drives. Just place the disk in a normal disk drive."
 				""
-				"Once you have fluid storage online, RS can autocraft with stored fluids, or use a regular importer/exporter in fluid mode to move fluids into or out of the system."
+				"Once you have fluid storage online, AE can autocraft with stored fluids, or use a regular importer/exporter in fluid mode to move fluids into or out of the system."
 				"In the importers/exporters UI, click the \"Type\" button on the left, 2nd from the top, to change it to fluids mode."
 			]
 			dependencies: [
@@ -1066,103 +975,13 @@
 					id: "itemfilters:or"
 					Count: 1b
 					tag: {
-						items: [
-							{
-								id: "refinedstorage:64k_fluid_storage_disk"
-								Count: 1b
-								tag: {
-									Id: [I;
-										-1031856902
-										-899464268
-										-1112014982
-										515911903
-									]
-								}
-							}
-							{
-								id: "refinedstorage:256k_fluid_storage_disk"
-								Count: 1b
-								tag: {
-									Id: [I;
-										-356968885
-										-503821794
-										-1682123444
-										1712090278
-									]
-								}
-							}
-							{
-								id: "refinedstorage:1024k_fluid_storage_disk"
-								Count: 1b
-								tag: {
-									Id: [I;
-										-1183223022
-										358039592
-										-1084084011
-										-1294625985
-									]
-								}
-							}
-							{
-								id: "refinedstorage:4096k_fluid_storage_disk"
-								Count: 1b
-								tag: {
-									Id: [I;
-										907752426
-										-272873231
-										-1246367336
-										-1496277162
-									]
-								}
-							}
-							{
-								id: "extrastorage:disk_16384k_fluid"
-								Count: 1b
-								tag: {
-									ID: [I;
-										51139427
-										-1958262542
-										-1340406862
-										909704624
-									]
-								}
-							}
-							{
-								id: "extrastorage:disk_65536k_fluid"
-								Count: 1b
-								tag: {
-									ID: [I;
-										1950220109
-										1070221666
-										-1228984801
-										1801515425
-									]
-								}
-							}
-							{
-								id: "extrastorage:disk_262144k_fluid"
-								Count: 1b
-								tag: {
-									ID: [I;
-										1723919845
-										-1513143925
-										-1779991496
-										1774992712
-									]
-								}
-							}
-							{
-								id: "extrastorage:disk_1048576k_fluid"
-								Count: 1b
-								tag: {
-									ID: [I;
-										-1030006703
-										-1075493156
-										-1368676727
-										-274718083
-									]
-								}
-							}
+						items:[
+							{id:"appliedenergistics2:4k_fluid_storage_cell",Count:1b,tag:{}},
+							{id:"appliedenergistics2:16k_fluid_storage_cell",Count:1b,tag:{}},
+							{id:"appliedenergistics2:64k_fluid_storage_cell",Count:1b,tag:{}},
+							{id:"aeadditions:fluid_storage_cell_256",Count:1b,tag:{}},
+							{id:"aeadditions:fluid_storage_cell_1024",Count:1b,tag:{}},
+							{id:"aeadditions:fluid_storage_cell_4096",Count:1b,tag:{}}
 						]
 					}
 				}
@@ -1300,11 +1119,11 @@
 			x: 1.0d
 			y: -3.5d
 			description: [
-				"With its normal settings, External Storage works with items. However, it too can be used to provide RS with access to fluids stored in other tanks. "
+				"With its normal settings, Fluid Storage Bus can be used to provide AE with access to fluids stored in other tanks. "
 				""
-				"Attach it to the tank as you would with an item inventory, then in its UI, click the \"Type\" button on the left to change it to fluids mode."
+				"Attach it to the tank as you would with an item inventory, then done."
 				""
-				"To filter it, just as with items, you can drag a fluid into the slots directly from JEI (the square texture version, not a filled bucket)"
+				"To filter it, just as with items. You can also drag a fluid into the slots directly from JEI (the square texture version, not a filled bucket)"
 			]
 			dependencies: [
 				"568DC3ECDB943C47"
@@ -1314,7 +1133,7 @@
 			tasks: [{
 				id: "734CC72EF1E4ACE4"
 				type: "item"
-				item: "refinedstorage:external_storage"
+				item: "appliedenergistics2:fluid_storage_bus"
 			}]
 			rewards: [{
 				id: "6D9A4CEFB43C39C7"

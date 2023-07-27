@@ -53,7 +53,10 @@ onEvent('recipes', (event) => {
                 '#forge:clusters/uranium',
                 '#forge:clusters/uranium'
             ],
-            result: Item.of('kubejs:miner_marid_irradiated', '{rollsPerOperation:4,Damage:0,maxMiningTime:300}'),
+            result: Item.of(
+                'kubejs:miner_marid_irradiated',
+                '{rollsPerOperation:4,Damage:0,maxMiningTime:300}'
+            ),
             id: `${id_prefix}miner_marid_irradiated`
         }
     ];

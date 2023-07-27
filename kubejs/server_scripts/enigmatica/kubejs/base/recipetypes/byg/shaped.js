@@ -23,6 +23,18 @@ onEvent('recipes', (event) => {
             id: 'byg:nightshade_berry_pie'
         },
         {
+            output: 'byg:nightshade_berry_pie',
+            pattern: ['ECE', 'DDD', 'BAB'],
+            key: {
+                A: 'farmersdelight:pie_crust',
+                B: 'minecraft:sugar',
+                C: 'farmersdelight:wheat_dough',
+                D: 'integrateddynamics:menril_berries',
+                E: 'botania:yellow_mushroom'
+            },
+            id: 'enigmatica:nightshade_berry_pie_alt'
+        },
+        {
             output: 'byg:crimson_berry_pie',
             pattern: [' C ', 'DDD', 'BAB'],
             key: {

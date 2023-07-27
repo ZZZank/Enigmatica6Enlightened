@@ -5,40 +5,49 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:expert/thermal/press/';
     const recipes = [
         {
-            inputs: [Item.of('4x kubejs:superheated_steel_ingot'), Ingredient.of('#thermal:crafting/dies/packing_2x2')],
+            inputs: [
+                Item.of('4x kubejs:superheated_steel_ingot'),
+                Ingredient.of('#thermal:crafting/dies/packing_2x2')
+            ],
             output: Item.of('2x kubejs:hot_compressed_iron_ingot'),
             energy: 1000,
             id: `${id_prefix}hot_compressed_iron_ingot`
         },
         {
-            inputs: [Item.of('4x kubejs:superheated_steel_block'), Ingredient.of('#thermal:crafting/dies/packing_2x2')],
+            inputs: [
+                Item.of('4x kubejs:superheated_steel_block'),
+                Ingredient.of('#thermal:crafting/dies/packing_2x2')
+            ],
             output: Item.of('2x kubejs:hot_compressed_iron_block'),
             energy: 9000,
             id: `${id_prefix}hot_compressed_iron_block`
         },
         {
-            inputs: ['refinedstorage:raw_basic_processor', Ingredient.of('#thermal:crafting/dies/coin')],
-            output: 'refinedstorage:basic_processor',
+            inputs: [
+                'appliedenergistics2:printed_calculation_processor',
+                Ingredient.of('#thermal:crafting/dies/coin')
+            ],
+            output: 'appliedenergistics2:calculation_processor',
             energy: 3000,
-            id: 'refinedstorage:basic_processor'
+            id: 'appliedenergistics2:calculation_processor'
         },
         {
-            inputs: ['refinedstorage:raw_improved_processor', Ingredient.of('#thermal:crafting/dies/coin')],
-            output: 'refinedstorage:improved_processor',
+            inputs: [
+                'appliedenergistics2:printed_logic_processor',
+                Ingredient.of('#thermal:crafting/dies/coin')
+            ],
+            output: 'appliedenergistics2:logic_processor',
             energy: 3000 * 2,
-            id: 'refinedstorage:improved_processor'
+            id: 'appliedenergistics2:logic_processor'
         },
         {
-            inputs: ['refinedstorage:raw_advanced_processor', Ingredient.of('#thermal:crafting/dies/coin')],
-            output: 'refinedstorage:advanced_processor',
+            inputs: [
+                'appliedenergistics2:printed_engineering_processor',
+                Ingredient.of('#thermal:crafting/dies/coin')
+            ],
+            output: 'appliedenergistics2:engineering_processor',
             energy: 3000 * 3,
-            id: 'refinedstorage:advanced_processor'
-        },
-        {
-            inputs: ['extrastorage:raw_neural_processor', Ingredient.of('#thermal:crafting/dies/coin')],
-            output: 'extrastorage:neural_processor',
-            energy: 3000 * 4,
-            id: 'extrastorage:neural_processor'
+            id: 'appliedenergistics2:engineering_processor'
         },
         {
             inputs: ['immersiveengineering:thermoelectric_generator'],

@@ -1,10 +1,6 @@
 onEvent('jei.information', (event) => {
     const recipes = [
         {
-            items: ['simplefarming:cheese_slice'],
-            text: ['Obtained by right-clicking a Wheel of Cheese.']
-        },
-        {
             items: ['farmersdelight:ham'],
             text: ['Obtained by killing Pigs or Hoglins with a knife.']
         },
@@ -59,10 +55,6 @@ onEvent('jei.information', (event) => {
             text: [
                 'Found naturally in Ice Starfields in the End, it can convert adjacent water blocks to Emerald Ice and those to Dense Emerald Ice.'
             ]
-        },
-        {
-            items: ['simplefarming:habanero'],
-            text: ['A very rare drop from farming Peppers.']
         },
         {
             items: ['mekanismgenerators:fusion_reactor_controller'],
@@ -153,7 +145,9 @@ onEvent('jei.information', (event) => {
         },
         {
             items: ['architects_palette:chiseled_abyssaline_bricks'],
-            text: ['May be Charged by Right-Clicking with a Heart of the Sea. Used to power Abyssaline blocks.']
+            text: [
+                'May be Charged by Right-Clicking with a Heart of the Sea. Used to power Abyssaline blocks.'
+            ]
         },
         {
             items: [
@@ -184,7 +178,9 @@ onEvent('jei.information', (event) => {
         },
         {
             items: [/upgrade_aquatic:(?!.*dead_coralstone|chiseled)(?=.*_coralstone$)/],
-            text: ['Obtained by placing Coralstone next to living coral and waiting. Requires Silk Touch to harvest.']
+            text: [
+                'Obtained by placing Coralstone next to living coral and waiting. Requires Silk Touch to harvest.'
+            ]
         },
         {
             items: ['upgrade_aquatic:coralstone'],
@@ -320,7 +316,11 @@ onEvent('jei.information', (event) => {
             text: [`Found occasionally growing beneath Deadwood Trees. Requires darkness to grow.`]
         },
         {
-            items: ['immersiveengineering:furnace_heater', 'mekanism:fuelwood_heater', 'mekanism:resistive_heater'],
+            items: [
+                'immersiveengineering:furnace_heater',
+                'mekanism:fuelwood_heater',
+                'mekanism:resistive_heater'
+            ],
             text: [`May be used to provide Heat for PneumaticCraft machines.`]
         },
         {
@@ -355,7 +355,9 @@ onEvent('jei.information', (event) => {
         },
         {
             items: ['astralsorcery:celestial_crystal_cluster'],
-            text: [`Formed by dropping a Rock Crystal or Celestial Crystal in Liquid Starlight with a Stardust.`]
+            text: [
+                `Formed by dropping a Rock Crystal or Celestial Crystal in Liquid Starlight with a Stardust.`
+            ]
         },
         {
             items: ['astralsorcery:celestial_crystal_cluster'],
@@ -408,17 +410,6 @@ onEvent('jei.information', (event) => {
             text: [`Only drops from Ender Dragons after the first one has been killed.`]
         },
         {
-            items: [
-                'dankstorage:1_to_2',
-                'dankstorage:2_to_3',
-                'dankstorage:3_to_4',
-                'dankstorage:4_to_5',
-                'dankstorage:5_to_6',
-                'dankstorage:6_to_7'
-            ],
-            text: [`Sneak Right Click to upgrade a Dank installed in a Dock.`]
-        },
-        {
             items: [Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:dusty_mummbee_bee' })],
             text: [`The Dusty Mummbee can be found inside the Pharaoh's Sarcophagus.`]
         },
@@ -444,7 +435,9 @@ onEvent('jei.information', (event) => {
         },
         {
             items: ['eidolon:sanguine_amulet', 'eidolon:sapping_sword'],
-            text: [`For crafting steps, refer to the Sanguine Items section under Rituals in the Ars Ecclesia.`]
+            text: [
+                `For crafting steps, refer to the Sanguine Items section under Rituals in the Ars Ecclesia.`
+            ]
         },
         {
             items: ['atum:papyrus_plant'],
@@ -475,7 +468,7 @@ onEvent('jei.information', (event) => {
         {
             items: [/masterfulmachinery:\w+_controller/],
             text: [
-                `Use the included Building Gadgets patterns found in the "building_gadgets_patterns" folder of Enigmatica 6 instance folder.`,
+                `Use the included Building Gadgets patterns found in the "building_gadgets_patterns" folder of Enlightened 6 instance folder.`,
                 ` `,
                 'May be rotated, but not mirrored.'
             ]
@@ -517,11 +510,25 @@ onEvent('jei.information', (event) => {
         },
         {
             items: ['naturesaura:projectile_generator'],
-            text: [`Valid Projectiles:`, ``, `● Snowballs`, `● Eggs`, `● Arrows`, `● Fire Charges`, `● Spectral Arrows`]
+            text: [
+                `Valid Projectiles:`,
+                ``,
+                `● Snowballs`,
+                `● Eggs`,
+                `● Arrows`,
+                `● Fire Charges`,
+                `● Spectral Arrows`
+            ]
         },
         {
             items: ['naturesaura:projectile_generator'],
-            text: [`● Ender Pearls`, `● Llama Spit`, `● Bottles o' Enchanting`, `● Shulker Bullets`, `● Tridents`]
+            text: [
+                `● Ender Pearls`,
+                `● Llama Spit`,
+                `● Bottles o' Enchanting`,
+                `● Shulker Bullets`,
+                `● Tridents`
+            ]
         },
         {
             items: ['naturesaura:birth_spirit'],
@@ -564,37 +571,7 @@ onEvent('jei.information', (event) => {
             items: ['farmersdelight:roast_chicken'],
             text: [`Obtained by right-clicking a placed Roast Chicken with a Bowl.`]
         },
-        {
-            items: ['simplefarming:brewing_barrel'],
-            text: [`Used for brewing various alcoholic beverages.`, ` `, `● Beer`, `● Cauim`, `● Cider`, `● Mead`]
-        },
-        {
-            items: ['simplefarming:brewing_barrel'],
-            text: [`● Sake`, `● Tiswin`, `● Vodka`, `● Whiskey`, `● Wine`]
-        }
     ];
-
-    const simplefarming_beverages = [
-        { type: 'beer', ingredient: 'Barley', effect: 'Strength' },
-        { type: 'cauim', ingredient: 'Cassava', effect: 'Jump Boost' },
-        { type: 'cider', ingredient: 'Apples', effect: 'Luck' },
-        { type: 'mead', ingredient: 'Honeycomb', effect: 'Haste' },
-        { type: 'sake', ingredient: 'Rice', effect: 'Speed' },
-        { type: 'tiswin', ingredient: 'Cactus Fruit', effect: 'a Health Boost' },
-        { type: 'vodka', ingredient: 'Potatoes', effect: 'Resistance' },
-        { type: 'whiskey', ingredient: 'Wheat', effect: 'Absorption' },
-        { type: 'wine', ingredient: 'Grapes', effect: 'Regeneration' }
-    ];
-
-    simplefarming_beverages.forEach((beverage) => {
-        recipes.push({
-            items: [`simplefarming:${beverage.type}`],
-            text: [
-                `Brewed by right-clicking ${beverage.ingredient} into a Brewing Barrel.`,
-                `Grants the imbiber ${beverage.effect}.`
-            ]
-        });
-    });
 
     recipes.forEach((recipe) => {
         recipe.items.forEach((item) => {
@@ -605,12 +582,8 @@ onEvent('jei.information', (event) => {
     disabledItems.forEach((item) => {
         event.add(
             item,
-            "This item has been disabled, if you managed to obtain it please report it on Enigmatica 6's issue tracker: https://github.com/EnigmaticaModpacks/Enigmatica6/issues"
+            "This item has been disabled, if you managed to obtain it please report it on Enlightened 6's issue tracker: https://github.com/ZZZank/Enigmatica6Enlightened/issues"
         );
-    });
-
-    refinedStorageItems.forEach((item) => {
-        event.add(`refinedstorage:${item}`, 'Can be dyed through crafting or by right clicking it with dye in-world.');
     });
 
     generatableCobblestone.forEach((cobblestone) => {

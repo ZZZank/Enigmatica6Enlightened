@@ -3,7 +3,7 @@ onEvent('recipes', (event) => {
     generatableCobblestone.forEach((material) => {
         var type = 'cobble';
         //console.log(`Recipe for Material: ${material}, Type: ${type}`);
-        pedestals_stoneworks(event, material, type);
+        // pedestals_stoneworks(event, material, type);
         industrialforegoing_stoneworks(event, material, type);
         thermal_stoneworks(event, material);
     });
@@ -11,7 +11,7 @@ onEvent('recipes', (event) => {
     generatableStone.forEach((material) => {
         var type = 'stone';
         //console.log(`Recipe for Material: ${material}, Type: ${type}`);
-        pedestals_stoneworks(event, material, type);
+        // pedestals_stoneworks(event, material, type);
         industrialforegoing_stoneworks(event, material, type);
         thermal_stoneworks(event, material);
     });

@@ -35,7 +35,11 @@ onEvent('recipes', (event) => {
             output: Item.of('3x environmental:willow_sign'),
             pattern: ['AAA', 'AAA', ' B '],
             key: {
-                A: ['byg:willow_planks', 'environmental:willow_planks', 'projectvibrantjourneys:willow_planks'],
+                A: [
+                    'byg:willow_planks',
+                    'environmental:willow_planks',
+                    'projectvibrantjourneys:willow_planks'
+                ],
                 B: '#forge:rods/wooden'
             },
             id: 'environmental:building/wood/willow/willow_sign'
@@ -44,7 +48,11 @@ onEvent('recipes', (event) => {
             output: Item.of('3x environmental:cherry_sign'),
             pattern: ['AAA', 'AAA', ' B '],
             key: {
-                A: ['byg:cherry_planks', 'environmental:cherry_planks', 'projectvibrantjourneys:sakura_planks'],
+                A: [
+                    'byg:cherry_planks',
+                    'environmental:cherry_planks',
+                    'projectvibrantjourneys:sakura_planks'
+                ],
                 B: '#forge:rods/wooden'
             },
             id: 'environmental:building/wood/cherry/cherry_sign'
@@ -54,7 +62,11 @@ onEvent('recipes', (event) => {
             output: 'environmental:willow_chest',
             pattern: ['AAA', 'A A', 'AAA'],
             key: {
-                A: ['byg:willow_planks', 'environmental:willow_planks', 'projectvibrantjourneys:willow_planks']
+                A: [
+                    'byg:willow_planks',
+                    'environmental:willow_planks',
+                    'projectvibrantjourneys:willow_planks'
+                ]
             },
             id: 'environmental:building/wood/willow/willow_chest'
         },
@@ -62,7 +74,11 @@ onEvent('recipes', (event) => {
             output: 'environmental:cherry_chest',
             pattern: ['AAA', 'A A', 'AAA'],
             key: {
-                A: ['byg:cherry_planks', 'environmental:cherry_planks', 'projectvibrantjourneys:sakura_planks']
+                A: [
+                    'byg:cherry_planks',
+                    'environmental:cherry_planks',
+                    'projectvibrantjourneys:sakura_planks'
+                ]
             },
             id: 'environmental:building/wood/cherry/cherry_chest'
         },

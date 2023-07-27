@@ -19,7 +19,11 @@ const soilRegistry = [
         categories: ['dirt', 'deepturf', 'frozen_deepturf'],
         growthModifier: 0
     },
-    { block: 'undergarden:deepsoil_farmland', categories: ['dirt', 'deepturf', 'farmland'], growthModifier: 0.15 },
+    {
+        block: 'undergarden:deepsoil_farmland',
+        categories: ['dirt', 'deepturf', 'farmland'],
+        growthModifier: 0.15
+    },
     { block: 'undergarden:sediment', categories: ['sand', 'sediment'], growthModifier: 0.2 },
     {
         block: 'byg:embur_nylium',
@@ -40,9 +44,17 @@ const soilRegistry = [
     { block: 'minecraft:farmland', categories: ['dirt', 'farmland'], growthModifier: 0.15 },
     { block: 'byg:glowcelium_block', categories: ['dirt', 'glowcelium', 'mushroom'], growthModifier: 0.05 },
     { block: 'quark:glowcelium', categories: ['dirt', 'glowcelium', 'mushroom'], growthModifier: 0.05 },
-    { block: 'botania:enchanted_soil', categories: ['dirt', 'grass', 'botania', 'magic'], growthModifier: 0.25 },
+    {
+        block: 'botania:enchanted_soil',
+        categories: ['dirt', 'grass', 'botania', 'magic'],
+        growthModifier: 0.25
+    },
     { block: 'botania:vivid_grass', categories: ['dirt', 'grass', 'botania', 'magic'], growthModifier: 0.15 },
-    { block: 'botania:scorched_grass', categories: ['dirt', 'grass', 'botania', 'nether'], growthModifier: 0.15 },
+    {
+        block: 'botania:scorched_grass',
+        categories: ['dirt', 'grass', 'botania', 'nether'],
+        growthModifier: 0.15
+    },
     { block: 'botania:dry_grass', categories: ['dirt', 'grass', 'botania'], growthModifier: -0.1 },
     { block: 'botania:golden_grass', categories: ['dirt', 'grass', 'botania'], growthModifier: 0.05 },
     { block: 'botania:infused_grass', categories: ['dirt', 'grass', 'botania'], growthModifier: 0.15 },
@@ -57,8 +69,16 @@ const soilRegistry = [
     { block: 'atum:sand', categories: ['sand', 'strange_sand'], growthModifier: 0.2 },
 
     { block: 'minecraft:mycelium', categories: ['dirt', 'mushroom'], growthModifier: 0.05 },
-    { block: 'byg:overgrown_netherrack', categories: ['dirt', 'netherrack', 'nether', 'grass'], growthModifier: 0.05 },
-    { block: 'byg:sythian_nylium', categories: ['dirt', 'sythian_nylium', 'nylium', 'mushroom'], growthModifier: 0.05 },
+    {
+        block: 'byg:overgrown_netherrack',
+        categories: ['dirt', 'netherrack', 'nether', 'grass'],
+        growthModifier: 0.05
+    },
+    {
+        block: 'byg:sythian_nylium',
+        categories: ['dirt', 'sythian_nylium', 'nylium', 'mushroom'],
+        growthModifier: 0.05
+    },
     {
         block: 'minecraft:warped_nylium',
         categories: ['dirt', 'warped_nylium', 'nylium', 'mushroom'],
@@ -97,7 +117,11 @@ const soilRegistry = [
     { block: 'betterendforge:amber_moss', categories: ['end_stone', 'amber_moss'], growthModifier: 0.5 },
     { block: 'betterendforge:rutiscus', categories: ['end_stone', 'rutiscus'], growthModifier: 0.5 },
     { block: 'betterendforge:sangnum', categories: ['end_stone', 'sangnum'], growthModifier: 0.5 },
-    { block: 'betterendforge:chorus_nylium', categories: ['end_stone', 'chorus_nylium'], growthModifier: 0.5 },
+    {
+        block: 'betterendforge:chorus_nylium',
+        categories: ['end_stone', 'chorus_nylium'],
+        growthModifier: 0.5
+    },
     { block: 'betterendforge:jungle_moss', categories: ['end_stone', 'jungle_moss'], growthModifier: 0.5 },
     { block: 'betterendforge:end_moss', categories: ['end_stone', 'end_moss'], growthModifier: 0.5 },
     { block: 'betterendforge:shadow_grass', categories: ['end_stone', 'shadow_grass'], growthModifier: 0.5 },
@@ -107,9 +131,11 @@ const soilRegistry = [
         categories: ['end_stone', 'end_mycelium', 'mushroom'],
         growthModifier: 0.5
     },
-    { block: 'atmospheric:arid_sand', categories: ['sand', 'arid_sand'], growthModifier: 0.0 },
-    { block: 'atmospheric:red_arid_sand', categories: ['sand', 'arid_sand', 'red_arid_sand'], growthModifier: 0.0 },
-    { block: 'byg:imparius_phylium', categories: ['end_stone', 'mushroom', 'imparius_phylium'], growthModifier: 0.5 }
+    {
+        block: 'byg:imparius_phylium',
+        categories: ['end_stone', 'mushroom', 'imparius_phylium'],
+        growthModifier: 0.5
+    }
 ];
 
 let dirt_types = ['blood', 'earth', 'ender', 'sky'],

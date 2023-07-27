@@ -17,7 +17,7 @@ onEvent('recipes', (event) => {
             output: 'integrateddynamics:variablestore',
             pattern: ['ABA', 'CDC', 'EFE'],
             key: {
-                A: 'extrastorage:neural_processor',
+                A: 'packagedauto:package_component',
                 B: 'integrateddynamics:crystalized_menril_block',
                 C: 'integrateddynamics:menril_wood',
                 D: 'pneumaticcraft:smart_chest',

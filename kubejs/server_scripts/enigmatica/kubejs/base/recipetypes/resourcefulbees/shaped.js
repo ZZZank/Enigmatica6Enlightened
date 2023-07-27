@@ -465,15 +465,6 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}porkchop`
         },
         {
-            output: Item.of('simplefarming:raw_horse_meat', 3),
-            pattern: ['A  ', ' B ', '  A'],
-            key: {
-                A: 'resourcefulbees:shepherd_honeycomb',
-                B: 'resourcefulbees:wax'
-            },
-            id: `${id_prefix}raw_horse_meat`
-        },
-        {
             output: Item.of('alexsmobs:moose_ribs', 3),
             pattern: ['AA ', '  B'],
             key: {

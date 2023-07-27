@@ -128,6 +128,11 @@ onEvent('recipes', (event) => {
             filter: { mod: 'modularrouters' },
             toReplace: 'minecraft:ender_pearl',
             replaceWith: 'botania:corporea_spark'
+        },
+        {
+            filter: { mod: 'aeadditions' },
+            toReplace: '#forge:dyes/yellow',
+            replaceWith: 'mekanism:enriched_gold'
         }
     ];
 

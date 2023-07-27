@@ -5,6 +5,7 @@
 	filename: "refined_storage"
 	title: "Refined Storage"
 	icon: "refinedstorage:controller"
+	always_invisible: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -376,7 +377,7 @@
 			y: 6.5d
 			subtitle: "It even has a keybind!"
 			description: [
-				"Wireless Grids are exactly what they sound like: handheld grid access in item form. These are exactly as great as they sound, and they come in all the normal types; for now, make a Wireless Crafting Grid."
+				"TODO: Wireless Grids are exactly what they sound like: handheld grid access in item form. These are exactly as great as they sound, and they come in all the normal types; for now, make a Wireless Crafting Grid."
 				""
 				"These items must be charged, and they only work when near a Wireless Transmitter. These transmitters have a base range of 16 blocks."
 			]
@@ -798,7 +799,7 @@
 			x: -2.5d
 			y: 9.5d
 			subtitle: "You Want How Many?"
-			description: ["An Interface with a Crafting card is pretty good at keeping a small amount of several items in stock, but what if we need to go bigger? Well, now we can. The Requester is an addon block that allows Refined Storage to keep an internal stock of a given item at all times. Want 5000 glass ready and waiting for you? Set up a Requester to do just that. "]
+			description: ["TODO: An Interface with a Crafting card is pretty good at keeping a small amount of several items in stock, but what if we need to go bigger? Well, now we can. The Requester is an addon block that allows Refined Storage to keep an internal stock of a given item at all times. Want 5000 glass ready and waiting for you? Set up a Requester to do just that. "]
 			dependencies: ["0000000000000298"]
 			id: "5DA4C492523C7D72"
 			tasks: [{

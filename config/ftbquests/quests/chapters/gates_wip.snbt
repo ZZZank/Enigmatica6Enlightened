@@ -9,13 +9,13 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "Enigmatica 6: Expert"
+			title: "Enlightened 6: Expert"
 			icon: "mekanism:robit"
 			x: 0.0d
 			y: 0.0d
 			shape: "rsquare"
 			description: [
-				"Welcome to Enigmatica 6: Expert mode!"
+				"Welcome to Enlightened 6: Expert mode!"
 				""
 				"The Goal of E6E is to complete all quests in the Bragging Rights chapter. Good luck, and have fun :D"
 				"- Niller"
@@ -259,7 +259,7 @@
 			}]
 		}
 		{
-			title: "Refined Storage: Automation"
+			title: "Applied Energistics: Automation"
 			x: -0.625d
 			y: 5.0d
 			shape: "diamond"
@@ -269,7 +269,7 @@
 			tasks: [{
 				id: "0000000000000FDE"
 				type: "item"
-				item: "refinedstorage:controller"
+				item: "appliedenergistics2:controller"
 			}]
 		}
 		{
@@ -376,21 +376,6 @@
 			}]
 		}
 		{
-			title: "Pedestals"
-			icon: "pedestals:pedestal/stone333"
-			x: 4.375d
-			y: 6.875d
-			shape: "diamond"
-			dependencies: ["0000000000000FC9"]
-			size: 1.25d
-			id: "6CA3B688C7701907"
-			tasks: [{
-				id: "5727C862289731E8"
-				type: "item"
-				item: "pedestals:pedestal/stone333"
-			}]
-		}
-		{
 			title: "Tinkers' Construct"
 			x: 0.0d
 			y: 3.0d
@@ -417,7 +402,7 @@
 			}]
 		}
 		{
-			title: "Refined Storage: Digital Storage"
+			title: "Applied Energistics: Digital Storage"
 			x: 0.625d
 			y: 5.0d
 			shape: "diamond"
@@ -427,7 +412,7 @@
 			tasks: [{
 				id: "786CC87833A2294A"
 				type: "item"
-				item: "refinedstorage:disk_drive"
+				item: "appliedenergistics2:drive"
 			}]
 		}
 	]

@@ -14,7 +14,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'farmersdelight:pie_crust',
                 B: 'minecraft:sugar',
-                D: 'create:bar_of_chocolate'
+                D: '#forge:chocolate_bars'
             },
             id: 'farmersdelight:chocolate_pie'
         },

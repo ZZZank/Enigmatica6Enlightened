@@ -27,16 +27,6 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}black_sand`
         },
         {
-            input: 'atmospheric:arid_sandstone',
-            output: item.of('atmospheric:arid_sand', 2),
-            id: `${id_prefix}arid_sand`
-        },
-        {
-            input: 'atmospheric:red_arid_sandstone',
-            output: item.of('atmospheric:red_arid_sand', 2),
-            id: `${id_prefix}red_arid_sand`
-        },
-        {
             input: '#forge:stone',
             output: 'minecraft:cobblestone',
             id: `${id_prefix}cobblestone`
@@ -138,10 +128,7 @@ onEvent('recipes', (event) => {
                 'byg:tall_crimson_roots',
                 'byg:blueberries',
                 'byg:crimson_berries',
-                'simplefarming:strawberries',
-                'simplefarming:raspberries',
-                'simplefarming:blueberries',
-                'simplefarming:blackberries',
+                'neapolitan:strawberries',
                 'byg:holly_berries'
             ]
         },
@@ -171,35 +158,7 @@ onEvent('recipes', (event) => {
                 'farmersdelight:cabbage_leaf',
                 'farmersdelight:onion',
                 'farmersdelight:tomato',
-                'farmersdelight:cabbage',
-                'simplefarming:rice',
-                'simplefarming:rye',
-                'simplefarming:oat',
-                'simplefarming:barley',
-                'simplefarming:cotton',
-                'simplefarming:zucchini',
-                'simplefarming:yam',
-                'simplefarming:turnip',
-                'simplefarming:tomato',
-                'simplefarming:sweet_potato',
-                'simplefarming:squash',
-                'simplefarming:spinach',
-                'simplefarming:soybean',
-                'simplefarming:sorghum',
-                'simplefarming:radish',
-                'simplefarming:pepper',
-                'simplefarming:peanut',
-                'simplefarming:pea_pod',
-                'simplefarming:onion',
-                'simplefarming:lettuce',
-                'simplefarming:ginger',
-                'simplefarming:eggplant',
-                'simplefarming:cucumber',
-                'simplefarming:corn',
-                'simplefarming:cassava',
-                'simplefarming:broccoli',
-                'simplefarming:honeydew',
-                'simplefarming:cantaloupe'
+                'farmersdelight:cabbage'
             ]
         },
         {

@@ -82,7 +82,11 @@ onEvent('recipes', (event) => {
             id: 'ars_nouveau:summoning_crystal'
         },
         {
-            inputs: ['#forge:storage_blocks/mana', '#forge:storage_blocks/gold_brass', 'ars_nouveau:glyph_projectile'],
+            inputs: [
+                '#forge:storage_blocks/mana',
+                '#forge:storage_blocks/gold_brass',
+                'ars_nouveau:glyph_projectile'
+            ],
             reagent: Item.of('minecraft:bow', '{Damage:0}').weakNBT(),
             output: 'ars_nouveau:spell_bow',
             id: 'ars_nouveau:spell_bow'
@@ -357,6 +361,8 @@ onEvent('recipes', (event) => {
         }
     ];
     recipes.forEach((recipe) => {
-        event.recipes.ars_nouveau.enchanting_apparatus(recipe.output, recipe.reagent, recipe.inputs).id(recipe.id);
+        event.recipes.ars_nouveau
+            .enchanting_apparatus(recipe.output, recipe.reagent, recipe.inputs)
+            .id(recipe.id);
     });
 });

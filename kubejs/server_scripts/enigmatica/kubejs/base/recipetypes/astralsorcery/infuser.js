@@ -28,14 +28,6 @@ onEvent('recipes', (event) => {
                 duration: 100
             },
             {
-                input: { item: 'simplefarming:habanero' },
-                fluid: 'astralsorcery:liquid_starlight',
-                consumptionChance: 0.1,
-                output: 'simplefarming:golden_habanero',
-                count: 1,
-                duration: 50
-            },
-            {
                 input: { tag: 'forge:dusts/iron' },
                 fluid: 'astralsorcery:liquid_starlight',
                 consumptionChance: 0.1,

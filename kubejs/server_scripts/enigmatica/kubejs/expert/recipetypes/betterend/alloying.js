@@ -20,7 +20,10 @@ onEvent('recipes', (event) => {
         event
             .custom({
                 type: 'betterendforge:alloying',
-                ingredients: [Ingredient.of(recipe.inputs[0]).toJson(), Ingredient.of(recipe.inputs[1]).toJson()],
+                ingredients: [
+                    Ingredient.of(recipe.inputs[0]).toJson(),
+                    Ingredient.of(recipe.inputs[1]).toJson()
+                ],
                 result: recipe.output,
                 experience: recipe.experience,
                 smelttime: recipe.smelttime

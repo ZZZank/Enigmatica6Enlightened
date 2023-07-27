@@ -170,7 +170,7 @@ onEvent('item.registry', (event) => {
         { name: 'diy_excavator', texture: 'advanced_packing_crate_green' },
         { name: 'mining_gadget_kit', texture: 'packing_crate_blue' },
         { name: 'flux_bore_kit', texture: 'packing_crate_lime' },
-        { name: 'diy_pedestal_quarry', texture: 'packing_crate_red' },
+        { name: 'diy_create_quarry', texture: 'packing_crate_red' },
         { name: 'diy_mekasuit_helmet', texture: 'packing_crate_red' },
         { name: 'diy_mekasuit_bodyarmor', texture: 'packing_crate_red' },
         { name: 'diy_mekasuit_pants', texture: 'packing_crate_red' },
@@ -265,74 +265,6 @@ onEvent('item.registry', (event) => {
         { name: 'mekasuit_boots_package', texture: 'assembly_package_filled' },
         { name: 'mekasuit_boots_assembly', texture: 'assembly_package_processing' },
 
-        { name: '1k_storage_part_package', texture: 'assembly_package_filled' },
-        { name: '1k_storage_part_assembly', texture: 'assembly_package_processing' },
-        { name: '4k_storage_part_package', texture: 'assembly_package_filled' },
-        { name: '4k_storage_part_assembly', texture: 'assembly_package_processing' },
-        { name: '16k_storage_part_package', texture: 'assembly_package_filled' },
-        { name: '16k_storage_part_assembly', texture: 'assembly_package_processing' },
-        { name: '64k_storage_part_package', texture: 'assembly_package_filled' },
-        { name: '64k_storage_part_assembly', texture: 'assembly_package_processing' },
-        { name: '256k_storage_part_package', texture: 'assembly_package_filled' },
-        { name: '256k_storage_part_assembly', texture: 'assembly_package_processing' },
-        { name: '1024k_storage_part_package', texture: 'assembly_package_filled' },
-        { name: '1024k_storage_part_assembly', texture: 'assembly_package_processing' },
-        { name: '4096k_storage_part_package', texture: 'assembly_package_filled' },
-        { name: '4096k_storage_part_assembly', texture: 'assembly_package_processing' },
-        { name: '16384k_storage_part_package', texture: 'assembly_package_filled' },
-        { name: '16384k_storage_part_assembly', texture: 'assembly_package_processing' },
-
-        { name: 'batch_1k_storage_part_package', texture: 'packing_crate_lime' },
-        { name: 'batch_1k_storage_part_assembly', texture: 'assembly_package_processing' },
-        { name: 'batch_4k_storage_part_package', texture: 'packing_crate_lime' },
-        { name: 'batch_4k_storage_part_assembly', texture: 'assembly_package_processing' },
-        { name: 'batch_16k_storage_part_package', texture: 'packing_crate_lime' },
-        { name: 'batch_16k_storage_part_assembly', texture: 'assembly_package_processing' },
-        { name: 'batch_64k_storage_part_package', texture: 'packing_crate_lime' },
-        { name: 'batch_64k_storage_part_assembly', texture: 'assembly_package_processing' },
-        { name: 'batch_256k_storage_part_package', texture: 'packing_crate_lime' },
-        { name: 'batch_256k_storage_part_assembly', texture: 'assembly_package_processing' },
-        { name: 'batch_1024k_storage_part_package', texture: 'packing_crate_lime' },
-        { name: 'batch_1024k_storage_part_assembly', texture: 'assembly_package_processing' },
-        { name: 'batch_4096k_storage_part_package', texture: 'packing_crate_lime' },
-        { name: 'batch_4096k_storage_part_assembly', texture: 'assembly_package_processing' },
-        { name: 'batch_16384k_storage_part_package', texture: 'packing_crate_lime' },
-        { name: 'batch_16384k_storage_part_assembly', texture: 'assembly_package_processing' },
-
-        { name: '64k_fluid_storage_part_package', texture: 'assembly_package_filled' },
-        { name: '64k_fluid_storage_part_assembly', texture: 'assembly_package_processing' },
-        { name: '256k_fluid_storage_part_package', texture: 'assembly_package_filled' },
-        { name: '256k_fluid_storage_part_assembly', texture: 'assembly_package_processing' },
-        { name: '1024k_fluid_storage_part_package', texture: 'assembly_package_filled' },
-        { name: '1024k_fluid_storage_part_assembly', texture: 'assembly_package_processing' },
-        { name: '4096k_fluid_storage_part_package', texture: 'assembly_package_filled' },
-        { name: '4096k_fluid_storage_part_assembly', texture: 'assembly_package_processing' },
-        { name: '16384k_fluid_storage_part_package', texture: 'assembly_package_filled' },
-        { name: '16384k_fluid_storage_part_assembly', texture: 'assembly_package_processing' },
-        { name: '65536k_fluid_storage_part_package', texture: 'assembly_package_filled' },
-        { name: '65536k_fluid_storage_part_assembly', texture: 'assembly_package_processing' },
-        { name: '262144k_fluid_storage_part_package', texture: 'assembly_package_filled' },
-        { name: '262144k_fluid_storage_part_assembly', texture: 'assembly_package_processing' },
-        { name: '1048576k_fluid_storage_part_package', texture: 'assembly_package_filled' },
-        { name: '1048576k_fluid_storage_part_assembly', texture: 'assembly_package_processing' },
-
-        { name: 'batch_64k_fluid_storage_part_package', texture: 'packing_crate_lime' },
-        { name: 'batch_64k_fluid_storage_part_assembly', texture: 'assembly_package_processing' },
-        { name: 'batch_256k_fluid_storage_part_package', texture: 'packing_crate_lime' },
-        { name: 'batch_256k_fluid_storage_part_assembly', texture: 'assembly_package_processing' },
-        { name: 'batch_1024k_fluid_storage_part_package', texture: 'packing_crate_lime' },
-        { name: 'batch_1024k_fluid_storage_part_assembly', texture: 'assembly_package_processing' },
-        { name: 'batch_4096k_fluid_storage_part_package', texture: 'packing_crate_lime' },
-        { name: 'batch_4096k_fluid_storage_part_assembly', texture: 'assembly_package_processing' },
-        { name: 'batch_16384k_fluid_storage_part_package', texture: 'packing_crate_lime' },
-        { name: 'batch_16384k_fluid_storage_part_assembly', texture: 'assembly_package_processing' },
-        { name: 'batch_65536k_fluid_storage_part_package', texture: 'packing_crate_lime' },
-        { name: 'batch_65536k_fluid_storage_part_assembly', texture: 'assembly_package_processing' },
-        { name: 'batch_262144k_fluid_storage_part_package', texture: 'packing_crate_lime' },
-        { name: 'batch_262144k_fluid_storage_part_assembly', texture: 'assembly_package_processing' },
-        { name: 'batch_1048576k_fluid_storage_part_package', texture: 'packing_crate_lime' },
-        { name: 'batch_1048576k_fluid_storage_part_assembly', texture: 'assembly_package_processing' },
-
         { name: 'assembly_io_package', texture: 'advanced_packing_crate_green' },
         { name: 'assembly_io_assembly', texture: 'assembly_package_processing' },
         { name: 'assembly_laser_package', texture: 'advanced_packing_crate_green' },
@@ -344,6 +276,83 @@ onEvent('item.registry', (event) => {
         { name: 'assembly_controller_package', texture: 'advanced_packing_crate_green' },
         { name: 'assembly_controller_assembly', texture: 'assembly_package_processing' }
     ];
+
+    let storageParts = [
+        {
+            modID: 'appliedenergistics2',
+            type: '',
+            sizes: ['1k', '4k', '16k', '64k', '1k_fluid', '4k_fluid', '16k_fluid', '64k_fluid']
+        },
+        {
+            modID: 'aeadditions',
+            type: 'item',
+            sizes: [
+                //in K. (1024 means 1024k)
+                '256',
+                '1024',
+                '4096',
+                '16384'
+            ]
+        },
+        {
+            modID: 'aeadditions',
+            type: 'fluid',
+            sizes: [
+                //in K. (1024 means 1024k)
+                '256',
+                '1024',
+                '4096'
+            ]
+        },
+        {
+            modID: 'aeadditions',
+            type: 'chemical',
+            sizes: [
+                //in K. (1024 means 1024k)
+                '1',
+                '4',
+                '16',
+                '64',
+                '256',
+                '1024',
+                '4096'
+            ]
+        }
+    ];
+
+    storageParts.forEach((storagePart) => {
+        storagePart.sizes.forEach((partSize) => {
+            let partName = '';
+            if (storagePart.modID == 'appliedenergistics2') {
+                // 'appliedenergistics2:1k_cell_component'
+                partName = `${partSize}_cell_component`;
+            } else if (storagePart.modID == 'aeadditions') {
+                // 'aeadditions:item_storage_component_256'
+                partName = `${storagePart.type}_storage_component_${partSize}`;
+            } else {
+                //nothing else for now
+            }
+
+            reusableItemTextures.push(
+                {
+                    name: `${partName}_package`,
+                    texture: 'assembly_package_filled'
+                },
+                {
+                    name: `${partName}_assembly`,
+                    texture: 'assembly_package_processing'
+                },
+                {
+                    name: `batch_${partName}_package`,
+                    texture: 'packing_crate_lime'
+                },
+                {
+                    name: `batch_${partName}_assembly`,
+                    texture: 'assembly_package_processing'
+                }
+            );
+        });
+    });
 
     let metals = [
         'aluminum',

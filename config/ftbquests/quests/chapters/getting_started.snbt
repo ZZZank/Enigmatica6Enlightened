@@ -14,7 +14,7 @@
 			x: 0.0d
 			y: -6.0d
 			description: [
-				" Welcome to Enigmatica 6, we're glad to have you :D"
+				" Welcome to Enlightened 6, we're glad to have you :D"
 				" "
 				"Quests are divided into 3 types:"
 				""
@@ -314,20 +314,6 @@
 									"patchouli:book": "apotheosis:apoth_chronicle"
 								}
 							}
-							pedestals: {
-								id: "patchouli:guide_book"
-								Count: 1.0d
-								tag: {
-									"patchouli:book": "pedestals:manual"
-								}
-							}
-							transport: {
-								id: "patchouli:guide_book"
-								Count: 1.0d
-								tag: {
-									"patchouli:book": "transport:guide"
-								}
-							}
 							engineersdecor: {
 								id: "patchouli:guide_book"
 								Count: 1.0d
@@ -487,19 +473,6 @@
 									}
 								}
 							}
-							advancedperipherals: {
-								id: "patchouli:guide_book"
-								Count: 1
-								tag: {
-									"akashictome:displayName": {
-										text: "Advanced Peripherals"
-									}
-									"patchouli:book": "advancedperipherals:manual"
-									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Advanced Peripherals\"}]}"
-									}
-								}
-							}
 							eidolon: {
 								id: "eidolon:codex"
 								Count: 1
@@ -647,32 +620,6 @@
 									"patchouli:book": "apotheosis:apoth_chronicle"
 									display: {
 										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Chronicle of Shadows\"}]}"
-									}
-								}
-							}
-							pedestals: {
-								id: "patchouli:guide_book"
-								Count: 1
-								tag: {
-									"akashictome:displayName": {
-										text: "Pedestals"
-									}
-									"patchouli:book": "pedestals:manual"
-									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Pedestals\"}]}"
-									}
-								}
-							}
-							transport: {
-								id: "patchouli:guide_book"
-								Count: 1
-								tag: {
-									"akashictome:displayName": {
-										text: "Advanced Transport"
-									}
-									"patchouli:book": "transport:guide"
-									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Advanced Transport\"}]}"
 									}
 								}
 							}

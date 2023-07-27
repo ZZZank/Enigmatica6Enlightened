@@ -7,13 +7,23 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             heated: true,
-            inputs: ['#forge:ingots/cobalt', '#forge:ingots/cobalt', '#forge:ingots/cobalt', 'thermal:blizz_powder'],
+            inputs: [
+                '#forge:ingots/cobalt',
+                '#forge:ingots/cobalt',
+                '#forge:ingots/cobalt',
+                'thermal:blizz_powder'
+            ],
             output: Item.of('undergarden:froststeel_ingot', 3),
             id: `${id_prefix}froststeel_ingot`
         },
         {
             superheated: true,
-            inputs: ['#forge:stones/marble', '#forge:stones/marble', '#forge:stones/marble', '#forge:stones/marble'],
+            inputs: [
+                '#forge:stones/marble',
+                '#forge:stones/marble',
+                '#forge:stones/marble',
+                '#forge:stones/marble'
+            ],
             output: Item.of('astralsorcery:black_marble_raw', 4),
             id: `${id_prefix}black_marble_raw`
         },

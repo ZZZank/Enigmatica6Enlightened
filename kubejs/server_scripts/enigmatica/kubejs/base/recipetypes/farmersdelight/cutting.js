@@ -27,7 +27,6 @@ onEvent('recipes', (event) => {
         ),
         cuttingRecipe(Ingredient.of('minecraft:chicken'), Ingredient.of('#forge:tools/knives'), [
             Item.of('farmersdelight:chicken_cuts', 2),
-            Item.of('simplefarming:raw_chicken_wings'),
             Item.of('minecraft:bone_meal')
         ]),
         cuttingRecipe(Ingredient.of('aquaculture:frog'), Ingredient.of('#forge:tools/knives'), [
@@ -84,7 +83,10 @@ onEvent('recipes', (event) => {
     });
 
     const tillsIntoFarmland = [
-        { type: 'minecraft:farmland', soils: ['minecraft:grass_block', 'minecraft:dirt', 'minecraft:coarse_dirt'] },
+        {
+            type: 'minecraft:farmland',
+            soils: ['minecraft:grass_block', 'minecraft:dirt', 'minecraft:coarse_dirt']
+        },
         { type: 'farmersdelight:rich_soil_farmland', soils: ['farmersdelight:rich_soil'] },
         {
             type: 'undergarden:deepsoil_farmland',

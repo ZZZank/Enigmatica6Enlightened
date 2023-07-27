@@ -30,7 +30,12 @@ onEvent('recipes', (event) => {
             pattern: ['EBE', 'ADA', 'ACA'],
             key: {
                 A: 'minecraft:smooth_stone',
-                B: ['#forge:ingots/iron', '#forge:ingots/aluminum', '#forge:ingots/copper', '#forge:ingots/tin'],
+                B: [
+                    '#forge:ingots/iron',
+                    '#forge:ingots/aluminum',
+                    '#forge:ingots/copper',
+                    '#forge:ingots/tin'
+                ],
                 C: '#forge:dusts/redstone',
                 D: ['#forge:rods/iron', '#forge:rods/aluminum', '#forge:rods/copper', '#forge:rods/tin'],
                 E: '#minecraft:planks'
@@ -78,7 +83,7 @@ onEvent('recipes', (event) => {
                 A: 'minecraft:smooth_stone',
                 B: 'minecraft:furnace',
                 C: 'minecraft:campfire',
-                D: ['#forge:plates/iron', '#forge:plates/tin', '#forge:plates/aluminum']
+                D: 'minecraft:terracotta'
             },
             id: 'minecraft:blast_furnace'
         },

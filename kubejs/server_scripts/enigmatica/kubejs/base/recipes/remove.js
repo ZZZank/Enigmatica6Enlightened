@@ -24,8 +24,9 @@ onEvent('recipes', (event) => {
     event.remove({ type: 'thermal:compression_fuel' });
 
     var outputRemovals = [
-        'aiotbotania:livingwood_shears',
-        'aiotbotania:livingrock_shears',
+        'appliedenergistics2:flour',
+        'appliedenergistics2:gold_dust',
+        'appliedenergistics2:iron_dust',
 
         'byg:blue_enchanted_crafting_table',
         'byg:green_enchanted_crafting_table',
@@ -49,8 +50,6 @@ onEvent('recipes', (event) => {
         'morevanillalib:obsidian_shard',
 
         'powah:uraninite',
-
-        'simplefarming:raw_bacon',
 
         'storagedrawers:conversion_upgrade',
 
@@ -82,8 +81,6 @@ onEvent('recipes', (event) => {
         'astralsorcery:infuser/gold_ore',
         'astralsorcery:shaped/marble/marble_slab',
 
-        /atmospheric:\w+_chest_wood/,
-
         'atum:pumpkin_pie',
 
         'betterendforge:gunpowder_from_sulphur',
@@ -107,6 +104,8 @@ onEvent('recipes', (event) => {
         'create:fill_minecraft_bucket_with_create_honey',
         'create:crushing/dense_construction_block',
         'create:crushing/nether_quartz_ore',
+
+        'create:compat/ae2/milling/ender_pearl',
 
         'compactcrafting:match_proxy',
         'compactcrafting:rescan_proxy',
@@ -199,8 +198,7 @@ onEvent('recipes', (event) => {
         'morevanillalib:obsidian_shard',
         'morevanillalib:obsidian',
 
-        'pedestals:pedestal_cobblegen/blackstone',
-        'pitg:green_dye',
+        'neapolitan:chocolate/chocolate_bar',
 
         'quark:building/crafting/tallow_from_block',
 
@@ -213,11 +211,6 @@ onEvent('recipes', (event) => {
         'resourcefulbees:t3_beehive_nests',
         'resourcefulbees:t4_beehive_nests',
         'resourcefulbees:t1_apiary_beehive',
-
-        'simpledelights:pasta_plate',
-
-        'simplefarming:apple_pie',
-        'simplefarming:blueberry_pie',
 
         'tconstruct:tools/modifiers/wither_bone_conversion',
         'tconstruct:tables/tinkers_anvil',
@@ -270,9 +263,6 @@ onEvent('recipes', (event) => {
 
         'quark:building/crafting/compressed/gunpowder_sack',
         'quark:building/crafting/compressed/charcoal_block_compress',
-
-        'simplefarming:candy',
-        'simplefarming:raw_chicken_wings',
 
         'supplementaries:strings_recipe',
 
@@ -427,7 +417,6 @@ onEvent('recipes', (event) => {
         mod: 'thermal',
         type: 'minecraft:crafting_shapeless'
     });
-    event.remove({ type: 'pedestals:pedestal_crushing', output: '#forge:dyes' });
     event.remove({ type: 'create:milling', output: '#forge:dyes' });
     event.remove({ type: 'create:crushing', output: '#forge:dyes' });
     event.remove({ type: 'mekanism:enriching', output: '#forge:dyes' });

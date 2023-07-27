@@ -12,13 +12,6 @@ onEvent('recipes', (event) => {
             id: 'mekanism:metallurgic_infusing/alloy/infused'
         },
         {
-            output: 'refinedstorage:stack_upgrade',
-            input: Item.of('4x refinedstorage:speed_upgrade'),
-            infusionInput: 'mekanism:redstone',
-            infusionAmount: 80,
-            id: 'refinedstorage:stack_upgrade'
-        },
-        {
             output: 'mekanismgenerators:reactor_glass',
             input: 'mekanism:structural_glass',
             infusionInput: 'mekanism:refined_obsidian',

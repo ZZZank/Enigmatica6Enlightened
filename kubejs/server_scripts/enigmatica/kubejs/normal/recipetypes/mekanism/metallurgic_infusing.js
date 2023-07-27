@@ -19,7 +19,12 @@ onEvent('recipes', (event) => {
 
     data.recipes.forEach((recipe) => {
         event.recipes.mekanism
-            .metallurgic_infusing(recipe.output, recipe.inputItem, recipe.infusionInput, recipe.infusionAmount)
+            .metallurgic_infusing(
+                recipe.output,
+                recipe.inputItem,
+                recipe.infusionInput,
+                recipe.infusionAmount
+            )
             .id(recipe.id);
     });
 });

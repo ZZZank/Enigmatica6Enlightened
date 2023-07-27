@@ -3,7 +3,7 @@ name: Update Modlist
 on:
   push:
     branches:
-      - 'develop'
+      - 'enlightened_develop'
       - 'modlist/**'
     paths:
       - MODLIST.md

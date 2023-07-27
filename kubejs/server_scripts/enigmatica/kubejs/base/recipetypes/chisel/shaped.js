@@ -1,4 +1,4 @@
-onEvent('recipes', (event) => {
+/* onEvent('recipes', (event) => {
     const recipes = [
         {
             output: 'chisel:iron_chisel',
@@ -24,3 +24,4 @@ onEvent('recipes', (event) => {
         event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
     });
 });
+ */

@@ -52,18 +52,6 @@ onEvent('recipes', (event) => {
                 id: 'immersiveengineering:crusher/black_sandstone'
             },
             {
-                input: 'atmospheric:arid_sandstone',
-                output: Item.of('atmospheric:arid_sand', 2),
-                secondary: [Item.of('emendatusenigmatica:potassium_nitrate_dust').chance(0.5)],
-                id: 'immersiveengineering:crusher/arid_sandstone'
-            },
-            {
-                input: 'atmospheric:red_arid_sandstone',
-                output: Item.of('atmospheric:red_arid_sand', 2),
-                secondary: [Item.of('emendatusenigmatica:potassium_nitrate_dust').chance(0.5)],
-                id: 'immersiveengineering:crusher/red_arid_sandstone'
-            },
-            {
                 input: '#forge:storage_blocks/aurora',
                 output: Item.of('betterendforge:crystal_shards', 4),
                 secondary: [],

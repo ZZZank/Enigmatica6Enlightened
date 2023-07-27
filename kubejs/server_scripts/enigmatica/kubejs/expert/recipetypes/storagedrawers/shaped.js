@@ -75,12 +75,13 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'storagedrawers:compacting_drawers_3',
-            pattern: ['ABA', 'BCB', 'ADA'],
+            pattern: ['AEA', 'BCB', 'ADA'],
             key: {
                 A: '#forge:gears/osmium',
                 B: '#forge:sheetmetals/aluminum',
                 C: '#storagedrawers:drawers',
-                D: 'pedestals:coin/compactor3'
+                D: 'sophisticatedbackpacks:advanced_compacting_upgrade',
+                E: 'immersiveengineering:mold_unpacking'
             },
             id: 'storagedrawers:compacting_drawers_3'
         },

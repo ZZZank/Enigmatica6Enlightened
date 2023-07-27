@@ -38,7 +38,12 @@ onEvent('recipes', (event) => {
             id: 'minecraft:conduit'
         },
         {
-            inputs: ['eidolon:gold_inlay', 'botania:livingwood_wall', 'naturesaura:gold_leaf', '#forge:gems/apatite'],
+            inputs: [
+                'eidolon:gold_inlay',
+                'botania:livingwood_wall',
+                'naturesaura:gold_leaf',
+                '#forge:gems/apatite'
+            ],
             output: {
                 entries: [{ result: { item: 'naturesaura:wood_stand', count: 1 }, weight: 1 }],
                 empty_weight: 0,
@@ -103,7 +108,12 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}calling_spirit`
         },
         {
-            inputs: ['#forge:storage_blocks/iron', '#forge:dusts/iron', '#forge:gems/fluorite', '#forge:dusts/copper'],
+            inputs: [
+                '#forge:storage_blocks/iron',
+                '#forge:dusts/iron',
+                '#forge:gems/fluorite',
+                '#forge:dusts/copper'
+            ],
             output: {
                 entries: [{ result: { item: 'minecraft:lodestone', count: 1 }, weight: 1 }],
                 empty_weight: 0,
@@ -171,7 +181,11 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}stone_altar`
         },
         {
-            inputs: ['botania:corporea_spark', '3x #forge:nuggets/silicon_bronze', '2x bloodmagic:ritualstone'],
+            inputs: [
+                'botania:corporea_spark',
+                '3x #forge:nuggets/silicon_bronze',
+                '2x bloodmagic:ritualstone'
+            ],
             output: {
                 entries: [{ result: { item: 'bloodmagic:teleposer', count: 2 }, weight: 1 }],
                 empty_weight: 0,
@@ -191,7 +205,12 @@ onEvent('recipes', (event) => {
         {
             inputs: ['64x byg:flowering_palo_verde_leaves', '#forge:dusts/starmetal', 'quark:yellow_crystal'],
             output: {
-                entries: [{ result: { item: 'kubejs:crystalline_flowering_palo_verde_leaves', count: 64 }, weight: 1 }],
+                entries: [
+                    {
+                        result: { item: 'kubejs:crystalline_flowering_palo_verde_leaves', count: 64 },
+                        weight: 1
+                    }
+                ],
                 empty_weight: 0,
                 rolls: 1
             },

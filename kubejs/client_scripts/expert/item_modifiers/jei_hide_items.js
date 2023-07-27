@@ -13,4 +13,8 @@ onEvent('jei.hide.items', (event) => {
     items.forEach((entry) => {
         event.hide(entry);
     });
+
+    itemsToHideAE.forEach((entry) => {
+        event.hide(entry);
+    });
 });

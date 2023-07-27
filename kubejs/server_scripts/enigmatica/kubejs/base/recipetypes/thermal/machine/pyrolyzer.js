@@ -2,7 +2,10 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             input: '#minecraft:logs',
-            outputs: [Item.of('minecraft:charcoal').toJson(), Fluid.of('immersiveengineering:creosote', 125).toJson()],
+            outputs: [
+                Item.of('minecraft:charcoal').toJson(),
+                Fluid.of('immersiveengineering:creosote', 125).toJson()
+            ],
             experience: 0.15,
             energy: 2000,
             id: 'thermal:machine/pyrolyzer/pyrolyzer_logs'

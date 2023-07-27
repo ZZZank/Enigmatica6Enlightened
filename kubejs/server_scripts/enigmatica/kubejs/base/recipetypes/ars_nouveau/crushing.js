@@ -30,12 +30,18 @@ onEvent('recipes', (event) => {
         },
         {
             input: '#forge:grain',
-            outputs: [Item.of('create:wheat_flour').withChance(1.0), Item.of('create:wheat_flour', 2).withChance(0.25)],
+            outputs: [
+                Item.of('create:wheat_flour').withChance(1.0),
+                Item.of('create:wheat_flour', 2).withChance(0.25)
+            ],
             id: `${id_prefix}wheat_flour`
         },
         {
             input: 'atum:emmer',
-            outputs: [Item.of('atum:emmer_flour').withChance(1.0), Item.of('atum:emmer_flour', 2).withChance(0.25)],
+            outputs: [
+                Item.of('atum:emmer_flour').withChance(1.0),
+                Item.of('atum:emmer_flour', 2).withChance(0.25)
+            ],
             id: `${id_prefix}wheat_flour`
         },
         {
@@ -61,16 +67,6 @@ onEvent('recipes', (event) => {
             input: '#forge:sandstone/colorless',
             outputs: [Item.of('minecraft:sand', 2).withChance(1.0)],
             id: `${id_prefix}sand_from_sandstone`
-        },
-        {
-            input: 'atmospheric:arid_sandstone',
-            outputs: [Item.of('atmospheric:arid_sand', 2).withChance(1.0)],
-            id: `${id_prefix}arid_sand`
-        },
-        {
-            input: 'atmospheric:red_arid_sandstone',
-            outputs: [Item.of('atmospheric:red_arid_sand', 2).withChance(1.0)],
-            id: `${id_prefix}red_arid_sand`
         },
         {
             input: 'byg:pink_sandstone',
@@ -117,19 +113,28 @@ onEvent('recipes', (event) => {
         },
         {
             input: '#forge:rods/basalz',
-            outputs: [Item.of('thermal:basalz_powder').withChance(1.0), Item.of('thermal:basalz_rod').withChance(0.8)],
+            outputs: [
+                Item.of('thermal:basalz_powder').withChance(1.0),
+                Item.of('thermal:basalz_rod').withChance(0.8)
+            ],
 
             id: `${id_prefix}basalz_powder`
         },
         {
             input: '#forge:rods/blitz',
-            outputs: [Item.of('thermal:blitz_powder').withChance(1.0), Item.of('thermal:blitz_rod').withChance(0.8)],
+            outputs: [
+                Item.of('thermal:blitz_powder').withChance(1.0),
+                Item.of('thermal:blitz_rod').withChance(0.8)
+            ],
 
             id: `${id_prefix}blitz_powder`
         },
         {
             input: '#forge:rods/blizz',
-            outputs: [Item.of('thermal:blizz_powder').withChance(1.0), Item.of('thermal:blizz_rod').withChance(0.8)],
+            outputs: [
+                Item.of('thermal:blizz_powder').withChance(1.0),
+                Item.of('thermal:blizz_rod').withChance(0.8)
+            ],
 
             id: `${id_prefix}blizz_powder`
         },
@@ -218,7 +223,10 @@ onEvent('recipes', (event) => {
         },
         {
             input: 'minecraft:clay',
-            outputs: [Item.of('minecraft:clay_ball').withChance(1.0), Item.of('minecraft:clay').withChance(0.75)],
+            outputs: [
+                Item.of('minecraft:clay_ball').withChance(1.0),
+                Item.of('minecraft:clay').withChance(0.75)
+            ],
             id: `${id_prefix}clay_ball`
         },
         {
@@ -254,7 +262,10 @@ onEvent('recipes', (event) => {
         },
         {
             input: '#minecraft:wool',
-            outputs: [Item.of('minecraft:string').withChance(1.0), Item.of('#minecraft:wool').withChance(0.75)],
+            outputs: [
+                Item.of('minecraft:string').withChance(1.0),
+                Item.of('#minecraft:wool').withChance(0.75)
+            ],
             id: `${id_prefix}string`
         },
         {
@@ -299,7 +310,10 @@ onEvent('recipes', (event) => {
         },
         {
             input: 'byg:raw_quartz_block',
-            outputs: [Item.of('byg:quartzite_sand', 2).withChance(1.0), Item.of('byg:quartzite_sand').withChance(0.5)],
+            outputs: [
+                Item.of('byg:quartzite_sand', 2).withChance(1.0),
+                Item.of('byg:quartzite_sand').withChance(0.5)
+            ],
             id: `${id_prefix}quartz_from_quartzite_sand`
         }
     ];

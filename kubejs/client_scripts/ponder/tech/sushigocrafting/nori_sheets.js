@@ -22,7 +22,9 @@ onEvent('ponder.registry', (event) => {
                     .overlay()
                     .showText(60)
                     .colored(PonderPalette.WHITE)
-                    .text(`Seaweed can be made into Nori sheets. It can be found in the ocean, growing like kelp.`)
+                    .text(
+                        `Seaweed can be made into Nori sheets. It can be found in the ocean, growing like kelp.`
+                    )
                     .independent(0);
 
                 scene.idle(30);
@@ -36,7 +38,9 @@ onEvent('ponder.registry', (event) => {
                 scene.addKeyframe();
 
                 let layerHint = new Object();
-                scene.overlay().chaseBoundingBoxOutline(PonderPalette.GREEN, layerHint, AABB.of(2, 2, 2, 3, 3, 3), 90);
+                scene
+                    .overlay()
+                    .chaseBoundingBoxOutline(PonderPalette.GREEN, layerHint, AABB.of(2, 2, 2, 3, 3, 3), 90);
 
                 scene.idle(10);
 
@@ -51,7 +55,10 @@ onEvent('ponder.registry', (event) => {
                 scene.idle(10);
                 scene
                     .overlay()
-                    .showControls(new PonderInput([2.5, 2, 2.5], PonderPointing.RIGHT).showing(PonderIcons.I_LMB), 50);
+                    .showControls(
+                        new PonderInput([2.5, 2, 2.5], PonderPointing.RIGHT).showing(PonderIcons.I_LMB),
+                        50
+                    );
                 scene.idle(70);
             }
         )
@@ -76,7 +83,9 @@ onEvent('ponder.registry', (event) => {
 
                 scene.addKeyframe();
 
-                scene.world().setBlock([1, 1, 1], Block.id('minecraft:furnace').with('lit', false).blockState, true);
+                scene
+                    .world()
+                    .setBlock([1, 1, 1], Block.id('minecraft:furnace').with('lit', false).blockState, true);
 
                 scene.idle(40);
 
@@ -170,7 +179,9 @@ onEvent('ponder.registry', (event) => {
                 scene.addKeyframe();
 
                 let iron_block = new Object();
-                scene.overlay().chaseBoundingBoxOutline(PonderPalette.BLUE, iron_block, AABB.of(1, 1, 1, 2, 2, 2), 60);
+                scene
+                    .overlay()
+                    .chaseBoundingBoxOutline(PonderPalette.BLUE, iron_block, AABB.of(1, 1, 1, 2, 2, 2), 60);
                 scene.idle(10);
                 scene
                     .overlay()
@@ -182,7 +193,9 @@ onEvent('ponder.registry', (event) => {
                 scene.idle(70);
 
                 let pitson = new Object();
-                scene.overlay().chaseBoundingBoxOutline(PonderPalette.OUTPUT, pitson, AABB.of(1, 3, 1, 2, 4, 2), 60);
+                scene
+                    .overlay()
+                    .chaseBoundingBoxOutline(PonderPalette.OUTPUT, pitson, AABB.of(1, 3, 1, 2, 4, 2), 60);
                 scene.idle(10);
                 scene
                     .overlay()
@@ -193,11 +206,18 @@ onEvent('ponder.registry', (event) => {
                     .pointAt([1, 3.5, 1]);
                 scene.idle(70);
 
-                scene.world().setBlock([1, 2, 1], util.getDefaultState('sushigocrafting:dried_seaweed_block'), true);
+                scene
+                    .world()
+                    .setBlock([1, 2, 1], util.getDefaultState('sushigocrafting:dried_seaweed_block'), true);
                 let seaweed_block = new Object();
                 scene
                     .overlay()
-                    .chaseBoundingBoxOutline(PonderPalette.GREEN, seaweed_block, AABB.of(1, 2, 1, 2, 3, 2), 60);
+                    .chaseBoundingBoxOutline(
+                        PonderPalette.GREEN,
+                        seaweed_block,
+                        AABB.of(1, 2, 1, 2, 3, 2),
+                        60
+                    );
                 scene.idle(10);
                 scene
                     .overlay()
@@ -211,7 +231,9 @@ onEvent('ponder.registry', (event) => {
                 scene.addKeyframe();
 
                 let push_button = new Object();
-                scene.overlay().chaseBoundingBoxOutline(PonderPalette.RED, push_button, AABB.of(1, 4, 1, 2, 5, 2), 60);
+                scene
+                    .overlay()
+                    .chaseBoundingBoxOutline(PonderPalette.RED, push_button, AABB.of(1, 4, 1, 2, 5, 2), 60);
                 scene.idle(10);
                 scene
                     .overlay()
@@ -225,9 +247,13 @@ onEvent('ponder.registry', (event) => {
 
                 scene.idle(20);
                 scene.world().modifyBlock([1, 3, 1], (state) => state.with('extended', true));
-                scene.world().setBlock([1, 2, 1], Block.id('piston_head').with('facing', 'down').blockState, true);
+                scene
+                    .world()
+                    .setBlock([1, 2, 1], Block.id('piston_head').with('facing', 'down').blockState, true);
                 scene.idle(5);
-                scene.world().createItemEntity([1, 2, 1], [-0.1, -0.1, 0], Item.of('6x sushigocrafting:nori_sheets'));
+                scene
+                    .world()
+                    .createItemEntity([1, 2, 1], [-0.1, -0.1, 0], Item.of('6x sushigocrafting:nori_sheets'));
                 scene.idle(10);
 
                 scene

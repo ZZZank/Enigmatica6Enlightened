@@ -220,27 +220,6 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}minecraft/hopper`
         },
         {
-            output: 'refinedstorageaddons:wireless_crafting_grid',
-            pattern: ['ABA', 'ACA', 'ADA'],
-            key: {
-                A: 'refinedstorage:quartz_enriched_iron',
-                B: 'refinedstorage:range_upgrade',
-                C: 'refinedstorage:wireless_grid',
-                D: 'minecraft:crafting_table'
-            },
-            id: `${id_prefix}refinedstorageaddons/wireless_crafting_grid_from_wireless_grid`
-        },
-        {
-            output: 'simplefarming:fish_and_chips',
-            pattern: [' A ', 'BCB', ' A '],
-            key: {
-                A: '#forge:crops/potato',
-                B: '#forge:grain',
-                C: 'aquaculture:fish_fillet_cooked'
-            },
-            id: `${id_prefix}simplefarming/fish_and_chips`
-        },
-        {
             output: 'minecraft:tube_coral_block',
             pattern: ['AA', 'AA'],
             key: {
@@ -445,7 +424,6 @@ onEvent('recipes', (event) => {
                     astralsorcery: { id: 'astralsorcery:wand', Count: 1 },
                     pneumaticcraft: { id: 'pneumaticcraft:pneumatic_wrench', Count: 1 },
                     immersiveengineering: { id: 'immersiveengineering:hammer', Count: 1 },
-                    transport: { id: 'transport:rail_breaker', Count: 1 },
                     botania: { id: 'botania:twig_wand', Count: 1, tag: { color1: 0, color2: 0 } },
                     ars_nouveau: { id: 'ars_nouveau:dominion_wand', Count: 1 },
                     mekanism: { id: 'mekanism:configurator', Count: 1 },
@@ -453,8 +431,7 @@ onEvent('recipes', (event) => {
                     thermal: { id: 'thermal:wrench', Count: 1 },
                     rftoolsbase: { id: 'rftoolsbase:smartwrench', Count: 1 },
                     create: { id: 'create:wrench', Count: 1 },
-                    chiselsandbits: { id: 'chiselsandbits:wrench_wood', Count: 1 },
-                    refinedstorage: { id: 'refinedstorage:wrench', Count: 1 },
+                    appliedenergistics2: { id: 'appliedenergistics2:certus_quartz_wrench', Count: 1 },
                     prettypipes: { id: 'prettypipes:wrench', Count: 1 },
                     storagedrawers: { id: 'storagedrawers:drawer_key', Count: 1 },
                     fluxnetworks: { id: 'fluxnetworks:flux_configurator', Count: 1 },
@@ -557,7 +534,12 @@ onEvent('recipes', (event) => {
                             C: 'resourcefulbees:forest_honeycomb',
                             B: 'resourcefulbees:wax'
                         })
-                        .id(`${id_prefix}${tree.trunk.replace(':', '_')}_from_${tree.sapling.replace(':', '_')}`);
+                        .id(
+                            `${id_prefix}${tree.trunk.replace(':', '_')}_from_${tree.sapling.replace(
+                                ':',
+                                '_'
+                            )}`
+                        );
                 }
                 if (tree.sapling != 'minecraft:oak_sapling') {
                     event
@@ -566,7 +548,12 @@ onEvent('recipes', (event) => {
                             C: 'resourcefulbees:forest_honeycomb',
                             B: 'resourcefulbees:wax'
                         })
-                        .id(`${id_prefix}${tree.sapling.replace(':', '_')}_from_${tree.sapling.replace(':', '_')}`);
+                        .id(
+                            `${id_prefix}${tree.sapling.replace(':', '_')}_from_${tree.sapling.replace(
+                                ':',
+                                '_'
+                            )}`
+                        );
                 }
                 if (tree.leaf != 'minecraft:oak_leaves') {
                     event
@@ -575,7 +562,12 @@ onEvent('recipes', (event) => {
                             C: 'resourcefulbees:forest_honeycomb',
                             B: 'resourcefulbees:wax'
                         })
-                        .id(`${id_prefix}${tree.leaf.replace(':', '_')}_from_${tree.sapling.replace(':', '_')}`);
+                        .id(
+                            `${id_prefix}${tree.leaf.replace(':', '_')}_from_${tree.sapling.replace(
+                                ':',
+                                '_'
+                            )}`
+                        );
                 }
             });
         }

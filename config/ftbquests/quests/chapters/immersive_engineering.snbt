@@ -329,7 +329,7 @@
 			description: [
 				"The Crusher can be used to crush ores into dusts, which can then be smelted for a total of two ingots per ore. Certain other items can also be ground down in this way - see JEI."
 				""
-				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Enlightened 6 instance folder to assist with this multiblock."
 			]
 			dependencies: ["0000000000000012"]
 			id: "0000000000000020"
@@ -381,7 +381,7 @@
 			description: [
 				"The Metal Press, when supplied with a mold and power, provides a more material-efficient way to craft plates, wires, and more."
 				""
-				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Enlightened 6 instance folder to assist with this multiblock."
 			]
 			dependencies: ["0000000000000012"]
 			id: "0000000000000022"
@@ -439,7 +439,7 @@
 			description: [
 				"The Improved Blast Furnace makes it easier to automate input/output. You can also make it run much more quickly by attaching one or two powered Blast Furnace Preheaters on either side."
 				""
-				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Enlightened 6 instance folder to assist with this multiblock."
 			]
 			dependencies: ["0000000000000012"]
 			id: "0000000000000024"
@@ -495,7 +495,7 @@
 			description: [
 				"The Arc Furnace is a large, power-intensive machine that can smelt ores into ingots at a 1:2 ratio, but can also be used to quickly make alloys."
 				""
-				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Enlightened 6 instance folder to assist with this multiblock."
 			]
 			dependencies: ["0000000000000020"]
 			id: "0000000000000032"
@@ -638,7 +638,7 @@
 			description: [
 				"The Sawmill operates in two stages. Without a sawblade, it strips logs; with a sawblade, it cuts stripped logs into six planks each. See the Engineer's Manual for more info, as usual."
 				""
-				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Enlightened 6 instance folder to assist with this multiblock."
 			]
 			dependencies: ["0000000000000012"]
 			id: "0000000000000038"
@@ -707,7 +707,7 @@
 			description: [
 				"The Squeezer can make plant oil from seeds (ideally hemp) and is also necessary to make HOP Graphite for the Arc Furnace. The Fermenter produces ethanol, used with plant oil to make biodiesel."
 				""
-				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with these multiblocks."
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Enlightened 6 instance folder to assist with these multiblocks."
 			]
 			dependencies: ["0000000000000012"]
 			id: "000000000000003A"
@@ -802,7 +802,7 @@
 			description: [
 				"With Biodiesel or Diesel acquired, they can be used as a fuel for the powerful (if noisy) Diesel Generator, producing respectable amounts of FE/t."
 				""
-				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Enlightened 6 instance folder to assist with this multiblock."
 			]
 			dependencies: [
 				"7A3633A43D7AB0F2"
@@ -866,7 +866,7 @@
 				""
 				"Several additional mineral nodes have been added, such as Horodric Digsites and Naqada deposits. Be sure to check in the Engineer’s Manual under “Overview and Resources” for a full list of Mineral Deposits. "
 				""
-				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock. "
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Enlightened 6 instance folder to assist with this multiblock. "
 			]
 			dependencies: ["0000000000000061"]
 			id: "0000000000000040"
@@ -937,7 +937,7 @@
 			description: [
 				"As described in the \"Minerals\" section of the manual, certain IE machines can detect and mine massive veins of otherwise unobtainable ore. The first step toward this is to use Survey Tools and a Core Sample Drill to find what veins are in a chunk."
 				""
-				"A number of custom mineral nodes have been added for Enigmatica 6. Be sure to check them out as they can be quite lucrative!"
+				"A number of custom mineral nodes have been added for Enlightened 6. Be sure to check them out as they can be quite lucrative!"
 			]
 			dependencies: ["0000000000000012"]
 			id: "0000000000000061"
@@ -1030,7 +1030,7 @@
 			description: [
 				"The Automated Workbench is a powered multiblock that can automatically process a given type of Engineer's Workbench recipe, when supplied with a blueprint. Handy!"
 				""
-				"Note: Building Gadget's Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
+				"Note: Building Gadget's Patterns and Create Schematics are available in your Enlightened 6 instance folder to assist with this multiblock."
 			]
 			dependencies: ["0000000000000019"]
 			id: "0000000000000246"
@@ -1090,7 +1090,7 @@
 				""
 				"Locating these reservoirs requires the use of the Core Sample Drill or Mineral Survey tools."
 				""
-				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Enlightened 6 instance folder to assist with this multiblock."
 			]
 			dependencies: [
 				"0000000000000012"
@@ -1170,7 +1170,7 @@
 				""
 				"Getting fluids out of the Distillation tower can be tricky at times. The simplest way is to let it automatically output into a short Immersive Engineering Fluid Pipe that branches off into different tanks, then pipe individual fluids from there."
 				""
-				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Enlightened 6 instance folder to assist with this multiblock."
 			]
 			dependencies: ["16D342C092566FC6"]
 			id: "7A3633A43D7AB0F2"
@@ -1233,7 +1233,7 @@
 			description: [
 				"The final step in producing Biodiesel, the Refinery combines Ethanol and Plant Oil to make this liquid gold. "
 				""
-				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Enlightened 6 instance folder to assist with this multiblock."
 			]
 			dependencies: ["000000000000003A"]
 			id: "09AEE48CED288DD1"
@@ -1322,7 +1322,7 @@
 				""
 				"Water inputs from the top and Sulfurized Diesel inputs from the side.  "
 				""
-				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Enlightened 6 instance folder to assist with this multiblock."
 			]
 			dependencies: ["7A3633A43D7AB0F2"]
 			optional: true

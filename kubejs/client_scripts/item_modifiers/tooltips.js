@@ -43,11 +43,11 @@ onEvent('item.tooltip', (event) => {
         },
         {
             items: ['kubejs:altered_recipe_indicator'],
-            text: [Text.of('Recipe altered for Enigmatica 6: Expert. Refer to JEI.').gold()]
+            text: [Text.of('Recipe altered for Enlightened 6: Expert. Refer to JEI.').gold()]
         },
         {
             items: ['kubejs:disabled_recipe_indicator'],
-            text: [Text.of('Recipe disabled for Enigmatica 6').gold()]
+            text: [Text.of('Recipe disabled for Enlightened 6').gold()]
         },
         {
             items: ['tconstruct:crafting_station', 'tconstruct:part_builder', 'tconstruct:tinker_station'],
@@ -173,7 +173,7 @@ onEvent('item.tooltip', (event) => {
             text: [Text.of(`...It caught on in a flash...`).red()]
         },
         {
-            items: ['refinedstorage:silk_touch_upgrade'],
+            items: ['appliedenergistics2:identity_annihilation_plane'],
             text: [Text.of('Does not work on spawners.').red()]
         },
         {
@@ -183,15 +183,12 @@ onEvent('item.tooltip', (event) => {
                 'kubejs:crystalline_dark_oak_wood'
             ],
             text: [Text.of('Fireproof').gold()]
+        },
+        {
+            items: 'appliedenergistics2:ender_dust',
+            text: [Text.of('Only used for creating Quantum Entangled Singularity').red()]
         }
     ];
-
-    refinedStorageItems.forEach((item) => {
-        recipes.push({
-            items: [`refinedstorage:${item}`],
-            text: ['Can be dyed through crafting or by right clicking it with dye in-world.']
-        });
-    });
 
     recipes.forEach((recipe) => {
         event.add(recipe.items, recipe.text);

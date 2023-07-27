@@ -10,50 +10,47 @@ onEvent('recipes', (event) => {
         {
             input: 'byg:pink_sandstone',
             experience: 0.2,
-            outputs: [Item.of('byg:pink_sand', 2), Item.of('emendatusenigmatica:potassium_nitrate_dust').chance(0.3)],
+            outputs: [
+                Item.of('byg:pink_sand', 2),
+                Item.of('emendatusenigmatica:potassium_nitrate_dust').chance(0.3)
+            ],
             id: 'thermal:machine/pulverizer/pulverizer_pink_sandstone'
         },
         {
             input: 'byg:purple_sandstone',
             experience: 0.2,
-            outputs: [Item.of('byg:purple_sand', 2), Item.of('emendatusenigmatica:potassium_nitrate_dust').chance(0.3)],
+            outputs: [
+                Item.of('byg:purple_sand', 2),
+                Item.of('emendatusenigmatica:potassium_nitrate_dust').chance(0.3)
+            ],
             id: 'thermal:machine/pulverizer/pulverizer_purple_sandstone'
         },
         {
             input: 'byg:blue_sandstone',
             experience: 0.2,
-            outputs: [Item.of('byg:blue_sand', 2), Item.of('emendatusenigmatica:potassium_nitrate_dust').chance(0.3)],
+            outputs: [
+                Item.of('byg:blue_sand', 2),
+                Item.of('emendatusenigmatica:potassium_nitrate_dust').chance(0.3)
+            ],
             id: 'thermal:machine/pulverizer/pulverizer_blue_sandstone'
         },
         {
             input: 'byg:white_sandstone',
             experience: 0.2,
-            outputs: [Item.of('byg:white_sand', 2), Item.of('emendatusenigmatica:potassium_nitrate_dust').chance(0.3)],
+            outputs: [
+                Item.of('byg:white_sand', 2),
+                Item.of('emendatusenigmatica:potassium_nitrate_dust').chance(0.3)
+            ],
             id: 'thermal:machine/pulverizer/pulverizer_white_sandstone'
         },
         {
             input: 'byg:black_sandstone',
             experience: 0.2,
-            outputs: [Item.of('byg:black_sand', 2), Item.of('emendatusenigmatica:potassium_nitrate_dust').chance(0.3)],
+            outputs: [
+                Item.of('byg:black_sand', 2),
+                Item.of('emendatusenigmatica:potassium_nitrate_dust').chance(0.3)
+            ],
             id: 'thermal:machine/pulverizer/pulverizer_black_sandstone'
-        },
-        {
-            input: 'atmospheric:arid_sandstone',
-            experience: 0.2,
-            outputs: [
-                Item.of('atmospheric:arid_sand', 2),
-                Item.of('emendatusenigmatica:potassium_nitrate_dust').chance(0.3)
-            ],
-            id: 'thermal:machine/pulverizer/pulverizer_arid_sandstone'
-        },
-        {
-            input: 'atmospheric:red_arid_sandstone',
-            experience: 0.2,
-            outputs: [
-                Item.of('atmospheric:red_arid_sand', 2),
-                Item.of('emendatusenigmatica:potassium_nitrate_dust').chance(0.3)
-            ],
-            id: 'thermal:machine/pulverizer/pulverizer_red_arid_sandstone'
         },
         {
             input: 'buildinggadgets:construction_block_dense',
@@ -124,7 +121,10 @@ onEvent('recipes', (event) => {
         {
             input: '#forge:rods/blaze',
             experience: 0.2,
-            outputs: [Item.of('minecraft:blaze_powder', 3), Item.of('emendatusenigmatica:sulfur_dust').chance(0.25)],
+            outputs: [
+                Item.of('minecraft:blaze_powder', 3),
+                Item.of('emendatusenigmatica:sulfur_dust').chance(0.25)
+            ],
             id: 'thermal:machine/pulverizer/pulverizer_blaze_rod'
         },
         {
@@ -157,6 +157,9 @@ onEvent('recipes', (event) => {
         }
     ];
     recipes.forEach((recipe) => {
-        event.recipes.thermal.pulverizer(recipe.outputs, recipe.input).experience(recipe.experience).id(recipe.id);
+        event.recipes.thermal
+            .pulverizer(recipe.outputs, recipe.input)
+            .experience(recipe.experience)
+            .id(recipe.id);
     });
 });

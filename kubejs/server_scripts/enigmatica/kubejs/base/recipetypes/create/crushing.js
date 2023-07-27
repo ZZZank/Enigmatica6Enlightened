@@ -2,7 +2,10 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/create/crushing/';
     const recipes = [
         {
-            outputs: [Item.of('emendatusenigmatica:obsidian_dust'), Item.of('minecraft:obsidian').withChance(0.75)],
+            outputs: [
+                Item.of('emendatusenigmatica:obsidian_dust'),
+                Item.of('minecraft:obsidian').withChance(0.75)
+            ],
             input: 'minecraft:obsidian',
             id: 'create:crushing/obsidian'
         },

@@ -53,18 +53,6 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}black_sand`
         },
         {
-            input: 'atmospheric:arid_sandstone',
-            outputs: [Item.of('atmospheric:arid_sand')],
-            processingTime: 150,
-            id: `${id_prefix}arid_sand`
-        },
-        {
-            input: 'atmospheric:red_arid_sandstone',
-            outputs: [Item.of('atmospheric:red_arid_sand')],
-            processingTime: 150,
-            id: `${id_prefix}red_arid_sand`
-        },
-        {
             input: '#forge:end_stones',
             outputs: [Item.of('occultism:crushed_end_stone', 4)],
             processingTime: 150,
@@ -93,46 +81,6 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}emmer_flour`
         },
         {
-            input: 'simplefarming:barley',
-            outputs: [
-                Item.of('create:wheat_flour'),
-                Item.of('create:wheat_flour', 2).withChance(0.25),
-                Item.of('simplefarming:barley_seeds').withChance(0.25)
-            ],
-            processingTime: 150,
-            id: `${id_prefix}wheat_flour_from_barley`
-        },
-        {
-            input: 'simplefarming:rice',
-            outputs: [
-                Item.of('create:wheat_flour'),
-                Item.of('create:wheat_flour', 2).withChance(0.25),
-                Item.of('simplefarming:rice_seeds').withChance(0.25)
-            ],
-            processingTime: 150,
-            id: `${id_prefix}wheat_flour_from_rice`
-        },
-        {
-            input: 'simplefarming:rye',
-            outputs: [
-                Item.of('create:wheat_flour'),
-                Item.of('create:wheat_flour', 2).withChance(0.25),
-                Item.of('simplefarming:rye_seeds').withChance(0.25)
-            ],
-            processingTime: 150,
-            id: `${id_prefix}wheat_flour_from_rye`
-        },
-        {
-            input: 'simplefarming:oat',
-            outputs: [
-                Item.of('create:wheat_flour'),
-                Item.of('create:wheat_flour', 2).withChance(0.25),
-                Item.of('simplefarming:oat_seeds').withChance(0.25)
-            ],
-            processingTime: 150,
-            id: `${id_prefix}wheat_flour_from_oat`
-        },
-        {
             input: '#forge:coal_petcoke',
             outputs: ['immersivepetroleum:petcoke_dust'],
             processingTime: 150,
@@ -152,6 +100,9 @@ onEvent('recipes', (event) => {
         }
     ];
     recipes.forEach((recipe) => {
-        event.recipes.create.milling(recipe.outputs, recipe.input).processingTime(recipe.processingTime).id(recipe.id);
+        event.recipes.create
+            .milling(recipe.outputs, recipe.input)
+            .processingTime(recipe.processingTime)
+            .id(recipe.id);
     });
 });

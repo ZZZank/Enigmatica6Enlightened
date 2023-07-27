@@ -9,7 +9,12 @@ onEvent('server.datapack.low_priority', (event) => {
             name: 'amadron_survey_air_canister_return',
             rolls: [1, 1],
             entries: [
-                { item: 'pneumaticcraft:air_canister', weight: 1, amount: [4, 4], nbt: '{"pneumaticcraft:air":500}' }
+                {
+                    item: 'pneumaticcraft:air_canister',
+                    weight: 1,
+                    amount: [4, 4],
+                    nbt: '{"pneumaticcraft:air":500}'
+                }
             ]
         },
         {

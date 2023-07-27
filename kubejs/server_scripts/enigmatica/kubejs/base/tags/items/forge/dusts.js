@@ -22,13 +22,15 @@ onEvent('item.tags', (event) => {
     event.get('forge:dusts').remove('minecraft:prismarine_shard');
     event.get('forge:dusts/prismarine').remove('minecraft:prismarine_shard');
 
-    event.get('forge:dusts/ender_pearl').add('emendatusenigmatica:ender_dust').add('betterendforge:ender_dust');
+    event
+        .get('forge:dusts/ender_pearl')
+        .add('emendatusenigmatica:ender_dust')
+        .add('betterendforge:ender_dust');
     event.get('forge:dusts/ender').add('thermal:ender_pearl_dust').add('betterendforge:ender_dust');
 
     event.get('forge:dusts/netherite_scrap').remove('bloodmagic:sand_netherite');
 
     event.add('forge:dusts/flour', 'create:wheat_flour');
-    event.add('forge:dusts/flour', 'pedestals:dustflour');
 
     // Temporary until EE adapts this change
     event.get('forge:chunks/arcane').remove('emendatusenigmatica:arcane_chunk');

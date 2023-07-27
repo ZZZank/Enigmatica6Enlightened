@@ -26,7 +26,10 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}mold_rod`
         },
         {
-            inputs: [Ingredient.of('#forge:ingots/copper'), Ingredient.of('#thermal:crafting/dies/bullet_casing')],
+            inputs: [
+                Ingredient.of('#forge:ingots/copper'),
+                Ingredient.of('#thermal:crafting/dies/bullet_casing')
+            ],
             outputs: [Item.of('immersiveengineering:empty_casing', 2)],
             energy: 2400,
             id: `${id_prefix}empty_casing`
@@ -62,19 +65,10 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}black_sand`
         },
         {
-            inputs: [Item.of('atmospheric:arid_sandstone', 1), Ingredient.of('#thermal:crafting/dies/unpacking')],
-            outputs: [Item.of('atmospheric:arid_sand', 4)],
-            energy: 2400,
-            id: `${id_prefix}arid_sand`
-        },
-        {
-            inputs: [Item.of('atmospheric:red_arid_sandstone', 1), Ingredient.of('#thermal:crafting/dies/unpacking')],
-            outputs: [Item.of('atmospheric:red_arid_sand', 4)],
-            energy: 2400,
-            id: `${id_prefix}red_arid_sand`
-        },
-        {
-            inputs: [Item.of('betterendforge:dense_snow', 1), Ingredient.of('#thermal:crafting/dies/unpacking')],
+            inputs: [
+                Item.of('betterendforge:dense_snow', 1),
+                Ingredient.of('#thermal:crafting/dies/unpacking')
+            ],
             outputs: [Item.of('minecraft:snow_block', 9)],
             energy: 2400,
             id: `${id_prefix}snow_block`
@@ -94,7 +88,10 @@ onEvent('recipes', (event) => {
         },
         {
             id: 'thermal:machine/press/unpacking/press_honeycomb_unpacking',
-            inputs: [Item.of('minecraft:honeycomb_block', 1), Ingredient.of('#thermal:crafting/dies/unpacking')],
+            inputs: [
+                Item.of('minecraft:honeycomb_block', 1),
+                Ingredient.of('#thermal:crafting/dies/unpacking')
+            ],
             outputs: [Item.of('minecraft:honeycomb', 9)],
             energy: 2400,
             id: `${id_prefix}honeycomb`

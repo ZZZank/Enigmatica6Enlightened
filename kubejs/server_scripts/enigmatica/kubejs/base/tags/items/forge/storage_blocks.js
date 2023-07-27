@@ -41,7 +41,10 @@ onEvent('item.tags', (event) => {
     event.add(storageBlocks + '/aeternium', ['betterendforge:aeternium_block']);
     event.add(storageBlocks + '/terminite', ['betterendforge:terminite_block']);
     event.add(storageBlocks + '/thallasium', ['betterendforge:thallasium_block']);
-    event.add(storageBlocks + '/ender', ['betterendforge:ender_block', 'architects_palette:ender_pearl_block']);
+    event.add(storageBlocks + '/ender', [
+        'betterendforge:ender_block',
+        'architects_palette:ender_pearl_block'
+    ]);
     event.add(storageBlocks + '/aurora', ['betterendforge:aurora_crystal']);
     event.add(storageBlocks + '/amber', ['betterendforge:amber_block']);
 
@@ -54,13 +57,6 @@ onEvent('item.tags', (event) => {
     event.add(storageBlocks + '/niotic', ['powah:niotic_crystal_block']);
     event.add(storageBlocks + '/spirited', ['powah:spirited_crystal_block']);
     event.add(storageBlocks + '/nitro', ['powah:nitro_crystal_block']);
-
-    event.add(storageBlocks + '/bronze', ['#chisel:metals/bronze']);
-    event.add(storageBlocks + '/emerald', ['#chisel:emerald']);
-    event.add(storageBlocks + '/glowstone', ['#chisel:glowstone']);
-    event.add(storageBlocks + '/redstone', ['#chisel:redstone']);
-    event.add(storageBlocks + '/coal', ['#chisel:coal']);
-    event.add(storageBlocks + '/glowstone', ['#chipped:glowstone']);
 
     event.add(storageBlocks + '/hellforged', ['bloodmagic:dungeon_metal']);
 });

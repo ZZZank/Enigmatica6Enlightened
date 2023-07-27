@@ -108,14 +108,18 @@ onEvent('ponder.registry', (event) => {
                     .overlay()
                     .showText(60)
                     .colored(PonderPalette.WHITE)
-                    .text(`The Forge Hammer can be found in Tetra structures, found underground in cold biomes.`)
+                    .text(
+                        `The Forge Hammer can be found in Tetra structures, found underground in cold biomes.`
+                    )
                     .independent(60);
                 scene.idle(25);
 
                 scene.addKeyframe();
 
                 let workbench = new Object();
-                scene.overlay().chaseBoundingBoxOutline(PonderPalette.GREEN, workbench, AABB.of(1, 1, 1, 2, 2, 2), 60);
+                scene
+                    .overlay()
+                    .chaseBoundingBoxOutline(PonderPalette.GREEN, workbench, AABB.of(1, 1, 1, 2, 2, 2), 60);
                 scene.idle(10);
                 scene
                     .overlay()

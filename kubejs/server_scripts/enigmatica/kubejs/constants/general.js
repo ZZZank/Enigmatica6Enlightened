@@ -17,7 +17,7 @@ const modPriorities = [
     'botania',
     'quark',
     'pedestals',
-    'refinedstorage',
+    'appliedenergistics2',
     'mapperbase',
     'bloodmagic',
     'eidolon',
@@ -30,7 +30,6 @@ const modPriorities = [
     'betterendforge',
     'miniutilities',
     'chipped',
-    'chisel',
     'tconstruct'
 ];
 
@@ -58,7 +57,17 @@ const colors = [
 
 // Quark Crystal Cluster Colors
 
-const quark_crystal_colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet', 'white', 'black'];
+const quark_crystal_colors = [
+    'red',
+    'orange',
+    'yellow',
+    'green',
+    'blue',
+    'indigo',
+    'violet',
+    'white',
+    'black'
+];
 
 // Used for tag generation
 const createStoneTypes = [
@@ -72,7 +81,6 @@ const createStoneTypes = [
 ];
 
 const sign_wood_type_blacklist = [
-    'aspen',
     'bloodshroom',
     'cherry',
     'deadwood',
@@ -105,7 +113,6 @@ const sign_wood_type_blacklist = [
 ];
 
 const chest_wood_type_blacklist = [
-    'aspen',
     'cherry',
     'dragon_tree',
     'driftwood',

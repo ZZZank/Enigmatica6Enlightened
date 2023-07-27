@@ -301,7 +301,10 @@ onEvent('recipes', (event) => {
                 A: 'ars_nouveau:glyph_wither',
                 B: 'rftoolsutility:matter_beamer',
                 C: 'rftoolsutility:spawner',
-                D: Item.of('rftoolsutility:syringe', '{mobName:"minecraft:wither",mobId:"minecraft:wither",level:10}'),
+                D: Item.of(
+                    'rftoolsutility:syringe',
+                    '{mobName:"minecraft:wither",mobId:"minecraft:wither",level:10}'
+                ),
                 E: '#industrialforegoing:machine_frame/supreme'
             },
             id: 'industrialforegoing:wither_builder'
@@ -520,8 +523,8 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'mekanism:hdpe_sheet',
                 B: Item.of('thermal:fluid_cell').ignoreNBT(),
-                C: 'tconstruct:piggy_backpack',
-                D: 'dankstorage:dank_3',
+                C: 'sophisticatedbackpacks:diamond_backpack',
+                D: 'occultism:storage_stabilizer_tier2',
                 E: Item.of('thermal:energy_cell').ignoreNBT()
             },
             id: 'industrialforegoing:dissolution_chamber/infinity_backpack'

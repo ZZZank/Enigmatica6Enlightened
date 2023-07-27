@@ -11,7 +11,10 @@ onEvent('recipes', (event) => {
             id: 'botania:elven_trade/elementium'
         },
         {
-            inputs: [{ tag: 'forge:storage_blocks/infused_iron' }, { tag: 'forge:storage_blocks/tainted_gold' }],
+            inputs: [
+                { tag: 'forge:storage_blocks/infused_iron' },
+                { tag: 'forge:storage_blocks/tainted_gold' }
+            ],
             output: {
                 item: 'botania:elementium_block'
             },
