@@ -1,4 +1,28 @@
+## Enlightened6 & Enlightened6Expert - 2.0.1 -> 2.1.0
 
+### Mods Added
+
+  * [Chunk Sending[Forge/Fabric]](https://www.curseforge.com/minecraft/mc-mods/chunk-sending-forge-fabric) (by [someaddon](https://www.curseforge.com/members/someaddon/projects))
+  * [Server Performance - Smooth Chunk Save[Forge/Fabric]](https://www.curseforge.com/minecraft/mc-mods/smooth-chunk-save) (by [someaddon](https://www.curseforge.com/members/someaddon/projects))
+  * [Starlight x Create](https://www.curseforge.com/minecraft/mc-mods/starlight-x-create) (by [SirOMGitsYOU](https://www.curseforge.com/members/SirOMGitsYOU/projects))
+
+### Mods Removed
+
+  * [Crash Utilities](https://www.curseforge.com/minecraft/mc-mods/crash-utilities) (by [Darkere](https://www.curseforge.com/members/Darkere/projects))
+  * [Mouse Tweaks](https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks) (by [YaLTeR](https://www.curseforge.com/members/YaLTeR/projects))
+  * [Radon](https://www.curseforge.com/minecraft/mc-mods/radon) (by [Asek3](https://www.curseforge.com/members/Asek3/projects))
+  * [RoadRunner](https://www.curseforge.com/minecraft/mc-mods/roadrunner) (by [MaxNeedsSnacks](https://www.curseforge.com/members/MaxNeedsSnacks/projects))
+
+### Improvements
+
+-   Buff neapolitan:adzuki_currya stack size
+-   Redirect rewards in some quests
+
+### Bugfixes
+
+-   Farmer's/Scanvenger's Delight gives nothing
+
+---
 
 ### Enigmatica6Unofficial & Enigmatica6UnofficialExpert v2.0.1
 
