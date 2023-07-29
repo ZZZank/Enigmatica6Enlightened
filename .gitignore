@@ -32,6 +32,8 @@ config/masterful_machinery/packs/
 *.dll
 **/*.zip
 /docker/**
+/schematics/uploaded/
+
 # Instance Sync
 **/*.jar
 !InstanceSync*.jar
