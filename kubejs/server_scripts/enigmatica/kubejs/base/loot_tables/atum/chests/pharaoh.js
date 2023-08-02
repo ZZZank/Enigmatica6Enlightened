@@ -24,13 +24,8 @@ onEvent('chest.loot_tables', (event) => {
                     count: [1, 6]
                 },
                 {
-                    item: 'eidolon:lesser_soul_gem',
-                    weight: 20,
-                    count: 1
-                },
-                {
-                    item: 'eidolon:shadow_gem',
-                    weight: 10,
+                    item: 'redstone_arsenal:flux_gem',
+                    weight: 30,
                     count: 1
                 },
                 {

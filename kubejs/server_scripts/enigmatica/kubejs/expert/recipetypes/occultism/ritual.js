@@ -45,7 +45,7 @@ onEvent('recipes', (event) => {
             duration: 60,
             ritual_dummy: 'occultism:ritual_dummy/craft_soul_gem',
             ingredients: [
-                'eidolon:shadow_gem',
+                'redstone_arsenal:flux_gem',
                 'resourcefulbees:tainted_honeycomb',
                 'bloodmagic:reagentholding',
                 'resourcefulbees:tainted_honeycomb',
@@ -1175,7 +1175,7 @@ onEvent('recipes', (event) => {
             ritual_dummy: 'kubejs:craft_ender_dagger',
             ingredients: [
                 'bloodmagic:daggerofsacrifice',
-                'eidolon:shadow_gem',
+                'redstone_arsenal:flux_gem',
                 '#botania:runes/nidavellir',
                 'powah:ender_core',
                 'resourcefulbees:tainted_honeycomb',
@@ -1433,7 +1433,7 @@ onEvent('recipes', (event) => {
             duration: 120,
             ritual_dummy: 'kubejs:craft_masterroutingnode',
             ingredients: [
-                'eidolon:shadow_gem',
+                'redstone_arsenal:flux_gem',
                 'botania:corporea_spark',
                 'architects_palette:moonstone',
                 'botania:corporea_spark'

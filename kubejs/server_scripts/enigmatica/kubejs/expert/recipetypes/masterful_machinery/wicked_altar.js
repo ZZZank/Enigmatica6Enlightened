@@ -54,7 +54,7 @@ onEvent('recipes', (event) => {
             inputs: [
                 { type: 'masterfulmachinery:items', data: { item: 'eidolon:wicked_weave', count: 4 } },
                 { type: 'masterfulmachinery:items', data: { item: 'eidolon:ender_calx', count: 2 } },
-                { type: 'masterfulmachinery:items', data: { item: 'eidolon:shadow_gem', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'redstone_arsenal:flux_gem', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'bloodmagic:reagentvoid', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'eidolon:warped_sprouts', count: 1 } },
                 {
@@ -67,7 +67,7 @@ onEvent('recipes', (event) => {
         },
         {
             outputs: [
-                { type: 'masterfulmachinery:items', data: { item: 'eidolon:shadow_gem', count: 4 } }
+                { type: 'masterfulmachinery:items', data: { item: 'redstone_arsenal:flux_gem', count: 4 } }
             ],
             inputs: [
                 {
@@ -96,7 +96,7 @@ onEvent('recipes', (event) => {
                 },
                 { type: 'masterfulmachinery:items', data: { item: 'eidolon:soul_shard', count: 2 } },
                 { type: 'masterfulmachinery:items', data: { tag: 'forge:inlays/pewter', count: 1 } },
-                { type: 'masterfulmachinery:items', data: { item: 'eidolon:shadow_gem', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'redstone_arsenal:flux_gem', count: 1 } },
                 {
                     type: 'masterfulmachinery:fluids',
                     data: { fluid: 'bloodmagic:life_essence_fluid', amount: 5000 }
@@ -132,7 +132,7 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { item: 'eidolon:basic_amulet', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'create:brass_hand', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'eidolon:zombie_heart', count: 1 } },
-                { type: 'masterfulmachinery:items', data: { item: 'eidolon:shadow_gem', count: 2 } },
+                { type: 'masterfulmachinery:items', data: { item: 'redstone_arsenal:flux_gem', count: 2 } },
                 { type: 'masterfulmachinery:items', data: { item: 'eidolon:wraith_heart', count: 1 } },
                 {
                     type: 'masterfulmachinery:items',

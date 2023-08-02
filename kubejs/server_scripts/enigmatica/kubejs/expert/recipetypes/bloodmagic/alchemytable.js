@@ -718,12 +718,12 @@ onEvent('recipes', (event) => {
                 'eidolon:soul_shard',
                 'eidolon:soul_shard'
             ],
-            output: 'eidolon:shadow_gem',
+            output: 'redstone_arsenal:flux_gem',
             count: 1,
             syphon: 300,
             ticks: 200,
             orbLevel: 1,
-            id: `${id_prefix}shadow_gem`
+            id: `${id_prefix}flux_gem`
         },
         {
             inputs: ['#forge:ingots/silicon_bronze', '#forge:shards/ender', 'eidolon:enchanted_ash'],

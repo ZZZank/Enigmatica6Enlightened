@@ -142,7 +142,7 @@ onEvent('recipes', (event) => {
             id: 'ars_nouveau:glyph_extract'
         },
         {
-            input: 'eidolon:shadow_gem',
+            input: 'redstone_arsenal:flux_gem',
             output: 'ars_nouveau:glyph_amplify_two',
             tier: 'TWO',
             id: 'toomanyglyphs:glyph_amplify_two'

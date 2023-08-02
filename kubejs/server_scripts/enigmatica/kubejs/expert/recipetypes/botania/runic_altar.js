@@ -338,7 +338,7 @@ onEvent('recipes', (event) => {
                 '#botania:runes/earth',
                 '#botania:runes/winter',
                 '#botania:runes/sloth',
-                'eidolon:shadow_gem'
+                'redstone_arsenal:flux_gem'
             ],
             mana: 96000,
             output: 'mythicbotany:nidavellir_rune',

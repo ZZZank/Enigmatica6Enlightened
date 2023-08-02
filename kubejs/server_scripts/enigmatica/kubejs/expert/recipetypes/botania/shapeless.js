@@ -6,7 +6,7 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             output: 'botania:auto_crafting_halo',
-            inputs: ['botania:crafting_halo', 'eidolon:shadow_gem'],
+            inputs: ['botania:crafting_halo', 'redstone_arsenal:flux_gem'],
             id: 'botania:auto_crafting_halo'
         },
         {
