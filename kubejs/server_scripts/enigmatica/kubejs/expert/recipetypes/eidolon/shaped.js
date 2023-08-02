@@ -95,7 +95,7 @@ onEvent('recipes', (event) => {
             output: Item.of('eidolon:soulfire_wand'),
             pattern: [' AB', 'CDA', 'EC '],
             key: {
-                A: '#forge:ingots/arcane_gold',
+                A: 'naturesaura:tainted_gold',
                 B: 'atum:anubis_godshard',
                 C: '#forge:rods/electrum',
                 D: '#forge:bones/wither',

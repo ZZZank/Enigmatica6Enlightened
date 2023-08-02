@@ -5,7 +5,7 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             input1: '#atum:relic_non_dirty/necklace',
-            input2: '#forge:ingots/arcane_gold',
+            input2: 'naturesaura:tainted_gold',
             output: 'eidolon:basic_amulet',
             id: 'eidolon:basic_amulet'
         },

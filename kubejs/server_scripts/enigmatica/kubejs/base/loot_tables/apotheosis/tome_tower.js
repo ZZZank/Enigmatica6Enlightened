@@ -294,7 +294,7 @@ onEvent('generic.loot_tables', (event) => {
                     count: [1, 5]
                 },
                 {
-                    item: 'eidolon:arcane_gold_ingot',
+                    item: 'naturesaura:tainted_gold',
                     weight: 100,
                     count: [2, 7]
                 },

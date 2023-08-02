@@ -334,7 +334,7 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                '#forge:ingots/arcane_gold',
+                'naturesaura:tainted_gold',
                 '#botania:runes/earth',
                 '#botania:runes/winter',
                 '#botania:runes/sloth',

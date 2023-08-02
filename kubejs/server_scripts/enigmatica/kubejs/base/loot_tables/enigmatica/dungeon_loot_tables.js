@@ -537,7 +537,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 { item: 'eidolon:basic_ring', weight: 100 },
                 { item: 'eidolon:soul_shard', weight: 100, amount: [8.0, 16.0] },
                 { item: 'eidolon:pewter_ingot', weight: 100, amount: [8.0, 16.0] },
-                { item: 'eidolon:arcane_gold_ingot', weight: 50, amount: [8.0, 16.0] },
+                { item: 'naturesaura:tainted_gold', weight: 50, amount: [8.0, 16.0] },
                 { item: 'eidolon:pewter_inlay', weight: 100, amount: [1.0, 2.0] },
                 { item: 'eidolon:gold_inlay', weight: 100, amount: [1.0, 2.0] }
             ]

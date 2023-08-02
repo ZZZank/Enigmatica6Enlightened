@@ -721,8 +721,8 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'atum:anput_godshard',
-                '#forge:ingots/arcane_gold',
-                '#forge:ingots/arcane_gold',
+                'naturesaura:tainted_gold',
+                'naturesaura:tainted_gold',
                 'naturesaura:token_fear'
             ],
             reagent: '#atum:relic_non_dirty/ring',
@@ -1358,8 +1358,8 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:glyph_extend_time',
                 '#forge:gems/mana',
                 'ars_nouveau:glyph_extend_time',
-                '#forge:ingots/arcane_gold',
-                '#forge:ingots/arcane_gold',
+                'naturesaura:tainted_gold',
+                'naturesaura:tainted_gold',
                 'ars_nouveau:glyph_extend_time',
                 '#forge:gems/mana',
                 'ars_nouveau:glyph_extend_time'
@@ -1374,8 +1374,8 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:glyph_amplify',
                 '#forge:gems/mana',
                 'ars_nouveau:glyph_amplify',
-                '#forge:ingots/arcane_gold',
-                '#forge:ingots/arcane_gold',
+                'naturesaura:tainted_gold',
+                'naturesaura:tainted_gold',
                 'ars_nouveau:glyph_amplify',
                 '#forge:gems/mana',
                 'ars_nouveau:glyph_amplify'
@@ -1410,20 +1410,20 @@ onEvent('recipes', (event) => {
                 '#forge:dusts/redstone'
             ],
             sourceCost: 50,
-            reagent: 'eidolon:soul_shard',
-            output: Item.of('2x eidolon:arcane_gold_ingot'),
+            reagent: 'minecraft:rotten_flesh',
+            output: Item.of('2x naturesaura:tainted_gold'),
             id: `${id_prefix}arcane_gold_ingot`
         },
         {
             inputs: [
                 '#forge:ingots/gold',
-                'eidolon:soul_shard',
+                'minecraft:rotten_flesh',
                 '#forge:ingots/gold',
                 '#forge:dusts/redstone',
                 '#forge:dusts/redstone'
             ],
             reagent: 'minecraft:conduit',
-            output: Item.of('2x eidolon:arcane_gold_ingot'),
+            output: Item.of('2x naturesaura:tainted_gold'),
             id: `${id_prefix}arcane_gold_ingot_starter`
         },
         {

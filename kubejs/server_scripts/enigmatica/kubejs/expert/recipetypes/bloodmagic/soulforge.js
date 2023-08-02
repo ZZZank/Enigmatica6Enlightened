@@ -78,7 +78,7 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: ['#forge:storage_blocks/gold', 'eidolon:crimson_essence'],
-            output: Item.of('eidolon:arcane_gold_block'),
+            output: Item.of('naturesaura:tainted_gold_block'),
             minimumDrain: 32.0,
             drain: 16.0,
             id: `${id_prefix}arcane_gold_ingot`

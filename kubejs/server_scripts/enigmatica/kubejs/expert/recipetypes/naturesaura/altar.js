@@ -23,22 +23,6 @@ onEvent('recipes', (event) => {
             id: 'naturesaura:altar/infused_iron_block'
         },
         {
-            input: '#forge:ingots/arcane_gold',
-            output: { item: 'naturesaura:tainted_gold' },
-            aura_type: 'naturesaura:nether',
-            aura: 15000,
-            time: 50,
-            id: 'naturesaura:altar/tainted_gold'
-        },
-        {
-            input: '#forge:storage_blocks/arcane_gold',
-            output: { item: 'naturesaura:tainted_gold_block' },
-            aura_type: 'naturesaura:nether',
-            aura: 15000 * 8,
-            time: 50 * 8,
-            id: 'naturesaura:altar/tainted_gold_block'
-        },
-        {
             input: 'eidolon:candle',
             output: { item: 'occultism:candle_white' },
             aura_type: 'naturesaura:nether',

@@ -24,7 +24,7 @@ onEvent('recipes', (event) => {
                 B: 'farmersdelight:cooking_pot',
                 C: 'occultism:otherstone',
                 D: 'minecraft:heart_of_the_sea',
-                E: '#forge:ingots/arcane_gold'
+                E: 'naturesaura:tainted_gold'
             },
             id: 'bloodmagic:blood_altar'
         },
