@@ -9,7 +9,16 @@ onEvent('recipes', (event) => {
             },
             id: `${id_prefix}twigs`
         },
-
+        {
+            output: Item.of('projectvibrantjourneys:seashells', 8),
+            pattern: ['ABC', 'ACC', 'ACC'],
+            key: {
+                A: 'minecraft:prismarine_shard',
+                B: 'minecraft:prismarine_crystals',
+                C: 'minecraft:nautilus_shell'
+            },
+            id: `projectvibrantjourneys:seashells`
+        },
         {
             output: Item.of('projectvibrantjourneys:pinecones', 6),
             pattern: [' A ', 'A A', ' A '],
