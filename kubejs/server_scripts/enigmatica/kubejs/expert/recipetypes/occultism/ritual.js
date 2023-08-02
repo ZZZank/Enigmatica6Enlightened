@@ -45,7 +45,7 @@ onEvent('recipes', (event) => {
             duration: 60,
             ritual_dummy: 'occultism:ritual_dummy/craft_soul_gem',
             ingredients: [
-                'eidolon:lesser_soul_gem',
+                'eidolon:shadow_gem',
                 'resourcefulbees:tainted_honeycomb',
                 'bloodmagic:reagentholding',
                 'resourcefulbees:tainted_honeycomb',

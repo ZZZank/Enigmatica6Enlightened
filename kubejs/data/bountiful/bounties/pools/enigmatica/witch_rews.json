@@ -10,7 +10,7 @@
         { "type": "item", "content": "eidolon:death_essence", "amountRange": {"min": 2, "max": 4}, "unitWorth": 200, "weight":100},
         { "type": "item", "content": "eidolon:crimson_essence", "amountRange": {"min": 2, "max": 4}, "unitWorth": 200, "weight":100},
         { "type": "item", "content": "eidolon:ender_calx", "amountRange": {"min": 2, "max": 4}, "unitWorth": 200, "weight":100},
-        { "type": "item", "content": "eidolon:lesser_soul_gem", "amountRange": {"min": 2, "max": 4}, "unitWorth": 200, "weight":100},
+        { "type": "item", "content": "eidolon:shadow_gem", "amountRange": {"min": 2, "max": 4}, "unitWorth": 200, "weight":100},
         { "type": "item", "content": "occultism:purified_ink", "amountRange": {"min": 4, "max": 8}, "unitWorth": 100, "weight":200},
         { "type": "item", "content": "occultism:otherstone", "amountRange": {"min": 4, "max": 8}, "unitWorth": 100, "weight":200},
         { "type": "item", "content": "occultism:tallow", "amountRange": {"min": 4, "max": 8}, "unitWorth": 100, "weight":200},

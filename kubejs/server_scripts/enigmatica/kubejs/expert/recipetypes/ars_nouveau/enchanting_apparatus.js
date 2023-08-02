@@ -1647,7 +1647,7 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 '#forge:inlays/pewter',
-                'eidolon:lesser_soul_gem',
+                'eidolon:shadow_gem',
                 '#forge:inlays/pewter',
                 'quark:soul_bead',
                 'quark:soul_bead',
