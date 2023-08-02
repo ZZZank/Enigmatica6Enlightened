@@ -320,7 +320,7 @@ onEvent('recipes', (event) => {
                     data: { item: 'occultism:spirit_attuned_gem', count: 2 }
                 },
                 { type: 'masterfulmachinery:items', data: { tag: 'forge:rods/prismarine', count: 2 } },
-                { type: 'masterfulmachinery:items', data: { tag: 'forge:inlays/arcane_gold', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { item: 'resourcefulbees:tainted_honeycomb', count: 1 } },
                 {
                     type: 'masterfulmachinery:fluids',
                     data: { fluid: 'bloodmagic:life_essence_fluid', amount: 50000 }

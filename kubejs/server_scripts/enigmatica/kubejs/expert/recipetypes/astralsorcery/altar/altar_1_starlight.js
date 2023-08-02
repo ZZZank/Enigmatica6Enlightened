@@ -153,7 +153,7 @@ onEvent('recipes', (event) => {
                 D: { item: 'astralsorcery:marble_pillar' },
                 E: { item: 'bloodmagic:masterritualstone' },
                 F: { item: 'astralsorcery:marble_runed' },
-                G: { tag: 'forge:inlays/arcane_gold' }
+                G: { item: 'resourcefulbees:tainted_honeycomb' }
             },
             effects: [
                 'astralsorcery:built_in_effect_discovery_central_beam',
