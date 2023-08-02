@@ -13,6 +13,17 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
+                '#resourcefulbees:resourceful_honeycomb',
+                'naturesaura:tainted_gold',
+                'naturesaura:tainted_gold'
+            ],
+            output: 'resourcefulbees:tainted_honeycomb',
+            count: 1,
+            cookingTime: 200,
+            id: `${id_prefix}tainted_honeycomb`
+        },
+        {
+            inputs: [
                 'eidolon:enchanted_ash',
                 'minecraft:rotten_flesh',
                 'minecraft:rotten_flesh',
