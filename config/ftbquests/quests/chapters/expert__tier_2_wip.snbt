@@ -451,7 +451,7 @@
 			tasks: [{
 				id: "2B5C17D526E0CEBA"
 				type: "item"
-				item: "eidolon:gold_inlay"
+				item: "resourcefulbees:tainted_honeycomb"
 			}]
 		}
 		{

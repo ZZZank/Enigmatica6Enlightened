@@ -202,7 +202,7 @@ onEvent('recipes', (event) => {
             id: 'bloodmagic:alchemytable/reagent_holding'
         },
         {
-            inputs: ['minecraft:lodestone', 'ars_nouveau:mana_fiber', 'eidolon:gold_inlay'],
+            inputs: ['minecraft:lodestone', 'ars_nouveau:mana_fiber', 'resourcefulbees:tainted_honeycomb'],
             output: 'bloodmagic:reagentmagnetism',
             count: 1,
             syphon: 1000,

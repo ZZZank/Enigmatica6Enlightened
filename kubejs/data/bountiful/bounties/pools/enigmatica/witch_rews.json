@@ -2,7 +2,7 @@
     "modsRequired":[],
     "content":[
         { "type": "item", "content": "eidolon:pewter_inlay", "amountRange": {"min": 4, "max": 8}, "unitWorth": 100, "weight":200},
-        { "type": "item", "content": "eidolon:gold_inlay", "amountRange": {"min": 4, "max": 8}, "unitWorth": 100, "weight":200},
+        { "type": "item", "content": "resourcefulbees:tainted_honeycomb", "amountRange": {"min": 4, "max": 8}, "unitWorth": 100, "weight":200},
         { "type": "item", "content": "eidolon:zombie_heart", "amountRange": {"min": 4, "max": 8}, "unitWorth": 100, "weight":200},
         { "type": "item", "content": "eidolon:tattered_cloth", "amountRange": {"min": 4, "max": 8}, "unitWorth": 100, "weight":200},
         { "type": "item", "content": "eidolon:wraith_heart", "amountRange": {"min": 4, "max": 8}, "unitWorth": 100, "weight":200},

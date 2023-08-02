@@ -630,7 +630,7 @@ onEvent('recipes', (event) => {
                 'upgrade_aquatic:elder_guardian_spine',
                 'upgrade_aquatic:elder_guardian_spine',
                 'upgrade_aquatic:elder_guardian_spine',
-                '#forge:inlays/arcane_gold',
+                'resourcefulbees:tainted_honeycomb',
                 '#forge:gems/aquamarine',
                 'minecraft:heart_of_the_sea',
                 '#forge:gems/aquamarine',

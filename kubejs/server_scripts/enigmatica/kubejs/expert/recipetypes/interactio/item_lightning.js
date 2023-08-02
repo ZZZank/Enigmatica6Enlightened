@@ -39,7 +39,7 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                'eidolon:gold_inlay',
+                'resourcefulbees:tainted_honeycomb',
                 'botania:livingwood_wall',
                 'naturesaura:gold_leaf',
                 '#forge:gems/apatite'
@@ -132,7 +132,7 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                '2x eidolon:gold_inlay',
+                '2x resourcefulbees:tainted_honeycomb',
                 'eidolon:pewter_inlay',
                 '#forge:gems/mana',
                 '4x architects_palette:sunmetal_blend'

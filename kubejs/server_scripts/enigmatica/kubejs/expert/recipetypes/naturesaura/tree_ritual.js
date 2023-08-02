@@ -285,7 +285,7 @@ onEvent('recipes', (event) => {
                 'botania:brewery',
                 '#forge:ingots/sky',
                 'naturesaura:gold_leaf',
-                'eidolon:gold_inlay'
+                'resourcefulbees:tainted_honeycomb'
             ],
             output: 'naturesaura:conversion_catalyst',
             time: 6 * time_multiplier,

@@ -62,7 +62,7 @@ onEvent('recipes', (event) => {
             pattern: [' A ', 'BCB', 'DED'],
             key: {
                 A: 'tomeofblood:blood_tome_three',
-                B: '#forge:inlays/arcane_gold',
+                B: 'resourcefulbees:tainted_honeycomb',
                 C: 'eidolon:polished_planks',
                 D: 'create:shadow_steel_casing',
                 E: Item.of('bloodmagic:soulgemlesser', '{souls:256.0d}')
@@ -99,7 +99,7 @@ onEvent('recipes', (event) => {
                 B: 'atum:anubis_godshard',
                 C: '#forge:rods/electrum',
                 D: '#forge:bones/wither',
-                E: '#forge:inlays/arcane_gold'
+                E: 'resourcefulbees:tainted_honeycomb'
             },
             id: `${id_prefix}soulfire_wand`
         }

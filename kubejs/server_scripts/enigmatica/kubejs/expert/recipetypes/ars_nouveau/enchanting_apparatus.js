@@ -78,11 +78,11 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                'eidolon:gold_inlay',
+                'resourcefulbees:tainted_honeycomb',
                 '#forge:dusts/mana',
-                'eidolon:gold_inlay',
-                'eidolon:gold_inlay',
-                'eidolon:gold_inlay'
+                'resourcefulbees:tainted_honeycomb',
+                'resourcefulbees:tainted_honeycomb',
+                'resourcefulbees:tainted_honeycomb'
             ],
             reagent: 'occultism:sacrificial_bowl',
             sourceCost: 5000,
@@ -107,14 +107,14 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                'eidolon:gold_inlay',
+                'resourcefulbees:tainted_honeycomb',
                 '#forge:ingots/silver',
-                'eidolon:gold_inlay',
+                'resourcefulbees:tainted_honeycomb',
                 '#forge:ingots/silver',
                 '#forge:ingots/silver',
-                'eidolon:gold_inlay',
+                'resourcefulbees:tainted_honeycomb',
                 '#forge:ingots/silver',
-                'eidolon:gold_inlay'
+                'resourcefulbees:tainted_honeycomb'
             ],
             reagent: 'astralsorcery:aquamarine',
             sourceCost: 5000,
@@ -143,9 +143,9 @@ onEvent('recipes', (event) => {
                 '#forge:nuggets/gold_brass',
                 '#forge:ingots/gold_brass',
                 '#forge:ingots/gold_brass',
-                'eidolon:gold_inlay',
-                'eidolon:gold_inlay',
-                'eidolon:gold_inlay'
+                'resourcefulbees:tainted_honeycomb',
+                'resourcefulbees:tainted_honeycomb',
+                'resourcefulbees:tainted_honeycomb'
             ],
             reagent: 'minecraft:conduit',
             output: 'ars_nouveau:volcanic_accumulator',
@@ -158,9 +158,9 @@ onEvent('recipes', (event) => {
                 '#forge:nuggets/gold_brass',
                 '#forge:ingots/gold_brass',
                 '#forge:ingots/gold_brass',
-                'eidolon:gold_inlay',
-                'eidolon:gold_inlay',
-                'eidolon:gold_inlay'
+                'resourcefulbees:tainted_honeycomb',
+                'resourcefulbees:tainted_honeycomb',
+                'resourcefulbees:tainted_honeycomb'
             ],
             reagent: 'minecraft:conduit',
             output: 'ars_nouveau:mana_condenser',
@@ -173,9 +173,9 @@ onEvent('recipes', (event) => {
                 '#forge:nuggets/gold_brass',
                 '#forge:ingots/gold_brass',
                 '#forge:ingots/gold_brass',
-                'eidolon:gold_inlay',
-                'eidolon:gold_inlay',
-                'eidolon:gold_inlay'
+                'resourcefulbees:tainted_honeycomb',
+                'resourcefulbees:tainted_honeycomb',
+                'resourcefulbees:tainted_honeycomb'
             ],
             reagent: 'minecraft:conduit',
             output: 'ars_nouveau:mycelial_sourcelink',
@@ -188,9 +188,9 @@ onEvent('recipes', (event) => {
                 '#forge:nuggets/gold_brass',
                 '#forge:ingots/gold_brass',
                 '#forge:ingots/gold_brass',
-                'eidolon:gold_inlay',
-                'eidolon:gold_inlay',
-                'eidolon:gold_inlay'
+                'resourcefulbees:tainted_honeycomb',
+                'resourcefulbees:tainted_honeycomb',
+                'resourcefulbees:tainted_honeycomb'
             ],
             reagent: 'minecraft:conduit',
             output: 'ars_nouveau:vitalic_sourcelink',
@@ -203,9 +203,9 @@ onEvent('recipes', (event) => {
                 '#forge:nuggets/gold_brass',
                 '#forge:ingots/gold_brass',
                 '#forge:ingots/gold_brass',
-                'eidolon:gold_inlay',
-                'eidolon:gold_inlay',
-                'eidolon:gold_inlay'
+                'resourcefulbees:tainted_honeycomb',
+                'resourcefulbees:tainted_honeycomb',
+                'resourcefulbees:tainted_honeycomb'
             ],
             reagent: 'minecraft:conduit',
             output: 'ars_nouveau:alchemical_sourcelink',
@@ -213,14 +213,14 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                '#forge:inlays/arcane_gold',
+                'resourcefulbees:tainted_honeycomb',
                 'ars_nouveau:warding_stone',
-                '#forge:inlays/arcane_gold',
+                'resourcefulbees:tainted_honeycomb',
                 '#forge:nuggets/arcane_gold',
                 '#forge:nuggets/arcane_gold',
-                '#forge:inlays/arcane_gold',
+                'resourcefulbees:tainted_honeycomb',
                 'ars_nouveau:warding_stone',
-                '#forge:inlays/arcane_gold'
+                'resourcefulbees:tainted_honeycomb'
             ],
             reagent: '#forge:gems/mana',
             output: 'ars_nouveau:crystallizer',
@@ -1212,8 +1212,8 @@ onEvent('recipes', (event) => {
                 '#forge:nuggets/arcane_gold',
                 'create:polished_rose_quartz',
                 '#forge:nuggets/arcane_gold',
-                '#forge:inlays/arcane_gold',
-                '#forge:inlays/arcane_gold',
+                'resourcefulbees:tainted_honeycomb',
+                'resourcefulbees:tainted_honeycomb',
                 '#forge:nuggets/arcane_gold',
                 'create:polished_rose_quartz',
                 '#forge:nuggets/arcane_gold'
@@ -1241,14 +1241,14 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                '#forge:inlays/arcane_gold',
+                'resourcefulbees:tainted_honeycomb',
                 '#forge:storage_blocks/mana',
-                '#forge:inlays/arcane_gold',
+                'resourcefulbees:tainted_honeycomb',
                 '#forge:storage_blocks/tinkers_bronze',
                 '#forge:storage_blocks/tinkers_bronze',
-                '#forge:inlays/arcane_gold',
+                'resourcefulbees:tainted_honeycomb',
                 '#forge:storage_blocks/mana',
-                '#forge:inlays/arcane_gold'
+                'resourcefulbees:tainted_honeycomb'
             ],
             sourceCost: 500,
             reagent: Item.of('mekanismtools:osmium_shield', '{Damage:0}').weakNBT(),
@@ -1683,9 +1683,9 @@ onEvent('recipes', (event) => {
                 'eidolon:soul_shard',
                 '#forge:rods/basalz',
                 '#forge:rods/basalz',
-                '#forge:inlays/arcane_gold',
+                'resourcefulbees:tainted_honeycomb',
                 'ars_nouveau:glyph_dampen',
-                '#forge:inlays/arcane_gold'
+                'resourcefulbees:tainted_honeycomb'
             ],
             sourceCost: 500,
             reagent: 'eidolon:basic_belt',

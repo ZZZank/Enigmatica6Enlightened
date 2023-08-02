@@ -46,9 +46,9 @@ onEvent('recipes', (event) => {
             ritual_dummy: 'occultism:ritual_dummy/craft_soul_gem',
             ingredients: [
                 'eidolon:lesser_soul_gem',
-                'eidolon:gold_inlay',
+                'resourcefulbees:tainted_honeycomb',
                 'bloodmagic:reagentholding',
-                'eidolon:gold_inlay',
+                'resourcefulbees:tainted_honeycomb',
                 'glassential:glass_ghostly',
                 'glassential:glass_ghostly',
                 'glassential:glass_ghostly',
@@ -69,7 +69,7 @@ onEvent('recipes', (event) => {
             entity_to_summon: 'occultism:afrit_wild',
             ritual_dummy: 'occultism:ritual_dummy/summon_wild_afrit',
             ingredients: [
-                'eidolon:gold_inlay',
+                'resourcefulbees:tainted_honeycomb',
                 '#botania:runes/fire',
                 'eidolon:crimson_essence',
                 '#botania:runes/fire',
@@ -254,9 +254,9 @@ onEvent('recipes', (event) => {
             ritual_dummy: 'occultism:ritual_dummy/craft_familiar_ring',
             ingredients: [
                 'occultism:soul_gem',
-                'eidolon:gold_inlay',
+                'resourcefulbees:tainted_honeycomb',
                 '#atum:relic_non_dirty/ring',
-                'eidolon:gold_inlay'
+                'resourcefulbees:tainted_honeycomb'
             ],
             result: 'occultism:familiar_ring',
             id: 'occultism:ritual/craft_familiar_ring'
@@ -269,9 +269,9 @@ onEvent('recipes', (event) => {
             ritual_dummy: 'occultism:ritual_dummy/craft_storage_controller_base',
             ingredients: [
                 'occultism:otherstone_pedestal',
-                'eidolon:gold_inlay',
+                'resourcefulbees:tainted_honeycomb',
                 '#forge:ingots/nebu',
-                'eidolon:gold_inlay',
+                'resourcefulbees:tainted_honeycomb',
                 'botania:corporea_spark_master'
             ],
             result: 'occultism:storage_controller_base',
@@ -1178,8 +1178,8 @@ onEvent('recipes', (event) => {
                 'eidolon:shadow_gem',
                 '#botania:runes/nidavellir',
                 'powah:ender_core',
-                '#forge:inlays/arcane_gold',
-                '#forge:inlays/arcane_gold',
+                'resourcefulbees:tainted_honeycomb',
+                'resourcefulbees:tainted_honeycomb',
                 'botania:mana_pearl',
                 'botania:mana_pearl'
             ],

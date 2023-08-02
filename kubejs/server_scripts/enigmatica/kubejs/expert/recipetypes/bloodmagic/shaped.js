@@ -20,7 +20,7 @@ onEvent('recipes', (event) => {
             output: 'bloodmagic:altar',
             pattern: ['ABA', 'CDC', 'EEE'],
             key: {
-                A: 'eidolon:gold_inlay',
+                A: 'resourcefulbees:tainted_honeycomb',
                 B: 'farmersdelight:cooking_pot',
                 C: 'occultism:otherstone',
                 D: 'minecraft:heart_of_the_sea',

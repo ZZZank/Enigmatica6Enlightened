@@ -30,7 +30,7 @@ onEvent('recipes', (event) => {
                 'MMMOOO   '
             ],
             key: {
-                A: '#forge:inlays/arcane_gold',
+                A: 'resourcefulbees:tainted_honeycomb',
                 B: 'astralsorcery:marble_runed',
                 C: 'kubejs:observatory_lens',
                 D: 'quark:lime_rune',
@@ -491,7 +491,7 @@ onEvent('recipes', (event) => {
             output: 'meetyourfight:phantasmal_rifle',
             pattern: ['   ABA ', 'CCCCDEF', ' IIIGHF'],
             key: {
-                A: '#forge:inlays/arcane_gold',
+                A: 'resourcefulbees:tainted_honeycomb',
                 B: 'meetyourfight:phantoplasm',
                 C: Item.of('immersiveengineering:gunpart_barrel').ignoreNBT(),
                 D: Item.of('immersiveengineering:gunpart_hammer').ignoreNBT(),
