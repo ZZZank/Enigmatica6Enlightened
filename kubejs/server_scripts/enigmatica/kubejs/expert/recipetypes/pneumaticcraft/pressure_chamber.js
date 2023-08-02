@@ -350,7 +350,7 @@ onEvent('recipes', (event) => {
             inputs: [
                 { item: 'minecraft:skeleton_skull', count: 4 },
                 { item: 'minecraft:wither_skeleton_skull', count: 4 },
-                { item: 'eidolon:candlestick', count: 8 },
+                { item: 'occultism:candle_white', count: 8 },
                 { item: 'occultism:spirit_attuned_crystal', count: 8 },
                 { item: 'occultism:golden_sacrificial_bowl', count: 1 },
                 { item: 'occultism:sacrificial_bowl', count: 12 },
