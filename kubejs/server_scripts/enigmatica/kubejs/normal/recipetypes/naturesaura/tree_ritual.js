@@ -93,18 +93,6 @@ onEvent('recipes', (event) => {
         },
         {
             ingredients: [
-                'naturesaura:gold_powder',
-                'naturesaura:gold_powder',
-                'astralsorcery:illumination_powder',
-                'astralsorcery:aquamarine'
-            ],
-            sapling: 'quark:yellow_blossom_sapling',
-            output: Item.of('naturesaura:effect_powder', 8, '{effect:"naturesstarlight:starlight_increase"}'),
-            time: 400,
-            id: 'naturesstarlight:tree_ritual/starlight_increase_powder'
-        },
-        {
-            ingredients: [
                 'minecraft:diamond',
                 '#forge:ingots/tainted_gold',
                 '#forge:ingots/sky',

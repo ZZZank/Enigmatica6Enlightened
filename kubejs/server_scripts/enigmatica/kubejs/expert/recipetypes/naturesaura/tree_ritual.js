@@ -232,22 +232,6 @@ onEvent('recipes', (event) => {
         },
         {
             ingredients: [
-                'naturesaura:infused_iron',
-                'architects_palette:moonstone',
-                'ars_nouveau:glyph_grow',
-                'naturesaura:token_joy',
-                'astralsorcery:rock_crystal',
-                '#forge:ingots/starmetal',
-                'astralsorcery:rock_crystal',
-                '#forge:ingots/starmetal'
-            ],
-            output: 'naturesstarlight:crystal_generator',
-            time: 6 * time_multiplier,
-            sapling: 'quark:lavender_blossom_sapling',
-            id: 'naturesstarlight:crystal_generator'
-        },
-        {
-            ingredients: [
                 'naturesaura:token_joy',
                 'resourcefulbees:t2_apiary',
                 '#botania:runes/summer',
@@ -437,22 +421,6 @@ onEvent('recipes', (event) => {
             output: Item.of('naturesaura:effect_powder', 24, '{effect:"naturesaura:nether_grass"}'),
             time: 4 * time_multiplier,
             id: 'naturesaura:tree_ritual/nether_grass_powder'
-        },
-        {
-            ingredients: [
-                'naturesaura:gold_powder',
-                'naturesaura:gold_powder',
-                'astralsorcery:nocturnal_powder',
-                'astralsorcery:resonating_gem',
-                'astralsorcery:nocturnal_powder',
-                'astralsorcery:resonating_gem',
-                'astralsorcery:resonating_gem',
-                'astralsorcery:nocturnal_powder'
-            ],
-            sapling: 'quark:lavender_blossom_sapling',
-            output: Item.of('naturesaura:effect_powder', 8, '{effect:"naturesstarlight:starlight_increase"}'),
-            time: 4 * time_multiplier,
-            id: 'naturesstarlight:tree_ritual/starlight_increase_powder'
         },
         {
             ingredients: [
