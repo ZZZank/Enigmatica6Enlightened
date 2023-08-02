@@ -182,13 +182,13 @@ onEvent('recipes', (event) => {
         },
         {
             output: Item.of('projectvibrantjourneys:seashells', 8),
-            pattern: ['AAA', 'ABA', 'AAC'],
+            pattern: ['ABC', 'ACC', 'ACC'],
             key: {
                 A: 'minecraft:prismarine_shard',
                 B: 'minecraft:nautilus_shell',
                 C: 'minecraft:prismarine_crystals'
             },
-            id: `${id_prefix}projectvibrantjourneys/seashells`
+            id: `projectvibrantjourneys:seashells`
         },
         {
             output: 'tetra:hammer_base',
