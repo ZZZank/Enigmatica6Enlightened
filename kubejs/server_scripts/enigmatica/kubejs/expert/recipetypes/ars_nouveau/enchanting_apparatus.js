@@ -216,8 +216,8 @@ onEvent('recipes', (event) => {
                 'resourcefulbees:tainted_honeycomb',
                 'ars_nouveau:warding_stone',
                 'resourcefulbees:tainted_honeycomb',
-                '#forge:nuggets/arcane_gold',
-                '#forge:nuggets/arcane_gold',
+                '#forge:nuggets/signalum',
+                '#forge:nuggets/signalum',
                 'resourcefulbees:tainted_honeycomb',
                 'ars_nouveau:warding_stone',
                 'resourcefulbees:tainted_honeycomb'
@@ -1209,14 +1209,14 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                '#forge:nuggets/arcane_gold',
+                '#forge:nuggets/signalum',
                 'create:polished_rose_quartz',
-                '#forge:nuggets/arcane_gold',
+                '#forge:nuggets/signalum',
                 'resourcefulbees:tainted_honeycomb',
                 'resourcefulbees:tainted_honeycomb',
-                '#forge:nuggets/arcane_gold',
+                '#forge:nuggets/signalum',
                 'create:polished_rose_quartz',
-                '#forge:nuggets/arcane_gold'
+                '#forge:nuggets/signalum'
             ],
             sourceCost: 100,
             reagent: 'ars_nouveau:basic_spell_turret',
@@ -1322,14 +1322,14 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                '#forge:nuggets/arcane_gold',
+                '#forge:nuggets/signalum',
                 'ars_nouveau:glyph_craft',
-                '#forge:nuggets/arcane_gold',
+                '#forge:nuggets/signalum',
                 'architects_palette:twisted_sapling',
                 'minecraft:brewing_stand',
-                '#forge:nuggets/arcane_gold',
+                '#forge:nuggets/signalum',
                 '#forge:coins/electrum',
-                '#forge:nuggets/arcane_gold'
+                '#forge:nuggets/signalum'
             ],
             sourceCost: 50,
             reagent: 'ars_nouveau:wixie_shards',
@@ -1486,14 +1486,14 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                '#forge:nuggets/arcane_gold',
+                '#forge:nuggets/signalum',
                 'botania:auto_crafting_halo',
-                '#forge:nuggets/arcane_gold',
+                '#forge:nuggets/signalum',
                 '#forge:gears/osmium',
                 '#forge:gears/osmium',
-                '#forge:nuggets/arcane_gold',
+                '#forge:nuggets/signalum',
                 'botania:corporea_spark',
-                '#forge:nuggets/arcane_gold'
+                '#forge:nuggets/signalum'
             ],
             sourceCost: 200,
             reagent: '#sophisticatedbackpacks:upgrades/crafting',

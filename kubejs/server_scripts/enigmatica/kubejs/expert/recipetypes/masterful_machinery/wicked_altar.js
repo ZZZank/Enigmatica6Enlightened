@@ -200,7 +200,7 @@ onEvent('recipes', (event) => {
                     type: 'masterfulmachinery:items',
                     data: { item: 'atum:red_stained_crystal_glass_pane', count: 1 }
                 },
-                { type: 'masterfulmachinery:items', data: { tag: 'forge:nuggets/arcane_gold', count: 1 } },
+                { type: 'masterfulmachinery:items', data: { tag: 'forge:nuggets/signalum', count: 1 } },
                 {
                     type: 'masterfulmachinery:fluids',
                     data: { fluid: 'bloodmagic:life_essence_fluid', amount: 1000 }
