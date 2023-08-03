@@ -865,7 +865,7 @@
 				count: 2L
 			}]
 			rewards: [{
-				id: "0000000000000362"
+				id: "2FFF8858032108EE"
 				type: "command"
 				title: "Rare Nature's Aura Loot Box"
 				icon: "kubejs:rare_lootbox"

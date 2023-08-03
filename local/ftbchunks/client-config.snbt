@@ -47,7 +47,7 @@
 	# Noise added to map to make it look less plastic
 	# Default: 0.05
 	# Range: 0.0 ~ 0.5
-	noise: 0
+	noise: 0.05d
 	
 	# Only show entities that are on the surface
 	# Default: true

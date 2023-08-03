@@ -975,13 +975,37 @@
 					id: "itemfilters:or"
 					Count: 1b
 					tag: {
-						items:[
-							{id:"appliedenergistics2:4k_fluid_storage_cell",Count:1b,tag:{}},
-							{id:"appliedenergistics2:16k_fluid_storage_cell",Count:1b,tag:{}},
-							{id:"appliedenergistics2:64k_fluid_storage_cell",Count:1b,tag:{}},
-							{id:"aeadditions:fluid_storage_cell_256",Count:1b,tag:{}},
-							{id:"aeadditions:fluid_storage_cell_1024",Count:1b,tag:{}},
-							{id:"aeadditions:fluid_storage_cell_4096",Count:1b,tag:{}}
+						items: [
+							{
+								id: "appliedenergistics2:4k_fluid_storage_cell"
+								Count: 1b
+								tag: { }
+							}
+							{
+								id: "appliedenergistics2:16k_fluid_storage_cell"
+								Count: 1b
+								tag: { }
+							}
+							{
+								id: "appliedenergistics2:64k_fluid_storage_cell"
+								Count: 1b
+								tag: { }
+							}
+							{
+								id: "aeadditions:fluid_storage_cell_256"
+								Count: 1b
+								tag: { }
+							}
+							{
+								id: "aeadditions:fluid_storage_cell_1024"
+								Count: 1b
+								tag: { }
+							}
+							{
+								id: "aeadditions:fluid_storage_cell_4096"
+								Count: 1b
+								tag: { }
+							}
 						]
 					}
 				}
