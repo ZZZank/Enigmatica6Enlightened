@@ -114,7 +114,7 @@ onEvent('recipes', (event) => {
             },
             {
                 input1: 'create:honeyed_apple',
-                secondaries: [Ingredient.of('4x #forge:storage_blocks/arcane_gold')],
+                secondaries: [Ingredient.of('4x #forge:storage_blocks/tainted_gold')],
                 outputs: ['minecraft:enchanted_golden_apple'],
                 id: `${id_prefix}enchanted_golden_apple`
             },

@@ -25,7 +25,7 @@ onEvent('recipes', (event) => {
             id: `${idPrefix}crystal_glass_2`
         },
         {
-            inputs: [Ingredient.of('4x #forge:storage_blocks/arcane_gold'), 'create:honeyed_apple'],
+            inputs: [Ingredient.of('4x #forge:storage_blocks/tainted_gold'), 'create:honeyed_apple'],
             output: Item.of('minecraft:enchanted_golden_apple'),
             id: `${idPrefix}enchanted_golden_apple`
         },
