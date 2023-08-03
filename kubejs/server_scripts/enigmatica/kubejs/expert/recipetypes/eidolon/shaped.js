@@ -27,16 +27,6 @@ onEvent('recipes', (event) => {
             id: 'eidolon:wooden_altar'
         },
         {
-            output: 'eidolon:basic_belt',
-            pattern: ['ABA', 'BCB', 'ABA'],
-            key: {
-                A: 'betterendforge:silk_fiber',
-                B: 'betterendforge:leather_stripe',
-                C: '#forge:gems/mana'
-            },
-            id: 'eidolon:basic_belt'
-        },
-        {
             output: 'eidolon:brazier',
             pattern: ['AAA', 'CBC', 'D D'],
             key: {

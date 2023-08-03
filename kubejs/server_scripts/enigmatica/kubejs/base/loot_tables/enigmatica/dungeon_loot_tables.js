@@ -532,7 +532,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 { item: 'ars_nouveau:apprentice_robes', weight: 100, enchantRange: [30.0, 40.0] },
                 { item: 'ars_nouveau:apprentice_leggings', weight: 100, enchantRange: [30.0, 40.0] },
                 { item: 'ars_nouveau:apprentice_boots', weight: 100, enchantRange: [30.0, 40.0] },
-                { item: 'eidolon:basic_belt', weight: 100 },
+                { item: 'ars_nouveau:mundane_belt', weight: 100 },
                 { item: 'eidolon:basic_amulet', weight: 100 },
                 { item: 'eidolon:basic_ring', weight: 100 },
                 { item: 'eidolon:soul_shard', weight: 100, amount: [8.0, 16.0] },

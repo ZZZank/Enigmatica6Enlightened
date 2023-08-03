@@ -346,7 +346,7 @@ onEvent('recipes', (event) => {
                 'quark:bottled_cloud',
                 'quark:bottled_cloud'
             ],
-            reagent: 'eidolon:basic_belt',
+            reagent: 'ars_nouveau:mundane_belt',
             sourceCost: 500,
             output: 'ars_nouveau:belt_of_levitation',
             id: 'ars_nouveau:belt_of_levitation'
@@ -362,7 +362,7 @@ onEvent('recipes', (event) => {
                 'atum:atem_godshard',
                 '#forge:feathers'
             ],
-            reagent: 'eidolon:basic_belt',
+            reagent: 'ars_nouveau:mundane_belt',
             sourceCost: 500,
             output: 'ars_nouveau:belt_of_unstable_gifts',
             id: 'ars_nouveau:belt_of_unstable_gifts'
@@ -1672,7 +1672,7 @@ onEvent('recipes', (event) => {
                 'eidolon:soul_shard'
             ],
             sourceCost: 500,
-            reagent: 'eidolon:basic_belt',
+            reagent: 'ars_nouveau:mundane_belt',
             output: 'eidolon:mind_shielding_plate',
             id: `${id_prefix}mind_shielding_plate`
         },
@@ -1688,7 +1688,7 @@ onEvent('recipes', (event) => {
                 'resourcefulbees:tainted_honeycomb'
             ],
             sourceCost: 500,
-            reagent: 'eidolon:basic_belt',
+            reagent: 'ars_nouveau:mundane_belt',
             output: 'eidolon:resolute_belt',
             id: `${id_prefix}resolute_belt`
         },
@@ -1704,7 +1704,7 @@ onEvent('recipes', (event) => {
                 '#forge:inlays/pewter'
             ],
             sourceCost: 500,
-            reagent: 'eidolon:basic_belt',
+            reagent: 'ars_nouveau:mundane_belt',
             output: 'eidolon:gravity_belt',
             id: `${id_prefix}gravity_belt`
         },

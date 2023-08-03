@@ -17,6 +17,16 @@ onEvent('recipes', (event) => {
 
     const recipes = [
         {
+            output: 'ars_nouveau:mundane_belt',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'betterendforge:silk_fiber',
+                B: 'betterendforge:leather_stripe',
+                C: '#forge:gems/mana'
+            },
+            id: 'ars_nouveau:mundane_belt'
+        },
+        {
             output: 'ars_nouveau:arcane_core',
             pattern: ['CAC', 'BDB', 'CAC'],
             key: {

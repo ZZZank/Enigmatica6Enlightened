@@ -8,7 +8,6 @@ onEvent('recipes', (event) => {
 
         'ars_nouveau:dull_trinket',
         'ars_nouveau:moonfall_2',
-        'ars_nouveau:mundane_belt',
         'ars_nouveau:ring_of_potential',
         'ars_nouveau:stone_2',
         'ars_nouveau:sunrise_2',
