@@ -2831,5 +2831,65 @@
 				item: "trashcans:item_trash_can"
 			}]
 		}
+		{
+			x: -0.5d
+			y: 3.0d
+			subtitle: "Paul and pAUL will not stack together"
+			description: [
+				"Grab an Iron ingot, then Shift+Right Click when holding a cutter. You can make your own Name Press."
+				""
+				"Using a Name Press, you can easily rename an item. Just place the press and the item you want to rename into Inscriber. Remember to power the Inscriber. "
+				""
+				"Items with different name will not stack together. This will be very useful when automating some recipes. "
+			]
+			dependency_requirement: "all_started"
+			id: "6CE4AD9936D3664B"
+			tasks: [
+				{
+					id: "0C1B18C47F5D2EC2"
+					type: "item"
+					item: {
+						id: "appliedenergistics2:name_press"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "09E14F059BCEFE5B"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							RepairCost: 0
+							items: [
+								{
+									id: "appliedenergistics2:nether_quartz_cutting_knife"
+									Count: 1b
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									id: "appliedenergistics2:certus_quartz_cutting_knife"
+									Count: 1b
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+							display: {
+								Name: "{\"text\":\"Cutter\"}"
+							}
+						}
+					}
+				}
+				{
+					id: "78E9E3DFE2D50554"
+					type: "item"
+					item: "appliedenergistics2:inscriber"
+				}
+			]
+		}
 	]
 }
