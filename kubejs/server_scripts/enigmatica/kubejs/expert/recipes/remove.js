@@ -124,6 +124,8 @@ onEvent('recipes', (event) => {
         'quark:building/crafting/red_nether_bricks_util',
         'quark:tools/crafting/runes/rainbow_rune',
 
+        'redstone_arsenal:materials/flux_ingot_fire_charge_from_dust',
+
         'rftoolscontrol:cpu_core_500',
         'rftoolscontrol:cpu_core_1000',
         'rftoolscontrol:cpu_core_2000',

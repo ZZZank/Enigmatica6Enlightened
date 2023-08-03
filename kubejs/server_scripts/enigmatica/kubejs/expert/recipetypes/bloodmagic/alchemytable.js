@@ -715,15 +715,14 @@ onEvent('recipes', (event) => {
                 'astralsorcery:nocturnal_powder',
                 'eidolon:death_essence',
                 'eidolon:death_essence',
-                'eidolon:soul_shard',
-                'eidolon:soul_shard'
+                'appliedenergistics2:charged_certus_quartz_crystal'
             ],
             output: 'redstone_arsenal:flux_gem',
             count: 1,
             syphon: 300,
             ticks: 200,
             orbLevel: 1,
-            id: `${id_prefix}flux_gem`
+            id: 'redstone_arsenal:materials/flux_gem'
         },
         {
             inputs: ['#forge:ingots/silicon_bronze', '#forge:shards/ender', 'eidolon:enchanted_ash'],
