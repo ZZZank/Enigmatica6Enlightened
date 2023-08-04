@@ -11,8 +11,8 @@ onEvent('recipes', (event) => {
                 { item: 'eidolon:tattered_cloth' },
                 { item: 'eidolon:reaper_scythe' },
                 { item: 'eidolon:tattered_cloth' },
-                { item: 'eidolon:soul_shard' },
-                { item: 'eidolon:soul_shard' }
+                { item: 'appliedenergistics2:charged_certus_quartz_crystal' },
+                { item: 'appliedenergistics2:charged_certus_quartz_crystal' }
             ],
             tools: { tag: 'tconstruct:modifiable/melee' },
             slots: { abilities: 1 },
@@ -25,8 +25,8 @@ onEvent('recipes', (event) => {
                 { item: 'eidolon:tattered_cloth' },
                 { item: 'eidolon:reaper_scythe' },
                 { item: 'eidolon:tattered_cloth' },
-                { item: 'eidolon:soul_shard' },
-                { item: 'eidolon:soul_shard' }
+                { item: 'appliedenergistics2:charged_certus_quartz_crystal' },
+                { item: 'appliedenergistics2:charged_certus_quartz_crystal' }
             ],
             tools: { tag: 'tconstruct:modifiable/armor/chestplate' },
             slots: { abilities: 1 },

@@ -30,7 +30,7 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                'eidolon:soul_shard',
+                'appliedenergistics2:charged_certus_quartz_crystal',
                 'naturesaura:infused_iron',
                 'glassential:glass_ghostly',
                 'minecraft:conduit'

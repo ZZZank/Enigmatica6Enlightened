@@ -14,7 +14,7 @@ onEvent('recipes', (event) => {
                     type: 'masterfulmachinery:items',
                     data: { item: 'betterendforge:leather_wrapped_stick', count: 2 }
                 },
-                { type: 'masterfulmachinery:items', data: { item: 'eidolon:soul_shard', count: 2 } },
+                { type: 'masterfulmachinery:items', data: { item: 'appliedenergistics2:charged_certus_quartz_crystal', count: 2 } },
                 { type: 'masterfulmachinery:items', data: { item: 'eidolon:tattered_cloth', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'atum:anubis_godshard', count: 1 } },
                 {
@@ -94,7 +94,7 @@ onEvent('recipes', (event) => {
                     type: 'masterfulmachinery:items',
                     data: { item: 'betterendforge:leather_wrapped_stick', count: 2 }
                 },
-                { type: 'masterfulmachinery:items', data: { item: 'eidolon:soul_shard', count: 2 } },
+                { type: 'masterfulmachinery:items', data: { item: 'appliedenergistics2:charged_certus_quartz_crystal', count: 2 } },
                 { type: 'masterfulmachinery:items', data: { tag: 'forge:inlays/pewter', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'redstone_arsenal:flux_gem', count: 1 } },
                 {
@@ -152,7 +152,7 @@ onEvent('recipes', (event) => {
                 { type: 'masterfulmachinery:items', data: { item: 'eidolon:basic_amulet', count: 1 } },
                 { type: 'masterfulmachinery:items', data: { item: 'alexsmobs:emu_feather', count: 4 } },
                 { type: 'masterfulmachinery:items', data: { tag: 'forge:inlays/pewter', count: 2 } },
-                { type: 'masterfulmachinery:items', data: { item: 'eidolon:soul_shard', count: 2 } },
+                { type: 'masterfulmachinery:items', data: { item: 'appliedenergistics2:charged_certus_quartz_crystal', count: 2 } },
                 { type: 'masterfulmachinery:items', data: { tag: 'forge:ingots/silver', count: 1 } },
                 {
                     type: 'masterfulmachinery:fluids',

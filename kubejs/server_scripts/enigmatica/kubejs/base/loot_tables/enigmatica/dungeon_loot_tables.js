@@ -535,7 +535,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 { item: 'ars_nouveau:mundane_belt', weight: 100 },
                 { item: 'eidolon:basic_amulet', weight: 100 },
                 { item: 'eidolon:basic_ring', weight: 100 },
-                { item: 'eidolon:soul_shard', weight: 100, amount: [8.0, 16.0] },
+                { item: 'appliedenergistics2:charged_certus_quartz_crystal', weight: 100, amount: [8.0, 16.0] },
                 { item: 'eidolon:pewter_ingot', weight: 100, amount: [8.0, 16.0] },
                 { item: 'naturesaura:tainted_gold', weight: 50, amount: [8.0, 16.0] },
                 { item: 'eidolon:pewter_inlay', weight: 100, amount: [1.0, 2.0] },

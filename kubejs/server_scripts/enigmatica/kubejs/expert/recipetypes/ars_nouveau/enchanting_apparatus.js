@@ -1084,9 +1084,9 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                'eidolon:soul_shard',
+                'appliedenergistics2:charged_certus_quartz_crystal',
                 'occultism:spirit_attuned_gem',
-                'eidolon:soul_shard',
+                'appliedenergistics2:charged_certus_quartz_crystal',
                 '#forge:ingots/silicon_bronze',
                 '#forge:ingots/silicon_bronze',
                 'ars_nouveau:arcane_stone',
@@ -1193,9 +1193,9 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                'eidolon:soul_shard',
+                'appliedenergistics2:charged_certus_quartz_crystal',
                 Item.of('minecraft:potion', '{Potion:"apotheosis:knowledge"}'),
-                'eidolon:soul_shard',
+                'appliedenergistics2:charged_certus_quartz_crystal',
                 '#forge:ingots/osmium',
                 '#forge:ingots/osmium',
                 '#forge:ingots/osmium',
@@ -1667,9 +1667,9 @@ onEvent('recipes', (event) => {
                 '#forge:plates/lead',
                 '#forge:plates/lead',
                 '#forge:plates/lead',
-                'eidolon:soul_shard',
+                'appliedenergistics2:charged_certus_quartz_crystal',
                 'ars_nouveau:glyph_shield',
-                'eidolon:soul_shard'
+                'appliedenergistics2:charged_certus_quartz_crystal'
             ],
             sourceCost: 500,
             reagent: 'ars_nouveau:mundane_belt',
@@ -1678,9 +1678,9 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                'eidolon:soul_shard',
+                'appliedenergistics2:charged_certus_quartz_crystal',
                 '#forge:gems/apatite',
-                'eidolon:soul_shard',
+                'appliedenergistics2:charged_certus_quartz_crystal',
                 '#forge:rods/basalz',
                 '#forge:rods/basalz',
                 'resourcefulbees:tainted_honeycomb',
@@ -1694,9 +1694,9 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                'eidolon:soul_shard',
+                'appliedenergistics2:charged_certus_quartz_crystal',
                 'quark:bottled_cloud',
-                'eidolon:soul_shard',
+                'appliedenergistics2:charged_certus_quartz_crystal',
                 '#forge:rods/blitz',
                 '#forge:rods/blitz',
                 '#forge:inlays/pewter',
@@ -1711,12 +1711,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'eidolon:wicked_weave',
-                'eidolon:soul_shard',
+                'appliedenergistics2:charged_certus_quartz_crystal',
                 'eidolon:wicked_weave',
                 'eidolon:wicked_weave',
                 'eidolon:wicked_weave',
                 'eidolon:wicked_weave',
-                'eidolon:soul_shard',
+                'appliedenergistics2:charged_certus_quartz_crystal',
                 'eidolon:wicked_weave'
             ],
             sourceCost: 100,
@@ -1727,12 +1727,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'eidolon:wicked_weave',
-                'eidolon:soul_shard',
+                'appliedenergistics2:charged_certus_quartz_crystal',
                 'eidolon:wicked_weave',
                 'eidolon:wicked_weave',
                 'eidolon:wicked_weave',
                 'eidolon:wicked_weave',
-                'eidolon:soul_shard',
+                'appliedenergistics2:charged_certus_quartz_crystal',
                 'eidolon:wicked_weave'
             ],
             sourceCost: 100,
@@ -1743,12 +1743,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'eidolon:wicked_weave',
-                'eidolon:soul_shard',
+                'appliedenergistics2:charged_certus_quartz_crystal',
                 'eidolon:wicked_weave',
                 'eidolon:wicked_weave',
                 'eidolon:wicked_weave',
                 'eidolon:wicked_weave',
-                'eidolon:soul_shard',
+                'appliedenergistics2:charged_certus_quartz_crystal',
                 'eidolon:wicked_weave'
             ],
             sourceCost: 100,

@@ -196,7 +196,7 @@ onEvent('recipes', (event) => {
             id: 'ars_nouveau:marvelous_clay'
         },
         {
-            input: 'eidolon:soul_shard',
+            input: 'appliedenergistics2:charged_certus_quartz_crystal',
             output: { item: 'bloodmagic:slate_ampoule' },
             aura_type: 'naturesaura:nether',
             aura: 15000,
