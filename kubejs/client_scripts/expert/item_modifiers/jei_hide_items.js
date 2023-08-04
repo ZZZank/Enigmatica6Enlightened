@@ -14,7 +14,7 @@ onEvent('jei.hide.items', (event) => {
         event.hide(entry);
     });
 
-    itemsToHideAE.forEach((entry) => {
+    disabledItemsAE.forEach((entry) => {
         event.hide(entry);
     });
 });

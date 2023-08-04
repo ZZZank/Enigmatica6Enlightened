@@ -2,7 +2,7 @@
 
 const isAE2Loaded = Platform.getMods().containsKey('appliedenergistics2');
 
-const itemsToHideAE = [
+const disabledItemsAE = [
     'appliedenergistics2:flour',
     'appliedenergistics2:gold_dust',
     'appliedenergistics2:iron_dust',

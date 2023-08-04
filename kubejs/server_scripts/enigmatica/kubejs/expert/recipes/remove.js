@@ -289,6 +289,19 @@ onEvent('recipes', (event) => {
         { output: 'pneumaticcraft:spawner_extractor', id: 'pneumaticcraft:spawner_extractor' }
     ];
 
+    const customRemovals = [
+        { type: 'minecraft:crafting_shapeless', output: '#forge:dusts', mod: 'thermal' },
+        {
+            type: 'minecraft:crafting_shapeless',
+            output: '#forge:dusts',
+            mod: 'immersiveengineering'
+        },
+        { type: 'integrateddynamics:drying_basin' },
+        { type: 'integrateddynamics:mechanical_drying_basin' },
+        { type: 'integrateddynamics:squeezer' },
+        { type: 'integrateddynamics:mechanical_squeezer' }
+    ];
+
     idRemovals.forEach((id) => {
         event.remove({ id: id });
     });
@@ -297,16 +310,9 @@ onEvent('recipes', (event) => {
         event.remove({ output: output });
     });
 
-    event.remove({ type: 'minecraft:crafting_shapeless', output: '#forge:dusts', mod: 'thermal' });
-    event.remove({
-        type: 'minecraft:crafting_shapeless',
-        output: '#forge:dusts',
-        mod: 'immersiveengineering'
+    customRemovals.forEach((customRemoval) => {
+        event.remove(customRemoval);
     });
-    event.remove({ type: 'integrateddynamics:drying_basin' });
-    event.remove({ type: 'integrateddynamics:mechanical_drying_basin' });
-    event.remove({ type: 'integrateddynamics:squeezer' });
-    event.remove({ type: 'integrateddynamics:mechanical_squeezer' });
 
     patchouli_safe_removals.forEach((recipe) => {
         event.shaped(recipe.output, ['A'], { A: 'kubejs:altered_recipe_indicator' }).id(recipe.id);
