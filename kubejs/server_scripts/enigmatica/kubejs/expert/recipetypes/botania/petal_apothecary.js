@@ -634,7 +634,7 @@ onEvent('recipes', (event) => {
                 '#forge:gems/aquamarine',
                 'minecraft:heart_of_the_sea',
                 '#forge:gems/aquamarine',
-                'eidolon:unholy_symbol'
+                'environmental:koi'
             ],
             output: 'eidolon:unholy_effigy',
             count: 1,

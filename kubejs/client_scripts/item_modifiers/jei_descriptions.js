@@ -374,8 +374,8 @@ onEvent('jei.information', (event) => {
             text: [`Produced by growing Tau near mobs.`]
         },
         {
-            items: ['eidolon:unholy_symbol'],
-            text: [`Produced by chanting the Touch of Darkness at Pewter Inlay dropped on the ground.`]
+            items: ['environmental:koi'],
+            text: [`See Koi Bucket`]
         },
         {
             items: [

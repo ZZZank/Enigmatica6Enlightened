@@ -15,7 +15,7 @@ onEvent('recipes', (event) => {
             }*/
 
         {
-            input: 'eidolon:unholy_symbol',
+            input: 'environmental:koi',
             output: 'bloodmagic:weakbloodorb',
             syphon: 7000,
             altarLevel: 0,
