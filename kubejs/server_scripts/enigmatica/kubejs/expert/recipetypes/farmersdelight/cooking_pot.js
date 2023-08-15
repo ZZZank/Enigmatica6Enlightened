@@ -14,7 +14,6 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 '#resourcefulbees:resourceful_honeycomb',
-                'naturesaura:tainted_gold',
                 'naturesaura:tainted_gold'
             ],
             output: 'resourcefulbees:tainted_honeycomb',
