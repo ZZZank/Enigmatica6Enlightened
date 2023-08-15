@@ -107,7 +107,7 @@ onEvent('recipes', (event) => {
             output: 'pneumaticcraft:assembly_drill',
             pattern: ['AAA ', 'BCCA', '  CA', 'DDED'],
             key: {
-                A: 'prettypipes:pipe',
+                A: 'mekanism:basic_logistical_transporter',
                 B: 'pneumaticcraft:drill_bit_diamond',
                 C: 'pneumaticcraft:pneumatic_cylinder',
                 D: 'pneumaticcraft:reinforced_stone_slab',
@@ -119,7 +119,7 @@ onEvent('recipes', (event) => {
             output: 'pneumaticcraft:assembly_laser',
             pattern: ['AAA ', 'BCCA', '  CA', 'DDED'],
             key: {
-                A: 'prettypipes:pipe',
+                A: 'mekanism:basic_logistical_transporter',
                 B: '#powah:energizing_rod',
                 C: 'pneumaticcraft:pneumatic_cylinder',
                 D: 'pneumaticcraft:reinforced_stone_slab',
@@ -131,7 +131,7 @@ onEvent('recipes', (event) => {
             output: 'pneumaticcraft:assembly_io_unit_import',
             pattern: ['AAA ', 'BCCA', '  CA', 'DDED'],
             key: {
-                A: 'prettypipes:pipe',
+                A: 'mekanism:basic_logistical_transporter',
                 B: 'create:brass_hand',
                 C: 'pneumaticcraft:pneumatic_cylinder',
                 D: 'pneumaticcraft:reinforced_stone_slab',
@@ -143,7 +143,7 @@ onEvent('recipes', (event) => {
             output: 'pneumaticcraft:assembly_io_unit_export',
             pattern: [' AAA', 'ACCB', 'AC  ', 'DEDD'],
             key: {
-                A: 'prettypipes:pipe',
+                A: 'mekanism:basic_logistical_transporter',
                 B: 'create:brass_hand',
                 C: 'pneumaticcraft:pneumatic_cylinder',
                 D: 'pneumaticcraft:reinforced_stone_slab',
@@ -155,7 +155,7 @@ onEvent('recipes', (event) => {
             output: 'pneumaticcraft:assembly_controller',
             pattern: [' AAA', 'ACCB', 'AC  ', 'DEDD'],
             key: {
-                A: 'prettypipes:pipe',
+                A: 'mekanism:basic_logistical_transporter',
                 B: 'rftoolsutility:screen',
                 C: 'pneumaticcraft:printed_circuit_board',
                 D: 'pneumaticcraft:reinforced_stone_slab',
