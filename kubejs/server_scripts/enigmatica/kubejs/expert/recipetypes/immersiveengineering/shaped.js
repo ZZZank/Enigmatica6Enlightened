@@ -16,6 +16,27 @@ onEvent('recipes', (event) => {
     */
 
     const recipes = [
+        {
+            output: 'immersiveengineering:fluid_pump',
+            pattern: [' A ', 'BCB', 'CDC'],
+            key: {
+                A: 'emendatusenigmatica:signalum_nugget',
+                B: 'emendatusenigmatica:iron_plate',
+                C: 'immersiveengineering:fluid_pipe',
+                D: 'thermal:redstone_servo'
+            },
+            id: 'immersiveengineering:crafting/fluidpump'
+        },
+        {
+            output: 'immersiveengineering:conveyor_extract',
+            pattern: ['AB ', 'AC '],
+            key: {
+                A: '#forge:treated_wood',
+                B: 'create:andesite_funnel',
+                C: 'immersiveengineering:conveyor_basic'
+            },
+            id: 'immersiveengineering:crafting/conveyor_extract'
+        },
         /*{
             output: Item.of('immersiveengineering:cokebrick', 3),
             pattern: ['CAC', 'ABA', 'CAC'],
