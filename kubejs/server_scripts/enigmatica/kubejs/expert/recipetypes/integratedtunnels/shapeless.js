@@ -6,12 +6,20 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             output: 'integratedtunnels:part_exporter_item',
-            inputs: ['integratedtunnels:part_interface_item', 'prettypipes:high_extraction_module'],
+            inputs: [
+                'integratedtunnels:part_interface_item',
+                'modularrouters:puller_module_1',
+                'modularrouters:stack_upgrade'
+            ],
             id: 'integratedtunnels:crafting/part_exporter_item'
         },
         {
             output: 'integratedtunnels:part_importer_item',
-            inputs: ['integratedtunnels:part_interface_item', 'prettypipes:high_retrieval_module'],
+            inputs: [
+                'integratedtunnels:part_interface_item',
+                'modularrouters:sender_module_1',
+                'modularrouters:stack_upgrade'
+            ],
             id: 'integratedtunnels:crafting/part_importer_item'
         },
         {
@@ -19,18 +27,26 @@ onEvent('recipes', (event) => {
             inputs: [
                 'integratedtunnels:part_interface_item',
                 'integratedtunnels:part_interface_item',
-                'prettypipes:high_filter_module'
+                'create:filter'
             ],
             id: 'integratedtunnels:crafting/part_interface_filter_item'
         },
         {
             output: 'integratedtunnels:part_exporter_fluid',
-            inputs: ['integratedtunnels:part_interface_fluid', 'ppfluids:high_fluid_extraction_module'],
+            inputs: [
+                'integratedtunnels:part_interface_fluid',
+                'modularrouters:fluid_module',
+                '#forge:dyes/orange'
+            ],
             id: 'integratedtunnels:crafting/part_exporter_fluid'
         },
         {
             output: 'integratedtunnels:part_importer_fluid',
-            inputs: ['integratedtunnels:part_interface_fluid', 'ppfluids:high_fluid_retrieval_module'],
+            inputs: [
+                'integratedtunnels:part_interface_fluid',
+                'modularrouters:fluid_module',
+                '#forge:dyes/green'
+            ],
             id: 'integratedtunnels:crafting/part_importer_fluid'
         },
         {
@@ -38,7 +54,7 @@ onEvent('recipes', (event) => {
             inputs: [
                 'integratedtunnels:part_interface_fluid',
                 'integratedtunnels:part_interface_fluid',
-                'ppfluids:high_fluid_filter_module'
+                'create:filter'
             ],
             id: 'integratedtunnels:crafting/part_interface_filter_fluid'
         }

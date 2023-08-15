@@ -255,8 +255,6 @@ onEvent('recipes', (event) => {
 
         'pneumaticcraft:one_probe_crafting',
 
-        'ppfluids:fluid_pipe_to_pipe',
-
         'powah:crafting/energy_cell_basic_2',
         'powah:crafting/cable_basic',
 

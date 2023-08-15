@@ -846,7 +846,7 @@ onEvent('recipes', (event) => {
             pattern: ['ABA', 'CDC', 'EFE'],
             key: {
                 A: '#forge:plastic',
-                B: 'ppfluids:high_fluid_retrieval_module',
+                B: 'modularrouters:fluid_module',
                 C: 'mekanism:basic_fluid_tank',
                 D: '#industrialforegoing:machine_frame/pity',
                 E: '#forge:gears/osmium',
