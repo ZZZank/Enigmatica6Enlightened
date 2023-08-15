@@ -13,6 +13,7 @@ onEvent('item.registry', (event) => {
         'quintuple_alfsteel_ingot',
         'altered_recipe_indicator',
         'disabled_recipe_indicator',
+        'dead_koi_bucket',
 
         // Expert
         'observatory_lens',
