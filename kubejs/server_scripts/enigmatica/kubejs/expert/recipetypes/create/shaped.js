@@ -17,6 +17,15 @@ onEvent('recipes', (event) => {
 
     const recipes = [
         {
+            output: 'create:filter',
+            pattern: ['ABA'],
+            key: {
+                A: '#forge:nuggets/invar',
+                B: 'minecraft:cobweb',
+            },
+            id: 'create:crafting/kinetics/filter'
+        },
+        {
             output: 'create:millstone',
             pattern: [' A ', 'BCB', 'DDD'],
             key: {

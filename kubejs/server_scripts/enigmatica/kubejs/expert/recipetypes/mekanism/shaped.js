@@ -793,14 +793,16 @@ onEvent('recipes', (event) => {
             id: `mekanism:bin/ultimate`
         },
         {
-            output: `mekanism:logistical_sorter`,
-            pattern: ['ABA', 'ACA', 'EDE'],
+            output: Item.of(
+                'mekanism:logistical_sorter',
+                '{mekData:{componentUpgrade:{upgrades:[{type:4,amount:4}]}}}'
+            ),
+            pattern: ['ABA', ' C ', 'ADA'],
             key: {
                 A: 'immersiveengineering:sheetmetal_colored_black',
-                B: 'prettypipes:medium_extraction_module',
-                C: 'prettypipes:medium_filter_module',
-                D: 'prettypipes:round_robin_sorting_modifier',
-                E: '#forge:plates/iron_osmium'
+                B: 'immersiveengineering:electron_tube',
+                C: 'immersiveengineering:circuit_board',
+                D: 'thermal:redstone_servo'
             },
             id: `mekanism:logistical_sorter`
         },
