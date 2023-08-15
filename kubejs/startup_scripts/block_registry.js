@@ -1,5 +1,5 @@
 onEvent('block.registry', (event) => {
-    const blocks = [
+    const basicBlocks = [
         { name: 'firmament', material: 'rock', hardness: 2 },
         { name: 'superheated_steel_block', material: 'iron', hardness: 5 },
         { name: 'hot_compressed_iron_block', material: 'iron', hardness: 5 },
@@ -16,10 +16,10 @@ onEvent('block.registry', (event) => {
         }
     ];
 
-    blocks.forEach((block) => {
-        const block_event = event.create(block.name).material(block.material).hardness(block.hardness);
+    basicBlocks.forEach((basicBlock) => {
+        const block_event = event.create(basicBlock.name).material(basicBlock.material).hardness(basicBlock.hardness);
 
-        if (block.leaves == true) {
+        if (basicBlock.leaves == true) {
             block_event
                 .renderType('cutout')
                 .notSolid()
