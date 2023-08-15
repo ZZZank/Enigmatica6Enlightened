@@ -11,7 +11,7 @@
     ],
     "legend": {
         ")": { "block": "ars_nouveau:warding_stone" },
-        "*": { "block": "eidolon:polished_planks" },
+        "*": { "block": "bloodmagic:woodtilepath" },
         "+": { "block": "masterfulmachinery:wicked_altar_fluid_port_fluids_input" },
         ",": { "block": "masterfulmachinery:wicked_altar_item_port_items_output" },
         "-": { "block": "masterfulmachinery:wicked_altar_item_port_items_input" },

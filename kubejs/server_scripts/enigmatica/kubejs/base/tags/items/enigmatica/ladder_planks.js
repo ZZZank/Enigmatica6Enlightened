@@ -17,7 +17,6 @@ onEvent('item.tags', (event) => {
             'betterendforge:end_lotus_planks',
             'betterendforge:lacugrove_planks',
             'betterendforge:mossy_glowshroom_planks',
-            'eidolon:polished_planks',
             'environmental:wisteria_planks',
             'environmental:cherry_planks',
             'environmental:willow_planks',

@@ -73,7 +73,7 @@ onEvent('recipes', (event) => {
                 A: { tag: 'forge:rods/treated_wood' },
                 B: { item: 'astralsorcery:hand_telescope' },
                 C: { tag: 'forge:ingots/sky' },
-                D: { item: 'eidolon:polished_planks' },
+                D: { item: 'bloodmagic:woodtilepath' },
                 E: { tag: 'botania:runes/air' },
                 F: { item: 'astralsorcery:nocturnal_powder' }
             },

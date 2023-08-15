@@ -192,7 +192,7 @@ onEvent('recipes', (event) => {
             output: 'immersiveengineering:windmill_blade',
             pattern: ['AA ', 'BBA', 'BB '],
             key: {
-                A: 'eidolon:polished_planks',
+                A: 'bloodmagic:woodtilepath',
                 B: 'create:sail_frame'
             },
             id: 'immersiveengineering:crafting/windmill_blade'
@@ -220,7 +220,7 @@ onEvent('recipes', (event) => {
             pattern: [' A ', 'ABA', 'BAB'],
             key: {
                 A: '#forge:rods/brass',
-                B: 'eidolon:polished_planks'
+                B: 'bloodmagic:woodtilepath'
             },
             id: 'immersiveengineering:crafting/waterwheel_segment'
         },

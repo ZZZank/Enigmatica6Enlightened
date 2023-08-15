@@ -60,7 +60,7 @@ onEvent('recipes', (event) => {
             pattern: ['ABA', 'BBB', 'ABA'],
             key: {
                 A: '#forge:plates/brass',
-                B: 'eidolon:polished_planks'
+                B: 'bloodmagic:woodtilepath'
             },
             id: 'create:crafting/materials/brass_casing'
         },

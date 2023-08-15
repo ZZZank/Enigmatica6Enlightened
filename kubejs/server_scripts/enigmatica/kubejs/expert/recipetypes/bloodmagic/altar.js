@@ -205,12 +205,12 @@ onEvent('recipes', (event) => {
         },
         {
             input: 'botania:livingwood_planks',
-            output: 'eidolon:polished_planks',
+            output: 'bloodmagic:woodtilepath',
             syphon: 50,
             altarLevel: 0,
             consumptionRate: 25,
             drainRate: 5,
-            id: `${id_prefix}polished_planks`
+            id: `bloodmagic:path/path_woodtile`
         },
         {
             input: 'ars_nouveau:ritual_warping',

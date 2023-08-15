@@ -22,10 +22,10 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                { item: 'eidolon:polished_planks' },
-                { item: 'eidolon:polished_planks' },
-                { item: 'eidolon:polished_planks' },
-                { item: 'eidolon:polished_planks' }
+                { item: 'bloodmagic:woodtilepath' },
+                { item: 'bloodmagic:woodtilepath' },
+                { item: 'bloodmagic:woodtilepath' },
+                { item: 'bloodmagic:woodtilepath' }
             ],
             output: {
                 item: 'botania:dreamwood'

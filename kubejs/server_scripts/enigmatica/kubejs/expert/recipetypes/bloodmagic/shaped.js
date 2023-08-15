@@ -17,6 +17,14 @@ onEvent('recipes', (event) => {
 
     const newRecipes = [
         {
+            output: '4x bloodmagic:woodbrickpath',
+            pattern: ['AA ', 'AA '],
+            key: {
+                A: 'bloodmagic:woodtilepath'
+            },
+            id: 'bloodmagic:path/path_wood'
+        },
+        {
             output: 'bloodmagic:altar',
             pattern: ['ABA', 'CDC', 'EEE'],
             key: {
@@ -67,7 +75,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: { type: 'bloodmagic:bloodorb', orb_tier: 1 },
                 B: Item.of('botania:incense_stick', { brewKey: 'botania:soul_cross' }),
-                C: 'eidolon:polished_planks',
+                C: 'bloodmagic:woodtilepath',
                 D: 'farmersdelight:cooking_pot',
                 E: 'eidolon:polished_wood_pillar'
             },
