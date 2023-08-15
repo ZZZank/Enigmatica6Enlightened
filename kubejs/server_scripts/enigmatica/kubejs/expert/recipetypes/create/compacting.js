@@ -24,6 +24,36 @@ onEvent('recipes', (event) => {
             ],
             heated: true,
             id: 'kubejs:rough_machine_frame'
+        },
+        {
+            output: '3x modularrouters:fluid_module',
+            inputs: [
+                '3x modularrouters:blank_module',
+                'immersiveengineering:fluid_pump',
+                'immersiveengineering:fluid_sorter'
+            ],
+            heated: false,
+            id: `${id_prefix}fluid_module`
+        },
+        {
+            output: '3x modularrouters:sender_module_1',
+            inputs: [
+                '3x modularrouters:blank_module',
+                'immersiveengineering:conveyor_extract',
+                'immersiveengineering:sorter'
+            ],
+            heated: false,
+            id: `${id_prefix}sender_module_1`
+        },
+        {
+            output: '3x modularrouters:puller_module_1',
+            inputs: [
+                '3x modularrouters:blank_module',
+                'engineersdecor:factory_hopper',
+                'immersiveengineering:sorter'
+            ],
+            heated: false,
+            id: `${id_prefix}puller_module_1`
         }
     ];
 
