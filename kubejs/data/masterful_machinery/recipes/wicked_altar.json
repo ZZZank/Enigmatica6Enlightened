@@ -6,7 +6,7 @@
     "layout": [
         ["  )))  ", " )   ) ", ")     )", ")    C)", ")     )", " )   ) ", "  )))  "],
         ["  ***  ", " ***** ", "*+*****", "*,*****", "*-*****", " ***** ", "  ***  "],
-        ["       ", "       ", "  ..   ", "  ..   ", "  ..   ", "       ", "       "],
+        ["       ", "       ", "  .    ", "  .    ", "  .    ", "       ", "       "],
         ["       ", "       ", "       ", "  /    ", "       ", "       ", "       "]
     ],
     "legend": {
@@ -15,7 +15,7 @@
         "+": { "block": "masterfulmachinery:wicked_altar_fluid_port_fluids_input" },
         ",": { "block": "masterfulmachinery:wicked_altar_item_port_items_output" },
         "-": { "block": "masterfulmachinery:wicked_altar_item_port_items_input" },
-        ".": { "block": "eidolon:stone_altar" },
+        ".": { "block": "betterendforge:andesite_pedestal" },
         "/": { "block": "eidolon:unholy_effigy" }
     }
 }

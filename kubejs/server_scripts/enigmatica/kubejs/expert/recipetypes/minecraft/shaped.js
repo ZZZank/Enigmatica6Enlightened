@@ -112,7 +112,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'ars_nouveau:novice_spell_book',
                 B: '#forge:gems/prismarine',
-                C: 'eidolon:stone_altar',
+                C: 'betterendforge:andesite_pedestal',
                 D: 'minecraft:crying_obsidian',
                 E: 'minecraft:conduit'
             },

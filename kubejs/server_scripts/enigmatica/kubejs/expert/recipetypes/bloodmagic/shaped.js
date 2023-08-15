@@ -44,7 +44,7 @@ onEvent('recipes', (event) => {
                 B: 'bloodmagic:blankslate',
                 C: 'supplementaries:jar_tinted',
                 D: 'thermal:hazmat_fabric',
-                E: 'eidolon:stone_altar'
+                E: 'betterendforge:andesite_pedestal'
             },
             id: 'bloodmagic:alchemy_table'
         },

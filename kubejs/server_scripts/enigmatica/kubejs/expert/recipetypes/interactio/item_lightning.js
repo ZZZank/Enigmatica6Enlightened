@@ -172,9 +172,13 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}firmament`
         },
         {
-            inputs: ['appliedenergistics2:charged_certus_quartz_crystal', 'minecraft:polished_andesite', '#forge:inlays/pewter'],
+            inputs: [
+                'appliedenergistics2:charged_certus_quartz_crystal',
+                'minecraft:polished_andesite',
+                '#forge:inlays/pewter'
+            ],
             output: {
-                entries: [{ result: { item: 'eidolon:stone_altar', count: 1 }, weight: 1 }],
+                entries: [{ result: { item: 'betterendforge:andesite_pedestal', count: 1 }, weight: 1 }],
                 empty_weight: 0,
                 rolls: 1
             },
