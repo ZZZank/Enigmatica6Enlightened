@@ -45,7 +45,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             ticks: 100,
-            id: `${id_prefix}reaper_scythe`
+            id: `${id_prefix}sacrificialdagger`
         },
         {
             outputs: [{ data: { item: 'eidolon:cleaving_axe', count: 1 } }],
@@ -467,6 +467,12 @@ onEvent('recipes', (event) => {
                 input.type = 'masterfulmachinery:items';
             }
         });
+        recipe.outputs.forEach((output) => {
+            if (!output.type) {
+                output.type = 'masterfulmachinery:items';
+            }
+        });
+        
         event.custom(recipe).id(recipe.id);
     });
 });
