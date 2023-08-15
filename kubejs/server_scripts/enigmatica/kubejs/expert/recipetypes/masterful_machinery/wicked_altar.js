@@ -28,6 +28,26 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}reaper_scythe`
         },
         {
+            outputs: [{ data: { item: 'bloodmagic:sacrificialdagger', count: 1 } }],
+            inputs: [
+                {
+                    data: { item: 'undergarden:utheric_sword', count: 1 }
+                },
+                {
+                    data: { item: 'appliedenergistics2:charged_certus_quartz_crystal', count: 2 }
+                },
+                { data: { item: 'minecraft:fermented_spider_eye', count: 2 } },
+                { data: { item: 'minecraft:ghast_tear', count: 1 } },
+                { data: { item: 'redstone_arsenal:flux_gem', count: 1 } },
+                {
+                    type: 'masterfulmachinery:fluids',
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 1000 }
+                }
+            ],
+            ticks: 100,
+            id: `${id_prefix}reaper_scythe`
+        },
+        {
             outputs: [{ data: { item: 'eidolon:cleaving_axe', count: 1 } }],
             inputs: [
                 { data: { tag: 'forge:ingots/pewter', count: 3 } },
