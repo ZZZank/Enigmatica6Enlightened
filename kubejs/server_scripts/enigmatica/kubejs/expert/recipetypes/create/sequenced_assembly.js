@@ -210,7 +210,10 @@ onEvent('recipes', (event) => {
             sequence: [
                 {
                     type: 'filling',
-                    input: ['mekanism:basic_logistical_transporter', Fluid.of('integrateddynamics:menril_resin', 200)],
+                    input: [
+                        'mekanism:basic_logistical_transporter',
+                        Fluid.of('integrateddynamics:menril_resin', 200)
+                    ],
                     output: 'mekanism:basic_logistical_transporter'
                 },
                 {

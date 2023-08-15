@@ -21,7 +21,7 @@ onEvent('recipes', (event) => {
                 consumptionRate: 25,
                 drainRate: 1,
                 id: `${id_prefix}koi_bucket`
-            },    
+            },
             {
                 input: Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:bronze_bee' }).weakNBT(),
                 output: Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:bloody_bee' }),

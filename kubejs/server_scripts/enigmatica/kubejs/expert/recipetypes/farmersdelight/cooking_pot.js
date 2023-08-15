@@ -12,10 +12,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}sulfur_dust`
         },
         {
-            inputs: [
-                '#resourcefulbees:resourceful_honeycomb',
-                'naturesaura:tainted_gold'
-            ],
+            inputs: ['#resourcefulbees:resourceful_honeycomb', 'naturesaura:tainted_gold'],
             output: 'resourcefulbees:tainted_honeycomb',
             count: 1,
             cookingTime: 200,

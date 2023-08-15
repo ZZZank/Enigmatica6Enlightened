@@ -472,7 +472,7 @@ onEvent('recipes', (event) => {
                 output.type = 'masterfulmachinery:items';
             }
         });
-        
+
         event.custom(recipe).id(recipe.id);
     });
 });

@@ -17,7 +17,10 @@ onEvent('block.registry', (event) => {
     ];
 
     basicBlocks.forEach((basicBlock) => {
-        const block_event = event.create(basicBlock.name).material(basicBlock.material).hardness(basicBlock.hardness);
+        const block_event = event
+            .create(basicBlock.name)
+            .material(basicBlock.material)
+            .hardness(basicBlock.hardness);
 
         if (basicBlock.leaves == true) {
             block_event
