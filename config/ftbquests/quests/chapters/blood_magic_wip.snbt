@@ -284,29 +284,20 @@
 				{
 					id: "00000000000008BB"
 					type: "item"
-					title: "Low Filter Module"
-					item: "prettypipes:low_filter_module"
-				}
-				{
-					id: "00000000000008BC"
-					type: "item"
-					title: "Low Extraction Module"
-					item: "prettypipes:low_extraction_module"
-					count: 2
-				}
-				{
-					id: "00000000000008BD"
-					type: "item"
-					title: "Stack Limiter Module"
-					item: "prettypipes:stack_size_module"
-					count: 2
-				}
-				{
-					id: "00000000000008BE"
-					type: "item"
-					title: "Pipe"
-					item: "prettypipes:pipe"
-					count: 4
+					item: {
+						id: "mekanism:logistical_sorter"
+						Count: 2b
+						tag: {
+							mekData: {
+								componentUpgrade: {
+									upgrades: [{
+										type: 4
+										amount: 4
+									}]
+								}
+							}
+						}
+					}
 				}
 			]
 		}

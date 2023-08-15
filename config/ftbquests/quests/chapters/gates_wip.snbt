@@ -180,20 +180,6 @@
 			}]
 		}
 		{
-			title: "Pretty Pipes"
-			x: -4.375d
-			y: 1.25d
-			shape: "diamond"
-			dependencies: ["0000000000000FBD"]
-			size: 1.25d
-			id: "0000000000000FD1"
-			tasks: [{
-				id: "0000000000000FD2"
-				type: "item"
-				item: "prettypipes:crafting_terminal"
-			}]
-		}
-		{
 			title: "Powah"
 			x: -4.5d
 			y: 2.5d

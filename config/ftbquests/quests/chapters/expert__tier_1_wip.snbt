@@ -575,56 +575,6 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: 1.5d
-			description: [
-				"Put down that hopper. No, down. Just… just leave it. "
-				""
-				"Better."
-				""
-				"Now, listen up. Nobody’s got time to run around all day moving bits and bobs from place to place. Invest in some pipes and they’ll make life much easier. "
-			]
-			dependencies: ["6AADF6A0814C29D4"]
-			optional: true
-			id: "514A0FC52ADBE1DD"
-			tasks: [
-				{
-					id: "63BE4DE5D52BA7FD"
-					type: "item"
-					item: "prettypipes:pipe"
-					count: 8L
-				}
-				{
-					id: "7F749FB1AD173412"
-					type: "item"
-					item: "prettypipes:low_extraction_module"
-				}
-				{
-					id: "42285973A3B8F1B0"
-					type: "item"
-					item: "prettypipes:low_retrieval_module"
-				}
-			]
-		}
-		{
-			x: 3.0d
-			y: 4.0d
-			shape: "hexagon"
-			description: [
-				"It may be held together with string and superglue, but a Crafting Terminal can allow central access to that big pile of crates over there. Even on demand auto crafting. "
-				""
-				"Doesn’t that sound nice?"
-			]
-			dependencies: ["514A0FC52ADBE1DD"]
-			optional: true
-			id: "4607CD4FC64387B3"
-			tasks: [{
-				id: "52DED6EEEEB4E244"
-				type: "item"
-				item: "prettypipes:crafting_terminal"
-			}]
-		}
-		{
 			x: 6.0d
 			y: 9.5d
 			shape: "hexagon"
