@@ -33,7 +33,7 @@ onEvent('recipes', (event) => {
                 'immersiveengineering:fluid_sorter'
             ],
             heated: false,
-            id: `${id_prefix}fluid_module`
+            id: 'modularrouters:fluid_module'
         },
         {
             output: '3x modularrouters:sender_module_1',
@@ -43,7 +43,7 @@ onEvent('recipes', (event) => {
                 'immersiveengineering:sorter'
             ],
             heated: false,
-            id: `${id_prefix}sender_module_1`
+            id: 'modularrouters:sender_module_1'
         },
         {
             output: '3x modularrouters:puller_module_1',
@@ -53,7 +53,7 @@ onEvent('recipes', (event) => {
                 'immersiveengineering:sorter'
             ],
             heated: false,
-            id: `${id_prefix}puller_module_1`
+            id: 'modularrouters:puller_module_1'
         }
     ];
 
