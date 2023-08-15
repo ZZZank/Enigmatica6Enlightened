@@ -15,15 +15,6 @@ onEvent('recipes', (event) => {
             }*/
 
         {
-            input: 'kubejs:dead_koi_bucket',
-            output: 'environmental:koi_bucket',
-            syphon: 3000,
-            altarLevel: 0,
-            consumptionRate: 25,
-            drainRate: 1,
-            id: `${id_prefix}koi_bucket`
-        },
-        {
             input: 'environmental:koi',
             output: 'bloodmagic:weakbloodorb',
             syphon: 7000,

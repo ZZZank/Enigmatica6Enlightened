@@ -6,18 +6,6 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             inputs: [
-                'minecraft:conduit',
-                'kubejs:monster_mash',
-                'aquaculture:fish_bones',
-                'ars_nouveau:red_archwood_sapling'
-            ],
-            reagent: 'minecraft:water_bucket',
-            sourceCost: 100,
-            output: 'kubejs:dead_koi_bucket',
-            id: `${id_prefix}dead_koi_bucket`
-        },
-        {
-            inputs: [
                 '#forge:dusts/silver',
                 '#forge:dusts/silver',
                 '#forge:dusts/silver',
