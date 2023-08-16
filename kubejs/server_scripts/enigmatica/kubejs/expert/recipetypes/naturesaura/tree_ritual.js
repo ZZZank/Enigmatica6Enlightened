@@ -424,7 +424,7 @@ onEvent('recipes', (event) => {
         },
         {
             ingredients: [
-                'eidolon:basic_amulet',
+                'ars_nouveau:dull_trinket',
                 '#forge:ingots/tainted_gold',
                 'tconstruct:efln_ball',
                 'kubejs:firmament',

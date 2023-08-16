@@ -6,7 +6,6 @@ onEvent('recipes', (event) => {
     const idRemovals = [
         'architects_palette:sunstone',
 
-        'ars_nouveau:dull_trinket',
         'ars_nouveau:moonfall_2',
         'ars_nouveau:ring_of_potential',
         'ars_nouveau:stone_2',

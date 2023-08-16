@@ -121,7 +121,7 @@ onEvent('recipes', (event) => {
         {
             outputs: [{ data: { item: 'eidolon:glass_hand', count: 1 } }],
             inputs: [
-                { data: { item: 'eidolon:basic_amulet', count: 1 } },
+                { data: { item: 'ars_nouveau:dull_trinket', count: 1 } },
                 { data: { item: 'create:brass_hand', count: 1 } },
                 { data: { item: 'eidolon:zombie_heart', count: 1 } },
                 { data: { item: 'redstone_arsenal:flux_gem', count: 2 } },
@@ -140,7 +140,7 @@ onEvent('recipes', (event) => {
         {
             outputs: [{ data: { item: 'botania:blood_pendant', count: 1 } }],
             inputs: [
-                { data: { item: 'eidolon:basic_amulet', count: 1 } },
+                { data: { item: 'ars_nouveau:dull_trinket', count: 1 } },
                 { data: { item: 'alexsmobs:emu_feather', count: 4 } },
                 { data: { tag: 'forge:inlays/pewter', count: 2 } },
                 {

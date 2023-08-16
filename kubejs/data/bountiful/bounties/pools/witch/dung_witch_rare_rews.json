@@ -37,7 +37,7 @@
         { "type": "item", "content": "ars_nouveau:apprentice_leggings", "amountRange": {"min": 1, "max": 1}, "unitWorth": 250, "weight":100},
         { "type": "item", "content": "ars_nouveau:apprentice_boots", "amountRange": {"min": 1, "max": 1}, "unitWorth": 250, "weight":100},
         { "type": "item", "content": "ars_nouveau:mundane_belt", "amountRange": {"min": 1, "max": 1}, "unitWorth": 150, "weight":100},
-        { "type": "item", "content": "eidolon:basic_amulet", "amountRange": {"min": 1, "max": 1}, "unitWorth": 150, "weight":100},
+        { "type": "item", "content": "ars_nouveau:dull_trinket", "amountRange": {"min": 1, "max": 1}, "unitWorth": 150, "weight":100},
         { "type": "item", "content": "eidolon:basic_ring", "amountRange": {"min": 1, "max": 1}, "unitWorth": 150, "weight":100},
         { "type": "item", "content": "appliedenergistics2:charged_certus_quartz_crystal", "amountRange": {"min": 4, "max": 8}, "unitWorth": 450, "weight":100},
         { "type": "item", "content": "eidolon:pewter_ingot", "amountRange": {"min": 8, "max": 16}, "unitWorth": 250, "weight":100},

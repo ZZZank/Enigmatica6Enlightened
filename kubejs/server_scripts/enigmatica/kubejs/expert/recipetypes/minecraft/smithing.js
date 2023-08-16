@@ -6,8 +6,8 @@ onEvent('recipes', (event) => {
         {
             input1: '#atum:relic_non_dirty/necklace',
             input2: 'naturesaura:tainted_gold',
-            output: 'eidolon:basic_amulet',
-            id: 'eidolon:basic_amulet'
+            output: 'ars_nouveau:dull_trinket',
+            id: 'ars_nouveau:dull_trinket'
         },
         {
             input1: '#forge:ingots/aeternium',
