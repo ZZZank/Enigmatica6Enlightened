@@ -100,34 +100,15 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}lesser_soul_gem`
         },
         {
-            outputs: [{ data: { item: 'eidolon:reversal_pick', count: 1 } }],
-            inputs: [
-                { data: { tag: 'forge:ingots/hepatizon', count: 3 } },
-                {
-                    data: { item: 'betterendforge:leather_wrapped_stick', count: 2 }
-                },
-                {
-                    data: { item: 'appliedenergistics2:charged_certus_quartz_crystal', count: 2 }
-                },
-                { data: { tag: 'forge:inlays/pewter', count: 1 } },
-                { data: { item: 'redstone_arsenal:flux_gem', count: 1 } },
-                {
-                    type: 'masterfulmachinery:fluids',
-                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 5000 }
-                }
-            ],
-            ticks: 500,
-            id: `${id_prefix}reversal_pick`
-        },
-        {
             outputs: [{ data: { item: 'alexsmobs:dimensional_carver', count: 1 } }],
             inputs: [
-                { data: { item: 'eidolon:reversal_pick', count: 1 } },
+                { data: { item: 'redstone_arsenal:flux_gem', count: 1 } },
+                { data: { item: 'tconstruct:hepatizon_ingot', count: 3 } },
+                { data: { tag: 'forge:ingots/netherite', count: 2 } },
                 {
                     data: { item: 'alexsmobs:void_worm_mandible', count: 2 }
                 },
                 { data: { item: 'alexsmobs:void_worm_eye', count: 1 } },
-                { data: { tag: 'forge:ingots/netherite', count: 2 } },
                 {
                     type: 'masterfulmachinery:fluids',
                     perTick: true,
