@@ -182,7 +182,7 @@ onEvent('recipes', (event) => {
                 empty_weight: 0,
                 rolls: 1
             },
-            id: `${id_prefix}stone_altar`
+            id: 'betterendforge:andesite_pedestal'
         },
         {
             inputs: [
