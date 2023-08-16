@@ -138,7 +138,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}glass_hand`
         },
         {
-            outputs: [{ data: { item: 'eidolon:void_amulet', count: 1 } }],
+            outputs: [{ data: { item: 'botania:blood_pendant', count: 1 } }],
             inputs: [
                 { data: { item: 'eidolon:basic_amulet', count: 1 } },
                 { data: { item: 'alexsmobs:emu_feather', count: 4 } },
@@ -146,7 +146,7 @@ onEvent('recipes', (event) => {
                 {
                     data: { item: 'appliedenergistics2:charged_certus_quartz_crystal', count: 2 }
                 },
-                { data: { tag: 'forge:ingots/silver', count: 1 } },
+                { data: { tag: 'ars_nouveau:potion_flask_amplify', count: 1 } },
                 {
                     type: 'masterfulmachinery:fluids',
                     data: { fluid: 'bloodmagic:life_essence_fluid', amount: 10000 }
