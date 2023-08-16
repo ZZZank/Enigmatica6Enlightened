@@ -250,7 +250,7 @@ onEvent('generic.loot_tables', (event) => {
                     count: [1, 2]
                 },
                 {
-                    item: 'eidolon:death_essence',
+                    item: 'kubejs:death_essence',
                     weight: 50,
                     count: [1, 2]
                 },

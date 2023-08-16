@@ -71,7 +71,7 @@ onEvent('recipes', (event) => {
             ingredients: [
                 'resourcefulbees:tainted_honeycomb',
                 '#botania:runes/fire',
-                'eidolon:crimson_essence',
+                'kubejs:crimson_essence',
                 '#botania:runes/fire',
                 'ars_nouveau:red_archwood_wood',
                 'ars_nouveau:red_archwood_wood',
@@ -1409,9 +1409,9 @@ onEvent('recipes', (event) => {
             ritual_dummy: 'kubejs:craft_necrotic_focus',
             ingredients: [
                 '#botania:runes/helheim',
-                'eidolon:death_essence',
-                'eidolon:death_essence',
-                'eidolon:death_essence',
+                'kubejs:death_essence',
+                'kubejs:death_essence',
+                'kubejs:death_essence',
 
                 'atum:nepthys_godshard',
                 'atum:nepthys_godshard',

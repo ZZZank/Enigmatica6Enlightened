@@ -19,7 +19,7 @@ onEvent('chest.loot_tables', (event) => {
                     count: [1, 6]
                 },
                 {
-                    item: 'eidolon:death_essence',
+                    item: 'kubejs:death_essence',
                     weight: 30,
                     count: [1, 6]
                 },

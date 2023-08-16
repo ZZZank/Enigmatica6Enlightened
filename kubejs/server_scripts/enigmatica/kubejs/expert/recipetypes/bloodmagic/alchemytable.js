@@ -214,7 +214,7 @@ onEvent('recipes', (event) => {
             inputs: [
                 'occultism:afrit_essence',
                 Item.of('botania:brew_vial', '{brewKey:"botania:bloodthirst"}'),
-                'eidolon:crimson_essence'
+                'kubejs:crimson_essence'
             ],
             output: 'bloodmagic:weakbloodshard',
             count: 1,
@@ -227,7 +227,7 @@ onEvent('recipes', (event) => {
             inputs: [
                 'occultism:afrit_essence',
                 Item.of('botania:brew_flask', '{brewKey:"botania:bloodthirst"}'),
-                'eidolon:crimson_essence'
+                'kubejs:crimson_essence'
             ],
             output: 'bloodmagic:weakbloodshard',
             count: 2,
@@ -240,7 +240,7 @@ onEvent('recipes', (event) => {
             inputs: [
                 'occultism:afrit_essence',
                 Item.of('botania:incense_stick', '{brewKey:"botania:bloodthirst"}'),
-                'eidolon:crimson_essence'
+                'kubejs:crimson_essence'
             ],
             output: 'bloodmagic:weakbloodshard',
             count: 10,
@@ -255,7 +255,7 @@ onEvent('recipes', (event) => {
                 '#forge:crops/nether_wart',
                 '#forge:dusts/sulfur'
             ],
-            output: 'eidolon:crimson_essence',
+            output: 'kubejs:crimson_essence',
             count: 2,
             syphon: 200,
             ticks: 200,
@@ -270,7 +270,7 @@ onEvent('recipes', (event) => {
                 'projectvibrantjourneys:charred_bones',
                 'undergarden:ink_mushroom'
             ],
-            output: 'eidolon:death_essence',
+            output: 'kubejs:death_essence',
             count: 4,
             syphon: 200,
             ticks: 200,
@@ -713,8 +713,8 @@ onEvent('recipes', (event) => {
             inputs: [
                 'atum:nuit_godshard',
                 'astralsorcery:nocturnal_powder',
-                'eidolon:death_essence',
-                'eidolon:death_essence',
+                'kubejs:death_essence',
+                'kubejs:death_essence',
                 'appliedenergistics2:charged_certus_quartz_crystal'
             ],
             output: 'redstone_arsenal:flux_gem',

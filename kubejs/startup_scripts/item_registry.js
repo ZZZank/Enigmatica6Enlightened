@@ -20,6 +20,8 @@ onEvent('item.registry', (event) => {
         'coarse_lapis_lazuli_compound',
         'smoldering_lapis_lazuli_compound',
         'cutting_essence',
+        'crimson_essence',
+        'death_essence',
         'superheated_steel_ingot',
         'hot_compressed_iron_ingot',
         'dimensional_storage_crystal',

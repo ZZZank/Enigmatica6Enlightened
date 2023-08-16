@@ -20,7 +20,7 @@ onEvent('recipes', (event) => {
             inputs: [
                 'bloodmagic:soulforge',
                 '#forge:ingots/iesnium',
-                'eidolon:crimson_essence',
+                'kubejs:crimson_essence',
                 'occultism:spirit_attuned_gem'
             ],
             output: 'bloodmagic:demoncrucible',
@@ -77,7 +77,7 @@ onEvent('recipes', (event) => {
             id: 'bloodmagic:soulforge/greatertartaricgem'
         },
         {
-            inputs: ['#forge:storage_blocks/gold', 'eidolon:crimson_essence'],
+            inputs: ['#forge:storage_blocks/gold', 'kubejs:crimson_essence'],
             output: Item.of('naturesaura:tainted_gold_block'),
             minimumDrain: 32.0,
             drain: 16.0,
