@@ -63,15 +63,6 @@ onEvent('recipes', (event) => {
             id: 'integrateddynamics:crafting/proto_chorus'
         },
         {
-            input: '#minecraft:fishes',
-            output: { item: 'aquaculture:fish_bones' },
-            aura_type: 'naturesaura:nether',
-            catalyst: { item: 'naturesaura:crushing_catalyst' },
-            aura: 1000,
-            time: 60,
-            id: `${id_prefix}fish_bones`
-        },
-        {
             input: 'minecraft:pufferfish',
             output: { item: 'upgrade_aquatic:lionfish' },
             catalyst: { item: 'naturesaura:conversion_catalyst' },
