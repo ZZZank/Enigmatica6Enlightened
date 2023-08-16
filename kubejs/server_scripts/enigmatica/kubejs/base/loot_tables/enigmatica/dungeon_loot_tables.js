@@ -490,7 +490,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 { item: 'eidolon:wraith_heart', weight: 20 },
                 { item: 'eidolon:zombie_heart', weight: 20 },
                 { item: 'darkutils:book_restore', weight: 100 },
-                { item: 'eidolon:candle', weight: 100, amount: [8.0, 12.0] }
+                { item: 'occultism:candle_white', weight: 100, amount: [8.0, 12.0] }
             ]
         },
         {

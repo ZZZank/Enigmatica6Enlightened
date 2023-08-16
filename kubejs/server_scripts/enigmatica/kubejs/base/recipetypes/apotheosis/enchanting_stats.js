@@ -73,15 +73,7 @@ onEvent('server.datapack.high_priority', (event) => {
             }
         },
         {
-            block: 'eidolon:candle',
-            stats: {
-                maxEterna: 15,
-                eterna: 0.5,
-                arcana: 5
-            }
-        },
-        {
-            block: 'eidolon:candlestick',
+            block: 'occultism:candle_white',
             stats: {
                 maxEterna: 15,
                 eterna: 0.5,

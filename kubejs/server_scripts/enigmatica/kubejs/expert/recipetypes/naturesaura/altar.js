@@ -23,14 +23,6 @@ onEvent('recipes', (event) => {
             id: 'naturesaura:altar/infused_iron_block'
         },
         {
-            input: 'eidolon:candle',
-            output: { item: 'occultism:candle_white' },
-            aura_type: 'naturesaura:nether',
-            aura: 18000,
-            time: 60,
-            id: 'occultism:crafting/candle'
-        },
-        {
             input: 'kubejs:firmament',
             output: { item: 'architects_palette:sunstone' },
             aura_type: 'naturesaura:overworld',

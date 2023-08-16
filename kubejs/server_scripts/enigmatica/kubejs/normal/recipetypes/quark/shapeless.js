@@ -13,7 +13,7 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'quark:white_candle', //
-            inputs: 'eidolon:candle',
+            inputs: 'occultism:candle_white',
             id: `${id_prefix}white_candle`
         }
     ];

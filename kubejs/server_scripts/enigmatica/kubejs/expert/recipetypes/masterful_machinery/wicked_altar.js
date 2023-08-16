@@ -71,7 +71,7 @@ onEvent('recipes', (event) => {
             outputs: [{ data: { item: 'eidolon:prestigious_palm', count: 1 } }],
             inputs: [
                 { data: { item: 'eidolon:wicked_weave', count: 4 } },
-                { data: { item: '#forge:dusts/flux_infused', count: 2 } },
+                { data: { item: 'redstone_arsenal:flux_dust', count: 2 } },
                 { data: { item: 'redstone_arsenal:flux_gem', count: 1 } },
                 { data: { item: 'bloodmagic:reagentvoid', count: 1 } },
                 { data: { item: 'eidolon:warped_sprouts', count: 1 } },
@@ -89,7 +89,7 @@ onEvent('recipes', (event) => {
                 {
                     data: { item: 'occultism:spirit_attuned_gem', count: 4 }
                 },
-                { data: { item: '#forge:dusts/flux_infused', count: 8 } },
+                { data: { item: 'redstone_arsenal:flux_dust', count: 8 } },
                 { data: { item: 'atum:nepthys_godshard', count: 1 } },
                 {
                     type: 'masterfulmachinery:fluids',
@@ -97,7 +97,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             ticks: 400,
-            id: `${id_prefix}lesser_soul_gem`
+            id: `${id_prefix}flux_gem`
         },
         {
             outputs: [{ data: { item: 'alexsmobs:dimensional_carver', count: 1 } }],
@@ -146,7 +146,7 @@ onEvent('recipes', (event) => {
                 {
                     data: { item: 'appliedenergistics2:charged_certus_quartz_crystal', count: 2 }
                 },
-                { data: { tag: 'ars_nouveau:potion_flask_amplify', count: 1 } },
+                { data: { item: 'ars_nouveau:potion_flask_amplify', count: 1 } },
                 {
                     type: 'masterfulmachinery:fluids',
                     data: { fluid: 'bloodmagic:life_essence_fluid', amount: 10000 }
@@ -351,7 +351,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}outputroutingnode`
         },
         {
-            outputs: [{ data: { item: '#forge:dusts/flux_infused', count: 8 } }],
+            outputs: [{ data: { item: 'redstone_arsenal:flux_dust', count: 8 } }],
             inputs: [
                 { data: { tag: 'forge:dusts/ender_pearl', count: 8 } },
                 {
@@ -360,7 +360,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             ticks: 10,
-            id: `${id_prefix}ender_calx`
+            id: `${id_prefix}flux_dust`
         },
         {
             outputs: [{ data: { item: 'minecraft:golden_apple', count: 4 } }],

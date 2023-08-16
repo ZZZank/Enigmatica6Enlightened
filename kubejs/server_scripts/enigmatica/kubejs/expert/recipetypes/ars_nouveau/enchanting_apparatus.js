@@ -133,8 +133,8 @@ onEvent('recipes', (event) => {
                 'quark:white_candle'
             ],
             reagent: 'bloodmagic:holy_water_anointment',
-            output: Item.of('8x eidolon:candle'),
-            id: 'eidolon:candle'
+            output: Item.of('8x occultism:candle_white'),
+            id: 'occultism:crafting/candle'
         },
         {
             inputs: [
