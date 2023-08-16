@@ -45,7 +45,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             ticks: 100,
-            id: `${id_prefix}sacrificialdagger`
+            id: 'bloodmagic:sacrificial_dagger'
         },
         {
             outputs: [{ data: { item: 'eidolon:cleaving_axe', count: 1 } }],
