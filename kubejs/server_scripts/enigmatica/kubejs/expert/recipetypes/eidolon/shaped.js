@@ -32,7 +32,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:ingots/pewter',
                 B: 'minecraft:conduit',
-                C: 'eidolon:ender_calx',
+                C: '#forge:dusts/flux_infused',
                 D: 'minecraft:nether_brick_fence'
             },
             id: 'eidolon:brazier'

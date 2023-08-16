@@ -36,11 +36,11 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}leather`
         },
         {
-            inputs: ['eidolon:enchanted_ash', '#forge:dusts/ender'],
-            output: 'eidolon:ender_calx',
+            inputs: ['#forge:dusts/gold', '#forge:dusts/ender'],
+            output: 'redstone_arsenal:flux_dust',
             count: 2,
             cookingTime: 50,
-            id: `${id_prefix}ender_calx`
+            id: 'redstone_arsenal:materials/flux_dust'
         },
         {
             inputs: [

@@ -30,7 +30,7 @@ onEvent('recipes', (event) => {
             ingredients: [
                 'occultism:spirit_attuned_pickaxe_head',
                 'betterendforge:leather_wrapped_stick',
-                'eidolon:ender_calx',
+                '#forge:dusts/flux_infused',
                 'betterendforge:leather_wrapped_stick',
                 '#forge:nuggets/nebu',
                 '#forge:nuggets/nebu'
@@ -92,10 +92,10 @@ onEvent('recipes', (event) => {
                 '#quark:crystal_clusters',
                 '#quark:crystal_clusters',
                 '#quark:crystal_clusters',
-                'eidolon:ender_calx',
-                'eidolon:ender_calx',
-                'eidolon:ender_calx',
-                'eidolon:ender_calx',
+                '#forge:dusts/flux_infused',
+                '#forge:dusts/flux_infused',
+                '#forge:dusts/flux_infused',
+                '#forge:dusts/flux_infused',
                 'atum:crystal_glass',
                 'atum:crystal_glass',
                 'atum:crystal_glass',

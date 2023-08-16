@@ -112,7 +112,7 @@ onEvent('recipes', (event) => {
             inputs: [
                 'bloodmagic:tauoil',
                 'atum:anputs_fingers_spores',
-                'eidolon:ender_calx',
+                '#forge:dusts/flux_infused',
                 '#quark:crystal_clusters/white'
             ],
             output: 'bloodmagic:rawcatalyst',
@@ -124,7 +124,7 @@ onEvent('recipes', (event) => {
             inputs: [
                 'bloodmagic:tauoil',
                 'atum:anputs_fingers_spores',
-                'eidolon:ender_calx',
+                '#forge:dusts/flux_infused',
                 '#quark:crystal_clusters/green'
             ],
             output: 'bloodmagic:corrosivecatalyst',
@@ -136,7 +136,7 @@ onEvent('recipes', (event) => {
             inputs: [
                 'bloodmagic:tauoil',
                 'atum:anputs_fingers_spores',
-                'eidolon:ender_calx',
+                '#forge:dusts/flux_infused',
                 '#quark:crystal_clusters/red'
             ],
             output: 'bloodmagic:vengefulcatalyst',
@@ -148,7 +148,7 @@ onEvent('recipes', (event) => {
             inputs: [
                 'bloodmagic:tauoil',
                 'atum:anputs_fingers_spores',
-                'eidolon:ender_calx',
+                '#forge:dusts/flux_infused',
                 '#quark:crystal_clusters/yellow'
             ],
             output: 'bloodmagic:destructivecatalyst',
@@ -160,7 +160,7 @@ onEvent('recipes', (event) => {
             inputs: [
                 'bloodmagic:tauoil',
                 'atum:anputs_fingers_spores',
-                'eidolon:ender_calx',
+                '#forge:dusts/flux_infused',
                 '#quark:crystal_clusters/indigo'
             ],
             output: 'bloodmagic:steadfastcatalyst',

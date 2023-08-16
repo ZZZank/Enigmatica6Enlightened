@@ -43,7 +43,7 @@ onEvent('recipes', (event) => {
                 Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:end"}'),
                 'upgrade_aquatic:thrasher_tooth',
                 'naturesaura:gold_leaf',
-                'eidolon:ender_calx',
+                '#forge:dusts/flux_infused',
                 'astralsorcery:nocturnal_powder',
                 'upgrade_aquatic:thrasher_tooth',
                 'astralsorcery:nocturnal_powder',
@@ -168,7 +168,7 @@ onEvent('recipes', (event) => {
         },
         {
             ingredients: [
-                'eidolon:ender_calx',
+                '#forge:dusts/flux_infused',
                 'quark:ender_watcher',
                 'ars_nouveau:glyph_blink',
                 'minecraft:chorus_flower',

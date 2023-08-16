@@ -618,7 +618,7 @@ onEvent('recipes', (event) => {
             inputs: [
                 'minecraft:warped_fungus',
                 'minecraft:warped_fungus',
-                'eidolon:ender_calx',
+                '#forge:dusts/flux_infused',
                 '#forge:crops/nether_wart'
             ],
             output: 'eidolon:warped_sprouts',

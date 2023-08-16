@@ -71,7 +71,7 @@ onEvent('recipes', (event) => {
             outputs: [{ data: { item: 'eidolon:prestigious_palm', count: 1 } }],
             inputs: [
                 { data: { item: 'eidolon:wicked_weave', count: 4 } },
-                { data: { item: 'eidolon:ender_calx', count: 2 } },
+                { data: { item: '#forge:dusts/flux_infused', count: 2 } },
                 { data: { item: 'redstone_arsenal:flux_gem', count: 1 } },
                 { data: { item: 'bloodmagic:reagentvoid', count: 1 } },
                 { data: { item: 'eidolon:warped_sprouts', count: 1 } },
@@ -89,7 +89,7 @@ onEvent('recipes', (event) => {
                 {
                     data: { item: 'occultism:spirit_attuned_gem', count: 4 }
                 },
-                { data: { item: 'eidolon:ender_calx', count: 8 } },
+                { data: { item: '#forge:dusts/flux_infused', count: 8 } },
                 { data: { item: 'atum:nepthys_godshard', count: 1 } },
                 {
                     type: 'masterfulmachinery:fluids',
@@ -351,7 +351,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}outputroutingnode`
         },
         {
-            outputs: [{ data: { item: 'eidolon:ender_calx', count: 8 } }],
+            outputs: [{ data: { item: '#forge:dusts/flux_infused', count: 8 } }],
             inputs: [
                 { data: { tag: 'forge:dusts/ender_pearl', count: 8 } },
                 {

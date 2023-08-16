@@ -314,7 +314,7 @@ onEvent('generic.loot_tables', (event) => {
                     count: [1, 2]
                 },
                 {
-                    item: 'eidolon:ender_calx',
+                    item: 'redstone_arsenal:flux_dust',
                     weight: 50,
                     count: [2, 7]
                 },

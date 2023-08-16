@@ -95,7 +95,7 @@ onEvent('recipes', (event) => {
                 'bloodmagic:plantoil',
                 'occultism:chalk_white_impure',
                 'betterendforge:enchanted_petal',
-                'eidolon:ender_calx'
+                '#forge:dusts/flux_infused'
             ],
             output: 'occultism:chalk_purple_impure',
             count: 1,
@@ -148,7 +148,7 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                'eidolon:ender_calx',
+                '#forge:dusts/flux_infused',
                 'astralsorcery:nocturnal_powder',
                 'astralsorcery:nocturnal_powder',
                 'astralsorcery:nocturnal_powder'

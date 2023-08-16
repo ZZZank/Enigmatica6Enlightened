@@ -1429,12 +1429,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'bloodmagic:blankslate',
-                'eidolon:ender_calx',
+                '#forge:dusts/flux_infused',
                 'bloodmagic:blankslate',
                 'bloodmagic:blankslate',
                 'bloodmagic:blankslate',
                 'bloodmagic:blankslate',
-                'eidolon:ender_calx',
+                '#forge:dusts/flux_infused',
                 'bloodmagic:blankslate'
             ],
             sourceCost: 50,
