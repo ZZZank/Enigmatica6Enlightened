@@ -139,7 +139,6 @@
 				{
 					id: "0000000000000CC0"
 					type: "item"
-					title: "Super Glue"
 					item: {
 						id: "create:super_glue"
 						Count: 1b
@@ -221,13 +220,11 @@
 				{
 					id: "0000000000000CCA"
 					type: "item"
-					title: "Analog Lever"
 					item: "create:analog_lever"
 				}
 				{
 					id: "0000000000000D73"
 					type: "item"
-					title: "Magma Block"
 					item: "minecraft:magma_block"
 					count: 4
 				}
@@ -271,7 +268,6 @@
 				{
 					id: "0000000000000D8A"
 					type: "item"
-					title: "Blast Furnace"
 					item: "minecraft:blast_furnace"
 				}
 			]
@@ -306,7 +302,6 @@
 				{
 					id: "0000000000000D80"
 					type: "item"
-					title: "Kelp"
 					item: "minecraft:kelp"
 					count: 16
 				}
@@ -519,7 +514,6 @@
 				{
 					id: "0000000000000D5B"
 					type: "item"
-					title: "Large Cogwheel"
 					item: "create:large_cogwheel"
 				}
 				{
@@ -1308,7 +1302,6 @@
 				{
 					id: "0000000000000D8C"
 					type: "item"
-					title: "Piston Extension Pole"
 					item: "create:piston_extension_pole"
 					count: 8
 				}

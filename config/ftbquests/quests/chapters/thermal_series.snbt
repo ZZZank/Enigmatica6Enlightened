@@ -73,14 +73,12 @@
 				{
 					id: "00000000000004EC"
 					type: "item"
-					title: "Energy Cable (Basic)"
 					item: "mekanism:basic_universal_cable"
 					count: 8
 				}
 				{
 					id: "000000000000063A"
 					type: "item"
-					title: "Energy Cell (Basic)"
 					item: "powah:energy_cell_basic"
 				}
 				{
@@ -115,7 +113,6 @@
 				{
 					id: "00000000000004BA"
 					type: "item"
-					title: "Jungle Sapling"
 					auto: "disabled"
 					item: "minecraft:jungle_sapling"
 					count: 4
@@ -131,7 +128,6 @@
 				{
 					id: "0000000000000F87"
 					type: "item"
-					title: "Acacia Sapling"
 					item: "minecraft:acacia_sapling"
 					count: 4
 				}
@@ -173,7 +169,6 @@
 				{
 					id: "0000000000000639"
 					type: "item"
-					title: "Basic Mechanical Pipe"
 					item: "mekanism:basic_mechanical_pipe"
 					count: 8
 				}
@@ -278,7 +273,6 @@
 				{
 					id: "00000000000004ED"
 					type: "item"
-					title: "Sweet Berries"
 					item: "minecraft:sweet_berries"
 					count: 16
 				}
@@ -374,7 +368,6 @@
 				{
 					id: "00000000000004F6"
 					type: "item"
-					title: "Metal Press Mold: Gear"
 					item: "immersiveengineering:mold_gear"
 				}
 				{

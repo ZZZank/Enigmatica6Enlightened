@@ -206,7 +206,6 @@
 				{
 					id: "000000000000060C"
 					type: "item"
-					title: "Industrial Hemp Fiber"
 					item: "immersiveengineering:hemp_fiber"
 					count: 16
 				}
@@ -418,14 +417,12 @@
 				{
 					id: "000000000000061E"
 					type: "item"
-					title: "Iron Plate"
 					item: "emendatusenigmatica:iron_plate"
 					count: 8
 				}
 				{
 					id: "000000000000061F"
 					type: "item"
-					title: "Steel Plate"
 					item: "emendatusenigmatica:steel_plate"
 					count: 4
 				}
@@ -780,7 +777,6 @@
 				{
 					id: "0000000000000619"
 					type: "item"
-					title: "Industrial Hemp Seeds"
 					item: "immersiveengineering:seed"
 					count: 24
 				}
@@ -950,7 +946,6 @@
 				{
 					id: "63F8CD5DAAB0252B"
 					type: "item"
-					title: "Mineral Survey Tools"
 					item: {
 						id: "immersiveengineering:survey_tools"
 						Count: 1b

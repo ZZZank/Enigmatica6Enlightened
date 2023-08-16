@@ -68,7 +68,6 @@
 				{
 					id: "0000000000000BDB"
 					type: "item"
-					title: "Warp Scroll"
 					item: "ars_nouveau:warp_scroll"
 					count: 16
 				}
@@ -179,7 +178,6 @@
 				{
 					id: "0000000000000BE0"
 					type: "item"
-					title: "Aquamarine Shale"
 					item: "astralsorcery:aquamarine_sand_ore"
 					count: 8
 				}
@@ -495,7 +493,6 @@
 				{
 					id: "0000000000000C23"
 					type: "item"
-					title: "Raw Cod"
 					item: "minecraft:cod"
 					count: 16
 				}
@@ -1372,7 +1369,6 @@
 				{
 					id: "0000000000000C21"
 					type: "item"
-					title: "Celestial Gateway"
 					item: {
 						id: "astralsorcery:celestial_gateway"
 						Count: 1b
@@ -1415,7 +1411,6 @@
 				{
 					id: "0000000000000C2D"
 					type: "item"
-					title: "Infused Glass"
 					item: {
 						id: "astralsorcery:infused_glass"
 						Count: 1b
@@ -1541,13 +1536,11 @@
 				{
 					id: "0000000000000C2B"
 					type: "item"
-					title: "Jukebox"
 					item: "minecraft:jukebox"
 				}
 				{
 					id: "0000000000000C2C"
 					type: "item"
-					title: "Music Disc"
 					item: "minecraft:music_disc_pigstep"
 				}
 				{

@@ -68,7 +68,6 @@
 				{
 					id: "0000000000000845"
 					type: "item"
-					title: "Wooden Hammer"
 					item: {
 						id: "tetra:modular_double"
 						Count: 1b
@@ -86,7 +85,6 @@
 				{
 					id: "0000000000000891"
 					type: "item"
-					title: "Hamburger"
 					item: "farmersdelight:hamburger"
 				}
 			]
@@ -207,21 +205,18 @@
 				{
 					id: "0000000000000A3E"
 					type: "item"
-					title: "Training Arrow"
 					item: "archers_paradox:training_arrow"
 					count: 64
 				}
 				{
 					id: "0000000000000A3F"
 					type: "item"
-					title: "Explosive Arrow"
 					item: "archers_paradox:explosive_arrow"
 					count: 16
 				}
 				{
 					id: "0000000000000A40"
 					type: "item"
-					title: "Arrow of Slowness"
 					item: {
 						id: "minecraft:tipped_arrow"
 						Count: 1b
@@ -234,7 +229,6 @@
 				{
 					id: "0000000000000A41"
 					type: "item"
-					title: "Arrow"
 					item: "minecraft:arrow"
 					count: 64
 				}
@@ -396,7 +390,6 @@
 				{
 					id: "0000000000000A4B"
 					type: "item"
-					title: "Lava Bucket"
 					item: "minecraft:lava_bucket"
 				}
 				{
@@ -530,7 +523,6 @@
 				{
 					id: "0000000000000A42"
 					type: "item"
-					title: "Copper Chunk"
 					item: "emendatusenigmatica:copper_chunk"
 					count: 8
 				}
@@ -580,14 +572,12 @@
 				{
 					id: "0000000000000A43"
 					type: "item"
-					title: "Osmium Chunk"
 					item: "emendatusenigmatica:osmium_chunk"
 					count: 8
 				}
 				{
 					id: "0000000000000A44"
 					type: "item"
-					title: "Splash Potion of Fire Resistance"
 					item: {
 						id: "minecraft:splash_potion"
 						Count: 1b
@@ -636,13 +626,11 @@
 				{
 					id: "0000000000000A45"
 					type: "item"
-					title: "End Rod"
 					item: "minecraft:end_rod"
 				}
 				{
 					id: "0000000000000A47"
 					type: "item"
-					title: "Unbreaking II"
 					item: {
 						id: "minecraft:enchanted_book"
 						Count: 1b
@@ -657,7 +645,6 @@
 				{
 					id: "0000000000000A48"
 					type: "item"
-					title: "Splash Potion of Swiftness"
 					item: {
 						id: "minecraft:splash_potion"
 						Count: 1b
