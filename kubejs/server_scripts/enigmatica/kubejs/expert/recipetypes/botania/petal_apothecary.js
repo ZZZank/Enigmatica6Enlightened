@@ -566,10 +566,16 @@ onEvent('recipes', (event) => {
 
         /// Other
         {
-            inputs: ['#forge:mushrooms', '#forge:mushrooms', 'thermal:phytogro'],
-            output: 'eidolon:fungus_sprouts',
+            inputs: ['botania:white_mushroom', 'botania:white_mushroom', 'thermal:phytogro'],
+            output: 'byg:bulbis_sprouts',
             count: 2,
             id: `${id_prefix}fungus_sprouts`
+        },
+        {
+            inputs: ['#forge:mushrooms', '#forge:mushrooms', '#forge:dyes/white', 'thermal:phytogro'],
+            output: 'byg:bulbis_sprouts',
+            count: 2,
+            id: `${id_prefix}fungus_sprouts_alt`
         },
         {
             inputs: ['minecraft:mossy_stone_bricks', 'naturesaura:gold_fiber', 'thermal:phytogro'],
@@ -621,9 +627,9 @@ onEvent('recipes', (event) => {
                 '#forge:dusts/flux_infused',
                 '#forge:crops/nether_wart'
             ],
-            output: 'eidolon:warped_sprouts',
+            output: 'byg:fungal_imparius',
             count: 2,
-            id: `${id_prefix}warped_sprouts`
+            id: `${id_prefix}fungal_imparius`
         },
         {
             inputs: [

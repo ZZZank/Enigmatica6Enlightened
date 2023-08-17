@@ -14,7 +14,7 @@ onEvent('chest.loot_tables', (event) => {
             rolls: { min: 1, max: 3 },
             entries: [
                 {
-                    item: 'eidolon:fungus_sprouts',
+                    item: 'byg:bulbis_sprouts',
                     weight: 100,
                     count: [1, 6]
                 },

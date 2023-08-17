@@ -367,7 +367,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 { item: 'minecraft:leather', weight: 100, amount: [4.0, 12.0] },
                 { item: 'minecraft:string', weight: 100, amount: [4.0, 12.0] },
                 { item: 'minecraft:warped_nylium', weight: 100, amount: [4.0, 12.0] },
-                { item: 'eidolon:warped_sprouts', weight: 100, amount: [4.0, 12.0] },
+                { item: 'byg:fungal_imparius', weight: 100, amount: [4.0, 12.0] },
                 { item: 'byg:crimson_berries', weight: 100, amount: [4.0, 12.0] },
                 { item: 'minecraft:crimson_nylium', weight: 100, amount: [4.0, 12.0] },
                 { item: 'minecraft:warped_fungus', weight: 100, amount: [4.0, 12.0] },

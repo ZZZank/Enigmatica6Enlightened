@@ -51,7 +51,7 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'ars_nouveau:potion_jar',
-            inputs: ['ars_nouveau:mana_jar', ['minecraft:nether_wart', 'eidolon:fungus_sprouts']],
+            inputs: ['ars_nouveau:mana_jar', ['minecraft:nether_wart', 'byg:bulbis_sprouts']],
             id: 'ars_nouveau:potion_jar'
         },
         {

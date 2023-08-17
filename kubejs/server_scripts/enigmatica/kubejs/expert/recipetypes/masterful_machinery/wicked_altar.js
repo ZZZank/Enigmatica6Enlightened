@@ -74,7 +74,7 @@ onEvent('recipes', (event) => {
                 { data: { item: 'redstone_arsenal:flux_dust', count: 2 } },
                 { data: { item: 'redstone_arsenal:flux_gem', count: 1 } },
                 { data: { item: 'bloodmagic:reagentvoid', count: 1 } },
-                { data: { item: 'eidolon:warped_sprouts', count: 1 } },
+                { data: { item: 'byg:fungal_imparius', count: 1 } },
                 {
                     type: 'masterfulmachinery:fluids',
                     data: { fluid: 'bloodmagic:life_essence_fluid', amount: 1000 }

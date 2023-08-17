@@ -188,9 +188,9 @@ onEvent('recipes', (event) => {
                 'architects_palette:moonstone',
                 'ars_nouveau:glyph_aoe',
                 'naturesaura:token_fear',
-                'eidolon:fungus_sprouts',
+                'byg:bulbis_sprouts',
                 '#forge:ingots/nether_brick',
-                'eidolon:fungus_sprouts',
+                'byg:bulbis_sprouts',
                 '#forge:ingots/nether_brick'
             ],
             output: 'naturesaura:potion_generator',

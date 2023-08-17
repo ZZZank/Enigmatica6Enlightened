@@ -169,7 +169,7 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 '#forge:nuggets/gold_brass',
-                'eidolon:fungus_sprouts',
+                'byg:bulbis_sprouts',
                 '#forge:nuggets/gold_brass',
                 '#forge:ingots/gold_brass',
                 '#forge:ingots/gold_brass',
