@@ -725,7 +725,7 @@ onEvent('recipes', (event) => {
             id: 'redstone_arsenal:materials/flux_gem'
         },
         {
-            inputs: ['#forge:ingots/silicon_bronze', '#forge:shards/ender', 'eidolon:enchanted_ash'],
+            inputs: ['#forge:ingots/silicon_bronze', '#forge:shards/ender', 'naturesaura:crimson_meal'],
             output: 'bloodmagic:teleposerfocus',
             count: 1,
             syphon: 50,

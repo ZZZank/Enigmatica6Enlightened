@@ -1404,7 +1404,7 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 '#forge:ingots/gold',
-                'eidolon:enchanted_ash',
+                'naturesaura:crimson_meal',
                 '#forge:ingots/gold',
                 '#forge:dusts/redstone',
                 '#forge:dusts/redstone'

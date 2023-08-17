@@ -94,7 +94,7 @@ onEvent('recipes', (event) => {
             output: 'ars_nouveau:basic_spell_turret',
             pattern: ['ABA', 'BCB', 'ABA'],
             key: {
-                A: 'eidolon:enchanted_ash',
+                A: 'naturesaura:crimson_meal',
                 B: 'quark:gold_bars',
                 C: '#forge:storage_blocks/mana'
             },

@@ -254,7 +254,7 @@ onEvent('recipes', (event) => {
                 {
                     data: { item: 'atum:yellow_stained_crystal_glass_pane', count: 1 }
                 },
-                { data: { item: 'eidolon:enchanted_ash', count: 1 } },
+                { data: { item: 'naturesaura:crimson_meal', count: 1 } },
                 {
                     type: 'masterfulmachinery:fluids',
                     data: { fluid: 'bloodmagic:life_essence_fluid', amount: 1000 }
