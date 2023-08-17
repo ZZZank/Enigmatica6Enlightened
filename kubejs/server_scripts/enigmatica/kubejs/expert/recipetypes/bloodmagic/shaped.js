@@ -77,7 +77,7 @@ onEvent('recipes', (event) => {
                 B: Item.of('botania:incense_stick', { brewKey: 'botania:soul_cross' }),
                 C: 'bloodmagic:woodtilepath',
                 D: 'farmersdelight:cooking_pot',
-                E: 'eidolon:polished_wood_pillar'
+                E: 'bloodmagic:woodbrickpath'
             },
             id: 'bloodmagic:incense_altar'
         },
