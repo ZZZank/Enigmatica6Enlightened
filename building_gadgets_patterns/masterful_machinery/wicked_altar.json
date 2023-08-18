@@ -9,7 +9,7 @@
       "min_y": 0,
       "min_z": 0,
       "max_x": 6,
-      "max_y": 3,
+      "max_y": 5,
       "max_z": 6
     },
     "material_list": {
@@ -26,7 +26,49 @@
           "item_type": "buildinggadgets:simple_item",
           "count": 1,
           "item": {
-            "id": "eidolon:unholy_effigy"
+            "id": "chipped:carved_pumpkin_11"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 1,
+          "item": {
+            "id": "minecraft:conduit"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 15,
+          "item": {
+            "id": "quark:dark_elder_prismarine"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 1,
+          "item": {
+            "id": "upgrade_aquatic:elder_guardian_spine"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 4,
+          "item": {
+            "id": "minecraft:nether_brick_fence"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 4,
+          "item": {
+            "id": "minecraft:oak_pressure_plate"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 1,
+          "item": {
+            "id": "naturesaura:tainted_gold_block"
           }
         },
         {
@@ -66,7 +108,7 @@
         },
         {
           "item_type": "buildinggadgets:simple_item",
-          "count": 34,
+          "count": 29,
           "item": {
             "id": "bloodmagic:woodtilepath"
           }
@@ -74,5 +116,5 @@
       ]
     }
   },
-  "body": "H4sIAAAAAAAAAK2UsW7bMBBATyKpOMpcFN0yd+vQFtDaveiYehFo8yQToUiBpOq6X19SvKRZgthpDEPvRFGP5N1BLcA1cCWjbAHgpi0xMGgDei2N/oM+PYAWRIgyYgvtD+9m9FFj2EAzyL22IwjrfDzABvh3OSF8kD701i2/UC7dUXqV5vQhOovZ9LolOMoQ32aFB8n7nXFOTXLU++6YoqgNzjKd43zF1yntCv2wmEnuD9qiP3VHvb9H1UsTpe8Hs2jVzyk9JQy9tvMSL8/D5iDTuxEnEIM0Ie3gOo8YPR7i41B5E64UDnIx/9J1u8OYtolWDc6P2EmrMCRZP2MKojT/UZcjvlVdzlrh40sZ3zsbvTMmu8+u45eXrDnzpYw5Cr1b4qvKeHNMY964cUQFPPoFn2vxd6iVM852iz04c+pxGPR4uuBMny890ys78/EjEFJSzvsIXAObXeDJ2WVxDeXH1msFHMpoXRUyIq+AZpS/WFlDVRXWREbkRLGSpClsVq5hnVetqnJfExmREwWxWcmhrjMFbbnJESMvI2/iVfYy8jLyMvIy8jLyMvImbqBmmaufk5eTl+fkVVW5r4mMyImC2KxcvTyXr1qlbb4IypsgjyCPII8gzzq/zodMZEQOJYU1pZIR03tNC80BpUKfGkOmfnAemu12K+19erJzi1WBAZ+0/VnSl8O7h1D+3qaoKWGewEp49zCq7XYtY2oym5us+ebm0+2nlJMnvbpZW+R2t2iTm26UasQYOrVM06l/0tJ/AVZfZPv9BgAA"
+  "body": "H4sIAAAAAAAAAN1WS4/bNhAeS6R210kf6QNF0aLYQ0+95dAG8K1/oO2tqS/CWKRlwRKp8hE3+fUdkuPdbZEitpO91BD0DSnqm4/zoLwEuAGhMOASAL5cFhtqWHrtBhyHN9rRA1iC9AGDXsLyN2dn7cKg/TU0W+wG04M01oUdXIP4BScNX6PzrbHxlca4OqBTtKb1wRqdmC5zITT68GE8HEm+2ozWqgn7oVsdyArDqGekfZxO8c2fEd1+pejW6lFp185u8BO64SwlLybanHbbOE7Y7ehd93p1GLq9Vi2OAV27HeOg2pmiXEzfDmaO4fxwXu+Q3g16ArnF0ZOCmzQzDv0u3E2VN+FK6S3G8T7qtxsdSKY2amtdr1dolPZE1s6ajIDj+XquZnsgRsW+71x9O1EUOofbsLK4p6hq76MjT2NSdnkVKXswj1unB/2gTn94V2I7a4Kz45i4Ty6Xn97FmhJcqiVZvrUxXFQtTw4050bb95QhEVy8T9Cz+wTRHlQc3pf+WHzHQFZxpkrMTVVc00g5pPT9q1S+j3PvUOkWqRkD9XJpxD6mhKJp/XxaM5528FC8Zyr3VYfuFcV7jtO8H0z7/PkZ+fvOYKBi9hgdrgIOJhBTb0fV0onU7c/XWjQeI/jWsEpPRbC7H5YT+zgsVfvfPWh02FFMN46qrN1q010Q0CKSU/m/1vjPTnkUie+d60fV+PbD8IN8tH889+y78EN599emxPKUPdxAPVsviPPXRFxB+dX5vgABZbZaFKwZxQJ4RbrqtD6bMmMFi0XBasHPeSwY5XG+YqwZBTBzkpJ5q0TZZMwm3UTir5i/Yt6KeTM2GSVUVcIGZMV8IuEVb7EuNwqUhLKFBu5c1ik4i0UZV4yCUTI2GbOfOqWlztiAyPgk+c3jJuNTkNnlR0kH4ccgM34CtUz4KYiMz0Bm/CzpFKxTsD7B+gg/T/oE6xOsT7A+wfoE6xMcB8FxIPwiBVsyv0zOZL5y/iTzSs6fZH7J/JLzJzl/knll4s1BJ6wZs/PC13AdNczXLKHZafoWOipgpLq1Dpr1eo1mT082NhrlaxDU7H+UtCXz5dHEv9ZkNcVMC2QxXx5nB7PO5UTNYFIzPP09N97tz6nxKMMPOus6F/TtJg5japEeVa+DX6k4Ta/bBw34Nwktx7iBDAAA"
 }
