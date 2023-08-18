@@ -90,31 +90,6 @@ onEvent('recipes', (event) => {
         },
 
         {
-            output: '9x eidolon:arcane_gold_ingot',
-            input: '#forge:storage_blocks/arcane_gold',
-            mold: '#thermal:crafting/dies/unpacking',
-            id_suffix: 'arcane_gold_block_to_ingots'
-        },
-        {
-            output: '9x eidolon:arcane_gold_nugget',
-            input: '#forge:ingots/arcane_gold',
-            mold: '#thermal:crafting/dies/unpacking',
-            id_suffix: 'arcane_gold_ingot_to_nuggets'
-        },
-        {
-            output: 'eidolon:arcane_gold_ingot',
-            input: '9x #forge:nuggets/arcane_gold',
-            mold: '#thermal:crafting/dies/packing_3x3',
-            id_suffix: 'arcane_gold_nuggets_to_ingots'
-        },
-        {
-            output: 'eidolon:arcane_gold_block',
-            input: '9x #forge:ingots/arcane_gold',
-            mold: '#thermal:crafting/dies/packing_3x3',
-            id_suffix: 'arcane_gold_ingots_to_block'
-        },
-
-        {
             output: '9x resourcefulbees:wax',
             input: '#forge:storage_blocks/wax',
             mold: '#thermal:crafting/dies/unpacking',

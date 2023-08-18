@@ -141,15 +141,6 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}moonstone`
         },
         {
-            input: Item.of('eidolon:sapping_sword', '{Damage:0}').weakNBT(),
-            output: 'bloodmagic:sacrificialdagger',
-            syphon: 7000,
-            altarLevel: 1,
-            consumptionRate: 5,
-            drainRate: 5,
-            id: 'bloodmagic:sacrificial_dagger'
-        },
-        {
             input: 'create:shadow_steel',
             output: 'bloodmagic:masterbloodorb',
             syphon: 80000,

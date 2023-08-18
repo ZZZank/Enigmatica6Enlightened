@@ -173,16 +173,6 @@ onEvent('recipes', (event) => {
                             }
                         }
                     },
-                    eidolon: {
-                        id: 'eidolon:codex',
-                        Count: 1,
-                        tag: {
-                            'akashictome:displayName': { text: 'Ars Ecclesia' },
-                            display: {
-                                Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Ars Ecclesia"}]}'
-                            }
-                        }
-                    },
                     botania: {
                         id: 'botania:lexicon',
                         Count: 1,

@@ -22,22 +22,6 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}wicked_weave`
         },
         {
-            outputs: [{ data: { item: 'eidolon:reaper_scythe', count: 1 } }],
-            inputs: [
-                { data: { tag: 'forge:ingots/pewter', count: 3 } },
-                { data: { item: 'betterendforge:leather_wrapped_stick', count: 2 } },
-                { data: { item: 'appliedenergistics2:charged_certus_quartz_crystal', count: 2 } },
-                { data: { item: 'atum:cloth_scrap', count: 1 } },
-                { data: { item: 'atum:anubis_godshard', count: 1 } },
-                {
-                    type: 'masterfulmachinery:fluids',
-                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 1000 }
-                }
-            ],
-            ticks: 100,
-            id: `${id_prefix}reaper_scythe`
-        },
-        {
             outputs: [{ data: { item: 'bloodmagic:sacrificialdagger', count: 1 } }],
             inputs: [
                 {
@@ -56,42 +40,6 @@ onEvent('recipes', (event) => {
             ],
             ticks: 100,
             id: 'bloodmagic:sacrificial_dagger'
-        },
-        {
-            outputs: [{ data: { item: 'eidolon:cleaving_axe', count: 1 } }],
-            inputs: [
-                { data: { tag: 'forge:ingots/pewter', count: 3 } },
-                {
-                    data: { item: 'betterendforge:leather_wrapped_stick', count: 2 }
-                },
-                {
-                    data: { item: 'minecraft:prismarine_crystals', count: 2 }
-                },
-                { data: { tag: 'forge:inlays/pewter', count: 1 } },
-                { data: { item: 'atum:anput_godshard', count: 1 } },
-                {
-                    type: 'masterfulmachinery:fluids',
-                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 1000 }
-                }
-            ],
-            ticks: 100,
-            id: `${id_prefix}cleaving_axe`
-        },
-        {
-            outputs: [{ data: { item: 'eidolon:prestigious_palm', count: 1 } }],
-            inputs: [
-                { data: { item: 'kubejs:wicked_weave', count: 4 } },
-                { data: { item: 'redstone_arsenal:flux_dust', count: 2 } },
-                { data: { item: 'redstone_arsenal:flux_gem', count: 1 } },
-                { data: { item: 'bloodmagic:reagentvoid', count: 1 } },
-                { data: { item: 'byg:fungal_imparius', count: 1 } },
-                {
-                    type: 'masterfulmachinery:fluids',
-                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 1000 }
-                }
-            ],
-            ticks: 100,
-            id: `${id_prefix}prestigious_palm`
         },
         {
             outputs: [{ data: { item: 'redstone_arsenal:flux_gem', count: 4 } }],
@@ -127,25 +75,6 @@ onEvent('recipes', (event) => {
             ],
             ticks: 500,
             id: 'alexsmobs:dimensional_carver'
-        },
-        {
-            outputs: [{ data: { item: 'eidolon:glass_hand', count: 1 } }],
-            inputs: [
-                { data: { item: 'ars_nouveau:dull_trinket', count: 1 } },
-                { data: { item: 'create:brass_hand', count: 1 } },
-                { data: { item: 'kubejs:zombie_heart', count: 1 } },
-                { data: { item: 'redstone_arsenal:flux_gem', count: 2 } },
-                { data: { item: 'alexsmobs:soul_heart', count: 1 } },
-                {
-                    data: { item: 'glassential:glass_dark_ethereal_reverse', count: 1 }
-                },
-                {
-                    type: 'masterfulmachinery:fluids',
-                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 10000 }
-                }
-            ],
-            ticks: 1000,
-            id: `${id_prefix}glass_hand`
         },
         {
             outputs: [{ data: { item: 'botania:blood_pendant', count: 1 } }],

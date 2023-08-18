@@ -564,7 +564,7 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'darkutils:blank_plate',
-                Item.of('minecraft:potion', '{Potion:"eidolon:anchored"}'),
+                '#minecraft:boats',
                 'bloodmagic:watersigil'
             ],
             output: 'darkutils:anchor_plate',

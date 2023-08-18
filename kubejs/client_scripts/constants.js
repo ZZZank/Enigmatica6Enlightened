@@ -330,7 +330,6 @@ const itemsToHide = [
     /create:\w+_nugget/,
     /create:\w+_ingot/,
     /immersiveposts:stick_/,
-    /eidolon:\w+_ore/,
     /byg:pendorite/,
     /byg:ametrine/,
     /emendatusenigmatica:\w+certus/,

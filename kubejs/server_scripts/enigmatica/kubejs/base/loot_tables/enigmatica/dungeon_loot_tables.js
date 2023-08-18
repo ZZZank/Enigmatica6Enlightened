@@ -442,7 +442,6 @@ onEvent('server.datapack.low_priority', (event) => {
                 { item: 'artifacts:vampiric_glove', weight: 17 },
                 { item: 'artifacts:running_shoes', weight: 17 },
                 { item: 'artifacts:antidote_vessel', weight: 17 },
-                { item: 'eidolon:soul_enchanter', weight: 20 },
                 { item: 'minecraft:netherite_boots', weight: 100, enchantRange: [60.0, 100.0] },
                 { item: 'minecraft:netherite_leggings', weight: 100, enchantRange: [60.0, 100.0] },
                 { item: 'minecraft:netherite_chestplate', weight: 100, enchantRange: [60.0, 100.0] },
@@ -498,8 +497,6 @@ onEvent('server.datapack.low_priority', (event) => {
             rolls: [1, 1],
             entries: [
                 { item: 'minecraft:cat_spawn_egg', weight: 10 },
-                { item: 'eidolon:spawn_wraith', weight: 10 },
-                { item: 'eidolon:spawn_zombie_brute', weight: 10 },
                 { item: 'minecraft:glistering_melon_slice', weight: 100, amount: [1.0, 4.0] },
                 { item: 'minecraft:wither_rose', weight: 100 },
                 { item: 'occultism:chalk_purple', weight: 1 },
@@ -534,7 +531,6 @@ onEvent('server.datapack.low_priority', (event) => {
                 { item: 'ars_nouveau:apprentice_boots', weight: 100, enchantRange: [30.0, 40.0] },
                 { item: 'ars_nouveau:mundane_belt', weight: 100 },
                 { item: 'ars_nouveau:dull_trinket', weight: 100 },
-                { item: 'eidolon:basic_ring', weight: 100 },
                 { item: 'appliedenergistics2:charged_certus_quartz_crystal', weight: 100, amount: [8.0, 16.0] },
                 { item: 'kubejs:pewter_ingot', weight: 100, amount: [8.0, 16.0] },
                 { item: 'naturesaura:tainted_gold', weight: 50, amount: [8.0, 16.0] },
@@ -564,7 +560,6 @@ onEvent('server.datapack.low_priority', (event) => {
                 { item: 'ars_nouveau:archmage_leggings', weight: 100, enchantRange: [60.0, 100.0] },
                 { item: 'ars_nouveau:archmage_boots', weight: 100, enchantRange: [60.0, 100.0] },
                 { item: 'ars_nouveau:wand', weight: 10 },
-                { item: 'eidolon:soul_enchanter', weight: 10 },
                 { item: 'alexsmobs:mimicream', weight: 5 },
                 { item: 'bloodmagic:experiencebook', weight: 10 }
             ]

@@ -1483,7 +1483,7 @@ onEvent('recipes', (event) => {
         {
             name: 'death',
             ingredients: [
-                Item.of('eidolon:reaper_scythe', '{Damage:0]}').weakNBT(),
+                Item.of('tconstruct:broad_blade', '{Material:"tconstruct:manyullyn"}'),
                 'naturesaura:chorus_generator'
             ]
         },

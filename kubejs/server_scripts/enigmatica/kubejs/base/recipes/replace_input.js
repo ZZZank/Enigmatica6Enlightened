@@ -30,11 +30,6 @@ onEvent('recipes', (event) => {
             replaceWith: ['minecraft:dried_kelp', 'sushigocrafting:dried_seaweed']
         },
         {
-            filter: { id: 'eidolon:stone_hand' },
-            toReplace: 'minecraft:stone_slab',
-            replaceWith: '#enigmatica:crafting_slabs'
-        },
-        {
             filter: { id: 'culinaryconstruct:culinary_station' },
             toReplace: 'minecraft:stone_slab',
             replaceWith: '#enigmatica:crafting_slabs'
@@ -185,7 +180,7 @@ onEvent('recipes', (event) => {
         '#quark:stone_tool_materials'
     );
 
-    ['quark:tallow', 'eidolon:tallow', 'occultism:tallow'].forEach((tallow) => {
+    ['quark:tallow', 'occultism:tallow'].forEach((tallow) => {
         event.replaceInput({}, tallow, '#forge:tallow');
     });
 

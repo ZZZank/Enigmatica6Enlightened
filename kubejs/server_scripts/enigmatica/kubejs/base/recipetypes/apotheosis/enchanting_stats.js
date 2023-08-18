@@ -81,39 +81,6 @@ onEvent('server.datapack.high_priority', (event) => {
             }
         },
         {
-            block: 'eidolon:stone_hand',
-            stats: {
-                maxEterna: 7.5,
-                eterna: 0.5
-            }
-        },
-        {
-            block: 'eidolon:plinth',
-            stats: {
-                maxEterna: 7.5,
-                eterna: 0.5
-            }
-        },
-        {
-            block: 'eidolon:straw_effigy',
-            stats: {
-                maxEterna: 7.5,
-                eterna: 5,
-                quanta: 5,
-                rectification: -5
-            }
-        },
-        {
-            block: 'eidolon:unholy_effigy',
-            stats: {
-                maxEterna: 10,
-                eterna: 5,
-                arcana: 15,
-                quanta: 15,
-                rectification: -15
-            }
-        },
-        {
             block: 'ars_nouveau:bookwyrm_lectern',
             stats: {
                 arcana: 30,
@@ -158,12 +125,6 @@ onEvent('server.datapack.high_priority', (event) => {
             stats: {
                 maxEterna: 7.5,
                 eterna: 1
-            }
-        },
-        {
-            block: 'eidolon:necrotic_focus',
-            stats: {
-                arcana: 2.5
             }
         }
     ];

@@ -106,7 +106,7 @@ onEvent('recipes', (event) => {
             ingredients: [
                 'naturesaura:tainted_gold',
                 'architects_palette:moonstone',
-                Item.of('eidolon:reaper_scythe', '{Damage:0}').weakNBT(),
+                Item.of('tconstruct:broad_blade', '{Material:"tconstruct:manyullyn"}'),
                 'naturesaura:token_sorrow',
                 '#forge:ingots/nether_brick',
                 'minecraft:soul_sand',

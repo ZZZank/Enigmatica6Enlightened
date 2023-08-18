@@ -39,14 +39,6 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}atum/linen_thread_from_cloth_scrap`
         },
         {
-            output: Item.of('eidolon:lead_ingot', 6),
-            pattern: ['AA', 'AA', 'AA'],
-            key: {
-                A: '#forge:ingots/lead'
-            },
-            id: `${id_prefix}eidolon/lead_ingot_conversion`
-        },
-        {
             output: Item.of('atum:marl', 4),
             pattern: ['AB', 'BA'],
             key: {
