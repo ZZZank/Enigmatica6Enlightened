@@ -371,7 +371,7 @@ onEvent('jei.information', (event) => {
         },
         {
             items: ['environmental:koi'],
-            text: [`See Koi Bucket`]
+            text: [`Will not spawn naturally. See Koi Bucket for how to obtain it. `]
         },
         {
             items: [
