@@ -9,11 +9,6 @@ onEvent('recipes', (event) => {
             output: 'naturesaura:bottle_two_the_rebottling',
             inputs: ['minecraft:glass_bottle', 'farmersdelight:tree_bark'],
             id: 'naturesaura:bottle_two_the_rebottling'
-        },
-        {
-            output: 'naturesaura:tainted_gold',
-            inputs: ['#forge:ingots/arcane_gold'],
-            id: `${id_prefix}arcane_gold_to_tainted_gold`
         }
     ];
 

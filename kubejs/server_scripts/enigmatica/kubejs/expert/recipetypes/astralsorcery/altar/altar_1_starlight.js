@@ -147,7 +147,7 @@ onEvent('recipes', (event) => {
             starlight: 1400,
             pattern: ['A___A', '_BCB_', '_GEG_', '_FFF_', 'D___D'],
             key: {
-                A: { tag: 'forge:ingots/arcane_gold' },
+                A: { item: 'naturesaura:tainted_gold' },
                 B: { item: 'astralsorcery:marble_chiseled' },
                 C: { item: 'minecraft:conduit' },
                 D: { item: 'astralsorcery:marble_pillar' },
