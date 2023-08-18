@@ -14,8 +14,8 @@ onEvent('recipes', (event) => {
             }*/
 
             {
-                input: 'quark:elder_prismarine',
-                output: 'minecraft:prismarine',
+                input: 'minecraft:prismarine',
+                output: 'quark:elder_prismarine',
                 syphon: 1000,
                 altarLevel: 0,
                 consumptionRate: 50,
