@@ -1,10 +1,6 @@
 onEvent('jei.information', (event) => {
     const recipes = [
         {
-            items: ['minecraft:drowned_spawn_egg'],
-            text: ['If a zombie dies of drowning underwater, such a zombie will become the Drowned, with his armor dropped. ']
-        },
-        {
             items: ['farmersdelight:ham'],
             text: ['Obtained by killing Pigs or Hoglins with a knife.']
         },

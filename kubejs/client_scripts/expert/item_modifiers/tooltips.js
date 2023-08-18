@@ -27,7 +27,7 @@ onEvent('item.tooltip', (event) => {
     const recipes = [
         {
             items: ['appliedenergistics2:me_p2p_tunnel', 'appliedenergistics2:memory_card'],
-            text: [Text.of('Channel is disabled in Expert.').blue()]
+            text: [Text.of('Channel is disabled in Expert.').green()]
         },
         {
             items: ['bloodmagic:soulpickaxe'],
