@@ -16,6 +16,7 @@ onEvent('item.tags', (event) => {
         'tconstruct:netherite_nugget'
     ]);
 
+    event.get('forge:nuggets/pewter').add('kubejs:pewter_nugget');
     event.get('forge:nuggets/thallasium').add('betterendforge:thallasium_nugget');
     event.get('forge:nuggets/terminite').add('betterendforge:terminite_nugget');
     event.get('forge:nuggets/tinkers_bronze').add('tconstruct:tinkers_bronze_nugget');

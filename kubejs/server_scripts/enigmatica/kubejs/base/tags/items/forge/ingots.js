@@ -14,7 +14,6 @@ onEvent('item.tags', (event) => {
         'byg:blue_nether_brick',
         'byg:yellow_nether_brick',
         'create:andesite_alloy',
-        'eidolon:arcane_gold_ingot',
         'kubejs:pewter_ingot',
         'immersiveengineering:ingot_aluminum',
         'immersiveengineering:ingot_constantan',
@@ -45,7 +44,7 @@ onEvent('item.tags', (event) => {
     event.get('forge:ingots/gaia_spirit').add('botania:gaia_ingot');
     event.add('forge:ingots/starmetal', ['astralsorcery:starmetal_ingot']);
     event.add('forge:ingots/andesite_alloy', ['create:andesite_alloy']);
-
+    event.add('forge:ingots/pewter', ['kubejs:pewter_ingot']);
     event.add('forge:ingots/aeternium', ['betterendforge:aeternium_ingot']);
     event.add('forge:ingots/terminite', ['betterendforge:terminite_ingot']);
     event.add('forge:ingots/thallasium', ['betterendforge:thallasium_ingot']);
