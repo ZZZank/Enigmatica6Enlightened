@@ -319,24 +319,6 @@
         "salt": 630165632,
         "disabled": false
       },
-      "eidolon:catacomb": {
-        "spacing": 11,
-        "separation": 7,
-        "salt": 1347,
-        "disabled": false
-      },
-      "eidolon:lab": {
-        "spacing": 7,
-        "separation": 5,
-        "salt": 1337,
-        "disabled": false
-      },
-      "eidolon:stray_tower": {
-        "spacing": 16,
-        "separation": 8,
-        "salt": 1341,
-        "disabled": false
-      },
       "minecraft:bastion_remnant": {
         "spacing": 27,
         "separation": 4,

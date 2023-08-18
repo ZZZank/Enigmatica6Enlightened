@@ -2,7 +2,7 @@ onEvent('item.tags', (event) => {
     event.add('forge:nuggets', [
         'betterendforge:terminite_nugget',
         'betterendforge:thallasium_nugget',
-        'eidolon:arcane_gold_nugget',
+        'kubejs:pewter_nugget',
         'immersiveengineering:nugget_aluminum',
         'immersiveengineering:nugget_constantan',
         'immersiveengineering:nugget_electrum',

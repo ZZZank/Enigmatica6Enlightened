@@ -135,8 +135,6 @@ const itemsToHide = [
     'create:copper_ore',
     'create:zinc_ore',
 
-    'eidolon:tallow',
-
     'emendatusenigmatica:sulfur_ore',
     'emendatusenigmatica:cinnabar_ore',
     'emendatusenigmatica:dimensional_crushed',

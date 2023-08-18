@@ -79,19 +79,6 @@
 			}]
 		}
 		{
-			title: "Eidolon"
-			x: 1.5d
-			y: 1.5d
-			dependencies: ["0000000000000B6C"]
-			id: "0000000000000FC3"
-			tasks: [{
-				id: "0000000000000FC4"
-				type: "item"
-				icon: "eidolon:pewter_inlay"
-				item: "eidolon:pewter_inlay"
-			}]
-		}
-		{
 			title: "Ars Nouveau"
 			x: 3.0d
 			y: 1.5d
