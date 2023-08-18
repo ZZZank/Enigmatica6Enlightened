@@ -8,15 +8,25 @@ onEvent('recipes', (event) => {
      */
     const recipes = [
         {
+            outputs: [{ data: { item: 'kubejs:wicked_weave', count: 2 } }],
+            inputs: [
+                { data: { item: 'atum:linen_cloth', count: 2 } },
+                { data: { item: 'ars_nouveau:mana_berry', count: 1 } },
+                { data: { item: 'ars_nouveau:mana_bloom', count: 1 } },
+                {
+                    type: 'masterfulmachinery:fluids',
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 500 }
+                }
+            ],
+            ticks: 100,
+            id: `${id_prefix}wicked_weave`
+        },
+        {
             outputs: [{ data: { item: 'eidolon:reaper_scythe', count: 1 } }],
             inputs: [
                 { data: { tag: 'forge:ingots/pewter', count: 3 } },
-                {
-                    data: { item: 'betterendforge:leather_wrapped_stick', count: 2 }
-                },
-                {
-                    data: { item: 'appliedenergistics2:charged_certus_quartz_crystal', count: 2 }
-                },
+                { data: { item: 'betterendforge:leather_wrapped_stick', count: 2 } },
+                { data: { item: 'appliedenergistics2:charged_certus_quartz_crystal', count: 2 } },
                 { data: { item: 'atum:cloth_scrap', count: 1 } },
                 { data: { item: 'atum:anubis_godshard', count: 1 } },
                 {
@@ -70,7 +80,7 @@ onEvent('recipes', (event) => {
         {
             outputs: [{ data: { item: 'eidolon:prestigious_palm', count: 1 } }],
             inputs: [
-                { data: { item: 'eidolon:wicked_weave', count: 4 } },
+                { data: { item: 'kubejs:wicked_weave', count: 4 } },
                 { data: { item: 'redstone_arsenal:flux_dust', count: 2 } },
                 { data: { item: 'redstone_arsenal:flux_gem', count: 1 } },
                 { data: { item: 'bloodmagic:reagentvoid', count: 1 } },
@@ -453,7 +463,7 @@ onEvent('recipes', (event) => {
                 output.type = 'masterfulmachinery:items';
             }
         });
-        
+
         event.custom(recipe).id(recipe.id);
     });
 });

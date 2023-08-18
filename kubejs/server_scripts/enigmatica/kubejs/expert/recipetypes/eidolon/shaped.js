@@ -60,16 +60,6 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}soul_enchanter`
         },
         {
-            output: Item.of('6x eidolon:wicked_weave'),
-            pattern: ['ABA', 'ACA', 'ABA'],
-            key: {
-                A: 'atum:linen_cloth',
-                B: Item.of('minecraft:potion', '{Potion:"ars_nouveau:spell_damage"}'),
-                C: { type: 'bloodmagic:bloodorb', orb_tier: 1 }
-            },
-            id: `${id_prefix}wicked_weave`
-        },
-        {
             output: Item.of('eidolon:bonechill_wand'),
             pattern: [' AB', 'CDA', 'EC '],
             key: {

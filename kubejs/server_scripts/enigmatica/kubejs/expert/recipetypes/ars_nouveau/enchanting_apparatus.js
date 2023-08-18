@@ -496,12 +496,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_nouveau:blaze_fiber',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:blaze_fiber',
-                'eidolon:wicked_weave',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:blaze_fiber',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:blaze_fiber'
             ],
             reagent: Item.of('atum:wanderer_helmet', '{Damage:0}').weakNBT(),
@@ -512,12 +512,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_nouveau:blaze_fiber',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:blaze_fiber',
-                'eidolon:wicked_weave',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:blaze_fiber',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:blaze_fiber'
             ],
             reagent: Item.of('atum:wanderer_chest', '{Damage:0}').weakNBT(),
@@ -528,12 +528,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_nouveau:blaze_fiber',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:blaze_fiber',
-                'eidolon:wicked_weave',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:blaze_fiber',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:blaze_fiber'
             ],
             reagent: Item.of('atum:wanderer_legs', '{Damage:0}').weakNBT(),
@@ -544,12 +544,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_nouveau:blaze_fiber',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:blaze_fiber',
-                'eidolon:wicked_weave',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:blaze_fiber',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:blaze_fiber'
             ],
             reagent: Item.of('atum:wanderer_boots', '{Damage:0}').weakNBT(),
@@ -561,12 +561,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_nouveau:end_fiber',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:end_fiber',
-                'eidolon:wicked_weave',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:end_fiber',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:end_fiber'
             ],
             reagent: Item.of('botania:manaweave_helmet', '{Damage:0}').weakNBT(),
@@ -577,12 +577,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_nouveau:end_fiber',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:end_fiber',
-                'eidolon:wicked_weave',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:end_fiber',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:end_fiber'
             ],
             reagent: Item.of('botania:manaweave_chestplate', '{Damage:0}').weakNBT(),
@@ -593,12 +593,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_nouveau:end_fiber',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:end_fiber',
-                'eidolon:wicked_weave',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:end_fiber',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:end_fiber'
             ],
             reagent: Item.of('botania:manaweave_leggings', '{Damage:0}').weakNBT(),
@@ -609,12 +609,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_nouveau:end_fiber',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:end_fiber',
-                'eidolon:wicked_weave',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:end_fiber',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:end_fiber'
             ],
             reagent: Item.of('botania:manaweave_boots', '{Damage:0}').weakNBT(),
@@ -1519,12 +1519,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_elemental:fire_focus',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 '#botania:runes/fire',
-                'eidolon:wicked_weave',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
+                'kubejs:wicked_weave',
                 '#botania:runes/fire',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_elemental:fire_focus'
             ],
             sourceCost: 10000,
@@ -1535,12 +1535,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_elemental:water_focus',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 '#botania:runes/water',
-                'eidolon:wicked_weave',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
+                'kubejs:wicked_weave',
                 '#botania:runes/water',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_elemental:water_focus'
             ],
             sourceCost: 10000,
@@ -1551,12 +1551,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_elemental:earth_focus',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 '#botania:runes/earth',
-                'eidolon:wicked_weave',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
+                'kubejs:wicked_weave',
                 '#botania:runes/earth',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_elemental:earth_focus'
             ],
             sourceCost: 10000,
@@ -1567,12 +1567,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_elemental:air_focus',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 '#botania:runes/air',
-                'eidolon:wicked_weave',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
+                'kubejs:wicked_weave',
                 '#botania:runes/air',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_elemental:air_focus'
             ],
             sourceCost: 10000,
@@ -1678,14 +1678,14 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 'appliedenergistics2:charged_certus_quartz_crystal',
-                'eidolon:wicked_weave',
-                'eidolon:wicked_weave',
-                'eidolon:wicked_weave',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
+                'kubejs:wicked_weave',
+                'kubejs:wicked_weave',
+                'kubejs:wicked_weave',
                 'appliedenergistics2:charged_certus_quartz_crystal',
-                'eidolon:wicked_weave'
+                'kubejs:wicked_weave'
             ],
             sourceCost: 100,
             reagent: 'atum:wanderer_boots',
@@ -1694,14 +1694,14 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 'appliedenergistics2:charged_certus_quartz_crystal',
-                'eidolon:wicked_weave',
-                'eidolon:wicked_weave',
-                'eidolon:wicked_weave',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
+                'kubejs:wicked_weave',
+                'kubejs:wicked_weave',
+                'kubejs:wicked_weave',
                 'appliedenergistics2:charged_certus_quartz_crystal',
-                'eidolon:wicked_weave'
+                'kubejs:wicked_weave'
             ],
             sourceCost: 100,
             reagent: 'atum:wanderer_chest',
@@ -1710,14 +1710,14 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 'appliedenergistics2:charged_certus_quartz_crystal',
-                'eidolon:wicked_weave',
-                'eidolon:wicked_weave',
-                'eidolon:wicked_weave',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
+                'kubejs:wicked_weave',
+                'kubejs:wicked_weave',
+                'kubejs:wicked_weave',
                 'appliedenergistics2:charged_certus_quartz_crystal',
-                'eidolon:wicked_weave'
+                'kubejs:wicked_weave'
             ],
             sourceCost: 100,
             reagent: 'atum:wanderer_helmet',
