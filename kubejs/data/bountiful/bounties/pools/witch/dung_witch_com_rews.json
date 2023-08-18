@@ -31,8 +31,8 @@
         { "type": "item", "content": "naturesaura:gold_powder", "amountRange": {"min": 1, "max": 1}, "unitWorth": 350, "weight":100},
         { "type": "item", "content": "naturesaura:gold_leaf", "amountRange": {"min": 1, "max": 1}, "unitWorth": 350, "weight":100},
         { "type": "item", "content": "ars_nouveau:void_jar", "amountRange": {"min": 1, "max": 1}, "unitWorth": 250, "weight":10},
-        { "type": "item", "content": "eidolon:wraith_heart", "amountRange": {"min": 1, "max": 1}, "unitWorth": 100, "weight":20},
-        { "type": "item", "content": "eidolon:zombie_heart", "amountRange": {"min": 1, "max": 1}, "unitWorth": 100, "weight":20},
+        { "type": "item", "content": "alexmobs:soul_heart", "amountRange": {"min": 1, "max": 1}, "unitWorth": 100, "weight":20},
+        { "type": "item", "content": "kubejs:zombie_heart", "amountRange": {"min": 1, "max": 1}, "unitWorth": 100, "weight":20},
         { "type": "item", "content": "darkutils:book_restore", "amountRange": {"min": 1, "max": 1}, "unitWorth": 250, "weight":100},
         { "type": "item", "content": "occultism:candle_white", "amountRange": {"min": 8, "max": 12}, "unitWorth": 150, "weight":100}
     ]

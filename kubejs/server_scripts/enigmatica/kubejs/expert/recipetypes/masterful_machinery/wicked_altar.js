@@ -123,9 +123,9 @@ onEvent('recipes', (event) => {
             inputs: [
                 { data: { item: 'ars_nouveau:dull_trinket', count: 1 } },
                 { data: { item: 'create:brass_hand', count: 1 } },
-                { data: { item: 'eidolon:zombie_heart', count: 1 } },
+                { data: { item: 'kubejs:zombie_heart', count: 1 } },
                 { data: { item: 'redstone_arsenal:flux_gem', count: 2 } },
-                { data: { item: 'eidolon:wraith_heart', count: 1 } },
+                { data: { item: 'alexmobs:soul_heart', count: 1 } },
                 {
                     data: { item: 'glassential:glass_dark_ethereal_reverse', count: 1 }
                 },

@@ -286,7 +286,7 @@ onEvent('recipes', (event) => {
                 '#botania:runes/fire',
                 '#botania:runes/autumn',
                 '#botania:runes/envy',
-                ['eidolon:zombie_heart', 'eidolon:wraith_heart']
+                '#forge:heart'
             ],
             mana: 96000,
             output: 'mythicbotany:helheim_rune',

@@ -35,7 +35,7 @@
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
 
-        "mainOutput": "eidolon:zombie_heart",
+        "mainOutput": "kubejs:zombie_heart",
         "mainOutputWeight": 0.05,
         "mainOutputCount": 1,
 
@@ -62,7 +62,7 @@
     },
     "BreedData": {
         "isBreedable": true,
-        "feedItem": "eidolon:zombie_heart",
+        "feedItem": "kubejs:zombie_heart",
         "feedAmount": 1,
         "childGrowthDelay": -24000,
         "breedDelay": 6000

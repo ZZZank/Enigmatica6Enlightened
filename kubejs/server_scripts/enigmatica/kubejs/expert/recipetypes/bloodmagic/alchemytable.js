@@ -264,7 +264,7 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                'eidolon:zombie_heart',
+                'kubejs:zombie_heart',
                 'undergarden:raw_dweller_meat',
                 'undergarden:ditchbulb',
                 'projectvibrantjourneys:charred_bones',

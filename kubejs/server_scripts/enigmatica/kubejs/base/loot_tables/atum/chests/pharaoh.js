@@ -29,7 +29,7 @@ onEvent('chest.loot_tables', (event) => {
                     count: 1
                 },
                 {
-                    item: 'eidolon:zombie_heart',
+                    item: 'kubejs:zombie_heart',
                     weight: 20,
                     count: 1
                 }

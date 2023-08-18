@@ -53,7 +53,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 { item: 'darkutils:book_runelic', weight: 100 },
                 { item: 'minecraft:gold_nugget', weight: 100, amount: [8.0, 16.0] },
                 { item: 'emendatusenigmatica:silver_nugget', weight: 100, amount: [8.0, 16.0] },
-                { item: 'eidolon:zombie_heart', weight: 100 },
+                { item: 'kubejs:zombie_heart', weight: 100 },
                 { item: 'aquaculture:neptunium_fillet_knife', weight: 100, enchantRange: [30.0, 40.0] },
                 { item: 'aquaculture:neptunium_ingot', weight: 100, amount: [1.0, 3.0] },
                 { item: 'aquaculture:diamond_hook', weight: 20 },
@@ -487,8 +487,8 @@ onEvent('server.datapack.low_priority', (event) => {
                 { item: 'naturesaura:gold_powder', weight: 100 },
                 { item: 'naturesaura:gold_leaf', weight: 100 },
                 { item: 'ars_nouveau:void_jar', weight: 10 },
-                { item: 'eidolon:wraith_heart', weight: 20 },
-                { item: 'eidolon:zombie_heart', weight: 20 },
+                { item: 'alexmobs:soul_heart', weight: 20 },
+                { item: 'kubejs:zombie_heart', weight: 20 },
                 { item: 'darkutils:book_restore', weight: 100 },
                 { item: 'occultism:candle_white', weight: 100, amount: [8.0, 12.0] }
             ]
