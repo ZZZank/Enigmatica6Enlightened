@@ -26,6 +26,10 @@ onEvent('item.tooltip', (event) => {
     const disabledInExpert = Text.of('Disabled in Expert Mode.').red();
     const recipes = [
         {
+            items: ['appliedenergistics2:me_p2p_tunnel', 'appliedenergistics2:memory_card'],
+            text: [Text.of('Channel is disabled in Expert.').blue()]
+        },
+        {
             items: ['bloodmagic:soulpickaxe'],
             text: [Text.of('Capable of mining Iesnium.').color('#7e24b3')]
         },
