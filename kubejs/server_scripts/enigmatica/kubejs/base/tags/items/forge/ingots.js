@@ -15,7 +15,7 @@ onEvent('item.tags', (event) => {
         'byg:yellow_nether_brick',
         'create:andesite_alloy',
         'eidolon:arcane_gold_ingot',
-        'eidolon:pewter_ingot',
+        'kubejs:pewter_ingot',
         'immersiveengineering:ingot_aluminum',
         'immersiveengineering:ingot_constantan',
         'immersiveengineering:ingot_electrum',

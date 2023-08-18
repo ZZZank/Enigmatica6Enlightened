@@ -8,9 +8,9 @@ onEvent('recipes', (event) => {
         {
             result: { name: 'materialis:reaping', level: 1 },
             inputs: [
-                { item: 'eidolon:tattered_cloth' },
+                { item: 'atum:cloth_scrap' },
                 { item: 'eidolon:reaper_scythe' },
-                { item: 'eidolon:tattered_cloth' },
+                { item: 'atum:cloth_scrap' },
                 { item: 'appliedenergistics2:charged_certus_quartz_crystal' },
                 { item: 'appliedenergistics2:charged_certus_quartz_crystal' }
             ],
@@ -22,9 +22,9 @@ onEvent('recipes', (event) => {
         {
             result: { name: 'materialis:reaping', level: 1 },
             inputs: [
-                { item: 'eidolon:tattered_cloth' },
+                { item: 'atum:cloth_scrap' },
                 { item: 'eidolon:reaper_scythe' },
-                { item: 'eidolon:tattered_cloth' },
+                { item: 'atum:cloth_scrap' },
                 { item: 'appliedenergistics2:charged_certus_quartz_crystal' },
                 { item: 'appliedenergistics2:charged_certus_quartz_crystal' }
             ],

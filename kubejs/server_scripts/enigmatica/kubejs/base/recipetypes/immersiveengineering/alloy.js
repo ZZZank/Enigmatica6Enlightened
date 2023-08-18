@@ -8,9 +8,9 @@ onEvent('recipes', (event) => {
             id: 'immersiveengineering:alloysmelter/brass'
         },
         {
-            input1: '#forge:ingots/iron',
+            input1: '#forge:ingots/silver',
             input2: '#forge:ingots/lead',
-            output: Item.of('eidolon:pewter_ingot', 2),
+            output: Item.of('kubejs:pewter_ingot', 2),
             id: `${id_prefix}pewter_ingot`
         },
         {

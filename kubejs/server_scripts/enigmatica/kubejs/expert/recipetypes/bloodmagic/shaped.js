@@ -64,7 +64,7 @@ onEvent('recipes', (event) => {
             pattern: ['  A', 'BA ', 'CB '],
             key: {
                 A: '#forge:ingots/silicon_bronze',
-                B: 'eidolon:pewter_inlay',
+                B: '#forge:inlays/pewter',
                 C: '#forge:rods/wooden'
             },
             id: 'bloodmagic:altar/daggerofsacrifice'

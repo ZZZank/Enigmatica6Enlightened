@@ -94,7 +94,7 @@ onEvent('recipes', (event) => {
             id: 'ars_nouveau:glyph_launch'
         },
         {
-            input: 'eidolon:tattered_cloth',
+            input: 'atum:cloth_scrap',
             output: 'ars_nouveau:glyph_phantom_block',
             tier: 'ONE',
             id: 'ars_nouveau:glyph_phantom_block'

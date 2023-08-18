@@ -479,7 +479,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 { item: 'emendatusenigmatica:lead_nugget', weight: 100, amount: [8.0, 16.0] },
                 { item: 'emendatusenigmatica:silver_nugget', weight: 100, amount: [8.0, 16.0] },
                 { item: '#forge:nuggets/signalum', weight: 100, amount: [8.0, 32.0] },
-                { item: 'eidolon:pewter_nugget', weight: 100, amount: [8.0, 16.0] },
+                { item: 'kubejs:pewter_nugget', weight: 100, amount: [8.0, 16.0] },
                 { item: 'naturesaura:token_sorrow', weight: 50 },
                 { item: 'naturesaura:token_anger', weight: 50 },
                 { item: 'naturesaura:token_fear', weight: 50 },
@@ -536,9 +536,9 @@ onEvent('server.datapack.low_priority', (event) => {
                 { item: 'ars_nouveau:dull_trinket', weight: 100 },
                 { item: 'eidolon:basic_ring', weight: 100 },
                 { item: 'appliedenergistics2:charged_certus_quartz_crystal', weight: 100, amount: [8.0, 16.0] },
-                { item: 'eidolon:pewter_ingot', weight: 100, amount: [8.0, 16.0] },
+                { item: 'kubejs:pewter_ingot', weight: 100, amount: [8.0, 16.0] },
                 { item: 'naturesaura:tainted_gold', weight: 50, amount: [8.0, 16.0] },
-                { item: 'eidolon:pewter_inlay', weight: 100, amount: [1.0, 2.0] },
+                { item: 'kubejs:pewter_inlay', weight: 100, amount: [1.0, 2.0] },
                 { item: 'resourcefulbees:tainted_honeycomb', weight: 100, amount: [1.0, 2.0] }
             ]
         },

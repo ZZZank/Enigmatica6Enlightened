@@ -17,7 +17,7 @@ onEvent('recipes', (event) => {
                 {
                     data: { item: 'appliedenergistics2:charged_certus_quartz_crystal', count: 2 }
                 },
-                { data: { item: 'eidolon:tattered_cloth', count: 1 } },
+                { data: { item: 'atum:cloth_scrap', count: 1 } },
                 { data: { item: 'atum:anubis_godshard', count: 1 } },
                 {
                     type: 'masterfulmachinery:fluids',

@@ -17,7 +17,7 @@ onEvent('recipes', (event) => {
             },
             {
                 ingredients: [{ tag: 'forge:ingots/iron' }, { tag: 'forge:ingots/lead' }],
-                result: Item.of('eidolon:pewter_ingot', 2),
+                result: Item.of('kubejs:pewter_ingot', 2),
                 experience: 2,
                 smelttime: 300
             },

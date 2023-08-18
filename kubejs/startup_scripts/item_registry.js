@@ -14,6 +14,7 @@ onEvent('item.registry', (event) => {
         'altered_recipe_indicator',
         'disabled_recipe_indicator',
         'dead_koi_bucket',
+        'pewter_inlay',
 
         // Expert
         'observatory_lens',
@@ -479,6 +480,12 @@ onEvent('item.registry', (event) => {
         { name: 'abbee',          band: 0xe5ded5, outline: 0xffb1c5 },
     ];
 
+    let customTextureItems = [
+        { name: 'pewter_ingot', texturePath: 'create:item/zinc_ingot' },
+        { name: 'pewter_nugget', texturePath: 'create:item/zinc_nugget' },
+        { name: 'wicked_weave', texturePath: 'thermal:item/beekeeper_fabric' }        
+    ];
+
     let metalTypes = ['suffused', 'fulminated', 'levigated', 'sliver'];
 
     metalTypes.forEach((metalType) => {
@@ -507,6 +514,10 @@ onEvent('item.registry', (event) => {
             .parentModel('kubejs:item/bee_larva')
             .color(1, bee.band)
             .color(2, bee.outline);
+    });
+
+    customTextureItems.forEach((item) => {
+        event.create(item.name).group('KubeJS').texture(item.texturePath);
     });
 
     // Custom Occultism Miners

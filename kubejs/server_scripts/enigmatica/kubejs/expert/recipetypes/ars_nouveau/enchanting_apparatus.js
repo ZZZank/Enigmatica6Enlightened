@@ -65,8 +65,8 @@ onEvent('recipes', (event) => {
                 'atum:papyrus_plant',
                 '#forge:dusts/lapis',
                 'atum:papyrus_plant',
-                'eidolon:pewter_inlay',
-                'eidolon:pewter_inlay',
+                '#forge:inlays/pewter',
+                '#forge:inlays/pewter',
                 'thermal:phytogro',
                 'betterendforge:andesite_pedestal',
                 'thermal:phytogro'
@@ -91,14 +91,14 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                'eidolon:pewter_inlay',
+                '#forge:inlays/pewter',
                 'occultism:stable_wormhole',
-                'eidolon:pewter_inlay',
+                '#forge:inlays/pewter',
                 'bloodmagic:reinforcedslate',
                 'bloodmagic:reinforcedslate',
-                'eidolon:pewter_inlay',
+                '#forge:inlays/pewter',
                 'occultism:otherstone_pedestal',
-                'eidolon:pewter_inlay'
+                '#forge:inlays/pewter'
             ],
             reagent: 'farmersdelight:cooking_pot',
             sourceCost: 5000,

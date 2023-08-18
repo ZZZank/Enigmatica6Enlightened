@@ -157,7 +157,7 @@ onEvent('recipes', (event) => {
             },
             {
                 inputs: ['#forge:ingots/iron', '#forge:ingots/lead'],
-                output: Item.of('eidolon:pewter_ingot', 2),
+                output: Item.of('kubejs:pewter_ingot', 2),
                 id: `${id_prefix}pewter_ingot`
             },
             {

@@ -133,7 +133,7 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 '2x resourcefulbees:tainted_honeycomb',
-                'eidolon:pewter_inlay',
+                '#forge:inlays/pewter',
                 '#forge:gems/mana',
                 '4x architects_palette:sunmetal_blend'
             ],

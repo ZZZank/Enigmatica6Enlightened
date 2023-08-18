@@ -285,7 +285,7 @@ onEvent('chest.loot_tables', (event) => {
                     weight: 30
                 },
                 {
-                    item: 'eidolon:tattered_cloth',
+                    item: 'atum:cloth_scrap',
                     count: [2, 5],
                     weight: 30
                 },

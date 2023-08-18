@@ -8,9 +8,9 @@ onEvent('recipes', (event) => {
             id: 'immersiveengineering:arcfurnace/alloy_brass'
         },
         {
-            input1: '#forge:ingots/iron',
+            input1: '#forge:ingots/silver',
             secondaries: ['#forge:ingots/lead'],
-            outputs: [Item.of('eidolon:pewter_ingot', 2)],
+            outputs: [Item.of('kubejs:pewter_ingot', 2)],
             id: `${id_prefix}pewter_ingot`
         },
         {

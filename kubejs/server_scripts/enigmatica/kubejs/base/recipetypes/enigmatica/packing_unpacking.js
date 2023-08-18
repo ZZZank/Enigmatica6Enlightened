@@ -77,28 +77,16 @@ onEvent('recipes', (event) => {
         },
 
         {
-            output: '9x eidolon:pewter_ingot',
-            input: '#forge:storage_blocks/pewter',
-            mold: '#thermal:crafting/dies/unpacking',
-            id_suffix: 'pewter_block_to_ingots'
-        },
-        {
-            output: '9x eidolon:pewter_nugget',
+            output: '9x kubejs:pewter_nugget',
             input: '#forge:ingots/pewter',
             mold: '#thermal:crafting/dies/unpacking',
             id_suffix: 'pewter_ingot_to_nuggets'
         },
         {
-            output: 'eidolon:pewter_ingot',
+            output: 'kubejs:pewter_ingot',
             input: '9x #forge:nuggets/pewter',
             mold: '#thermal:crafting/dies/packing_3x3',
             id_suffix: 'pewter_nuggets_to_ingots'
-        },
-        {
-            output: 'eidolon:pewter_block',
-            input: '9x #forge:ingots/pewter',
-            mold: '#thermal:crafting/dies/packing_3x3',
-            id_suffix: 'pewter_ingots_to_block'
         },
 
         {

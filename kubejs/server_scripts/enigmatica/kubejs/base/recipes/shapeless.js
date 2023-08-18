@@ -484,11 +484,6 @@ onEvent('recipes', (event) => {
             id: 'mythicbotany:wither_aconite_floating'
         },
         {
-            output: Item.of('eidolon:pewter_blend', 2),
-            inputs: ['#forge:dusts/lead', '#forge:dusts/iron'],
-            id: 'eidolon:pewter_blend'
-        },
-        {
             output: Item.of('minecraft:string', 3),
             inputs: ['#forge:crops/flax', '#forge:crops/flax', '#forge:crops/flax']
         },
