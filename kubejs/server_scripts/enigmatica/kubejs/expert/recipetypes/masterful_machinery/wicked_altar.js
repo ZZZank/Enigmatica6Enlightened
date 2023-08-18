@@ -125,7 +125,7 @@ onEvent('recipes', (event) => {
                 { data: { item: 'create:brass_hand', count: 1 } },
                 { data: { item: 'kubejs:zombie_heart', count: 1 } },
                 { data: { item: 'redstone_arsenal:flux_gem', count: 2 } },
-                { data: { item: 'alexmobs:soul_heart', count: 1 } },
+                { data: { item: 'alexsmobs:soul_heart', count: 1 } },
                 {
                     data: { item: 'glassential:glass_dark_ethereal_reverse', count: 1 }
                 },

@@ -11,7 +11,7 @@ onEvent('entity.loot_tables', (event) => {
 
     event.modifyEntity('minecraft:drowned', (table) => {
         table.addPool((pool) => {
-            pool.addItem('alexmobs:soul_heart').killedByPlayer().randomChanceWithLooting(0.1, 0.05);
+            pool.addItem('alexsmobs:soul_heart').killedByPlayer().randomChanceWithLooting(0.1, 0.05);
         });
     });
 });

@@ -5,7 +5,7 @@
         { "type": "item", "content": "resourcefulbees:tainted_honeycomb", "amountRange": {"min": 4, "max": 8}, "unitWorth": 100, "weight":200},
         { "type": "item", "content": "kubejs:zombie_heart", "amountRange": {"min": 4, "max": 8}, "unitWorth": 100, "weight":200},
         { "type": "item", "content": "eidolon:tattered_cloth", "amountRange": {"min": 4, "max": 8}, "unitWorth": 100, "weight":200},
-        { "type": "item", "content": "alexmobs:soul_heart", "amountRange": {"min": 4, "max": 8}, "unitWorth": 100, "weight":200},
+        { "type": "item", "content": "alexsmobs:soul_heart", "amountRange": {"min": 4, "max": 8}, "unitWorth": 100, "weight":200},
         { "type": "item", "content": "appliedenergistics2:charged_certus_quartz_crystal", "amountRange": {"min": 1, "max": 2}, "unitWorth": 200, "weight":100},
         { "type": "item", "content": "kubejs:death_essence", "amountRange": {"min": 2, "max": 4}, "unitWorth": 200, "weight":100},
         { "type": "item", "content": "kubejs:crimson_essence", "amountRange": {"min": 2, "max": 4}, "unitWorth": 200, "weight":100},

@@ -74,7 +74,7 @@ onEvent('recipes', (event) => {
             pattern: [' AB', 'CDA', 'EC '],
             key: {
                 A: '#forge:ingots/pewter',
-                B: 'alexmobs:soul_heart',
+                B: 'alexsmobs:soul_heart',
                 C: '#forge:rods/silver',
                 D: 'minecraft:bone',
                 E: '#forge:inlays/pewter'
