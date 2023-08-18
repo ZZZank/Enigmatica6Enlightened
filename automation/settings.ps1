@@ -101,7 +101,6 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"craftingtweaks-client.toml",
 	"create-client.toml",
 	"cucumber-client.toml",
-	"eidolon-client.toml",
 	"emojiful-client.toml",
 	"entity_culling-client.toml",
 	"extremesoundmuffler-client.toml", 
