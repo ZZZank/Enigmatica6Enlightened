@@ -1,6 +1,10 @@
 onEvent('jei.information', (event) => {
     const recipes = [
         {
+            items: ['upgrade_aquatic:elder_guardian_spine'],
+            text: ['Obtained by killing Elder Guardian.']
+        },
+        {
             items: ['farmersdelight:ham'],
             text: ['Obtained by killing Pigs or Hoglins with a knife.']
         },
