@@ -366,7 +366,7 @@
 			title: "Blood Magic: Part One"
 			x: 1.5d
 			y: 2.6d
-			dependencies: ["0000000000000FC3"]
+			dependencies: ["0000000000000FC5"]
 			id: "573D1ADF4FBE3044"
 			tasks: [{
 				id: "50E8AA4A66F47704"

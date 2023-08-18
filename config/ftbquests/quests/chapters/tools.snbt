@@ -657,7 +657,6 @@
 				"● Radiation Protection"
 				"● Energy Shielding"
 			]
-			dependencies: ["00000000000007A9"]
 			id: "0000000000000435"
 			tasks: [{
 				id: "0000000000000436"
@@ -692,7 +691,6 @@
 				"● Radiation Protection"
 				"● Energy Shielding"
 			]
-			dependencies: ["00000000000007A9"]
 			id: "0000000000000437"
 			tasks: [{
 				id: "0000000000000438"
@@ -725,7 +723,6 @@
 				"● Radiation Protection"
 				"● Energy Shielding"
 			]
-			dependencies: ["00000000000007A9"]
 			id: "0000000000000439"
 			tasks: [{
 				id: "000000000000043A"
@@ -759,7 +756,6 @@
 				"● Radiation Protection"
 				"● Energy Shielding"
 			]
-			dependencies: ["00000000000007A9"]
 			id: "000000000000043B"
 			tasks: [{
 				id: "000000000000043C"
@@ -787,7 +783,6 @@
 			y: -8.0d
 			subtitle: "Soylent Green"
 			description: ["All your essential vitamins, minerals, and amino acids, neatly condensed into a convenient chewy paste. Yum."]
-			dependencies: ["00000000000006A5"]
 			id: "000000000000043D"
 			tasks: [
 				{
@@ -974,7 +969,6 @@
 			y: -8.5d
 			subtitle: "Don't Leave That Plasma Cutter Running"
 			description: ["A basic multi-tool with built in vein mining and excellent attack damage."]
-			dependencies: ["00000000000006C5"]
 			id: "000000000000044F"
 			tasks: [{
 				id: "0000000000000450"
@@ -1012,7 +1006,6 @@
 				"● Teleportation Unit"
 				"● Farming Unit"
 			]
-			dependencies: ["00000000000007A9"]
 			id: "0000000000000451"
 			tasks: [{
 				id: "0000000000000452"
@@ -1039,7 +1032,6 @@
 			y: -7.5d
 			subtitle: "Be the Change"
 			description: ["Used for applying all upgrades to the MekaTool and MekaSuit pieces."]
-			dependencies: ["00000000000007A9"]
 			id: "0000000000000453"
 			tasks: [{
 				id: "0000000000000454"
