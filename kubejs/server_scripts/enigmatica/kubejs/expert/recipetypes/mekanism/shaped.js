@@ -18,6 +18,28 @@ onEvent('recipes', (event) => {
 
     const recipes = [
         {
+            output: Item.of('mekanism:teleporter'),
+            pattern: ['ABA', 'CDC', 'AEA'],
+            key: {
+                A: 'mekanism:teleporter_frame',
+                B: 'immersiveengineering:coil_hv',
+                C: 'immersiveengineering:current_transformer',
+                D: '#industrialforegoing:machine_frame/simple',
+                E: Item.of('waystones:warp_stone', '{Damage:0}').weakNBT()
+            },
+            id: `${id_prefix}teleporter_alternate`
+        },
+        {
+            output: Item.of('3x mekanism:teleporter_frame'),
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: '#enigmatica:stonecuttables/arcane_stone',
+                B: 'immersiveengineering:electron_tube',
+                C: 'quark:lime_rune'
+            },
+            id: 'mekanism:teleporter_frame'
+        },
+        {
             output: 'mekanism:fuelwood_heater',
             pattern: ['BAB', 'CDC', 'BAB'],
             key: {

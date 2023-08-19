@@ -232,18 +232,19 @@ onEvent('recipes', (event) => {
             id: 'integrateddynamics:crafting/logic_programmer'
         },
         {
-            output: Item.of('2x portality:controller'),
-            pattern: ['ABBBA', 'CDEDC', 'CFGFC', 'CDEDC', 'ABBBA'],
+            output: Item.of('mekanism:teleporter', 2),
+            pattern: ['ABBBA', 'CDEDC', 'CFGFC', 'CDHDC', 'ABBBA'],
             key: {
-                A: 'portality:frame',
+                A: 'quark:lime_rune',
                 B: 'immersiveengineering:coil_lv',
                 C: 'immersiveengineering:electron_tube',
-                D: 'immersiveengineering:wirecoil_redstone',
+                D: 'mekanism:teleporter_frame',
                 E: 'pneumaticcraft:advanced_pcb',
                 F: 'immersiveengineering:current_transformer',
-                G: 'xnet:controller'
+                G: 'xnet:controller',
+                H: Item.of('waystones:warp_stone', '{Damage:0}').weakNBT()
             },
-            id: 'portality:controller'
+            id: 'mekanism:teleporter'
         },
         {
             output: 'rftoolsutility:environmental_controller',
@@ -797,12 +798,12 @@ onEvent('recipes', (event) => {
             pattern: ['AABAA', 'ACCCA', 'DCECF', 'ACCCA', 'AAGAA'],
             key: {
                 A: 'compactmachines:wall',
-                B: 'portality:module_energy',
+                B: 'thermal:upgrade_augment_1',
                 C: `resourcefulbees:${compactmachine.comb}_honeycomb_block`,
-                D: 'portality:module_items',
-                E: 'portality:controller',
-                F: 'portality:module_fluids',
-                G: 'portality:module_interdimensional'
+                D: 'modularrouters:sender_module_3',
+                E: 'mekanism:teleporter',
+                F: 'modularrouters:fluid_module_2',
+                G: ['rftoolsutility:matter_transmitter', 'rftoolsutility:matter_receiver']
             },
             id: `${id_prefix}compact_machine_${compactmachine.tier}`
         });

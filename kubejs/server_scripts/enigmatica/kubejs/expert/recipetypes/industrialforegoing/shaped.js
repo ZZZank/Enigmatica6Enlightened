@@ -240,10 +240,10 @@ onEvent('recipes', (event) => {
             pattern: ['ABA', 'CDC', 'AEA'],
             key: {
                 A: '#forge:plastic',
-                B: 'portality:module_items',
-                C: 'portality:frame',
+                B: 'modularrouters:distributor_module',
+                C: 'mekanism:teleporter_frame',
                 D: 'enderstorage:ender_chest',
-                E: 'portality:controller'
+                E: 'mekanism:teleporter'
             },
             id: 'industrialforegoing:black_hole_controller'
         },
