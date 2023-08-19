@@ -21,7 +21,7 @@ onEvent('recipes', (event) => {
             pattern: ['ABA'],
             key: {
                 A: '#forge:nuggets/invar',
-                B: 'minecraft:cobweb',
+                B: 'minecraft:cobweb'
             },
             id: 'create:crafting/kinetics/filter'
         },
