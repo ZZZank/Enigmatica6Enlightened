@@ -52,13 +52,6 @@
         },
         {
           "item_type": "buildinggadgets:simple_item",
-          "count": 1,
-          "item": {
-            "id": "minecraft:grass"
-          }
-        },
-        {
-          "item_type": "buildinggadgets:simple_item",
           "count": 3,
           "item": {
             "id": "minecraft:nether_brick_fence"
@@ -123,5 +116,5 @@
       ]
     }
   },
-  "body": "H4sIAAAAAAAAALVWS4/bNhAeS6R246RN0weKokWxh556y6ENoFv/QJFbU1+EsUnLgiVS5SNu+uszJMfrbZEia2fXMPQNKembb160lwBPQCgMuASAb5bFhhqWXrsBx+Ef7egGLEH6gEEvYfna2Vm7MGh/Dc0WN4PpQRrrwg6uQfyOk4bv0PnO2PhWY2wP6BQ90/lgjU5Ml7kQGn14GA9Hkm/Xo7Vqwn7YtAeywjDqGSmO+1N8/1dEt28VXTo9Ku262Q1+QjecpeTVRMFpt43jhJsdvevetYdhs9eqwzGg67ZjHFQ3U5aL6bvBzDGcn87rHdK7QU8gtzh6UvAk7YxDvwu3W+VNuFJ6i3E8Zf1mrQPJ1EZtret1i0ZpT2TdrMkIOJ6v52q2B2JU7PvW1Q8TZWHjcBtai3vKqvY+OvI0JmWXd5GyB/O4fXrQd/r0548VdmNNcHYcE/e92+XXj7GmApduSZbvbAwXdcvTA+250fY9VUgEF08FenEqEMWg4vCp9MfmOyayijN1Yh6q4ppWyiGV7z+t8lOce4dKd0jDGGiWyyD2MRUUTefn+w3j/Q4eyvdM7d5u0L2lfM9xmveD6V6+PN9DYT7G/cFkSE+l252W5Zw9Lkuv/f/kGB12lIm1o97ottpszjmTfjQYaOI8RodtwMEECre3o+ro2NzsLw2XS3lxtP/uwk8N9nEq8qgaP3zQPMgP4i/nnisX/gjd/m0ouXzQGJ6fsk2ngvfpD049Wy/o2dfphQrKp87XBQgou9WiYM0oFsBPpG+dns+mzFjBYlGwWvB9XgtGedyvGGtGAcycpGTeKlE2GbNJF5H4K+avmLdi3oxNRglVlbABWTGfSHjFIdblQjmWUEJo4NZlnZKzWJR1xSgYJWOTMfupU7rrjA2IjE+T37xuMj4DyS5JB+FnIDN+DrVM+BxExi9AZnyRdArWKVifYH2EXyZ9gvUJ1idYn2B9gvUJzoNg/4RfpWRL5pfJmczfXD/JvJLrJ5lfMr/k+kmun2Rewq8TVZP4K8aaMYsovA33U8O8zRKanaafKkczgNT61kGzWq3Q7OnO2kajfA2COvjPUr5kvjma+Pcq+SxmekAW881xdzCr3FY0CiaNwrM/8uze/JZmlyp9Z3Kuc2PfrOMwpinrUfU6+FbFaXrX3Rmw928TUjEgDAAA"
+  "body": "H4sIAAAAAAAAALVWTY/bNhAdS6R210mbJi1QFC2KPfTUWw5tAN/6B9rekvoijEVaFiyRKj/ipr++Q3K8uy1SxHayC0NvSElv3nxRuwS4AaEw4BIAvloWG2pYeu0GHIe/taMbsATpAwa9hOXvzs7ahUH7a2i22A2mB2msCzu4BvErThq+QedbY+NbjXF1QKfomdYHa3RiusyF0OjDp/FwJPl6M1qrJuyHbnUgKwyjnpHiOJ3i2z8juv1K0aXVo9Kund3gJ3TDWUpeTRScdts4Ttjt6F33bnUYur1WLY4BXbsd46DambJcTN8OZo7h/HRe75DeDXoCucXRk4KbtDMO/S7cbZU34UrpLcbxPuu3Gx1IpjZqa12vV2iU9kTWzpqMgOP5eq5meyBGxb7vXH03URY6h9uwsrinrGrvoyNPY1J2eRcpezCP26cH/aBPf/xQYTtrgrPjmLhPbpefP8SaCly6JVm+tTFc1C1PDrTnRtv3VCERXLwv0PP7AlEMKg4fS39svmMiqzhTJ+ahKq5ppRxS+f7TKj/EuXeodIs0jIFmuQxiH1NB0bR+Pm0YTzt4KN8ztfuqQ/eW8j3Had4Ppn358nwPhfkY93uTIT2Vbne/LOfscVl67f8nx+iwo0xsHPVGu9WmO+dM+t5goInzGB2uAg4mULi9HVVLx2a3vzRcLuXF0f67Cz822MepyKNqfP9B80k+iD+de65c+BG6+7eh5PKUGG6gnq0XxPlbIq6g/NX5ugABZbdaFKwZxQL4ifSr0/PZlBkrWCwKVgu+z2vBKI/7FWPNKICZk5TMWyXKJmM26SISf8X8FfNWzJuxySihqhI2ICvmEwmvOMS6XChREkoIDdy5rFNyFouyrhgFo2RsMmY/dSpLnbEBkfFJ8pvXTcanINkl6SD8DGTGz6GWCZ+ByPgFyIzPk07BOgXrE6yP8EXSJ1ifYH2C9QnWJ1if4DwI9k/4ZUq2ZH6ZnMn8y/WTzCu5fpL5JfNLrp/k+knmlYk3J52wZszOC1/DfdQwX7OEZqfpO+OogZH61jpo1us1mj3d2dholK9B0LD/UcqWzDdHE/9ak9UUMz0gi/nmuDuYdW4nGgaThuHp6zx4t7+kwaMKP5is69zQt5s4jGlEelS9Dn6l4jS9ax8M4D8zbK5c3QsAAA\u003d\u003d"
 }

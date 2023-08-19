@@ -4,12 +4,12 @@
     "controllerId": "wicked_altar",
     "name": "Wicked Altar",
     "layout": [
-        ["  )))  ", " ) * ) ", ")  *  )", ")  * C)", ")  *  )", " ) * ) ", "+ )))  "],
-        ["  ,,,  ", " ,,*,, ", ",-,.,,,", ",/,.,,,", ",0,.,,,", " ,,*,, ", "  ,,,  "],
-        ["       ", "   *   ", "  1. 2 ", "  13242", "  1. 2 ", "   *   ", "       "],
-        ["       ", "   *   ", "       ", "     5 ", "       ", "   *   ", "       "],
-        ["       ", "   *   ", "   *   ", "   * 6 ", "   *   ", "   *   ", "       "],
-        ["       ", "       ", "       ", "   766 ", "       ", "       ", "       "]
+        ["  )))  ", " ) * ) ", ")  *  )", ")  * C)", ")  *  )", " ) * ) ", "  )))  "],
+        ["  +++  ", " ++*++ ", "+,+ +++", "+-+ +++", "+.+ +++", " ++*++ ", "  +++  "],
+        ["       ", "   *   ", "  /  0 ", "  /1020", "  /  0 ", "   *   ", "       "],
+        ["       ", "   *   ", "       ", "     3 ", "       ", "   *   ", "       "],
+        ["       ", "   *   ", "   *   ", "   * 4 ", "   *   ", "   *   ", "       "],
+        ["       ", "       ", "       ", "   544 ", "       ", "       ", "       "]
     ],
     "legend": {
         ")": { "block": "ars_nouveau:warding_stone" },
@@ -23,7 +23,7 @@
         "1": { "block": "minecraft:conduit" },
         "2": { "block": "upgrade_aquatic:elder_guardian_spine" },
         "3": { "block": "chipped:carved_pumpkin_11" },
-        "4": { "block": "naturesaura:tainted_gold_block" },
-        "5": { "block": "minecraft:nether_brick_fence" }
+        "4": { "block": "minecraft:nether_brick_fence" },
+        "5": { "block": "naturesaura:tainted_gold_block" }
     }
 }
