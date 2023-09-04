@@ -1,3 +1,3 @@
 onEvent('item.tags', (event) => {
-    event.get('minecraft:planks')
+    event.get('minecraft:planks');
 });

@@ -15,7 +15,12 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             output: 'xnet:connector_upgrade',
-            inputs: ['#forge:paper', '#forge:dusts/flux_infused', '#forge:gems/diamond', '#forge:gems/diamond'],
+            inputs: [
+                '#forge:paper',
+                '#forge:dusts/flux_infused',
+                '#forge:gems/diamond',
+                '#forge:gems/diamond'
+            ],
             id: 'xnet:connector_upgrade'
         },
         {

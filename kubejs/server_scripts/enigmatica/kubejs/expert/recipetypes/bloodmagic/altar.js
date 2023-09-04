@@ -220,7 +220,7 @@ onEvent('recipes', (event) => {
             consumptionRate: 5,
             drainRate: 5,
             id: `${id_prefix}fel_pumpkin`
-        },
+        }
     ];
 
     const patchouli_safe_removals = [
