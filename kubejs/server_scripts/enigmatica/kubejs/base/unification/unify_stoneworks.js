@@ -77,4 +77,13 @@ function thermal_stoneworks(event, material) {
         }),
         `enigmatica:base/unification/unify_stoneworks/${arguments.callee.name}/`
     );
+    event.custom({
+        type: 'thermal:rock_gen',
+        adjacent: 'minecraft:water',
+        below: 'pneumaticcraft:compressed_iron_block',
+        result: {
+            item: 'minecraft:cobblestone',
+            count: 4
+        }
+    });
 }
