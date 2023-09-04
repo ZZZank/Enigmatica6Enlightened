@@ -159,13 +159,14 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'thermal:device_rock_gen',
-            pattern: ['ABA', 'CDC', 'ECE'],
+            pattern: ['ABA', 'CDC', 'EFE'],
             key: {
-                A: 'immersiveengineering:toolupgrade_drill_lube',
-                B: 'immersiveengineering:rockcutter',
-                C: 'minecraft:observer',
-                D: '#industrialforegoing:machine_frame/pity',
-                E: 'powah:thermoelectric_plate'
+                A: 'immersiveengineering:radiator',
+                B: 'immersiveengineering:drillhead_steel',
+                C: 'create:fluid_valve',
+                D: 'thermal:machine_frame',
+                E: 'minecraft:observer',
+                F: 'powah:thermoelectric_plate'
             },
             id: 'thermal:device_rock_gen'
         },
