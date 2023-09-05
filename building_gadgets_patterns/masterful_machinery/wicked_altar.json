@@ -1,78 +1,120 @@
 {
-    "header": {
-        "version": "2.1.0",
-        "mc_version": "1.16.5",
-        "name": "Wicked Altar",
-        "author": "Enigmatica",
-        "bounding_box": {
-            "min_x": 0,
-            "min_y": 0,
-            "min_z": 0,
-            "max_x": 6,
-            "max_y": 3,
-            "max_z": 6
-        },
-        "material_list": {
-            "root_type": "buildinggadgets:entries",
-            "root_entry": [
-                {
-                    "item_type": "buildinggadgets:simple_item",
-                    "count": 34,
-                    "item": {
-                        "id": "eidolon:polished_planks"
-                    }
-                },
-                {
-                    "item_type": "buildinggadgets:simple_item",
-                    "count": 6,
-                    "item": {
-                        "id": "eidolon:stone_altar"
-                    }
-                },
-                {
-                    "item_type": "buildinggadgets:simple_item",
-                    "count": 1,
-                    "item": {
-                        "id": "eidolon:unholy_effigy"
-                    }
-                },
-                {
-                    "item_type": "buildinggadgets:simple_item",
-                    "count": 16,
-                    "item": {
-                        "id": "ars_nouveau:warding_stone"
-                    }
-                },
-                {
-                    "item_type": "buildinggadgets:simple_item",
-                    "count": 1,
-                    "item": {
-                        "id": "masterfulmachinery:wicked_altar_controller"
-                    }
-                },
-                {
-                    "item_type": "buildinggadgets:simple_item",
-                    "count": 1,
-                    "item": {
-                        "id": "masterfulmachinery:wicked_altar_fluid_port_fluids_input"
-                    }
-                },
-                {
-                    "item_type": "buildinggadgets:simple_item",
-                    "count": 1,
-                    "item": {
-                        "id": "masterfulmachinery:wicked_altar_item_port_items_input"
-                    }
-                },
-                {
-                    "item_type": "buildinggadgets:simple_item",
-                    "count": 1,
-                    "item": {
-                        "id": "masterfulmachinery:wicked_altar_item_port_items_output"
-                    }
-                }
-            ]
-        }
+  "header": {
+    "version": "2.1.0",
+    "mc_version": "1.16.5",
+    "name": "Wicked Altar",
+    "author": "ZZZank",
+    "bounding_box": {
+      "min_x": 0,
+      "min_y": 0,
+      "min_z": 0,
+      "max_x": 6,
+      "max_y": 5,
+      "max_z": 6
     },
-    "body": "H4sIAAAAAAAAAM2VTY/TMBCGJ7Ed2myhSAghbnvmDkiVOPADQHtAYtlL5G2c1lrHrmyHbvfX449puwekbVGptqr6Th37mcn4jVMDjIG23PMaAF7XOQYCtRNWciUfhA0XoAbmPPeihvrKmpWwXgo3gqrjc6kXwLSxfgkjoN95L+A9t67RZvgt+DBbc9uGOY3zRotI+rcUVHDnT5NhC3knZGuU0bOVUdItRdusFNd37gjE5z5UJWw3qJ7Pl1ILu5mt5fwusLjy3DadGmTghvbk0DVSrwZ/fB8u1mHMKrNYiBaot0OooVzd70J9D6zjyqXhh/3wAw7vWvdme9epXbnM05Wzq0HvSztDOTuXrMWpXHJQhg9P7f/caG+NUuKQm9pSPz1FlV702VQxco0Z/JlNlcJn46lzVfP3w+jtNt+gl0ZtGtF1crE5Yr8/Hrvf5zlD9n1/Fvv9v8vZvcxceJwOe5mNgayMo4H5JYJLyB+SfgugkEfLIitBpQXgjPxlSUsoiqwlKkGlqCwpQkNYJU1hGbMWRf5fohJUispQq6QUyjIqA5K0wtJfxHoI8gnyg44inyCfIJ8gnyCfIJ/E5gQ+ie0mSS+gJFFTHop8ivygk8inyKfIp8inyKfID/oy8oO+ivyg09gcFpUlTf1kyGPIY8hjyEvz881PsbhphFW4rsJ1Fa6raqiWgrfCBsPw4BNjYfJt8OKHFJ0K1gjXb82gW0eA9lL/yk2N4fU25Pc3IapyGCeQHF5vR6W+SZscLKijBSc/02Fw+TUZe/zYz6Nko8vbQapozAVvF8K7WTv0/aZ5ZPs/u6gqOekJAAA\u003d"
+    "material_list": {
+      "root_type": "buildinggadgets:entries",
+      "root_entry": [
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 3,
+          "item": {
+            "id": "betterendforge:andesite_pedestal"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 1,
+          "item": {
+            "id": "chipped:carved_pumpkin_11"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 1,
+          "item": {
+            "id": "minecraft:conduit"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 16,
+          "item": {
+            "id": "quark:dark_elder_prismarine"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 1,
+          "item": {
+            "id": "upgrade_aquatic:elder_guardian_spine"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 3,
+          "item": {
+            "id": "minecraft:nether_brick_fence"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 4,
+          "item": {
+            "id": "minecraft:oak_pressure_plate"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 1,
+          "item": {
+            "id": "naturesaura:tainted_gold_block"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 16,
+          "item": {
+            "id": "ars_nouveau:warding_stone"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 1,
+          "item": {
+            "id": "masterfulmachinery:wicked_altar_controller"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 1,
+          "item": {
+            "id": "masterfulmachinery:wicked_altar_fluid_port_fluids_input"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 1,
+          "item": {
+            "id": "masterfulmachinery:wicked_altar_item_port_items_input"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 1,
+          "item": {
+            "id": "masterfulmachinery:wicked_altar_item_port_items_output"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 29,
+          "item": {
+            "id": "bloodmagic:woodtilepath"
+          }
+        }
+      ]
+    }
+  },
+  "body": "H4sIAAAAAAAAALVWTY/bNhAdS6R210mbJi1QFC2KPfTUWw5tAN/6B9rekvoijEVaFiyRKj/ipr++Q3K8uy1SxHayC0NvSElv3nxRuwS4AaEw4BIAvloWG2pYeu0GHIe/taMbsATpAwa9hOXvzs7ahUH7a2i22A2mB2msCzu4BvErThq+QedbY+NbjXF1QKfomdYHa3RiusyF0OjDp/FwJPl6M1qrJuyHbnUgKwyjnpHiOJ3i2z8juv1K0aXVo9Kund3gJ3TDWUpeTRScdts4Ttjt6F33bnUYur1WLY4BXbsd46DambJcTN8OZo7h/HRe75DeDXoCucXRk4KbtDMO/S7cbZU34UrpLcbxPuu3Gx1IpjZqa12vV2iU9kTWzpqMgOP5eq5meyBGxb7vXH03URY6h9uwsrinrGrvoyNPY1J2eRcpezCP26cH/aBPf/xQYTtrgrPjmLhPbpefP8SaCly6JVm+tTFc1C1PDrTnRtv3VCERXLwv0PP7AlEMKg4fS39svmMiqzhTJ+ahKq5ppRxS+f7TKj/EuXeodIs0jIFmuQxiH1NB0bR+Pm0YTzt4KN8ztfuqQ/eW8j3Had4Ppn358nwPhfkY93uTIT2Vbne/LOfscVl67f8nx+iwo0xsHPVGu9WmO+dM+t5goInzGB2uAg4mULi9HVVLx2a3vzRcLuXF0f67Cz822MepyKNqfP9B80k+iD+de65c+BG6+7eh5PKUGG6gnq0XxPlbIq6g/NX5ugABZbdaFKwZxQL4ifSr0/PZlBkrWCwKVgu+z2vBKI/7FWPNKICZk5TMWyXKJmM26SISf8X8FfNWzJuxySihqhI2ICvmEwmvOMS6XChREkoIDdy5rFNyFouyrhgFo2RsMmY/dSpLnbEBkfFJ8pvXTcanINkl6SD8DGTGz6GWCZ+ByPgFyIzPk07BOgXrE6yP8EXSJ1ifYH2C9QnWJ1if4DwI9k/4ZUq2ZH6ZnMn8y/WTzCu5fpL5JfNLrp/k+knmlYk3J52wZszOC1/DfdQwX7OEZqfpO+OogZH61jpo1us1mj3d2dholK9B0LD/UcqWzDdHE/9ak9UUMz0gi/nmuDuYdW4nGgaThuHp6zx4t7+kwaMKP5is69zQt5s4jGlEelS9Dn6l4jS9ax8M4D8zbK5c3QsAAA\u003d\u003d"
 }

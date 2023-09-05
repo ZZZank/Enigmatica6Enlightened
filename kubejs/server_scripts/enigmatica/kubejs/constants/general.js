@@ -20,7 +20,6 @@ const modPriorities = [
     'appliedenergistics2',
     'mapperbase',
     'bloodmagic',
-    'eidolon',
     'morevanillalib',
     'titanium',
     'mythicbotany',

@@ -35,7 +35,6 @@
 				{
 					id: "63727AE711541D73"
 					type: "item"
-					title: "Iron Ingot"
 					item: "minecraft:iron_ingot"
 					count: 6
 					random_bonus: 4
@@ -73,14 +72,12 @@
 				{
 					id: "0000000000000628"
 					type: "item"
-					title: "Acacia Log"
 					item: "minecraft:acacia_log"
 					count: 32
 				}
 				{
 					id: "0000000000000CAB"
 					type: "item"
-					title: "Acacia Sapling"
 					item: "minecraft:acacia_sapling"
 					count: 8
 				}
@@ -318,7 +315,6 @@
 				{
 					id: "0000000000000F3B"
 					type: "item"
-					title: "Common Black Hole Tank"
 					item: {
 						id: "industrialforegoing:common_black_hole_tank"
 						Count: 1b
@@ -382,21 +378,18 @@
 				{
 					id: "000000000000062C"
 					type: "item"
-					title: "Beetroot"
 					item: "minecraft:beetroot"
 					count: 8
 				}
 				{
 					id: "000000000000062D"
 					type: "item"
-					title: "Carrot"
 					item: "minecraft:carrot"
 					count: 8
 				}
 				{
 					id: "000000000000062E"
 					type: "item"
-					title: "Potato"
 					item: "minecraft:potato"
 					count: 8
 				}

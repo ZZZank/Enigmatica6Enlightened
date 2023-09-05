@@ -780,24 +780,12 @@
 					}
 				}
 			}]
-			rewards: [
-				{
-					id: "77079E43823E3AE6"
-					type: "item"
-					item: "prettypipes:pipe"
-					count: 4
-				}
-				{
-					id: "6C334DFD063E8B65"
-					type: "item"
-					item: "prettypipes:low_retrieval_module"
-				}
-				{
-					id: "3C327392E358E068"
-					type: "item"
-					item: "prettypipes:low_extraction_module"
-				}
-			]
+			rewards: [{
+				id: "77079E43823E3AE6"
+				type: "item"
+				item: { id: "mekanism:basic_mechanical_pipe", Count: 8b }
+				count: 8
+			}]
 		}
 		{
 			title: "Fluid Tank (PNC)"
@@ -975,13 +963,37 @@
 					id: "itemfilters:or"
 					Count: 1b
 					tag: {
-						items:[
-							{id:"appliedenergistics2:4k_fluid_storage_cell",Count:1b,tag:{}},
-							{id:"appliedenergistics2:16k_fluid_storage_cell",Count:1b,tag:{}},
-							{id:"appliedenergistics2:64k_fluid_storage_cell",Count:1b,tag:{}},
-							{id:"aeadditions:fluid_storage_cell_256",Count:1b,tag:{}},
-							{id:"aeadditions:fluid_storage_cell_1024",Count:1b,tag:{}},
-							{id:"aeadditions:fluid_storage_cell_4096",Count:1b,tag:{}}
+						items: [
+							{
+								id: "appliedenergistics2:4k_fluid_storage_cell"
+								Count: 1b
+								tag: { }
+							}
+							{
+								id: "appliedenergistics2:16k_fluid_storage_cell"
+								Count: 1b
+								tag: { }
+							}
+							{
+								id: "appliedenergistics2:64k_fluid_storage_cell"
+								Count: 1b
+								tag: { }
+							}
+							{
+								id: "aeadditions:fluid_storage_cell_256"
+								Count: 1b
+								tag: { }
+							}
+							{
+								id: "aeadditions:fluid_storage_cell_1024"
+								Count: 1b
+								tag: { }
+							}
+							{
+								id: "aeadditions:fluid_storage_cell_4096"
+								Count: 1b
+								tag: { }
+							}
 						]
 					}
 				}
@@ -1142,24 +1154,6 @@
 				icon: "kubejs:scavengers_delight"
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
 				player_command: false
-			}]
-		}
-		{
-			x: -3.5d
-			y: -5.0d
-			description: ["The Pretty Pipes Item Terminal and Crafting Terminal are a great early game way to access all your items from a single location, use them for crafting, and can even have autocrafting. Check out the Pretty Pipes quests in the Automation chapter for more info!"]
-			dependencies: ["00000000000003FF"]
-			id: "6E3133DD54A6C7E7"
-			tasks: [{
-				id: "43B9523816655544"
-				type: "item"
-				item: "prettypipes:item_terminal"
-			}]
-			rewards: [{
-				id: "68188157B1667326"
-				type: "item"
-				item: "prettypipes:pipe"
-				count: 8
 			}]
 		}
 		{

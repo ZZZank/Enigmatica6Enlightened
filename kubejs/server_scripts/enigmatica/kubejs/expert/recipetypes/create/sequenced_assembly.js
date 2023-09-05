@@ -203,20 +203,23 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}alloybricks`
         },
         {
-            input: 'prettypipes:pipe',
+            input: 'mekanism:basic_logistical_transporter',
             outputs: ['integrateddynamics:cable'],
-            transitionalItem: 'prettypipes:pipe',
+            transitionalItem: 'mekanism:basic_logistical_transporter',
             loops: 1,
             sequence: [
                 {
                     type: 'filling',
-                    input: ['prettypipes:pipe', Fluid.of('integrateddynamics:menril_resin', 200)],
-                    output: 'prettypipes:pipe'
+                    input: [
+                        'mekanism:basic_logistical_transporter',
+                        Fluid.of('integrateddynamics:menril_resin', 200)
+                    ],
+                    output: 'mekanism:basic_logistical_transporter'
                 },
                 {
                     type: 'filling',
-                    input: ['prettypipes:pipe', Fluid.of('thermal:redstone', 100)],
-                    output: 'prettypipes:pipe'
+                    input: ['mekanism:basic_logistical_transporter', Fluid.of('thermal:redstone', 100)],
+                    output: 'mekanism:basic_logistical_transporter'
                 }
             ],
             id: `${id_prefix}logic_cable`

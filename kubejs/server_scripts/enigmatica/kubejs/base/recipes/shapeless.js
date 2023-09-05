@@ -173,16 +173,6 @@ onEvent('recipes', (event) => {
                             }
                         }
                     },
-                    eidolon: {
-                        id: 'eidolon:codex',
-                        Count: 1,
-                        tag: {
-                            'akashictome:displayName': { text: 'Ars Ecclesia' },
-                            display: {
-                                Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Ars Ecclesia"}]}'
-                            }
-                        }
-                    },
                     botania: {
                         id: 'botania:lexicon',
                         Count: 1,
@@ -482,11 +472,6 @@ onEvent('recipes', (event) => {
             output: 'mythicbotany:wither_aconite_floating',
             inputs: ['kubejs:disabled_recipe_indicator'],
             id: 'mythicbotany:wither_aconite_floating'
-        },
-        {
-            output: Item.of('eidolon:pewter_blend', 2),
-            inputs: ['#forge:dusts/lead', '#forge:dusts/iron'],
-            id: 'eidolon:pewter_blend'
         },
         {
             output: Item.of('minecraft:string', 3),

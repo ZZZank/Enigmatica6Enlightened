@@ -1,3 +1,3 @@
 onEvent('item.tags', (event) => {
-    event.add('forge:tallow', ['quark:tallow', 'eidolon:tallow', 'occultism:tallow']);
+    event.add('forge:tallow', ['quark:tallow', 'occultism:tallow']);
 });

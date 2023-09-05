@@ -339,7 +339,7 @@ onEvent('recipes', (event) => {
                     additionalWeight: 15,
                     minWeight: 0,
                     weightMap: [{ tag: 'naturesaura:tainted_gold_block', weight: 85 }],
-                    fill: 'eidolon:arcane_gold_block',
+                    fill: 'naturesaura:tainted_gold_block',
                     shell: 'ars_nouveau:warding_stone'
                 }
             ],

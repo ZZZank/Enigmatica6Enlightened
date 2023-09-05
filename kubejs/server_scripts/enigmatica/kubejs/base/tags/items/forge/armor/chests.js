@@ -13,7 +13,6 @@ onEvent('item.tags', (event) => {
         'naturesaura:sky_chest',
         'astralsorcery:mantle',
         'bloodmagic:livingplate',
-        'eidolon:warlock_cloak',
         'create:copper_backtank'
     ];
 

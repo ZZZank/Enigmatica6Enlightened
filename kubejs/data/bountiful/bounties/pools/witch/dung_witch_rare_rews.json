@@ -2,8 +2,6 @@
     "modsRequired":[],
     "content":[
         { "type": "item", "content": "minecraft:cat_spawn_egg", "amountRange": {"min": 1, "max": 1}, "unitWorth": 150, "weight":10},
-        { "type": "item", "content": "eidolon:spawn_wraith", "amountRange": {"min": 1, "max": 1}, "unitWorth": 250, "weight":10},
-        { "type": "item", "content": "eidolon:spawn_zombie_brute", "amountRange": {"min": 1, "max": 1}, "unitWorth": 450, "weight":10},
         { "type": "item", "content": "minecraft:glistering_melon_slice", "amountRange": {"min": 1, "max": 4}, "unitWorth": 50, "weight":100},
         { "type": "item", "content": "minecraft:wither_rose", "amountRange": {"min": 1, "max": 5}, "unitWorth": 50, "weight":100},
         { "type": "item", "content": "occultism:chalk_purple", "amountRange": {"min": 1, "max": 1}, "unitWorth": 200, "weight":10},
@@ -36,13 +34,12 @@
         { "type": "item", "content": "ars_nouveau:apprentice_robes", "amountRange": {"min": 1, "max": 1}, "unitWorth": 250, "weight":100},
         { "type": "item", "content": "ars_nouveau:apprentice_leggings", "amountRange": {"min": 1, "max": 1}, "unitWorth": 250, "weight":100},
         { "type": "item", "content": "ars_nouveau:apprentice_boots", "amountRange": {"min": 1, "max": 1}, "unitWorth": 250, "weight":100},
-        { "type": "item", "content": "eidolon:basic_belt", "amountRange": {"min": 1, "max": 1}, "unitWorth": 150, "weight":100},
-        { "type": "item", "content": "eidolon:basic_amulet", "amountRange": {"min": 1, "max": 1}, "unitWorth": 150, "weight":100},
-        { "type": "item", "content": "eidolon:basic_ring", "amountRange": {"min": 1, "max": 1}, "unitWorth": 150, "weight":100},
-        { "type": "item", "content": "eidolon:soul_shard", "amountRange": {"min": 4, "max": 8}, "unitWorth": 450, "weight":100},
-        { "type": "item", "content": "eidolon:pewter_ingot", "amountRange": {"min": 8, "max": 16}, "unitWorth": 250, "weight":100},
-        { "type": "item", "content": "eidolon:arcane_gold_ingot", "amountRange": {"min": 8, "max": 16}, "unitWorth": 225, "weight":50},
-        { "type": "item", "content": "eidolon:pewter_inlay", "amountRange": {"min": 1, "max": 2}, "unitWorth": 150, "weight":100},
-        { "type": "item", "content": "eidolon:gold_inlay", "amountRange": {"min": 1, "max": 2}, "unitWorth": 150, "weight":100}
+        { "type": "item", "content": "ars_nouveau:mundane_belt", "amountRange": {"min": 1, "max": 1}, "unitWorth": 150, "weight":100},
+        { "type": "item", "content": "ars_nouveau:dull_trinket", "amountRange": {"min": 1, "max": 1}, "unitWorth": 150, "weight":100},
+        { "type": "item", "content": "appliedenergistics2:charged_certus_quartz_crystal", "amountRange": {"min": 4, "max": 8}, "unitWorth": 450, "weight":100},
+        { "type": "item", "content": "kubejs:pewter_ingot", "amountRange": {"min": 8, "max": 16}, "unitWorth": 250, "weight":100},
+        { "type": "item", "content": "naturesaura:tainted_gold", "amountRange": {"min": 8, "max": 16}, "unitWorth": 225, "weight":50},
+        { "type": "item", "content": "kubejs:pewter_inlay", "amountRange": {"min": 1, "max": 2}, "unitWorth": 150, "weight":100},
+        { "type": "item", "content": "resourcefulbees:tainted_honeycomb", "amountRange": {"min": 1, "max": 2}, "unitWorth": 150, "weight":100}
     ]
 }

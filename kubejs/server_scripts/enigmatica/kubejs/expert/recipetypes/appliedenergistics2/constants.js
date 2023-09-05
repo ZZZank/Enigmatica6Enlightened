@@ -8,7 +8,6 @@ const itemsToRemoveAE = [
     'appliedenergistics2:certus_quartz_dust',
 
     'appliedenergistics2:fluix_crystal',
-    'appliedenergistics2:charged_certus_quartz_crystal',
     'appliedenergistics2:certus_quartz_crystal',
     'appliedenergistics2:purified_certus_quartz_crystal',
     'appliedenergistics2:purified_nether_quartz_crystal',
@@ -17,9 +16,9 @@ const itemsToRemoveAE = [
     'appliedenergistics2:quartz_ore',
     'appliedenergistics2:charged_quartz_ore',
 
+    'appliedenergistics2:charger',
     'appliedenergistics2:vibration_chamber',
     'appliedenergistics2:quartz_growth_accelerator',
-    'appliedenergistics2:inscriber',
     'appliedenergistics2:crank',
     'appliedenergistics2:grindstone',
 

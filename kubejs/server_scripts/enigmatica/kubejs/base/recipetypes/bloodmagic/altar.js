@@ -14,6 +14,24 @@ onEvent('recipes', (event) => {
             }*/
 
             {
+                input: 'minecraft:prismarine',
+                output: 'quark:elder_prismarine',
+                syphon: 1000,
+                altarLevel: 0,
+                consumptionRate: 50,
+                drainRate: 1,
+                id: `${id_prefix}elder_prismarine`
+            },
+            {
+                input: 'kubejs:dead_koi_bucket',
+                output: 'environmental:koi_bucket',
+                syphon: 3000,
+                altarLevel: 0,
+                consumptionRate: 25,
+                drainRate: 1,
+                id: `${id_prefix}koi_bucket`
+            },
+            {
                 input: Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:bronze_bee' }).weakNBT(),
                 output: Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:bloody_bee' }),
                 syphon: 50000,

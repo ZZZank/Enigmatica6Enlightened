@@ -20,7 +20,7 @@ onEvent('recipes', (event) => {
             inputs: [
                 'bloodmagic:soulforge',
                 '#forge:ingots/iesnium',
-                'eidolon:crimson_essence',
+                'kubejs:crimson_essence',
                 'occultism:spirit_attuned_gem'
             ],
             output: 'bloodmagic:demoncrucible',
@@ -30,7 +30,7 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                'eidolon:soul_shard',
+                'appliedenergistics2:charged_certus_quartz_crystal',
                 'naturesaura:infused_iron',
                 'glassential:glass_ghostly',
                 'minecraft:conduit'
@@ -77,8 +77,8 @@ onEvent('recipes', (event) => {
             id: 'bloodmagic:soulforge/greatertartaricgem'
         },
         {
-            inputs: ['#forge:storage_blocks/gold', 'eidolon:crimson_essence'],
-            output: Item.of('eidolon:arcane_gold_block'),
+            inputs: ['#forge:storage_blocks/gold', 'kubejs:crimson_essence'],
+            output: Item.of('naturesaura:tainted_gold_block'),
             minimumDrain: 32.0,
             drain: 16.0,
             id: `${id_prefix}arcane_gold_ingot`
@@ -112,7 +112,7 @@ onEvent('recipes', (event) => {
             inputs: [
                 'bloodmagic:tauoil',
                 'atum:anputs_fingers_spores',
-                'eidolon:ender_calx',
+                '#forge:dusts/flux_infused',
                 '#quark:crystal_clusters/white'
             ],
             output: 'bloodmagic:rawcatalyst',
@@ -124,7 +124,7 @@ onEvent('recipes', (event) => {
             inputs: [
                 'bloodmagic:tauoil',
                 'atum:anputs_fingers_spores',
-                'eidolon:ender_calx',
+                '#forge:dusts/flux_infused',
                 '#quark:crystal_clusters/green'
             ],
             output: 'bloodmagic:corrosivecatalyst',
@@ -136,7 +136,7 @@ onEvent('recipes', (event) => {
             inputs: [
                 'bloodmagic:tauoil',
                 'atum:anputs_fingers_spores',
-                'eidolon:ender_calx',
+                '#forge:dusts/flux_infused',
                 '#quark:crystal_clusters/red'
             ],
             output: 'bloodmagic:vengefulcatalyst',
@@ -148,7 +148,7 @@ onEvent('recipes', (event) => {
             inputs: [
                 'bloodmagic:tauoil',
                 'atum:anputs_fingers_spores',
-                'eidolon:ender_calx',
+                '#forge:dusts/flux_infused',
                 '#quark:crystal_clusters/yellow'
             ],
             output: 'bloodmagic:destructivecatalyst',
@@ -160,7 +160,7 @@ onEvent('recipes', (event) => {
             inputs: [
                 'bloodmagic:tauoil',
                 'atum:anputs_fingers_spores',
-                'eidolon:ender_calx',
+                '#forge:dusts/flux_infused',
                 '#quark:crystal_clusters/indigo'
             ],
             output: 'bloodmagic:steadfastcatalyst',

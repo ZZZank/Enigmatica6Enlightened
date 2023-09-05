@@ -115,13 +115,6 @@ onEvent('recipes', (event) => {
 
         'dustrial_decor:ice_chain',
 
-        'eidolon:tallow',
-        'eidolon:smelt_stone_brick',
-        'eidolon:lead_block',
-        'eidolon:decompress_lead_block',
-        'eidolon:lead_ingot',
-        'eidolon:decompress_lead_ingot',
-
         /emendatusenigmatica:dust_from_chunk/,
         'emendatusenigmatica:dust_from_ore/quartz',
         'emendatusenigmatica:block_from_gem/arcane',
@@ -255,11 +248,8 @@ onEvent('recipes', (event) => {
 
         'pneumaticcraft:one_probe_crafting',
 
-        'ppfluids:fluid_pipe_to_pipe',
-
         'powah:crafting/energy_cell_basic_2',
         'powah:crafting/cable_basic',
-        'projectvibrantjourneys:seashells',
 
         'quark:building/crafting/compressed/gunpowder_sack',
         'quark:building/crafting/compressed/charcoal_block_compress',

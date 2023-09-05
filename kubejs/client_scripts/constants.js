@@ -135,8 +135,6 @@ const itemsToHide = [
     'create:copper_ore',
     'create:zinc_ore',
 
-    'eidolon:tallow',
-
     'emendatusenigmatica:sulfur_ore',
     'emendatusenigmatica:cinnabar_ore',
     'emendatusenigmatica:dimensional_crushed',
@@ -235,6 +233,8 @@ const itemsToHide = [
 
     'mekanism:fluorite_gem',
 
+    'neapolitan:milk_bottle',
+
     'powah:uraninite_ore',
     'powah:uraninite_ore_dense',
     'powah:uraninite_ore_poor',
@@ -330,7 +330,6 @@ const itemsToHide = [
     /create:\w+_nugget/,
     /create:\w+_ingot/,
     /immersiveposts:stick_/,
-    /eidolon:\w+_ore/,
     /byg:pendorite/,
     /byg:ametrine/,
     /emendatusenigmatica:\w+certus/,

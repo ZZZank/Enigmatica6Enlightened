@@ -6,7 +6,7 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_nouveau:novice_spell_book',
-                'eidolon:shadow_gem',
+                'redstone_arsenal:flux_gem',
                 '#forge:gems/diamond',
                 '#forge:gems/diamond',
                 '#forge:gems/diamond',

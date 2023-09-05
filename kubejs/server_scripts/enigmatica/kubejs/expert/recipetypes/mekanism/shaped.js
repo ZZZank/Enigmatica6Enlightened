@@ -18,6 +18,28 @@ onEvent('recipes', (event) => {
 
     const recipes = [
         {
+            output: Item.of('mekanism:teleporter'),
+            pattern: ['ABA', 'CDC', 'AEA'],
+            key: {
+                A: 'mekanism:teleporter_frame',
+                B: 'immersiveengineering:coil_hv',
+                C: 'immersiveengineering:current_transformer',
+                D: '#industrialforegoing:machine_frame/simple',
+                E: Item.of('waystones:warp_stone', '{Damage:0}').weakNBT()
+            },
+            id: `${id_prefix}teleporter_alternate`
+        },
+        {
+            output: Item.of('3x mekanism:teleporter_frame'),
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: '#enigmatica:stonecuttables/arcane_stone',
+                B: 'immersiveengineering:electron_tube',
+                C: 'quark:lime_rune'
+            },
+            id: 'mekanism:teleporter_frame'
+        },
+        {
             output: 'mekanism:fuelwood_heater',
             pattern: ['BAB', 'CDC', 'BAB'],
             key: {
@@ -793,14 +815,16 @@ onEvent('recipes', (event) => {
             id: `mekanism:bin/ultimate`
         },
         {
-            output: `mekanism:logistical_sorter`,
-            pattern: ['ABA', 'ACA', 'EDE'],
+            output: Item.of(
+                'mekanism:logistical_sorter',
+                '{mekData:{componentUpgrade:{upgrades:[{type:4,amount:4}]}}}'
+            ),
+            pattern: ['ABA', ' C ', 'ADA'],
             key: {
                 A: 'immersiveengineering:sheetmetal_colored_black',
-                B: 'prettypipes:medium_extraction_module',
-                C: 'prettypipes:medium_filter_module',
-                D: 'prettypipes:round_robin_sorting_modifier',
-                E: '#forge:plates/iron_osmium'
+                B: 'immersiveengineering:electron_tube',
+                C: 'immersiveengineering:circuit_board',
+                D: 'thermal:redstone_servo'
             },
             id: `mekanism:logistical_sorter`
         },
@@ -844,7 +868,7 @@ onEvent('recipes', (event) => {
             pattern: ['ABA', 'CDC', 'EFE'],
             key: {
                 A: '#forge:plastic',
-                B: 'ppfluids:high_fluid_retrieval_module',
+                B: 'modularrouters:fluid_module',
                 C: 'mekanism:basic_fluid_tank',
                 D: '#industrialforegoing:machine_frame/pity',
                 E: '#forge:gears/osmium',

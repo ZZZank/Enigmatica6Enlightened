@@ -15,14 +15,19 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             output: 'xnet:connector_upgrade',
-            inputs: ['#forge:paper', 'eidolon:ender_calx', '#forge:gems/diamond', '#forge:gems/diamond'],
+            inputs: [
+                '#forge:paper',
+                '#forge:dusts/flux_infused',
+                '#forge:gems/diamond',
+                '#forge:gems/diamond'
+            ],
             id: 'xnet:connector_upgrade'
         },
         {
             output: 'xnet:advanced_connector_routing',
             inputs: [
                 `xnet:connector_routing`,
-                'eidolon:ender_calx',
+                '#forge:dusts/flux_infused',
                 '#forge:gems/diamond',
                 '#forge:gems/diamond'
             ],
@@ -38,7 +43,7 @@ onEvent('recipes', (event) => {
         event
             .shapeless(Item.of(`xnet:advanced_connector_${color}`), [
                 `xnet:connector_${color}`,
-                'eidolon:ender_calx',
+                '#forge:dusts/flux_infused',
                 '#forge:gems/diamond',
                 '#forge:gems/diamond'
             ])

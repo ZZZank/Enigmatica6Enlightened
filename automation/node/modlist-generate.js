@@ -30,7 +30,7 @@ axios.get('https://curse.melanx.de/projects', {
     const lines = [`## ${CLIENT_NAME} - ${MODPACK_VERSION}`];
 
     projects.forEach(project => {
-        lines.push(`- [${file_for[project.project].name}](${project.website}/files/${file_for[project.project].id}) (by [${project.owner}](https://www.curseforge.com/members/${project.owner.toLowerCase()}/projects))`)
+        lines.push(`  * [${file_for[project.project].name}](${project.website}/files/${file_for[project.project].id}) (by [${project.owner}](https://www.curseforge.com/members/${project.owner.toLowerCase()}/projects))`)
     });
 
     console.log(lines.join('\n'));

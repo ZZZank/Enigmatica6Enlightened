@@ -39,14 +39,6 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}atum/linen_thread_from_cloth_scrap`
         },
         {
-            output: Item.of('eidolon:lead_ingot', 6),
-            pattern: ['AA', 'AA', 'AA'],
-            key: {
-                A: '#forge:ingots/lead'
-            },
-            id: `${id_prefix}eidolon/lead_ingot_conversion`
-        },
-        {
             output: Item.of('atum:marl', 4),
             pattern: ['AB', 'BA'],
             key: {
@@ -179,16 +171,6 @@ onEvent('recipes', (event) => {
                 B: 'minecraft:charcoal'
             },
             id: `${id_prefix}projectvibrantjourneys/charred_bones`
-        },
-        {
-            output: Item.of('projectvibrantjourneys:seashells', 8),
-            pattern: ['AAA', 'ABA', 'AAC'],
-            key: {
-                A: 'minecraft:prismarine_shard',
-                B: 'minecraft:nautilus_shell',
-                C: 'minecraft:prismarine_crystals'
-            },
-            id: `${id_prefix}projectvibrantjourneys/seashells`
         },
         {
             output: 'tetra:hammer_base',
@@ -432,7 +414,6 @@ onEvent('recipes', (event) => {
                     rftoolsbase: { id: 'rftoolsbase:smartwrench', Count: 1 },
                     create: { id: 'create:wrench', Count: 1 },
                     appliedenergistics2: { id: 'appliedenergistics2:certus_quartz_wrench', Count: 1 },
-                    prettypipes: { id: 'prettypipes:wrench', Count: 1 },
                     storagedrawers: { id: 'storagedrawers:drawer_key', Count: 1 },
                     fluxnetworks: { id: 'fluxnetworks:flux_configurator', Count: 1 },
                     integratedtunnels: { id: 'integrateddynamics:wrench', Count: 1 },

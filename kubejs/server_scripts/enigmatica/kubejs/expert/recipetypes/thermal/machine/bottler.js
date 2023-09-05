@@ -5,6 +5,13 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:expert/thermal/bottler/';
     const recipes = [
         {
+            input: '#forge:gems/aquamarine',
+            fluid: Fluid.of('thermal:redstone', 100),
+            output: 'appliedenergistics2:charged_certus_quartz_crystal',
+            energy: 30000,
+            id: `${id_prefix}charged_certus_quartz_crystal_thermal`
+        },
+        {
             input: '#forge:dusts/sulfur',
             fluid: Fluid.of('industrialforegoing:latex', 900),
             output: 'industrialforegoing:dryrubber',

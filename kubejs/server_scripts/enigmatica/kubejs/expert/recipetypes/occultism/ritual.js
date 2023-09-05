@@ -14,7 +14,7 @@ onEvent('recipes', (event) => {
             ingredients: [
                 'occultism:lenses',
                 '#forge:ingots/lumium',
-                '#forge:ingots/arcane_gold',
+                'naturesaura:tainted_gold',
                 '#forge:ingots/lumium',
                 'bloodmagic:reagentsight'
             ],
@@ -30,7 +30,7 @@ onEvent('recipes', (event) => {
             ingredients: [
                 'occultism:spirit_attuned_pickaxe_head',
                 'betterendforge:leather_wrapped_stick',
-                'eidolon:ender_calx',
+                '#forge:dusts/flux_infused',
                 'betterendforge:leather_wrapped_stick',
                 '#forge:nuggets/nebu',
                 '#forge:nuggets/nebu'
@@ -45,10 +45,10 @@ onEvent('recipes', (event) => {
             duration: 60,
             ritual_dummy: 'occultism:ritual_dummy/craft_soul_gem',
             ingredients: [
-                'eidolon:lesser_soul_gem',
-                'eidolon:gold_inlay',
+                'redstone_arsenal:flux_gem',
+                'resourcefulbees:tainted_honeycomb',
                 'bloodmagic:reagentholding',
-                'eidolon:gold_inlay',
+                'resourcefulbees:tainted_honeycomb',
                 'glassential:glass_ghostly',
                 'glassential:glass_ghostly',
                 'glassential:glass_ghostly',
@@ -69,9 +69,9 @@ onEvent('recipes', (event) => {
             entity_to_summon: 'occultism:afrit_wild',
             ritual_dummy: 'occultism:ritual_dummy/summon_wild_afrit',
             ingredients: [
-                'eidolon:gold_inlay',
+                'resourcefulbees:tainted_honeycomb',
                 '#botania:runes/fire',
-                'eidolon:crimson_essence',
+                'kubejs:crimson_essence',
                 '#botania:runes/fire',
                 'ars_nouveau:red_archwood_wood',
                 'ars_nouveau:red_archwood_wood',
@@ -92,10 +92,10 @@ onEvent('recipes', (event) => {
                 '#quark:crystal_clusters',
                 '#quark:crystal_clusters',
                 '#quark:crystal_clusters',
-                'eidolon:ender_calx',
-                'eidolon:ender_calx',
-                'eidolon:ender_calx',
-                'eidolon:ender_calx',
+                '#forge:dusts/flux_infused',
+                '#forge:dusts/flux_infused',
+                '#forge:dusts/flux_infused',
+                '#forge:dusts/flux_infused',
                 'atum:crystal_glass',
                 'atum:crystal_glass',
                 'atum:crystal_glass',
@@ -254,9 +254,9 @@ onEvent('recipes', (event) => {
             ritual_dummy: 'occultism:ritual_dummy/craft_familiar_ring',
             ingredients: [
                 'occultism:soul_gem',
-                'eidolon:gold_inlay',
+                'resourcefulbees:tainted_honeycomb',
                 '#atum:relic_non_dirty/ring',
-                'eidolon:gold_inlay'
+                'resourcefulbees:tainted_honeycomb'
             ],
             result: 'occultism:familiar_ring',
             id: 'occultism:ritual/craft_familiar_ring'
@@ -269,9 +269,9 @@ onEvent('recipes', (event) => {
             ritual_dummy: 'occultism:ritual_dummy/craft_storage_controller_base',
             ingredients: [
                 'occultism:otherstone_pedestal',
-                'eidolon:gold_inlay',
+                'resourcefulbees:tainted_honeycomb',
                 '#forge:ingots/nebu',
-                'eidolon:gold_inlay',
+                'resourcefulbees:tainted_honeycomb',
                 'botania:corporea_spark_master'
             ],
             result: 'occultism:storage_controller_base',
@@ -1175,11 +1175,11 @@ onEvent('recipes', (event) => {
             ritual_dummy: 'kubejs:craft_ender_dagger',
             ingredients: [
                 'bloodmagic:daggerofsacrifice',
-                'eidolon:shadow_gem',
+                'redstone_arsenal:flux_gem',
                 '#botania:runes/nidavellir',
                 'powah:ender_core',
-                '#forge:inlays/arcane_gold',
-                '#forge:inlays/arcane_gold',
+                'resourcefulbees:tainted_honeycomb',
+                'resourcefulbees:tainted_honeycomb',
                 'botania:mana_pearl',
                 'botania:mana_pearl'
             ],
@@ -1409,9 +1409,9 @@ onEvent('recipes', (event) => {
             ritual_dummy: 'kubejs:craft_necrotic_focus',
             ingredients: [
                 '#botania:runes/helheim',
-                'eidolon:death_essence',
-                'eidolon:death_essence',
-                'eidolon:death_essence',
+                'kubejs:death_essence',
+                'kubejs:death_essence',
+                'kubejs:death_essence',
 
                 'atum:nepthys_godshard',
                 'atum:nepthys_godshard',
@@ -1433,7 +1433,7 @@ onEvent('recipes', (event) => {
             duration: 120,
             ritual_dummy: 'kubejs:craft_masterroutingnode',
             ingredients: [
-                'eidolon:shadow_gem',
+                'redstone_arsenal:flux_gem',
                 'botania:corporea_spark',
                 'architects_palette:moonstone',
                 'botania:corporea_spark'
@@ -1483,7 +1483,7 @@ onEvent('recipes', (event) => {
         {
             name: 'death',
             ingredients: [
-                Item.of('eidolon:reaper_scythe', '{Damage:0]}').weakNBT(),
+                Item.of('tconstruct:broad_blade', '{Material:"tconstruct:manyullyn"}'),
                 'naturesaura:chorus_generator'
             ]
         },

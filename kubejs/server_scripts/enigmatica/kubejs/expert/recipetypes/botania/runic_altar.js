@@ -286,7 +286,7 @@ onEvent('recipes', (event) => {
                 '#botania:runes/fire',
                 '#botania:runes/autumn',
                 '#botania:runes/envy',
-                ['eidolon:zombie_heart', 'eidolon:wraith_heart']
+                '#forge:heart'
             ],
             mana: 96000,
             output: 'mythicbotany:helheim_rune',
@@ -334,11 +334,11 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                '#forge:ingots/arcane_gold',
+                'naturesaura:tainted_gold',
                 '#botania:runes/earth',
                 '#botania:runes/winter',
                 '#botania:runes/sloth',
-                'eidolon:shadow_gem'
+                'redstone_arsenal:flux_gem'
             ],
             mana: 96000,
             output: 'mythicbotany:nidavellir_rune',

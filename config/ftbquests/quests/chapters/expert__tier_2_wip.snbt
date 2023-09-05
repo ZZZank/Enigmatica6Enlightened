@@ -4,13 +4,7 @@
 	order_index: 4
 	filename: "expert__tier_2_wip"
 	title: "Magic - Apprentice"
-	icon: {
-		id: "eidolon:soulfire_wand"
-		Count: 1b
-		tag: {
-			Damage: 0
-		}
-	}
+	icon: "minecraft:conduit"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -106,11 +100,6 @@
 			id: "1C17C09DD9AB58BD"
 			tasks: [
 				{
-					id: "00A73F4961BFEB07"
-					type: "item"
-					item: "eidolon:brazier"
-				}
-				{
 					id: "3AB5F233F75DD849"
 					type: "item"
 					item: "farmersdelight:cooking_pot"
@@ -118,7 +107,42 @@
 				{
 					id: "5A65288C9B50231B"
 					type: "item"
-					item: "farmersdelight:stove"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							RepairCost: 0
+							items: [
+								{
+									id: "minecraft:campfire"
+									Count: 1b
+								}
+								{
+									id: "farmersdelight:stove"
+									Count: 1b
+								}
+								{
+									id: "minecraft:lava_bucket"
+									Count: 1b
+								}
+								{
+									id: "minecraft:magma_block"
+									Count: 1b
+								}
+								{
+									id: "nethers_delight:blackstone_stove"
+									Count: 1b
+								}
+								{
+									id: "minecraft:soul_campfire"
+									Count: 1b
+								}
+							]
+							display: {
+								Name: "{\"text\":\"Any Heat Source\"}"
+							}
+						}
+					}
 				}
 			]
 		}
@@ -311,7 +335,7 @@
 				""
 				"Gain its approval to begin channeling the energies of sanguimancy."
 				""
-				"The Weak Blood Orb is crafted from an Unholy Symbol. Refer to the Ars Ecclesia and Eidolon quest chapters to learn how these are made."
+				"The Weak Blood Orb is crafted from an Koi. Refer to Koi Bucket to learn how this is made."
 			]
 			dependencies: [
 				"06A20E7EA36392CB"
@@ -327,7 +351,7 @@
 				{
 					id: "6DB611075387D462"
 					type: "item"
-					item: "eidolon:unholy_symbol"
+					item: "environmental:koi"
 				}
 			]
 		}
@@ -451,7 +475,7 @@
 			tasks: [{
 				id: "2B5C17D526E0CEBA"
 				type: "item"
-				item: "eidolon:gold_inlay"
+				item: "resourcefulbees:tainted_honeycomb"
 			}]
 		}
 		{

@@ -25,7 +25,7 @@ onEvent('recipes', (event) => {
                     canBeCelestialCrystal: true
                 },
                 B: { item: 'create:shadow_steel_casing' },
-                C: { item: 'eidolon:shadow_gem' },
+                C: { item: 'redstone_arsenal:flux_gem' },
                 D: { item: 'astralsorcery:resonating_gem' },
                 E: { item: 'astralsorcery:colored_lens_spectral' },
                 F: { tag: 'botania:runes/asgard' },

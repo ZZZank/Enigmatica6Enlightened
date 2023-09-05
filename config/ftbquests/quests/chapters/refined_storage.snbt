@@ -30,21 +30,18 @@
 				{
 					id: "000000000000027A"
 					type: "item"
-					title: "Slimeball"
 					item: "minecraft:slime_ball"
 					count: 4
 				}
 				{
 					id: "000000000000027B"
 					type: "item"
-					title: "String"
 					item: "minecraft:string"
 					count: 4
 				}
 				{
 					id: "0000000000000F4D"
 					type: "item"
-					title: "Wrench"
 					item: "refinedstorage:wrench"
 				}
 			]
@@ -177,7 +174,6 @@
 				{
 					id: "00000000000005BD"
 					type: "item"
-					title: "Storage Housing"
 					item: "refinedstorage:storage_housing"
 					count: 2
 				}

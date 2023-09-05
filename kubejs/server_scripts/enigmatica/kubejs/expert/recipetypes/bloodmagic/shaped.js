@@ -17,14 +17,22 @@ onEvent('recipes', (event) => {
 
     const newRecipes = [
         {
+            output: '4x bloodmagic:woodbrickpath',
+            pattern: ['AA ', 'AA '],
+            key: {
+                A: 'bloodmagic:woodtilepath'
+            },
+            id: 'bloodmagic:path/path_wood'
+        },
+        {
             output: 'bloodmagic:altar',
             pattern: ['ABA', 'CDC', 'EEE'],
             key: {
-                A: 'eidolon:gold_inlay',
+                A: 'resourcefulbees:tainted_honeycomb',
                 B: 'farmersdelight:cooking_pot',
                 C: 'occultism:otherstone',
                 D: 'minecraft:heart_of_the_sea',
-                E: '#forge:ingots/arcane_gold'
+                E: 'naturesaura:tainted_gold'
             },
             id: 'bloodmagic:blood_altar'
         },
@@ -36,7 +44,7 @@ onEvent('recipes', (event) => {
                 B: 'bloodmagic:blankslate',
                 C: 'supplementaries:jar_tinted',
                 D: 'thermal:hazmat_fabric',
-                E: 'eidolon:stone_altar'
+                E: 'betterendforge:andesite_pedestal'
             },
             id: 'bloodmagic:alchemy_table'
         },
@@ -56,7 +64,7 @@ onEvent('recipes', (event) => {
             pattern: ['  A', 'BA ', 'CB '],
             key: {
                 A: '#forge:ingots/silicon_bronze',
-                B: 'eidolon:pewter_inlay',
+                B: '#forge:inlays/pewter',
                 C: '#forge:rods/wooden'
             },
             id: 'bloodmagic:altar/daggerofsacrifice'
@@ -67,9 +75,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: { type: 'bloodmagic:bloodorb', orb_tier: 1 },
                 B: Item.of('botania:incense_stick', { brewKey: 'botania:soul_cross' }),
-                C: 'eidolon:polished_planks',
+                C: 'bloodmagic:woodtilepath',
                 D: 'farmersdelight:cooking_pot',
-                E: 'eidolon:polished_wood_pillar'
+                E: 'bloodmagic:woodbrickpath'
             },
             id: 'bloodmagic:incense_altar'
         },

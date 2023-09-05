@@ -79,19 +79,6 @@
 			}]
 		}
 		{
-			title: "Eidolon"
-			x: 1.5d
-			y: 1.5d
-			dependencies: ["0000000000000B6C"]
-			id: "0000000000000FC3"
-			tasks: [{
-				id: "0000000000000FC4"
-				type: "item"
-				icon: "eidolon:pewter_inlay"
-				item: "eidolon:pewter_inlay"
-			}]
-		}
-		{
 			title: "Ars Nouveau"
 			x: 3.0d
 			y: 1.5d
@@ -177,20 +164,6 @@
 				id: "0000000000000FD0"
 				type: "item"
 				item: "bloodmagic:soulforge"
-			}]
-		}
-		{
-			title: "Pretty Pipes"
-			x: -4.375d
-			y: 1.25d
-			shape: "diamond"
-			dependencies: ["0000000000000FBD"]
-			size: 1.25d
-			id: "0000000000000FD1"
-			tasks: [{
-				id: "0000000000000FD2"
-				type: "item"
-				item: "prettypipes:crafting_terminal"
 			}]
 		}
 		{
@@ -393,7 +366,7 @@
 			title: "Blood Magic: Part One"
 			x: 1.5d
 			y: 2.6d
-			dependencies: ["0000000000000FC3"]
+			dependencies: ["0000000000000FC5"]
 			id: "573D1ADF4FBE3044"
 			tasks: [{
 				id: "50E8AA4A66F47704"

@@ -2,6 +2,18 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/ars_nouveau/enchanting_apparatus/';
     const recipes = [
         {
+            inputs: [
+                'minecraft:conduit',
+                'kubejs:monster_mash',
+                'aquaculture:fish_bones',
+                'ars_nouveau:red_archwood_sapling'
+            ],
+            reagent: 'minecraft:water_bucket',
+            sourceCost: 1000,
+            output: 'kubejs:dead_koi_bucket',
+            id: `${id_prefix}dead_koi_bucket`
+        },
+        {
             inputs: ['#forge:gems/mana', '#forge:gems/mana', '#forge:gems/mana', '#forge:gems/mana'],
             reagent: '#forge:seeds',
             output: 'ars_nouveau:mana_bloom_crop',

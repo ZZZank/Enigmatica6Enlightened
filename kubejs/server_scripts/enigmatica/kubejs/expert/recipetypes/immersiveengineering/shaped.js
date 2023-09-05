@@ -16,6 +16,27 @@ onEvent('recipes', (event) => {
     */
 
     const recipes = [
+        {
+            output: 'immersiveengineering:fluid_pump',
+            pattern: [' A ', 'BCB', 'CDC'],
+            key: {
+                A: 'emendatusenigmatica:signalum_nugget',
+                B: 'emendatusenigmatica:iron_plate',
+                C: 'immersiveengineering:fluid_pipe',
+                D: 'thermal:redstone_servo'
+            },
+            id: 'immersiveengineering:crafting/fluidpump'
+        },
+        {
+            output: 'immersiveengineering:conveyor_extract',
+            pattern: ['AB ', 'AC '],
+            key: {
+                A: '#forge:treated_wood',
+                B: 'create:andesite_funnel',
+                C: 'immersiveengineering:conveyor_basic'
+            },
+            id: 'immersiveengineering:crafting/conveyor_extract'
+        },
         /*{
             output: Item.of('immersiveengineering:cokebrick', 3),
             pattern: ['CAC', 'ABA', 'CAC'],
@@ -171,7 +192,7 @@ onEvent('recipes', (event) => {
             output: 'immersiveengineering:windmill_blade',
             pattern: ['AA ', 'BBA', 'BB '],
             key: {
-                A: 'eidolon:polished_planks',
+                A: 'bloodmagic:woodtilepath',
                 B: 'create:sail_frame'
             },
             id: 'immersiveengineering:crafting/windmill_blade'
@@ -199,7 +220,7 @@ onEvent('recipes', (event) => {
             pattern: [' A ', 'ABA', 'BAB'],
             key: {
                 A: '#forge:rods/brass',
-                B: 'eidolon:polished_planks'
+                B: 'bloodmagic:woodtilepath'
             },
             id: 'immersiveengineering:crafting/waterwheel_segment'
         },

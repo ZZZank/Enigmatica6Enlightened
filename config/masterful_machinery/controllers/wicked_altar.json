@@ -1,6 +1,6 @@
 {
     "controllerId": "wicked_altar",
-    "textureOverride": "eidolon:block/polished_wood_pillar_top",
+    "textureOverride": "botania:block/open_crate",
     "name": "Wicked Altar",
     "ports": [
         {

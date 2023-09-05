@@ -50,7 +50,7 @@ onEvent('recipes', (event) => {
             output: 'rftoolsutility:matter_receiver',
             pattern: ['ABA', 'ACA', 'ADA'],
             key: {
-                A: 'portality:frame',
+                A: 'mekanism:teleporter_frame',
                 B: 'atum:yellow_stained_crystal_glass',
                 C: 'occultism:stable_wormhole',
                 D: '#industrialforegoing:machine_frame/pity'
@@ -61,7 +61,7 @@ onEvent('recipes', (event) => {
             output: 'rftoolsutility:matter_transmitter',
             pattern: ['ABA', 'ACA', 'ADA'],
             key: {
-                A: 'portality:frame',
+                A: 'mekanism:teleporter_frame',
                 B: 'atum:cyan_stained_crystal_glass',
                 C: 'occultism:stable_wormhole',
                 D: '#industrialforegoing:machine_frame/pity'
@@ -72,8 +72,8 @@ onEvent('recipes', (event) => {
             output: 'rftoolsutility:dialing_device',
             pattern: ['ABA', 'ACA', 'AAA'],
             key: {
-                A: 'portality:frame',
-                B: 'portality:controller',
+                A: 'mekanism:teleporter_frame',
+                B: 'mekanism:teleporter',
                 C: 'xnet:wireless_router'
             },
             id: 'rftoolsutility:dialing_device'
@@ -83,7 +83,7 @@ onEvent('recipes', (event) => {
             pattern: ['EAE', 'BCB', 'EDE'],
             key: {
                 A: 'rftoolsutility:matter_beamer',
-                B: 'portality:frame',
+                B: 'mekanism:teleporter_frame',
                 C: 'rftoolsbase:tablet',
                 D: 'rftoolsutility:matter_transmitter',
                 E: 'powah:capacitor_basic_large'
@@ -130,9 +130,9 @@ onEvent('recipes', (event) => {
             pattern: ['ADA', 'BCB', 'ABA'],
             key: {
                 A: 'minecraft:bricks',
-                B: 'portality:frame',
+                B: 'mekanism:teleporter_frame',
                 C: '#industrialforegoing:machine_frame/pity',
-                D: 'portality:controller'
+                D: 'mekanism:teleporter'
             },
             id: 'rftoolsbuilder:builder'
         },

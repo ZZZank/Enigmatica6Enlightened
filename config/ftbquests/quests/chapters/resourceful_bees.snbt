@@ -39,14 +39,12 @@
 				{
 					id: "0000000000000711"
 					type: "item"
-					title: "Empty Bee Jar"
 					item: "resourcefulbees:bee_jar"
 					count: 4
 				}
 				{
 					id: "0000000000000B08"
 					type: "item"
-					title: "Honey Cookie"
 					item: "farmersdelight:honey_cookie"
 					random_bonus: 2
 				}
@@ -251,14 +249,12 @@
 				{
 					id: "6DA6F6AC7E54E2C9"
 					type: "item"
-					title: "Empty Bee Jar"
 					item: "resourcefulbees:bee_jar"
 					count: 8
 				}
 				{
 					id: "0C1504955F2C86AD"
 					type: "item"
-					title: "Beepedia"
 					item: "resourcefulbees:beepedia"
 				}
 			]
@@ -287,7 +283,6 @@
 				{
 					id: "0000000000000B04"
 					type: "item"
-					title: "Shears"
 					item: {
 						id: "minecraft:shears"
 						Count: 1b
@@ -396,7 +391,6 @@
 				{
 					id: "0000000000000AFA"
 					type: "item"
-					title: "Epic Oreo"
 					item: "resourcefulbees:oreo_cookie"
 					random_bonus: 2
 				}
@@ -454,14 +448,12 @@
 				{
 					id: "0000000000000B17"
 					type: "item"
-					title: "Honey Glazed Ham"
 					item: "farmersdelight:honey_glazed_ham"
 					random_bonus: 2
 				}
 				{
 					id: "0000000000000B18"
 					type: "item"
-					title: "Honey Bottle"
 					item: "minecraft:honey_bottle"
 					count: 8
 					random_bonus: 8
@@ -504,7 +496,6 @@
 				{
 					id: "0000000000000B1F"
 					type: "item"
-					title: "Epic Oreo"
 					item: "resourcefulbees:oreo_cookie"
 				}
 			]
@@ -539,7 +530,6 @@
 				{
 					id: "0000000000000B1B"
 					type: "item"
-					title: "Honey Cookie"
 					item: "farmersdelight:honey_cookie"
 					random_bonus: 2
 				}
@@ -599,7 +589,6 @@
 				{
 					id: "0000000000000B26"
 					type: "item"
-					title: "Honey Glazed Ham"
 					item: "farmersdelight:honey_glazed_ham"
 					random_bonus: 1
 				}
@@ -682,7 +671,6 @@
 				{
 					id: "0000000000000B00"
 					type: "item"
-					title: "Honeycomb"
 					item: "minecraft:honeycomb"
 					count: 8
 					random_bonus: 8
@@ -690,7 +678,6 @@
 				{
 					id: "0000000000000B01"
 					type: "item"
-					title: "Honey Bottle"
 					item: "minecraft:honey_bottle"
 					count: 8
 					random_bonus: 8
@@ -698,7 +685,6 @@
 				{
 					id: "0000000000000B19"
 					type: "item"
-					title: "Honeycomb Block"
 					item: "minecraft:honeycomb_block"
 					count: 8
 					random_bonus: 8
@@ -776,7 +762,6 @@
 				{
 					id: "0000000000000AFC"
 					type: "item"
-					title: "Epic Oreo"
 					item: "resourcefulbees:oreo_cookie"
 					random_bonus: 2
 				}

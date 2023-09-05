@@ -7,8 +7,7 @@ onEvent('recipes', (event) => {
         'torchmaster:feral_flare_lantern',
         'torchmaster:megatorch',
         'quark:white_candle',
-        'occultism:candle_white',
-        'eidolon:candle'
+        'occultism:candle_white'
     ];
 
     var idRemovals = [];

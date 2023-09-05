@@ -30,7 +30,7 @@ onEvent('recipes', (event) => {
                 'MMMOOO   '
             ],
             key: {
-                A: '#forge:inlays/arcane_gold',
+                A: 'resourcefulbees:tainted_honeycomb',
                 B: 'astralsorcery:marble_runed',
                 C: 'kubejs:observatory_lens',
                 D: 'quark:lime_rune',
@@ -107,7 +107,7 @@ onEvent('recipes', (event) => {
             output: 'pneumaticcraft:assembly_drill',
             pattern: ['AAA ', 'BCCA', '  CA', 'DDED'],
             key: {
-                A: 'prettypipes:pipe',
+                A: 'mekanism:basic_logistical_transporter',
                 B: 'pneumaticcraft:drill_bit_diamond',
                 C: 'pneumaticcraft:pneumatic_cylinder',
                 D: 'pneumaticcraft:reinforced_stone_slab',
@@ -119,7 +119,7 @@ onEvent('recipes', (event) => {
             output: 'pneumaticcraft:assembly_laser',
             pattern: ['AAA ', 'BCCA', '  CA', 'DDED'],
             key: {
-                A: 'prettypipes:pipe',
+                A: 'mekanism:basic_logistical_transporter',
                 B: '#powah:energizing_rod',
                 C: 'pneumaticcraft:pneumatic_cylinder',
                 D: 'pneumaticcraft:reinforced_stone_slab',
@@ -131,7 +131,7 @@ onEvent('recipes', (event) => {
             output: 'pneumaticcraft:assembly_io_unit_import',
             pattern: ['AAA ', 'BCCA', '  CA', 'DDED'],
             key: {
-                A: 'prettypipes:pipe',
+                A: 'mekanism:basic_logistical_transporter',
                 B: 'create:brass_hand',
                 C: 'pneumaticcraft:pneumatic_cylinder',
                 D: 'pneumaticcraft:reinforced_stone_slab',
@@ -143,7 +143,7 @@ onEvent('recipes', (event) => {
             output: 'pneumaticcraft:assembly_io_unit_export',
             pattern: [' AAA', 'ACCB', 'AC  ', 'DEDD'],
             key: {
-                A: 'prettypipes:pipe',
+                A: 'mekanism:basic_logistical_transporter',
                 B: 'create:brass_hand',
                 C: 'pneumaticcraft:pneumatic_cylinder',
                 D: 'pneumaticcraft:reinforced_stone_slab',
@@ -155,7 +155,7 @@ onEvent('recipes', (event) => {
             output: 'pneumaticcraft:assembly_controller',
             pattern: [' AAA', 'ACCB', 'AC  ', 'DEDD'],
             key: {
-                A: 'prettypipes:pipe',
+                A: 'mekanism:basic_logistical_transporter',
                 B: 'rftoolsutility:screen',
                 C: 'pneumaticcraft:printed_circuit_board',
                 D: 'pneumaticcraft:reinforced_stone_slab',
@@ -232,18 +232,19 @@ onEvent('recipes', (event) => {
             id: 'integrateddynamics:crafting/logic_programmer'
         },
         {
-            output: Item.of('2x portality:controller'),
-            pattern: ['ABBBA', 'CDEDC', 'CFGFC', 'CDEDC', 'ABBBA'],
+            output: Item.of('mekanism:teleporter', 2),
+            pattern: ['ABBBA', 'CDEDC', 'CFGFC', 'CDHDC', 'ABBBA'],
             key: {
-                A: 'portality:frame',
+                A: 'quark:lime_rune',
                 B: 'immersiveengineering:coil_lv',
                 C: 'immersiveengineering:electron_tube',
-                D: 'immersiveengineering:wirecoil_redstone',
+                D: 'mekanism:teleporter_frame',
                 E: 'pneumaticcraft:advanced_pcb',
                 F: 'immersiveengineering:current_transformer',
-                G: 'xnet:controller'
+                G: 'xnet:controller',
+                H: Item.of('waystones:warp_stone', '{Damage:0}').weakNBT()
             },
-            id: 'portality:controller'
+            id: 'mekanism:teleporter'
         },
         {
             output: 'rftoolsutility:environmental_controller',
@@ -491,7 +492,7 @@ onEvent('recipes', (event) => {
             output: 'meetyourfight:phantasmal_rifle',
             pattern: ['   ABA ', 'CCCCDEF', ' IIIGHF'],
             key: {
-                A: '#forge:inlays/arcane_gold',
+                A: 'resourcefulbees:tainted_honeycomb',
                 B: 'meetyourfight:phantoplasm',
                 C: Item.of('immersiveengineering:gunpart_barrel').ignoreNBT(),
                 D: Item.of('immersiveengineering:gunpart_hammer').ignoreNBT(),
@@ -797,12 +798,12 @@ onEvent('recipes', (event) => {
             pattern: ['AABAA', 'ACCCA', 'DCECF', 'ACCCA', 'AAGAA'],
             key: {
                 A: 'compactmachines:wall',
-                B: 'portality:module_energy',
+                B: 'thermal:upgrade_augment_1',
                 C: `resourcefulbees:${compactmachine.comb}_honeycomb_block`,
-                D: 'portality:module_items',
-                E: 'portality:controller',
-                F: 'portality:module_fluids',
-                G: 'portality:module_interdimensional'
+                D: 'modularrouters:sender_module_3',
+                E: 'mekanism:teleporter',
+                F: 'modularrouters:fluid_module_2',
+                G: ['rftoolsutility:matter_transmitter', 'rftoolsutility:matter_receiver']
             },
             id: `${id_prefix}compact_machine_${compactmachine.tier}`
         });

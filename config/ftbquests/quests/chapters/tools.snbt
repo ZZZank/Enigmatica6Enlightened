@@ -34,7 +34,6 @@
 				{
 					id: "00000000000001C8"
 					type: "item"
-					title: "Compressed Iron Drill Bit"
 					item: "pneumaticcraft:drill_bit_compressed_iron"
 				}
 				{
@@ -63,7 +62,6 @@
 				{
 					id: "00000000000001CB"
 					type: "item"
-					title: "Volume Upgrade"
 					item: "pneumaticcraft:volume_upgrade"
 					count: 5
 				}
@@ -93,7 +91,6 @@
 				{
 					id: "00000000000001CE"
 					type: "item"
-					title: "Speed Upgrade"
 					item: "pneumaticcraft:speed_upgrade"
 					count: 2
 				}
@@ -660,7 +657,6 @@
 				"● Radiation Protection"
 				"● Energy Shielding"
 			]
-			dependencies: ["00000000000007A9"]
 			id: "0000000000000435"
 			tasks: [{
 				id: "0000000000000436"
@@ -695,7 +691,6 @@
 				"● Radiation Protection"
 				"● Energy Shielding"
 			]
-			dependencies: ["00000000000007A9"]
 			id: "0000000000000437"
 			tasks: [{
 				id: "0000000000000438"
@@ -728,7 +723,6 @@
 				"● Radiation Protection"
 				"● Energy Shielding"
 			]
-			dependencies: ["00000000000007A9"]
 			id: "0000000000000439"
 			tasks: [{
 				id: "000000000000043A"
@@ -762,7 +756,6 @@
 				"● Radiation Protection"
 				"● Energy Shielding"
 			]
-			dependencies: ["00000000000007A9"]
 			id: "000000000000043B"
 			tasks: [{
 				id: "000000000000043C"
@@ -790,7 +783,6 @@
 			y: -8.0d
 			subtitle: "Soylent Green"
 			description: ["All your essential vitamins, minerals, and amino acids, neatly condensed into a convenient chewy paste. Yum."]
-			dependencies: ["00000000000006A5"]
 			id: "000000000000043D"
 			tasks: [
 				{
@@ -977,7 +969,6 @@
 			y: -8.5d
 			subtitle: "Don't Leave That Plasma Cutter Running"
 			description: ["A basic multi-tool with built in vein mining and excellent attack damage."]
-			dependencies: ["00000000000006C5"]
 			id: "000000000000044F"
 			tasks: [{
 				id: "0000000000000450"
@@ -1015,7 +1006,6 @@
 				"● Teleportation Unit"
 				"● Farming Unit"
 			]
-			dependencies: ["00000000000007A9"]
 			id: "0000000000000451"
 			tasks: [{
 				id: "0000000000000452"
@@ -1042,7 +1032,6 @@
 			y: -7.5d
 			subtitle: "Be the Change"
 			description: ["Used for applying all upgrades to the MekaTool and MekaSuit pieces."]
-			dependencies: ["00000000000007A9"]
 			id: "0000000000000453"
 			tasks: [{
 				id: "0000000000000454"
@@ -1163,7 +1152,6 @@
 				{
 					id: "000000000000067D"
 					type: "item"
-					title: "Upgrade: Light Placer"
 					item: "mininggadgets:upgrade_light_placer"
 				}
 				{
@@ -1211,7 +1199,6 @@
 				{
 					id: "000000000000067B"
 					type: "item"
-					title: "Upgrade: Magnet"
 					item: "mininggadgets:upgrade_magnet"
 				}
 				{
@@ -1472,7 +1459,6 @@
 				{
 					id: "000000000000065F"
 					type: "item"
-					title: "Nether Star Hook"
 					item: "aquaculture:nether_star_hook"
 				}
 				{
@@ -1584,7 +1570,6 @@
 				{
 					id: "000000000000066E"
 					type: "item"
-					title: "Mana Boost V, Mana Regen V"
 					item: {
 						id: "minecraft:enchanted_book"
 						Count: 1b
@@ -2152,7 +2137,6 @@
 				{
 					id: "4AA86E1E20DADE27"
 					type: "item"
-					title: "Advanced Fluid Tank"
 					item: {
 						id: "mekanism:advanced_fluid_tank"
 						Count: 1b
@@ -2172,7 +2156,6 @@
 				{
 					id: "17E85BEC398930AD"
 					type: "item"
-					title: "Sawblade"
 					item: {
 						id: "immersiveengineering:sawblade"
 						Count: 1b
@@ -2220,7 +2203,6 @@
 				{
 					id: "02E988D98405DAFB"
 					type: "item"
-					title: "Casull Cartridge"
 					item: "immersiveengineering:casull"
 					count: 64
 				}
@@ -2257,7 +2239,6 @@
 				{
 					id: "5D7232BCA248639D"
 					type: "item"
-					title: "Advanced Fluid Tank"
 					item: {
 						id: "mekanism:advanced_fluid_tank"
 						Count: 1b
@@ -2277,7 +2258,6 @@
 				{
 					id: "7683853C5B00EE25"
 					type: "item"
-					title: "Iron Drill Head"
 					item: "immersiveengineering:drillhead_iron"
 				}
 			]
@@ -2321,7 +2301,6 @@
 				{
 					id: "6BCA8B2194807B4D"
 					type: "item"
-					title: "Iron Rod"
 					item: "emendatusenigmatica:iron_rod"
 					count: 16
 				}
@@ -2896,7 +2875,6 @@
 				{
 					id: "39498CF292AB8B53"
 					type: "item"
-					title: "Glass Bottle"
 					item: "minecraft:glass_bottle"
 					count: 8
 				}

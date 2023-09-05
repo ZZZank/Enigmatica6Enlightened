@@ -2,6 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
+    const id_prefix = 'enigmatica:expert/ars_nouveau/shapeless/';
 
     const recipes = [
         {
@@ -50,7 +51,7 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'ars_nouveau:potion_jar',
-            inputs: ['ars_nouveau:mana_jar', ['minecraft:nether_wart', 'eidolon:fungus_sprouts']],
+            inputs: ['ars_nouveau:mana_jar', ['minecraft:nether_wart', 'byg:bulbis_sprouts']],
             id: 'ars_nouveau:potion_jar'
         }
     ];

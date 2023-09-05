@@ -25,7 +25,7 @@ onEvent('recipes', (event) => {
             id: `${idPrefix}crystal_glass_2`
         },
         {
-            inputs: [Ingredient.of('4x #forge:storage_blocks/arcane_gold'), 'create:honeyed_apple'],
+            inputs: [Ingredient.of('4x #forge:storage_blocks/tainted_gold'), 'create:honeyed_apple'],
             output: Item.of('minecraft:enchanted_golden_apple'),
             id: `${idPrefix}enchanted_golden_apple`
         },
@@ -115,30 +115,6 @@ onEvent('recipes', (event) => {
             ],
             output: Item.of('2x emendatusenigmatica:enderium_block'),
             id: `${idPrefix}enderium_block`
-        },
-        {
-            inputs: [
-                Item.of('3x modularrouters:blank_module'),
-                Item.of('3x prettypipes:high_retrieval_module')
-            ],
-            output: Item.of('3x modularrouters:puller_module_1'),
-            id: 'modularrouters:puller_module_1'
-        },
-        {
-            inputs: [
-                Item.of('3x modularrouters:blank_module'),
-                Item.of('3x prettypipes:high_extraction_module')
-            ],
-            output: Item.of('3x modularrouters:sender_module_1'),
-            id: 'modularrouters:sender_module_1'
-        },
-        {
-            inputs: [
-                Item.of('3x modularrouters:blank_module'),
-                Item.of('3x ppfluids:high_fluid_retrieval_module')
-            ],
-            output: Item.of('3x modularrouters:fluid_module'),
-            id: 'modularrouters:fluid_module'
         },
         {
             inputs: [Item.of('3x modularrouters:blank_module'), 'thermal:charge_bench'],

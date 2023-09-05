@@ -6,9 +6,7 @@ onEvent('recipes', (event) => {
     const idRemovals = [
         'architects_palette:sunstone',
 
-        'ars_nouveau:dull_trinket',
         'ars_nouveau:moonfall_2',
-        'ars_nouveau:mundane_belt',
         'ars_nouveau:ring_of_potential',
         'ars_nouveau:stone_2',
         'ars_nouveau:sunrise_2',
@@ -36,10 +34,6 @@ onEvent('recipes', (event) => {
         'darkutils:crafting/rune_damage_player',
         'darkutils:crafting/blank_plate',
         /darkutils:crafting\/export_plate/,
-
-        'eidolon:crucible',
-        'eidolon:wooden_brewing_stand',
-        'eidolon:worktable',
 
         'farmersdelight:book_from_canvas',
 
@@ -105,6 +99,8 @@ onEvent('recipes', (event) => {
         'modularrouters:sender_module_1_alt',
 
         /naturesaura:animal_spawner\/sheep_/,
+        'naturesaura:altar/tainted_gold',
+        'naturesaura:altar/tainted_gold_block',
 
         'pneumaticcraft:explosion_crafting/compressed_iron_block',
         'pneumaticcraft:explosion_crafting/compressed_iron_ingot',
@@ -121,6 +117,8 @@ onEvent('recipes', (event) => {
         'quark:building/crafting/candles/candle_basic',
         'quark:building/crafting/red_nether_bricks_util',
         'quark:tools/crafting/runes/rainbow_rune',
+
+        'redstone_arsenal:materials/flux_ingot_fire_charge_from_dust',
 
         'rftoolscontrol:cpu_core_500',
         'rftoolscontrol:cpu_core_1000',
@@ -286,6 +284,19 @@ onEvent('recipes', (event) => {
         { output: 'pneumaticcraft:spawner_extractor', id: 'pneumaticcraft:spawner_extractor' }
     ];
 
+    const customRemovals = [
+        { type: 'minecraft:crafting_shapeless', output: '#forge:dusts', mod: 'thermal' },
+        {
+            type: 'minecraft:crafting_shapeless',
+            output: '#forge:dusts',
+            mod: 'immersiveengineering'
+        },
+        { type: 'integrateddynamics:drying_basin' },
+        { type: 'integrateddynamics:mechanical_drying_basin' },
+        { type: 'integrateddynamics:squeezer' },
+        { type: 'integrateddynamics:mechanical_squeezer' }
+    ];
+
     idRemovals.forEach((id) => {
         event.remove({ id: id });
     });
@@ -294,16 +305,9 @@ onEvent('recipes', (event) => {
         event.remove({ output: output });
     });
 
-    event.remove({ type: 'minecraft:crafting_shapeless', output: '#forge:dusts', mod: 'thermal' });
-    event.remove({
-        type: 'minecraft:crafting_shapeless',
-        output: '#forge:dusts',
-        mod: 'immersiveengineering'
+    customRemovals.forEach((customRemoval) => {
+        event.remove(customRemoval);
     });
-    event.remove({ type: 'integrateddynamics:drying_basin' });
-    event.remove({ type: 'integrateddynamics:mechanical_drying_basin' });
-    event.remove({ type: 'integrateddynamics:squeezer' });
-    event.remove({ type: 'integrateddynamics:mechanical_squeezer' });
 
     patchouli_safe_removals.forEach((recipe) => {
         event.shaped(recipe.output, ['A'], { A: 'kubejs:altered_recipe_indicator' }).id(recipe.id);

@@ -13,7 +13,6 @@ onEvent('item.tags', (event) => {
         'bloodmagic:soulsword',
         'bloodmagic:soulscythe',
         'meetyourfight:depth_star',
-        'eidolon:reaper_scythe',
         'atum:shus_exile',
         'atum:seths_sting',
         'atum:nuits_quarter',

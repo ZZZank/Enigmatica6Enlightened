@@ -10,7 +10,6 @@ onEvent('block.tags', (event) => {
         'bloodmagic:soulforge',
         'bloodmagic:alchemicalreactionchamber',
         'bloodmagic:incensealtar',
-        'eidolon:soul_enchanter',
         'occultism:sacrificial_bowl',
         'occultism:chalk_glyph_white',
         'occultism:chalk_glyph_purple',

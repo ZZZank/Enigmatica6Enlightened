@@ -131,7 +131,7 @@ onEvent('recipes', (event) => {
                 'naturesaura:birth_spirit',
                 'undergarden:gloom_o_lantern',
                 'undergarden:inky_stew',
-                'eidolon:fungus_sprouts'
+                'byg:bulbis_sprouts'
             ],
             entity: 'alexsmobs:mungus',
             aura: 150000,

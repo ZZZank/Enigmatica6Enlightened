@@ -1,7 +1,4 @@
 onEvent('recipes', (event) => {
-    if (!isAE2Loaded) {
-        return;
-    }
     if (global.isExpertMode == false) {
         return;
     }
@@ -132,18 +129,7 @@ onEvent('recipes', (event) => {
             id: 'appliedenergistics2:network/blocks/quantum_link'
         },
         {
-            output: Item.of('appliedenergistics2:fluix_glass_cable', 8),
-            patterns: ['ADA', 'BCB', 'ADA'],
-            inputs: {
-                A: 'occultism:spirit_attuned_gem',
-                B: 'immersiveengineering:connector_bundled',
-                C: 'immersiveengineering:wirecoil_redstone',
-                D: 'prettypipes:pipe'
-            },
-            id: 'appliedenergistics2:network/cables/glass_fluix'
-        },
-        {
-            output: Item.of('appliedenergistics2:fluix_glass_cable', 8),
+            output: Item.of('appliedenergistics2:fluix_glass_cable', 16),
             patterns: ['DBD', 'ACA', 'DBD'],
             inputs: {
                 A: 'occultism:spirit_attuned_gem',
@@ -151,7 +137,7 @@ onEvent('recipes', (event) => {
                 C: 'immersiveengineering:wirecoil_redstone',
                 D: 'integrateddynamics:cable'
             },
-            id: `${id_prefix}fluix_cable_alt`
+            id: 'appliedenergistics2:network/cables/glass_fluix'
         },
         {
             output: 'appliedenergistics2:quartz_block',

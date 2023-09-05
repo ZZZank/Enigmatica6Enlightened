@@ -103,13 +103,11 @@
 				{
 					id: "5476A59853122500"
 					type: "item"
-					title: "Armor Stand"
 					item: "minecraft:armor_stand"
 				}
 				{
 					id: "1822E8DD1641B839"
 					type: "item"
-					title: "Green Slime Block"
 					item: "minecraft:slime_block"
 					count: 2
 				}

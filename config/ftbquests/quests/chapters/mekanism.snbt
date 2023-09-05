@@ -126,14 +126,12 @@
 				{
 					id: "000000000000080D"
 					type: "item"
-					title: "Block of Coal"
 					item: "minecraft:coal_block"
 					count: 32
 				}
 				{
 					id: "0000000000000CAA"
 					type: "item"
-					title: "Advanced Energy Cube"
 					item: "mekanism:advanced_energy_cube"
 				}
 			]
@@ -166,7 +164,6 @@
 				{
 					id: "0000000000000864"
 					type: "item"
-					title: "Basic Universal Cable"
 					item: "mekanism:basic_universal_cable"
 					count: 16
 				}
@@ -242,7 +239,6 @@
 				{
 					id: "0000000000000705"
 					type: "item"
-					title: "Advanced Induction Cell"
 					item: "mekanism:advanced_induction_cell"
 				}
 				{
@@ -341,7 +337,6 @@
 				{
 					id: "0000000000000860"
 					type: "item"
-					title: "Steel Casing"
 					item: "mekanism:steel_casing"
 				}
 			]
@@ -406,14 +401,12 @@
 				{
 					id: "0000000000000861"
 					type: "item"
-					title: "Enriched Redstone"
 					item: "mekanism:enriched_redstone"
 					count: 4
 				}
 				{
 					id: "0000000000000862"
 					type: "item"
-					title: "Enriched Carbon"
 					item: "mekanism:enriched_carbon"
 					count: 8
 				}
@@ -471,7 +464,6 @@
 				{
 					id: "000000000000082C"
 					type: "item"
-					title: "Banana"
 					item: "neapolitan:banana"
 					count: 16
 				}
@@ -562,7 +554,6 @@
 				{
 					id: "0000000000000CA9"
 					type: "item"
-					title: "Personal Chest"
 					item: "mekanism:personal_chest"
 				}
 			]
@@ -615,14 +606,12 @@
 				{
 					id: "0000000000000703"
 					type: "item"
-					title: "Resistive Heater"
 					item: "mekanism:resistive_heater"
 				}
 				{
 					id: "0000000000000704"
 					type: "item"
-					title: "Advanced Thermodynamic Conductor"
-					item: "mekanism:advanced_thermodynamic_conductor"
+					type: "item"nductor"
 					count: 16
 				}
 			]
@@ -647,7 +636,6 @@
 				{
 					id: "0000000000000829"
 					type: "item"
-					title: "Jetpack"
 					item: {
 						id: "mekanism:jetpack"
 						Count: 1b
@@ -922,7 +910,6 @@
 				{
 					id: "00000000000006D5"
 					type: "item"
-					title: "Basic Tier Installer"
 					item: "mekanism:basic_tier_installer"
 					count: 3
 				}
@@ -1406,31 +1393,25 @@
 				{
 					id: "000000000000082B"
 					type: "item"
-					title: "Sweet Berry Cookie"
 					item: "farmersdelight:sweet_berry_cookie"
 					count: 3
 				}
 				{
 					id: "000000000000082D"
 					type: "item"
-					title: "Honey Cookie"
-					item: "farmersdelight:honey_cookie"
+					type: "item":honey_cookie"
 					count: 3
 				}
 				{
 					id: "000000000000082E"
 					type: "item"
-					title: "Peanut Butter Cookie"
-					item: "abnormals_delight:mulberry_cookie"
-					count: 3
+					type: "item"
 				}
 				{
 					id: "000000000000082F"
 					type: "item"
-					title: "Cookie"
-					item: "minecraft:cookie"
-					count: 3
-				}
+					type: "item"t:cookie"
+					type: "item"
 				{
 					id: "0000000000000A81"
 					type: "command"
@@ -1589,25 +1570,21 @@
 				{
 					id: "000000000000079C"
 					type: "item"
-					title: "Gravel"
 					item: "minecraft:gravel"
 				}
 				{
 					id: "000000000000079D"
 					type: "item"
-					title: "Observer"
 					item: "minecraft:observer"
 				}
 				{
 					id: "000000000000079E"
 					type: "item"
-					title: "Piston"
 					item: "minecraft:piston"
 				}
 				{
 					id: "000000000000079F"
 					type: "item"
-					title: "Redstone Dust"
 					item: "minecraft:redstone"
 				}
 			]
@@ -1635,7 +1612,6 @@
 				{
 					id: "00000000000007D3"
 					type: "item"
-					title: "Hazmat Mask"
 					item: {
 						id: "mekanism:hazmat_mask"
 						Count: 1b
@@ -1647,7 +1623,6 @@
 				{
 					id: "00000000000007D4"
 					type: "item"
-					title: "Hazmat Gown"
 					item: {
 						id: "mekanism:hazmat_gown"
 						Count: 1b
@@ -1659,7 +1634,6 @@
 				{
 					id: "00000000000007D5"
 					type: "item"
-					title: "Hazmat Pants"
 					item: {
 						id: "mekanism:hazmat_pants"
 						Count: 1b
@@ -1671,7 +1645,6 @@
 				{
 					id: "00000000000007D7"
 					type: "item"
-					title: "Hazmat Boots"
 					item: {
 						id: "mekanism:hazmat_boots"
 						Count: 1b
@@ -1683,7 +1656,6 @@
 				{
 					id: "00000000000007D8"
 					type: "item"
-					title: "Sign \"Radioactive Hazard\""
 					item: "engineersdecor:sign_radioactive"
 					count: 16
 				}
@@ -1838,7 +1810,6 @@
 				{
 					id: "00000000000007D9"
 					type: "item"
-					title: "Uranium Ore"
 					item: "emendatusenigmatica:uranium_ore"
 					count: 64
 				}
@@ -2204,7 +2175,6 @@
 				{
 					id: "00000000000007DF"
 					type: "item"
-					title: "Hohlraum"
 					item: "mekanismgenerators:hohlraum"
 				}
 				{
@@ -2218,7 +2188,6 @@
 				{
 					id: "0000000000000873"
 					type: "item"
-					title: "Sign \"Laser Hazard\""
 					item: "engineersdecor:sign_laser"
 					count: 16
 				}

@@ -81,7 +81,6 @@
 				{
 					id: "00000000000003C1"
 					type: "item"
-					title: "Worldshaper's Sextant"
 					item: "botania:sextant"
 				}
 				{
@@ -535,13 +534,11 @@
 				{
 					id: "00000000000009EA"
 					type: "item"
-					title: "Item Scroll: Allow"
 					item: "ars_nouveau:allow_scroll"
 				}
 				{
 					id: "00000000000009EB"
 					type: "item"
-					title: "Item Scroll: Deny"
 					item: "ars_nouveau:deny_scroll"
 				}
 			]
@@ -577,21 +574,18 @@
 				{
 					id: "0AC24D43ED187EBE"
 					type: "item"
-					title: "Bamboo"
 					item: "minecraft:bamboo"
 					count: 4
 				}
 				{
 					id: "4A7B725DE75256E3"
 					type: "item"
-					title: "Pumpkin Seeds"
 					item: "minecraft:pumpkin_seeds"
 					count: 4
 				}
 				{
 					id: "307E04AA8AC5B992"
 					type: "item"
-					title: "Dark Oak Sapling"
 					item: "minecraft:dark_oak_sapling"
 					count: 4
 				}
@@ -947,7 +941,6 @@
 				{
 					id: "3775F901374943C8"
 					type: "item"
-					title: "Potion of Absorption"
 					item: {
 						id: "minecraft:potion"
 						Count: 1b
@@ -959,7 +952,6 @@
 				{
 					id: "77257BF40CBAC438"
 					type: "item"
-					title: "Potion of Fire Resistance"
 					item: {
 						id: "minecraft:potion"
 						Count: 1b

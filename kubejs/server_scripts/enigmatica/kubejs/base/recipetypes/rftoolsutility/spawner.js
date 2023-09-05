@@ -510,20 +510,6 @@ onEvent('recipes', (event) => {
                 base: substrates.arid
             },
 
-            /// Eidolon
-            {
-                entity: 'eidolon:zombie_brute',
-                size: sizes.large,
-                special: { item: 'minecraft:rotten_flesh' },
-                base: substrates.basic
-            },
-            {
-                entity: 'eidolon:wraith',
-                size: sizes.medium,
-                special: { item: 'eidolon:tattered_cloth' },
-                base: substrates.basic
-            },
-
             /// Better End Forge
             {
                 entity: 'betterendforge:cubozoa',
@@ -575,8 +561,8 @@ onEvent('recipes', (event) => {
                 special: { item: 'upgrade_aquatic:thrasher_tooth' },
                 base: substrates.basic
             },
-            /// Environmental
 
+            /// Environmental
             {
                 entity: 'environmental:duck',
                 size: sizes.small,
@@ -597,7 +583,6 @@ onEvent('recipes', (event) => {
             },
 
             /// SushiGo Crafting
-
             {
                 entity: 'sushigocrafting:shrimp',
                 size: sizes.tiny,

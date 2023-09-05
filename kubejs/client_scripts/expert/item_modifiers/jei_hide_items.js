@@ -6,15 +6,13 @@ onEvent('jei.hide.items', (event) => {
         'integrateddynamics:coal_generator',
         /darkutils:export_plate/,
         /integrateddynamics:energy_battery/,
-        /powah:energy_cable_/,
-        'eidolon:crucible',
-        'eidolon:worktable'
+        /powah:energy_cable_/
     ];
     items.forEach((entry) => {
         event.hide(entry);
     });
 
-    itemsToHideAE.forEach((entry) => {
+    disabledItemsAE.forEach((entry) => {
         event.hide(entry);
     });
 });

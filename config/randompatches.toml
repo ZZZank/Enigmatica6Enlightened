@@ -7,7 +7,7 @@
 	# This works by overriding the method that returns the ambient occlusion light value for the bamboo block, which runs some expensive logic, but always returns 1.0F.
 	# Changes to this option are applied after a game restart.
 	# Default: true
-	optimize_bamboo_rendering = true
+	optimize_bamboo_rendering = false
 	# Removes the glowing effect from potions.
 	# This makes the potion colors more visible.
 	# Default: true
@@ -29,7 +29,7 @@
 	return_to_main_menu_after_disconnect = false
 	# Gives capes to RandomPatches contributors.
 	# Default: true
-	contributor_capes = true
+	contributor_capes = false
 
 	# Client-sided bug fixes.
 	[client.bug_fixes]

@@ -1,7 +1,7 @@
 {
 	id: "0000000000000349"
 	group: "72A9465344128AF9"
-	order_index: 6
+	order_index: 5
 	filename: "rftools_wip"
 	title: "RFTools"
 	icon: "rftoolsbase:machine_frame"
@@ -580,7 +580,6 @@
 				{
 					id: "0000000000000BFF"
 					type: "item"
-					title: "Tier 1 Storage Module"
 					item: "rftoolsstorage:storage_module0"
 				}
 				{
@@ -691,14 +690,12 @@
 				{
 					id: "0000000000000C03"
 					type: "item"
-					title: "Blue Network Cable"
 					item: "xnet:netcable_blue"
 					count: 32
 				}
 				{
 					id: "0000000000000C04"
 					type: "item"
-					title: "Blue Connector"
 					item: "xnet:connector_blue"
 					count: 4
 				}
@@ -849,7 +846,6 @@
 				{
 					id: "0000000000000BFE"
 					type: "item"
-					title: "Storage Control Screen Module"
 					item: {
 						id: "rftoolsstorage:storage_control_module"
 						Count: 1b

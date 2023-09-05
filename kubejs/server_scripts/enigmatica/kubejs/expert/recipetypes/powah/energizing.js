@@ -5,6 +5,15 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:expert/powah/energizing/';
     const recipes = [
         {
+            ingredients: [{ tag: 'forge:gems/aquamarine' }],
+            energy: 30000,
+            result: {
+                item: 'appliedenergistics2:charged_certus_quartz_crystal',
+                count: 1
+            },
+            id: `${id_prefix}charged_certus_quartz_crystal_powah`
+        },
+        {
             ingredients: [
                 { tag: 'forge:plates/enderium' },
                 { tag: 'forge:ingots/netherite' },

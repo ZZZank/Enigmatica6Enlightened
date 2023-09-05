@@ -23,30 +23,6 @@ onEvent('recipes', (event) => {
             id: 'naturesaura:altar/infused_iron_block'
         },
         {
-            input: '#forge:ingots/arcane_gold',
-            output: { item: 'naturesaura:tainted_gold' },
-            aura_type: 'naturesaura:nether',
-            aura: 15000,
-            time: 50,
-            id: 'naturesaura:altar/tainted_gold'
-        },
-        {
-            input: '#forge:storage_blocks/arcane_gold',
-            output: { item: 'naturesaura:tainted_gold_block' },
-            aura_type: 'naturesaura:nether',
-            aura: 15000 * 8,
-            time: 50 * 8,
-            id: 'naturesaura:altar/tainted_gold_block'
-        },
-        {
-            input: 'eidolon:candle',
-            output: { item: 'occultism:candle_white' },
-            aura_type: 'naturesaura:nether',
-            aura: 18000,
-            time: 60,
-            id: 'occultism:crafting/candle'
-        },
-        {
             input: 'kubejs:firmament',
             output: { item: 'architects_palette:sunstone' },
             aura_type: 'naturesaura:overworld',
@@ -77,15 +53,6 @@ onEvent('recipes', (event) => {
             aura: 5000,
             time: 20,
             id: 'integrateddynamics:crafting/proto_chorus'
-        },
-        {
-            input: '#minecraft:fishes',
-            output: { item: 'aquaculture:fish_bones' },
-            aura_type: 'naturesaura:nether',
-            catalyst: { item: 'naturesaura:crushing_catalyst' },
-            aura: 1000,
-            time: 60,
-            id: `${id_prefix}fish_bones`
         },
         {
             input: 'minecraft:pufferfish',
@@ -212,7 +179,7 @@ onEvent('recipes', (event) => {
             id: 'ars_nouveau:marvelous_clay'
         },
         {
-            input: 'eidolon:soul_shard',
+            input: 'appliedenergistics2:charged_certus_quartz_crystal',
             output: { item: 'bloodmagic:slate_ampoule' },
             aura_type: 'naturesaura:nether',
             aura: 15000,

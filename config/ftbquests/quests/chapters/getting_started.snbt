@@ -254,10 +254,6 @@
 								id: "immersiveengineering:manual"
 								Count: 1.0d
 							}
-							eidolon: {
-								id: "eidolon:codex"
-								Count: 1.0d
-							}
 							botania: {
 								id: "botania:lexicon"
 								Count: 1.0d
@@ -470,18 +466,6 @@
 									}
 									display: {
 										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Engineer's Manual\"}]}"
-									}
-								}
-							}
-							eidolon: {
-								id: "eidolon:codex"
-								Count: 1
-								tag: {
-									"akashictome:displayName": {
-										text: "Ars Ecclesia"
-									}
-									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Ars Ecclesia\"}]}"
 									}
 								}
 							}

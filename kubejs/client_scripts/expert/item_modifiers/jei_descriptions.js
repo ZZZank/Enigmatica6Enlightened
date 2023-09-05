@@ -70,8 +70,6 @@ onEvent('jei.information', (event) => {
         /darkutils:export_plate/,
         /integrateddynamics:energy_battery/,
         /powah:energy_cable_/,
-        'eidolon:crucible',
-        'eidolon:wooden_brewing_stand',
         'engineersdecor:factory_placer'
     ];
     disabledItems.forEach((item) => {
