@@ -1,3 +1,17 @@
+## Enlightened6 & Enlightened6Expert - 2.2.0 -> 2.2.1
+
+## Due to Eidolon removal, this version is a BREAKING CHANGE! please be cautious if you want to open old worlds in this version
+
+_Using Forge-1.16.5-36.2.39_ | _[Mod Updates](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/changelog_mods_2.2.1.md)_ | _[Modlist](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/modlist_2.2.1.md)_
+
+### Improvements
+
+-   allow using compressed_iron_block to buff cobble output
+-   [Expert] make Thermal rock_gen avaliable much much earlier
+-   a new recpie for fish_bones
+
+---
+
 ## Enlightened6 & Enlightened6Expert - 2.1.0 -> 2.2.0
 
 ## Due to Eidolon removal, this version is a BREAKING CHANGE! please be cautious if you want to open old worlds in this version
