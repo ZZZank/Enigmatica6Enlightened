@@ -3,5 +3,4 @@ onEvent('item.tags', (event) => {
         return;
     }
     event.get('forge:heart').add('kubejs:zombie_heart');
-    
 });

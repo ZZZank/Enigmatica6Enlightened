@@ -483,7 +483,7 @@ onEvent('item.registry', (event) => {
     let customTextureItems = [
         { name: 'pewter_ingot', texturePath: 'create:item/zinc_ingot' },
         { name: 'pewter_nugget', texturePath: 'create:item/zinc_nugget' },
-        { name: 'wicked_weave', texturePath: 'thermal:item/beekeeper_fabric' }        
+        { name: 'wicked_weave', texturePath: 'thermal:item/beekeeper_fabric' }
     ];
 
     let metalTypes = ['suffused', 'fulminated', 'levigated', 'sliver'];

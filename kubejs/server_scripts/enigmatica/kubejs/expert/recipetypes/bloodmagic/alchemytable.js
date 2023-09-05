@@ -562,11 +562,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}intermediatecuttingfluid`
         },
         {
-            inputs: [
-                'darkutils:blank_plate',
-                '#minecraft:boats',
-                'bloodmagic:watersigil'
-            ],
+            inputs: ['darkutils:blank_plate', '#minecraft:boats', 'bloodmagic:watersigil'],
             output: 'darkutils:anchor_plate',
             count: 1,
             syphon: 300,
