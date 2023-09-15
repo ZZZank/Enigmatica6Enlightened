@@ -5,6 +5,10 @@ onEvent('jei.information', (event) => {
             text: ['Obtained by killing Elder Guardian.']
         },
         {
+            items: ['neapolitan:mint_milkshake'],
+            text: [`Can "rob" one potion effect belonging to nearby mobs.`]
+        },
+        {
             items: ['farmersdelight:ham'],
             text: ['Obtained by killing Pigs or Hoglins with a knife.']
         },
@@ -371,7 +375,7 @@ onEvent('jei.information', (event) => {
         },
         {
             items: ['environmental:koi'],
-            text: [`Will not spawn naturally. See Koi Bucket for how to obtain it. `]
+            text: [`Will not spawn naturally. See Koi Bucket for how to obtain. `]
         },
         {
             items: [
