@@ -6,7 +6,7 @@ onEvent('jei.information', (event) => {
         },
         {
             items: ['neapolitan:mint_milkshake'],
-            text: [`Can "rob" one potion effect belonging to nearby mobs.`]
+            text: [`Can "rob" potion effects belonging to one nearby mob.`]
         },
         {
             items: ['farmersdelight:ham'],
