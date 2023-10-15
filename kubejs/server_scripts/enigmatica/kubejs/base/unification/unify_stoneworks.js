@@ -85,5 +85,5 @@ function thermal_stoneworks(event, material) {
             item: 'minecraft:cobblestone',
             count: 4
         }
-    });
+    }).id(`enigmatica:base/unification/unify_stoneworks/buffed_cobble`);
 }
