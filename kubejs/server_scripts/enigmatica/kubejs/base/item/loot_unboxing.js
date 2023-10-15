@@ -4,16 +4,21 @@ onEvent('item.right_click', (event) => {
         return;
     }
 
-    let rarityMap={
-        99:'common',
-        114:'rare',
-        101:'epic',
-        108:'legendary',
-    }
+    let rarityMap = {
+        99: 'common',
+        114: 'rare',
+        101: 'epic',
+        108: 'legendary'
+    };
     let rarity = rarityMap[id.charAt(7)];
-    // event.server.runCommandSilent(`/tell ${event.player.name} ${id}`);
-    let mod = event.player.mainHandItem.nbt ? event.player.mainHandItem.nbt.mod.toString() : '';
-    let lootTable = `enigmatica:chests/quest_${mod}_loot_${rarity}`; // ('kubejs:'.length) is 7
+    if (!event.player.mainHandItem.nbt) {
+        event.server.runCommandSilent(
+            `/tell ${event.player.name} There's no proper NBT data, where did you get this?`
+        );
+        return;
+    }
+    let mod = event.player.mainHandItem.nbt.mod.toString();
+    let lootTable = `enigmatica:chests/quest_${mod}_loot_${rarity}`;
 
     /*
       // This piece of code is disabled, baceuse if anyone let a fake player to open such
