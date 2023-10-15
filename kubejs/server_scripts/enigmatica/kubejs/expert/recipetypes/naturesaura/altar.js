@@ -23,6 +23,22 @@ onEvent('recipes', (event) => {
             id: 'naturesaura:altar/infused_iron_block'
         },
         {
+            input: 'kubejs:altered_recipe_indicator',
+            output: { item: 'naturesaura:tainted_gold' },
+            aura_type: 'naturesaura:nether',
+            aura: 1,
+            time: 1,
+            id: 'naturesaura:altar/tainted_gold'
+        },
+        {
+            input: 'kubejs:altered_recipe_indicator',
+            output: { item: 'naturesaura:tainted_gold_block' },
+            aura_type: 'naturesaura:nether',
+            aura: 1,
+            time: 1,
+            id: 'naturesaura:altar/tainted_gold_block'
+        },
+        {
             input: 'kubejs:firmament',
             output: { item: 'architects_palette:sunstone' },
             aura_type: 'naturesaura:overworld',

@@ -99,8 +99,6 @@ onEvent('recipes', (event) => {
         'modularrouters:sender_module_1_alt',
 
         /naturesaura:animal_spawner\/sheep_/,
-        'naturesaura:altar/tainted_gold',
-        'naturesaura:altar/tainted_gold_block',
 
         'pneumaticcraft:explosion_crafting/compressed_iron_block',
         'pneumaticcraft:explosion_crafting/compressed_iron_ingot',
