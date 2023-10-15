@@ -1412,7 +1412,7 @@ onEvent('recipes', (event) => {
             sourceCost: 50,
             reagent: 'minecraft:rotten_flesh',
             output: Item.of('2x naturesaura:tainted_gold'),
-            id: `${id_prefix}arcane_gold_ingot`
+            id: `${id_prefix}tainted_gold`
         },
         {
             inputs: [
@@ -1424,7 +1424,7 @@ onEvent('recipes', (event) => {
             ],
             reagent: 'minecraft:conduit',
             output: Item.of('2x naturesaura:tainted_gold'),
-            id: `${id_prefix}arcane_gold_ingot_starter`
+            id: `${id_prefix}tainted_gold_starter`
         },
         {
             inputs: [
