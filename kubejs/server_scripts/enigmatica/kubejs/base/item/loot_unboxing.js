@@ -5,12 +5,13 @@ onEvent('item.right_click', (event) => {
     }
 
     let rarityMap={
-        'c':'common',
-        'r':'rare',
-        'e':'epic',
-        'l':'legendary',        
+        99:'common',
+        114:'rare',
+        101:'epic',
+        108:'legendary',
     }
-    let rarity = rarityMap[id[0]];
+    let rarity = rarityMap[id.charAt(7)];
+    // event.server.runCommandSilent(`/tell ${event.player.name} ${id}`);
     let mod = event.player.mainHandItem.nbt ? event.player.mainHandItem.nbt.mod.toString() : '';
     let lootTable = `enigmatica:chests/quest_${mod}_loot_${rarity}`; // ('kubejs:'.length) is 7
 
