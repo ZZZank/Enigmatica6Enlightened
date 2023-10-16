@@ -1,27 +1,94 @@
 onEvent('recipes', (event) => {
-    event.remove({ type: 'create:cutting', input: '#minecraft:logs' });
-    event.remove({ type: 'immersiveengineering:sawmill', input: '#minecraft:logs' });
+    let customRemovals = [
+        { type: 'create:cutting', input: '#minecraft:logs' },
+        { type: 'immersiveengineering:sawmill', input: '#minecraft:logs' },
 
-    event.remove({ type: 'mekanism:combining' });
-    event.remove({ type: 'minecraft:smelting', output: 'minecraft:obsidian' });
-    event.remove({ type: 'minecraft:blasting', output: 'minecraft:obsidian' });
+        { type: 'minecraft:smelting', output: 'minecraft:obsidian' },
+        { type: 'minecraft:blasting', output: 'minecraft:obsidian' },
 
-    event.remove({ type: 'minecraft:smelting', input: '#forge:ores' });
-    event.remove({ type: 'minecraft:blasting', input: '#forge:ores' });
+        { type: 'minecraft:smelting', input: '#forge:ores' },
+        { type: 'minecraft:blasting', input: '#forge:ores' },
 
-    event.remove({ type: 'minecraft:smelting', input: '#forge:dusts' });
-    event.remove({ type: 'minecraft:blasting', input: '#forge:dusts' });
+        { type: 'minecraft:smelting', input: '#forge:dusts' },
+        { type: 'minecraft:blasting', input: '#forge:dusts' },
 
-    event.remove({ type: 'minecraft:smelting', input: '#farmersdelight:tools/knives' });
-    event.remove({ type: 'minecraft:blasting', input: '#farmersdelight:tools/knives' });
+        { type: 'minecraft:smelting', input: '#farmersdelight:tools/knives' },
+        { type: 'minecraft:blasting', input: '#farmersdelight:tools/knives' },
 
-    event.remove({ type: 'industrialforegoing:fluid_extractor' });
-    event.remove({ type: 'thermal:tree_extractor' });
+        { type: 'industrialforegoing:fluid_extractor' },
+        { type: 'thermal:tree_extractor' },
 
-    event.remove({ mod: 'ironjetpacks' });
-    event.remove({ mod: 'theoneprobe' });
+        { mod: 'ironjetpacks' },
+        { mod: 'theoneprobe' },
 
-    event.remove({ type: 'thermal:compression_fuel' });
+        { type: 'thermal:compression_fuel' },
+        { type: 'mekanism:combining' },
+        {
+            output: 'mekanism:sawdust',
+            mod: 'mekanism',
+            type: 'mekanism:sawing'
+        },
+        {
+            output: '/\\w+:\\w+_gear$/',
+            type: 'minecraft:crafting_shaped'
+        },
+        {
+            output: '/emendatusenigmatica:\\w+_rod/',
+            mod: 'immersiveengineering',
+            type: 'immersiveengineering:metal_press'
+        },
+        {
+            output: '/emendatusenigmatica:\\w+_rod/',
+            mod: 'immersiveposts'
+        },
+        {
+            output: '/emendatusenigmatica:\\w+_gear/',
+            mod: 'immersiveengineering'
+        },
+        {
+            mod: 'occultism',
+            type: 'occultism:miner'
+        },
+        {
+            output: '/powah:\\w+_starter/',
+            mod: 'powah'
+        },
+        { type: 'botanypots:crop' },
+        { type: 'botanypots:soil' },
+        { type: 'thermal:insolator' },
+        { type: 'immersiveengineering:cloche' },
+        { type: 'valhelsia_structures:axe_crafting' },
+        {
+            input: '#forge:ores/zinc',
+            type: 'thermal:smelter'
+        },
+        {
+            input: '#forge:ores/osmium',
+            type: 'thermal:smelter'
+        },
+        {
+            input: '#forge:ores/uranium',
+            type: 'thermal:smelter'
+        },
+        {
+            input: '#forge:ores/aluminum',
+            type: 'thermal:smelter'
+        },
+        {
+            input: '#forge:ores/nickel',
+            type: 'thermal:smelter'
+        },
+        {
+            input: 'minecraft:fire_charge',
+            mod: 'thermal',
+            type: 'minecraft:crafting_shapeless'
+        },
+        { type: 'create:milling', output: '#forge:dyes' },
+        { type: 'create:crushing', output: '#forge:dyes' },
+        { type: 'mekanism:enriching', output: '#forge:dyes' },
+        { type: 'thermal:centrifuge', output: '#forge:dyes' },
+        { type: 'immersiveengineering:crusher', output: '#forge:dyes' }
+    ];
 
     var outputRemovals = [
         'appliedenergistics2:flour',
@@ -310,6 +377,15 @@ onEvent('recipes', (event) => {
         /occultism:crafting\/\w+_ingot_from_nuggets/
     ];
 
+    stonecuttables.forEach((stoneType) => {
+        stoneType.stones.forEach((stone) => {
+            event.remove({ type: 'minecraft:stonecutting', output: stone });
+        });
+        stoneType.onlyAsOutput.forEach((stone) => {
+            event.remove({ type: 'minecraft:stonecutting', output: stone });
+        });
+    });
+
     outputRemovals.forEach((removal) => {
         event.remove({ output: removal });
     });
@@ -326,90 +402,7 @@ onEvent('recipes', (event) => {
         event.remove({ output: disabledItem });
     });
 
-    event.remove({
-        output: 'mekanism:sawdust',
-        mod: 'mekanism',
-        type: 'mekanism:sawing'
+    customRemovals.forEach((customRemoval) => {
+        event.remove(customRemoval);
     });
-
-    event.remove({
-        output: '/\\w+:\\w+_gear$/',
-        type: 'minecraft:crafting_shaped'
-    });
-
-    event.remove({
-        output: '/emendatusenigmatica:\\w+_rod/',
-        mod: 'immersiveengineering',
-        type: 'immersiveengineering:metal_press'
-    });
-
-    event.remove({
-        output: '/emendatusenigmatica:\\w+_rod/',
-        mod: 'immersiveposts'
-    });
-
-    event.remove({
-        output: '/emendatusenigmatica:\\w+_gear/',
-        mod: 'immersiveengineering'
-    });
-
-    event.remove({
-        mod: 'occultism',
-        type: 'occultism:miner'
-    });
-
-    event.remove({
-        output: '/powah:\\w+_starter/',
-        mod: 'powah'
-    });
-
-    event.remove({ type: 'botanypots:crop' });
-    event.remove({ type: 'botanypots:soil' });
-    event.remove({ type: 'thermal:insolator' });
-    event.remove({ type: 'immersiveengineering:cloche' });
-
-    event.remove({ type: 'valhelsia_structures:axe_crafting' });
-
-    stonecuttables.forEach((stoneType) => {
-        stoneType.stones.forEach((stone) => {
-            event.remove({ type: 'minecraft:stonecutting', output: stone });
-        });
-        stoneType.onlyAsOutput.forEach((stone) => {
-            event.remove({ type: 'minecraft:stonecutting', output: stone });
-        });
-    });
-
-    event.remove({
-        input: '#forge:ores/zinc',
-        type: 'thermal:smelter'
-    });
-    event.remove({
-        input: '#forge:ores/osmium',
-        type: 'thermal:smelter'
-    });
-    event.remove({
-        input: '#forge:ores/uranium',
-        type: 'thermal:smelter'
-    });
-    event.remove({
-        input: '#forge:ores/aluminum',
-        type: 'thermal:smelter'
-    });
-    event.remove({
-        input: '#forge:ores/nickel',
-        type: 'thermal:smelter'
-    });
-    event.remove({
-        id: /emendatusenigmatica:ore_from_chunk_crafting/
-    });
-    event.remove({
-        input: 'minecraft:fire_charge',
-        mod: 'thermal',
-        type: 'minecraft:crafting_shapeless'
-    });
-    event.remove({ type: 'create:milling', output: '#forge:dyes' });
-    event.remove({ type: 'create:crushing', output: '#forge:dyes' });
-    event.remove({ type: 'mekanism:enriching', output: '#forge:dyes' });
-    event.remove({ type: 'thermal:centrifuge', output: '#forge:dyes' });
-    event.remove({ type: 'immersiveengineering:crusher', output: '#forge:dyes' });
 });
