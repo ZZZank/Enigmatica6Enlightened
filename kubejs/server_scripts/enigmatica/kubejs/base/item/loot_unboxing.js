@@ -1,5 +1,6 @@
 onEvent('item.right_click', (event) => {
-    let id = event.player.mainHandItem.id;
+    const player = event.player;
+    let id = player.mainHandItem.id;
     if (!id.startsWith('kubejs:') || !id.endsWith('_lootbox')) {
         return;
     }
@@ -11,11 +12,11 @@ onEvent('item.right_click', (event) => {
         108: 'legendary'
     };
     let rarity = rarityMap[id.charAt(7)];
-    if (!event.player.mainHandItem.nbt || !event.player.mainHandItem.nbt.mod) {
-        event.player.tell(`There's no proper NBT data, where did you get this?`);
+    if (!player.mainHandItem.nbt || !player.mainHandItem.nbt.mod) {
+        player.tell(`There's no proper NBT data, where did you get this?`);
         return;
     }
-    let mod = event.player.mainHandItem.nbt.mod.toString();
+    let mod = player.mainHandItem.nbt.mod.toString();
     let lootTable = `enigmatica:chests/quest_${mod}_loot_${rarity}`;
 
     /*
@@ -32,9 +33,10 @@ onEvent('item.right_click', (event) => {
       }
       */
 
-    let name = event.player.name;
-    event.server.runCommandSilent(`/execute at ${name} run loot give ${name} loot ${lootTable}`);
+    event.server.runCommandSilent(
+        `/execute at ${player.name} run loot spawn ${player.x} ${player.y + 1} ${player.z} loot ${lootTable}`
+    );
 
     // not handling 'gamemode creative' case, due to performance and rarity of such a case
-    event.player.mainHandItem.count--;
+    player.mainHandItem.count--;
 });

@@ -1,5 +1,6 @@
 onEvent('item.right_click', (event) => {
-    let id = event.player.mainHandItem.id;
+    const player = event.player;
+    let id = player.mainHandItem.id;
     if (!id.startsWith('kubejs:') || !id.endsWith('_delight')) {
         return;
     }
@@ -20,9 +21,10 @@ onEvent('item.right_click', (event) => {
     }
     */
 
-    let name = event.player.name;
-    event.server.runCommandSilent(`/execute at ${name} run loot give ${name} loot ${lootTable}`);
+    event.server.runCommandSilent(
+        `/execute at ${player.name} run loot spawn ${player.x} ${player.y + 1} ${player.z} loot ${lootTable}`
+    );
 
     // not handling 'gamemode creative' case, due to performance and rarity of such a case
-    event.player.mainHandItem.count--;
+    player.mainHandItem.count--;
 });
