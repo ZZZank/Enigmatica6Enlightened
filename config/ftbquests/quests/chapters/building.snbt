@@ -264,11 +264,8 @@
 			}]
 			rewards: [{
 				id: "3006D73518186276"
-				type: "command"
-				title: "Farmer's Delight"
-				icon: "kubejs:farmers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
-				player_command: false
+				type: "item"
+				item: "kubejs:farmers_delight"
 			}]
 		}
 		{
@@ -299,11 +296,8 @@
 			}]
 			rewards: [{
 				id: "7E2D7FEE20672C9D"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-				player_command: false
+				type: "item"
+				item: "kubejs:scavengers_delight"
 			}]
 		}
 		{
@@ -436,11 +430,8 @@
 			}]
 			rewards: [{
 				id: "0365D0D7A7E40B1D"
-				type: "command"
-				title: "Miner's Delight"
-				icon: "kubejs:miners_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
-				player_command: false
+				type: "item"
+				item: "kubejs:miners_delight"
 			}]
 		}
 		{
@@ -598,11 +589,8 @@
 			}]
 			rewards: [{
 				id: "548107ED51B7B447"
-				type: "command"
-				title: "Sorcerer's Delight"
-				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
-				player_command: false
+				type: "item"
+				item: "kubejs:sorcerers_delight"
 			}]
 		}
 		{
@@ -662,11 +650,8 @@
 			}]
 			rewards: [{
 				id: "31F796972A4B7369"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-				player_command: false
+				type: "item"
+				item: "kubejs:scavengers_delight"
 			}]
 		}
 		{
@@ -1528,11 +1513,8 @@
 			}]
 			rewards: [{
 				id: "73CEB3BC6963B644"
-				type: "command"
-				title: "Alchemist's Delight"
-				icon: "kubejs:alchemists_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
-				player_command: false
+				type: "item"
+				item: "kubejs:alchemists_delight"
 			}]
 		}
 	]

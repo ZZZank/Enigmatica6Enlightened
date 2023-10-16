@@ -85,11 +85,8 @@
 				}
 				{
 					id: "0000000000000A78"
-					type: "command"
-					title: "Scavenger's Delight"
-					icon: "kubejs:scavengers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:scavengers_delight"
 				}
 			]
 		}
@@ -263,11 +260,8 @@
 				}
 				{
 					id: "0000000000000A79"
-					type: "command"
-					title: "Farmer's Delight"
-					icon: "kubejs:farmers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:farmers_delight"
 				}
 			]
 		}
@@ -426,11 +420,8 @@
 				}
 				{
 					id: "0000000000000A7B"
-					type: "command"
-					title: "Scavenger's Delight"
-					icon: "kubejs:scavengers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:scavengers_delight"
 				}
 			]
 		}
@@ -929,11 +920,8 @@
 				}
 				{
 					id: "0000000000000A7A"
-					type: "command"
-					title: "Farmer's Delight"
-					icon: "kubejs:farmers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:farmers_delight"
 				}
 			]
 		}

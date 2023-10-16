@@ -956,11 +956,8 @@
 				}
 				{
 					id: "35731B5937BBF8EB"
-					type: "command"
-					title: "Miner's Delight"
-					icon: "kubejs:miners_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:miners_delight"
 				}
 			]
 		}

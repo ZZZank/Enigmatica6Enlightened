@@ -38,11 +38,8 @@
 				}
 				{
 					id: "0000000000000A58"
-					type: "command"
-					title: "Scavenger's Delight"
-					icon: "kubejs:scavengers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:scavengers_delight"
 				}
 			]
 		}
@@ -67,11 +64,8 @@
 				}
 				{
 					id: "00000000000006F8"
-					type: "command"
-					title: "Miner's Delight"
-					icon: "kubejs:miners_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:miners_delight"
 				}
 			]
 		}
@@ -96,11 +90,8 @@
 				}
 				{
 					id: "00000000000006F7"
-					type: "command"
-					title: "Miner's Delight"
-					icon: "kubejs:miners_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:miners_delight"
 				}
 			]
 		}
@@ -453,11 +444,8 @@
 			}]
 			rewards: [{
 				id: "0000000000000A56"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-				player_command: false
+				type: "item"
+				item: "kubejs:scavengers_delight"
 			}]
 		}
 		{
@@ -563,11 +551,8 @@
 			]
 			rewards: [{
 				id: "0000000000000A55"
-				type: "command"
-				title: "Alchemist's Delight"
-				icon: "kubejs:alchemists_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
-				player_command: false
+				type: "item"
+				item: "kubejs:alchemists_delight"
 			}]
 		}
 		{
@@ -588,11 +573,8 @@
 			}]
 			rewards: [{
 				id: "0000000000000655"
-				type: "command"
-				title: "Farmer's Delight"
-				icon: "kubejs:farmers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
-				player_command: false
+				type: "item"
+				item: "kubejs:farmers_delight"
 			}]
 		}
 		{
@@ -613,11 +595,9 @@
 			}]
 			rewards: [{
 				id: "0000000000000A57"
-				type: "command"
-				title: "Alchemist's Delight"
-				icon: "kubejs:alchemists_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
-				player_command: false
+				type: "item"
+				item: "kubejs:alchemists_delight"
+
 			}]
 		}
 		{
@@ -634,11 +614,8 @@
 			}]
 			rewards: [{
 				id: "0000000000000894"
-				type: "command"
-				title: "Sorcerer's Delight"
-				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
-				player_command: false
+				type: "item"
+				item: "kubejs:sorcerers_delight"
 			}]
 		}
 		{
@@ -1156,11 +1133,8 @@
 				}
 				{
 					id: "0000000000000A52"
-					type: "command"
-					title: "Scavenger's Delight"
-					icon: "kubejs:scavengers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:scavengers_delight"
 				}
 			]
 		}
@@ -1177,11 +1151,8 @@
 			}]
 			rewards: [{
 				id: "00000000000006EF"
-				type: "command"
-				title: "Miner's Delight"
-				icon: "kubejs:miners_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
-				player_command: false
+				type: "item"
+				item: "kubejs:miners_delight"
 			}]
 		}
 		{
@@ -1203,11 +1174,8 @@
 				}
 				{
 					id: "0000000000000A53"
-					type: "command"
-					title: "Scavenger's Delight"
-					icon: "kubejs:scavengers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:scavengers_delight"
 				}
 			]
 		}
@@ -1224,11 +1192,8 @@
 			}]
 			rewards: [{
 				id: "00000000000006EE"
-				type: "command"
-				title: "Miner's Delight"
-				icon: "kubejs:miners_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
-				player_command: false
+				type: "item"
+				item: "kubejs:miners_delight"
 			}]
 		}
 		{
@@ -1244,11 +1209,8 @@
 			}]
 			rewards: [{
 				id: "0000000000000A54"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-				player_command: false
+				type: "item"
+				item: "kubejs:scavengers_delight"
 			}]
 		}
 		{
@@ -1463,11 +1425,8 @@
 				}
 				{
 					id: "00000000000006F4"
-					type: "command"
-					title: "Sorcerer's Delight"
-					icon: "kubejs:sorcerers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:sorcerers_delight"
 				}
 			]
 		}
@@ -1491,11 +1450,8 @@
 			}]
 			rewards: [{
 				id: "00000000000006F5"
-				type: "command"
-				title: "Sorcerer's Delight"
-				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
-				player_command: false
+				type: "item"
+				item: "kubejs:sorcerers_delight"
 			}]
 		}
 		{
@@ -1687,11 +1643,8 @@
 				}
 				{
 					id: "0000000000000865"
-					type: "command"
-					title: "Miner's Delight"
-					icon: "kubejs:miners_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:miners_delight"
 				}
 			]
 		}
@@ -1724,11 +1677,8 @@
 				}
 				{
 					id: "0000000000000866"
-					type: "command"
-					title: "Miner's Delight"
-					icon: "kubejs:miners_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:miners_delight"
 				}
 			]
 		}
@@ -1951,11 +1901,8 @@
 			}]
 			rewards: [{
 				id: "0000000000000B0B"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-				player_command: false
+				type: "item"
+				item: "kubejs:scavengers_delight"
 			}]
 		}
 		{
@@ -2098,11 +2045,8 @@
 				}
 				{
 					id: "0000000000000F9B"
-					type: "command"
-					title: "Scavenger's Delight"
-					icon: "kubejs:scavengers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:scavengers_delight"
 				}
 			]
 		}
@@ -2723,11 +2667,8 @@
 			}]
 			rewards: [{
 				id: "43188DFF0C8F9DDC"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-				player_command: false
+				type: "item"
+				item: "kubejs:scavengers_delight"
 			}]
 		}
 		{
@@ -2754,11 +2695,8 @@
 			}]
 			rewards: [{
 				id: "4FDD99B9F9F65B1D"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-				player_command: false
+				type: "item"
+				item: "kubejs:scavengers_delight"
 			}]
 		}
 		{
@@ -2834,11 +2772,8 @@
 			}]
 			rewards: [{
 				id: "1A05BF41EEF353BA"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-				player_command: false
+				type: "item"
+				item: "kubejs:scavengers_delight"
 			}]
 		}
 		{
@@ -2880,11 +2815,8 @@
 				}
 				{
 					id: "00012916E3BF0CC7"
-					type: "command"
-					title: "Scavenger's Delight"
-					icon: "kubejs:scavengers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:scavengers_delight"
 				}
 			]
 		}
@@ -2909,11 +2841,8 @@
 			}]
 			rewards: [{
 				id: "2826CA3ECD3974D4"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-				player_command: false
+				type: "item"
+				item: "kubejs:scavengers_delight"
 			}]
 		}
 	]
