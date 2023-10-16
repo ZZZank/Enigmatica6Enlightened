@@ -68,7 +68,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:gears/osmium',
                 B: '#forge:circuits/basic',
-                C: 'rftoolspower:blazing_agitator',
+                C: 'powah:energizing_rod_blazing',
                 D: 'thermal:machine_bottler',
                 E: 'rftoolspower:cell1'
             },
@@ -607,7 +607,7 @@ onEvent('recipes', (event) => {
             output: 'mekanism:chemical_infuser',
             pattern: ['ABA', 'BCB', 'DED'],
             key: {
-                A: 'rftoolspower:blazing_agitator',
+                A: 'powah:energizing_rod_blazing',
                 B: 'mekanism:elite_chemical_tank',
                 C: '#industrialforegoing:machine_frame/advanced',
                 D: '#forge:circuits/elite',
