@@ -357,7 +357,7 @@ onEvent('recipes', (event) => {
             id: 'mekanism:jetpack_armored'
         },
         {
-            output: 'mekanismgenerators:solar_panel',
+            output: '4x mekanismgenerators:solar_panel',
             pattern: ['AAA', 'AAA', 'BBB'],
             key: {
                 A: 'quark:blue_framed_glass_pane',
