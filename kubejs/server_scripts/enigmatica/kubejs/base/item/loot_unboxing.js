@@ -5,8 +5,8 @@ onEvent('item.right_click', (event) => {
     }
 
     let rarityMap = {
-        99: 'common',
-        114: 'rare',
+        99: 'common', // 99 means 'c'
+        114: 'rare', // 114 means 'r'
         101: 'epic',
         108: 'legendary'
     };

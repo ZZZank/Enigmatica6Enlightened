@@ -1,10 +1,11 @@
 onEvent('item.right_click', (e) => {
-    if (e.item.id != 'kubejs:soggy_treasure_box') return;
+    if (e.item.id != 'kubejs:soggy_treasure_box') {
+        return;
+    }
     if (!e.player.isCreativeMode()) {
         e.player.getMainHandItem().count--;
     }
     let lootTable = 'enigmatica:chests/soggy_treasure_box';
-    let lootDrops = Utils.rollChestLoot(lootTable);
 
     if (!e.player.isPlayer() || e.player.isFake()) {
         //kludge until a better handler is available to drop the item at the fake player's location.
@@ -13,8 +14,8 @@ onEvent('item.right_click', (e) => {
             `/execute positioned ${playerCoords} run loot spawn ${playerCoords} loot ${lootTable}`
         );
     } else {
-        lootDrops.forEach((lootDrop) => {
-            e.player.give(lootDrop);
-        });
+        e.server.runCommandSilent(
+            `/execute at ${e.player.name} run loot give ${e.player.name} loot ${lootTable}`
+        );
     }
 });
