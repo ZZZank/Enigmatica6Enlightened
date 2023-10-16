@@ -211,10 +211,10 @@ onEvent('recipes', (event) => {
             ],
             energy: 500000,
             result: {
-                item: 'rftoolspower:power_core2',
+                item: 'kubejs:power_core_medium',
                 count: 1
             },
-            id: 'rftoolspower:power_core2'
+            id: 'kubejs:power_core_medium'
         },
         {
             ingredients: [
@@ -226,10 +226,10 @@ onEvent('recipes', (event) => {
             ],
             energy: 10000000,
             result: {
-                item: 'rftoolspower:power_core3',
+                item: 'kubejs:power_core_high',
                 count: 1
             },
-            id: 'rftoolspower:power_core3'
+            id: 'kubejs:power_core_high'
         },
         {
             ingredients: [

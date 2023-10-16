@@ -54,6 +54,9 @@ onEvent('item.registry', (event) => {
         'cpu_core_mk_1026',
         'cpu_core_eg_28222',
         'cpu_core_as_81221',
+        'power_core_low',
+        'power_core_medium',
+        'power_core_high',
 
         'automation_mastery_shard',
         'engineering_mastery_shard',

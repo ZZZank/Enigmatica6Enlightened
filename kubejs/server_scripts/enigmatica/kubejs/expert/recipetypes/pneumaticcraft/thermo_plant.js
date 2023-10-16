@@ -128,12 +128,12 @@ onEvent('recipes', (event) => {
         },
         {
             item_input: { item: 'rftoolsbase:machine_base' },
-            item_output: { item: 'rftoolspower:power_core1' },
+            item_output: { item: 'kubejs:power_core_low' },
             fluid_input: { type: 'pneumaticcraft:fluid', fluid: 'thermal:redstone', amount: 9000 },
             pressure: 2.0,
             exothermic: false,
             temperature: { min_temp: 1973 },
-            id: 'rftoolspower:power_core1'
+            id: 'kubejs:power_core_low'
         },
         {
             fluid_input: { type: 'pneumaticcraft:fluid', fluid: 'mekanism:lithium', amount: 100 },
