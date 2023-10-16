@@ -30,7 +30,6 @@
 			rewards: [{
 				id: "58C8854DDA503879"
 				type: "item"
-				title: "Source Berry Pie"
 				item: "ars_nouveau:source_berry_pie"
 			}]
 		}
@@ -53,7 +52,6 @@
 			rewards: [{
 				id: "00000000000005F5"
 				type: "item"
-				title: "Glyph: AOE"
 				item: "ars_nouveau:glyph_aoe"
 			}]
 		}
@@ -111,7 +109,6 @@
 			rewards: [{
 				id: "0000000000000647"
 				type: "item"
-				title: "Glyph: Craft"
 				item: "ars_nouveau:glyph_craft"
 			}]
 		}
@@ -140,7 +137,6 @@
 			rewards: [{
 				id: "0000000000000669"
 				type: "item"
-				title: "Glyph: Grow"
 				item: "ars_nouveau:glyph_grow"
 			}]
 		}
@@ -169,7 +165,6 @@
 			rewards: [{
 				id: "0000000000000668"
 				type: "item"
-				title: "Glyph: Split"
 				item: "ars_nouveau:glyph_split"
 			}]
 		}
@@ -202,11 +197,16 @@
 			}]
 			rewards: [{
 				id: "00000000000005FA"
-				type: "command"
-				title: "Rare Ars Nouveau Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+                            ars_nouveau
+                        }
+					}
+				}
 			}]
 		}
 		{
@@ -244,7 +244,6 @@
 			rewards: [{
 				id: "00000000000009F6"
 				type: "item"
-				title: "Glyph: Launch"
 				item: "ars_nouveau:glyph_launch"
 			}]
 		}
@@ -274,11 +273,16 @@
 			}]
 			rewards: [{
 				id: "00000000000005FB"
-				type: "command"
-				title: "Rare Ars Nouveau Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+                            ars_nouveau
+                        }
+					}
+				}
 			}]
 		}
 		{
@@ -303,7 +307,6 @@
 			rewards: [{
 				id: "00000000000003D4"
 				type: "item"
-				title: "Scribes Table"
 				item: "ars_nouveau:scribes_table"
 			}]
 		}
@@ -326,7 +329,6 @@
 			rewards: [{
 				id: "00000000000005F4"
 				type: "item"
-				title: "Glyph: Harvest"
 				item: "ars_nouveau:glyph_harvest"
 			}]
 		}
@@ -370,11 +372,16 @@
 			]
 			rewards: [{
 				id: "00000000000005FC"
-				type: "command"
-				title: "Rare Ars Nouveau Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+                            ars_nouveau
+                        }
+					}
+				}
 			}]
 		}
 		{
@@ -405,7 +412,6 @@
 			rewards: [{
 				id: "00000000000009FA"
 				type: "item"
-				title: "Jar of Voiding"
 				item: "ars_nouveau:void_jar"
 			}]
 		}
@@ -430,7 +436,6 @@
 			rewards: [{
 				id: "000000000000067F"
 				type: "item"
-				title: "Glyph: Light"
 				item: "ars_nouveau:glyph_light"
 			}]
 		}
@@ -455,7 +460,6 @@
 			rewards: [{
 				id: "00000000000003EF"
 				type: "item"
-				title: "Dominion Wand"
 				item: "ars_nouveau:dominion_wand"
 			}]
 		}
@@ -473,11 +477,16 @@
 			}]
 			rewards: [{
 				id: "00000000000005FE"
-				type: "command"
-				title: "Rare Ars Nouveau Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+                            ars_nouveau
+                        }
+					}
+				}
 			}]
 		}
 		{
@@ -499,11 +508,16 @@
 			}]
 			rewards: [{
 				id: "00000000000009EC"
-				type: "command"
-				title: "Rare Ars Nouveau Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+                            ars_nouveau
+                        }
+					}
+				}
 			}]
 		}
 		{
@@ -562,11 +576,16 @@
 			rewards: [
 				{
 					id: "0000000000000602"
-					type: "command"
-					title: "Rare Ars Nouveau Loot Box"
-					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:rare_lootbox"
+						Count: 1b
+						tag: {
+							mod: {
+                 	           ars_nouveau
+           		            }
+						}
+					}
 				}
 				{
 					id: "0AC24D43ED187EBE"
@@ -607,11 +626,16 @@
 			rewards: [
 				{
 					id: "00000000000006A0"
-					type: "command"
-					title: "Rare Ars Nouveau Loot Box"
-					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:rare_lootbox"
+						Count: 1b
+						tag: {
+							mod: {
+                 	           ars_nouveau
+           		            }
+						}
+					}
 				}
 				{
 					id: "115DF6600295CEE1"
@@ -677,11 +701,16 @@
 			]
 			rewards: [{
 				id: "00000000000009FC"
-				type: "command"
-				title: "Rare Ars Nouveau Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+                            ars_nouveau
+                        }
+					}
+				}
 			}]
 		}
 		{
@@ -704,11 +733,16 @@
 			}]
 			rewards: [{
 				id: "00000000000009FD"
-				type: "command"
-				title: "Rare Ars Nouveau Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+                            ars_nouveau
+                        }
+					}
+				}
 			}]
 		}
 		{
@@ -831,11 +865,16 @@
 			}]
 			rewards: [{
 				id: "23A1C4CCC95A1F45"
-				type: "command"
-				title: "Epic Blood Magic Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				blood_magic
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -867,11 +906,16 @@
 			]
 			rewards: [{
 				id: "7C201B55C9F00AD3"
-				type: "command"
-				title: "Rare Ars Nouveau Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+                            ars_nouveau
+                        }
+					}
+				}
 			}]
 		}
 		{
@@ -897,11 +941,16 @@
 			}]
 			rewards: [{
 				id: "3B92D3705AEB3AA2"
-				type: "command"
-				title: "Rare Ars Nouveau Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+                            ars_nouveau
+                        }
+					}
+				}
 			}]
 		}
 		{
@@ -970,11 +1019,16 @@
 			}]
 			rewards: [{
 				id: "13A4D5D0FB6AAF30"
-				type: "command"
-				title: "Rare Ars Nouveau Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+                            ars_nouveau
+                        }
+					}
+				}
 			}]
 		}
 		{
@@ -991,11 +1045,16 @@
 			}]
 			rewards: [{
 				id: "185995ACE655011B"
-				type: "command"
-				title: "Rare Ars Nouveau Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+                            ars_nouveau
+                        }
+					}
+				}
 			}]
 		}
 		{
@@ -1048,11 +1107,16 @@
 			]
 			rewards: [{
 				id: "0E0F5F21781358A3"
-				type: "command"
-				title: "Rare Ars Nouveau Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+                            ars_nouveau
+                        }
+					}
+				}
 			}]
 		}
 		{
@@ -1105,11 +1169,16 @@
 			]
 			rewards: [{
 				id: "658E6A4D80FA8301"
-				type: "command"
-				title: "Rare Ars Nouveau Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+                            ars_nouveau
+                        }
+					}
+				}
 			}]
 		}
 		{
@@ -1160,11 +1229,16 @@
 			]
 			rewards: [{
 				id: "37131D5E140365A2"
-				type: "command"
-				title: "Rare Ars Nouveau Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+                            ars_nouveau
+                        }
+					}
+				}
 			}]
 		}
 		{
@@ -1271,11 +1345,16 @@
 			rewards: [
 				{
 					id: "096125B9A6DA61DE"
-					type: "command"
-					title: "Rare Ars Nouveau Loot Box"
-					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:rare_lootbox"
+						Count: 1b
+						tag: {
+							mod: {
+                 	           ars_nouveau
+           		            }
+						}
+					}
 				}
 				{
 					id: "6F26AB1474F756FC"
@@ -1306,11 +1385,16 @@
 			rewards: [
 				{
 					id: "64CBF2A519C381A1"
-					type: "command"
-					title: "Rare Ars Nouveau Loot Box"
-					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:rare_lootbox"
+						Count: 1b
+						tag: {
+							mod: {
+                 	           ars_nouveau
+           		            }
+						}
+					}
 				}
 				{
 					id: "57AF99223C183C96"
@@ -1339,11 +1423,16 @@
 			rewards: [
 				{
 					id: "19791F6C1CCC5C18"
-					type: "command"
-					title: "Rare Ars Nouveau Loot Box"
-					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:rare_lootbox"
+						Count: 1b
+						tag: {
+							mod: {
+                 	           ars_nouveau
+           		            }
+						}
+					}
 				}
 				{
 					id: "53C9D637D37CFC16"
@@ -1390,11 +1479,16 @@
 			rewards: [
 				{
 					id: "05842221EF44CE18"
-					type: "command"
-					title: "Rare Ars Nouveau Loot Box"
-					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:rare_lootbox"
+						Count: 1b
+						tag: {
+							mod: {
+                 	           ars_nouveau
+           		            }
+						}
+					}
 				}
 				{
 					id: "75D81D2BD560450F"
@@ -1424,11 +1518,16 @@
 			rewards: [
 				{
 					id: "2236E6D4E0CE20D0"
-					type: "command"
-					title: "Rare Ars Nouveau Loot Box"
-					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:rare_lootbox"
+						Count: 1b
+						tag: {
+							mod: {
+                 	           ars_nouveau
+           		            }
+						}
+					}
 				}
 				{
 					id: "1CA3EDCE08DCBE66"
@@ -1490,11 +1589,16 @@
 			}]
 			rewards: [{
 				id: "32BD6621BA65DF4F"
-				type: "command"
-				title: "Rare Ars Nouveau Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+                            ars_nouveau
+                        }
+					}
+				}
 			}]
 		}
 		{
@@ -1517,11 +1621,16 @@
 			}]
 			rewards: [{
 				id: "3C644C0B2495BC36"
-				type: "command"
-				title: "Rare Ars Nouveau Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+                            ars_nouveau
+                        }
+					}
+				}
 			}]
 		}
 		{
@@ -1634,11 +1743,16 @@
 			}]
 			rewards: [{
 				id: "6DB8DF770C37C6FF"
-				type: "command"
-				title: "Ars Nouveau Rare Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+                            ars_nouveau
+                        }
+					}
+				}
 			}]
 		}
 		{

@@ -129,11 +129,16 @@
 			]
 			rewards: [{
 				id: "0000000000000C4D"
-				type: "command"
-				title: "Epic Astral Sorcery Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				astral_sorcery
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -212,11 +217,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000C51"
-				type: "command"
-				title: "Rare Astral Sorcery Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+                            astral_sorcery
+                        }
+					}
+				}
 			}]
 		}
 		{
@@ -271,11 +281,16 @@
 			]
 			rewards: [{
 				id: "0000000000000C42"
-				type: "command"
-				title: "Rare Astral Sorcery Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+                            astral_sorcery
+                        }
+					}
+				}
 			}]
 		}
 		{
@@ -334,11 +349,16 @@
 			]
 			rewards: [{
 				id: "0000000000000C43"
-				type: "command"
-				title: "Epic Astral Sorcery Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				astral_sorcery
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -393,11 +413,16 @@
 			]
 			rewards: [{
 				id: "0000000000000C44"
-				type: "command"
-				title: "Legendary Astral Sorcery Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_legendary"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				astral_sorcery
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -442,11 +467,16 @@
 			]
 			rewards: [{
 				id: "0000000000000C46"
-				type: "command"
-				title: "Rare Astral Sorcery Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+                            astral_sorcery
+                        }
+					}
+				}
 			}]
 		}
 		{
@@ -511,11 +541,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000C4B"
-				type: "command"
-				title: "Rare Astral Sorcery Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+                            astral_sorcery
+                        }
+					}
+				}
 			}]
 		}
 		{
@@ -539,11 +574,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000C4A"
-				type: "command"
-				title: "Legendary Astral Sorcery Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_legendary"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				astral_sorcery
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -575,11 +615,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000C4C"
-				type: "command"
-				title: "Epic Astral Sorcery Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				astral_sorcery
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -720,11 +765,16 @@
 			]
 			rewards: [{
 				id: "0000000000000C52"
-				type: "command"
-				title: "Legendary Astral Sorcery Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_legendary"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				astral_sorcery
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -763,11 +813,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000C45"
-				type: "command"
-				title: "Rare Astral Sorcery Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+                            astral_sorcery
+                        }
+					}
+				}
 			}]
 		}
 		{
@@ -836,11 +891,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000C54"
-				type: "command"
-				title: "Epic Astral Sorcery Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				astral_sorcery
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -897,11 +957,16 @@
 			]
 			rewards: [{
 				id: "0000000000000C48"
-				type: "command"
-				title: "Epic Astral Sorcery Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				astral_sorcery
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -970,11 +1035,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000C56"
-				type: "command"
-				title: "Rare Astral Sorcery Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+                            astral_sorcery
+                        }
+					}
+				}
 			}]
 		}
 		{
@@ -1001,11 +1071,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000C55"
-				type: "command"
-				title: "Rare Astral Sorcery Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+                            astral_sorcery
+                        }
+					}
+				}
 			}]
 		}
 		{
@@ -1025,11 +1100,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000C49"
-				type: "command"
-				title: "Legendary Astral Sorcery Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_legendary"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				astral_sorcery
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -1056,11 +1136,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000C53"
-				type: "command"
-				title: "Epic Astral Sorcery Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				astral_sorcery
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -1090,11 +1175,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000C59"
-				type: "command"
-				title: "Epic Astral Sorcery Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				astral_sorcery
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -1133,11 +1223,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000C5B"
-				type: "command"
-				title: "Rare Astral Sorcery Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+                            astral_sorcery
+                        }
+					}
+				}
 			}]
 		}
 		{
@@ -1199,11 +1294,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000C5A"
-				type: "command"
-				title: "Epic Astral Sorcery Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				astral_sorcery
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -1237,11 +1337,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000C58"
-				type: "command"
-				title: "Legendary Astral Sorcery Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_legendary"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				astral_sorcery
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -1407,11 +1512,16 @@
 				}
 				{
 					id: "0000000000000C47"
-					type: "command"
-					title: "Epic Astral Sorcery Loot Box"
-					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:epic_lootbox"
+						Count: 1b
+						tag: {
+							mod: {
+            					astral_sorcery
+        					}
+						}
+					}
 				}
 			]
 		}
@@ -1453,11 +1563,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000C5C"
-				type: "command"
-				title: "Epic Astral Sorcery Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				astral_sorcery
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -1484,11 +1599,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000C4F"
-				type: "command"
-				title: "Epic Astral Sorcery Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				astral_sorcery
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -1530,11 +1650,16 @@
 				}
 				{
 					id: "0000000000000C50"
-					type: "command"
-					title: "Legendary Astral Sorcery Loot Box"
-					icon: "kubejs:legendary_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_legendary"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:legendary_lootbox"
+						Count: 1b
+						tag: {
+							mod: {
+            					astral_sorcery
+        					}
+						}
+					}
 				}
 			]
 		}
@@ -1563,11 +1688,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000C4E"
-				type: "command"
-				title: "Legendary Astral Sorcery Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_legendary"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				astral_sorcery
+        				}
+					}
+				}
 			}]
 		}
 	]

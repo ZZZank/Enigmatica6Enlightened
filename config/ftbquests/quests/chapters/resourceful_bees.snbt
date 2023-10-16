@@ -316,11 +316,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000B03"
-				type: "command"
-				title: "Rare Resourceful Bees Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_resourceful_bees_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				resourceful_bees
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -342,11 +347,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000B02"
-				type: "command"
-				title: "Epic Resourceful Bees Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_resourceful_bees_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				resourceful_bees
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -379,11 +389,16 @@
 			rewards: [
 				{
 					id: "0000000000000AF9"
-					type: "command"
-					title: "Legendary Resourceful Bees Loot Box"
-					icon: "kubejs:legendary_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_resourceful_bees_loot_legendary"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:legendary_lootbox"
+						Count: 1b
+						tag: {
+							mod: {
+            					resourceful_bees
+        					}
+						}
+					}
 				}
 				{
 					id: "0000000000000AFA"
@@ -691,11 +706,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000AFE"
-				type: "command"
-				title: "Rare Resourceful Bees Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_resourceful_bees_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				resourceful_bees
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -711,11 +731,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000AFD"
-				type: "command"
-				title: "Epic Resourceful Bees Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_resourceful_bees_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				resourceful_bees
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -732,11 +757,16 @@
 			rewards: [
 				{
 					id: "0000000000000AFB"
-					type: "command"
-					title: "Legendary Resourceful Bees Loot Box"
-					icon: "kubejs:legendary_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_resourceful_bees_loot_legendary"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:legendary_lootbox"
+						Count: 1b
+						tag: {
+							mod: {
+            					resourceful_bees
+        					}
+						}
+					}
 				}
 				{
 					id: "0000000000000AFC"
@@ -859,11 +889,16 @@
 			}]
 			rewards: [{
 				id: "4D2AFDFEAA880455"
-				type: "command"
-				title: "Rare Resourceful Bees Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_resourceful_bees_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				resourceful_bees
+        				}
+					}
+				}
 			}]
 		}
 		{

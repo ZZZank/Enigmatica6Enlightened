@@ -209,11 +209,16 @@
 			}]
 			rewards: [{
 				id: "00000000000009AF"
-				type: "command"
-				title: "Rare Blood Magic Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				blood_magic
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -236,11 +241,16 @@
 			}]
 			rewards: [{
 				id: "00000000000009B0"
-				type: "command"
-				title: "Rare Blood Magic Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				blood_magic
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -415,11 +425,16 @@
 			}]
 			rewards: [{
 				id: "00000000000009B7"
-				type: "command"
-				title: "Epic Blood Magic Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				blood_magic
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -442,11 +457,16 @@
 			}]
 			rewards: [{
 				id: "00000000000009B9"
-				type: "command"
-				title: "Epic Blood Magic Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				blood_magic
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -481,11 +501,16 @@
 			]
 			rewards: [{
 				id: "00000000000009B6"
-				type: "command"
-				title: "Epic Blood Magic Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				blood_magic
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -507,11 +532,16 @@
 			}]
 			rewards: [{
 				id: "00000000000009B5"
-				type: "command"
-				title: "Epic Blood Magic Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				blood_magic
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -586,11 +616,16 @@
 			]
 			rewards: [{
 				id: "00000000000009BA"
-				type: "command"
-				title: "Rare Blood Magic Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				blood_magic
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -645,11 +680,16 @@
 			}]
 			rewards: [{
 				id: "00000000000009B2"
-				type: "command"
-				title: "Rare Blood Magic Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				blood_magic
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -686,11 +726,16 @@
 			}]
 			rewards: [{
 				id: "00000000000009B8"
-				type: "command"
-				title: "Epic Blood Magic Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				blood_magic
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -779,11 +824,16 @@
 			]
 			rewards: [{
 				id: "00000000000009B3"
-				type: "command"
-				title: "Epic Blood Magic Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				blood_magic
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -804,11 +854,16 @@
 			}]
 			rewards: [{
 				id: "00000000000009B4"
-				type: "command"
-				title: "Epic Blood Magic Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				blood_magic
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -832,11 +887,16 @@
 			rewards: [
 				{
 					id: "00000000000009BB"
-					type: "command"
-					title: "Rare Blood Magic Loot Box"
-					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_rare"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:rare_lootbox"
+						Count: 1b
+						tag: {
+							mod: {
+            					blood_magic
+        					}
+						}
+					}
 				}
 				{
 					id: "0000000000000A7D"
@@ -949,11 +1009,16 @@
 			}]
 			rewards: [{
 				id: "0006651ED51BA2A9"
-				type: "command"
-				title: "Rare Blood Magic Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				blood_magic
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -1007,11 +1072,16 @@
 			}]
 			rewards: [{
 				id: "0BB215FA03536F71"
-				type: "command"
-				title: "Epic Blood Magic Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				blood_magic
+        				}
+					}
+				}
 			}]
 		}
 		{

@@ -149,11 +149,16 @@
 				}
 				{
 					id: "0000000000000D75"
-					type: "command"
-					title: "Epic Create Loot Box"
-					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:epic_lootbox"
+						Count: 1b
+						tag: {
+							mod: {
+            					create
+        					}
+						}
+					}
 				}
 			]
 		}
@@ -256,11 +261,16 @@
 			rewards: [
 				{
 					id: "0000000000000D76"
-					type: "command"
-					title: "Legendary Create Loot Box"
-					icon: "kubejs:legendary_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:legendary_lootbox"
+						Count: 1b
+						tag: {
+							mod: {
+            					create
+        					}
+						}
+					}
 				}
 				{
 					id: "0000000000000D8A"
@@ -290,11 +300,16 @@
 			rewards: [
 				{
 					id: "0000000000000D79"
-					type: "command"
-					title: "Rare Create Loot Box"
-					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:rare_lootbox"
+						Count: 1b
+						tag: {
+							mod: {
+            					create
+        					}
+						}
+					}
 				}
 				{
 					id: "0000000000000D80"
@@ -326,11 +341,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000D78"
-				type: "command"
-				title: "Rare Create Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				create
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -361,11 +381,16 @@
 			]
 			rewards: [{
 				id: "0000000000000D77"
-				type: "command"
-				title: "Rare Create Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				create
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -386,11 +411,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000D83"
-				type: "command"
-				title: "Rare Create Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				create
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -427,11 +457,16 @@
 			]
 			rewards: [{
 				id: "0000000000000D81"
-				type: "command"
-				title: "Rare Create Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				create
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -458,11 +493,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000D7A"
-				type: "command"
-				title: "Rare Create Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				create
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -483,11 +523,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000D7B"
-				type: "command"
-				title: "Rare Create Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				create
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -515,11 +560,16 @@
 				}
 				{
 					id: "0000000000000D5C"
-					type: "command"
-					title: "Legendary Create Loot Box"
-					icon: "kubejs:legendary_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:legendary_lootbox"
+						Count: 1b
+						tag: {
+							mod: {
+            					create
+        					}
+						}
+					}
 				}
 			]
 		}
@@ -541,11 +591,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000D7C"
-				type: "command"
-				title: "Epic Create Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				create
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -593,11 +648,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000D7D"
-				type: "command"
-				title: "Epic Create Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				create
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -614,11 +674,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000D59"
-				type: "command"
-				title: "Legendary Create Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				create
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -641,11 +706,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000D57"
-				type: "command"
-				title: "Legendary Create Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				create
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -666,11 +736,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000D7E"
-				type: "command"
-				title: "Epic Create Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				create
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -693,11 +768,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000D58"
-				type: "command"
-				title: "Legendary Create Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				create
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -718,11 +798,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000D72"
-				type: "command"
-				title: "Rare Create Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				create
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -748,11 +833,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000D54"
-				type: "command"
-				title: "Legendary Create Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				create
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -789,11 +879,16 @@
 			]
 			rewards: [{
 				id: "0000000000000D6F"
-				type: "command"
-				title: "Epic Create Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				create
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -816,11 +911,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000D6D"
-				type: "command"
-				title: "Epic Create Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				create
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -866,11 +966,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000D71"
-				type: "command"
-				title: "Rare Create Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				create
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -899,11 +1004,16 @@
 			]
 			rewards: [{
 				id: "0000000000000D70"
-				type: "command"
-				title: "Rare Create Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				create
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -926,11 +1036,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000D5E"
-				type: "command"
-				title: "Epic Create Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				create
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -951,11 +1066,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000D55"
-				type: "command"
-				title: "Legendary Create Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				create
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -978,11 +1098,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000D84"
-				type: "command"
-				title: "Rare Create Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				create
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -1001,11 +1126,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000D85"
-				type: "command"
-				title: "Rare Create Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				create
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -1030,11 +1160,16 @@
 			]
 			rewards: [{
 				id: "0000000000000D86"
-				type: "command"
-				title: "Epic Create Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				create
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -1051,11 +1186,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000D5A"
-				type: "command"
-				title: "Legendary Create Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				create
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -1079,11 +1219,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000D89"
-				type: "command"
-				title: "Epic Create Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				create
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -1120,11 +1265,16 @@
 			]
 			rewards: [{
 				id: "0000000000000D6E"
-				type: "command"
-				title: "Epic Create Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				create
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -1163,11 +1313,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000D87"
-				type: "command"
-				title: "Epic Create Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				create
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -1287,11 +1442,16 @@
 			rewards: [
 				{
 					id: "0000000000000D69"
-					type: "command"
-					title: "Rare Create Loot Box"
-					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:rare_lootbox"
+						Count: 1b
+						tag: {
+							mod: {
+            					create
+        					}
+						}
+					}
 				}
 				{
 					id: "0000000000000D8C"
@@ -1323,11 +1483,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000D6A"
-				type: "command"
-				title: "Rare Create Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				create
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -1348,11 +1513,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000D6B"
-				type: "command"
-				title: "Rare Create Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				create
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -1398,11 +1568,16 @@
 			]
 			rewards: [{
 				id: "0000000000000D64"
-				type: "command"
-				title: "Epic Create Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				create
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -1419,11 +1594,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000D60"
-				type: "command"
-				title: "Epic Create Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				create
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -1440,11 +1620,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000D61"
-				type: "command"
-				title: "Epic Create Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				create
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -1465,11 +1650,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000D63"
-				type: "command"
-				title: "Epic Create Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				create
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -1492,11 +1682,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000D62"
-				type: "command"
-				title: "Epic Create Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				create
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -1531,11 +1726,16 @@
 			]
 			rewards: [{
 				id: "0000000000000D5F"
-				type: "command"
-				title: "Epic Create Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				create
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -1558,11 +1758,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000D6C"
-				type: "command"
-				title: "Rare Create Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				create
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -1583,11 +1788,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000D5D"
-				type: "command"
-				title: "Legendary Create Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				create
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -1610,11 +1820,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000D88"
-				type: "command"
-				title: "Epic Create Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				create
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -1635,11 +1850,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000D82"
-				type: "command"
-				title: "Rare Create Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				create
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -1660,11 +1880,16 @@
 			}]
 			rewards: [{
 				id: "6E8C331AB8382D16"
-				type: "command"
-				title: "Rare Create Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				create
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -1685,11 +1910,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000D56"
-				type: "command"
-				title: "Legendary Create Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				create
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -1718,11 +1948,16 @@
 			}]
 			rewards: [{
 				id: "454AB192859C2BA1"
-				type: "command"
-				title: "Rare Create Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				create
+        				}
+					}
+				}
 			}]
 		}
 		{

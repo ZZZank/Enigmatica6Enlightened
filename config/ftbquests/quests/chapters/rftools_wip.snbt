@@ -124,11 +124,16 @@
 			]
 			rewards: [{
 				id: "0000000000000C6C"
-				type: "command"
-				title: "Rare RFTools Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				rftools
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -148,11 +153,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000C6B"
-				type: "command"
-				title: "Rare RFTools Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				rftools
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -214,11 +224,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000C6F"
-				type: "command"
-				title: "Rare RFTools Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				rftools
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -243,11 +258,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000C70"
-				type: "command"
-				title: "Rare RFTools Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				rftools
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -264,11 +284,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000C6D"
-				type: "command"
-				title: "Rare RFTools Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				rftools
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -310,11 +335,16 @@
 			]
 			rewards: [{
 				id: "0000000000000C67"
-				type: "command"
-				title: "Rare RFTools Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				rftools
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -344,11 +374,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000C71"
-				type: "command"
-				title: "Rare RFTools Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				rftools
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -392,11 +427,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000C7E"
-				type: "command"
-				title: "Rare RFTools Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				rftools
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -427,11 +467,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000C76"
-				type: "command"
-				title: "Rare RFTools Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				rftools
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -461,11 +506,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000C75"
-				type: "command"
-				title: "Rare RFTools Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				rftools
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -490,11 +540,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000C7B"
-				type: "command"
-				title: "Rare RFTools Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				rftools
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -513,11 +568,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000C7C"
-				type: "command"
-				title: "Rare RFTools Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				rftools
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -536,11 +596,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000C7D"
-				type: "command"
-				title: "Rare RFTools Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				rftools
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -591,11 +656,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000C79"
-				type: "command"
-				title: "Rare RFTools Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				rftools
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -637,11 +707,16 @@
 			]
 			rewards: [{
 				id: "0000000000000C72"
-				type: "command"
-				title: "Rare RFTools Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				rftools
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -699,11 +774,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000C66"
-				type: "command"
-				title: "Rare RFTools Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				rftools
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -724,11 +804,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000C78"
-				type: "command"
-				title: "Rare RFTools Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				rftools
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -750,11 +835,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000C73"
-				type: "command"
-				title: "Rare RFTools Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				rftools
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -799,11 +889,16 @@
 			]
 			rewards: [{
 				id: "0000000000000C74"
-				type: "command"
-				title: "Rare RFTools Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				rftools
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -838,11 +933,16 @@
 				}
 				{
 					id: "0000000000000C7A"
-					type: "command"
-					title: "Rare RFTools Loot Box"
-					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:rare_lootbox"
+						Count: 1b
+						tag: {
+							mod: {
+            					rftools
+        					}
+						}
+					}
 				}
 			]
 		}

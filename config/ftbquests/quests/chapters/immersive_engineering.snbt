@@ -69,11 +69,16 @@
 			]
 			rewards: [{
 				id: "14FA4A24C7409F77"
-				type: "command"
-				title: "Rare Immersive Engineering Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				immersive_engineering
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -211,11 +216,16 @@
 				}
 				{
 					id: "000000000000060D"
-					type: "command"
-					title: "Rare Immersive Engineering Loot Box"
-					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:rare_lootbox"
+						Count: 1b
+						tag: {
+							mod: {
+            					immersive_engineering
+        					}
+						}
+					}
 				}
 			]
 		}
@@ -235,11 +245,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000614"
-				type: "command"
-				title: "Rare Immersive Engineering Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				immersive_engineering
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -313,11 +328,16 @@
 			}]
 			rewards: [{
 				id: "000000000000060E"
-				type: "command"
-				title: "Rare Immersive Engineering Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				immersive_engineering
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -365,11 +385,16 @@
 			]
 			rewards: [{
 				id: "0000000000000621"
-				type: "command"
-				title: "Epic Immersive Engineering Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				immersive_engineering
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -455,11 +480,16 @@
 			]
 			rewards: [{
 				id: "0000000000000620"
-				type: "command"
-				title: "Epic Immersive Engineering Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				immersive_engineering
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -572,19 +602,29 @@
 			rewards: [
 				{
 					id: "0000000000000622"
-					type: "command"
-					title: "Epic Immersive Engineering Loot Box"
-					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_epic"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:epic_lootbox"
+						Count: 1b
+						tag: {
+							mod: {
+            					immersive_engineering
+        					}
+						}
+					}
 				}
 				{
 					id: "0000000000000623"
-					type: "command"
-					title: "Epic Immersive Engineering Loot Box"
-					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_epic"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:epic_lootbox"
+						Count: 1b
+						tag: {
+							mod: {
+            					immersive_engineering
+        					}
+						}
+					}
 				}
 			]
 		}
@@ -601,11 +641,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000616"
-				type: "command"
-				title: "Rare Immersive Engineering Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				immersive_engineering
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -689,11 +734,16 @@
 			]
 			rewards: [{
 				id: "000000000000061D"
-				type: "command"
-				title: "Epic Immersive Engineering Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				immersive_engineering
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -782,11 +832,16 @@
 				}
 				{
 					id: "7FF68906D9C40250"
-					type: "command"
-					title: "Epic Immersive Engineering Loot Box"
-					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_epic"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:epic_lootbox"
+						Count: 1b
+						tag: {
+							mod: {
+            					immersive_engineering
+        					}
+						}
+					}
 				}
 			]
 		}
@@ -845,11 +900,16 @@
 			]
 			rewards: [{
 				id: "0000000000000624"
-				type: "command"
-				title: "Epic Immersive Engineering Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				immersive_engineering
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -918,11 +978,16 @@
 			]
 			rewards: [{
 				id: "000000000000061C"
-				type: "command"
-				title: "Epic Immersive Engineering Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				immersive_engineering
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -975,11 +1040,16 @@
 			}]
 			rewards: [{
 				id: "0000000000000611"
-				type: "command"
-				title: "Rare Immersive Engineering Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				immersive_engineering
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -1065,11 +1135,16 @@
 			]
 			rewards: [{
 				id: "0000000000000612"
-				type: "command"
-				title: "Rare Immersive Engineering Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				immersive_engineering
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -1145,11 +1220,16 @@
 			]
 			rewards: [{
 				id: "476B1A4F7D366E7E"
-				type: "command"
-				title: "Epic Immersive Engineering Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				immersive_engineering
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -1210,11 +1290,16 @@
 			]
 			rewards: [{
 				id: "055894AE837032DE"
-				type: "command"
-				title: "Epic Immersive Engineering Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				immersive_engineering
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -1273,11 +1358,16 @@
 			]
 			rewards: [{
 				id: "7B4485A51E367C74"
-				type: "command"
-				title: "Epic Immersive Engineering Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				immersive_engineering
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -1297,11 +1387,16 @@
 			}]
 			rewards: [{
 				id: "1CEC542F2D9E02C3"
-				type: "command"
-				title: "Rare Immersive Engineering Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				immersive_engineering
+        				}
+					}
+				}
 			}]
 		}
 		{
@@ -1357,11 +1452,16 @@
 			]
 			rewards: [{
 				id: "21679391A74BB3C7"
-				type: "command"
-				title: "Epic Immersive Engineering Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: {
+            				immersive_engineering
+        				}
+					}
+				}
 			}]
 		}
 	]
