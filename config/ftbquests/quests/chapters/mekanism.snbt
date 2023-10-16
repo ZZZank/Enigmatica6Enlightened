@@ -1399,19 +1399,21 @@
 				{
 					id: "000000000000082D"
 					type: "item"
-					type: "item":honey_cookie"
+					item: "farmersdelight:honey_cookie"
 					count: 3
 				}
 				{
 					id: "000000000000082E"
 					type: "item"
-					type: "item"
+					item: "abnormals_delight:mulberry_cookie"
+					count: 3
 				}
 				{
 					id: "000000000000082F"
 					type: "item"
-					type: "item"t:cookie"
-					type: "item"
+					item: "minecraft:cookie"
+					count: 3
+				}
 				{
 					id: "0000000000000A81"
 					type: "item"
