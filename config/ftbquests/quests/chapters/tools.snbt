@@ -1,7 +1,7 @@
 {
 	id: "0000000000000093"
 	group: "74B3CF67FCEAB20F"
-	order_index: 0
+	order_index: 1
 	filename: "tools"
 	title: "Tools and Armor"
 	icon: {
@@ -597,7 +597,6 @@
 				id: "0000000000000A57"
 				type: "item"
 				item: "kubejs:alchemists_delight"
-
 			}]
 		}
 		{
@@ -653,9 +652,7 @@
 					id: "kubejs:legendary_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				mekanism
-        				}
+						mod: "mekanism"
 					}
 				}
 			}]
@@ -692,9 +689,7 @@
 					id: "kubejs:legendary_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				mekanism
-        				}
+						mod: "mekanism"
 					}
 				}
 			}]
@@ -729,9 +724,7 @@
 					id: "kubejs:legendary_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				mekanism
-        				}
+						mod: "mekanism"
 					}
 				}
 			}]
@@ -767,9 +760,7 @@
 					id: "kubejs:legendary_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				mekanism
-        				}
+						mod: "mekanism"
 					}
 				}
 			}]
@@ -800,9 +791,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				mekanism
-        				}
+						mod: "mekanism"
 					}
 				}
 			}]
@@ -824,9 +813,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				mekanism
-        				}
+						mod: "mekanism"
 					}
 				}
 			}]
@@ -848,9 +835,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				mekanism
-        				}
+						mod: "mekanism"
 					}
 				}
 			}]
@@ -872,9 +857,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				mekanism
-        				}
+						mod: "mekanism"
 					}
 				}
 			}]
@@ -896,9 +879,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				mekanism
-        				}
+						mod: "mekanism"
 					}
 				}
 			}]
@@ -920,9 +901,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				mekanism
-        				}
+						mod: "mekanism"
 					}
 				}
 			}]
@@ -951,9 +930,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				mekanism
-        				}
+						mod: "mekanism"
 					}
 				}
 			}]
@@ -975,9 +952,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				mekanism
-        				}
+						mod: "mekanism"
 					}
 				}
 			}]
@@ -999,9 +974,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				mekanism
-        				}
+						mod: "mekanism"
 					}
 				}
 			}]
@@ -1030,9 +1003,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				mekanism
-        				}
+						mod: "mekanism"
 					}
 				}
 			}]
@@ -1072,9 +1043,7 @@
 					id: "kubejs:legendary_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				mekanism
-        				}
+						mod: "mekanism"
 					}
 				}
 			}]
@@ -1097,9 +1066,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				mekanism
-        				}
+						mod: "mekanism"
 					}
 				}
 			}]
@@ -1364,9 +1331,7 @@
 					id: "kubejs:legendary_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -1439,9 +1404,7 @@
 					id: "kubejs:legendary_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -1612,9 +1575,7 @@
 						id: "kubejs:rare_lootbox"
 						Count: 1b
 						tag: {
-							mod: {
-                 	           ars_nouveau
-           		            }
+							mod: "ars_nouveau"
 						}
 					}
 				}
@@ -1735,9 +1696,7 @@
 						id: "kubejs:epic_lootbox"
 						Count: 1b
 						tag: {
-							mod: {
-            					thermal_series
-        					}
+							mod: "thermal_series"
 						}
 					}
 				}
@@ -1774,9 +1733,7 @@
 						id: "kubejs:epic_lootbox"
 						Count: 1b
 						tag: {
-							mod: {
-            					thermal_series
-        					}
+							mod: "thermal_series"
 						}
 					}
 				}
@@ -1855,9 +1812,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				thermal_series
-        				}
+						mod: "thermal_series"
 					}
 				}
 			}]
@@ -1930,9 +1885,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				thermal_series
-        				}
+						mod: "thermal_series"
 					}
 				}
 			}]
@@ -1961,9 +1914,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				thermal_series
-        				}
+						mod: "thermal_series"
 					}
 				}
 			}]
@@ -2162,9 +2113,7 @@
 						id: "kubejs:epic_lootbox"
 						Count: 1b
 						tag: {
-							mod: {
-            					thermal_series
-        					}
+							mod: "thermal_series"
 						}
 					}
 				}
@@ -2268,9 +2217,7 @@
 						id: "kubejs:rare_lootbox"
 						Count: 1b
 						tag: {
-							mod: {
-            					immersive_engineering
-        					}
+							mod: "immersive_engineering"
 						}
 					}
 				}
@@ -2371,9 +2318,7 @@
 						id: "kubejs:rare_lootbox"
 						Count: 1b
 						tag: {
-							mod: {
-            					immersive_engineering
-        					}
+							mod: "immersive_engineering"
 						}
 					}
 				}
@@ -2417,9 +2362,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				immersive_engineering
-        				}
+						mod: "immersive_engineering"
 					}
 				}
 			}]
@@ -2443,9 +2386,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				immersive_engineering
-        				}
+						mod: "immersive_engineering"
 					}
 				}
 			}]
@@ -2469,9 +2410,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				immersive_engineering
-        				}
+						mod: "immersive_engineering"
 					}
 				}
 			}]
@@ -2495,9 +2434,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				immersive_engineering
-        				}
+						mod: "immersive_engineering"
 					}
 				}
 			}]
@@ -2606,9 +2543,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				immersive_engineering
-        				}
+						mod: "immersive_engineering"
 					}
 				}
 			}]
@@ -2638,9 +2573,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				immersive_engineering
-        				}
+						mod: "immersive_engineering"
 					}
 				}
 			}]
@@ -2664,9 +2597,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				immersive_engineering
-        				}
+						mod: "immersive_engineering"
 					}
 				}
 			}]
@@ -2694,9 +2625,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				immersive_engineering
-        				}
+						mod: "immersive_engineering"
 					}
 				}
 			}]
@@ -2723,9 +2652,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				immersive_engineering
-        				}
+						mod: "immersive_engineering"
 					}
 				}
 			}]
@@ -2753,9 +2680,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				immersive_engineering
-        				}
+						mod: "immersive_engineering"
 					}
 				}
 			}]
@@ -2778,9 +2703,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				immersive_engineering
-        				}
+						mod: "immersive_engineering"
 					}
 				}
 			}]
@@ -2804,9 +2727,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				immersive_engineering
-        				}
+						mod: "immersive_engineering"
 					}
 				}
 			}]
@@ -2916,9 +2837,7 @@
 					id: "kubejs:legendary_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]

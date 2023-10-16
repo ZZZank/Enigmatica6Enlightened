@@ -321,9 +321,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				resourceful_bees
-        				}
+						mod: "resourceful_bees"
 					}
 				}
 			}]
@@ -352,9 +350,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				resourceful_bees
-        				}
+						mod: "resourceful_bees"
 					}
 				}
 			}]
@@ -394,9 +390,7 @@
 						id: "kubejs:legendary_lootbox"
 						Count: 1b
 						tag: {
-							mod: {
-            					resourceful_bees
-        					}
+							mod: "resourceful_bees"
 						}
 					}
 				}
@@ -711,9 +705,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				resourceful_bees
-        				}
+						mod: "resourceful_bees"
 					}
 				}
 			}]
@@ -736,9 +728,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				resourceful_bees
-        				}
+						mod: "resourceful_bees"
 					}
 				}
 			}]
@@ -762,9 +752,7 @@
 						id: "kubejs:legendary_lootbox"
 						Count: 1b
 						tag: {
-							mod: {
-            					resourceful_bees
-        					}
+							mod: "resourceful_bees"
 						}
 					}
 				}
@@ -894,9 +882,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				resourceful_bees
-        				}
+						mod: "resourceful_bees"
 					}
 				}
 			}]

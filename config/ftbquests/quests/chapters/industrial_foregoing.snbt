@@ -1,7 +1,7 @@
 {
 	id: "0000000000000003"
 	group: "72A9465344128AF9"
-	order_index: 2
+	order_index: 4
 	filename: "industrial_foregoing"
 	title: "Industrial Foregoing"
 	icon: "industrialforegoing:latex_processing_unit"
@@ -117,9 +117,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				industrial_foregoing
-        				}
+						mod: "industrial_foregoing"
 					}
 				}
 			}]
@@ -143,9 +141,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				industrial_foregoing
-        				}
+						mod: "industrial_foregoing"
 					}
 				}
 			}]
@@ -206,9 +202,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				industrial_foregoing
-        				}
+						mod: "industrial_foregoing"
 					}
 				}
 			}]
@@ -248,9 +242,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				industrial_foregoing
-        				}
+						mod: "industrial_foregoing"
 					}
 				}
 			}]
@@ -278,9 +270,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				industrial_foregoing
-        				}
+						mod: "industrial_foregoing"
 					}
 				}
 			}]
@@ -303,9 +293,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				industrial_foregoing
-        				}
+						mod: "industrial_foregoing"
 					}
 				}
 			}]
@@ -341,9 +329,7 @@
 						id: "kubejs:epic_lootbox"
 						Count: 1b
 						tag: {
-							mod: {
-            					industrial_foregoing
-        					}
+							mod: "industrial_foregoing"
 						}
 					}
 				}
@@ -396,9 +382,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				industrial_foregoing
-        				}
+						mod: "industrial_foregoing"
 					}
 				}
 			}]
@@ -530,9 +514,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				industrial_foregoing
-        				}
+						mod: "industrial_foregoing"
 					}
 				}
 			}]
@@ -606,9 +588,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				industrial_foregoing
-        				}
+						mod: "industrial_foregoing"
 					}
 				}
 			}]

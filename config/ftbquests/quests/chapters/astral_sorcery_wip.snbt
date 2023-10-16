@@ -1,7 +1,7 @@
 {
 	id: "0000000000000AF3"
 	group: "5A8B89F87F77CF4C"
-	order_index: 2
+	order_index: 3
 	filename: "astral_sorcery_wip"
 	title: "Astral Sorcery"
 	icon: "astralsorcery:hand_telescope"
@@ -134,9 +134,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				astral_sorcery
-        				}
+						mod: "astral_sorcery"
 					}
 				}
 			}]
@@ -222,9 +220,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-                            astral_sorcery
-                        }
+						mod: "astral_sorcery"
 					}
 				}
 			}]
@@ -286,9 +282,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-                            astral_sorcery
-                        }
+						mod: "astral_sorcery"
 					}
 				}
 			}]
@@ -354,9 +348,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				astral_sorcery
-        				}
+						mod: "astral_sorcery"
 					}
 				}
 			}]
@@ -418,9 +410,7 @@
 					id: "kubejs:legendary_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				astral_sorcery
-        				}
+						mod: "astral_sorcery"
 					}
 				}
 			}]
@@ -472,9 +462,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-                            astral_sorcery
-                        }
+						mod: "astral_sorcery"
 					}
 				}
 			}]
@@ -546,9 +534,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-                            astral_sorcery
-                        }
+						mod: "astral_sorcery"
 					}
 				}
 			}]
@@ -579,9 +565,7 @@
 					id: "kubejs:legendary_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				astral_sorcery
-        				}
+						mod: "astral_sorcery"
 					}
 				}
 			}]
@@ -620,9 +604,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				astral_sorcery
-        				}
+						mod: "astral_sorcery"
 					}
 				}
 			}]
@@ -770,9 +752,7 @@
 					id: "kubejs:legendary_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				astral_sorcery
-        				}
+						mod: "astral_sorcery"
 					}
 				}
 			}]
@@ -818,9 +798,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-                            astral_sorcery
-                        }
+						mod: "astral_sorcery"
 					}
 				}
 			}]
@@ -896,9 +874,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				astral_sorcery
-        				}
+						mod: "astral_sorcery"
 					}
 				}
 			}]
@@ -962,9 +938,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				astral_sorcery
-        				}
+						mod: "astral_sorcery"
 					}
 				}
 			}]
@@ -1040,9 +1014,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-                            astral_sorcery
-                        }
+						mod: "astral_sorcery"
 					}
 				}
 			}]
@@ -1076,9 +1048,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-                            astral_sorcery
-                        }
+						mod: "astral_sorcery"
 					}
 				}
 			}]
@@ -1105,9 +1075,7 @@
 					id: "kubejs:legendary_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				astral_sorcery
-        				}
+						mod: "astral_sorcery"
 					}
 				}
 			}]
@@ -1141,9 +1109,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				astral_sorcery
-        				}
+						mod: "astral_sorcery"
 					}
 				}
 			}]
@@ -1180,9 +1146,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				astral_sorcery
-        				}
+						mod: "astral_sorcery"
 					}
 				}
 			}]
@@ -1228,9 +1192,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-                            astral_sorcery
-                        }
+						mod: "astral_sorcery"
 					}
 				}
 			}]
@@ -1299,9 +1261,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				astral_sorcery
-        				}
+						mod: "astral_sorcery"
 					}
 				}
 			}]
@@ -1342,9 +1302,7 @@
 					id: "kubejs:legendary_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				astral_sorcery
-        				}
+						mod: "astral_sorcery"
 					}
 				}
 			}]
@@ -1517,9 +1475,7 @@
 						id: "kubejs:epic_lootbox"
 						Count: 1b
 						tag: {
-							mod: {
-            					astral_sorcery
-        					}
+							mod: "astral_sorcery"
 						}
 					}
 				}
@@ -1568,9 +1524,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				astral_sorcery
-        				}
+						mod: "astral_sorcery"
 					}
 				}
 			}]
@@ -1604,9 +1558,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				astral_sorcery
-        				}
+						mod: "astral_sorcery"
 					}
 				}
 			}]
@@ -1655,9 +1607,7 @@
 						id: "kubejs:legendary_lootbox"
 						Count: 1b
 						tag: {
-							mod: {
-            					astral_sorcery
-        					}
+							mod: "astral_sorcery"
 						}
 					}
 				}
@@ -1693,9 +1643,7 @@
 					id: "kubejs:legendary_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				astral_sorcery
-        				}
+						mod: "astral_sorcery"
 					}
 				}
 			}]

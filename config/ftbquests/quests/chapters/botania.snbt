@@ -1,7 +1,7 @@
 {
 	id: "0000000000000500"
 	group: "5A8B89F87F77CF4C"
-	order_index: 4
+	order_index: 6
 	filename: "botania"
 	title: "Botania"
 	icon: "botania:mana_pylon"
@@ -147,9 +147,7 @@
 						id: "kubejs:rare_lootbox"
 						Count: 1b
 						tag: {
-							mod: {
-            					botania
-        					}
+							mod: "botania"
 						}
 					}
 				}
@@ -189,9 +187,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -223,9 +219,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -283,9 +277,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -332,9 +324,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -362,9 +352,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -394,9 +382,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -427,9 +413,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -517,9 +501,7 @@
 					id: "kubejs:legendary_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -559,9 +541,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -591,9 +571,7 @@
 					id: "kubejs:legendary_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -644,9 +622,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -670,9 +646,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -696,9 +670,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -722,9 +694,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -748,9 +718,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -774,9 +742,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -808,9 +774,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -865,9 +829,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -924,9 +886,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -950,9 +910,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -976,9 +934,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -1002,9 +958,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -1028,9 +982,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -1058,9 +1010,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -1088,9 +1038,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -1114,9 +1062,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -1146,9 +1092,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -1176,9 +1120,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -1206,9 +1148,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -1236,9 +1176,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -1292,9 +1230,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -1428,9 +1364,7 @@
 					id: "kubejs:legendary_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -1458,9 +1392,7 @@
 					id: "kubejs:legendary_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -1495,9 +1427,7 @@
 						id: "kubejs:legendary_lootbox"
 						Count: 1b
 						tag: {
-							mod: {
-            					botania
-        					}
+							mod: "botania"
 						}
 					}
 				}
@@ -1526,9 +1456,7 @@
 					id: "kubejs:legendary_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -1552,9 +1480,7 @@
 					id: "kubejs:legendary_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -1582,9 +1508,7 @@
 					id: "kubejs:legendary_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -1628,9 +1552,7 @@
 					id: "kubejs:legendary_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -1662,9 +1584,7 @@
 					id: "kubejs:legendary_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -1693,9 +1613,7 @@
 					id: "kubejs:legendary_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -1723,9 +1641,7 @@
 					id: "kubejs:legendary_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]

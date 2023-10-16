@@ -1,7 +1,7 @@
 {
 	id: "0000000000000096"
 	group: ""
-	order_index: 2
+	order_index: 3
 	filename: "building"
 	title: "Building"
 	icon: "minecraft:scaffolding"
@@ -981,9 +981,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -1009,9 +1007,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -1037,9 +1033,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -1065,9 +1059,7 @@
 					id: "kubejs:legendary_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -1131,9 +1123,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				astral_sorcery
-        				}
+						mod: "astral_sorcery"
 					}
 				}
 			}]
@@ -1175,9 +1165,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				astral_sorcery
-        				}
+						mod: "astral_sorcery"
 					}
 				}
 			}]
@@ -1247,9 +1235,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				create
-        				}
+						mod: "create"
 					}
 				}
 			}]
@@ -1281,9 +1267,7 @@
 					id: "kubejs:legendary_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				create
-        				}
+						mod: "create"
 					}
 				}
 			}]
@@ -1352,9 +1336,7 @@
 					id: "kubejs:legendary_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -1403,9 +1385,7 @@
 					id: "kubejs:legendary_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -1430,9 +1410,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]
@@ -1470,9 +1448,7 @@
 					id: "kubejs:legendary_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				botania
-        				}
+						mod: "botania"
 					}
 				}
 			}]

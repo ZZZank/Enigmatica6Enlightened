@@ -1,7 +1,7 @@
 {
 	id: "0000000000000895"
 	group: "5A8B89F87F77CF4C"
-	order_index: 3
+	order_index: 5
 	filename: "blood_magic_wip"
 	title: "Blood Magic"
 	icon: "bloodmagic:weakbloodshard"
@@ -214,9 +214,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				blood_magic
-        				}
+						mod: "blood_magic"
 					}
 				}
 			}]
@@ -246,9 +244,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				blood_magic
-        				}
+						mod: "blood_magic"
 					}
 				}
 			}]
@@ -430,9 +426,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				blood_magic
-        				}
+						mod: "blood_magic"
 					}
 				}
 			}]
@@ -462,9 +456,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				blood_magic
-        				}
+						mod: "blood_magic"
 					}
 				}
 			}]
@@ -506,9 +498,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				blood_magic
-        				}
+						mod: "blood_magic"
 					}
 				}
 			}]
@@ -537,9 +527,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				blood_magic
-        				}
+						mod: "blood_magic"
 					}
 				}
 			}]
@@ -621,9 +609,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				blood_magic
-        				}
+						mod: "blood_magic"
 					}
 				}
 			}]
@@ -685,9 +671,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				blood_magic
-        				}
+						mod: "blood_magic"
 					}
 				}
 			}]
@@ -731,9 +715,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				blood_magic
-        				}
+						mod: "blood_magic"
 					}
 				}
 			}]
@@ -829,9 +811,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				blood_magic
-        				}
+						mod: "blood_magic"
 					}
 				}
 			}]
@@ -859,9 +839,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				blood_magic
-        				}
+						mod: "blood_magic"
 					}
 				}
 			}]
@@ -892,9 +870,7 @@
 						id: "kubejs:rare_lootbox"
 						Count: 1b
 						tag: {
-							mod: {
-            					blood_magic
-        					}
+							mod: "blood_magic"
 						}
 					}
 				}
@@ -1014,9 +990,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				blood_magic
-        				}
+						mod: "blood_magic"
 					}
 				}
 			}]
@@ -1077,9 +1051,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				blood_magic
-        				}
+						mod: "blood_magic"
 					}
 				}
 			}]

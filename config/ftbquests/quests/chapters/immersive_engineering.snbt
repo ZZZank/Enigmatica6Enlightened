@@ -1,7 +1,7 @@
 {
 	id: "0000000000000002"
 	group: "72A9465344128AF9"
-	order_index: 1
+	order_index: 2
 	filename: "immersive_engineering"
 	title: "Immersive Engineering"
 	icon: "immersiveengineering:heavy_engineering"
@@ -74,9 +74,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				immersive_engineering
-        				}
+						mod: "immersive_engineering"
 					}
 				}
 			}]
@@ -221,9 +219,7 @@
 						id: "kubejs:rare_lootbox"
 						Count: 1b
 						tag: {
-							mod: {
-            					immersive_engineering
-        					}
+							mod: "immersive_engineering"
 						}
 					}
 				}
@@ -250,9 +246,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				immersive_engineering
-        				}
+						mod: "immersive_engineering"
 					}
 				}
 			}]
@@ -333,9 +327,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				immersive_engineering
-        				}
+						mod: "immersive_engineering"
 					}
 				}
 			}]
@@ -390,9 +382,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				immersive_engineering
-        				}
+						mod: "immersive_engineering"
 					}
 				}
 			}]
@@ -485,9 +475,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				immersive_engineering
-        				}
+						mod: "immersive_engineering"
 					}
 				}
 			}]
@@ -607,9 +595,7 @@
 						id: "kubejs:epic_lootbox"
 						Count: 1b
 						tag: {
-							mod: {
-            					immersive_engineering
-        					}
+							mod: "immersive_engineering"
 						}
 					}
 				}
@@ -620,9 +606,7 @@
 						id: "kubejs:epic_lootbox"
 						Count: 1b
 						tag: {
-							mod: {
-            					immersive_engineering
-        					}
+							mod: "immersive_engineering"
 						}
 					}
 				}
@@ -646,9 +630,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				immersive_engineering
-        				}
+						mod: "immersive_engineering"
 					}
 				}
 			}]
@@ -739,9 +721,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				immersive_engineering
-        				}
+						mod: "immersive_engineering"
 					}
 				}
 			}]
@@ -837,9 +817,7 @@
 						id: "kubejs:epic_lootbox"
 						Count: 1b
 						tag: {
-							mod: {
-            					immersive_engineering
-        					}
+							mod: "immersive_engineering"
 						}
 					}
 				}
@@ -905,9 +883,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				immersive_engineering
-        				}
+						mod: "immersive_engineering"
 					}
 				}
 			}]
@@ -983,9 +959,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				immersive_engineering
-        				}
+						mod: "immersive_engineering"
 					}
 				}
 			}]
@@ -1045,9 +1019,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				immersive_engineering
-        				}
+						mod: "immersive_engineering"
 					}
 				}
 			}]
@@ -1140,9 +1112,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				immersive_engineering
-        				}
+						mod: "immersive_engineering"
 					}
 				}
 			}]
@@ -1225,9 +1195,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				immersive_engineering
-        				}
+						mod: "immersive_engineering"
 					}
 				}
 			}]
@@ -1295,9 +1263,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				immersive_engineering
-        				}
+						mod: "immersive_engineering"
 					}
 				}
 			}]
@@ -1363,9 +1329,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				immersive_engineering
-        				}
+						mod: "immersive_engineering"
 					}
 				}
 			}]
@@ -1392,9 +1356,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				immersive_engineering
-        				}
+						mod: "immersive_engineering"
 					}
 				}
 			}]
@@ -1457,9 +1419,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				immersive_engineering
-        				}
+						mod: "immersive_engineering"
 					}
 				}
 			}]

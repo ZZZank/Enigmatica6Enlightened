@@ -539,7 +539,6 @@
 				""
 				"Simply Right-Click a Compact Machine with the PSD to warp inside of it. "
 			]
-			dependencies: ["2A74822BE970E9D4"]
 			id: "0AD2769DC173D26D"
 			tasks: [{
 				id: "6B198B6A029D9333"

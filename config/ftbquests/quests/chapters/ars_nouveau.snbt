@@ -202,9 +202,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-                            ars_nouveau
-                        }
+						mod: "ars_nouveau"
 					}
 				}
 			}]
@@ -278,9 +276,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-                            ars_nouveau
-                        }
+						mod: "ars_nouveau"
 					}
 				}
 			}]
@@ -377,9 +373,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-                            ars_nouveau
-                        }
+						mod: "ars_nouveau"
 					}
 				}
 			}]
@@ -482,9 +476,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-                            ars_nouveau
-                        }
+						mod: "ars_nouveau"
 					}
 				}
 			}]
@@ -513,9 +505,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-                            ars_nouveau
-                        }
+						mod: "ars_nouveau"
 					}
 				}
 			}]
@@ -581,9 +571,7 @@
 						id: "kubejs:rare_lootbox"
 						Count: 1b
 						tag: {
-							mod: {
-                 	           ars_nouveau
-           		            }
+							mod: "ars_nouveau"
 						}
 					}
 				}
@@ -631,9 +619,7 @@
 						id: "kubejs:rare_lootbox"
 						Count: 1b
 						tag: {
-							mod: {
-                 	           ars_nouveau
-           		            }
+							mod: "ars_nouveau"
 						}
 					}
 				}
@@ -706,9 +692,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-                            ars_nouveau
-                        }
+						mod: "ars_nouveau"
 					}
 				}
 			}]
@@ -738,9 +722,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-                            ars_nouveau
-                        }
+						mod: "ars_nouveau"
 					}
 				}
 			}]
@@ -870,9 +852,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				blood_magic
-        				}
+						mod: "blood_magic"
 					}
 				}
 			}]
@@ -911,9 +891,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-                            ars_nouveau
-                        }
+						mod: "ars_nouveau"
 					}
 				}
 			}]
@@ -946,9 +924,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-                            ars_nouveau
-                        }
+						mod: "ars_nouveau"
 					}
 				}
 			}]
@@ -1024,9 +1000,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-                            ars_nouveau
-                        }
+						mod: "ars_nouveau"
 					}
 				}
 			}]
@@ -1050,9 +1024,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-                            ars_nouveau
-                        }
+						mod: "ars_nouveau"
 					}
 				}
 			}]
@@ -1112,9 +1084,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-                            ars_nouveau
-                        }
+						mod: "ars_nouveau"
 					}
 				}
 			}]
@@ -1174,9 +1144,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-                            ars_nouveau
-                        }
+						mod: "ars_nouveau"
 					}
 				}
 			}]
@@ -1234,9 +1202,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-                            ars_nouveau
-                        }
+						mod: "ars_nouveau"
 					}
 				}
 			}]
@@ -1350,9 +1316,7 @@
 						id: "kubejs:rare_lootbox"
 						Count: 1b
 						tag: {
-							mod: {
-                 	           ars_nouveau
-           		            }
+							mod: "ars_nouveau"
 						}
 					}
 				}
@@ -1390,9 +1354,7 @@
 						id: "kubejs:rare_lootbox"
 						Count: 1b
 						tag: {
-							mod: {
-                 	           ars_nouveau
-           		            }
+							mod: "ars_nouveau"
 						}
 					}
 				}
@@ -1428,9 +1390,7 @@
 						id: "kubejs:rare_lootbox"
 						Count: 1b
 						tag: {
-							mod: {
-                 	           ars_nouveau
-           		            }
+							mod: "ars_nouveau"
 						}
 					}
 				}
@@ -1484,9 +1444,7 @@
 						id: "kubejs:rare_lootbox"
 						Count: 1b
 						tag: {
-							mod: {
-                 	           ars_nouveau
-           		            }
+							mod: "ars_nouveau"
 						}
 					}
 				}
@@ -1523,9 +1481,7 @@
 						id: "kubejs:rare_lootbox"
 						Count: 1b
 						tag: {
-							mod: {
-                 	           ars_nouveau
-           		            }
+							mod: "ars_nouveau"
 						}
 					}
 				}
@@ -1594,9 +1550,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-                            ars_nouveau
-                        }
+						mod: "ars_nouveau"
 					}
 				}
 			}]
@@ -1626,9 +1580,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-                            ars_nouveau
-                        }
+						mod: "ars_nouveau"
 					}
 				}
 			}]
@@ -1748,9 +1700,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-                            ars_nouveau
-                        }
+						mod: "ars_nouveau"
 					}
 				}
 			}]

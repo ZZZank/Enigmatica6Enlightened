@@ -154,9 +154,7 @@
 						id: "kubejs:epic_lootbox"
 						Count: 1b
 						tag: {
-							mod: {
-            					create
-        					}
+							mod: "create"
 						}
 					}
 				}
@@ -266,9 +264,7 @@
 						id: "kubejs:legendary_lootbox"
 						Count: 1b
 						tag: {
-							mod: {
-            					create
-        					}
+							mod: "create"
 						}
 					}
 				}
@@ -305,9 +301,7 @@
 						id: "kubejs:rare_lootbox"
 						Count: 1b
 						tag: {
-							mod: {
-            					create
-        					}
+							mod: "create"
 						}
 					}
 				}
@@ -346,9 +340,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				create
-        				}
+						mod: "create"
 					}
 				}
 			}]
@@ -386,9 +378,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				create
-        				}
+						mod: "create"
 					}
 				}
 			}]
@@ -416,9 +406,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				create
-        				}
+						mod: "create"
 					}
 				}
 			}]
@@ -462,9 +450,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				create
-        				}
+						mod: "create"
 					}
 				}
 			}]
@@ -498,9 +484,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				create
-        				}
+						mod: "create"
 					}
 				}
 			}]
@@ -528,9 +512,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				create
-        				}
+						mod: "create"
 					}
 				}
 			}]
@@ -565,9 +547,7 @@
 						id: "kubejs:legendary_lootbox"
 						Count: 1b
 						tag: {
-							mod: {
-            					create
-        					}
+							mod: "create"
 						}
 					}
 				}
@@ -596,9 +576,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				create
-        				}
+						mod: "create"
 					}
 				}
 			}]
@@ -653,9 +631,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				create
-        				}
+						mod: "create"
 					}
 				}
 			}]
@@ -679,9 +655,7 @@
 					id: "kubejs:legendary_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				create
-        				}
+						mod: "create"
 					}
 				}
 			}]
@@ -711,9 +685,7 @@
 					id: "kubejs:legendary_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				create
-        				}
+						mod: "create"
 					}
 				}
 			}]
@@ -741,9 +713,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				create
-        				}
+						mod: "create"
 					}
 				}
 			}]
@@ -773,9 +743,7 @@
 					id: "kubejs:legendary_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				create
-        				}
+						mod: "create"
 					}
 				}
 			}]
@@ -803,9 +771,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				create
-        				}
+						mod: "create"
 					}
 				}
 			}]
@@ -838,9 +804,7 @@
 					id: "kubejs:legendary_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				create
-        				}
+						mod: "create"
 					}
 				}
 			}]
@@ -884,9 +848,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				create
-        				}
+						mod: "create"
 					}
 				}
 			}]
@@ -916,9 +878,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				create
-        				}
+						mod: "create"
 					}
 				}
 			}]
@@ -971,9 +931,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				create
-        				}
+						mod: "create"
 					}
 				}
 			}]
@@ -1009,9 +967,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				create
-        				}
+						mod: "create"
 					}
 				}
 			}]
@@ -1041,9 +997,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				create
-        				}
+						mod: "create"
 					}
 				}
 			}]
@@ -1071,9 +1025,7 @@
 					id: "kubejs:legendary_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				create
-        				}
+						mod: "create"
 					}
 				}
 			}]
@@ -1103,9 +1055,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				create
-        				}
+						mod: "create"
 					}
 				}
 			}]
@@ -1131,9 +1081,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				create
-        				}
+						mod: "create"
 					}
 				}
 			}]
@@ -1165,9 +1113,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				create
-        				}
+						mod: "create"
 					}
 				}
 			}]
@@ -1191,9 +1137,7 @@
 					id: "kubejs:legendary_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				create
-        				}
+						mod: "create"
 					}
 				}
 			}]
@@ -1224,9 +1168,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				create
-        				}
+						mod: "create"
 					}
 				}
 			}]
@@ -1270,9 +1212,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				create
-        				}
+						mod: "create"
 					}
 				}
 			}]
@@ -1318,9 +1258,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				create
-        				}
+						mod: "create"
 					}
 				}
 			}]
@@ -1447,9 +1385,7 @@
 						id: "kubejs:rare_lootbox"
 						Count: 1b
 						tag: {
-							mod: {
-            					create
-        					}
+							mod: "create"
 						}
 					}
 				}
@@ -1488,9 +1424,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				create
-        				}
+						mod: "create"
 					}
 				}
 			}]
@@ -1518,9 +1452,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				create
-        				}
+						mod: "create"
 					}
 				}
 			}]
@@ -1573,9 +1505,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				create
-        				}
+						mod: "create"
 					}
 				}
 			}]
@@ -1599,9 +1529,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				create
-        				}
+						mod: "create"
 					}
 				}
 			}]
@@ -1625,9 +1553,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				create
-        				}
+						mod: "create"
 					}
 				}
 			}]
@@ -1655,9 +1581,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				create
-        				}
+						mod: "create"
 					}
 				}
 			}]
@@ -1687,9 +1611,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				create
-        				}
+						mod: "create"
 					}
 				}
 			}]
@@ -1731,9 +1653,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				create
-        				}
+						mod: "create"
 					}
 				}
 			}]
@@ -1763,9 +1683,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				create
-        				}
+						mod: "create"
 					}
 				}
 			}]
@@ -1793,9 +1711,7 @@
 					id: "kubejs:legendary_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				create
-        				}
+						mod: "create"
 					}
 				}
 			}]
@@ -1825,9 +1741,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				create
-        				}
+						mod: "create"
 					}
 				}
 			}]
@@ -1855,9 +1769,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				create
-        				}
+						mod: "create"
 					}
 				}
 			}]
@@ -1885,9 +1797,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				create
-        				}
+						mod: "create"
 					}
 				}
 			}]
@@ -1915,9 +1825,7 @@
 					id: "kubejs:legendary_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				create
-        				}
+						mod: "create"
 					}
 				}
 			}]
@@ -1953,9 +1861,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				create
-        				}
+						mod: "create"
 					}
 				}
 			}]

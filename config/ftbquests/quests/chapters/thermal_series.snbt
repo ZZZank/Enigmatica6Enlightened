@@ -121,9 +121,7 @@
 						id: "kubejs:rare_lootbox"
 						Count: 1b
 						tag: {
-							mod: {
-            					thermal_series
-        					}
+							mod: "thermal_series"
 						}
 					}
 				}
@@ -167,9 +165,7 @@
 						id: "kubejs:epic_lootbox"
 						Count: 1b
 						tag: {
-							mod: {
-            					thermal_series
-        					}
+							mod: "thermal_series"
 						}
 					}
 				}
@@ -206,9 +202,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				thermal_series
-        				}
+						mod: "thermal_series"
 					}
 				}
 			}]
@@ -238,9 +232,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				thermal_series
-        				}
+						mod: "thermal_series"
 					}
 				}
 			}]
@@ -268,9 +260,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				thermal_series
-        				}
+						mod: "thermal_series"
 					}
 				}
 			}]
@@ -305,9 +295,7 @@
 						id: "kubejs:rare_lootbox"
 						Count: 1b
 						tag: {
-							mod: {
-            					thermal_series
-        					}
+							mod: "thermal_series"
 						}
 					}
 				}
@@ -338,9 +326,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				thermal_series
-        				}
+						mod: "thermal_series"
 					}
 				}
 			}]
@@ -369,9 +355,7 @@
 						id: "kubejs:rare_lootbox"
 						Count: 1b
 						tag: {
-							mod: {
-            					thermal_series
-        					}
+							mod: "thermal_series"
 						}
 					}
 				}
@@ -411,9 +395,7 @@
 						id: "kubejs:epic_lootbox"
 						Count: 1b
 						tag: {
-							mod: {
-            					thermal_series
-        					}
+							mod: "thermal_series"
 						}
 					}
 				}
@@ -444,9 +426,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				thermal_series
-        				}
+						mod: "thermal_series"
 					}
 				}
 			}]
@@ -476,9 +456,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				thermal_series
-        				}
+						mod: "thermal_series"
 					}
 				}
 			}]
@@ -502,9 +480,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				thermal_series
-        				}
+						mod: "thermal_series"
 					}
 				}
 			}]
@@ -528,9 +504,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				thermal_series
-        				}
+						mod: "thermal_series"
 					}
 				}
 			}]
@@ -554,9 +528,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				thermal_series
-        				}
+						mod: "thermal_series"
 					}
 				}
 			}]
@@ -579,9 +551,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				thermal_series
-        				}
+						mod: "thermal_series"
 					}
 				}
 			}]
@@ -623,9 +593,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				thermal_series
-        				}
+						mod: "thermal_series"
 					}
 				}
 			}]
@@ -673,9 +641,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				thermal_series
-        				}
+						mod: "thermal_series"
 					}
 				}
 			}]
@@ -705,9 +671,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				thermal_series
-        				}
+						mod: "thermal_series"
 					}
 				}
 			}]
@@ -751,9 +715,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				thermal_series
-        				}
+						mod: "thermal_series"
 					}
 				}
 			}]
@@ -781,9 +743,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				thermal_series
-        				}
+						mod: "thermal_series"
 					}
 				}
 			}]
@@ -808,9 +768,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				thermal_series
-        				}
+						mod: "thermal_series"
 					}
 				}
 			}]
@@ -841,9 +799,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				thermal_series
-        				}
+						mod: "thermal_series"
 					}
 				}
 			}]
@@ -872,9 +828,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				thermal_series
-        				}
+						mod: "thermal_series"
 					}
 				}
 			}]
@@ -975,9 +929,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				thermal_series
-        				}
+						mod: "thermal_series"
 					}
 				}
 			}]
@@ -1004,9 +956,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				thermal_series
-        				}
+						mod: "thermal_series"
 					}
 				}
 			}]
@@ -1034,9 +984,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				thermal_series
-        				}
+						mod: "thermal_series"
 					}
 				}
 			}]
@@ -1064,9 +1012,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				thermal_series
-        				}
+						mod: "thermal_series"
 					}
 				}
 			}]
@@ -1090,9 +1036,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				thermal_series
-        				}
+						mod: "thermal_series"
 					}
 				}
 			}]
@@ -1116,9 +1060,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				thermal_series
-        				}
+						mod: "thermal_series"
 					}
 				}
 			}]

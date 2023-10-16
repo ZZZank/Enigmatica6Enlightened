@@ -129,9 +129,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				rftools
-        				}
+						mod: "rftools"
 					}
 				}
 			}]
@@ -158,9 +156,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				rftools
-        				}
+						mod: "rftools"
 					}
 				}
 			}]
@@ -229,9 +225,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				rftools
-        				}
+						mod: "rftools"
 					}
 				}
 			}]
@@ -263,9 +257,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				rftools
-        				}
+						mod: "rftools"
 					}
 				}
 			}]
@@ -289,9 +281,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				rftools
-        				}
+						mod: "rftools"
 					}
 				}
 			}]
@@ -340,9 +330,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				rftools
-        				}
+						mod: "rftools"
 					}
 				}
 			}]
@@ -379,9 +367,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				rftools
-        				}
+						mod: "rftools"
 					}
 				}
 			}]
@@ -432,9 +418,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				rftools
-        				}
+						mod: "rftools"
 					}
 				}
 			}]
@@ -472,9 +456,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				rftools
-        				}
+						mod: "rftools"
 					}
 				}
 			}]
@@ -511,9 +493,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				rftools
-        				}
+						mod: "rftools"
 					}
 				}
 			}]
@@ -545,9 +525,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				rftools
-        				}
+						mod: "rftools"
 					}
 				}
 			}]
@@ -573,9 +551,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				rftools
-        				}
+						mod: "rftools"
 					}
 				}
 			}]
@@ -601,9 +577,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				rftools
-        				}
+						mod: "rftools"
 					}
 				}
 			}]
@@ -661,9 +635,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				rftools
-        				}
+						mod: "rftools"
 					}
 				}
 			}]
@@ -712,9 +684,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				rftools
-        				}
+						mod: "rftools"
 					}
 				}
 			}]
@@ -779,9 +749,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				rftools
-        				}
+						mod: "rftools"
 					}
 				}
 			}]
@@ -809,9 +777,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				rftools
-        				}
+						mod: "rftools"
 					}
 				}
 			}]
@@ -840,9 +806,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				rftools
-        				}
+						mod: "rftools"
 					}
 				}
 			}]
@@ -894,9 +858,7 @@
 					id: "kubejs:rare_lootbox"
 					Count: 1b
 					tag: {
-						mod: {
-            				rftools
-        				}
+						mod: "rftools"
 					}
 				}
 			}]
@@ -938,9 +900,7 @@
 						id: "kubejs:rare_lootbox"
 						Count: 1b
 						tag: {
-							mod: {
-            					rftools
-        					}
+							mod: "rftools"
 						}
 					}
 				}
