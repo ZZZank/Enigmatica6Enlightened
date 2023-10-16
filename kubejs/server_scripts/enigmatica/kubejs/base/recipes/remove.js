@@ -145,6 +145,9 @@ onEvent('recipes', (event) => {
         'ars_nouveau:mana_gem_2',
         /ars_nouveau:crush.*dye/,
 
+        'arsarsenal:air_hood',
+        'arsarsenal:aqua_hood',
+
         'astralsorcery:infuser/gold_ore',
         'astralsorcery:shaped/marble/marble_slab',
 
