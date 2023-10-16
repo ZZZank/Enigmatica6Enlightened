@@ -1,5 +1,17 @@
 //priority: 900
 onEvent('recipes', (event) => {
+    event
+        .custom({
+            type: 'thermal:rock_gen',
+            adjacent: 'minecraft:water',
+            below: 'pneumaticcraft:compressed_iron_block',
+            result: {
+                item: 'minecraft:cobblestone',
+                count: 4
+            }
+        })
+        .id(`enigmatica:base/unification/unify_stoneworks/buffed_cobble`);
+
     generatableCobblestone.forEach((material) => {
         var type = 'cobble';
         //console.log(`Recipe for Material: ${material}, Type: ${type}`);
@@ -77,13 +89,4 @@ function thermal_stoneworks(event, material) {
         }),
         `enigmatica:base/unification/unify_stoneworks/${arguments.callee.name}/`
     );
-    event.custom({
-        type: 'thermal:rock_gen',
-        adjacent: 'minecraft:water',
-        below: 'pneumaticcraft:compressed_iron_block',
-        result: {
-            item: 'minecraft:cobblestone',
-            count: 4
-        }
-    }).id(`enigmatica:base/unification/unify_stoneworks/buffed_cobble`);
 }
