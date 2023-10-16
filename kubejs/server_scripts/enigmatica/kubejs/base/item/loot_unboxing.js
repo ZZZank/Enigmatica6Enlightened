@@ -11,10 +11,8 @@ onEvent('item.right_click', (event) => {
         108: 'legendary'
     };
     let rarity = rarityMap[id.charAt(7)];
-    if (!event.player.mainHandItem.nbt) {
-        event.server.runCommandSilent(
-            `/tell ${event.player.name} There's no proper NBT data, where did you get this?`
-        );
+    if (!event.player.mainHandItem.nbt || !event.player.mainHandItem.nbt.mod) {
+        event.player.tell(`There's no proper NBT data, where did you get this?`);
         return;
     }
     let mod = event.player.mainHandItem.nbt.mod.toString();
