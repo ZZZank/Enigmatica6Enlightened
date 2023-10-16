@@ -172,6 +172,7 @@
   * [kubejs-mekanism-1605.1.2-build.2.jar](https://www.curseforge.com/minecraft/mc-mods/kubejs-mekanism/files/3446472) (by [LatvianModder](https://www.curseforge.com/members/latvianmodder/projects))
   * [kubejs-thermal-1605.1.4-build.4.jar](https://www.curseforge.com/minecraft/mc-mods/kubejs-thermal/files/3573381) (by [LatvianModder](https://www.curseforge.com/members/latvianmodder/projects))
   * [LibX-1.16.3-1.0.76.jar](https://www.curseforge.com/minecraft/mc-mods/libx/files/3329216) (by [noeppinoeppi](https://www.curseforge.com/members/noeppinoeppi/projects))
+  * [lightspeed-1.16.5-1.0.5.jar](https://www.curseforge.com/minecraft/mc-mods/lightspeedmod/files/4594802) (by [ccr4ft3r](https://www.curseforge.com/members/ccr4ft3r/projects))
   * [littlelogistics-mc1.16.5-v1.0.8.jar](https://www.curseforge.com/minecraft/mc-mods/little-logistics/files/3707740) (by [Sveid](https://www.curseforge.com/members/sveid/projects))
   * [logprot-1.16-1.6.jar](https://www.curseforge.com/minecraft/mc-mods/login-protection/files/3789454) (by [someaddon](https://www.curseforge.com/members/someaddon/projects))
   * [Lollipop-1.16.5-3.2.9.jar](https://www.curseforge.com/minecraft/mc-mods/lollipop/files/3232534) (by [owmii](https://www.curseforge.com/members/owmii/projects))
