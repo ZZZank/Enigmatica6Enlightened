@@ -1,3 +1,5 @@
+'use strict';
+
 function cuttingRecipe(ingredient, tool, result) {
     return {
         type: 'farmersdelight:cutting',
@@ -7,7 +9,6 @@ function cuttingRecipe(ingredient, tool, result) {
     };
 }
 
-('use strict');
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;

@@ -1,3 +1,5 @@
+'use strict';
+
 global.onReload = function onReload() {
     //reload powah configs
     var configs = java('owmii.powah.config.Configs');
@@ -12,7 +14,6 @@ global.onReload = function onReload() {
     randompatches.reloadConfig();
 };
 
-('use strict');
 onEvent('postinit', (event) => {
     global.onReload();
 });

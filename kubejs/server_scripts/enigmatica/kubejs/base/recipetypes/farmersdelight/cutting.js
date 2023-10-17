@@ -1,3 +1,5 @@
+'use strict';
+
 function cuttingRecipe(ingredient, tool, result) {
     return {
         type: 'farmersdelight:cutting',
@@ -13,7 +15,7 @@ function filletRecipe(fish, filletCount) {
         Item.of('minecraft:bone_meal', Math.ceil(filletCount / 3))
     ]);
 }
-('use strict');
+
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/farmersdelight/cutting/';
 
