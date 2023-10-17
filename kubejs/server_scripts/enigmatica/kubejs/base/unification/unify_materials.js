@@ -1,6 +1,6 @@
 // priority: 900
 'use strict';
-'use strict';
+
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/unification/unify_materials/';
 
@@ -79,10 +79,6 @@ onEvent('recipes', (event) => {
         ars_nouveau_metal_ore_crushing(event, material, ore, dust, ingot);
         ars_nouveau_ingot_gem_crushing(event, material, ingot, dust, gem);
 
-        // pedestals_gem_ore_crushing(event, material, ore, dust, shard, gem);
-        // pedestals_metal_ore_crushing(event, material, ore, ingot, dust);
-        // pedestals_ingot_gem_crushing(event, material, ingot, dust, gem);
-
         thermal_metal_ore_pulverizing(event, material, ore, dust, ingot);
         thermal_gem_ore_pulverizing(event, material, ore, dust, gem, shard);
         thermal_ingot_gem_pulverizing(event, material, ingot, dust, gem);
@@ -153,7 +149,7 @@ onEvent('recipes', (event) => {
                 acceptChaliceInput: true,
                 copyNBTToOutputs: false
             }),
-            `${id_prefix}${arguments.callee.name}/`
+            `${id_prefix}astralsorcery_ore_processing_infuser/`
         );
     }
 
@@ -170,7 +166,7 @@ onEvent('recipes', (event) => {
                 experience: 2,
                 smelttime: 300
             }),
-            `${id_prefix}${arguments.callee.name}/`
+            `${id_prefix}betterend_alloys/`
         );
     }
 
@@ -261,7 +257,7 @@ onEvent('recipes', (event) => {
                 .syphon(400)
                 .ticks(200)
                 .upgradeLevel(1),
-            `${id_prefix}${arguments.callee.name}/`
+            `${id_prefix}bloodmagic_gem_ore_processing/`
         );
     }
     function bloodmagic_ingot_gem_crushing(event, material, ingot, dust, gem) {
@@ -410,7 +406,7 @@ onEvent('recipes', (event) => {
 
         fallback_id(
             event.recipes.create.milling(outputs, input).processingTime(processingTime),
-            `${id_prefix}${arguments.callee.name}/`
+            `${id_prefix}create_ingot_gem_milling/`
         );
     }
 
@@ -598,7 +594,7 @@ onEvent('recipes', (event) => {
 
         fallback_id(
             event.recipes.immersiveengineering.crusher(output, input).energy(2000),
-            `${id_prefix}${arguments.callee.name}/`
+            `${id_prefix}immersiveengineering_gem_crushing/`
         );
     }
     function immersiveengineering_coin_pressing(event, material, ingot, nugget, coin) {
@@ -613,7 +609,7 @@ onEvent('recipes', (event) => {
         // Ingots to Coins
         fallback_id(
             event.recipes.immersiveengineering.metal_press(output, input, mold),
-            `${id_prefix}${arguments.callee.name}/`
+            `${id_prefix}immersiveengineering_coin_pressing/`
         );
 
         // Nuggets to Coins
@@ -621,7 +617,7 @@ onEvent('recipes', (event) => {
         input = `3x #forge:nuggets/${material}`;
         fallback_id(
             event.recipes.immersiveengineering.metal_press(output, input, mold),
-            `${id_prefix}${arguments.callee.name}/`
+            `${id_prefix}immersiveengineering_coin_pressing/`
         );
     }
 
@@ -636,7 +632,7 @@ onEvent('recipes', (event) => {
 
             fallback_id(
                 event.recipes.immersiveengineering.crusher(output, input).energy(2000),
-                `${id_prefix}${arguments.callee.name}/`
+                `${id_prefix}immersiveengineering_ingot_crushing/`
             );
         }
     }
@@ -979,7 +975,7 @@ onEvent('recipes', (event) => {
                 crushing_time: 100,
                 ignore_crushing_multiplier: true
             }),
-            `${id_prefix}${arguments.callee.name}/`
+            `${id_prefix}occultism_ingot_gem_crushing/`
         );
     }
 
@@ -1150,35 +1146,6 @@ onEvent('recipes', (event) => {
             .id(`pedestals:pedestal_crushing/dust${material}`);
     }
 
-    function pedestals_ingot_gem_crushing(event, material, ingot, dust, gem) {
-        if (dust == air) {
-            return;
-        }
-
-        var input,
-            output = dust;
-        if (ingot != air) {
-            input = `forge:ingots/${material}`;
-        } else if (gem != air) {
-            input = `forge:gems/${material}`;
-        } else {
-            return;
-        }
-
-        fallback_id(
-            event.custom({
-                type: 'pedestals:pedestal_crushing',
-                ingredient: {
-                    tag: input
-                },
-                result: {
-                    item: output,
-                    count: 1
-                }
-            }),
-            `${id_prefix}${arguments.callee.name}/`
-        );
-    }
 
     function thermal_metal_ore_pulverizing(event, material, ore, dust, ingot) {
         if (ore == air || dust == air || ingot == air) {
@@ -1299,7 +1266,7 @@ onEvent('recipes', (event) => {
             mod: 'thermal',
             type: 'thermal:pulverizer'
         });
-        fallback_id(event.recipes.thermal.pulverizer(output, input), `${id_prefix}${arguments.callee.name}/`);
+        fallback_id(event.recipes.thermal.pulverizer(output, input), `${id_prefix}thermal_ingot_gem_pulverizing/`);
     }
 
     function thermal_metal_casting(event, material, ingot, nugget, gear, rod, plate) {

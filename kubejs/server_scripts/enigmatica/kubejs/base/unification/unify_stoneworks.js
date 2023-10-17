@@ -17,7 +17,6 @@ onEvent('recipes', (event) => {
     generatableCobblestone.forEach((material) => {
         var type = 'cobble';
         //console.log(`Recipe for Material: ${material}, Type: ${type}`);
-        // pedestals_stoneworks(event, material, type);
         industrialforegoing_stoneworks(event, material, type);
         thermal_stoneworks(event, material);
     });
@@ -25,35 +24,12 @@ onEvent('recipes', (event) => {
     generatableStone.forEach((material) => {
         var type = 'stone';
         //console.log(`Recipe for Material: ${material}, Type: ${type}`);
-        // pedestals_stoneworks(event, material, type);
         industrialforegoing_stoneworks(event, material, type);
         thermal_stoneworks(event, material);
     });
 });
 
 //stoneworks functions
-function pedestals_stoneworks(event, material, type) {
-    var recipeType = 'pedestals:pedestal_cobblegen';
-
-    if (type == 'stone') {
-        recipeType = 'pedestals:pedestal_cobblegensilk';
-    }
-    //console.log(`Pedestals Recipe for Material: ${material}, Type: ${type}`);
-    fallback_id(
-        event.custom({
-            type: recipeType,
-            ingredient: {
-                item: material
-            },
-            result: {
-                item: material,
-                count: 1
-            }
-        }),
-        `enigmatica:base/unification/unify_stoneworks/${arguments.callee.name}/`
-    );
-}
-
 function industrialforegoing_stoneworks(event, material, type) {
     var waterConsume = 0;
     var lavaConsume = 0;
@@ -75,7 +51,7 @@ function industrialforegoing_stoneworks(event, material, type) {
             lavaConsume: lavaConsume,
             type: 'industrialforegoing:stonework_generate'
         }),
-        `enigmatica:base/unification/unify_stoneworks/${arguments.callee.name}/`
+        `enigmatica:base/unification/unify_stoneworks/industrialforegoing_stoneworks/`
     );
 }
 
@@ -89,6 +65,6 @@ function thermal_stoneworks(event, material) {
                 item: material
             }
         }),
-        `enigmatica:base/unification/unify_stoneworks/${arguments.callee.name}/`
+        `enigmatica:base/unification/unify_stoneworks/thermal_stoneworks/`
     );
 }
