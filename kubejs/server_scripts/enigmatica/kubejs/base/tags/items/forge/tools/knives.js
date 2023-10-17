@@ -1,3 +1,4 @@
+'use strict';
 onEvent('item.tags', (event) => {
     var items = [
         'farmersdelight:flint_knife',

@@ -1,3 +1,4 @@
+'use strict';
 onEvent('server.datapack.high_priority', (event) => {
     let loot_table = {
         pools: [
@@ -142,6 +143,7 @@ onEvent('server.datapack.high_priority', (event) => {
     event.addJson(`apotheosis:loot_tables/tome_tower.json`, loot_table);
 });
 
+'use strict';
 onEvent('generic.loot_tables', (event) => {
     const pools = [
         {

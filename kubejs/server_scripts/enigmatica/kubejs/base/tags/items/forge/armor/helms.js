@@ -1,3 +1,4 @@
+'use strict';
 onEvent('item.tags', (event) => {
     var items = [
         'ars_nouveau:apprentice_hood',

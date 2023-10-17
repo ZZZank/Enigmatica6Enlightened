@@ -1,3 +1,4 @@
+'use strict';
 onEvent('jei.information', (event) => {
     const recipes = [
         {

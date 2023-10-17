@@ -1,3 +1,4 @@
+'use strict';
 onEvent('item.tags', (event) => {
     //Crafters
     for (i = 1; i <= 3; i++) {

@@ -1,4 +1,5 @@
-/* onEvent('recipes', (event) => {
+/* 'use strict';
+onEvent('recipes', (event) => {
     const recipes = [
         {
             output: 'chisel:iron_chisel',

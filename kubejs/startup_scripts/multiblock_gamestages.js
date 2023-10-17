@@ -1,3 +1,4 @@
+'use strict';
 onEvent('ie.multiblock.form', (event) => {
     if (global.isExpertMode == false) {
         return;

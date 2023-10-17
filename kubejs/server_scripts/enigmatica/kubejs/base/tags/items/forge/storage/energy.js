@@ -1,3 +1,4 @@
+'use strict';
 onEvent('item.tags', (event) => {
     var items = ['immersiveengineering:powerpack', 'mekanism:energy_tablet'];
 

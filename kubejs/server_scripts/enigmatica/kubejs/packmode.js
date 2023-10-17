@@ -1,4 +1,5 @@
-//priority: 1004
+// priority: 1004
+'use strict';
 setMode = (player) => {
     const expertModeQuestId = '0000000000000FEB';
     console.log(`setting mode for player: ${player}`);
@@ -10,6 +11,7 @@ setMode = (player) => {
     }
 };
 
+'use strict';
 onEvent('server.datapack.high_priority', (event) => {
     if (event.getServer()) {
         event.getServer().players.forEach((player) => {

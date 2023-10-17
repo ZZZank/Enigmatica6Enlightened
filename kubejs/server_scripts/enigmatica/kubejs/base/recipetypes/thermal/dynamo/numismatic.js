@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     var multiplier = 40;
     const recipes = [

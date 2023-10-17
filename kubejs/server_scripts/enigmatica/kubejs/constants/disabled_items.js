@@ -1,4 +1,5 @@
-//priority: 1001
+// priority: 1001
+'use strict';
 const disabledItems = [
     'abnormals_delight:adzuki_cake_slice',
     'abnormals_delight:banana_cake_slice',

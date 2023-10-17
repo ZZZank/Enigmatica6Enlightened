@@ -1,3 +1,4 @@
+'use strict';
 onEvent('item.tags', (event) => {
     var gems = 'forge:gems';
     var gems_ender = gems + '/ender';

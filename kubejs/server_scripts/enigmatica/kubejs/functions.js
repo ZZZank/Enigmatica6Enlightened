@@ -1,4 +1,5 @@
-//priority: 1005
+// priority: 1005
+'use strict';
 
 function shapedRecipe(result, pattern, key, id) {
     return { result: result, pattern: pattern, key: key, id: id };

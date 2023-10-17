@@ -1,4 +1,5 @@
-/*onEvent('recipes', function (event) {
+/*'use strict';
+onEvent('recipes', function (event) {
     // Item Inputs
     var data = {
         recipes: [

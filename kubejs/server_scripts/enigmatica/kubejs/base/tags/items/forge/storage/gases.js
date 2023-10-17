@@ -1,3 +1,4 @@
+'use strict';
 onEvent('item.tags', (event) => {
     var items = ['mekanism:dynamic_tank', 'mekanism:dynamic_valve'];
 

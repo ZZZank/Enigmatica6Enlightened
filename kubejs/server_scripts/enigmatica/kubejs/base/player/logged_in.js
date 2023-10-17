@@ -1,3 +1,4 @@
+'use strict';
 onEvent('player.logged_in', (event) => {
     const startingItemsGameStage = 'starting_items';
     randomWaystone = () => {

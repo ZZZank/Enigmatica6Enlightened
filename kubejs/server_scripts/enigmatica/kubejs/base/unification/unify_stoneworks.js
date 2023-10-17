@@ -1,4 +1,6 @@
-//priority: 900
+// priority: 900
+'use strict';
+'use strict';
 onEvent('recipes', (event) => {
     event
         .custom({

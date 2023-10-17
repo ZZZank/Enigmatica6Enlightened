@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/enigmatica/';
     const recipes = [

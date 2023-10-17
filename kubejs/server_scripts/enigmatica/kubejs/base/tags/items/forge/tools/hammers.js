@@ -1,3 +1,4 @@
+'use strict';
 onEvent('item.tags', (event) => {
     var exceptions = ['betterendforge:aeternium_hammer_head'];
 

@@ -1,3 +1,4 @@
+'use strict';
 onEvent('item.right_click', (event) => {
     const player = event.player;
 

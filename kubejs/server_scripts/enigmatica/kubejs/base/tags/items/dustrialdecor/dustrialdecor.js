@@ -1,3 +1,4 @@
+'use strict';
 onEvent('item.tags', (event) => {
     var irontags = ['', '_aluminum', '_lead', '_tin', '_copper', '_brass'];
 

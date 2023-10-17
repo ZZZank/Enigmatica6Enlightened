@@ -1,3 +1,4 @@
+'use strict';
 onEvent('item.tags', (event) => {
     var items = ['botania:black_hole_talisman', 'industrialforegoing:black_hole_controller'];
 

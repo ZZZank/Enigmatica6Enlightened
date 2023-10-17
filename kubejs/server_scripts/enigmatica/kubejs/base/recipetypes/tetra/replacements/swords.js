@@ -1,3 +1,4 @@
+'use strict';
 onEvent('server.datapack.low_priority', (event) => {
     var data = {
         tools: [

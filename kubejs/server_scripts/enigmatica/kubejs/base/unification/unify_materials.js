@@ -1,4 +1,6 @@
-//priority: 900
+// priority: 900
+'use strict';
+'use strict';
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/unification/unify_materials/';
 

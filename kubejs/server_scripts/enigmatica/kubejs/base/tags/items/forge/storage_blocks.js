@@ -1,3 +1,4 @@
+'use strict';
 onEvent('item.tags', (event) => {
     var storageBlocks = 'forge:storage_blocks';
     event.add(storageBlocks, [

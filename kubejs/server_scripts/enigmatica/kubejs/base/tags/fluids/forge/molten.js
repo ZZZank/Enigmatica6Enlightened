@@ -1,3 +1,4 @@
+'use strict';
 onEvent('fluid.tags', (event) => {
     materialsToUnify.forEach((material) => {
         var fluid = `kubejs:molten_${material}`;

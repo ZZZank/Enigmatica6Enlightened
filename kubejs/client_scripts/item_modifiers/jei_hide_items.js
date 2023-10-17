@@ -1,3 +1,4 @@
+'use strict';
 onEvent('jei.hide.items', (event) => {
     materialsToUnify.forEach((material) => {
         if (material == 'iesnium' || material == 'graphite' || material == 'hop_graphite') {

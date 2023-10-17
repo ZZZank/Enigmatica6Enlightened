@@ -1,3 +1,4 @@
+'use strict';
 onEvent('item.tags', (event) => {
     var types = ['storage_blocks', 'ingots', 'nuggets', 'dusts', 'plates', 'rods', 'gears'],
         substitutionPairs = [

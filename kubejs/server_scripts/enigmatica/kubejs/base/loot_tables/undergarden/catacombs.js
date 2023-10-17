@@ -1,3 +1,4 @@
+'use strict';
 onEvent('server.datapack.high_priority', (event) => {
     let loot_table = {
         pools: [
@@ -55,6 +56,7 @@ onEvent('server.datapack.high_priority', (event) => {
     event.addJson(`undergarden:loot_tables/chests/catacombs.json`, loot_table);
 });
 
+'use strict';
 onEvent('generic.loot_tables', (event) => {
     const pools = [
         {

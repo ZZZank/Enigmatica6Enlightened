@@ -1,3 +1,4 @@
+'use strict';
 onEvent('server.datapack.high_priority', (event) => {
     let loot_table = {
         pools: [
@@ -149,6 +150,7 @@ onEvent('server.datapack.high_priority', (event) => {
     event.addJson(`atum:loot_tables/chests/pyramid_chest.json`, loot_table);
 });
 
+'use strict';
 onEvent('chest.loot_tables', (event) => {
     const pools = [
         {

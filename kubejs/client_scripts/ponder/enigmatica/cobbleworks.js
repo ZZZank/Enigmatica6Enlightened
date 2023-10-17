@@ -1,4 +1,5 @@
 // priority: 9
+'use strict';
 
 var itemsToPonder = generatableCobblestone;
 itemsToPonder.push('minecraft:cobblestone');

@@ -1,4 +1,5 @@
-// onEvent('fluid.tags', (event) => {
+// 'use strict';
+onEvent('fluid.tags', (event) => {
 //     event
 //         .get('minecraft:water')
 //         .remove([
