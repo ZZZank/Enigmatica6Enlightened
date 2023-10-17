@@ -7,7 +7,7 @@ function cuttingRecipe(ingredient, tool, result) {
     };
 }
 
-'use strict';
+('use strict');
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;

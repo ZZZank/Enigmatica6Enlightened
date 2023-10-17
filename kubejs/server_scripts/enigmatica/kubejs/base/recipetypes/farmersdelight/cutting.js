@@ -13,7 +13,7 @@ function filletRecipe(fish, filletCount) {
         Item.of('minecraft:bone_meal', Math.ceil(filletCount / 3))
     ]);
 }
-'use strict';
+('use strict');
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/farmersdelight/cutting/';
 
