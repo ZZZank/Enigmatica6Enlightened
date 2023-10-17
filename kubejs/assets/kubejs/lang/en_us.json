@@ -43,6 +43,9 @@
     "item.kubejs.cpu_core_mk_1026": "CPU Core MK-1026",
     "item.kubejs.cpu_core_eg_28222": "CPU Core EG-28222",
     "item.kubejs.cpu_core_as_81221": "CPU Core AS-81221",
+    "item.kubejs.power_core_low": "Power Core (Low)",
+    "item.kubejs.power_core_medium": "Power Core (Medium)",
+    "item.kubejs.power_core_high": "Power Core (High)",
 
     "item.kubejs.automation_mastery_shard": "Automation Mastery Shard",
     "item.kubejs.botanical_mastery_shard": "Botanical Mastery Shard",
