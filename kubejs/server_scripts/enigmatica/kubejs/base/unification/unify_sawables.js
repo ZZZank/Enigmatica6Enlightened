@@ -1,6 +1,6 @@
 // priority: 900
 'use strict';
-'use strict';
+
 onEvent('recipes', (event) => {
     buildWoodVariants.forEach((variant) => {
         var sawDust = 'emendatusenigmatica:wood_dust',

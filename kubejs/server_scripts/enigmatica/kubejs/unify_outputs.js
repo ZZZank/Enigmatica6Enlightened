@@ -13,7 +13,6 @@
     long as you do not claim to have made it. Attribution is
     appreciated, but not required.
 */
-'use strict';
 onEvent('recipes', (event) => {
     materialsToUnify.forEach((material) => {
         typesToUnify.forEach((type) => {

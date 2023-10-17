@@ -1,6 +1,6 @@
 // priority: 900
 'use strict';
-'use strict';
+
 onEvent('recipes', (event) => {
     soilRegistry.forEach((soil) => {
         soils_botany_pots(event, soil);

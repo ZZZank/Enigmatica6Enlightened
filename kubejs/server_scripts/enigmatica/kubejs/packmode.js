@@ -11,7 +11,6 @@ setMode = (player) => {
     }
 };
 
-'use strict';
 onEvent('server.datapack.high_priority', (event) => {
     if (event.getServer()) {
         event.getServer().players.forEach((player) => {
