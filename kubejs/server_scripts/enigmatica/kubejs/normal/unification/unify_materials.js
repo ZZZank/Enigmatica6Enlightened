@@ -124,7 +124,8 @@ onEvent('recipes', (event) => {
         event.remove({ id: /immersiveengineering:crafting\/plate_/ });
         event.remove({ id: /create:pressing\/\w*_ingot/ });
 
-        const output = plate,
+        let input,
+            output = plate,
             mold = '#thermal:crafting/dies/plate',
             hammer = '#forge:tools/crafting_hammer';
 
@@ -157,8 +158,8 @@ onEvent('recipes', (event) => {
         event.remove({ output: wire });
 
         const wireCutters = '#forge:tools/wirecutter';
-        let output = wire,
-            input,
+        let input,
+            output = wire,
             mold = '#thermal:crafting/dies/wire';
 
         if (ingot != air) {
@@ -187,6 +188,7 @@ onEvent('recipes', (event) => {
         }
 
         var primaryOutput = Item.of(dust, 2),
+            secondaryOutput,
             secondaryChance = 0.1,
             input = `#forge:ores/${material}`,
             materialProperties;
