@@ -1,3 +1,5 @@
+'use strict';
+
 onEvent('jei.hide.items', (event) => {
     if (global.isExpertMode == false) {
         return;

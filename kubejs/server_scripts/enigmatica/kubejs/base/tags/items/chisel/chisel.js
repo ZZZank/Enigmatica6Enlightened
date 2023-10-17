@@ -1,3 +1,5 @@
+'use strict';
+
 /* 'use strict';
 onEvent('item.tags', (event) => {
     const chiselNamespace = 'chisel';

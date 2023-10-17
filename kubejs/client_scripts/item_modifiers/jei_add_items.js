@@ -1,3 +1,5 @@
+'use strict';
+
 onEvent('jei.add.items', (event) => {
     const items = [
         'lootr:lootr_chest',

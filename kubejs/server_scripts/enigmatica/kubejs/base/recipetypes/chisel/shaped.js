@@ -1,3 +1,5 @@
+'use strict';
+
 /* 'use strict';
 onEvent('recipes', (event) => {
     const recipes = [

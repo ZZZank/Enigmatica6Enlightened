@@ -1,3 +1,5 @@
+'use strict';
+
 {
     const bee_map = {};
     bees.forEach((bee) => {
