@@ -12,7 +12,7 @@ global.onReload = function onReload() {
     randompatches.reloadConfig();
 };
 
-'use strict';
+('use strict');
 onEvent('postinit', (event) => {
     global.onReload();
 });

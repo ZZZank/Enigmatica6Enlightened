@@ -1146,7 +1146,6 @@ onEvent('recipes', (event) => {
             .id(`pedestals:pedestal_crushing/dust${material}`);
     }
 
-
     function thermal_metal_ore_pulverizing(event, material, ore, dust, ingot) {
         if (ore == air || dust == air || ingot == air) {
             return;
@@ -1266,7 +1265,10 @@ onEvent('recipes', (event) => {
             mod: 'thermal',
             type: 'thermal:pulverizer'
         });
-        fallback_id(event.recipes.thermal.pulverizer(output, input), `${id_prefix}thermal_ingot_gem_pulverizing/`);
+        fallback_id(
+            event.recipes.thermal.pulverizer(output, input),
+            `${id_prefix}thermal_ingot_gem_pulverizing/`
+        );
     }
 
     function thermal_metal_casting(event, material, ingot, nugget, gear, rod, plate) {
