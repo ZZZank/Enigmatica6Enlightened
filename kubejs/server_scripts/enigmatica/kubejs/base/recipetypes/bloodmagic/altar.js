@@ -2,7 +2,7 @@
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/bloodmagic/altar/';
 
-    data = {
+    let data = {
         recipes: [
             /*{
                 input: 'input item here',

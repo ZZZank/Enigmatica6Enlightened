@@ -8,7 +8,7 @@ onEvent('recipes', (event) => {
 
     const recipes = [];
 
-    recipetypes_alloying = (event, recipe) => {
+    let recipetypes_alloying = (event, recipe) => {
         if (!recipe.smelttime) {
             recipe.smelttime = 200;
         }

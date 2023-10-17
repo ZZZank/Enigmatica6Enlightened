@@ -1,7 +1,7 @@
 'use strict';
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/immersiveengineering/arc_furnace/';
-    recipes = [
+    let recipes = [
         {
             input1: '#forge:ingots/copper',
             secondaries: ['#forge:ingots/zinc'],

@@ -1,12 +1,12 @@
 'use strict';
 onEvent('item.tags', (event) => {
     //Crafters
-    for (i = 1; i <= 3; i++) {
+    for (let i = 1; i <= 3; i++) {
         event.get('rftools:crafter').add('rftoolsutility:crafter' + i);
     }
 
     //Power Cells
-    for (i = 1; i <= 3; i++) {
+    for (let i = 1; i <= 3; i++) {
         event.get('rftools:powercell').add('rftoolspower:cell' + i);
     }
 

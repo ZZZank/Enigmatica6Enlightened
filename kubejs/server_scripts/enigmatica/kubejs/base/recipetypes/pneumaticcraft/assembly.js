@@ -2,7 +2,7 @@
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/pneumaticcraft/assembly_/';
 
-    recipes = [
+    let recipes = [
         {
             input: '#forge:ingots/compressed_iron',
             input_count: 4,

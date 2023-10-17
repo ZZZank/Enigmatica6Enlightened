@@ -67,7 +67,7 @@ onEvent('recipes', (event) => {
         }
     ];
 
-    recipetypes_crushing = (event, recipe) => {
+    let recipetypes_crushing = (event, recipe) => {
         // pedestals
         // event
         //     .custom({

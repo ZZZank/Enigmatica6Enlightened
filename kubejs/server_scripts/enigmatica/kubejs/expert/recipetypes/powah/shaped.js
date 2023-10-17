@@ -75,9 +75,10 @@ onEvent('recipes', (event) => {
 
         if (tier == 'basic') {
             capacitor = `powah:capacitor_${tier}_large`;
-        } else if (tier == 'hardened') {
-            crystal = 'powah:steel_energized';
         }
+        // else if (tier == 'hardened') {
+        //     let crystal = 'powah:steel_energized';
+        // }
 
         let wire_coil = 'immersiveengineering:coil_lv';
         if (tier == 'blazing' || tier == 'niotic') {

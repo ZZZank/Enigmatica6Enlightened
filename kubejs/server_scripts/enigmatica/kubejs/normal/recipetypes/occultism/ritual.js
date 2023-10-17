@@ -5,7 +5,7 @@ onEvent('recipes', (event) => {
     }
 
     const id_prefix = 'enigmatica:normal/occultism/ritual/';
-    recipes = [
+    let recipes = [
         {
             ritual_type: 'occultism:summon_spirit_with_job',
             activation_item: 'occultism:book_of_binding_bound_foliot',

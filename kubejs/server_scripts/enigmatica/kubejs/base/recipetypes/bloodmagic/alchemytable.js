@@ -2,7 +2,7 @@
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/bloodmagic/alchemytable/';
 
-    recipes = [
+    let recipes = [
         {
             inputs: ['minecraft:gravel', 'minecraft:gravel', 'minecraft:gravel'],
             output: 'minecraft:flint',

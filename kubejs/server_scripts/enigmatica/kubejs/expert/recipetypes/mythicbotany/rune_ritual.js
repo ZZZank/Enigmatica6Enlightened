@@ -5,7 +5,7 @@ onEvent('recipes', (event) => {
     }
 
     const id_prefix = 'enigmatica:expert/mythicbotany/rune_ritual/';
-    recipes = [
+    let recipes = [
         {
             group: 'rune_rituals',
             center: { item: 'mythicbotany:fimbultyr_tablet' },

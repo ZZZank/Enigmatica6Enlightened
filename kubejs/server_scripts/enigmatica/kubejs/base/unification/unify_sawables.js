@@ -14,7 +14,7 @@ onEvent('recipes', (event) => {
 });
 
 function create_cutting(event, variant, sawDust, treeBark) {
-    data = {
+    let data = {
         recipes: [
             {
                 input: variant.logBlock,
@@ -121,7 +121,7 @@ function mekanism_sawing(event, variant, sawDust) {
         return;
     }
 
-    var data = {
+    let data = {
         recipes: [
             {
                 input: variant.logBlock,

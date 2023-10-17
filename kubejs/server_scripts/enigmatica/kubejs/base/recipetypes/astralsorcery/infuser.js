@@ -2,7 +2,7 @@
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/astralsorcery/infuser/';
 
-    data = {
+    let data = {
         recipes: [
             {
                 input: { item: 'thermal:blizz_rod' },

@@ -1,6 +1,6 @@
 // priority: 1004
 'use strict';
-setMode = (player) => {
+let setMode = (player) => {
     const expertModeQuestId = '0000000000000FEB';
     console.log(`setting mode for player: ${player}`);
     if (global.packmode == 'expert') {

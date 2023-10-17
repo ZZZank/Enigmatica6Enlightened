@@ -5,7 +5,7 @@ onEvent('recipes', (event) => {
     }
     const id_prefix = 'enigmatica:normal/bloodmagic/alchemytable/';
 
-    recipes = [
+    let recipes = [
         {
             inputs: [
                 'bloodmagic:tauoil',

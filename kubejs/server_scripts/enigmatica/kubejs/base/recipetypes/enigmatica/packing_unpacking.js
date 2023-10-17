@@ -266,7 +266,7 @@ onEvent('recipes', (event) => {
         );
     });
 
-    recipetypes_packing_unpacking = (event, recipe) => {
+    let recipetypes_packing_unpacking = (event, recipe) => {
         // Thermal
         event.recipes.thermal
             .press(recipe.output, [recipe.input, recipe.mold])
