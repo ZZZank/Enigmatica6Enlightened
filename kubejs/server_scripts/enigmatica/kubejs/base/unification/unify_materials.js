@@ -266,7 +266,8 @@ onEvent('recipes', (event) => {
         }
 
         var input,
-            output = dust;
+            output = dust,
+            type;
         if (ingot != air) {
             type = 'ingot';
             input = `#forge:ingots/${material}`;

@@ -1730,10 +1730,10 @@ colors.forEach((color) => {
 });
 
 // @Chisel Planks
-chiselPlankTypes = ['oak', 'spruce', 'birch', 'acacia', 'jungle', 'dark_oak'];
-chippedOnlyPlankTypes = ['warped', 'crimson'];
-plankTypes = chiselPlankTypes.concat(chippedOnlyPlankTypes);
-chiselPlankVariants = [
+let chiselPlankTypes = ['oak', 'spruce', 'birch', 'acacia', 'jungle', 'dark_oak'];
+let chippedOnlyPlankTypes = ['warped', 'crimson'];
+let plankTypes = chiselPlankTypes.concat(chippedOnlyPlankTypes);
+let chiselPlankVariants = [
     'large_planks',
     'crude_horizontal_planks',
     'vertical_planks',

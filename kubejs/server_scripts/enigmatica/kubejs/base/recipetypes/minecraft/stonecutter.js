@@ -87,8 +87,8 @@ onEvent('recipes', (event) => {
 
     // Recipes for masonry constants
     // it seems that Strict Mode does not like dual foreach, so we use for-in
-    for (const stoneType in masonryStoneTypes) {
-        for (const pattern in masonryPatterns) {
+    for (let stoneType in masonryStoneTypes) {
+        for (let pattern in masonryPatterns) {
             let input = stoneType + pattern;
             if (!masonryIgnoredInputs.includes(input)) {
                 recipes.push({
