@@ -152,6 +152,7 @@ onEvent('recipes', (event) => {
             mold = '#thermal:crafting/dies/plate',
             hammer = '#forge:tools/crafting_hammer';
 
+        let input;
         if (ingot != air) {
             input = `#forge:ingots/${material}`;
         } else if (gem != air) {
@@ -181,7 +182,8 @@ onEvent('recipes', (event) => {
         event.remove({ output: wire });
 
         const wireCutters = '#forge:tools/wirecutter';
-        let output = wire,
+        let input,
+            output = wire,
             mold = '#thermal:crafting/dies/wire';
 
         if (ingot != air) {
@@ -218,6 +220,7 @@ onEvent('recipes', (event) => {
         }
 
         var primaryOutput = crushed_ore,
+            secondaryOutput,
             input = `#forge:ores/${material}`,
             materialProperties;
 

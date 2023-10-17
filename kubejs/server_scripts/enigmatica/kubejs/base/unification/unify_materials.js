@@ -236,6 +236,7 @@ onEvent('recipes', (event) => {
             return;
         }
 
+        let output;
         switch (materialProperties.output) {
             case 'dust':
                 output = dust;
@@ -359,6 +360,7 @@ onEvent('recipes', (event) => {
             return;
         }
 
+        let output;
         switch (materialProperties.output) {
             case 'dust':
                 output = dust;
@@ -689,7 +691,8 @@ onEvent('recipes', (event) => {
         }
 
         var input,
-            output = dust;
+            output = dust,
+            type;
         if (ingot != air) {
             type = 'ingot';
             input = `#forge:ingots/${material}`;
@@ -722,6 +725,7 @@ onEvent('recipes', (event) => {
             return;
         }
 
+        let output;
         switch (materialProperties.output) {
             case 'dust':
                 output = dust;
@@ -900,6 +904,7 @@ onEvent('recipes', (event) => {
             return;
         }
 
+        let output;
         switch (materialProperties.output) {
             case 'dust':
                 output = dust;
@@ -929,8 +934,7 @@ onEvent('recipes', (event) => {
         if (ore == air || ingot == air || dust == air) {
             return;
         }
-        var output,
-            input = `forge:ores/${material}`,
+        var input = `forge:ores/${material}`,
             output = dust,
             count = 2;
 
@@ -987,6 +991,7 @@ onEvent('recipes', (event) => {
 
         try {
             var materialProperties = gemProcessingProperties[material],
+                primaryOutput,
                 primaryCount = materialProperties.thermal.primaryCount,
                 secondaryCount = materialProperties.thermal.secondaryCount,
                 secondaryChance = materialProperties.thermal.secondaryChance,
@@ -1009,7 +1014,7 @@ onEvent('recipes', (event) => {
                 return;
         }
 
-        let secondaryOutput = output;
+        let secondaryOutput = primaryOutput;
 
         if (materialProperties.secondary) {
             secondaryOutput = materialProperties.secondary;
@@ -1033,6 +1038,7 @@ onEvent('recipes', (event) => {
         }
         var primaryOutput = dust,
             primaryCount = 2,
+            secondaryOutput,
             input = `#forge:ores/${material}`,
             materialProperties;
 
@@ -1107,6 +1113,7 @@ onEvent('recipes', (event) => {
             return;
         }
 
+        let output;
         switch (materialProperties.output) {
             case 'dust':
                 output = dust;
@@ -1133,8 +1140,7 @@ onEvent('recipes', (event) => {
         if (ore == air || ingot == air || dust == air) {
             return;
         }
-        var output,
-            input = `forge:ores/${material}`,
+        var input = `forge:ores/${material}`,
             output = dust,
             count = 2;
 
@@ -1153,8 +1159,9 @@ onEvent('recipes', (event) => {
         }
 
         var primaryOutput = dust,
-            stoneOutput = 'minecraft:gravel',
             primaryCount = 2,
+            secondaryOutput,
+            stoneOutput = 'minecraft:gravel',
             input = `#forge:ores/${material}`,
             experience = 0.2,
             materialProperties;
@@ -1173,7 +1180,7 @@ onEvent('recipes', (event) => {
             secondaryOutput = dust;
         }
 
-        outputs = [
+        let outputs = [
             Item.of(primaryOutput, primaryCount),
             Item.of(secondaryOutput).chance(0.1),
             Item.of(stoneOutput).chance(0.2)
@@ -1197,6 +1204,7 @@ onEvent('recipes', (event) => {
         try {
             var materialProperties = gemProcessingProperties[material],
                 stoneOutput = materialProperties.stoneOutput,
+                primaryOutput,
                 primaryCount = materialProperties.thermal.primaryCount,
                 secondaryCount = materialProperties.thermal.secondaryCount,
                 secondaryChance = materialProperties.thermal.secondaryChance,
@@ -1220,13 +1228,13 @@ onEvent('recipes', (event) => {
                 return;
         }
 
-        let secondaryOutput = output;
+        let secondaryOutput = primaryOutput;
 
         if (materialProperties.secondary) {
             secondaryOutput = materialProperties.secondary;
         }
 
-        outputs = [
+        let outputs = [
             Item.of(primaryOutput, primaryCount),
             Item.of(secondaryOutput, secondaryCount).chance(secondaryChance),
             Item.of(stoneOutput).chance(0.2)
@@ -1250,7 +1258,8 @@ onEvent('recipes', (event) => {
         }
 
         var input,
-            output = dust;
+            output = dust,
+            type;
         if (ingot != air) {
             type = 'ingot';
             input = `#forge:ingots/${material}`;

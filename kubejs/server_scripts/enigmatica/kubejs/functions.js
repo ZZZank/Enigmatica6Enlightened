@@ -1,5 +1,6 @@
 // priority: 1005
-'use strict';
+
+// do not `'use strict';` here, it will cause `recipe.getId()` to fail
 
 function shapedRecipe(result, pattern, key, id) {
     return { result: result, pattern: pattern, key: key, id: id };

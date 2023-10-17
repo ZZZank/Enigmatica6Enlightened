@@ -86,9 +86,9 @@ onEvent('recipes', (event) => {
     });
 
     // Recipes for masonry constants
-    // it seems that Strict Mode does not like dual foreach, so we use for-in
-    for (let stoneType in masonryStoneTypes) {
-        for (let pattern in masonryPatterns) {
+    // it seems that Strict Mode does not like ()=>{}, so we use function
+    masonryStoneTypes.forEach(function (stoneType) {
+        masonryPatterns.forEach((pattern) => {
             let input = stoneType + pattern;
             if (!masonryIgnoredInputs.includes(input)) {
                 recipes.push({
@@ -100,8 +100,8 @@ onEvent('recipes', (event) => {
                     input: `masonry:${input}`
                 });
             }
-        }
-    }
+        });
+    });
 
     masonryTiledStoneTypes.forEach((stoneType) => {
         recipes.push({
