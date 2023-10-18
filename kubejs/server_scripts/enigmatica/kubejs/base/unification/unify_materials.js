@@ -229,7 +229,7 @@ onEvent('recipes', (event) => {
         }
 
         try {
-            let materialProperties = gemProcessingProperties[material],
+            var materialProperties = gemProcessingProperties[material],
                 count = materialProperties.bloodmagic.count,
                 inputs = ['#bloodmagic:arc/cuttingfluid', `#forge:ores/${material}`];
         } catch (err) {
@@ -349,7 +349,7 @@ onEvent('recipes', (event) => {
         }
 
         try {
-            let materialProperties = gemProcessingProperties[material],
+            var materialProperties = gemProcessingProperties[material],
                 stoneOutput = materialProperties.stoneOutput,
                 processingTime = materialProperties.create.processingTime,
                 primaryCount = materialProperties.create.primaryCount,
@@ -646,7 +646,7 @@ onEvent('recipes', (event) => {
         }
 
         try {
-            let materialProperties = gemProcessingProperties[material],
+            var materialProperties = gemProcessingProperties[material],
                 primaryCount = materialProperties.immersiveengineering.count,
                 input = `#forge:ores/${material}`,
                 primaryOutput;
@@ -718,7 +718,7 @@ onEvent('recipes', (event) => {
         }
 
         try {
-            let materialProperties = gemProcessingProperties[material],
+            var materialProperties = gemProcessingProperties[material],
                 count = materialProperties.mekanism.count,
                 input = `#forge:ores/${material}`;
         } catch (err) {
@@ -896,7 +896,7 @@ onEvent('recipes', (event) => {
         }
 
         try {
-            let materialProperties = gemProcessingProperties[material],
+            var materialProperties = gemProcessingProperties[material],
                 count = materialProperties.occultism.count,
                 input = `forge:ores/${material}`,
                 output;
@@ -904,7 +904,6 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        let output;
         switch (materialProperties.output) {
             case 'dust':
                 output = dust;
@@ -990,7 +989,7 @@ onEvent('recipes', (event) => {
         }
 
         try {
-            let materialProperties = gemProcessingProperties[material],
+            var materialProperties = gemProcessingProperties[material],
                 primaryOutput,
                 primaryCount = materialProperties.thermal.primaryCount,
                 secondaryCount = materialProperties.thermal.secondaryCount,
@@ -1098,7 +1097,7 @@ onEvent('recipes', (event) => {
             })
             .id(`ars_nouveau:crushing/${material}_dust`);
     }
-
+/*
     function pedestals_gem_ore_crushing(event, material, ore, dust, shard, gem) {
         if (ore == air) {
             return;
@@ -1136,6 +1135,8 @@ onEvent('recipes', (event) => {
             })
             .id(`pedestals:pedestal_crushing/dust${material}`);
     }
+*/
+/*
     function pedestals_metal_ore_crushing(event, material, ore, ingot, dust) {
         if (ore == air || ingot == air || dust == air) {
             return;
@@ -1152,7 +1153,7 @@ onEvent('recipes', (event) => {
             })
             .id(`pedestals:pedestal_crushing/dust${material}`);
     }
-
+*/
     function thermal_metal_ore_pulverizing(event, material, ore, dust, ingot) {
         if (ore == air || dust == air || ingot == air) {
             return;
@@ -1202,7 +1203,7 @@ onEvent('recipes', (event) => {
         }
 
         try {
-            let materialProperties = gemProcessingProperties[material],
+            var materialProperties = gemProcessingProperties[material],
                 stoneOutput = materialProperties.stoneOutput,
                 primaryOutput,
                 primaryCount = materialProperties.thermal.primaryCount,
