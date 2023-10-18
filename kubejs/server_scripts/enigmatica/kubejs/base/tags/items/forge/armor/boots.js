@@ -1,6 +1,6 @@
 'use strict';
 onEvent('item.tags', (event) => {
-    var items = [
+    let items = [
         'immersiveengineering:armor_faraday_feet',
         'immersiveengineering:armor_steel_feet',
         'mekanism:free_runners',
@@ -8,7 +8,7 @@ onEvent('item.tags', (event) => {
         'naturesaura:sky_shoes',
         'bloodmagic:livingboots'
     ];
-    var exceptions = [
+    let exceptions = [
         'pneumaticcraft:jet_boots_upgrade_1',
         'pneumaticcraft:jet_boots_upgrade_2',
         'pneumaticcraft:jet_boots_upgrade_3',
@@ -18,7 +18,7 @@ onEvent('item.tags', (event) => {
         'kubejs:pneumatic_boots_assembly'
     ];
 
-    var tags = ['forge:armor', 'forge:armor/boots'];
+    let tags = ['forge:armor', 'forge:armor/boots'];
 
     tags.forEach((tag) => {
         event

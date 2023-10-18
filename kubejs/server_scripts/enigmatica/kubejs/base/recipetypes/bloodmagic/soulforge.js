@@ -1,7 +1,7 @@
 'use strict';
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/bloodmagic/soulforge/';
-    var data = {
+    let data = {
         recipes: [
             {
                 inputs: ['#forge:stone', '#forge:rods/blaze', 'bloodmagic:explosivepowder'],

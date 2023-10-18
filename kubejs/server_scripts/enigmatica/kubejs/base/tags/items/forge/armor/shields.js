@@ -1,6 +1,6 @@
 'use strict';
 onEvent('item.tags', (event) => {
-    var items = [
+    let items = [
         'minecraft:shield',
         'ars_nouveau:enchanters_shield',
         'atum:stoneguard_shield',
@@ -15,7 +15,7 @@ onEvent('item.tags', (event) => {
         'immersiveengineering:shield'
     ];
 
-    var tags = ['forge:armor', 'forge:armor/shields'];
+    let tags = ['forge:armor', 'forge:armor/shields'];
 
     tags.forEach((tag) => {
         event.get(tag).add(items);

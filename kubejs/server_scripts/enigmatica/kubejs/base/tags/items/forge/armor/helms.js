@@ -1,6 +1,6 @@
 'use strict';
 onEvent('item.tags', (event) => {
-    var items = [
+    let items = [
         'ars_nouveau:apprentice_hood',
         'ars_nouveau:archmage_hood',
         'ars_nouveau:novice_hood',
@@ -17,9 +17,9 @@ onEvent('item.tags', (event) => {
         'environmental:thief_hood'
     ];
 
-    var exceptions = ['kubejs:pneumatic_helmet_package', 'kubejs:pneumatic_helmet_assembly'];
+    let exceptions = ['kubejs:pneumatic_helmet_package', 'kubejs:pneumatic_helmet_assembly'];
 
-    var tags = ['forge:armor', 'forge:armor/helm'];
+    let tags = ['forge:armor', 'forge:armor/helm'];
 
     tags.forEach((tag) => {
         event

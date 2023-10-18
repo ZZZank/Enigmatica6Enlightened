@@ -15,14 +15,14 @@ onEvent('recipes', (event) => {
         .id(`enigmatica:base/unification/unify_stoneworks/buffed_cobble`);
 
     generatableCobblestone.forEach((material) => {
-        var type = 'cobble';
+        let type = 'cobble';
         //console.log(`Recipe for Material: ${material}, Type: ${type}`);
         industrialforegoing_stoneworks(event, material, type);
         thermal_stoneworks(event, material);
     });
 
     generatableStone.forEach((material) => {
-        var type = 'stone';
+        let type = 'stone';
         //console.log(`Recipe for Material: ${material}, Type: ${type}`);
         industrialforegoing_stoneworks(event, material, type);
         thermal_stoneworks(event, material);
@@ -31,8 +31,8 @@ onEvent('recipes', (event) => {
 
 //stoneworks functions
 function industrialforegoing_stoneworks(event, material, type) {
-    var waterConsume = 0;
-    var lavaConsume = 0;
+    let waterConsume = 0;
+    let lavaConsume = 0;
 
     if (type == 'stone') {
         waterConsume = 1000;

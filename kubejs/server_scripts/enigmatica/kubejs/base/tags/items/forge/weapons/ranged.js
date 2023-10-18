@@ -1,6 +1,6 @@
 'use strict';
 onEvent('item.tags', (event) => {
-    var items = [
+    let items = [
         'botania:flare_chakram',
         'botania:thorn_chakram',
         'gunswithoutroses:diamond_gatling',
@@ -33,7 +33,7 @@ onEvent('item.tags', (event) => {
         'atum:anputs_grounding'
     ];
 
-    var tags = ['forge:weapons', 'forge:weapons/ranged'];
+    let tags = ['forge:weapons', 'forge:weapons/ranged'];
 
     tags.forEach((tag) => {
         event.get(tag).add(items).add(/_bow$/);

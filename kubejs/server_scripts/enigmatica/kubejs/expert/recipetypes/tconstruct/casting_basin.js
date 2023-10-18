@@ -4,7 +4,7 @@ onEvent('recipes', (event) => {
         return;
     }
     const id_prefix = 'enigmatica:expert/tconstruct/casting_basin/';
-    var data = {
+    let data = {
         recipes: [
             {
                 fluid: 'tconstruct:molten_hepatizon',

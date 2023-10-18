@@ -6,8 +6,8 @@ onEvent('recipes', (event) => {
 
     const id_prefix = 'enigmatica:expert/thermal/compression_fuel/';
 
-    var multiplier = 10;
-    var data = {
+    let multiplier = 10;
+    let data = {
         recipes: [{ input: 'industrialforegoing:biofuel', energy: 1000000 }]
     };
 

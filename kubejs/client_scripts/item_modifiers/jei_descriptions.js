@@ -595,7 +595,7 @@ onEvent('jei.information', (event) => {
         );
     });
 
-    var framedDrawers = [
+    let framedDrawers = [
         'compact_drawer',
         'drawer_controller',
         'slave',

@@ -6,7 +6,7 @@ onEvent('recipes', (event) => {
         Duration is not a fixed speed, as the machine runs at 10000% speed when the energy buffer is full.  
            
     */
-    var data = {
+    let data = {
         recipes: [
             {
                 itemInput: { ingredient: { item: 'industrialforegoing:infinity_trident' } },

@@ -2,8 +2,8 @@
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/pneumaticcraft/fuel_quantity/';
 
-    var multiplier = 1000;
-    var data = {
+    let multiplier = 1000;
+    let data = {
         recipes: [
             {
                 fluid: 'mekanismgenerators:bioethanol',

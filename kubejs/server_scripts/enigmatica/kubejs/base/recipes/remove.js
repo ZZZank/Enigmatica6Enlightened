@@ -91,7 +91,7 @@ onEvent('recipes', (event) => {
         { type: 'immersiveengineering:crusher', output: '#forge:dyes' }
     ];
 
-    var outputRemovals = [
+    let outputRemovals = [
         'appliedenergistics2:flour',
         'appliedenergistics2:gold_dust',
         'appliedenergistics2:iron_dust',
@@ -124,7 +124,7 @@ onEvent('recipes', (event) => {
         'thermal:bamboo_block'
     ];
 
-    var idRemovals = [
+    let idRemovals = [
         'apotheosis:spawner/max_delay_inverted',
         'apotheosis:spawner/max_delay',
 
@@ -339,7 +339,7 @@ onEvent('recipes', (event) => {
         '/integrateddynamics:blasting/menril_log/'
     ];
 
-    var regexIdRemovals = [
+    let regexIdRemovals = [
         /emendatusenigmatica:ore_from_chunk_crafting/,
         /emendatusenigmatica:ore_from_chunk_stonecutting/,
         /create:\w+\/bread/,

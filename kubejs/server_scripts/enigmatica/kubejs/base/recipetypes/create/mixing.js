@@ -1,7 +1,7 @@
 'use strict';
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/create/mixing/';
-    var data = {
+    let data = {
         recipes_unheated: [
             {
                 inputs: [

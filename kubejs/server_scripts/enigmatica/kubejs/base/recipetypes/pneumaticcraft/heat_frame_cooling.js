@@ -5,7 +5,7 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/pneumaticcraft/heat_frame_cooling/';
 
     honeyVarieties.forEach((honeyVariety) => {
-        var output = `${honeyVariety}_block`;
+        let output = `${honeyVariety}_block`;
 
         if (honeyVariety == 'resourcefulbees:honey') {
             output = 'minecraft:honey_block';

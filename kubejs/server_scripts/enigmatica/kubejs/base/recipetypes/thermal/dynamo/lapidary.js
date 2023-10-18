@@ -3,8 +3,8 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/thermal/lapidary_fuel/';
 
     event.remove({ type: 'thermal:lapidary_fuel' });
-    var multiplier = 40;
-    var data = {
+    let multiplier = 40;
+    let data = {
         recipes: [
             { input: '#forge:gems/lapis', energy: 40000 },
             { input: '#forge:gems/prismarine', energy: 40000 },

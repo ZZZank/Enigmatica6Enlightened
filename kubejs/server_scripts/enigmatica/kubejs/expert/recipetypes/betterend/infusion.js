@@ -4,7 +4,7 @@ onEvent('recipes', (event) => {
         return;
     }
     const id_prefix = 'enigmatica:expert/betterendforge/infusion/';
-    var data = {
+    let data = {
         recipes: [
             /*{
                 input: 'betterendforge:eternal_crystal',

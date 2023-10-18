@@ -424,7 +424,7 @@ onEvent('ponder.registry', (event) => {
 
                 scene.idle(30);
 
-                var tank1 = util.grid().at(3, 4, 3);
+                let tank1 = util.grid().at(3, 4, 3);
                 scene
                     .world()
                     .setBlock(
@@ -632,8 +632,8 @@ onEvent('ponder.registry', (event) => {
 
                 scene.idle(60);
 
-                var soulsand = util.getDefaultState('minecraft:soul_sand');
-                var skull = Block.id('minecraft:wither_skeleton_skull').with('rotation', 0).blockState;
+                let soulsand = util.getDefaultState('minecraft:soul_sand');
+                let skull = Block.id('minecraft:wither_skeleton_skull').with('rotation', 0).blockState;
 
                 scene.world().setBlock([3, 2, 3], soulsand, false);
                 scene.idle(10);
@@ -657,7 +657,7 @@ onEvent('ponder.registry', (event) => {
                     .world()
                     .setBlocks(util.select().layers(2, 3), util.getDefaultState('minecraft:air'), true);
 
-                var wither = scene.world().createEntity('minecraft:wither', [3.5, 2, 3.5]);
+                let wither = scene.world().createEntity('minecraft:wither', [3.5, 2, 3.5]);
 
                 scene.rotateCameraY(-180);
 

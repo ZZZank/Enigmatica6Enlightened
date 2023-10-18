@@ -6,7 +6,7 @@ onEvent('recipes', (event) => {
 
     const id_prefix = 'enigmatica:expert/betterend/alloying/';
 
-    var data = {
+    let data = {
         recipes: [
             {
                 inputs: ['#forge:ingots/cobalt', 'thermal:blizz_powder'],

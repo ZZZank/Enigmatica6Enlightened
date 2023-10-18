@@ -1,6 +1,6 @@
 'use strict';
 onEvent('item.tags', (event) => {
-    var items = [
+    let items = [
         'immersiveengineering:sword_steel',
         'wstweaks:blaze_blade',
         'wstweaks:lava_blade',
@@ -12,7 +12,7 @@ onEvent('item.tags', (event) => {
         'atum:stoneguard_greatsword',
         'atum:iron_greatsword'
     ];
-    var exceptions = [
+    let exceptions = [
         'betterendforge:aeternium_sword_handle',
         'betterendforge:aeternium_sword_blade',
         'betterendforge:thallasium_sword_handle',

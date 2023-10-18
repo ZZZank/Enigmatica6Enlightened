@@ -3,7 +3,7 @@
 
 onEvent('recipes', (event) => {
     buildWoodVariants.forEach((variant) => {
-        var sawDust = 'emendatusenigmatica:wood_dust',
+        let sawDust = 'emendatusenigmatica:wood_dust',
             treeBark = 'farmersdelight:tree_bark';
 
         create_cutting(event, variant, sawDust, treeBark);
@@ -165,7 +165,7 @@ function thermal_sawing(event, variant, sawDust) {
         return;
     }
 
-    var data = {
+    let data = {
         recipes: [
             {
                 input: variant.logBlock,

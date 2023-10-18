@@ -6,7 +6,7 @@ onEvent('recipes', (event) => {
 
     const id_prefix = 'enigmatica:normal/astralsorcery/block_transmutation/';
 
-    var data = {
+    let data = {
         recipes: [
             {
                 inputTag: '#forge:ores/iron',

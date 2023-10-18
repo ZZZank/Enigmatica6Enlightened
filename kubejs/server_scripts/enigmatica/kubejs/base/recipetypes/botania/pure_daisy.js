@@ -2,7 +2,7 @@
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/botania/pure_daisy/';
 
-    var data = {
+    let data = {
         recipes: [
             {
                 input: 'minecraft:snow_block',

@@ -37,7 +37,7 @@ onEvent('recipes', (event) => {
     ];
 
     recipes.forEach((recipe) => {
-        var ingredients = [];
+        let ingredients = [];
         recipe.inputs.forEach((input) => {
             ingredients.push(Ingredient.of(input).toJson());
         });

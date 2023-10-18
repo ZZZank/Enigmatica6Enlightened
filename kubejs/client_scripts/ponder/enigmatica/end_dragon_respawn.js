@@ -58,7 +58,7 @@ onEvent('ponder.registry', (event) => {
 
                 scene.idle(10);
 
-                var crystal1 = scene.world().createEntity('minecraft:end_crystal', [1.5, 2, 4.5]);
+                let crystal1 = scene.world().createEntity('minecraft:end_crystal', [1.5, 2, 4.5]);
                 scene.world().modifyEntity(crystal1, { ShowBottom: '0b' });
                 scene.world().modifyEntity(crystal1, (e) => {
                     let NBT = e.getFullNBT();
@@ -66,14 +66,14 @@ onEvent('ponder.registry', (event) => {
                     e.setFullNBT(NBT);
                 });
                 scene.idle(20);
-                var crystal2 = scene.world().createEntity('minecraft:end_crystal', [4.5, 2, 1.5]);
+                let crystal2 = scene.world().createEntity('minecraft:end_crystal', [4.5, 2, 1.5]);
                 scene.world().modifyEntity(crystal2, (e) => {
                     let NBT = e.getFullNBT();
                     NBT.ShowBottom = false;
                     e.setFullNBT(NBT);
                 });
                 scene.idle(20);
-                var crystal3 = scene.world().createEntity('minecraft:end_crystal', [7.5, 2, 4.5]);
+                let crystal3 = scene.world().createEntity('minecraft:end_crystal', [7.5, 2, 4.5]);
                 scene.world().modifyEntity(crystal3, (e) => {
                     let NBT = e.getFullNBT();
                     NBT.ShowBottom = false;
@@ -88,7 +88,7 @@ onEvent('ponder.registry', (event) => {
                     .text(`Placing the last one will shut off the End Portal, and resummon the Ender Dragon.`)
                     .independent(0);
 
-                var crystal4 = scene.world().createEntity('minecraft:end_crystal', [4.5, 2, 7.5]);
+                let crystal4 = scene.world().createEntity('minecraft:end_crystal', [4.5, 2, 7.5]);
                 scene.world().modifyEntity(crystal4, (e) => {
                     let NBT = e.getFullNBT();
                     NBT.ShowBottom = false;
@@ -118,7 +118,7 @@ onEvent('ponder.registry', (event) => {
                 });
                 scene.idle(60);
 
-                var dragon = scene.world().createEntity('minecraft:ender_dragon', [4.5, 5.5, 4.5]);
+                let dragon = scene.world().createEntity('minecraft:ender_dragon', [4.5, 5.5, 4.5]);
 
                 scene.idle(10);
 

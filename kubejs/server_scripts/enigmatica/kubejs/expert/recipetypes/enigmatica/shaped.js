@@ -11,7 +11,7 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        var dupes = [
+        let dupes = [
             'palo_verde',
             'withering_oak',
             'blue_archwood',

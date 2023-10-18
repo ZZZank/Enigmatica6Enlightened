@@ -6,7 +6,7 @@ onEvent('recipes', (event) => {
 
     const id_prefix = 'enigmatica:normal/mekanism/metallurgic_infusing/';
 
-    var data = {
+    let data = {
         recipes: [
             {
                 output: Item.of('compactmachines:wall', 32),

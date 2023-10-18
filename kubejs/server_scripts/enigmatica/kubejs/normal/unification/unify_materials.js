@@ -6,13 +6,13 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:normal/unification/unify_materials/';
 
     materialsToUnify.forEach((material) => {
-        var ingot = getPreferredItemInTag(Ingredient.of('#forge:ingots/' + material)).id;
-        var gem = getPreferredItemInTag(Ingredient.of('#forge:gems/' + material)).id;
+        let ingot = getPreferredItemInTag(Ingredient.of('#forge:ingots/' + material)).id;
+        let gem = getPreferredItemInTag(Ingredient.of('#forge:gems/' + material)).id;
 
-        var plate = getPreferredItemInTag(Ingredient.of('#forge:plates/' + material)).id;
-        var gear = getPreferredItemInTag(Ingredient.of('#forge:gears/' + material)).id;
-        var rod = getPreferredItemInTag(Ingredient.of('#forge:rods/' + material)).id;
-        var wire = getPreferredItemInTag(Ingredient.of('#forge:wires/' + material)).id;
+        let plate = getPreferredItemInTag(Ingredient.of('#forge:plates/' + material)).id;
+        let gear = getPreferredItemInTag(Ingredient.of('#forge:gears/' + material)).id;
+        let rod = getPreferredItemInTag(Ingredient.of('#forge:rods/' + material)).id;
+        let wire = getPreferredItemInTag(Ingredient.of('#forge:wires/' + material)).id;
 
         let ore = getPreferredItemInTag(Ingredient.of(`#forge:ores/${material}`)).id;
         let dust = getPreferredItemInTag(Ingredient.of(`#forge:dusts/${material}`)).id;
@@ -39,7 +39,7 @@ onEvent('recipes', (event) => {
             }
         }
 
-        var output = ingot,
+        let output = ingot,
             input = `#forge:ores/${material}`;
         event.smelting(output, input).xp(0.7).id(`${id_prefix}smelting/${material}/ingot/from_ore`);
         event.blasting(output, input).xp(0.7).id(`${id_prefix}blasting/${material}/ingot/from_ore`);
@@ -52,7 +52,7 @@ onEvent('recipes', (event) => {
 
         event.remove({ output: gear });
 
-        var output = gear,
+        let output = gear,
             input,
             mold = 'immersiveengineering:mold_gear';
 
@@ -87,7 +87,7 @@ onEvent('recipes', (event) => {
 
         event.remove({ output: rod });
 
-        var output = rod,
+        let output = rod,
             input,
             mold = '#thermal:crafting/dies/rod';
 
@@ -187,7 +187,7 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        var primaryOutput = Item.of(dust, 2),
+        let primaryOutput = Item.of(dust, 2),
             secondaryOutput,
             secondaryChance = 0.1,
             input = `#forge:ores/${material}`,

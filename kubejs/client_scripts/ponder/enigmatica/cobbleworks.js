@@ -59,8 +59,8 @@ onEvent('ponder.registry', (event) => {
 
                 scene.idle(20);
 
-                var lava = util.getDefaultState('minecraft:lava');
-                var cobble = util.getDefaultState('minecraft:cobblestone');
+                let lava = util.getDefaultState('minecraft:lava');
+                let cobble = util.getDefaultState('minecraft:cobblestone');
 
                 scene.world().setBlock([3, 2, 3], lava, false);
                 scene.idle(10);
@@ -138,8 +138,8 @@ onEvent('ponder.registry', (event) => {
 
                 scene.world().showSection(util.select().layersFrom(1), Facing.down);
 
-                var lava = util.getDefaultState('minecraft:lava');
-                var scoria = util.getDefaultState('create:scoria_cobblestone');
+                let lava = util.getDefaultState('minecraft:lava');
+                let scoria = util.getDefaultState('create:scoria_cobblestone');
 
                 scene.idle(40);
 
@@ -204,8 +204,8 @@ onEvent('ponder.registry', (event) => {
 
                 scene.idle(40);
 
-                var lava = util.getDefaultState('minecraft:lava');
-                var ironblock = util.getDefaultState('minecraft:iron_block');
+                let lava = util.getDefaultState('minecraft:lava');
+                let ironblock = util.getDefaultState('minecraft:iron_block');
 
                 let layerHint = new Object();
                 scene
@@ -229,7 +229,7 @@ onEvent('ponder.registry', (event) => {
                 scene.world().setBlock([3, 1, 3], ironblock, false);
                 scene.idle(30);
 
-                var randCobble = [
+                let randCobble = [
                     'byg:dacite_cobblestone',
                     'byg:soapstone',
                     'create:granite_cobblestone',

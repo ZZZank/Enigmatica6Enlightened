@@ -1,8 +1,8 @@
 'use strict';
 onEvent('item.tags', (event) => {
-    var items = ['mekanism:dynamic_tank', 'mekanism:dynamic_valve'];
+    let items = ['mekanism:dynamic_tank', 'mekanism:dynamic_valve'];
 
-    var tags = ['forge:storage', 'forge:storage/gas'];
+    let tags = ['forge:storage', 'forge:storage/gas'];
 
     tags.forEach((tag) => {
         event

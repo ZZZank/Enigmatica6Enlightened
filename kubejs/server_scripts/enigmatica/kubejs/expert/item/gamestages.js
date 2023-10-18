@@ -21,7 +21,7 @@ onEvent('item.right_click', (event) => {
 });
 
 function titleCase(str) {
-    var splitStr = str.toLowerCase().split(' ');
+    let splitStr = str.toLowerCase().split(' ');
     for (var i = 0; i < splitStr.length; i++) {
         splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
     }

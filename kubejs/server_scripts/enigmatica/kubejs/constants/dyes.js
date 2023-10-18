@@ -1281,7 +1281,7 @@ const dyeSources = [
 ];
 
 colors.forEach((color) => {
-    var botaniaTypes = ['petal', 'mushroom'];
+    let botaniaTypes = ['petal', 'mushroom'];
     botaniaTypes.forEach((type) => {
         dyeSources.push({
             input: 'botania:' + color + '_' + type,

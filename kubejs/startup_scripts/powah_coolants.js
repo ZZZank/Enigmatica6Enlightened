@@ -2,7 +2,7 @@
 'use strict';
 onEvent('postinit', (event) => {
     // Load PowahAPI
-    var PowahAPI = java('owmii.powah.api.PowahAPI');
+    let PowahAPI = java('owmii.powah.api.PowahAPI');
     // Register the Coolants
     PowahAPI.registerSolidCoolant(Item.of('betterendforge:emerald_ice').item, 400, -20);
     PowahAPI.registerSolidCoolant(Item.of('betterendforge:dense_emerald_ice').item, 800, -40);

@@ -1,6 +1,6 @@
 'use strict';
 onEvent('recipes', (event) => {
-    var multiplier = 40;
+    let multiplier = 40;
     const recipes = [
         {
             input: '#forge:coins/gold',

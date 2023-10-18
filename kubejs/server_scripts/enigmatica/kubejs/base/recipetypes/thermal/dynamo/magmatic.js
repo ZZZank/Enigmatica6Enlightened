@@ -2,7 +2,7 @@
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/thermal/magmatic_fuel/';
 
-    var multiplier = 10;
+    let multiplier = 10;
     const recipes = [
         {
             input: 'tconstruct:blazing_blood',

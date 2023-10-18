@@ -1,6 +1,6 @@
 'use strict';
 onEvent('item.tags', (event) => {
-    var items = [
+    let items = [
         'farmersdelight:flint_knife',
         'farmersdelight:iron_knife',
         'farmersdelight:diamond_knife',
@@ -10,7 +10,7 @@ onEvent('item.tags', (event) => {
         'occultism:butcher_knife'
     ];
 
-    var exceptions = [
+    let exceptions = [
         'aquaculture:wooden_fillet_knife',
         'aquaculture:stone_fillet_knife',
         'aquaculture:iron_fillet_knife',
@@ -20,7 +20,7 @@ onEvent('item.tags', (event) => {
         'abnormals_delight:necromium_knife'
     ];
 
-    var tags = [
+    let tags = [
         'forge:tools',
         'forge:tools/knives',
         'forge:tools/knife',

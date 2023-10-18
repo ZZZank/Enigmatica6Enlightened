@@ -11,13 +11,13 @@ onEvent('item.tags', (event) => {
     }
 
     //Dimensional Cells
-    var dimtiers = ['_simple', '', '_advanced'];
+    let dimtiers = ['_simple', '', '_advanced'];
     dimtiers.forEach(function (tier) {
         event.get('rftools:dimensionalcell').add('rftoolspower:dimensionalcell' + tier);
     });
 
     //Quarry Shape Cards
-    var quarrycards = ['_fortune', '_silk', ''];
+    let quarrycards = ['_fortune', '_silk', ''];
     quarrycards.forEach(function (card) {
         event.get('rftools:quarrycard').add('rftoolsbuilder:shape_card_quarry' + card);
         event.get('rftools:quarrycard').add('rftoolsbuilder:shape_card_quarry_clear' + card);

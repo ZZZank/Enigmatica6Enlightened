@@ -1,6 +1,6 @@
 'use strict';
 onEvent('server.datapack.low_priority', (event) => {
-    var data = [
+    let data = [
         {
             type: 'compat',
             recipes: [

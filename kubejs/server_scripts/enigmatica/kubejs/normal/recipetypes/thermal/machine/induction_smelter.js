@@ -6,7 +6,7 @@ onEvent('recipes', (event) => {
 
     const id_prefix = 'enigmatica:normal/thermal/smelter/';
 
-    var data = {
+    let data = {
         recipes: [
             {
                 inputs: ['#forge:ingots/enderium', Item.of('fluxnetworks:flux_dust', 8)],

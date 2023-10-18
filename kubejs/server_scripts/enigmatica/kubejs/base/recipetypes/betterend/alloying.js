@@ -2,7 +2,7 @@
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/betterend/alloying/';
 
-    var data = {
+    let data = {
         recipes: [
             {
                 ingredients: [{ tag: 'forge:ingots/gold' }, { tag: 'forge:ingots/silver' }],

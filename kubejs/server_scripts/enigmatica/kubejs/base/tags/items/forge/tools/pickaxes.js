@@ -1,6 +1,6 @@
 'use strict';
 onEvent('item.tags', (event) => {
-    var items = [
+    let items = [
         'botania:manasteel_pick',
         'botania:terra_pick',
         'immersiveengineering:pickaxe_steel',
@@ -10,14 +10,14 @@ onEvent('item.tags', (event) => {
         'tconstruct:pickaxe'
     ];
 
-    var exceptions = [
+    let exceptions = [
         'betterendforge:aeternium_pickaxe_head',
         'betterendforge:thallasium_pickaxe_head',
         'betterendforge:terminite_pickaxe_head',
         'occultism:ritual_dummy/craft_infused_pickaxe'
     ];
 
-    var tags = ['forge:tools', 'forge:tools/pickaxe'];
+    let tags = ['forge:tools', 'forge:tools/pickaxe'];
 
     tags.forEach((tag) => {
         event

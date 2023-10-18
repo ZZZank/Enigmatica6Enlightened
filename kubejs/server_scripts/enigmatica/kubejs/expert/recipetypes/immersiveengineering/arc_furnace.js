@@ -4,7 +4,7 @@ onEvent('recipes', (event) => {
         return;
     }
     const id_prefix = 'enigmatica:expert/immersiveengineering/arc_furnace/';
-    var data = {
+    let data = {
         recipes: [
             {
                 input1: Ingredient.of('3x #forge:ingots/cobalt'),

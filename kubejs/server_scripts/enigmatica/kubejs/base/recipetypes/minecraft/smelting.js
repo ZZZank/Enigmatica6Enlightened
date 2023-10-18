@@ -213,7 +213,7 @@ onEvent('recipes', (event) => {
         });
     });
 
-    var stones = [
+    let stones = [
         'granite',
         'diorite',
         'andesite',
@@ -226,7 +226,7 @@ onEvent('recipes', (event) => {
     ];
 
     stones.forEach((cobblestone) => {
-        var stone = `create:${cobblestone}`;
+        let stone = `create:${cobblestone}`;
         if (!Item.exists(stone)) {
             stone = `minecraft:${cobblestone}`;
         }

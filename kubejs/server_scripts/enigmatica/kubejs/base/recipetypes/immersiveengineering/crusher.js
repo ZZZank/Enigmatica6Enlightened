@@ -2,7 +2,7 @@
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/immersiveengineering/crusher/';
 
-    var data = {
+    let data = {
         recipes: [
             {
                 input: 'thermal:blizz_rod',

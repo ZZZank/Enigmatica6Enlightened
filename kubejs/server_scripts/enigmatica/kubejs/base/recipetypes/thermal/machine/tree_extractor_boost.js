@@ -2,7 +2,7 @@
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/thermal/tree_extractor_boost/';
 
-    var data = {
+    let data = {
         recipes: [
             {
                 type: 'thermal:tree_extractor_boost',

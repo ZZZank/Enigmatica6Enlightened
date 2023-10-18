@@ -1,6 +1,6 @@
 'use strict';
 onEvent('item.tags', (event) => {
-    var items = [
+    let items = [
         'immersiveengineering:armor_faraday_legs',
         'immersiveengineering:armor_steel_legs',
         'mekanism:hazmat_pants',
@@ -10,9 +10,9 @@ onEvent('item.tags', (event) => {
         'bloodmagic:livingleggings'
     ];
 
-    var exceptions = ['kubejs:pneumatic_leggings_package', 'kubejs:pneumatic_leggings_assembly'];
+    let exceptions = ['kubejs:pneumatic_leggings_package', 'kubejs:pneumatic_leggings_assembly'];
 
-    var tags = ['forge:armor', 'forge:armor/leggings'];
+    let tags = ['forge:armor', 'forge:armor/leggings'];
 
     tags.forEach((tag) => {
         event

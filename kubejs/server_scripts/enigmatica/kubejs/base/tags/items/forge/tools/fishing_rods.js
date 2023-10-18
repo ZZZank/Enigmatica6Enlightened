@@ -1,10 +1,10 @@
 'use strict';
 onEvent('item.tags', (event) => {
-    var items = [/fishing_rod$/, 'atum:atems_bounty'];
+    let items = [/fishing_rod$/, 'atum:atems_bounty'];
 
-    var exceptions = [];
+    let exceptions = [];
 
-    var tags = ['forge:tools', 'forge:tools/fishing_rods'];
+    let tags = ['forge:tools', 'forge:tools/fishing_rods'];
 
     tags.forEach((tag) => {
         event.get(tag).add(items).remove(exceptions);
