@@ -13,7 +13,7 @@ function unificationBlacklistEntry(material, type) {
     return { material: material, type: type };
 }
 function entryIsBlacklisted(material, type) {
-    for (var i = 0; i < unificationBlacklist.length; i++) {
+    for (let i = 0; i < unificationBlacklist.length; i++) {
         if (unificationBlacklist[i].material == material && unificationBlacklist[i].type == type) {
             return true;
         }

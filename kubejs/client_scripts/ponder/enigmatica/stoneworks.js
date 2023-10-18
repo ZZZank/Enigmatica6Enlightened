@@ -1,7 +1,7 @@
 // priority: 9
 'use strict';
 
-var itemsToPonder = generatableStone;
+let itemsToPonder = generatableStone;
 itemsToPonder.push('minecraft:stone');
 
 onEvent('ponder.registry', (event) => {

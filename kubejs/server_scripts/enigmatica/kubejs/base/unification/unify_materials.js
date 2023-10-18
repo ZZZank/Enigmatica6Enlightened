@@ -99,7 +99,7 @@ onEvent('recipes', (event) => {
         }
 
         let blacklistedMaterials = ['redstone', 'lapis', 'emerald', 'diamond', 'iron'];
-        for (var i = 0; i < blacklistedMaterials.length; i++) {
+        for (let i = 0; i < blacklistedMaterials.length; i++) {
             if (blacklistedMaterials[i] == material) {
                 return;
             }
@@ -761,7 +761,7 @@ onEvent('recipes', (event) => {
         }
 
         let blacklistedMaterials = ['copper', 'gold', 'iron', 'lead', 'osmium', 'tin', 'uranium'];
-        for (var i = 0; i < blacklistedMaterials.length; i++) {
+        for (let i = 0; i < blacklistedMaterials.length; i++) {
             if (blacklistedMaterials[i] == material) {
                 return;
             }
@@ -857,7 +857,7 @@ onEvent('recipes', (event) => {
 
         let blacklistedMaterials = ['amber', 'ender'];
 
-        for (var i = 0; i < blacklistedMaterials.length; i++) {
+        for (let i = 0; i < blacklistedMaterials.length; i++) {
             if (blacklistedMaterials[i] == material) {
                 return;
             }
@@ -877,7 +877,7 @@ onEvent('recipes', (event) => {
 
         let blacklistedMaterials = ['starmetal'];
 
-        for (var i = 0; i < blacklistedMaterials.length; i++) {
+        for (let i = 0; i < blacklistedMaterials.length; i++) {
             if (blacklistedMaterials[i] == material) {
                 return;
             }
@@ -955,7 +955,7 @@ onEvent('recipes', (event) => {
 
         let blacklistedMaterials = ['silver'];
 
-        for (var i = 0; i < blacklistedMaterials.length; i++) {
+        for (let i = 0; i < blacklistedMaterials.length; i++) {
             if (blacklistedMaterials[i] == material) {
                 return;
             }
@@ -1073,7 +1073,7 @@ onEvent('recipes', (event) => {
 
         let blacklistedMaterials = [];
 
-        for (var i = 0; i < blacklistedMaterials.length; i++) {
+        for (let i = 0; i < blacklistedMaterials.length; i++) {
             if (blacklistedMaterials[i] == material) {
                 return;
             }
@@ -1104,7 +1104,7 @@ onEvent('recipes', (event) => {
         }
 
         try {
-            var materialProperties = gemProcessingProperties[material],
+            let materialProperties = gemProcessingProperties[material],
                 count = materialProperties.pedestals.count,
                 input = `forge:ores/${material}`,
                 output;
@@ -1392,7 +1392,7 @@ onEvent('recipes', (event) => {
 
         let blacklistedMaterials = ['ender'];
 
-        for (var i = 0; i < blacklistedMaterials.length; i++) {
+        for (let i = 0; i < blacklistedMaterials.length; i++) {
             if (blacklistedMaterials[i] == material) {
                 return;
             }
@@ -1440,7 +1440,7 @@ onEvent('recipes', (event) => {
         }
 
         let blacklistedMaterials = ['ender'];
-        for (var i = 0; i < blacklistedMaterials.length; i++) {
+        for (let i = 0; i < blacklistedMaterials.length; i++) {
             if (blacklistedMaterials[i] == material) {
                 return;
             }
@@ -1578,7 +1578,7 @@ onEvent('recipes', (event) => {
         }
 
         let blacklistedMaterials = ['ender'];
-        for (var i = 0; i < blacklistedMaterials.length; i++) {
+        for (let i = 0; i < blacklistedMaterials.length; i++) {
             if (blacklistedMaterials[i] == material) {
                 return;
             }
@@ -1627,7 +1627,7 @@ onEvent('recipes', (event) => {
 
     function material_packing_unpacking(event, material, block, ingot, gem, nugget) {
         let blacklistedMaterials = ['ender', 'amber', 'quartz'];
-        for (var i = 0; i < blacklistedMaterials.length; i++) {
+        for (let i = 0; i < blacklistedMaterials.length; i++) {
             if (blacklistedMaterials[i] == material) {
                 return;
             }

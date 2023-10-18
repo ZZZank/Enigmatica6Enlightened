@@ -5,11 +5,11 @@
 function onEvent(){}
 function getPreferredItemInTag(){}
 function fallback_id(){}
-var materialsToUnify;
-var air;
-var Item,Fluid,Ingredient;
+let materialsToUnify;
+let air;
+let Item,Fluid,Ingredient;
 
-var gemProcessingProperties;
-var oreProcessingSecondaries;
+let gemProcessingProperties;
+let oreProcessingSecondaries;
 
  */

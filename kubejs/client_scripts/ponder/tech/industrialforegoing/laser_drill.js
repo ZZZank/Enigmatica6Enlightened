@@ -225,7 +225,7 @@ onEvent('ponder.registry', (event) => {
                     .independent(20);
 
                 // RANDOM LENSES!
-                for (var i = 0; i < 4; i++) {
+                for (let i = 0; i < 4; i++) {
                     scene
                         .overlay()
                         .showControls(
@@ -274,7 +274,7 @@ onEvent('ponder.registry', (event) => {
 
                 scene.idle(20);
 
-                for (var i = 0; i < fails; i++) {
+                for (let i = 0; i < fails; i++) {
                     scene
                         .overlay()
                         .showControls(

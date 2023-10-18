@@ -3,7 +3,7 @@
 
 // Used to populate the buildWoodVariants constant - Add variants here to enable compat with various cutting mechanics.
 // Be aware that you may need to specify exceptions in the loop below for this to work properly.
-var woodVariantsToConstruct = [
+let woodVariantsToConstruct = [
     'minecraft:acacia',
     'minecraft:birch',
     'minecraft:dark_oak',
@@ -89,7 +89,7 @@ var woodVariantsToConstruct = [
     // 'sushigocrafting:avocado'
 ];
 
-var buildWoodVariants = [];
+let buildWoodVariants = [];
 
 woodVariantsToConstruct.forEach((variant) => {
     let splitVariant = variant.split(':');

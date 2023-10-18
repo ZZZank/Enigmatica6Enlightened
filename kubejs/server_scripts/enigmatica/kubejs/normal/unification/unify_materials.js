@@ -33,7 +33,7 @@ onEvent('recipes', (event) => {
 
         let blacklistedMaterials = ['ender'];
 
-        for (var i = 0; i < blacklistedMaterials.length; i++) {
+        for (let i = 0; i < blacklistedMaterials.length; i++) {
             if (blacklistedMaterials[i] == material) {
                 return;
             }
