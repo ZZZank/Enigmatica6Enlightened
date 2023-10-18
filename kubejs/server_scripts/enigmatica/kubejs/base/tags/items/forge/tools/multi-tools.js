@@ -1,5 +1,6 @@
+'use strict';
 onEvent('item.tags', (event) => {
-    var items = [
+    let items = [
         'immersiveengineering:buzzsaw',
         'immersiveengineering:drill',
         'industrialforegoing:infinity_drill',
@@ -11,7 +12,7 @@ onEvent('item.tags', (event) => {
         'thermal:flux_drill',
         'thermal:flux_saw'
     ];
-    var tags = ['forge:tools', 'forge:tools/multi-tool'];
+    let tags = ['forge:tools', 'forge:tools/multi-tool'];
 
     tags.forEach((tag) => {
         event

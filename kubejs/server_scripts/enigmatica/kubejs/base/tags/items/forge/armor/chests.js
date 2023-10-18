@@ -1,5 +1,6 @@
+'use strict';
 onEvent('item.tags', (event) => {
-    var items = [
+    let items = [
         'ars_nouveau:apprentice_robes',
         'ars_nouveau:archmage_robes',
         'ars_nouveau:novice_robes',
@@ -16,14 +17,14 @@ onEvent('item.tags', (event) => {
         'create:copper_backtank'
     ];
 
-    var exceptions = [
+    let exceptions = [
         'pneumaticcraft:jet_boots_upgrade_1',
         'atum:limestone_chest',
         'kubejs:pneumatic_chestplate_package',
         'kubejs:pneumatic_chestplate_assembly'
     ];
 
-    var tags = ['forge:armor', 'forge:armor/chest'];
+    let tags = ['forge:armor', 'forge:armor/chest'];
 
     tags.forEach((tag) => {
         event

@@ -1,6 +1,7 @@
+'use strict';
 onEvent('recipes', (event) => {
     /// These Recipes don't reload properly in game. Do a full restart when modifying anything.
-    var substrates = {
+    let substrates = {
         basic: [{ item: 'minecraft:dirt' }, { item: 'minecraft:gravel' }, { item: 'minecraft:sand' }],
         rocky: [{ item: 'minecraft:stone' }, { tag: 'forge:stones/basalt' }],
         frozen: [{ item: 'quark:permafrost' }, { item: 'minecraft:snow_block' }, { tag: 'forge:ices' }],
@@ -16,8 +17,8 @@ onEvent('recipes', (event) => {
             { item: 'undergarden:tremblecrust' }
         ]
     };
-    var powerMultiplier = 1;
-    var sizes = {
+    let powerMultiplier = 1;
+    let sizes = {
         tiny: { power: 100, living: 10, substrate: 0.2 },
         small: { power: 500, living: 20, substrate: 0.5 },
         medium: { power: 800, living: 30, substrate: 0.7 },
@@ -25,7 +26,7 @@ onEvent('recipes', (event) => {
         enormous: { power: 2000, living: 90, substrate: 1.0 }
     };
 
-    var data = {
+    let data = {
         recipes: [
             {
                 entity: 'minecraft:bat',
@@ -973,7 +974,7 @@ onEvent('recipes', (event) => {
         ]
     };
 
-    var exceptions = {
+    let exceptions = {
         recipes: [
             /// Exceptions
             {
@@ -1000,7 +1001,7 @@ onEvent('recipes', (event) => {
         ]
     };
 
-    var fishList = [
+    let fishList = [
         'minecraft:cod',
         'minecraft:pufferfish',
         'minecraft:salmon',

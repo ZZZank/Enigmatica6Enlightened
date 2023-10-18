@@ -1,12 +1,13 @@
+'use strict';
 onEvent('item.tags', (event) => {
-    var items = ['immersiveengineering:shovel_steel', 'bloodmagic:soulshovel', 'atum:gebs_toil'];
-    var exceptions = [
+    let items = ['immersiveengineering:shovel_steel', 'bloodmagic:soulshovel', 'atum:gebs_toil'];
+    let exceptions = [
         'betterendforge:aeternium_shovel_head',
         'betterendforge:thallasium_shovel_head',
         'betterendforge:terminite_shovel_head'
     ];
 
-    var tags = ['forge:tools', 'forge:tools/shovel'];
+    let tags = ['forge:tools', 'forge:tools/shovel'];
 
     tags.forEach((tag) => {
         event

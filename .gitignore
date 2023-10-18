@@ -33,6 +33,7 @@ config/masterful_machinery/packs/
 **/*.zip
 /docker/**
 /schematics/uploaded/
+/lightspeed-cache/
 
 # Instance Sync
 **/*.jar

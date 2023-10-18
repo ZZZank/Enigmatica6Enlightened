@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/enigmatica/shaped/';
     const recipes = [
@@ -443,7 +444,7 @@ onEvent('recipes', (event) => {
         }
 
         //All recipes using logs here
-        var chest = wood.modId + ':' + wood.logType + '_chest';
+        let chest = wood.modId + ':' + wood.logType + '_chest';
         if (!Item.exists(chest)) {
             event
                 .shaped(Item.of('minecraft:chest', 4), ['AAA', 'A A', 'AAA'], {
@@ -458,7 +459,7 @@ onEvent('recipes', (event) => {
                 .id(`${id_prefix}${chest.replace(':', '_')}_from_${wood.logBlock.replace(':', '_')}`);
         }
 
-        var dupes = [
+        let dupes = [
             'palo_verde',
             'withering_oak',
             'blue_archwood',

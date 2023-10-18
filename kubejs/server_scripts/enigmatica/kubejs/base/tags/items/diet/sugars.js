@@ -1,3 +1,4 @@
+'use strict';
 onEvent('item.tags', (event) => {
     combVariants.forEach((comb) => {
         event.get('diet:sugars').add('resourcefulbees:' + comb + '_honeycomb');

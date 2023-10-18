@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
@@ -20,7 +21,7 @@ onEvent('recipes', (event) => {
             output: 'wstweaks:lava_blade',
             pattern: [' AB', 'ACA', 'DA '],
             key: {
-                A: 'rftoolspower:blazing_rod',
+                A: 'powah:crystal_blazing',
                 B: 'betterendforge:aeternium_sword_blade',
                 C: '#forge:gems/nitro',
                 D: 'betterendforge:aeternium_sword_handle'

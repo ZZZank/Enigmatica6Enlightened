@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
@@ -643,8 +644,8 @@ onEvent('recipes', (event) => {
                 'atum:crystal_glass_pane',
                 '#forge:gears/enderium',
                 '#forge:gears/enderium',
-                'rftoolspower:blazing_rod',
-                'rftoolspower:blazing_rod'
+                'ars_nouveau:end_fiber',
+                'ars_nouveau:end_fiber'
             ],
             inputFluid: 'mekanism:lithium',
             inputFluidAmount: 500,

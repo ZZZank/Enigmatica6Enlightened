@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/enigmatica/';
     const recipes = [
@@ -66,7 +67,7 @@ onEvent('recipes', (event) => {
         }
     ];
 
-    recipetypes_crushing = (event, recipe) => {
+    let recipetypes_crushing = (event, recipe) => {
         // pedestals
         // event
         //     .custom({

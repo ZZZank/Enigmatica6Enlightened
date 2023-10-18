@@ -1,7 +1,8 @@
+'use strict';
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/astralsorcery/block_transmutation/';
 
-    var data = {
+    let data = {
         recipes: [
             { inputTag: '#forge:ores/diamond', output: 'emendatusenigmatica:emerald_ore', starlight: 1000 },
             {

@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
@@ -21,6 +22,22 @@ onEvent('recipes', (event) => {
             aura: 15000 * 8,
             time: 50 * 8,
             id: 'naturesaura:altar/infused_iron_block'
+        },
+        {
+            input: 'kubejs:altered_recipe_indicator',
+            output: { item: 'naturesaura:tainted_gold' },
+            aura_type: 'naturesaura:nether',
+            aura: 1,
+            time: 1,
+            id: 'naturesaura:altar/tainted_gold'
+        },
+        {
+            input: 'kubejs:altered_recipe_indicator',
+            output: { item: 'naturesaura:tainted_gold_block' },
+            aura_type: 'naturesaura:nether',
+            aura: 1,
+            time: 1,
+            id: 'naturesaura:altar/tainted_gold_block'
         },
         {
             input: 'kubejs:firmament',

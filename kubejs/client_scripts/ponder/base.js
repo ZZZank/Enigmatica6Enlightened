@@ -1,4 +1,5 @@
 // priority: 10
+'use strict';
 
 const categories = [
     {

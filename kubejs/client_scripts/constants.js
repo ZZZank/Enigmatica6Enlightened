@@ -1,4 +1,5 @@
-//priority: 1000
+// priority: 1000
+'use strict';
 
 const refinedStorageItems = [
     'grid',
@@ -261,6 +262,19 @@ const itemsToHide = [
     'tconstruct:cobalt_ore',
     'tconstruct:copper_ingot',
     'tconstruct:cobalt_ingot',
+
+    /tconstruct:pickaxe/,
+    /tconstruct:sledge_hammer/,
+    /tconstruct:vein_hammer/,
+    /tconstruct:mattock/,
+    /tconstruct:excavator/,
+    /tconstruct:hand_axe/,
+    /tconstruct:broad_axe/,
+    /tconstruct:kama/,
+    /tconstruct:scythe/,
+    /tconstruct:dagger/,
+    /tconstruct:sword/,
+    /tconstruct:cleaver/,
 
     'thermal:coal_coke',
     'thermal:coal_coke_block',

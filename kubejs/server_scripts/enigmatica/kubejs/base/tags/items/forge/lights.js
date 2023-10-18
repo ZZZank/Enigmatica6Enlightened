@@ -1,5 +1,6 @@
+'use strict';
 onEvent('item.tags', (event) => {
-    var items = [
+    let items = [
         'bloodmagic:bloodlightsigil',
         'engineersdecor:iron_bulb_light',
         'engineersdecor:iron_ceiling_edge_light',
@@ -24,7 +25,7 @@ onEvent('item.tags', (event) => {
         'undergarden:shimmerweed',
         'betterendforge:glowing_pillar_luminophor'
     ];
-    var exceptions = ['occultism:magic_lamp_empty'];
+    let exceptions = ['occultism:magic_lamp_empty'];
 
     event
         .get('forge:lights')

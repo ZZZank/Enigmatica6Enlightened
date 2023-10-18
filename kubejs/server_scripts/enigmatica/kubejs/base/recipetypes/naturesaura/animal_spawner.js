@@ -1,6 +1,7 @@
+'use strict';
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/naturesaura/animal_spawner/';
-    recipes = [
+    let recipes = [
         {
             inputs: ['naturesaura:birth_spirit', '#forge:gems/mana', 'naturesaura:gold_leaf'],
             entity: 'ars_nouveau:carbuncle',

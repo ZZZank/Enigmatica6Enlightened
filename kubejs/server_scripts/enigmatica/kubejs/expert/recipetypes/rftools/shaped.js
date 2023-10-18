@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
@@ -170,27 +171,6 @@ onEvent('recipes', (event) => {
             id: 'rftoolsutility:flight_module'
         },
         {
-            output: 'rftoolspower:blazing_agitator',
-            pattern: ['ABA', 'BCB', 'ABA'],
-            key: {
-                A: 'rftoolspower:blazing_rod',
-                B: 'powah:energizing_rod_blazing',
-                C: 'rftoolsbase:machine_base'
-            },
-            id: 'rftoolspower:blazing_agitator'
-        },
-        {
-            output: 'rftoolspower:cell1',
-            pattern: ['ABA', 'CDC', 'ACA'],
-            key: {
-                A: 'rftoolspower:power_core1',
-                B: 'immersiveengineering:transformer_hv',
-                C: 'mekanism:basic_universal_cable',
-                D: 'rftoolsbase:machine_frame'
-            },
-            id: 'rftoolspower:cell1'
-        },
-        {
             output: 'rftoolscontrol:program_card',
             pattern: ['ABA', 'BCB', 'ABA'],
             key: {
@@ -313,40 +293,6 @@ onEvent('recipes', (event) => {
                 E: 'rftoolsbase:machine_base'
             },
             id: 'rftoolsbase:tablet'
-        },
-        {
-            output: 'rftoolspower:dimensionalcell_simple',
-            pattern: ['AEA', 'BCB', 'ADA'],
-            key: {
-                A: 'rftoolspower:power_core1',
-                B: 'kubejs:dimensional_storage_crystal',
-                C: 'rftoolsbase:machine_frame',
-                D: 'powah:ender_core',
-                E: 'rftoolscontrol:advanced_network_card'
-            },
-            id: 'rftoolspower:dimensionalcell_simple'
-        },
-        {
-            output: 'rftoolspower:dimensionalcell',
-            pattern: ['ADA', 'BCB', 'ADA'],
-            key: {
-                A: 'rftoolspower:power_core2',
-                B: 'kubejs:dimensional_storage_crystal',
-                C: 'rftoolspower:dimensionalcell_simple',
-                D: 'rftoolsbase:infused_diamond'
-            },
-            id: 'rftoolspower:dimensionalcell'
-        },
-        {
-            output: 'rftoolspower:dimensionalcell_advanced',
-            pattern: ['ADA', 'BCB', 'ADA'],
-            key: {
-                A: 'rftoolspower:power_core3',
-                B: 'kubejs:dimensional_storage_crystal',
-                C: 'rftoolspower:dimensionalcell',
-                D: '#forge:gems/mana_diamond'
-            },
-            id: 'rftoolspower:dimensionalcell_advanced'
         },
         {
             output: 'rftoolsutility:crafter1',

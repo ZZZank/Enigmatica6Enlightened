@@ -155,11 +155,14 @@
 			rewards: [
 				{
 					id: "000000000000080E"
-					type: "command"
-					title: "Rare Mekanism Loot Box"
-					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_rare"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:rare_lootbox"
+						Count: 1b
+						tag: {
+							mod: "mekanism"
+						}
+					}
 				}
 				{
 					id: "0000000000000864"
@@ -243,11 +246,14 @@
 				}
 				{
 					id: "000000000000086B"
-					type: "command"
-					title: "Epic Mekanism Loot Box"
-					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:epic_lootbox"
+						Count: 1b
+						tag: {
+							mod: "mekanism"
+						}
+					}
 				}
 			]
 		}
@@ -328,11 +334,14 @@
 			rewards: [
 				{
 					id: "0000000000000816"
-					type: "command"
-					title: "Rare Mekanism Loot Box"
-					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_rare"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:rare_lootbox"
+						Count: 1b
+						tag: {
+							mod: "mekanism"
+						}
+					}
 				}
 				{
 					id: "0000000000000860"
@@ -392,11 +401,14 @@
 			rewards: [
 				{
 					id: "0000000000000812"
-					type: "command"
-					title: "Rare Mekanism Loot Box"
-					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_rare"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:rare_lootbox"
+						Count: 1b
+						tag: {
+							mod: "mekanism"
+						}
+					}
 				}
 				{
 					id: "0000000000000861"
@@ -455,11 +467,14 @@
 			rewards: [
 				{
 					id: "0000000000000810"
-					type: "command"
-					title: "Rare Mekanism Loot Box"
-					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_rare"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:rare_lootbox"
+						Count: 1b
+						tag: {
+							mod: "mekanism"
+						}
+					}
 				}
 				{
 					id: "000000000000082C"
@@ -486,11 +501,14 @@
 			}]
 			rewards: [{
 				id: "000000000000080F"
-				type: "command"
-				title: "Rare Mekanism Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "mekanism"
+					}
+				}
 			}]
 		}
 		{
@@ -545,11 +563,14 @@
 			rewards: [
 				{
 					id: "0000000000000813"
-					type: "command"
-					title: "Rare Mekanism Loot Box"
-					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_rare"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:rare_lootbox"
+						Count: 1b
+						tag: {
+							mod: "mekanism"
+						}
+					}
 				}
 				{
 					id: "0000000000000CA9"
@@ -655,11 +676,14 @@
 				}
 				{
 					id: "000000000000086C"
-					type: "command"
-					title: "Rare Mekanism Loot Box"
-					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_rare"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:rare_lootbox"
+						Count: 1b
+						tag: {
+							mod: "mekanism"
+						}
+					}
 				}
 			]
 		}
@@ -915,11 +939,14 @@
 				}
 				{
 					id: "0000000000000814"
-					type: "command"
-					title: "Epic Mekanism Loot Box"
-					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:epic_lootbox"
+						Count: 1b
+						tag: {
+							mod: "mekanism"
+						}
+					}
 				}
 			]
 		}
@@ -1399,26 +1426,25 @@
 				{
 					id: "000000000000082D"
 					type: "item"
-					type: "item":honey_cookie"
+					item: "farmersdelight:honey_cookie"
 					count: 3
 				}
 				{
 					id: "000000000000082E"
 					type: "item"
-					type: "item"
+					item: "abnormals_delight:mulberry_cookie"
+					count: 3
 				}
 				{
 					id: "000000000000082F"
 					type: "item"
-					type: "item"t:cookie"
-					type: "item"
+					item: "minecraft:cookie"
+					count: 3
+				}
 				{
 					id: "0000000000000A81"
-					type: "command"
-					title: "Farmer's Delight"
-					icon: "kubejs:farmers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:farmers_delight"
 				}
 			]
 		}
@@ -1444,11 +1470,14 @@
 			}]
 			rewards: [{
 				id: "000000000000082A"
-				type: "command"
-				title: "Epic Mekanism Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "mekanism"
+					}
+				}
 			}]
 		}
 		{
@@ -1488,11 +1517,14 @@
 			]
 			rewards: [{
 				id: "000000000000081A"
-				type: "command"
-				title: "Epic Mekanism Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "mekanism"
+					}
+				}
 			}]
 		}
 		{
@@ -1534,11 +1566,14 @@
 			]
 			rewards: [{
 				id: "0000000000000818"
-				type: "command"
-				title: "Epic Mekanism Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "mekanism"
+					}
+				}
 			}]
 		}
 		{
@@ -1690,11 +1725,14 @@
 			]
 			rewards: [{
 				id: "0000000000000820"
-				type: "command"
-				title: "Epic Mekanism Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "mekanism"
+					}
+				}
 			}]
 		}
 		{
@@ -1730,11 +1768,14 @@
 			]
 			rewards: [{
 				id: "000000000000081E"
-				type: "command"
-				title: "Epic Mekanism Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "mekanism"
+					}
+				}
 			}]
 		}
 		{
@@ -1752,11 +1793,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000815"
-				type: "command"
-				title: "Epic Mekanism Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "mekanism"
+					}
+				}
 			}]
 		}
 		{
@@ -1815,11 +1859,14 @@
 				}
 				{
 					id: "0000000000000842"
-					type: "command"
-					title: "Legendary Mekanism Loot Box"
-					icon: "kubejs:legendary_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:legendary_lootbox"
+						Count: 1b
+						tag: {
+							mod: "mekanism"
+						}
+					}
 				}
 			]
 		}
@@ -1881,11 +1928,14 @@
 			]
 			rewards: [{
 				id: "0000000000000821"
-				type: "command"
-				title: "Legendary Mekanism Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+						mod: "mekanism"
+					}
+				}
 			}]
 		}
 		{
@@ -1974,11 +2024,14 @@
 			]
 			rewards: [{
 				id: "0000000000000819"
-				type: "command"
-				title: "Epic Mekanism Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "mekanism"
+					}
+				}
 			}]
 		}
 		{
@@ -1995,11 +2048,14 @@
 			}]
 			rewards: [{
 				id: "000000000000081F"
-				type: "command"
-				title: "Legendary Mekanism Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+						mod: "mekanism"
+					}
+				}
 			}]
 		}
 		{
@@ -2020,11 +2076,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000828"
-				type: "command"
-				title: "Legendary Mekanism Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+						mod: "mekanism"
+					}
+				}
 			}]
 		}
 		{
@@ -2041,11 +2100,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000827"
-				type: "command"
-				title: "Legendary Mekanism Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+						mod: "mekanism"
+					}
+				}
 			}]
 		}
 		{
@@ -2062,11 +2124,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000823"
-				type: "command"
-				title: "Legendary Mekanism Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+						mod: "mekanism"
+					}
+				}
 			}]
 		}
 		{
@@ -2091,11 +2156,14 @@
 			]
 			rewards: [{
 				id: "0000000000000826"
-				type: "command"
-				title: "Legendary Mekanism Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+						mod: "mekanism"
+					}
+				}
 			}]
 		}
 		{
@@ -2112,11 +2180,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000824"
-				type: "command"
-				title: "Legendary Mekanism Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+						mod: "mekanism"
+					}
+				}
 			}]
 		}
 		{
@@ -2133,11 +2204,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000825"
-				type: "command"
-				title: "Legendary Mekanism Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+						mod: "mekanism"
+					}
+				}
 			}]
 		}
 		{
@@ -2179,11 +2253,14 @@
 				}
 				{
 					id: "0000000000000822"
-					type: "command"
-					title: "Legendary Mekanism Loot Box"
-					icon: "kubejs:legendary_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:legendary_lootbox"
+						Count: 1b
+						tag: {
+							mod: "mekanism"
+						}
+					}
 				}
 				{
 					id: "0000000000000873"
@@ -2292,11 +2369,14 @@
 			]
 			rewards: [{
 				id: "0000000000000E7E"
-				type: "command"
-				title: "Epic Mekanism Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "mekanism"
+					}
+				}
 			}]
 		}
 		{
@@ -2319,11 +2399,14 @@
 			}]
 			rewards: [{
 				id: "3954C7F86F9C301B"
-				type: "command"
-				title: "Rare Mekanism Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "mekanism"
+					}
+				}
 			}]
 		}
 		{
@@ -2368,11 +2451,14 @@
 			}]
 			rewards: [{
 				id: "21CAB75DA0FC846D"
-				type: "command"
-				title: "Rare Mekanism Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "mekanism"
+					}
+				}
 			}]
 		}
 		{
@@ -2481,11 +2567,14 @@
 			]
 			rewards: [{
 				id: "5CB2EF184247180B"
-				type: "command"
-				title: "Epic Mekanism Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "mekanism"
+					}
+				}
 			}]
 		}
 		{
@@ -2591,11 +2680,14 @@
 			}]
 			rewards: [{
 				id: "5F0D88FCA51E6BB3"
-				type: "command"
-				title: "Legendary Mekanism Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+						mod: "mekanism"
+					}
+				}
 			}]
 		}
 		{
@@ -2685,11 +2777,14 @@
 			}]
 			rewards: [{
 				id: "0EF5031647DF246B"
-				type: "command"
-				title: "Rare Mekanism Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "mekanism"
+					}
+				}
 			}]
 		}
 		{
@@ -2719,11 +2814,14 @@
 			}]
 			rewards: [{
 				id: "2103C11313ED672B"
-				type: "command"
-				title: "Rare Mekanism Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "mekanism"
+					}
+				}
 			}]
 		}
 		{
@@ -2772,19 +2870,25 @@
 			rewards: [
 				{
 					id: "526D36712006641A"
-					type: "command"
-					title: "Legendary Mekanism Loot Box"
-					icon: "kubejs:legendary_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:legendary_lootbox"
+						Count: 1b
+						tag: {
+							mod: "mekanism"
+						}
+					}
 				}
 				{
 					id: "1D6DFBD767770794"
-					type: "command"
-					title: "Legendary Mekanism Loot Box"
-					icon: "kubejs:legendary_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:legendary_lootbox"
+						Count: 1b
+						tag: {
+							mod: "mekanism"
+						}
+					}
 				}
 				{
 					id: "4FB1E142562746D5"

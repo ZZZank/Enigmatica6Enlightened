@@ -1,4 +1,6 @@
-//priority: 1005
+// priority: 1005
+
+// do not `'use strict';` here, it will cause `recipe.getId()` to fail
 
 function shapedRecipe(result, pattern, key, id) {
     return { result: result, pattern: pattern, key: key, id: id };
@@ -11,7 +13,7 @@ function unificationBlacklistEntry(material, type) {
     return { material: material, type: type };
 }
 function entryIsBlacklisted(material, type) {
-    for (var i = 0; i < unificationBlacklist.length; i++) {
+    for (let i = 0; i < unificationBlacklist.length; i++) {
         if (unificationBlacklist[i].material == material && unificationBlacklist[i].type == type) {
             return true;
         }

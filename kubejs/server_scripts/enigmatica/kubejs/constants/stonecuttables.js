@@ -1,4 +1,5 @@
-//priority: 1000
+// priority: 1000
+'use strict';
 
 // used to generate stonecutting recipes
 const stonecuttables = [
@@ -1576,12 +1577,12 @@ glassTypes.forEach((glassType) => {
         'crimson_wood'
     ];
     chippedGlassTypes.forEach((chippedGlassType) => {
-        for (i = 1; i <= 6; i++) {
+        for (let i = 1; i <= 6; i++) {
             colorlessGlass.push(`chipped:${chippedGlassType}_${glassType}_${i}`);
         }
     });
     if (glassTypes == 'glass') {
-        for (i = 1; i <= 14; i++) {
+        for (let i = 1; i <= 14; i++) {
             colorlessGlass.push(`chipped:glass_${i}`);
         }
     }
@@ -1664,7 +1665,7 @@ colors.forEach((color) => {
         let stones = [`minecraft:${color}_${chippedType}`],
             indexLength = 18;
 
-        for (i = 1; i <= indexLength; i++) {
+        for (let i = 1; i <= indexLength; i++) {
             stones.push(`chipped:${color}_${chippedType}_${i}`);
         }
         //@Chisel
@@ -1729,10 +1730,10 @@ colors.forEach((color) => {
 });
 
 // @Chisel Planks
-chiselPlankTypes = ['oak', 'spruce', 'birch', 'acacia', 'jungle', 'dark_oak'];
-chippedOnlyPlankTypes = ['warped', 'crimson'];
-plankTypes = chiselPlankTypes.concat(chippedOnlyPlankTypes);
-chiselPlankVariants = [
+let chiselPlankTypes = ['oak', 'spruce', 'birch', 'acacia', 'jungle', 'dark_oak'];
+let chippedOnlyPlankTypes = ['warped', 'crimson'];
+let plankTypes = chiselPlankTypes.concat(chippedOnlyPlankTypes);
+let chiselPlankVariants = [
     'large_planks',
     'crude_horizontal_planks',
     'vertical_planks',
@@ -1758,7 +1759,7 @@ plankTypes.forEach((plankType) => {
     //         stones.push(`chisel:planks/${plankType}/${chiselPlankVariant}`);
     //     });
     // }
-    for (i = 1; i <= numberChippedVariants; i++) {
+    for (let i = 1; i <= numberChippedVariants; i++) {
         stones.push(`chipped:${plankType}_planks_${i}`);
     }
     stonecuttables.push({

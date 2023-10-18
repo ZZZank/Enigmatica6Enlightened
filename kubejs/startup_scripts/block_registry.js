@@ -1,3 +1,4 @@
+'use strict';
 onEvent('block.registry', (event) => {
     const basicBlocks = [
         { name: 'firmament', material: 'rock', hardness: 2 },

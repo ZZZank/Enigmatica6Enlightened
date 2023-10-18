@@ -1,5 +1,6 @@
+'use strict';
 onEvent('item.tags', (event) => {
-    var types = ['storage_blocks', 'ingots', 'nuggets', 'dusts', 'plates', 'rods', 'gears'],
+    let types = ['storage_blocks', 'ingots', 'nuggets', 'dusts', 'plates', 'rods', 'gears'],
         substitutionPairs = [
             {
                 base: 'gold',
@@ -12,7 +13,7 @@ onEvent('item.tags', (event) => {
         ];
     types.forEach((type) => {
         substitutionPairs.forEach((substitutionPair) => {
-            var base = substitutionPair.base;
+            let base = substitutionPair.base;
             substitutionPair.substitutes.forEach((substitute) => {
                 event
                     .get(`forge:${type}/${base}_${substitute}`)

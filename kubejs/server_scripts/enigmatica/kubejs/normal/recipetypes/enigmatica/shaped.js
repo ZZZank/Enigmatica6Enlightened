@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isNormalMode == false) {
         return;
@@ -143,7 +144,7 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        var dupes = [
+        let dupes = [
             'palo_verde',
             'withering_oak',
             'blue_archwood',

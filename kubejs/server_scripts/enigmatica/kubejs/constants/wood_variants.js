@@ -1,8 +1,9 @@
-//priority: 1000
+// priority: 1000
+'use strict';
 
 // Used to populate the buildWoodVariants constant - Add variants here to enable compat with various cutting mechanics.
 // Be aware that you may need to specify exceptions in the loop below for this to work properly.
-var woodVariantsToConstruct = [
+let woodVariantsToConstruct = [
     'minecraft:acacia',
     'minecraft:birch',
     'minecraft:dark_oak',
@@ -88,13 +89,13 @@ var woodVariantsToConstruct = [
     // 'sushigocrafting:avocado'
 ];
 
-var buildWoodVariants = [];
+let buildWoodVariants = [];
 
 woodVariantsToConstruct.forEach((variant) => {
-    var splitVariant = variant.split(':');
-    var modId = splitVariant[0];
-    var logType = splitVariant[1];
-    var logSuffix,
+    let splitVariant = variant.split(':');
+    let modId = splitVariant[0];
+    let logType = splitVariant[1];
+    let logSuffix,
         woodSuffix,
         logBlockStripped,
         woodBlockStripped,
@@ -220,7 +221,7 @@ woodVariantsToConstruct.forEach((variant) => {
         default:
     }
 
-    var woodVariant = {
+    let woodVariant = {
         modId: modId,
         logType: logType,
         logBlock: logBlock,

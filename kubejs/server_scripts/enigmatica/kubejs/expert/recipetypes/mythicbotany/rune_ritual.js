@@ -1,10 +1,11 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
 
     const id_prefix = 'enigmatica:expert/mythicbotany/rune_ritual/';
-    recipes = [
+    let recipes = [
         {
             group: 'rune_rituals',
             center: { item: 'mythicbotany:fimbultyr_tablet' },

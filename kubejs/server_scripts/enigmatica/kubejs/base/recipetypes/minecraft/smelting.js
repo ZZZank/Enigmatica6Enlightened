@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/minecraft/smelting/';
     const recipes = [
@@ -212,7 +213,7 @@ onEvent('recipes', (event) => {
         });
     });
 
-    var stones = [
+    let stones = [
         'granite',
         'diorite',
         'andesite',
@@ -225,7 +226,7 @@ onEvent('recipes', (event) => {
     ];
 
     stones.forEach((cobblestone) => {
-        var stone = `create:${cobblestone}`;
+        let stone = `create:${cobblestone}`;
         if (!Item.exists(stone)) {
             stone = `minecraft:${cobblestone}`;
         }

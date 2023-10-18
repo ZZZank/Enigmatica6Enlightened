@@ -293,11 +293,8 @@
 				}
 				{
 					id: "0000000000000B05"
-					type: "command"
-					title: "Farmer's Delight"
-					icon: "kubejs:farmers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:farmers_delight"
 				}
 			]
 		}
@@ -319,11 +316,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000B03"
-				type: "command"
-				title: "Rare Resourceful Bees Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_resourceful_bees_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "resourceful_bees"
+					}
+				}
 			}]
 		}
 		{
@@ -345,11 +345,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000B02"
-				type: "command"
-				title: "Epic Resourceful Bees Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_resourceful_bees_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "resourceful_bees"
+					}
+				}
 			}]
 		}
 		{
@@ -382,11 +385,14 @@
 			rewards: [
 				{
 					id: "0000000000000AF9"
-					type: "command"
-					title: "Legendary Resourceful Bees Loot Box"
-					icon: "kubejs:legendary_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_resourceful_bees_loot_legendary"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:legendary_lootbox"
+						Count: 1b
+						tag: {
+							mod: "resourceful_bees"
+						}
+					}
 				}
 				{
 					id: "0000000000000AFA"
@@ -460,11 +466,8 @@
 				}
 				{
 					id: "0000000000000C0A"
-					type: "command"
-					title: "Alchemist's Delight"
-					icon: "kubejs:alchemists_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:alchemists_delight"
 				}
 			]
 		}
@@ -487,11 +490,8 @@
 			rewards: [
 				{
 					id: "0000000000000B1E"
-					type: "command"
-					title: "Miner's Delight"
-					icon: "kubejs:miners_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:miners_delight"
 				}
 				{
 					id: "0000000000000B1F"
@@ -521,11 +521,8 @@
 			rewards: [
 				{
 					id: "0000000000000B1A"
-					type: "command"
-					title: "Sorcerer's Delight"
-					icon: "kubejs:sorcerers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:sorcerers_delight"
 				}
 				{
 					id: "0000000000000B1B"
@@ -613,11 +610,8 @@
 				}
 				{
 					id: "0000000000000C0C"
-					type: "command"
-					title: "Scavenger's Delight"
-					icon: "kubejs:scavengers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:scavengers_delight"
 				}
 			]
 		}
@@ -640,11 +634,8 @@
 				}
 				{
 					id: "0000000000000C0D"
-					type: "command"
-					title: "Farmer's Delight"
-					icon: "kubejs:farmers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:farmers_delight"
 				}
 			]
 		}
@@ -691,11 +682,8 @@
 				}
 				{
 					id: "0000000000000C0B"
-					type: "command"
-					title: "Scavenger's Delight"
-					icon: "kubejs:scavengers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:scavengers_delight"
 				}
 			]
 		}
@@ -712,11 +700,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000AFE"
-				type: "command"
-				title: "Rare Resourceful Bees Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_resourceful_bees_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "resourceful_bees"
+					}
+				}
 			}]
 		}
 		{
@@ -732,11 +723,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000AFD"
-				type: "command"
-				title: "Epic Resourceful Bees Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_resourceful_bees_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "resourceful_bees"
+					}
+				}
 			}]
 		}
 		{
@@ -753,11 +747,14 @@
 			rewards: [
 				{
 					id: "0000000000000AFB"
-					type: "command"
-					title: "Legendary Resourceful Bees Loot Box"
-					icon: "kubejs:legendary_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_resourceful_bees_loot_legendary"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:legendary_lootbox"
+						Count: 1b
+						tag: {
+							mod: "resourceful_bees"
+						}
+					}
 				}
 				{
 					id: "0000000000000AFC"
@@ -880,11 +877,14 @@
 			}]
 			rewards: [{
 				id: "4D2AFDFEAA880455"
-				type: "command"
-				title: "Rare Resourceful Bees Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_resourceful_bees_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "resourceful_bees"
+					}
+				}
 			}]
 		}
 		{

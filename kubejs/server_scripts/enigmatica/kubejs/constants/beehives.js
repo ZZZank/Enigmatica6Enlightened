@@ -1,4 +1,5 @@
-//priority: 1000
+// priority: 1000
+'use strict';
 
 const tier0Hives = [
     'resourcefulbees:bee_nest',

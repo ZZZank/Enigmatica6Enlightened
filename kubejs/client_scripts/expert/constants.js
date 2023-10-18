@@ -1,4 +1,5 @@
-//priority: 1001
+// priority: 1001
+'use strict';
 
 const isAE2Loaded = Platform.getMods().containsKey('appliedenergistics2');
 

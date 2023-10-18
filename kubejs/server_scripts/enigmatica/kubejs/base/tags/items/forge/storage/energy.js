@@ -1,7 +1,8 @@
+'use strict';
 onEvent('item.tags', (event) => {
-    var items = ['immersiveengineering:powerpack', 'mekanism:energy_tablet'];
+    let items = ['immersiveengineering:powerpack', 'mekanism:energy_tablet'];
 
-    var tags = ['forge:storage', 'forge:storage/energy'];
+    let tags = ['forge:storage', 'forge:storage/energy'];
 
     tags.forEach((tag) => {
         event

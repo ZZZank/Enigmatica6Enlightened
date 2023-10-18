@@ -35,11 +35,8 @@
 			}]
 			rewards: [{
 				id: "0000000000000A93"
-				type: "command"
-				title: "Farmer's Delight"
-				icon: "kubejs:farmers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
-				player_command: false
+				type: "item"
+				item: "kubejs:farmers_delight"
 			}]
 		}
 		{
@@ -176,6 +173,18 @@
 				id: "0000000000000FEA"
 				type: "item"
 				item: "mekanism:robit"
+			}]
+			rewards: [{
+				id: "26A2B9D93CA5425B"
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "botania"
+					}
+				}
+				count: 27
 			}]
 		}
 		{

@@ -1,3 +1,5 @@
+'use strict';
+
 onEvent('jei.information', (event) => {
     if (global.isExpertMode == false) {
         return;

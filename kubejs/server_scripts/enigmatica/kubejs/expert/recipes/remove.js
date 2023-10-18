@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
@@ -99,8 +100,6 @@ onEvent('recipes', (event) => {
         'modularrouters:sender_module_1_alt',
 
         /naturesaura:animal_spawner\/sheep_/,
-        'naturesaura:altar/tainted_gold',
-        'naturesaura:altar/tainted_gold_block',
 
         'pneumaticcraft:explosion_crafting/compressed_iron_block',
         'pneumaticcraft:explosion_crafting/compressed_iron_ingot',
@@ -257,16 +256,17 @@ onEvent('recipes', (event) => {
         { output: 'mythicbotany:mana_collector', id: 'mythicbotany:mana_collector' },
         { output: 'mythicbotany:kvasir_mead', id: 'mythicbotany:kvasir_mead' },
 
-        { output: 'naturesaura:calling_spirit', id: 'naturesaura:calling_spirit' },
         { output: 'naturesaura:animal_spawner', id: 'naturesaura:animal_spawner' },
+        { output: 'naturesaura:calling_spirit', id: 'naturesaura:calling_spirit' },
+        { output: 'naturesaura:death_ring', id: 'naturesaura:death_ring' },
+        { output: 'naturesaura:ender_access', id: 'naturesaura:ender_access' },
+        { output: 'naturesaura:ender_crate', id: 'naturesaura:ender_crate' },
         { output: 'naturesaura:gold_fiber', id: 'naturesaura:gold_fiber' },
         { output: 'naturesaura:gold_brick', id: 'naturesaura:gold_brick' },
         { output: 'naturesaura:generator_limit_remover', id: 'naturesaura:generator_limit_remover' },
-        { output: 'naturesaura:shockwave_creator', id: 'naturesaura:shockwave_creator' },
-        { output: 'naturesaura:death_ring', id: 'naturesaura:death_ring' },
-        { output: 'naturesaura:ender_crate', id: 'naturesaura:ender_crate' },
-        { output: 'naturesaura:ender_access', id: 'naturesaura:ender_access' },
         { output: 'naturesaura:gold_nether_brick', id: 'naturesaura:gold_nether_brick' },
+        { output: 'naturesaura:shockwave_creator', id: 'naturesaura:shockwave_creator' },
+        { output: 'naturesaura:tainted_gold', id: 'naturesaura:tainted_gold' },
 
         { output: 'pneumaticcraft:air_compressor', id: 'pneumaticcraft:air_compressor' },
         { output: 'pneumaticcraft:advanced_air_compressor', id: 'pneumaticcraft:advanced_air_compressor' },

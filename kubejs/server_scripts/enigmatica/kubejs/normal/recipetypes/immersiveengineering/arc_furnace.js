@@ -1,9 +1,10 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isNormalMode == false) {
         return;
     }
     const id_prefix = 'enigmatica:normal/immersiveengineering/arc_furnace/';
-    recipes = [
+    let recipes = [
         {
             input1: '#forge:ingots/iron',
             secondaries: ['#forge:dusts/ender'],

@@ -1,5 +1,6 @@
+'use strict';
 onEvent('recipes', (event) => {
-    var nether_end_biomes = end_biomes.concat(nether_biomes);
+    let nether_end_biomes = end_biomes.concat(nether_biomes);
 
     const id_prefix = 'enigmatica:base/industrialforegoing/laser_drill_fluid/';
     const recipes = [

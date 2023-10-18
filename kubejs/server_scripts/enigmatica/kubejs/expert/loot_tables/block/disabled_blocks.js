@@ -1,3 +1,4 @@
+'use strict';
 onEvent('block.loot_tables', (event) => {
     if (global.isExpertMode == false) {
         return;

@@ -1,7 +1,8 @@
+'use strict';
 onEvent('item.tags', (event) => {
-    var exceptions = [];
+    let exceptions = [];
 
-    var tags = ['forge:tools', 'forge:tools/crafting_hammer'];
+    let tags = ['forge:tools', 'forge:tools/crafting_hammer'];
 
     tags.forEach((tag) => {
         event

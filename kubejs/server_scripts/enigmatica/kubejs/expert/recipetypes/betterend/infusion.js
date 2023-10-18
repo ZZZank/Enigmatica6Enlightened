@@ -1,9 +1,10 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
     const id_prefix = 'enigmatica:expert/betterendforge/infusion/';
-    var data = {
+    let data = {
         recipes: [
             /*{
                 input: 'betterendforge:eternal_crystal',

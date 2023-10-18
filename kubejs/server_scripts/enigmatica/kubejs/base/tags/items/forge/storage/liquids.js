@@ -1,12 +1,13 @@
+'use strict';
 onEvent('item.tags', (event) => {
-    var items = [
+    let items = [
         'rftoolsutility:tank',
         'astralsorcery:chalice',
         'thermal:fluid_cell',
         'industrialforegoing:black_hole_controller',
         'mekanism:dynamic_valve'
     ];
-    var exceptions = [
+    let exceptions = [
         'pneumaticcraft:etching_tank',
         'immersivepetroleum:upgrade_tank',
         'mekanism:scuba_tank',
@@ -16,7 +17,7 @@ onEvent('item.tags', (event) => {
         'mekanism:ultimate_chemical_tank',
         'mekanism:creative_chemical_tank'
     ];
-    var tags = ['forge:storage', 'forge:storage/liquid', 'forge:storage/fluid'];
+    let tags = ['forge:storage', 'forge:storage/liquid', 'forge:storage/fluid'];
 
     tags.forEach((tag) => {
         event

@@ -1,5 +1,6 @@
+'use strict';
 onEvent('server.datapack.low_priority', (event) => {
-    var data = {
+    let data = {
         tools: [
             {
                 item: 'aquaculture:neptunium_bow',
@@ -13,7 +14,7 @@ onEvent('server.datapack.low_priority', (event) => {
             }
         ]
     };
-    var toolList = [];
+    let toolList = [];
     data.tools.forEach((tool) => {
         toolList.push({
             predicate: { item: tool.item },

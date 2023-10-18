@@ -1,3 +1,31 @@
+## Enlightened6 & Enlightened6Expert - 2.2.1 -> 2.3.0
+
+_Using Forge-1.16.5-36.2.39_ | _[Mod Updates](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/changelog_mods_2.3.0.md)_ | _[Modlist](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/modlist_2.3.0.md)_
+
+### Mods Added
+
+  * [Lightspeed - Launch optimizations](https://www.curseforge.com/minecraft/mc-mods/lightspeedmod) (by [ccr4ft3r](https://www.curseforge.com/members/ccr4ft3r/projects))
+
+### Mods Removed
+
+  * [RFTools Power](https://www.curseforge.com/minecraft/mc-mods/rftools-power) (by [McJty](https://www.curseforge.com/members/McJty/projects))
+
+### Fixes
+
+-   [Expert] new tainted_gold recipe causing patchouli error
+-   redunduant recipes in ArsArsenal
+-   [Expert] ingredient Buffer-s not craftable
+
+### Improvements
+
+-   HUGE internal changes, for standardlization and performance
+-   add trades for Neapolitan seeds
+-   add unboxing of actual lootbox item
+-   replace rewards in Quests with actual lootbox item
+-   hide TCon tools in JEI
+
+---
+
 ## Enlightened6 & Enlightened6Expert - 2.2.0 -> 2.2.1
 
 ## Due to Eidolon removal, this version is a BREAKING CHANGE! please be cautious if you want to open old worlds in this version

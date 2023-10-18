@@ -1,4 +1,6 @@
-//priority: 900
+// priority: 900
+'use strict';
+'use strict';
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/unification/unify_dyes/';
 
@@ -10,7 +12,6 @@ onEvent('recipes', (event) => {
         //integrateddynamics_dye_squeezing(event, recipe, id_prefix);
         mekanism_dye_enriching(event, recipe, id_prefix);
         mekanism_pigment_extracting(event, recipe, id_prefix);
-        // pedestals_dye_crushing(event, recipe, id_prefix);
         thermal_dye_centrifuge(event, recipe, id_prefix);
         atum_quern_milling(event, recipe, id_prefix);
         shapeless_dye_crafting(event, recipe, id_prefix);
@@ -28,7 +29,7 @@ function botania_dye_pestle_mortar(event, recipe, id_prefix) {
         return;
     }
 
-    var baseCount = 2,
+    let baseCount = 2,
         multiplier = 1;
     if (recipe.type == 'large') {
         multiplier = 2;
@@ -37,21 +38,21 @@ function botania_dye_pestle_mortar(event, recipe, id_prefix) {
         multiplier = 2;
     }
 
-    var count = baseCount * multiplier,
+    let count = baseCount * multiplier,
         output = Item.of(recipe.primary, count),
         inputs = [recipe.input, 'botania:pestle_and_mortar'];
 
-    fallback_id(event.shapeless(output, inputs), `${id_prefix}${arguments.callee.name}/`);
+    fallback_id(event.shapeless(output, inputs), `${id_prefix}botania_dye_pestle_mortar/`);
 }
 
 function create_dye_milling(event, recipe, id_prefix) {
-    var baseCount = 2,
+    let baseCount = 2,
         multiplier = 1;
     if (recipe.type == 'large') {
         multiplier = 2;
     }
 
-    var count = baseCount * multiplier,
+    let count = baseCount * multiplier,
         outputs = [
             Item.of(recipe.primary, count),
             Item.of(recipe.secondary).withCount(count).withChance(0.25),
@@ -59,17 +60,17 @@ function create_dye_milling(event, recipe, id_prefix) {
         ],
         input = recipe.input;
 
-    fallback_id(event.recipes.create.milling(outputs, input), `${id_prefix}${arguments.callee.name}/`);
+    fallback_id(event.recipes.create.milling(outputs, input), `${id_prefix}create_dye_milling/`);
 }
 
 function ars_nouveau_dye_crushing(event, recipe, id_prefix) {
-    var baseCount = 2,
+    let baseCount = 2,
         multiplier = 1;
     if (recipe.type == 'large') {
         multiplier = 2;
     }
 
-    var count = baseCount * multiplier;
+    let count = baseCount * multiplier;
 
     fallback_id(
         event.custom({
@@ -80,17 +81,17 @@ function ars_nouveau_dye_crushing(event, recipe, id_prefix) {
                 Item.of(recipe.secondary).withCount(count).withChance(0.25)
             ]
         }),
-        `${id_prefix}${arguments.callee.name}/`
+        `${id_prefix}ars_nouveau_dye_crushing/`
     );
 }
 
 function immersiveengineering_dye_crusher(event, recipe, id_prefix) {
-    var baseCount = 2,
+    let baseCount = 2,
         multiplier = 1;
     if (recipe.type == 'large') {
         multiplier = 2;
     }
-    var count = baseCount * multiplier,
+    let count = baseCount * multiplier,
         output = Item.of(recipe.primary, count),
         extras = [
             Item.of(recipe.secondary).withCount(count).withChance(0.25),
@@ -100,69 +101,29 @@ function immersiveengineering_dye_crusher(event, recipe, id_prefix) {
 
     fallback_id(
         event.recipes.immersiveengineering.crusher(output, input, extras),
-        `${id_prefix}${arguments.callee.name}/`
+        `${id_prefix}immersiveengineering_dye_crusher/`
     );
 }
 
-// function integrateddynamics_dye_squeezing(event, recipe, id_prefix) {
-//     var baseCount = 2,
-//         multiplier = 1;
-
-//     if (recipe.type == 'large') {
-//         multiplier = 2;
-//     }
-
-//     var count = baseCount * multiplier;
-
-//     event.custom({
-//         type: 'integrateddynamics:squeezer',
-//         item: {
-//             item: recipe.input
-//         },
-//         result: {
-//             items: [
-//                 { item: { item: recipe.primary, count: count } },
-//                 { item: { item: recipe.secondary, count: count }, chance: 0.25 },
-//                 { item: { item: recipe.tertiary }, chance: 0.05 }
-//             ]
-//         }
-//     });
-
-//     fallback_id(event.custom({
-//         type: 'integrateddynamics:mechanical_squeezer',
-//         item: {
-//             item: recipe.input
-//         },
-//         result: {
-//             items: [
-//                 { item: { item: recipe.primary, count: count } },
-//                 { item: { item: recipe.secondary, count: count }, chance: 0.25 },
-//                 { item: { item: recipe.tertiary }, chance: 0.05 }
-//             ]
-//         },
-//         duration: 5
-//     }), `${id_prefix}${arguments.callee.name}/`);
-// }
-
 function mekanism_dye_enriching(event, recipe, id_prefix) {
-    var baseCount = 3,
+    let baseCount = 3,
         multiplier = 1;
     if (recipe.type == 'large') {
         multiplier = 2;
     }
 
-    var count = baseCount * multiplier,
+    let count = baseCount * multiplier,
         output = Item.of(recipe.primary, count),
         input = recipe.input;
 
-    fallback_id(event.recipes.mekanism.enriching(output, input), `${id_prefix}${arguments.callee.name}/`);
+    fallback_id(event.recipes.mekanism.enriching(output, input), `${id_prefix}mekanism_dye_enriching/`);
 }
 
 function mekanism_pigment_extracting(event, recipe, id_prefix) {
     if (!recipe.primary.includes('_dye')) {
         return;
     }
-    var baseCount = 3,
+    let baseCount = 3,
         multiplier = 1;
     if (recipe.type == 'large') {
         multiplier = 2;
@@ -177,7 +138,7 @@ function mekanism_pigment_extracting(event, recipe, id_prefix) {
             input: { ingredient: { item: recipe.input } },
             output: { pigment: `mekanism:${dye_color}`, amount: 256 * count }
         }),
-        `${id_prefix}${arguments.callee.name}/`
+        `${id_prefix}mekanism_pigment_extracting/`
     );
 }
 
@@ -186,13 +147,13 @@ function pedestals_dye_crushing(event, recipe, id_prefix) {
         return;
     }
 
-    var baseCount = 2,
+    let baseCount = 2,
         multiplier = 1;
     if (recipe.type == 'large') {
         multiplier = 2;
     }
 
-    var count = baseCount * multiplier,
+    let count = baseCount * multiplier,
         output = recipe.primary,
         input = recipe.input;
 
@@ -202,7 +163,7 @@ function pedestals_dye_crushing(event, recipe, id_prefix) {
             ingredient: { item: input },
             result: { item: output, count: count }
         }),
-        `${id_prefix}${arguments.callee.name}/`
+        `${id_prefix}pedestals_dye_crushing/`
     );
 }
 
@@ -211,13 +172,13 @@ function thermal_dye_centrifuge(event, recipe, id_prefix) {
         return;
     }
 
-    var baseCount = 2,
+    let baseCount = 2,
         multiplier = 1;
     if (recipe.type == 'large') {
         multiplier = 2;
     }
 
-    var count = baseCount * multiplier,
+    let count = baseCount * multiplier,
         outputs = [
             Item.of(recipe.primary, count),
             Item.of(recipe.secondary).withCount(count).withChance(0.25),
@@ -225,17 +186,17 @@ function thermal_dye_centrifuge(event, recipe, id_prefix) {
         ],
         input = recipe.input;
 
-    fallback_id(event.recipes.thermal.centrifuge(outputs, input), `${id_prefix}${arguments.callee.name}/`);
+    fallback_id(event.recipes.thermal.centrifuge(outputs, input), `${id_prefix}thermal_dye_centrifuge/`);
 }
 
 function atum_quern_milling(event, recipe, id_prefix) {
-    var baseCount = 4,
+    let baseCount = 4,
         multiplier = 1;
     if (recipe.type == 'large') {
         multiplier = 2;
     }
 
-    var count = baseCount * multiplier,
+    let count = baseCount * multiplier,
         output = recipe.primary,
         input = recipe.input,
         rotations = 1 * multiplier;
@@ -247,7 +208,7 @@ function atum_quern_milling(event, recipe, id_prefix) {
             result: { item: output, count: count },
             rotations: rotations
         }),
-        `${id_prefix}${arguments.callee.name}/`
+        `${id_prefix}atum_quern_milling/`
     );
 }
 
@@ -255,10 +216,10 @@ function shapeless_dye_crafting(event, recipe, id_prefix) {
     if (recipe.input.split(':')[0] !== 'atum') {
         return;
     }
-    var output = Item.of(recipe.primary),
+    let output = Item.of(recipe.primary),
         inputs = [recipe.input];
 
-    fallback_id(event.shapeless(output, inputs), `${id_prefix}${arguments.callee.name}/`);
+    fallback_id(event.shapeless(output, inputs), `${id_prefix}shapeless_dye_crafting/`);
 }
 
 function occultism_dye_crushing(event, recipe, id_prefix) {
@@ -266,13 +227,13 @@ function occultism_dye_crushing(event, recipe, id_prefix) {
         return;
     }
 
-    var baseCount = 2,
+    let baseCount = 2,
         multiplier = 1;
     if (recipe.type == 'large') {
         multiplier = 2;
     }
 
-    var count = baseCount * multiplier,
+    let count = baseCount * multiplier,
         output = recipe.primary,
         input = recipe.input;
 
@@ -283,6 +244,6 @@ function occultism_dye_crushing(event, recipe, id_prefix) {
             result: { item: output, count: count },
             crushing_time: 50
         }),
-        `${id_prefix}${arguments.callee.name}/`
+        `${id_prefix}occultism_dye_crushing/`
     );
 }

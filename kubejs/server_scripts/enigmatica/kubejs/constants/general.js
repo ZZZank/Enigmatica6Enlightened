@@ -1,4 +1,5 @@
-//priority: 1001
+// priority: 1001
+'use strict';
 
 const air = 'minecraft:air';
 

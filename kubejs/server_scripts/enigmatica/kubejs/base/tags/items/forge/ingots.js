@@ -1,3 +1,4 @@
+'use strict';
 onEvent('item.tags', (event) => {
     event.get('forge:ingots/uraninite').add('powah:uraninite');
     event.get('forge:ingots/energized_steel').add('powah:steel_energized');

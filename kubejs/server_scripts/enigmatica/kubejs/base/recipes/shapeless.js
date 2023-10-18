@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/shapeless/';
     const recipes = [
@@ -587,7 +588,7 @@ onEvent('recipes', (event) => {
     });
 
     materialsToUnify.forEach((material) => {
-        var ore = Item.of(`emendatusenigmatica:${material}_ore`);
+        let ore = Item.of(`emendatusenigmatica:${material}_ore`);
         if (ore.exists) {
             fallback_id(event.shapeless(ore, `#forge:ores/${material}`), id_prefix);
         }

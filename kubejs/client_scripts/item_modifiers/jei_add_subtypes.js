@@ -1,3 +1,5 @@
+'use strict';
+
 onEvent('jei.subtypes', (event) => {
     /*
     /// regex to be supported next version. Can remove direct item calls then and just rely on the regex.

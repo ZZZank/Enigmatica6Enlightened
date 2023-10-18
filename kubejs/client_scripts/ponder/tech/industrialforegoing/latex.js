@@ -1,4 +1,5 @@
 // priority: 9
+'use strict';
 
 onEvent('ponder.registry', (event) => {
     event
@@ -78,7 +79,7 @@ onEvent('ponder.registry', (event) => {
 
                 scene.addKeyframe();
 
-                var ex1 = scene.world().makeSectionIndependent(util.select().fromTo(4, 1, 3, 4, 1, 4));
+                let ex1 = scene.world().makeSectionIndependent(util.select().fromTo(4, 1, 3, 4, 1, 4));
 
                 scene.world().moveSection(ex1, util.vector().of(-1, 0, 0), 10);
 
@@ -111,7 +112,7 @@ onEvent('ponder.registry', (event) => {
 
                 scene.idle(40);
 
-                var tank1 = util.grid().at(5, 2, 3);
+                let tank1 = util.grid().at(5, 2, 3);
                 scene
                     .world()
                     .setBlock(
@@ -125,7 +126,7 @@ onEvent('ponder.registry', (event) => {
                     tank: { FluidName: 'thermal:resin', Amount: 1000 }
                 });
 
-                var tank2 = util.grid().at(3, 2, 3);
+                let tank2 = util.grid().at(3, 2, 3);
                 scene
                     .world()
                     .setBlock(
@@ -368,7 +369,7 @@ onEvent('ponder.registry', (event) => {
                         false
                     );
 
-                var procline = scene
+                let procline = scene
                     .world()
                     .showIndependentSection(util.select().fromTo(4, 1, 2, 4, 1, 6), Facing.down);
 

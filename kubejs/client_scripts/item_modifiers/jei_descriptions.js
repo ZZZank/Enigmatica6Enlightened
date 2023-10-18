@@ -1,8 +1,13 @@
+'use strict';
 onEvent('jei.information', (event) => {
     const recipes = [
         {
             items: ['upgrade_aquatic:elder_guardian_spine'],
             text: ['Obtained by killing Elder Guardian.']
+        },
+        {
+            items: ['neapolitan:mint_milkshake'],
+            text: [`Can "rob" potion effects belonging to one nearby mob.`]
         },
         {
             items: ['farmersdelight:ham'],
@@ -371,7 +376,7 @@ onEvent('jei.information', (event) => {
         },
         {
             items: ['environmental:koi'],
-            text: [`Will not spawn naturally. See Koi Bucket for how to obtain it. `]
+            text: [`Will not spawn naturally. See Koi Bucket for how to obtain. `]
         },
         {
             items: [
@@ -590,7 +595,7 @@ onEvent('jei.information', (event) => {
         );
     });
 
-    var framedDrawers = [
+    let framedDrawers = [
         'compact_drawer',
         'drawer_controller',
         'slave',

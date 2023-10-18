@@ -1,6 +1,7 @@
 // priority: 9
+'use strict';
 
-var itemsToPonder = generatableStone;
+let itemsToPonder = generatableStone;
 itemsToPonder.push('minecraft:stone');
 
 onEvent('ponder.registry', (event) => {
@@ -58,8 +59,8 @@ onEvent('ponder.registry', (event) => {
 
                 scene.idle(20);
 
-                var water = util.getDefaultState('minecraft:water');
-                var stone = util.getDefaultState('minecraft:stone');
+                let water = util.getDefaultState('minecraft:water');
+                let stone = util.getDefaultState('minecraft:stone');
 
                 scene.world().setBlock([3, 2, 3], water, false);
                 scene.idle(10);
@@ -135,8 +136,8 @@ onEvent('ponder.registry', (event) => {
 
                 scene.world().showSection(util.select().layersFrom(1), Facing.down);
 
-                var water = util.getDefaultState('minecraft:water');
-                var scoria = util.getDefaultState('create:scoria');
+                let water = util.getDefaultState('minecraft:water');
+                let scoria = util.getDefaultState('create:scoria');
 
                 scene.idle(40);
 
@@ -201,8 +202,8 @@ onEvent('ponder.registry', (event) => {
 
                 scene.idle(40);
 
-                var water = util.getDefaultState('minecraft:water');
-                var diamondblock = util.getDefaultState('minecraft:diamond_block');
+                let water = util.getDefaultState('minecraft:water');
+                let diamondblock = util.getDefaultState('minecraft:diamond_block');
 
                 let layerHint = new Object();
                 scene
@@ -226,7 +227,7 @@ onEvent('ponder.registry', (event) => {
                 scene.world().setBlock([3, 1, 3], diamondblock, false);
                 scene.idle(30);
 
-                var randStone = [
+                let randStone = [
                     'minecraft:andesite',
                     'byg:pink_sandstone',
                     'astralsorcery:marble_raw',

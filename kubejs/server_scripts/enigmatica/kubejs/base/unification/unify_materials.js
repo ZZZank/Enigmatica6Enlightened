@@ -1,4 +1,6 @@
-//priority: 900
+// priority: 900
+'use strict';
+
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/unification/unify_materials/';
 
@@ -77,10 +79,6 @@ onEvent('recipes', (event) => {
         ars_nouveau_metal_ore_crushing(event, material, ore, dust, ingot);
         ars_nouveau_ingot_gem_crushing(event, material, ingot, dust, gem);
 
-        // pedestals_gem_ore_crushing(event, material, ore, dust, shard, gem);
-        // pedestals_metal_ore_crushing(event, material, ore, ingot, dust);
-        // pedestals_ingot_gem_crushing(event, material, ingot, dust, gem);
-
         thermal_metal_ore_pulverizing(event, material, ore, dust, ingot);
         thermal_gem_ore_pulverizing(event, material, ore, dust, gem, shard);
         thermal_ingot_gem_pulverizing(event, material, ingot, dust, gem);
@@ -100,14 +98,14 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        blacklistedMaterials = ['redstone', 'lapis', 'emerald', 'diamond', 'iron'];
-        for (var i = 0; i < blacklistedMaterials.length; i++) {
+        let blacklistedMaterials = ['redstone', 'lapis', 'emerald', 'diamond', 'iron'];
+        for (let i = 0; i < blacklistedMaterials.length; i++) {
             if (blacklistedMaterials[i] == material) {
                 return;
             }
         }
 
-        var input = `forge:ores/${material}`,
+        let input = `forge:ores/${material}`,
             output,
             count;
         if (shard != air) {
@@ -151,7 +149,7 @@ onEvent('recipes', (event) => {
                 acceptChaliceInput: true,
                 copyNBTToOutputs: false
             }),
-            `${id_prefix}${arguments.callee.name}/`
+            `${id_prefix}astralsorcery_ore_processing_infuser/`
         );
     }
 
@@ -159,7 +157,7 @@ onEvent('recipes', (event) => {
         if (ore == air || ingot == air) {
             return;
         }
-        var tag = `forge:ores/${material}`;
+        let tag = `forge:ores/${material}`;
         fallback_id(
             event.custom({
                 type: 'betterendforge:alloying',
@@ -168,7 +166,7 @@ onEvent('recipes', (event) => {
                 experience: 2,
                 smelttime: 300
             }),
-            `${id_prefix}${arguments.callee.name}/`
+            `${id_prefix}betterend_alloys/`
         );
     }
 
@@ -177,7 +175,7 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        var secondaryOutput, materialProperties;
+        let secondaryOutput, materialProperties;
 
         try {
             materialProperties = oreProcessingSecondaries[material];
@@ -233,7 +231,8 @@ onEvent('recipes', (event) => {
         try {
             var materialProperties = gemProcessingProperties[material],
                 count = materialProperties.bloodmagic.count,
-                inputs = ['#bloodmagic:arc/cuttingfluid', `#forge:ores/${material}`];
+                inputs = ['#bloodmagic:arc/cuttingfluid', `#forge:ores/${material}`],
+                output;
         } catch (err) {
             return;
         }
@@ -259,7 +258,7 @@ onEvent('recipes', (event) => {
                 .syphon(400)
                 .ticks(200)
                 .upgradeLevel(1),
-            `${id_prefix}${arguments.callee.name}/`
+            `${id_prefix}bloodmagic_gem_ore_processing/`
         );
     }
     function bloodmagic_ingot_gem_crushing(event, material, ingot, dust, gem) {
@@ -267,8 +266,9 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        var input,
-            output = dust;
+        let input,
+            output = dust,
+            type;
         if (ingot != air) {
             type = 'ingot';
             input = `#forge:ingots/${material}`;
@@ -291,7 +291,7 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        var primaryOutput = crushed_ore,
+        let primaryOutput = crushed_ore,
             secondaryOutput,
             processingTime,
             stoneOutput = 'minecraft:cobblestone',
@@ -316,9 +316,9 @@ onEvent('recipes', (event) => {
             processingTime = 400;
         }
         // Milling - Lower rates
-        var primaryChance = 0.25,
+        let primaryChance = 0.25,
             secondaryChance = 0.05;
-        var outputs = [
+        let outputs = [
             Item.of(primaryOutput),
             Item.of(primaryOutput, primaryCount).withChance(primaryChance),
             Item.of(secondaryOutput, secondaryCount).withChance(secondaryChance)
@@ -355,7 +355,8 @@ onEvent('recipes', (event) => {
                 primaryCount = materialProperties.create.primaryCount,
                 secondaryCount = materialProperties.create.secondaryCount,
                 secondaryChance = materialProperties.create.secondaryChance,
-                input = `#forge:ores/${material}`;
+                input = `#forge:ores/${material}`,
+                output;
         } catch (err) {
             return;
         }
@@ -395,7 +396,7 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        var input,
+        let input,
             outputs = [Item.of(dust, 1)],
             processingTime = 300;
         if (ingot != air) {
@@ -408,7 +409,7 @@ onEvent('recipes', (event) => {
 
         fallback_id(
             event.recipes.create.milling(outputs, input).processingTime(processingTime),
-            `${id_prefix}${arguments.callee.name}/`
+            `${id_prefix}create_ingot_gem_milling/`
         );
     }
 
@@ -417,8 +418,8 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        let output = Item.of(crushed_ore, 5),
-            input = `#forge:storage_blocks/${material}`;
+        let input = `#forge:storage_blocks/${material}`,
+            output = Item.of(crushed_ore, 5);
 
         // Crush Blocks to Crushed Ore
         event.recipes.create
@@ -509,7 +510,7 @@ onEvent('recipes', (event) => {
         });
 
         if (ore != air && ingot != air) {
-            var materialProperties, secondaryFluid;
+            let materialProperties, secondaryFluid;
 
             try {
                 materialProperties = oreProcessingSecondaries[material];
@@ -575,8 +576,8 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        let output = dust,
-            input = [`#forge:ores/${material}`],
+        let input = [`#forge:ores/${material}`],
+            output = dust,
             hammer = '#forge:tools/crafting_hammer';
 
         if (gem != air) {
@@ -591,12 +592,12 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        var output = dust,
-            input = `#forge:gems/${material}`;
+        let input = `#forge:gems/${material}`,
+            output = dust;
 
         fallback_id(
             event.recipes.immersiveengineering.crusher(output, input).energy(2000),
-            `${id_prefix}${arguments.callee.name}/`
+            `${id_prefix}immersiveengineering_gem_crushing/`
         );
     }
     function immersiveengineering_coin_pressing(event, material, ingot, nugget, coin) {
@@ -604,14 +605,14 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        var output = Item.of(coin, 3),
-            input = `#forge:ingots/${material}`,
+        let input = `#forge:ingots/${material}`,
+            output = Item.of(coin, 3),
             mold = `#thermal:crafting/dies/coin`;
 
         // Ingots to Coins
         fallback_id(
             event.recipes.immersiveengineering.metal_press(output, input, mold),
-            `${id_prefix}${arguments.callee.name}/`
+            `${id_prefix}immersiveengineering_coin_pressing/`
         );
 
         // Nuggets to Coins
@@ -619,7 +620,7 @@ onEvent('recipes', (event) => {
         input = `3x #forge:nuggets/${material}`;
         fallback_id(
             event.recipes.immersiveengineering.metal_press(output, input, mold),
-            `${id_prefix}${arguments.callee.name}/`
+            `${id_prefix}immersiveengineering_coin_pressing/`
         );
     }
 
@@ -629,12 +630,12 @@ onEvent('recipes', (event) => {
         }
 
         if (material == 'signalum' || material == 'lumium' || material == 'enderium') {
-            var output = dust,
-                input = `#forge:ingots/${material}`;
+            let input = `#forge:ingots/${material}`,
+                output = dust;
 
             fallback_id(
                 event.recipes.immersiveengineering.crusher(output, input).energy(2000),
-                `${id_prefix}${arguments.callee.name}/`
+                `${id_prefix}immersiveengineering_ingot_crushing/`
             );
         }
     }
@@ -689,8 +690,9 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        var input,
-            output = dust;
+        let input,
+            output = dust,
+            type;
         if (ingot != air) {
             type = 'ingot';
             input = `#forge:ingots/${material}`;
@@ -718,7 +720,8 @@ onEvent('recipes', (event) => {
         try {
             var materialProperties = gemProcessingProperties[material],
                 count = materialProperties.mekanism.count,
-                input = `#forge:ores/${material}`;
+                input = `#forge:ores/${material}`,
+                output;
         } catch (err) {
             return;
         }
@@ -757,8 +760,8 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        blacklistedMaterials = ['copper', 'gold', 'iron', 'lead', 'osmium', 'tin', 'uranium'];
-        for (var i = 0; i < blacklistedMaterials.length; i++) {
+        let blacklistedMaterials = ['copper', 'gold', 'iron', 'lead', 'osmium', 'tin', 'uranium'];
+        for (let i = 0; i < blacklistedMaterials.length; i++) {
             if (blacklistedMaterials[i] == material) {
                 return;
             }
@@ -852,16 +855,16 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        blacklistedMaterials = ['amber', 'ender'];
+        let blacklistedMaterials = ['amber', 'ender'];
 
-        for (var i = 0; i < blacklistedMaterials.length; i++) {
+        for (let i = 0; i < blacklistedMaterials.length; i++) {
             if (blacklistedMaterials[i] == material) {
                 return;
             }
         }
 
-        var output = gem,
-            input = `#forge:ores/${material}`;
+        let input = `#forge:ores/${material}`,
+            output = gem;
 
         event.smelting(output, input).xp(0.7).xp(0.7).id(`${id_prefix}smelting/${material}/gem/from_ore`);
         event.blasting(output, input).xp(0.7).xp(0.7).id(`${id_prefix}blasting/${material}/gem/from_ore`);
@@ -872,16 +875,16 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        blacklistedMaterials = ['starmetal'];
+        let blacklistedMaterials = ['starmetal'];
 
-        for (var i = 0; i < blacklistedMaterials.length; i++) {
+        for (let i = 0; i < blacklistedMaterials.length; i++) {
             if (blacklistedMaterials[i] == material) {
                 return;
             }
         }
 
-        var output = ingot,
-            input = `#forge:dusts/${material}`;
+        let input = `#forge:dusts/${material}`,
+            output = ingot;
 
         event.smelting(output, input).xp(0.7).id(`${id_prefix}smelting/${material}/ingot/from_dust`);
         event.blasting(output, input).xp(0.7).id(`${id_prefix}blasting/${material}/ingot/from_dust`);
@@ -930,8 +933,7 @@ onEvent('recipes', (event) => {
         if (ore == air || ingot == air || dust == air) {
             return;
         }
-        var output,
-            input = `forge:ores/${material}`,
+        let input = `forge:ores/${material}`,
             output = dust,
             count = 2;
 
@@ -951,15 +953,15 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        blacklistedMaterials = ['silver'];
+        let blacklistedMaterials = ['silver'];
 
-        for (var i = 0; i < blacklistedMaterials.length; i++) {
+        for (let i = 0; i < blacklistedMaterials.length; i++) {
             if (blacklistedMaterials[i] == material) {
                 return;
             }
         }
 
-        var input,
+        let input,
             output = dust;
         if (ingot != air) {
             input = `forge:ingots/${material}`;
@@ -977,7 +979,7 @@ onEvent('recipes', (event) => {
                 crushing_time: 100,
                 ignore_crushing_multiplier: true
             }),
-            `${id_prefix}${arguments.callee.name}/`
+            `${id_prefix}occultism_ingot_gem_crushing/`
         );
     }
 
@@ -988,6 +990,7 @@ onEvent('recipes', (event) => {
 
         try {
             var materialProperties = gemProcessingProperties[material],
+                primaryOutput,
                 primaryCount = materialProperties.thermal.primaryCount,
                 secondaryCount = materialProperties.thermal.secondaryCount,
                 secondaryChance = materialProperties.thermal.secondaryChance,
@@ -1010,7 +1013,7 @@ onEvent('recipes', (event) => {
                 return;
         }
 
-        let secondaryOutput = output;
+        let secondaryOutput = primaryOutput;
 
         if (materialProperties.secondary) {
             secondaryOutput = materialProperties.secondary;
@@ -1032,8 +1035,9 @@ onEvent('recipes', (event) => {
         if (ore == air || ingot == air || dust == air) {
             return;
         }
-        var primaryOutput = dust,
+        let primaryOutput = dust,
             primaryCount = 2,
+            secondaryOutput,
             input = `#forge:ores/${material}`,
             materialProperties;
 
@@ -1067,15 +1071,15 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        blacklistedMaterials = [];
+        let blacklistedMaterials = [];
 
-        for (var i = 0; i < blacklistedMaterials.length; i++) {
+        for (let i = 0; i < blacklistedMaterials.length; i++) {
             if (blacklistedMaterials[i] == material) {
                 return;
             }
         }
 
-        var input,
+        let input,
             output = dust;
         if (ingot != air) {
             input = `#forge:ingots/${material}`;
@@ -1093,14 +1097,14 @@ onEvent('recipes', (event) => {
             })
             .id(`ars_nouveau:crushing/${material}_dust`);
     }
-
+    /*
     function pedestals_gem_ore_crushing(event, material, ore, dust, shard, gem) {
         if (ore == air) {
             return;
         }
 
         try {
-            var materialProperties = gemProcessingProperties[material],
+            let materialProperties = gemProcessingProperties[material],
                 count = materialProperties.pedestals.count,
                 input = `forge:ores/${material}`,
                 output;
@@ -1130,12 +1134,13 @@ onEvent('recipes', (event) => {
             })
             .id(`pedestals:pedestal_crushing/dust${material}`);
     }
+*/
+    /*
     function pedestals_metal_ore_crushing(event, material, ore, ingot, dust) {
         if (ore == air || ingot == air || dust == air) {
             return;
         }
-        var output,
-            input = `forge:ores/${material}`,
+        let input = `forge:ores/${material}`,
             output = dust,
             count = 2;
 
@@ -1147,45 +1152,16 @@ onEvent('recipes', (event) => {
             })
             .id(`pedestals:pedestal_crushing/dust${material}`);
     }
-
-    function pedestals_ingot_gem_crushing(event, material, ingot, dust, gem) {
-        if (dust == air) {
-            return;
-        }
-
-        var input,
-            output = dust;
-        if (ingot != air) {
-            input = `forge:ingots/${material}`;
-        } else if (gem != air) {
-            input = `forge:gems/${material}`;
-        } else {
-            return;
-        }
-
-        fallback_id(
-            event.custom({
-                type: 'pedestals:pedestal_crushing',
-                ingredient: {
-                    tag: input
-                },
-                result: {
-                    item: output,
-                    count: 1
-                }
-            }),
-            `${id_prefix}${arguments.callee.name}/`
-        );
-    }
-
+*/
     function thermal_metal_ore_pulverizing(event, material, ore, dust, ingot) {
         if (ore == air || dust == air || ingot == air) {
             return;
         }
 
-        var primaryOutput = dust,
-            stoneOutput = 'minecraft:gravel',
+        let primaryOutput = dust,
             primaryCount = 2,
+            secondaryOutput,
+            stoneOutput = 'minecraft:gravel',
             input = `#forge:ores/${material}`,
             experience = 0.2,
             materialProperties;
@@ -1204,7 +1180,7 @@ onEvent('recipes', (event) => {
             secondaryOutput = dust;
         }
 
-        outputs = [
+        let outputs = [
             Item.of(primaryOutput, primaryCount),
             Item.of(secondaryOutput).chance(0.1),
             Item.of(stoneOutput).chance(0.2)
@@ -1228,6 +1204,7 @@ onEvent('recipes', (event) => {
         try {
             var materialProperties = gemProcessingProperties[material],
                 stoneOutput = materialProperties.stoneOutput,
+                primaryOutput,
                 primaryCount = materialProperties.thermal.primaryCount,
                 secondaryCount = materialProperties.thermal.secondaryCount,
                 secondaryChance = materialProperties.thermal.secondaryChance,
@@ -1251,13 +1228,13 @@ onEvent('recipes', (event) => {
                 return;
         }
 
-        let secondaryOutput = output;
+        let secondaryOutput = primaryOutput;
 
         if (materialProperties.secondary) {
             secondaryOutput = materialProperties.secondary;
         }
 
-        outputs = [
+        let outputs = [
             Item.of(primaryOutput, primaryCount),
             Item.of(secondaryOutput, secondaryCount).chance(secondaryChance),
             Item.of(stoneOutput).chance(0.2)
@@ -1280,8 +1257,9 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        var input,
-            output = dust;
+        let input,
+            output = dust,
+            type;
         if (ingot != air) {
             type = 'ingot';
             input = `#forge:ingots/${material}`;
@@ -1297,7 +1275,10 @@ onEvent('recipes', (event) => {
             mod: 'thermal',
             type: 'thermal:pulverizer'
         });
-        fallback_id(event.recipes.thermal.pulverizer(output, input), `${id_prefix}${arguments.callee.name}/`);
+        fallback_id(
+            event.recipes.thermal.pulverizer(output, input),
+            `${id_prefix}thermal_ingot_gem_pulverizing/`
+        );
     }
 
     function thermal_metal_casting(event, material, ingot, nugget, gear, rod, plate) {
@@ -1409,8 +1390,9 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        blacklistedMaterials = ['ender'];
-        for (var i = 0; i < blacklistedMaterials.length; i++) {
+        let blacklistedMaterials = ['ender'];
+
+        for (let i = 0; i < blacklistedMaterials.length; i++) {
             if (blacklistedMaterials[i] == material) {
                 return;
             }
@@ -1457,8 +1439,8 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        blacklistedMaterials = ['ender'];
-        for (var i = 0; i < blacklistedMaterials.length; i++) {
+        let blacklistedMaterials = ['ender'];
+        for (let i = 0; i < blacklistedMaterials.length; i++) {
             if (blacklistedMaterials[i] == material) {
                 return;
             }
@@ -1595,8 +1577,8 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        blacklistedMaterials = ['ender'];
-        for (var i = 0; i < blacklistedMaterials.length; i++) {
+        let blacklistedMaterials = ['ender'];
+        for (let i = 0; i < blacklistedMaterials.length; i++) {
             if (blacklistedMaterials[i] == material) {
                 return;
             }
@@ -1644,8 +1626,8 @@ onEvent('recipes', (event) => {
     }
 
     function material_packing_unpacking(event, material, block, ingot, gem, nugget) {
-        blacklistedMaterials = ['ender', 'amber', 'quartz'];
-        for (var i = 0; i < blacklistedMaterials.length; i++) {
+        let blacklistedMaterials = ['ender', 'amber', 'quartz'];
+        for (let i = 0; i < blacklistedMaterials.length; i++) {
             if (blacklistedMaterials[i] == material) {
                 return;
             }

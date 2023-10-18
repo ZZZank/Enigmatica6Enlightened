@@ -1,7 +1,8 @@
+'use strict';
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/immersiveengineering/fertilizer/';
 
-    var data = {
+    let data = {
         recipes: [
             {
                 input: 'industrialforegoing:fertilizer',
