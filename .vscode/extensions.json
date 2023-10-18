@@ -1,0 +1,7 @@
+{
+    "recommendations": [
+        "crizant.insert-use-strict",
+        "esbenp.prettier-vscode",
+        "chouzz.vscode-better-align"
+    ]
+}
