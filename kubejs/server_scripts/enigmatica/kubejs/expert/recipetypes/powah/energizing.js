@@ -204,7 +204,7 @@ onEvent('recipes', (event) => {
         },
         {
             ingredients: [
-                { item: 'rftoolsbase:machine_base' },
+                { item: 'kubejs:power_core_low' },
                 { item: 'powah:capacitor_blazing' },
                 { item: 'powah:capacitor_blazing' },
                 { item: 'powah:capacitor_blazing' },
@@ -219,7 +219,7 @@ onEvent('recipes', (event) => {
         },
         {
             ingredients: [
-                { item: 'rftoolsbase:machine_base' },
+                { item: 'kubejs:power_core_low' },
                 { item: 'powah:capacitor_nitro' },
                 { item: 'powah:capacitor_nitro' },
                 { item: 'powah:capacitor_nitro' },

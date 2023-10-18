@@ -128,13 +128,22 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}liquid_chorus_from_proto_chorus`
         },
         {
-            item_input: { item: 'rftoolsbase:machine_base' },
+            item_input: { item: 'pneumaticcraft:memory_stick' },
             item_output: { item: 'kubejs:power_core_low' },
-            fluid_input: { type: 'pneumaticcraft:fluid', fluid: 'thermal:redstone', amount: 9000 },
+            fluid_input: { type: 'pneumaticcraft:fluid', fluid: 'thermal:redstone', amount: 4500 },
             pressure: 2.0,
             exothermic: false,
             temperature: { min_temp: 1973 },
-            id: 'kubejs:power_core_low'
+            id: `${id_prefix}power_core_low`
+        },
+        {
+            item_input: { item: 'thermal:xp_crystal' },
+            item_output: { item: 'kubejs:power_core_low' },
+            fluid_input: { type: 'pneumaticcraft:fluid', fluid: 'thermal:redstone', amount: 4500 },
+            pressure: 2.0,
+            exothermic: false,
+            temperature: { min_temp: 1973 },
+            id: `${id_prefix}power_core_low_alt`
         },
         {
             fluid_input: { type: 'pneumaticcraft:fluid', fluid: 'mekanism:lithium', amount: 100 },
