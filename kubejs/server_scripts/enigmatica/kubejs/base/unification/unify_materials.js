@@ -231,12 +231,12 @@ onEvent('recipes', (event) => {
         try {
             var materialProperties = gemProcessingProperties[material],
                 count = materialProperties.bloodmagic.count,
-                inputs = ['#bloodmagic:arc/cuttingfluid', `#forge:ores/${material}`];
+                inputs = ['#bloodmagic:arc/cuttingfluid', `#forge:ores/${material}`],
+                output;
         } catch (err) {
             return;
         }
 
-        let output;
         switch (materialProperties.output) {
             case 'dust':
                 output = dust;
@@ -355,12 +355,12 @@ onEvent('recipes', (event) => {
                 primaryCount = materialProperties.create.primaryCount,
                 secondaryCount = materialProperties.create.secondaryCount,
                 secondaryChance = materialProperties.create.secondaryChance,
-                input = `#forge:ores/${material}`;
+                input = `#forge:ores/${material}`,
+                output;
         } catch (err) {
             return;
         }
 
-        let output;
         switch (materialProperties.output) {
             case 'dust':
                 output = dust;
@@ -418,8 +418,8 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        let output = Item.of(crushed_ore, 5),
-            input = `#forge:storage_blocks/${material}`;
+        let input = `#forge:storage_blocks/${material}`,
+            output = Item.of(crushed_ore, 5);
 
         // Crush Blocks to Crushed Ore
         event.recipes.create
@@ -576,8 +576,8 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        let output = dust,
-            input = [`#forge:ores/${material}`],
+        let input = [`#forge:ores/${material}`],
+            output = dust,
             hammer = '#forge:tools/crafting_hammer';
 
         if (gem != air) {
@@ -592,8 +592,8 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        let output = dust,
-            input = `#forge:gems/${material}`;
+        let input = `#forge:gems/${material}`,
+            output = dust;
 
         fallback_id(
             event.recipes.immersiveengineering.crusher(output, input).energy(2000),
@@ -605,8 +605,8 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        let output = Item.of(coin, 3),
-            input = `#forge:ingots/${material}`,
+        let input = `#forge:ingots/${material}`,
+            output = Item.of(coin, 3),
             mold = `#thermal:crafting/dies/coin`;
 
         // Ingots to Coins
@@ -630,8 +630,8 @@ onEvent('recipes', (event) => {
         }
 
         if (material == 'signalum' || material == 'lumium' || material == 'enderium') {
-            let output = dust,
-                input = `#forge:ingots/${material}`;
+            let input = `#forge:ingots/${material}`,
+                output = dust;
 
             fallback_id(
                 event.recipes.immersiveengineering.crusher(output, input).energy(2000),
@@ -720,12 +720,12 @@ onEvent('recipes', (event) => {
         try {
             var materialProperties = gemProcessingProperties[material],
                 count = materialProperties.mekanism.count,
-                input = `#forge:ores/${material}`;
+                input = `#forge:ores/${material}`,
+                output;
         } catch (err) {
             return;
         }
 
-        let output;
         switch (materialProperties.output) {
             case 'dust':
                 output = dust;
@@ -863,8 +863,8 @@ onEvent('recipes', (event) => {
             }
         }
 
-        let output = gem,
-            input = `#forge:ores/${material}`;
+        let input = `#forge:ores/${material}`,
+            output = gem;
 
         event.smelting(output, input).xp(0.7).xp(0.7).id(`${id_prefix}smelting/${material}/gem/from_ore`);
         event.blasting(output, input).xp(0.7).xp(0.7).id(`${id_prefix}blasting/${material}/gem/from_ore`);
@@ -883,8 +883,8 @@ onEvent('recipes', (event) => {
             }
         }
 
-        let output = ingot,
-            input = `#forge:dusts/${material}`;
+        let input = `#forge:dusts/${material}`,
+            output = ingot;
 
         event.smelting(output, input).xp(0.7).id(`${id_prefix}smelting/${material}/ingot/from_dust`);
         event.blasting(output, input).xp(0.7).id(`${id_prefix}blasting/${material}/ingot/from_dust`);
@@ -1097,14 +1097,14 @@ onEvent('recipes', (event) => {
             })
             .id(`ars_nouveau:crushing/${material}_dust`);
     }
-/*
+    /*
     function pedestals_gem_ore_crushing(event, material, ore, dust, shard, gem) {
         if (ore == air) {
             return;
         }
 
         try {
-            let materialProperties = gemProcessingProperties[material],
+            var materialProperties = gemProcessingProperties[material],
                 count = materialProperties.pedestals.count,
                 input = `forge:ores/${material}`,
                 output;
@@ -1112,7 +1112,6 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        let output;
         switch (materialProperties.output) {
             case 'dust':
                 output = dust;
@@ -1136,7 +1135,7 @@ onEvent('recipes', (event) => {
             .id(`pedestals:pedestal_crushing/dust${material}`);
     }
 */
-/*
+    /*
     function pedestals_metal_ore_crushing(event, material, ore, ingot, dust) {
         if (ore == air || ingot == air || dust == air) {
             return;
