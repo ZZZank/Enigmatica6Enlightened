@@ -5,17 +5,6 @@ onEvent('item.tags', (event) => {
         event.get('rftools:crafter').add('rftoolsutility:crafter' + i);
     }
 
-    //Power Cells
-    for (let i = 1; i <= 3; i++) {
-        event.get('rftools:powercell').add('rftoolspower:cell' + i);
-    }
-
-    //Dimensional Cells
-    let dimtiers = ['_simple', '', '_advanced'];
-    dimtiers.forEach(function (tier) {
-        event.get('rftools:dimensionalcell').add('rftoolspower:dimensionalcell' + tier);
-    });
-
     //Quarry Shape Cards
     let quarrycards = ['_fortune', '_silk', ''];
     quarrycards.forEach(function (card) {
