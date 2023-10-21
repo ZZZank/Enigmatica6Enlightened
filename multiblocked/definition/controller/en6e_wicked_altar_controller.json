@@ -1,0 +1,302 @@
+{
+  "version": 2,
+  "location": "en6e:wicked_altar_controller",
+  "traits": {},
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasDynamicShape": false,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 6.0,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
+    "friction": 0.6,
+    "harvestLevel": 1,
+    "stackSize": 64,
+    "tabGroup": "multiblocked.all"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "baseTexture": "multiblocked:infused_iron_block",
+        "frontTexture": "multiblocked:blocks/gregtech_front",
+        "formedAsController": true,
+        "type": "gregtech",
+        "postRenderer": false
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "empty",
+  "basePattern": {
+    "structureDir": [
+      "LEFT",
+      "UP",
+      "BACK"
+    ],
+    "pattern": [
+      [
+        "  AAA  ",
+        "  BBB  ",
+        "       ",
+        "       ",
+        "       ",
+        "       "
+      ],
+      [
+        " A   A ",
+        " BCDEB ",
+        "       ",
+        "       ",
+        "       ",
+        "       "
+      ],
+      [
+        "A     A",
+        "BBBBBBB",
+        "  FFF  ",
+        "       ",
+        "       ",
+        "       "
+      ],
+      [
+        "AGGGGGA",
+        "BGHHHGB",
+        " GHIHG ",
+        " G   G ",
+        " GGGGG ",
+        "   @   "
+      ],
+      [
+        "A     A",
+        "BBBBBBB",
+        "   J   ",
+        "       ",
+        "       ",
+        "   K   "
+      ],
+      [
+        " A   A ",
+        " BBBBB ",
+        "  JLJ  ",
+        "   M   ",
+        "   K   ",
+        "   K   "
+      ],
+      [
+        "  AAA  ",
+        "  BBB  ",
+        "   J   ",
+        "       ",
+        "       ",
+        "       "
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "blocks": [
+          {
+            "id": "ars_nouveau:warding_stone"
+          }
+        ],
+        "type": "blocks"
+      },
+      "controller": {
+        "location": "en6e:wicked_altar_controller",
+        "type": "component"
+      },
+      "B": {
+        "blocks": [
+          {
+            "id": "bloodmagic:woodtilepath"
+          }
+        ],
+        "type": "blocks"
+      },
+      "C": {
+        "blocks": [
+          {
+            "id": "multiblocked:fluid_input"
+          }
+        ],
+        "type": "blocks"
+      },
+      "D": {
+        "blocks": [
+          {
+            "id": "multiblocked:item_output"
+          }
+        ],
+        "type": "blocks"
+      },
+      "E": {
+        "blocks": [
+          {
+            "id": "multiblocked:item_input"
+          }
+        ],
+        "type": "blocks"
+      },
+      "F": {
+        "blocks": [
+          {
+            "id": "betterendforge:andesite_pedestal"
+          }
+        ],
+        "type": "blocks"
+      },
+      "G": {
+        "blocks": [
+          {
+            "id": "quark:dark_elder_prismarine"
+          }
+        ],
+        "type": "blocks"
+      },
+      "H": {
+        "blocks": [
+          {
+            "id": "minecraft:water"
+          }
+        ],
+        "type": "blocks"
+      },
+      "I": {
+        "blocks": [
+          {
+            "id": "minecraft:conduit"
+          }
+        ],
+        "type": "blocks"
+      },
+      "J": {
+        "blocks": [
+          {
+            "id": "minecraft:oak_pressure_plate"
+          }
+        ],
+        "type": "blocks"
+      },
+      "air": {
+        "type": "air"
+      },
+      "K": {
+        "blocks": [
+          {
+            "id": "minecraft:nether_brick_fence"
+          }
+        ],
+        "type": "blocks"
+      },
+      "L": {
+        "blocks": [
+          {
+            "id": "upgrade_aquatic:elder_guardian_spine"
+          }
+        ],
+        "type": "blocks"
+      },
+      "any": {
+        "type": "any"
+      },
+      "M": {
+        "blocks": [
+          {
+            "id": "chipped:carved_pumpkin_11"
+          }
+        ],
+        "type": "blocks"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "D"
+      ],
+      "E": [
+        "E"
+      ],
+      "F": [
+        "F"
+      ],
+      "G": [
+        "G"
+      ],
+      "H": [
+        "H"
+      ],
+      "I": [
+        "I"
+      ],
+      "J": [
+        "J"
+      ],
+      "K": [
+        "K"
+      ],
+      "L": [
+        "L"
+      ],
+      "M": [
+        "M"
+      ],
+      "-": [
+        "air"
+      ]
+    }
+  }
+}
