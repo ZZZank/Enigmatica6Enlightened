@@ -22,7 +22,7 @@ splashes = true
 
 	[rendering.fancySkybox]
 		#Set this to true to enable the fancy skybox in non Garden of Glass worlds. (Does not require Garden of Glass loaded to use, needs 'fancySkybox.enabled' to be true as well)
-		normalWorlds = false
+		normalWorlds = true
 		#Set this to false to disable the fancy skybox in Garden of Glass
 		enabled = true
 
