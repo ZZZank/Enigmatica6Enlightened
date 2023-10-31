@@ -1,14 +1,53 @@
+'use strict';
 // priority: 1005
 
-// do not `'use strict';` here, it will cause `recipe.getId()` to fail
+/**
+ * @param {ItemStackJS} item
+ * @param {string} color
+ * @returns ?
+ */
+function rawTextItem(item, color) {
+    let rawText = {
+        text: '\u00A7f   ',
+        hoverEvent: {
+            action: 'show_item',
+            contents: {
+                id: item.id,
+                count: item.count,
+                tag: item.nbtString
+            }
+        },
+        extra: [
+            {
+                text: '['
+            },
+            {
+                translate: item.name
+            },
+            {
+                text: ']'
+            }
+        ]
+    };
+    if (color) {
+        rawText.extra.forEach((i) => {
+            i.color = color;
+        });
+    }
+    return rawText;
+}
+
+function tellr(player, str) {
+    player.server.runCommandSilent(`/tellraw ${player.name} ${str}`);
+}
 
 function shapedRecipe(result, pattern, key, id) {
     return { result: result, pattern: pattern, key: key, id: id };
 }
-
 function shapelessRecipe(result, ingredients, id) {
     return { result: result, ingredients: ingredients, id: id };
 }
+
 function unificationBlacklistEntry(material, type) {
     return { material: material, type: type };
 }
@@ -83,7 +122,7 @@ function lowerTiers(tiers, tier) {
 
 // transplant the md5 from `<type's mod>:kjs_<hash>` onto the supplied prefix
 function fallback_id(recipe, id_prefix) {
-    if (recipe.getId().includes(':kjs_')) {
+    if (recipe.id.path.startsWith('kjs_')) {
         recipe.serializeJson(); // without this the hashes *will* collide
         recipe.id(id_prefix + 'md5_' + recipe.getUniqueId());
     }
