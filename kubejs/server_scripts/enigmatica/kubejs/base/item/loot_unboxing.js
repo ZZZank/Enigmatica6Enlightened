@@ -2,7 +2,7 @@
 onEvent('item.right_click', (event) => {
     const player = event.player;
     let id = player.mainHandItem.id;
-    if (!id.startsWith('kubejs:') || !id.endsWith('_lootbox')) {
+    if (player.fake || !id.startsWith('kubejs:') || !id.endsWith('_lootbox')) {
         return;
     }
 
