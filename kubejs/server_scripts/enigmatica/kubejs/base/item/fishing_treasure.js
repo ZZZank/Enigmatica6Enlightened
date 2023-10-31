@@ -1,7 +1,7 @@
 'use strict';
 onEvent('item.right_click', (e) => {
     const player = e.player;
-    if (player.mainHandItem.id != 'kubejs:soggy_treasure_box') {
+    if (player.fake || player.mainHandItem.id != 'kubejs:soggy_treasure_box') {
         return;
     }
 
