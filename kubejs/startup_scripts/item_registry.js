@@ -1,6 +1,9 @@
 'use strict';
+
 onEvent('item.registry', (event) => {
     const generalItems = [
+        'cylinder',
+
         'common_lootbox',
         'rare_lootbox',
         'epic_lootbox',
