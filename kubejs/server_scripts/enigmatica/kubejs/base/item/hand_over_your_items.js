@@ -32,16 +32,17 @@ onEvent('item.right_click', (event) => {
     // cancel original right-click operations
     event.cancel();
 
-    tellr(player, {
-        translate: 'chat.hand_over_your_items.send',
-        with: [rawTextItem(item, 'white'), target.name.green()],
-        color: 'dark_green'
-    });
-    tellr(target, {
-        translate: 'chat.hand_over_your_items.receive',
-        with: [rawTextItem(item, 'white'), player.name.green()],
-        color: 'dark_green'
-    });
+    let itemMessage = rawItemStr(item, 'white');
+    tellr(
+        target,
+        '{"translate":"chat.hand_over_your_items.send","color":"blue",' +
+            `"with":[${itemMessage},{"text":"${player.name}","color":"dark_blue"}]}`
+    );
+    tellr(
+        player,
+        '{"translate":"chat.hand_over_your_items.receive","color":"dark_green",' +
+            `"with":[${itemMessage},{"text":"${target.name}","color":"green"}]}`
+    );
     target.giveInHand(item);
     player.setHeldItem(InteractionHand.MAIN_HAND, null);
 });

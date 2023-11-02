@@ -4,41 +4,30 @@
 /**
  * @param {ItemStackJS} item
  * @param {string} color
- * @returns ?
+ * @returns {string}
  */
-function rawTextItem(item, color) {
-    let rawText = {
-        text: '\u00A7f   ',
-        hoverEvent: {
-            action: 'show_item',
-            contents: {
-                id: item.id,
-                count: item.count,
-                tag: item.nbtString
-            }
-        },
-        extra: [
-            {
-                text: '['
-            },
-            {
-                translate: item.name
-            },
-            {
-                text: ']'
-            }
-        ]
-    };
-    if (color) {
-        rawText.extra.forEach((i) => {
-            i.color = color;
-        });
-    }
-    return rawText;
+function rawItemStr(item, color) {
+    let colorTag = color
+        ? `,"color":"${color}"`
+        : '';
+    let count = item.count > 1
+        ? `${item.count}*`
+        : '';
+    return `{
+        "translate":"[%s%s]",
+        "with":["${count}","${item.getName()}"],
+        "hoverEvent": {
+            "action": "show_item",
+            "contents": {
+                "id": "${item.getId()}",
+                "count": ${item.count},
+                "tag":"${item.getNbtString().split('"').join('\\\"')}"
+        }}${colorTag}
+    }`.split(/[\s\s\s\s|\n]/).join('');
 }
 
 function tellr(player, str) {
-    player.server.runCommandSilent(`/tellraw ${player.name} ${str}`);
+    player.server.runCommand(`/tellraw ${player.name} ${str}`);
 }
 
 function shapedRecipe(result, pattern, key, id) {
