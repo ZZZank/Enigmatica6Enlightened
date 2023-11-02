@@ -7,12 +7,8 @@
  * @returns {string}
  */
 function rawItemStr(item, color) {
-    let colorTag = color
-        ? `,"color":"${color}"`
-        : '';
-    let count = item.count > 1
-        ? `${item.count}*`
-        : '';
+    let colorTag = color ? `,"color":"${color}"` : '';
+    let count = item.count > 1 ? `${item.count}*` : '';
     return `{
         "translate":"[%s%s]",
         "with":["${count}","${item.getName()}"],
@@ -21,9 +17,11 @@ function rawItemStr(item, color) {
             "contents": {
                 "id": "${item.getId()}",
                 "count": ${item.count},
-                "tag":"${item.getNbtString().split('"').join('\\\"')}"
+                "tag":"${item.getNbtString().split('"').join('\\"')}"
         }}${colorTag}
-    }`.split(/[\s\s\s\s|\n]/).join('');
+    }`
+        .split(/[\s\s\s\s|\n]/)
+        .join('');
 }
 
 function tellr(player, str) {
