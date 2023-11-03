@@ -8,6 +8,7 @@ enchantment_levels: [50, 30, 120, 40],
     (same when ench module is disable)
 
 */
+'use strict';
 onEvent('server.datapack.high_priority', (event) => {
     let bossTypes = [
         // Overrides for default bosses
@@ -212,72 +213,6 @@ onEvent('server.datapack.high_priority', (event) => {
 
         // Custom Bosses
 
-        {
-            name: 'wraith',
-            entity: 'eidolon:wraith',
-            weight: 5,
-            size: { width: 1, height: 2 },
-            enchant_chance: 0.55,
-            rarity_offset: 500,
-            enchantment_levels: [20, 15, 50, 30],
-            effects: [{ effect: 'minecraft:fire_resistance', chance: 1.0 }],
-            attribute_modifiers: [
-                {
-                    attribute: 'minecraft:generic.max_health',
-                    operation: 'MULTIPLY_BASE',
-                    value: { min: 3, max: 7 }
-                },
-                {
-                    attribute: 'minecraft:generic.movement_speed',
-                    operation: 'MULTIPLY_BASE',
-                    value: { min: 0.07, max: 0.12 }
-                },
-                {
-                    attribute: 'minecraft:generic.attack_damage',
-                    operation: 'MULTIPLY_BASE',
-                    value: { min: 4, max: 5.8 }
-                },
-                {
-                    attribute: 'minecraft:generic.knockback_resistance',
-                    operation: 'ADDITION',
-                    value: { min: 0.65, max: 1 }
-                }
-            ],
-            valid_gear_sets: ['#standard']
-        },
-        {
-            name: 'zombie_brute',
-            entity: 'eidolon:zombie_brute',
-            weight: 2,
-            size: { width: 1, height: 3 },
-            enchant_chance: 0.95,
-            rarity_offset: 880,
-            enchantment_levels: [50, 30, 120, 40],
-            effects: [{ effect: 'minecraft:fire_resistance', chance: 1.0 }],
-            attribute_modifiers: [
-                {
-                    attribute: 'minecraft:generic.max_health',
-                    operation: 'MULTIPLY_BASE',
-                    value: { min: 3, max: 8 }
-                },
-                {
-                    attribute: 'minecraft:generic.movement_speed',
-                    operation: 'MULTIPLY_BASE',
-                    value: { min: 0.1, max: 0.2 }
-                },
-                {
-                    attribute: 'minecraft:generic.attack_damage',
-                    operation: 'MULTIPLY_BASE',
-                    value: { min: 2, max: 4.6 }
-                },
-                {
-                    attribute: 'minecraft:generic.knockback_resistance',
-                    operation: 'ADDITION',
-                    value: { min: 0.75, max: 1 }
-                }
-            ],
-            valid_gear_sets: ['#standard']
-        },
         {
             name: 'blaze',
             entity: 'minecraft:blaze',

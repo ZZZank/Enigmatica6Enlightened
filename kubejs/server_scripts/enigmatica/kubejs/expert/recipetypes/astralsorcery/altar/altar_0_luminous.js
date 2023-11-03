@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     /*
     Note, max starlight is theoretical. In practice, assume roughly 95% as the max reasonable level
@@ -32,7 +33,7 @@ onEvent('recipes', (event) => {
             output: Item.of('astralsorcery:spectral_relay'),
             pattern: ['_____', '_ABA_', '_DCD_', '_____', '_____'],
             key: {
-                A: { item: 'eidolon:gold_inlay' },
+                A: { item: 'resourcefulbees:tainted_honeycomb' },
                 B: { item: 'astralsorcery:glass_lens' },
                 C: { item: 'create:refined_radiance' },
                 D: { tag: 'botania:runes/air' }

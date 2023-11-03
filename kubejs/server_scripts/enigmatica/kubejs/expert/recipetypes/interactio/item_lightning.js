@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
@@ -39,7 +40,7 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                'eidolon:gold_inlay',
+                'resourcefulbees:tainted_honeycomb',
                 'botania:livingwood_wall',
                 'naturesaura:gold_leaf',
                 '#forge:gems/apatite'
@@ -132,8 +133,8 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                '2x eidolon:gold_inlay',
-                'eidolon:pewter_inlay',
+                '2x resourcefulbees:tainted_honeycomb',
+                '#forge:inlays/pewter',
                 '#forge:gems/mana',
                 '4x architects_palette:sunmetal_blend'
             ],
@@ -172,13 +173,17 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}firmament`
         },
         {
-            inputs: ['eidolon:soul_shard', 'minecraft:polished_andesite', '#forge:inlays/pewter'],
+            inputs: [
+                'appliedenergistics2:charged_certus_quartz_crystal',
+                'minecraft:polished_andesite',
+                '#forge:inlays/pewter'
+            ],
             output: {
-                entries: [{ result: { item: 'eidolon:stone_altar', count: 1 }, weight: 1 }],
+                entries: [{ result: { item: 'betterendforge:andesite_pedestal', count: 1 }, weight: 1 }],
                 empty_weight: 0,
                 rolls: 1
             },
-            id: `${id_prefix}stone_altar`
+            id: 'betterendforge:andesite_pedestal'
         },
         {
             inputs: [

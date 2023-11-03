@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
@@ -5,15 +6,22 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:expert/farmersdelight/cooking/';
     const recipes = [
         {
-            inputs: ['eidolon:enchanted_ash', '#forge:dusts/coal'],
+            inputs: ['naturesaura:crimson_meal', '#forge:dusts/coal'],
             output: 'emendatusenigmatica:sulfur_dust',
             count: 1,
             cookingTime: 200,
             id: `${id_prefix}sulfur_dust`
         },
         {
+            inputs: ['#resourcefulbees:resourceful_honeycomb', 'naturesaura:tainted_gold'],
+            output: 'resourcefulbees:tainted_honeycomb',
+            count: 1,
+            cookingTime: 200,
+            id: `${id_prefix}tainted_honeycomb`
+        },
+        {
             inputs: [
-                'eidolon:enchanted_ash',
+                'naturesaura:crimson_meal',
                 'minecraft:rotten_flesh',
                 'minecraft:rotten_flesh',
                 'minecraft:rotten_flesh',
@@ -26,15 +34,15 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}leather`
         },
         {
-            inputs: ['eidolon:enchanted_ash', '#forge:dusts/ender'],
-            output: 'eidolon:ender_calx',
+            inputs: ['#forge:dusts/gold', '#forge:dusts/ender'],
+            output: 'redstone_arsenal:flux_dust',
             count: 2,
             cookingTime: 50,
-            id: `${id_prefix}ender_calx`
+            id: 'redstone_arsenal:materials/flux_dust'
         },
         {
             inputs: [
-                'eidolon:enchanted_ash',
+                'naturesaura:crimson_meal',
                 '#forge:dusts/gold',
                 'minecraft:melon_slice',
                 'minecraft:melon_slice',
@@ -48,7 +56,7 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                'eidolon:enchanted_ash',
+                'naturesaura:crimson_meal',
                 '#forge:dusts/gold',
                 'minecraft:carrot',
                 'minecraft:carrot',
@@ -62,7 +70,7 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                'eidolon:enchanted_ash',
+                'naturesaura:crimson_meal',
                 '#forge:dusts/gold',
                 'minecraft:apple',
                 'minecraft:apple',
@@ -75,7 +83,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}golden_apple`
         },
         {
-            inputs: ['eidolon:enchanted_ash', '#forge:dusts/charcoal', '#forge:dusts/sulfur'],
+            inputs: ['naturesaura:crimson_meal', '#forge:dusts/charcoal', '#forge:dusts/sulfur'],
             output: 'minecraft:gunpowder',
             count: 4,
             cookingTime: 50,

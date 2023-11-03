@@ -1,7 +1,5 @@
+'use strict';
 onEvent('recipes', (event) => {
-    if (!isAE2Loaded) {
-        return;
-    }
     if (global.isExpertMode == false) {
         return;
     }

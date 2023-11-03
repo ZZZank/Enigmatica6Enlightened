@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
@@ -6,7 +7,7 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             output: 'botania:auto_crafting_halo',
-            inputs: ['botania:crafting_halo', 'eidolon:lesser_soul_gem'],
+            inputs: ['botania:crafting_halo', 'redstone_arsenal:flux_gem'],
             id: 'botania:auto_crafting_halo'
         },
         {

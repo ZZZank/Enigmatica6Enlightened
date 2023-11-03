@@ -1,7 +1,8 @@
+'use strict';
 onEvent('item.tags', (event) => {
-    var gems = 'forge:gems';
-    var gems_ender = gems + '/ender';
-    var gems_coal = gems + '/coal';
+    let gems = 'forge:gems';
+    let gems_ender = gems + '/ender';
+    let gems_coal = gems + '/coal';
 
     event.add(gems, [
         'rftoolsbase:dimensionalshard',

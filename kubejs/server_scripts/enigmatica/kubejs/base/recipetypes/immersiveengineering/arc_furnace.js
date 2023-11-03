@@ -1,6 +1,7 @@
+'use strict';
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/immersiveengineering/arc_furnace/';
-    recipes = [
+    let recipes = [
         {
             input1: '#forge:ingots/copper',
             secondaries: ['#forge:ingots/zinc'],
@@ -8,9 +9,9 @@ onEvent('recipes', (event) => {
             id: 'immersiveengineering:arcfurnace/alloy_brass'
         },
         {
-            input1: '#forge:ingots/iron',
+            input1: '#forge:ingots/silver',
             secondaries: ['#forge:ingots/lead'],
-            outputs: [Item.of('eidolon:pewter_ingot', 2)],
+            outputs: [Item.of('kubejs:pewter_ingot', 2)],
             id: `${id_prefix}pewter_ingot`
         },
         {

@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
@@ -6,7 +7,7 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:expert/bloodmagic/arc/';
     const recipes = [
         {
-            output: 'eidolon:unholy_symbol',
+            output: 'environmental:koi',
             input: 'bloodmagic:weakbloodorb',
             tool: '#bloodmagic:arc/reverter',
             extraOutputs: [],

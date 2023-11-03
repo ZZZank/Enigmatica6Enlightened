@@ -1,3 +1,4 @@
+'use strict';
 onEvent('server.datapack.high_priority', (event) => {
     if (global.isExpertMode == false) {
         return;
@@ -24,7 +25,7 @@ onEvent('server.datapack.high_priority', (event) => {
     });
 
     candles.forEach((candle) => {
-        if (candle == 'eidolon:candlestick' || candle == 'eidolon:candle') {
+        if (candle == 'occultism:candle_white') {
             return;
         }
 

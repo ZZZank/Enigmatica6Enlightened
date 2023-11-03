@@ -1,4 +1,5 @@
-//priority: 1001
+// priority: 1001
+'use strict';
 const disabledItems = [
     'abnormals_delight:adzuki_cake_slice',
     'abnormals_delight:banana_cake_slice',
@@ -70,6 +71,8 @@ const disabledItems = [
     'mythicbotany:raindeletia_floating',
     'mythicbotany:wither_aconite',
     'mythicbotany:wither_aconite_floating',
+
+    'neapolitan:milk_bottle',
 
     'pneumaticcraft:wheat_flour',
 

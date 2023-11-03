@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
@@ -5,7 +6,7 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:expert/interactio/item_fluid_transform/';
     const recipes = [
         {
-            inputs: ['2x eidolon:enchanted_ash', '#forge:clay', '#forge:dusts/mana', '#forge:dusts/lapis'],
+            inputs: ['2x naturesaura:crimson_meal', '#forge:clay', '#forge:dusts/mana', '#forge:dusts/lapis'],
             fluid: { fluid: 'water' },
             output: {
                 entries: [{ result: { item: 'ars_nouveau:magic_clay', count: 2 }, weight: 1 }],
@@ -17,7 +18,7 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                'eidolon:enchanted_ash',
+                'naturesaura:crimson_meal',
                 '6x atum:coin_gold',
                 'meetyourfight:phantoplasm',
                 '#forge:dusts/mana',

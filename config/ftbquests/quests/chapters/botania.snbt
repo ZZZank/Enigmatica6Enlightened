@@ -1,7 +1,7 @@
 {
 	id: "0000000000000500"
 	group: "5A8B89F87F77CF4C"
-	order_index: 4
+	order_index: 6
 	filename: "botania"
 	title: "Botania"
 	icon: "botania:mana_pylon"
@@ -78,13 +78,11 @@
 				{
 					id: "0000000000000508"
 					type: "item"
-					title: "Flower Pouch"
 					item: "botania:flower_bag"
 				}
 				{
 					id: "000000000000050D"
 					type: "item"
-					title: "Shears"
 					item: {
 						id: "minecraft:shears"
 						Count: 1b
@@ -95,11 +93,8 @@
 				}
 				{
 					id: "0000000000000A70"
-					type: "command"
-					title: "Scavenger's Delight"
-					icon: "kubejs:scavengers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:scavengers_delight"
 				}
 			]
 		}
@@ -147,19 +142,19 @@
 			rewards: [
 				{
 					id: "000000000000064A"
-					type: "command"
-					title: "Rare Botania Loot Box"
-					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:rare_lootbox"
+						Count: 1b
+						tag: {
+							mod: "botania"
+						}
+					}
 				}
 				{
 					id: "0000000000000A71"
-					type: "command"
-					title: "Farmer's Delight"
-					icon: "kubejs:farmers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:farmers_delight"
 				}
 			]
 		}
@@ -187,11 +182,14 @@
 			]
 			rewards: [{
 				id: "00000000000005E7"
-				type: "command"
-				title: "Rare Botania Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "botania"
+					}
+				}
 			}]
 		}
 		{
@@ -216,11 +214,14 @@
 			}]
 			rewards: [{
 				id: "00000000000005E5"
-				type: "command"
-				title: "Rare Botania Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "botania"
+					}
+				}
 			}]
 		}
 		{
@@ -271,11 +272,14 @@
 			]
 			rewards: [{
 				id: "00000000000005D8"
-				type: "command"
-				title: "Epic Botania Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "botania"
+					}
+				}
 			}]
 		}
 		{
@@ -315,11 +319,14 @@
 			]
 			rewards: [{
 				id: "00000000000005D9"
-				type: "command"
-				title: "Epic Botania Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "botania"
+					}
+				}
 			}]
 		}
 		{
@@ -340,11 +347,14 @@
 			}]
 			rewards: [{
 				id: "00000000000005EA"
-				type: "command"
-				title: "Rare Botania Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "botania"
+					}
+				}
 			}]
 		}
 		{
@@ -367,11 +377,14 @@
 			}]
 			rewards: [{
 				id: "00000000000005E9"
-				type: "command"
-				title: "Rare Botania Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "botania"
+					}
+				}
 			}]
 		}
 		{
@@ -395,11 +408,14 @@
 			}]
 			rewards: [{
 				id: "00000000000005EB"
-				type: "command"
-				title: "Rare Botania Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "botania"
+					}
+				}
 			}]
 		}
 		{
@@ -447,13 +463,11 @@
 				{
 					id: "0000000000000523"
 					type: "item"
-					title: "Open Crate"
 					item: "botania:open_crate"
 				}
 				{
 					id: "00000000000005E8"
 					type: "item"
-					title: "Manaseer Monacle"
 					item: {
 						id: "botania:monocle"
 						Count: 1b
@@ -482,11 +496,14 @@
 			}]
 			rewards: [{
 				id: "00000000000005D2"
-				type: "command"
-				title: "Legendary Botania Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+						mod: "botania"
+					}
+				}
 			}]
 		}
 		{
@@ -519,11 +536,14 @@
 			]
 			rewards: [{
 				id: "00000000000005D3"
-				type: "command"
-				title: "Epic Botania Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "botania"
+					}
+				}
 			}]
 		}
 		{
@@ -546,11 +566,14 @@
 			}]
 			rewards: [{
 				id: "00000000000005CC"
-				type: "command"
-				title: "Legendary Botania Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+						mod: "botania"
+					}
+				}
 			}]
 		}
 		{
@@ -594,11 +617,14 @@
 			]
 			rewards: [{
 				id: "00000000000005E4"
-				type: "command"
-				title: "Rare Botania Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "botania"
+					}
+				}
 			}]
 		}
 		{
@@ -615,11 +641,14 @@
 			}]
 			rewards: [{
 				id: "00000000000005EC"
-				type: "command"
-				title: "Rare Botania Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "botania"
+					}
+				}
 			}]
 		}
 		{
@@ -636,11 +665,14 @@
 			}]
 			rewards: [{
 				id: "00000000000005F0"
-				type: "command"
-				title: "Rare Botania Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "botania"
+					}
+				}
 			}]
 		}
 		{
@@ -657,11 +689,14 @@
 			}]
 			rewards: [{
 				id: "00000000000005F1"
-				type: "command"
-				title: "Rare Botania Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "botania"
+					}
+				}
 			}]
 		}
 		{
@@ -678,11 +713,14 @@
 			}]
 			rewards: [{
 				id: "00000000000005EF"
-				type: "command"
-				title: "Rare Botania Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "botania"
+					}
+				}
 			}]
 		}
 		{
@@ -699,11 +737,14 @@
 			}]
 			rewards: [{
 				id: "00000000000005ED"
-				type: "command"
-				title: "Rare Botania Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "botania"
+					}
+				}
 			}]
 		}
 		{
@@ -728,11 +769,14 @@
 			}]
 			rewards: [{
 				id: "00000000000005EE"
-				type: "command"
-				title: "Rare Botania Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "botania"
+					}
+				}
 			}]
 		}
 		{
@@ -757,17 +801,13 @@
 				{
 					id: "00000000000005DB"
 					type: "item"
-					title: "Managlass Vial"
 					item: "botania:vial"
 					count: 8
 				}
 				{
 					id: "0000000000000A74"
-					type: "command"
-					title: "Alchemist's Delight"
-					icon: "kubejs:alchemists_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:alchemists_delight"
 				}
 			]
 		}
@@ -784,11 +824,14 @@
 			}]
 			rewards: [{
 				id: "00000000000005DC"
-				type: "command"
-				title: "Rare Botania Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "botania"
+					}
+				}
 			}]
 		}
 		{
@@ -811,16 +854,12 @@
 				{
 					id: "0000000000000556"
 					type: "item"
-					title: "Livingwood Avatar"
 					item: "botania:avatar"
 				}
 				{
 					id: "0000000000000A76"
-					type: "command"
-					title: "Scavenger's Delight"
-					icon: "kubejs:scavengers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:scavengers_delight"
 				}
 			]
 		}
@@ -842,11 +881,14 @@
 			}]
 			rewards: [{
 				id: "00000000000005E0"
-				type: "command"
-				title: "Rare Botania Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "botania"
+					}
+				}
 			}]
 		}
 		{
@@ -863,11 +905,14 @@
 			}]
 			rewards: [{
 				id: "00000000000005DD"
-				type: "command"
-				title: "Rare Botania Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "botania"
+					}
+				}
 			}]
 		}
 		{
@@ -884,11 +929,14 @@
 			}]
 			rewards: [{
 				id: "00000000000005DE"
-				type: "command"
-				title: "Rare Botania Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "botania"
+					}
+				}
 			}]
 		}
 		{
@@ -905,11 +953,14 @@
 			}]
 			rewards: [{
 				id: "00000000000005DF"
-				type: "command"
-				title: "Rare Botania Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "botania"
+					}
+				}
 			}]
 		}
 		{
@@ -926,11 +977,14 @@
 			}]
 			rewards: [{
 				id: "00000000000005E1"
-				type: "command"
-				title: "Rare Botania Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "botania"
+					}
+				}
 			}]
 		}
 		{
@@ -951,11 +1005,14 @@
 			}]
 			rewards: [{
 				id: "00000000000005E2"
-				type: "command"
-				title: "Rare Botania Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "botania"
+					}
+				}
 			}]
 		}
 		{
@@ -976,11 +1033,14 @@
 			}]
 			rewards: [{
 				id: "00000000000005E3"
-				type: "command"
-				title: "Rare Botania Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "botania"
+					}
+				}
 			}]
 		}
 		{
@@ -997,11 +1057,14 @@
 			}]
 			rewards: [{
 				id: "00000000000005F2"
-				type: "command"
-				title: "Rare Botania Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "botania"
+					}
+				}
 			}]
 		}
 		{
@@ -1024,11 +1087,14 @@
 			}]
 			rewards: [{
 				id: "00000000000005DA"
-				type: "command"
-				title: "Epic Botania Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "botania"
+					}
+				}
 			}]
 		}
 		{
@@ -1049,11 +1115,14 @@
 			}]
 			rewards: [{
 				id: "00000000000005D7"
-				type: "command"
-				title: "Epic Botania Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "botania"
+					}
+				}
 			}]
 		}
 		{
@@ -1074,11 +1143,14 @@
 			}]
 			rewards: [{
 				id: "00000000000005D5"
-				type: "command"
-				title: "Epic Botania Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "botania"
+					}
+				}
 			}]
 		}
 		{
@@ -1099,11 +1171,14 @@
 			}]
 			rewards: [{
 				id: "00000000000005D6"
-				type: "command"
-				title: "Epic Botania Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "botania"
+					}
+				}
 			}]
 		}
 		{
@@ -1150,11 +1225,14 @@
 			}]
 			rewards: [{
 				id: "00000000000005D4"
-				type: "command"
-				title: "Epic Botania Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "botania"
+					}
+				}
 			}]
 		}
 		{
@@ -1230,16 +1308,12 @@
 				{
 					id: "0000000000000594"
 					type: "item"
-					title: "Green Slime Block"
 					item: "minecraft:slime_block"
 				}
 				{
 					id: "0000000000000A75"
-					type: "command"
-					title: "Scavenger's Delight"
-					icon: "kubejs:scavengers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:scavengers_delight"
 				}
 			]
 		}
@@ -1285,11 +1359,14 @@
 			]
 			rewards: [{
 				id: "00000000000005CB"
-				type: "command"
-				title: "Legendary Botania Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+						mod: "botania"
+					}
+				}
 			}]
 		}
 		{
@@ -1310,11 +1387,14 @@
 			}]
 			rewards: [{
 				id: "00000000000005CA"
-				type: "command"
-				title: "Legendary Botania Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+						mod: "botania"
+					}
+				}
 			}]
 		}
 		{
@@ -1337,17 +1417,19 @@
 				{
 					id: "00000000000005CF"
 					type: "item"
-					title: "Cellular Block"
 					item: "botania:cell_block"
 					count: 8
 				}
 				{
 					id: "00000000000005D0"
-					type: "command"
-					title: "Legendary Botania Loot Box"
-					icon: "kubejs:legendary_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:legendary_lootbox"
+						Count: 1b
+						tag: {
+							mod: "botania"
+						}
+					}
 				}
 			]
 		}
@@ -1369,11 +1451,14 @@
 			}]
 			rewards: [{
 				id: "00000000000005CD"
-				type: "command"
-				title: "Legendary Botania Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+						mod: "botania"
+					}
+				}
 			}]
 		}
 		{
@@ -1390,11 +1475,14 @@
 			}]
 			rewards: [{
 				id: "00000000000005CE"
-				type: "command"
-				title: "Legendary Botania Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+						mod: "botania"
+					}
+				}
 			}]
 		}
 		{
@@ -1415,11 +1503,14 @@
 			}]
 			rewards: [{
 				id: "00000000000005D1"
-				type: "command"
-				title: "Legendary Botania Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+						mod: "botania"
+					}
+				}
 			}]
 		}
 		{
@@ -1456,11 +1547,14 @@
 			]
 			rewards: [{
 				id: "620D77CA6FA8C011"
-				type: "command"
-				title: "Legendary Botania Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+						mod: "botania"
+					}
+				}
 			}]
 		}
 		{
@@ -1485,11 +1579,14 @@
 			}]
 			rewards: [{
 				id: "195C2F28DEEC1AE6"
-				type: "command"
-				title: "Legendary Botania Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+						mod: "botania"
+					}
+				}
 			}]
 		}
 		{
@@ -1511,11 +1608,14 @@
 			}]
 			rewards: [{
 				id: "3542522DA81D210F"
-				type: "command"
-				title: "Legendary Botania Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+						mod: "botania"
+					}
+				}
 			}]
 		}
 		{
@@ -1536,11 +1636,14 @@
 			}]
 			rewards: [{
 				id: "44A3C1F87AB6977B"
-				type: "command"
-				title: "Legendary Botania Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+						mod: "botania"
+					}
+				}
 			}]
 		}
 	]

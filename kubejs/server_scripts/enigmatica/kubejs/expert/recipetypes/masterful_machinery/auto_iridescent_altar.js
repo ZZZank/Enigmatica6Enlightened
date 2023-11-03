@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
@@ -360,7 +361,7 @@ onEvent('recipes', (event) => {
                 },
                 {
                     type: 'masterfulmachinery:items',
-                    data: { item: 'eidolon:shadow_gem', count: 4 }
+                    data: { item: 'redstone_arsenal:flux_gem', count: 4 }
                 },
                 {
                     type: 'masterfulmachinery:items',

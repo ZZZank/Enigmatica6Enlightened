@@ -1,11 +1,13 @@
-//priority: 900
+// priority: 900
+'use strict';
+
 onEvent('recipes', (event) => {
     soilRegistry.forEach((soil) => {
         soils_botany_pots(event, soil);
     });
 
     cropRegistry.forEach((cropCategories) => {
-        var type = cropCategories.type;
+        let type = cropCategories.type;
         cropCategories.crops.forEach((crop) => {
             crops_botany_pots(event, type, crop);
             crops_thermal_insolator(event, type, crop);
@@ -14,7 +16,7 @@ onEvent('recipes', (event) => {
     });
 
     treeRegistry.forEach((treeCategories) => {
-        var type = treeCategories.type;
+        let type = treeCategories.type;
         treeCategories.trees.forEach((tree) => {
             trees_botany_pots(event, type, tree);
             trees_thermal_insolator(event, tree);
@@ -24,7 +26,7 @@ onEvent('recipes', (event) => {
 });
 
 function soils_botany_pots(event, soil) {
-    var input = soil.block,
+    let input = soil.block,
         display;
 
     //exceptions
@@ -55,11 +57,11 @@ function soils_botany_pots(event, soil) {
 function crops_botany_pots(event, type, crop) {
     // Ticks Per Day: 24000
     // Ticks Per Minute: 1200
-    var baseGrowthTicks = 24000,
+    let baseGrowthTicks = 24000,
         growthModifier = 1.0;
 
     // chance, minRolls, maxRolls
-    var primary = [1.0, 10, 20],
+    let primary = [1.0, 10, 20],
         growthTicks = baseGrowthTicks,
         plantSecondary;
 
@@ -105,7 +107,7 @@ function crops_botany_pots(event, type, crop) {
         //default
     }
 
-    var input = crop.seed,
+    let input = crop.seed,
         outputs = [
             {
                 chance: primary[0],
@@ -145,12 +147,12 @@ function crops_botany_pots(event, type, crop) {
 }
 
 function crops_thermal_insolator(event, type, crop) {
-    var baseWater = 500,
+    let baseWater = 500,
         baseEnergy = 20000,
         waterModifier = 1.0,
         energyModifier = 1.0;
 
-    var primaryChance = 2.0,
+    let primaryChance = 2.0,
         secondaryChance = 1.1,
         plantSecondary;
 
@@ -214,7 +216,7 @@ function crops_thermal_insolator(event, type, crop) {
         //default
     }
 
-    var input = crop.seed,
+    let input = crop.seed,
         outputs = [Item.of(crop.plant).chance(primaryChance)];
 
     if (type.includes('crop_')) {
@@ -232,16 +234,16 @@ function crops_thermal_insolator(event, type, crop) {
             .insolator(outputs, input)
             .water(baseWater * waterModifier)
             .energy(baseEnergy * energyModifier),
-        `enigmatica:base/unification/unify_growables/${arguments.callee.name}/`
+        `enigmatica:base/unification/unify_growables/crops_thermal_insolator/`
     );
 }
 
 function crops_immersiveengineering_cloche(event, type, crop) {
     // Ticks Per Day: 24000
     // Ticks Per Minute: 1200
-    var baseGrowthTicks = 800;
+    let baseGrowthTicks = 800;
 
-    var primaryCount = 2,
+    let primaryCount = 2,
         secondaryCount = 1,
         plantSecondary,
         growthTicks = baseGrowthTicks,
@@ -314,7 +316,7 @@ function crops_immersiveengineering_cloche(event, type, crop) {
         default:
         //default
     }
-    var substrate = crop.substrate;
+    let substrate = crop.substrate;
     switch (substrate) {
         case 'crimson_nylium':
             substrate = 'minecraft:crimson_nylium';
@@ -386,7 +388,7 @@ function crops_immersiveengineering_cloche(event, type, crop) {
             substrate = 'minecraft:dirt';
     }
 
-    var input = crop.seed,
+    let input = crop.seed,
         outputs = [Item.of(crop.plant, primaryCount)];
 
     if (type.includes('crop_')) {
@@ -415,18 +417,18 @@ function crops_immersiveengineering_cloche(event, type, crop) {
                 block: renderBlock
             })
             .time(growthTicks * growthModifier),
-        `enigmatica:base/unification/unify_growables/${arguments.callee.name}/`
+        `enigmatica:base/unification/unify_growables/crops_immersiveengineering_cloche/`
     );
 }
 
 function trees_botany_pots(event, type, tree) {
     // Ticks Per Day: 24000
     // Ticks Per Minute: 1200
-    var baseGrowthTicks = 24000,
+    let baseGrowthTicks = 24000,
         growthModifier = 1.0;
 
     // chance, minRolls, maxRolls
-    var saplingRate = [1.0, 3, 6],
+    let saplingRate = [1.0, 3, 6],
         trunkRate = [1.0, 15, 20],
         leafRate = [1.0, 15, 20],
         stickRate = [1.0, 5, 10],
@@ -434,7 +436,7 @@ function trees_botany_pots(event, type, tree) {
         fruitRate = [0.5, 5, 10],
         growthTicks = baseGrowthTicks;
 
-    var input = tree.sapling,
+    let input = tree.sapling,
         outputs = [
             {
                 chance: saplingRate[0],
@@ -469,7 +471,7 @@ function trees_botany_pots(event, type, tree) {
                 maxRolls: extraDecorationRate[2]
             });
         }
-        var stickType = 'minecraft:stick';
+        let stickType = 'minecraft:stick';
         if (type.includes('undergarden')) {
             //add sticks
             stickType = 'undergarden:twistytwig';
@@ -506,18 +508,18 @@ function trees_botany_pots(event, type, tree) {
 }
 
 function trees_thermal_insolator(event, tree) {
-    var baseWater = 500,
+    let baseWater = 500,
         baseEnergy = 20000,
         waterModifier = 3.0,
         energyModifier = 4.0;
 
-    var saplingRate = 1.1,
+    let saplingRate = 1.1,
         trunkRate = 3.1,
         leafRate = 4.5,
         extraDecorationRate = 0.5,
         fruitRate = 0.5;
 
-    var input = tree.sapling,
+    let input = tree.sapling,
         outputs = [
             Item.of(tree.sapling).chance(saplingRate),
             Item.of(tree.trunk).chance(trunkRate),
@@ -539,17 +541,17 @@ function trees_thermal_insolator(event, tree) {
             .insolator(outputs, input)
             .water(baseWater * waterModifier)
             .energy(baseEnergy * energyModifier),
-        `enigmatica:base/unification/unify_growables/${arguments.callee.name}/`
+        `enigmatica:base/unification/unify_growables/trees_thermal_insolator/`
     );
 }
 
 function trees_immersiveengineering_cloche(event, tree) {
     // Ticks Per Day: 24000
     // Ticks Per Minute: 1200
-    var baseGrowthTicks = 800,
+    let baseGrowthTicks = 800,
         growthModifier = 6;
 
-    var saplingRate = 1,
+    let saplingRate = 1,
         trunkRate = 3,
         leafRate = 4,
         extraDecorationRate = 1,
@@ -557,14 +559,14 @@ function trees_immersiveengineering_cloche(event, tree) {
         renderBlock = tree.sapling,
         renderType = 'generic';
 
-    var input = tree.sapling,
+    let input = tree.sapling,
         outputs = [
             Item.of(tree.sapling, saplingRate),
             Item.of(tree.trunk, trunkRate),
             Item.of(tree.leaf, leafRate)
         ];
 
-    var substrate = tree.substrate;
+    let substrate = tree.substrate;
     switch (substrate) {
         case 'crimson_nylium':
             substrate = 'minecraft:crimson_nylium';
@@ -629,6 +631,6 @@ function trees_immersiveengineering_cloche(event, tree) {
                 block: renderBlock
             })
             .time(baseGrowthTicks * growthModifier),
-        `enigmatica:base/unification/unify_growables/${arguments.callee.name}/`
+        `enigmatica:base/unification/unify_growables/trees_immersiveengineering_cloche/`
     );
 }

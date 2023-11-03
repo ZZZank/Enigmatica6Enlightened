@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
@@ -12,7 +13,7 @@ onEvent('recipes', (event) => {
                 B: { tag: 'forge:wool' },
                 C: { item: 'alexsmobs:kangaroo_hide' },
                 D: { item: 'kubejs:dimensional_storage_crystal' },
-                E: { tag: 'forge:inlays/arcane_gold' }
+                E: { item: 'resourcefulbees:tainted_honeycomb' }
             },
             id: 'enderstorage:ender_pouch'
         },

@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
@@ -16,6 +17,15 @@ onEvent('recipes', (event) => {
     */
 
     const recipes = [
+        {
+            output: 'create:filter',
+            pattern: ['ABA'],
+            key: {
+                A: '#forge:nuggets/invar',
+                B: 'minecraft:cobweb'
+            },
+            id: 'create:crafting/kinetics/filter'
+        },
         {
             output: 'create:millstone',
             pattern: [' A ', 'BCB', 'DDD'],
@@ -51,7 +61,7 @@ onEvent('recipes', (event) => {
             pattern: ['ABA', 'BBB', 'ABA'],
             key: {
                 A: '#forge:plates/brass',
-                B: 'eidolon:polished_planks'
+                B: 'bloodmagic:woodtilepath'
             },
             id: 'create:crafting/materials/brass_casing'
         },

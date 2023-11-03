@@ -1,5 +1,6 @@
+'use strict';
 onEvent('server.datapack.high_priority', function (event) {
-    var tamingCriteria = {};
+    let tamingCriteria = {};
     tameableAnimals.forEach((entityType) => {
         tamingCriteria[entityType] = {
             trigger: 'minecraft:tame_animal',
@@ -36,7 +37,7 @@ onEvent('server.datapack.high_priority', function (event) {
         criteria: tamingCriteria
     });
 
-    var breedingCriteria = {};
+    let breedingCriteria = {};
     breedableAnimals.forEach((entityType) => {
         breedingCriteria[entityType] = {
             trigger: 'minecraft:bred_animals',

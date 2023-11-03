@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
@@ -5,9 +6,9 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             input1: '#atum:relic_non_dirty/necklace',
-            input2: '#forge:ingots/arcane_gold',
-            output: 'eidolon:basic_amulet',
-            id: 'eidolon:basic_amulet'
+            input2: 'naturesaura:tainted_gold',
+            output: 'ars_nouveau:dull_trinket',
+            id: 'ars_nouveau:dull_trinket'
         },
         {
             input1: '#forge:ingots/aeternium',

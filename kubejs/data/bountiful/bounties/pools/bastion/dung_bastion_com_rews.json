@@ -28,7 +28,7 @@
         { "type": "item", "content": "minecraft:leather", "amountRange": {"min": 4, "max": 12}, "unitWorth": 50, "weight":100},
         { "type": "item", "content": "minecraft:string", "amountRange": {"min": 4, "max": 12}, "unitWorth": 50, "weight":100},
         { "type": "item", "content": "minecraft:warped_nylium", "amountRange": {"min": 4, "max": 12}, "unitWorth": 50, "weight":100},
-        { "type": "item", "content": "eidolon:warped_sprouts", "amountRange": {"min": 4, "max": 12}, "unitWorth": 50, "weight":100},
+        { "type": "item", "content": "byg:fungal_imparius", "amountRange": {"min": 4, "max": 12}, "unitWorth": 50, "weight":100},
         { "type": "item", "content": "byg:crimson_berries", "amountRange": {"min": 4, "max": 12}, "unitWorth": 50, "weight":100},
         { "type": "item", "content": "minecraft:crimson_nylium", "amountRange": {"min": 4, "max": 12}, "unitWorth": 50, "weight":100},
         { "type": "item", "content": "minecraft:warped_fungus", "amountRange": {"min": 4, "max": 12}, "unitWorth": 50, "weight":100},

@@ -1,3 +1,4 @@
+'use strict';
 onEvent('chest.loot_tables', (event) => {
     const pools = [
         {
@@ -14,27 +15,22 @@ onEvent('chest.loot_tables', (event) => {
             rolls: { min: 1, max: 3 },
             entries: [
                 {
-                    item: 'eidolon:fungus_sprouts',
+                    item: 'byg:bulbis_sprouts',
                     weight: 100,
                     count: [1, 6]
                 },
                 {
-                    item: 'eidolon:death_essence',
+                    item: 'kubejs:death_essence',
                     weight: 30,
                     count: [1, 6]
                 },
                 {
-                    item: 'eidolon:lesser_soul_gem',
-                    weight: 20,
+                    item: 'redstone_arsenal:flux_gem',
+                    weight: 30,
                     count: 1
                 },
                 {
-                    item: 'eidolon:shadow_gem',
-                    weight: 10,
-                    count: 1
-                },
-                {
-                    item: 'eidolon:zombie_heart',
+                    item: 'kubejs:zombie_heart',
                     weight: 20,
                     count: 1
                 }

@@ -1,5 +1,6 @@
+'use strict';
 onEvent('item.tags', (event) => {
-    var storageBlocks = 'forge:storage_blocks';
+    let storageBlocks = 'forge:storage_blocks';
     event.add(storageBlocks, [
         'architects_palette:ender_pearl_block',
         'ars_nouveau:mana_gem_block',

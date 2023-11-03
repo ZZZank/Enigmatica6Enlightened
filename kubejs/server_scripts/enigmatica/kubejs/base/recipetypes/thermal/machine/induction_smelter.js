@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/thermal/smelter/';
     const recipes = [
@@ -57,8 +58,8 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}steel_ingot`
         },
         {
-            inputs: ['#forge:ingots/iron', '#forge:ingots/lead'],
-            outputs: [Item.of('eidolon:pewter_ingot', 2)],
+            inputs: ['#forge:ingots/silver', '#forge:ingots/lead'],
+            outputs: [Item.of('kubejs:pewter_ingot', 2)],
             id: `${id_prefix}pewter_ingot`
         },
         {

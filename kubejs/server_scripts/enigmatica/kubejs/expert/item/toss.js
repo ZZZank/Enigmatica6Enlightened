@@ -1,3 +1,4 @@
+'use strict';
 onEvent('item.toss', (event) => {
     const player = event.player;
     if (!player.isPlayer() || player.isFake()) {

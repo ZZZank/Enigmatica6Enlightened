@@ -32,6 +32,9 @@ config/masterful_machinery/packs/
 *.dll
 **/*.zip
 /docker/**
+/schematics/uploaded/
+/lightspeed-cache/
+
 # Instance Sync
 **/*.jar
 !InstanceSync*.jar
@@ -119,7 +122,6 @@ config/rftoolspower-client.toml
 config/astralsorcery-client.toml
 config/create-client.toml
 config/cagedmobs-client.toml
-config/eidolon-client.toml
 config/sophisticatedbackpacks-client.toml
 config/thermal-client.toml
 config/abnormals_core-client.toml

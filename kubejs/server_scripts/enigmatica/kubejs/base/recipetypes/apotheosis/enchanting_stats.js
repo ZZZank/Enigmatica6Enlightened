@@ -1,3 +1,4 @@
+'use strict';
 onEvent('server.datapack.high_priority', (event) => {
     /*          
                 Negative values permitted
@@ -73,52 +74,11 @@ onEvent('server.datapack.high_priority', (event) => {
             }
         },
         {
-            block: 'eidolon:candle',
+            block: 'occultism:candle_white',
             stats: {
                 maxEterna: 15,
                 eterna: 0.5,
                 arcana: 5
-            }
-        },
-        {
-            block: 'eidolon:candlestick',
-            stats: {
-                maxEterna: 15,
-                eterna: 0.5,
-                arcana: 5
-            }
-        },
-        {
-            block: 'eidolon:stone_hand',
-            stats: {
-                maxEterna: 7.5,
-                eterna: 0.5
-            }
-        },
-        {
-            block: 'eidolon:plinth',
-            stats: {
-                maxEterna: 7.5,
-                eterna: 0.5
-            }
-        },
-        {
-            block: 'eidolon:straw_effigy',
-            stats: {
-                maxEterna: 7.5,
-                eterna: 5,
-                quanta: 5,
-                rectification: -5
-            }
-        },
-        {
-            block: 'eidolon:unholy_effigy',
-            stats: {
-                maxEterna: 10,
-                eterna: 5,
-                arcana: 15,
-                quanta: 15,
-                rectification: -15
             }
         },
         {
@@ -166,12 +126,6 @@ onEvent('server.datapack.high_priority', (event) => {
             stats: {
                 maxEterna: 7.5,
                 eterna: 1
-            }
-        },
-        {
-            block: 'eidolon:necrotic_focus',
-            stats: {
-                arcana: 2.5
             }
         }
     ];

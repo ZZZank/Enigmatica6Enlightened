@@ -1,5 +1,6 @@
+'use strict';
 onEvent('server.datapack.low_priority', (event) => {
-    var data = [
+    let data = [
         //tier 1
         {
             identifier: 'livingrock',

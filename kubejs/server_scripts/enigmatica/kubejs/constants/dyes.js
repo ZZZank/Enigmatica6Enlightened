@@ -1,4 +1,5 @@
-//priority: 1000
+// priority: 1000
+'use strict';
 
 //List of all items used to create dyes and the dyes they create
 const dyeSources = [
@@ -1280,7 +1281,7 @@ const dyeSources = [
 ];
 
 colors.forEach((color) => {
-    var botaniaTypes = ['petal', 'mushroom'];
+    let botaniaTypes = ['petal', 'mushroom'];
     botaniaTypes.forEach((type) => {
         dyeSources.push({
             input: 'botania:' + color + '_' + type,

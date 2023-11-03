@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
@@ -22,7 +23,7 @@ onEvent('recipes', (event) => {
             pattern: [' CD', ' AC', 'AB '],
             key: {
                 A: 'betterendforge:leather_wrapped_stick',
-                B: 'eidolon:tattered_cloth',
+                B: 'atum:cloth_scrap',
                 C: '#forge:rods/copper',
                 D: 'occultism:spirit_attuned_gem'
             },

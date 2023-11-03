@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/thermal/chiller/';
 
@@ -67,18 +68,6 @@ onEvent('recipes', (event) => {
             output: Item.of('materialis:fairy_nugget', 1),
             energy: 555,
             id: `${id_prefix}fairy_nugget`
-        },
-        {
-            inputs: [Fluid.of('materialis:molten_arcane_gold', 144), 'tconstruct:ingot_cast'],
-            output: Item.of('eidolon:arcane_gold_ingot', 1),
-            energy: 5000,
-            id: `${id_prefix}arcane_gold_ingot`
-        },
-        {
-            inputs: [Fluid.of('materialis:molten_arcane_gold', 16), 'tconstruct:nugget_cast'],
-            output: Item.of('eidolon:arcane_gold_nugget', 1),
-            energy: 555,
-            id: `${id_prefix}arcane_gold_nugget`
         },
         {
             inputs: [Fluid.of('tconstruct:molten_refined_obsidian', 144), 'tconstruct:ingot_cast'],

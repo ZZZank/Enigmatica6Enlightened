@@ -1,5 +1,6 @@
+'use strict';
 onEvent('item.tags', (event) => {
-    var items = [
+    let items = [
         'patchouli:guide_book',
         'immersiveengineering:manual',
         'botania:lexicon',

@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
@@ -428,7 +429,7 @@ onEvent('recipes', (event) => {
                 A: 'mekanism:cardboard_box',
                 B: Item.of(
                     'astralsorcery:attuned_celestial_crystal',
-                    '{astralsorcery:{constellationName:"naturesstarlight:naritis"}}'
+                    '{astralsorcery:{constellationName:"astralsorcery:alcara"}}'
                 ).weakNBT(),
                 C: Item.of(
                     'astralsorcery:attuned_celestial_crystal',

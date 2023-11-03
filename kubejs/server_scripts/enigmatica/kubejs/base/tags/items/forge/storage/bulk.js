@@ -1,7 +1,8 @@
+'use strict';
 onEvent('item.tags', (event) => {
-    var items = ['botania:black_hole_talisman', 'industrialforegoing:black_hole_controller'];
+    let items = ['botania:black_hole_talisman', 'industrialforegoing:black_hole_controller'];
 
-    var tags = ['forge:storage', 'forge:storage/bulk'];
+    let tags = ['forge:storage', 'forge:storage/bulk'];
 
     tags.forEach((tag) => {
         event

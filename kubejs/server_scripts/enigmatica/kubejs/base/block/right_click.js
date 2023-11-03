@@ -1,3 +1,4 @@
+'use strict';
 onEvent('block.right_click', (event) => {
     const glowItem = 'minecraft:glowstone_dust';
     const glowBlock = 'mininggadgets:minerslight';

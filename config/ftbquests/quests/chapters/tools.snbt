@@ -1,7 +1,7 @@
 {
 	id: "0000000000000093"
 	group: "74B3CF67FCEAB20F"
-	order_index: 0
+	order_index: 1
 	filename: "tools"
 	title: "Tools and Armor"
 	icon: {
@@ -34,16 +34,12 @@
 				{
 					id: "00000000000001C8"
 					type: "item"
-					title: "Compressed Iron Drill Bit"
 					item: "pneumaticcraft:drill_bit_compressed_iron"
 				}
 				{
 					id: "0000000000000A58"
-					type: "command"
-					title: "Scavenger's Delight"
-					icon: "kubejs:scavengers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:scavengers_delight"
 				}
 			]
 		}
@@ -63,17 +59,13 @@
 				{
 					id: "00000000000001CB"
 					type: "item"
-					title: "Volume Upgrade"
 					item: "pneumaticcraft:volume_upgrade"
 					count: 5
 				}
 				{
 					id: "00000000000006F8"
-					type: "command"
-					title: "Miner's Delight"
-					icon: "kubejs:miners_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:miners_delight"
 				}
 			]
 		}
@@ -93,17 +85,13 @@
 				{
 					id: "00000000000001CE"
 					type: "item"
-					title: "Speed Upgrade"
 					item: "pneumaticcraft:speed_upgrade"
 					count: 2
 				}
 				{
 					id: "00000000000006F7"
-					type: "command"
-					title: "Miner's Delight"
-					icon: "kubejs:miners_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:miners_delight"
 				}
 			]
 		}
@@ -456,11 +444,8 @@
 			}]
 			rewards: [{
 				id: "0000000000000A56"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-				player_command: false
+				type: "item"
+				item: "kubejs:scavengers_delight"
 			}]
 		}
 		{
@@ -566,11 +551,8 @@
 			]
 			rewards: [{
 				id: "0000000000000A55"
-				type: "command"
-				title: "Alchemist's Delight"
-				icon: "kubejs:alchemists_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
-				player_command: false
+				type: "item"
+				item: "kubejs:alchemists_delight"
 			}]
 		}
 		{
@@ -591,11 +573,8 @@
 			}]
 			rewards: [{
 				id: "0000000000000655"
-				type: "command"
-				title: "Farmer's Delight"
-				icon: "kubejs:farmers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
-				player_command: false
+				type: "item"
+				item: "kubejs:farmers_delight"
 			}]
 		}
 		{
@@ -616,11 +595,8 @@
 			}]
 			rewards: [{
 				id: "0000000000000A57"
-				type: "command"
-				title: "Alchemist's Delight"
-				icon: "kubejs:alchemists_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
-				player_command: false
+				type: "item"
+				item: "kubejs:alchemists_delight"
 			}]
 		}
 		{
@@ -637,11 +613,8 @@
 			}]
 			rewards: [{
 				id: "0000000000000894"
-				type: "command"
-				title: "Sorcerer's Delight"
-				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
-				player_command: false
+				type: "item"
+				item: "kubejs:sorcerers_delight"
 			}]
 		}
 		{
@@ -660,7 +633,6 @@
 				"● Radiation Protection"
 				"● Energy Shielding"
 			]
-			dependencies: ["00000000000007A9"]
 			id: "0000000000000435"
 			tasks: [{
 				id: "0000000000000436"
@@ -675,11 +647,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000836"
-				type: "command"
-				title: "Legendary Mekanism Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+						mod: "mekanism"
+					}
+				}
 			}]
 		}
 		{
@@ -695,7 +670,6 @@
 				"● Radiation Protection"
 				"● Energy Shielding"
 			]
-			dependencies: ["00000000000007A9"]
 			id: "0000000000000437"
 			tasks: [{
 				id: "0000000000000438"
@@ -710,11 +684,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000835"
-				type: "command"
-				title: "Legendary Mekanism Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+						mod: "mekanism"
+					}
+				}
 			}]
 		}
 		{
@@ -728,7 +705,6 @@
 				"● Radiation Protection"
 				"● Energy Shielding"
 			]
-			dependencies: ["00000000000007A9"]
 			id: "0000000000000439"
 			tasks: [{
 				id: "000000000000043A"
@@ -743,11 +719,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000834"
-				type: "command"
-				title: "Legendary Mekanism Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+						mod: "mekanism"
+					}
+				}
 			}]
 		}
 		{
@@ -762,7 +741,6 @@
 				"● Radiation Protection"
 				"● Energy Shielding"
 			]
-			dependencies: ["00000000000007A9"]
 			id: "000000000000043B"
 			tasks: [{
 				id: "000000000000043C"
@@ -777,11 +755,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000833"
-				type: "command"
-				title: "Legendary Mekanism Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+						mod: "mekanism"
+					}
+				}
 			}]
 		}
 		{
@@ -790,7 +771,6 @@
 			y: -8.0d
 			subtitle: "Soylent Green"
 			description: ["All your essential vitamins, minerals, and amino acids, neatly condensed into a convenient chewy paste. Yum."]
-			dependencies: ["00000000000006A5"]
 			id: "000000000000043D"
 			tasks: [
 				{
@@ -806,11 +786,14 @@
 			]
 			rewards: [{
 				id: "000000000000083D"
-				type: "command"
-				title: "Epic Mekanism Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "mekanism"
+					}
+				}
 			}]
 		}
 		{
@@ -825,11 +808,14 @@
 			}]
 			rewards: [{
 				id: "000000000000083B"
-				type: "command"
-				title: "Epic Mekanism Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "mekanism"
+					}
+				}
 			}]
 		}
 		{
@@ -844,11 +830,14 @@
 			}]
 			rewards: [{
 				id: "000000000000083A"
-				type: "command"
-				title: "Epic Mekanism Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "mekanism"
+					}
+				}
 			}]
 		}
 		{
@@ -863,11 +852,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000839"
-				type: "command"
-				title: "Epic Mekanism Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "mekanism"
+					}
+				}
 			}]
 		}
 		{
@@ -882,11 +874,14 @@
 			}]
 			rewards: [{
 				id: "000000000000083E"
-				type: "command"
-				title: "Epic Mekanism Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "mekanism"
+					}
+				}
 			}]
 		}
 		{
@@ -901,11 +896,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000837"
-				type: "command"
-				title: "Epic Mekanism Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "mekanism"
+					}
+				}
 			}]
 		}
 		{
@@ -927,11 +925,14 @@
 			}]
 			rewards: [{
 				id: "000000000000083F"
-				type: "command"
-				title: "Epic Mekanism Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "mekanism"
+					}
+				}
 			}]
 		}
 		{
@@ -946,11 +947,14 @@
 			}]
 			rewards: [{
 				id: "000000000000083C"
-				type: "command"
-				title: "Epic Mekanism Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "mekanism"
+					}
+				}
 			}]
 		}
 		{
@@ -965,11 +969,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000838"
-				type: "command"
-				title: "Epic Mekanism Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "mekanism"
+					}
+				}
 			}]
 		}
 		{
@@ -977,7 +984,6 @@
 			y: -8.5d
 			subtitle: "Don't Leave That Plasma Cutter Running"
 			description: ["A basic multi-tool with built in vein mining and excellent attack damage."]
-			dependencies: ["00000000000006C5"]
 			id: "000000000000044F"
 			tasks: [{
 				id: "0000000000000450"
@@ -992,11 +998,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000831"
-				type: "command"
-				title: "Epic Mekanism Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "mekanism"
+					}
+				}
 			}]
 		}
 		{
@@ -1015,7 +1024,6 @@
 				"● Teleportation Unit"
 				"● Farming Unit"
 			]
-			dependencies: ["00000000000007A9"]
 			id: "0000000000000451"
 			tasks: [{
 				id: "0000000000000452"
@@ -1030,11 +1038,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000832"
-				type: "command"
-				title: "Legendary Mekanism Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+						mod: "mekanism"
+					}
+				}
 			}]
 		}
 		{
@@ -1042,7 +1053,6 @@
 			y: -7.5d
 			subtitle: "Be the Change"
 			description: ["Used for applying all upgrades to the MekaTool and MekaSuit pieces."]
-			dependencies: ["00000000000007A9"]
 			id: "0000000000000453"
 			tasks: [{
 				id: "0000000000000454"
@@ -1051,11 +1061,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000830"
-				type: "command"
-				title: "Epic Mekanism Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "mekanism"
+					}
+				}
 			}]
 		}
 		{
@@ -1163,16 +1176,12 @@
 				{
 					id: "000000000000067D"
 					type: "item"
-					title: "Upgrade: Light Placer"
 					item: "mininggadgets:upgrade_light_placer"
 				}
 				{
 					id: "0000000000000A52"
-					type: "command"
-					title: "Scavenger's Delight"
-					icon: "kubejs:scavengers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:scavengers_delight"
 				}
 			]
 		}
@@ -1189,11 +1198,8 @@
 			}]
 			rewards: [{
 				id: "00000000000006EF"
-				type: "command"
-				title: "Miner's Delight"
-				icon: "kubejs:miners_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
-				player_command: false
+				type: "item"
+				item: "kubejs:miners_delight"
 			}]
 		}
 		{
@@ -1211,16 +1217,12 @@
 				{
 					id: "000000000000067B"
 					type: "item"
-					title: "Upgrade: Magnet"
 					item: "mininggadgets:upgrade_magnet"
 				}
 				{
 					id: "0000000000000A53"
-					type: "command"
-					title: "Scavenger's Delight"
-					icon: "kubejs:scavengers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:scavengers_delight"
 				}
 			]
 		}
@@ -1237,11 +1239,8 @@
 			}]
 			rewards: [{
 				id: "00000000000006EE"
-				type: "command"
-				title: "Miner's Delight"
-				icon: "kubejs:miners_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
-				player_command: false
+				type: "item"
+				item: "kubejs:miners_delight"
 			}]
 		}
 		{
@@ -1257,11 +1256,8 @@
 			}]
 			rewards: [{
 				id: "0000000000000A54"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-				player_command: false
+				type: "item"
+				item: "kubejs:scavengers_delight"
 			}]
 		}
 		{
@@ -1330,11 +1326,14 @@
 			]
 			rewards: [{
 				id: "000000000000065C"
-				type: "command"
-				title: "Legendary Botania Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+						mod: "botania"
+					}
+				}
 			}]
 		}
 		{
@@ -1400,11 +1399,14 @@
 			]
 			rewards: [{
 				id: "000000000000065D"
-				type: "command"
-				title: "Legendary Botania Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+						mod: "botania"
+					}
+				}
 			}]
 		}
 		{
@@ -1472,16 +1474,12 @@
 				{
 					id: "000000000000065F"
 					type: "item"
-					title: "Nether Star Hook"
 					item: "aquaculture:nether_star_hook"
 				}
 				{
 					id: "00000000000006F4"
-					type: "command"
-					title: "Sorcerer's Delight"
-					icon: "kubejs:sorcerers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:sorcerers_delight"
 				}
 			]
 		}
@@ -1505,11 +1503,8 @@
 			}]
 			rewards: [{
 				id: "00000000000006F5"
-				type: "command"
-				title: "Sorcerer's Delight"
-				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
-				player_command: false
+				type: "item"
+				item: "kubejs:sorcerers_delight"
 			}]
 		}
 		{
@@ -1575,16 +1570,18 @@
 			rewards: [
 				{
 					id: "0000000000000666"
-					type: "command"
-					title: "Rare Ars Nouveau Loot Box"
-					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:rare_lootbox"
+						Count: 1b
+						tag: {
+							mod: "ars_nouveau"
+						}
+					}
 				}
 				{
 					id: "000000000000066E"
 					type: "item"
-					title: "Mana Boost V, Mana Regen V"
 					item: {
 						id: "minecraft:enchanted_book"
 						Count: 1b
@@ -1694,19 +1691,19 @@
 			rewards: [
 				{
 					id: "0000000000000657"
-					type: "command"
-					title: "Epic Thermal Series Loot Box"
-					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:epic_lootbox"
+						Count: 1b
+						tag: {
+							mod: "thermal_series"
+						}
+					}
 				}
 				{
 					id: "0000000000000865"
-					type: "command"
-					title: "Miner's Delight"
-					icon: "kubejs:miners_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:miners_delight"
 				}
 			]
 		}
@@ -1731,19 +1728,19 @@
 			rewards: [
 				{
 					id: "0000000000000656"
-					type: "command"
-					title: "Epic Thermal Series Loot Box"
-					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:epic_lootbox"
+						Count: 1b
+						tag: {
+							mod: "thermal_series"
+						}
+					}
 				}
 				{
 					id: "0000000000000866"
-					type: "command"
-					title: "Miner's Delight"
-					icon: "kubejs:miners_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:miners_delight"
 				}
 			]
 		}
@@ -1810,11 +1807,14 @@
 			]
 			rewards: [{
 				id: "0000000000000659"
-				type: "command"
-				title: "Epic Thermal Series Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "thermal_series"
+					}
+				}
 			}]
 		}
 		{
@@ -1880,11 +1880,14 @@
 			]
 			rewards: [{
 				id: "0000000000000658"
-				type: "command"
-				title: "Epic Thermal Series Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "thermal_series"
+					}
+				}
 			}]
 		}
 		{
@@ -1906,11 +1909,14 @@
 			}]
 			rewards: [{
 				id: "000000000000065A"
-				type: "command"
-				title: "Epic Thermal Series Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "thermal_series"
+					}
+				}
 			}]
 		}
 		{
@@ -1966,11 +1972,8 @@
 			}]
 			rewards: [{
 				id: "0000000000000B0B"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-				player_command: false
+				type: "item"
+				item: "kubejs:scavengers_delight"
 			}]
 		}
 		{
@@ -2105,19 +2108,19 @@
 			rewards: [
 				{
 					id: "0000000000000F9A"
-					type: "command"
-					title: "Epic Thermal Series Loot Box"
-					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:epic_lootbox"
+						Count: 1b
+						tag: {
+							mod: "thermal_series"
+						}
+					}
 				}
 				{
 					id: "0000000000000F9B"
-					type: "command"
-					title: "Scavenger's Delight"
-					icon: "kubejs:scavengers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:scavengers_delight"
 				}
 			]
 		}
@@ -2152,7 +2155,6 @@
 				{
 					id: "4AA86E1E20DADE27"
 					type: "item"
-					title: "Advanced Fluid Tank"
 					item: {
 						id: "mekanism:advanced_fluid_tank"
 						Count: 1b
@@ -2172,7 +2174,6 @@
 				{
 					id: "17E85BEC398930AD"
 					type: "item"
-					title: "Sawblade"
 					item: {
 						id: "immersiveengineering:sawblade"
 						Count: 1b
@@ -2211,16 +2212,18 @@
 			rewards: [
 				{
 					id: "098BE70A0BFCDBDC"
-					type: "command"
-					title: "Rare Immersive Engineering Loot Box"
-					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:rare_lootbox"
+						Count: 1b
+						tag: {
+							mod: "immersive_engineering"
+						}
+					}
 				}
 				{
 					id: "02E988D98405DAFB"
 					type: "item"
-					title: "Casull Cartridge"
 					item: "immersiveengineering:casull"
 					count: 64
 				}
@@ -2257,7 +2260,6 @@
 				{
 					id: "5D7232BCA248639D"
 					type: "item"
-					title: "Advanced Fluid Tank"
 					item: {
 						id: "mekanism:advanced_fluid_tank"
 						Count: 1b
@@ -2277,7 +2279,6 @@
 				{
 					id: "7683853C5B00EE25"
 					type: "item"
-					title: "Iron Drill Head"
 					item: "immersiveengineering:drillhead_iron"
 				}
 			]
@@ -2312,16 +2313,18 @@
 			rewards: [
 				{
 					id: "57BCCB513CA91D6B"
-					type: "command"
-					title: "Rare Immersive Engineering Loot Box"
-					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:rare_lootbox"
+						Count: 1b
+						tag: {
+							mod: "immersive_engineering"
+						}
+					}
 				}
 				{
 					id: "6BCA8B2194807B4D"
 					type: "item"
-					title: "Iron Rod"
 					item: "emendatusenigmatica:iron_rod"
 					count: 16
 				}
@@ -2354,11 +2357,14 @@
 			}]
 			rewards: [{
 				id: "24A27D154F9FB236"
-				type: "command"
-				title: "Rare Immersive Engineering Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "immersive_engineering"
+					}
+				}
 			}]
 		}
 		{
@@ -2375,11 +2381,14 @@
 			}]
 			rewards: [{
 				id: "1EE1E0D6A82D9B90"
-				type: "command"
-				title: "Rare Immersive Engineering Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "immersive_engineering"
+					}
+				}
 			}]
 		}
 		{
@@ -2396,11 +2405,14 @@
 			}]
 			rewards: [{
 				id: "388801C14A6A9916"
-				type: "command"
-				title: "Rare Immersive Engineering Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "immersive_engineering"
+					}
+				}
 			}]
 		}
 		{
@@ -2417,11 +2429,14 @@
 			}]
 			rewards: [{
 				id: "231932437B4E9839"
-				type: "command"
-				title: "Rare Immersive Engineering Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "immersive_engineering"
+					}
+				}
 			}]
 		}
 		{
@@ -2523,11 +2538,14 @@
 			}]
 			rewards: [{
 				id: "673B7ECE0BDE897E"
-				type: "command"
-				title: "Rare Immersive Engineering Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "immersive_engineering"
+					}
+				}
 			}]
 		}
 		{
@@ -2550,11 +2568,14 @@
 			}]
 			rewards: [{
 				id: "541EA45AC0E8D7CF"
-				type: "command"
-				title: "Rare Immersive Engineering Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "immersive_engineering"
+					}
+				}
 			}]
 		}
 		{
@@ -2571,11 +2592,14 @@
 			}]
 			rewards: [{
 				id: "5691DD3285ADB605"
-				type: "command"
-				title: "Rare Immersive Engineering Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "immersive_engineering"
+					}
+				}
 			}]
 		}
 		{
@@ -2596,11 +2620,14 @@
 			}]
 			rewards: [{
 				id: "39097B6C7B38506A"
-				type: "command"
-				title: "Rare Immersive Engineering Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "immersive_engineering"
+					}
+				}
 			}]
 		}
 		{
@@ -2620,11 +2647,14 @@
 			}]
 			rewards: [{
 				id: "713B059CB5DBEBCA"
-				type: "command"
-				title: "Rare Immersive Engineering Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "immersive_engineering"
+					}
+				}
 			}]
 		}
 		{
@@ -2645,11 +2675,14 @@
 			}]
 			rewards: [{
 				id: "60482427F2F16E9B"
-				type: "command"
-				title: "Rare Immersive Engineering Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "immersive_engineering"
+					}
+				}
 			}]
 		}
 		{
@@ -2665,11 +2698,14 @@
 			}]
 			rewards: [{
 				id: "1D732032B9C86AB5"
-				type: "command"
-				title: "Rare Immersive Engineering Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "immersive_engineering"
+					}
+				}
 			}]
 		}
 		{
@@ -2686,11 +2722,14 @@
 			}]
 			rewards: [{
 				id: "36142E0E21AC2474"
-				type: "command"
-				title: "Rare Immersive Engineering Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "immersive_engineering"
+					}
+				}
 			}]
 		}
 		{
@@ -2744,11 +2783,8 @@
 			}]
 			rewards: [{
 				id: "43188DFF0C8F9DDC"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-				player_command: false
+				type: "item"
+				item: "kubejs:scavengers_delight"
 			}]
 		}
 		{
@@ -2775,11 +2811,8 @@
 			}]
 			rewards: [{
 				id: "4FDD99B9F9F65B1D"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-				player_command: false
+				type: "item"
+				item: "kubejs:scavengers_delight"
 			}]
 		}
 		{
@@ -2799,11 +2832,14 @@
 			}]
 			rewards: [{
 				id: "196A0F3B1A3EB04F"
-				type: "command"
-				title: "Legendary Botania Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+						mod: "botania"
+					}
+				}
 			}]
 		}
 		{
@@ -2855,11 +2891,8 @@
 			}]
 			rewards: [{
 				id: "1A05BF41EEF353BA"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-				player_command: false
+				type: "item"
+				item: "kubejs:scavengers_delight"
 			}]
 		}
 		{
@@ -2896,17 +2929,13 @@
 				{
 					id: "39498CF292AB8B53"
 					type: "item"
-					title: "Glass Bottle"
 					item: "minecraft:glass_bottle"
 					count: 8
 				}
 				{
 					id: "00012916E3BF0CC7"
-					type: "command"
-					title: "Scavenger's Delight"
-					icon: "kubejs:scavengers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:scavengers_delight"
 				}
 			]
 		}
@@ -2931,11 +2960,8 @@
 			}]
 			rewards: [{
 				id: "2826CA3ECD3974D4"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-				player_command: false
+				type: "item"
+				item: "kubejs:scavengers_delight"
 			}]
 		}
 	]

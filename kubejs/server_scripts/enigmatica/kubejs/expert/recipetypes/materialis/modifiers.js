@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
@@ -5,28 +6,15 @@ onEvent('recipes', (event) => {
 
     const id_prefix = 'enigmatica:expert/materialis/modifiers/';
     const recipes = [
+        /*
         {
             result: { name: 'materialis:reaping', level: 1 },
             inputs: [
-                { item: 'eidolon:tattered_cloth' },
+                { item: 'atum:cloth_scrap' },
                 { item: 'eidolon:reaper_scythe' },
-                { item: 'eidolon:tattered_cloth' },
-                { item: 'eidolon:soul_shard' },
-                { item: 'eidolon:soul_shard' }
-            ],
-            tools: { tag: 'tconstruct:modifiable/melee' },
-            slots: { abilities: 1 },
-            max_level: 1,
-            id: 'materialis:tools/modifiers/reaping'
-        },
-        {
-            result: { name: 'materialis:reaping', level: 1 },
-            inputs: [
-                { item: 'eidolon:tattered_cloth' },
-                { item: 'eidolon:reaper_scythe' },
-                { item: 'eidolon:tattered_cloth' },
-                { item: 'eidolon:soul_shard' },
-                { item: 'eidolon:soul_shard' }
+                { item: 'atum:cloth_scrap' },
+                { item: 'appliedenergistics2:charged_certus_quartz_crystal' },
+                { item: 'appliedenergistics2:charged_certus_quartz_crystal' }
             ],
             tools: { tag: 'tconstruct:modifiable/armor/chestplate' },
             slots: { abilities: 1 },
@@ -38,6 +26,7 @@ onEvent('recipes', (event) => {
             max_level: 1,
             id: 'materialis:tools/modifiers/reaping_unarmed'
         }
+        */
     ];
     recipes.forEach((recipe) => {
         recipe.type = 'tconstruct:modifier';

@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
@@ -65,8 +66,8 @@ onEvent('recipes', (event) => {
                 'atum:papyrus_plant',
                 '#forge:dusts/lapis',
                 'atum:papyrus_plant',
-                'eidolon:pewter_inlay',
-                'eidolon:pewter_inlay',
+                '#forge:inlays/pewter',
+                '#forge:inlays/pewter',
                 'thermal:phytogro',
                 'betterendforge:andesite_pedestal',
                 'thermal:phytogro'
@@ -78,11 +79,11 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                'eidolon:gold_inlay',
+                'resourcefulbees:tainted_honeycomb',
                 '#forge:dusts/mana',
-                'eidolon:gold_inlay',
-                'eidolon:gold_inlay',
-                'eidolon:gold_inlay'
+                'resourcefulbees:tainted_honeycomb',
+                'resourcefulbees:tainted_honeycomb',
+                'resourcefulbees:tainted_honeycomb'
             ],
             reagent: 'occultism:sacrificial_bowl',
             sourceCost: 5000,
@@ -91,14 +92,14 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                'eidolon:pewter_inlay',
+                '#forge:inlays/pewter',
                 'occultism:stable_wormhole',
-                'eidolon:pewter_inlay',
+                '#forge:inlays/pewter',
                 'bloodmagic:reinforcedslate',
                 'bloodmagic:reinforcedslate',
-                'eidolon:pewter_inlay',
+                '#forge:inlays/pewter',
                 'occultism:otherstone_pedestal',
-                'eidolon:pewter_inlay'
+                '#forge:inlays/pewter'
             ],
             reagent: 'farmersdelight:cooking_pot',
             sourceCost: 5000,
@@ -107,14 +108,14 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                'eidolon:gold_inlay',
+                'resourcefulbees:tainted_honeycomb',
                 '#forge:ingots/silver',
-                'eidolon:gold_inlay',
+                'resourcefulbees:tainted_honeycomb',
                 '#forge:ingots/silver',
                 '#forge:ingots/silver',
-                'eidolon:gold_inlay',
+                'resourcefulbees:tainted_honeycomb',
                 '#forge:ingots/silver',
-                'eidolon:gold_inlay'
+                'resourcefulbees:tainted_honeycomb'
             ],
             reagent: 'astralsorcery:aquamarine',
             sourceCost: 5000,
@@ -133,8 +134,8 @@ onEvent('recipes', (event) => {
                 'quark:white_candle'
             ],
             reagent: 'bloodmagic:holy_water_anointment',
-            output: Item.of('8x eidolon:candle'),
-            id: 'eidolon:candle'
+            output: Item.of('8x occultism:candle_white'),
+            id: 'occultism:crafting/candle'
         },
         {
             inputs: [
@@ -143,9 +144,9 @@ onEvent('recipes', (event) => {
                 '#forge:nuggets/gold_brass',
                 '#forge:ingots/gold_brass',
                 '#forge:ingots/gold_brass',
-                'eidolon:gold_inlay',
-                'eidolon:gold_inlay',
-                'eidolon:gold_inlay'
+                'resourcefulbees:tainted_honeycomb',
+                'resourcefulbees:tainted_honeycomb',
+                'resourcefulbees:tainted_honeycomb'
             ],
             reagent: 'minecraft:conduit',
             output: 'ars_nouveau:volcanic_accumulator',
@@ -158,9 +159,9 @@ onEvent('recipes', (event) => {
                 '#forge:nuggets/gold_brass',
                 '#forge:ingots/gold_brass',
                 '#forge:ingots/gold_brass',
-                'eidolon:gold_inlay',
-                'eidolon:gold_inlay',
-                'eidolon:gold_inlay'
+                'resourcefulbees:tainted_honeycomb',
+                'resourcefulbees:tainted_honeycomb',
+                'resourcefulbees:tainted_honeycomb'
             ],
             reagent: 'minecraft:conduit',
             output: 'ars_nouveau:mana_condenser',
@@ -169,13 +170,13 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 '#forge:nuggets/gold_brass',
-                'eidolon:fungus_sprouts',
+                'byg:bulbis_sprouts',
                 '#forge:nuggets/gold_brass',
                 '#forge:ingots/gold_brass',
                 '#forge:ingots/gold_brass',
-                'eidolon:gold_inlay',
-                'eidolon:gold_inlay',
-                'eidolon:gold_inlay'
+                'resourcefulbees:tainted_honeycomb',
+                'resourcefulbees:tainted_honeycomb',
+                'resourcefulbees:tainted_honeycomb'
             ],
             reagent: 'minecraft:conduit',
             output: 'ars_nouveau:mycelial_sourcelink',
@@ -188,9 +189,9 @@ onEvent('recipes', (event) => {
                 '#forge:nuggets/gold_brass',
                 '#forge:ingots/gold_brass',
                 '#forge:ingots/gold_brass',
-                'eidolon:gold_inlay',
-                'eidolon:gold_inlay',
-                'eidolon:gold_inlay'
+                'resourcefulbees:tainted_honeycomb',
+                'resourcefulbees:tainted_honeycomb',
+                'resourcefulbees:tainted_honeycomb'
             ],
             reagent: 'minecraft:conduit',
             output: 'ars_nouveau:vitalic_sourcelink',
@@ -203,9 +204,9 @@ onEvent('recipes', (event) => {
                 '#forge:nuggets/gold_brass',
                 '#forge:ingots/gold_brass',
                 '#forge:ingots/gold_brass',
-                'eidolon:gold_inlay',
-                'eidolon:gold_inlay',
-                'eidolon:gold_inlay'
+                'resourcefulbees:tainted_honeycomb',
+                'resourcefulbees:tainted_honeycomb',
+                'resourcefulbees:tainted_honeycomb'
             ],
             reagent: 'minecraft:conduit',
             output: 'ars_nouveau:alchemical_sourcelink',
@@ -213,14 +214,14 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                '#forge:inlays/arcane_gold',
+                'resourcefulbees:tainted_honeycomb',
                 'ars_nouveau:warding_stone',
-                '#forge:inlays/arcane_gold',
-                '#forge:nuggets/arcane_gold',
-                '#forge:nuggets/arcane_gold',
-                '#forge:inlays/arcane_gold',
+                'resourcefulbees:tainted_honeycomb',
+                '#forge:nuggets/signalum',
+                '#forge:nuggets/signalum',
+                'resourcefulbees:tainted_honeycomb',
                 'ars_nouveau:warding_stone',
-                '#forge:inlays/arcane_gold'
+                'resourcefulbees:tainted_honeycomb'
             ],
             reagent: '#forge:gems/mana',
             output: 'ars_nouveau:crystallizer',
@@ -346,7 +347,7 @@ onEvent('recipes', (event) => {
                 'quark:bottled_cloud',
                 'quark:bottled_cloud'
             ],
-            reagent: 'eidolon:basic_belt',
+            reagent: 'ars_nouveau:mundane_belt',
             sourceCost: 500,
             output: 'ars_nouveau:belt_of_levitation',
             id: 'ars_nouveau:belt_of_levitation'
@@ -362,7 +363,7 @@ onEvent('recipes', (event) => {
                 'atum:atem_godshard',
                 '#forge:feathers'
             ],
-            reagent: 'eidolon:basic_belt',
+            reagent: 'ars_nouveau:mundane_belt',
             sourceCost: 500,
             output: 'ars_nouveau:belt_of_unstable_gifts',
             id: 'ars_nouveau:belt_of_unstable_gifts'
@@ -496,12 +497,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_nouveau:blaze_fiber',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:blaze_fiber',
-                'eidolon:wicked_weave',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:blaze_fiber',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:blaze_fiber'
             ],
             reagent: Item.of('atum:wanderer_helmet', '{Damage:0}').weakNBT(),
@@ -512,12 +513,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_nouveau:blaze_fiber',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:blaze_fiber',
-                'eidolon:wicked_weave',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:blaze_fiber',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:blaze_fiber'
             ],
             reagent: Item.of('atum:wanderer_chest', '{Damage:0}').weakNBT(),
@@ -528,12 +529,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_nouveau:blaze_fiber',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:blaze_fiber',
-                'eidolon:wicked_weave',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:blaze_fiber',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:blaze_fiber'
             ],
             reagent: Item.of('atum:wanderer_legs', '{Damage:0}').weakNBT(),
@@ -544,12 +545,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_nouveau:blaze_fiber',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:blaze_fiber',
-                'eidolon:wicked_weave',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:blaze_fiber',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:blaze_fiber'
             ],
             reagent: Item.of('atum:wanderer_boots', '{Damage:0}').weakNBT(),
@@ -561,12 +562,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_nouveau:end_fiber',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:end_fiber',
-                'eidolon:wicked_weave',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:end_fiber',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:end_fiber'
             ],
             reagent: Item.of('botania:manaweave_helmet', '{Damage:0}').weakNBT(),
@@ -577,12 +578,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_nouveau:end_fiber',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:end_fiber',
-                'eidolon:wicked_weave',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:end_fiber',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:end_fiber'
             ],
             reagent: Item.of('botania:manaweave_chestplate', '{Damage:0}').weakNBT(),
@@ -593,12 +594,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_nouveau:end_fiber',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:end_fiber',
-                'eidolon:wicked_weave',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:end_fiber',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:end_fiber'
             ],
             reagent: Item.of('botania:manaweave_leggings', '{Damage:0}').weakNBT(),
@@ -609,12 +610,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_nouveau:end_fiber',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:end_fiber',
-                'eidolon:wicked_weave',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:end_fiber',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_nouveau:end_fiber'
             ],
             reagent: Item.of('botania:manaweave_boots', '{Damage:0}').weakNBT(),
@@ -721,8 +722,8 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'atum:anput_godshard',
-                '#forge:ingots/arcane_gold',
-                '#forge:ingots/arcane_gold',
+                'naturesaura:tainted_gold',
+                'naturesaura:tainted_gold',
                 'naturesaura:token_fear'
             ],
             reagent: '#atum:relic_non_dirty/ring',
@@ -1084,9 +1085,9 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                'eidolon:soul_shard',
+                'appliedenergistics2:charged_certus_quartz_crystal',
                 'occultism:spirit_attuned_gem',
-                'eidolon:soul_shard',
+                'appliedenergistics2:charged_certus_quartz_crystal',
                 '#forge:ingots/silicon_bronze',
                 '#forge:ingots/silicon_bronze',
                 'ars_nouveau:arcane_stone',
@@ -1193,9 +1194,9 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                'eidolon:soul_shard',
+                'appliedenergistics2:charged_certus_quartz_crystal',
                 Item.of('minecraft:potion', '{Potion:"apotheosis:knowledge"}'),
-                'eidolon:soul_shard',
+                'appliedenergistics2:charged_certus_quartz_crystal',
                 '#forge:ingots/osmium',
                 '#forge:ingots/osmium',
                 '#forge:ingots/osmium',
@@ -1209,14 +1210,14 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                '#forge:nuggets/arcane_gold',
+                '#forge:nuggets/signalum',
                 'create:polished_rose_quartz',
-                '#forge:nuggets/arcane_gold',
-                '#forge:inlays/arcane_gold',
-                '#forge:inlays/arcane_gold',
-                '#forge:nuggets/arcane_gold',
+                '#forge:nuggets/signalum',
+                'resourcefulbees:tainted_honeycomb',
+                'resourcefulbees:tainted_honeycomb',
+                '#forge:nuggets/signalum',
                 'create:polished_rose_quartz',
-                '#forge:nuggets/arcane_gold'
+                '#forge:nuggets/signalum'
             ],
             sourceCost: 100,
             reagent: 'ars_nouveau:basic_spell_turret',
@@ -1241,14 +1242,14 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                '#forge:inlays/arcane_gold',
+                'resourcefulbees:tainted_honeycomb',
                 '#forge:storage_blocks/mana',
-                '#forge:inlays/arcane_gold',
+                'resourcefulbees:tainted_honeycomb',
                 '#forge:storage_blocks/tinkers_bronze',
                 '#forge:storage_blocks/tinkers_bronze',
-                '#forge:inlays/arcane_gold',
+                'resourcefulbees:tainted_honeycomb',
                 '#forge:storage_blocks/mana',
-                '#forge:inlays/arcane_gold'
+                'resourcefulbees:tainted_honeycomb'
             ],
             sourceCost: 500,
             reagent: Item.of('mekanismtools:osmium_shield', '{Damage:0}').weakNBT(),
@@ -1322,14 +1323,14 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                '#forge:nuggets/arcane_gold',
+                '#forge:nuggets/signalum',
                 'ars_nouveau:glyph_craft',
-                '#forge:nuggets/arcane_gold',
+                '#forge:nuggets/signalum',
                 'architects_palette:twisted_sapling',
                 'minecraft:brewing_stand',
-                '#forge:nuggets/arcane_gold',
+                '#forge:nuggets/signalum',
                 '#forge:coins/electrum',
-                '#forge:nuggets/arcane_gold'
+                '#forge:nuggets/signalum'
             ],
             sourceCost: 50,
             reagent: 'ars_nouveau:wixie_shards',
@@ -1358,8 +1359,8 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:glyph_extend_time',
                 '#forge:gems/mana',
                 'ars_nouveau:glyph_extend_time',
-                '#forge:ingots/arcane_gold',
-                '#forge:ingots/arcane_gold',
+                'naturesaura:tainted_gold',
+                'naturesaura:tainted_gold',
                 'ars_nouveau:glyph_extend_time',
                 '#forge:gems/mana',
                 'ars_nouveau:glyph_extend_time'
@@ -1374,8 +1375,8 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:glyph_amplify',
                 '#forge:gems/mana',
                 'ars_nouveau:glyph_amplify',
-                '#forge:ingots/arcane_gold',
-                '#forge:ingots/arcane_gold',
+                'naturesaura:tainted_gold',
+                'naturesaura:tainted_gold',
                 'ars_nouveau:glyph_amplify',
                 '#forge:gems/mana',
                 'ars_nouveau:glyph_amplify'
@@ -1404,37 +1405,37 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 '#forge:ingots/gold',
-                'eidolon:enchanted_ash',
+                'naturesaura:crimson_meal',
                 '#forge:ingots/gold',
                 '#forge:dusts/redstone',
                 '#forge:dusts/redstone'
             ],
             sourceCost: 50,
-            reagent: 'eidolon:soul_shard',
-            output: Item.of('2x eidolon:arcane_gold_ingot'),
-            id: `${id_prefix}arcane_gold_ingot`
+            reagent: 'minecraft:rotten_flesh',
+            output: Item.of('2x naturesaura:tainted_gold'),
+            id: `${id_prefix}tainted_gold`
         },
         {
             inputs: [
                 '#forge:ingots/gold',
-                'eidolon:soul_shard',
+                'minecraft:rotten_flesh',
                 '#forge:ingots/gold',
                 '#forge:dusts/redstone',
                 '#forge:dusts/redstone'
             ],
             reagent: 'minecraft:conduit',
-            output: Item.of('2x eidolon:arcane_gold_ingot'),
-            id: `${id_prefix}arcane_gold_ingot_starter`
+            output: Item.of('2x naturesaura:tainted_gold'),
+            id: `${id_prefix}tainted_gold_starter`
         },
         {
             inputs: [
                 'bloodmagic:blankslate',
-                'eidolon:ender_calx',
+                '#forge:dusts/flux_infused',
                 'bloodmagic:blankslate',
                 'bloodmagic:blankslate',
                 'bloodmagic:blankslate',
                 'bloodmagic:blankslate',
-                'eidolon:ender_calx',
+                '#forge:dusts/flux_infused',
                 'bloodmagic:blankslate'
             ],
             sourceCost: 50,
@@ -1486,51 +1487,19 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                '#forge:nuggets/arcane_gold',
+                '#forge:nuggets/signalum',
                 'botania:auto_crafting_halo',
-                '#forge:nuggets/arcane_gold',
+                '#forge:nuggets/signalum',
                 '#forge:gears/osmium',
                 '#forge:gears/osmium',
-                '#forge:nuggets/arcane_gold',
+                '#forge:nuggets/signalum',
                 'botania:corporea_spark',
-                '#forge:nuggets/arcane_gold'
+                '#forge:nuggets/signalum'
             ],
             sourceCost: 200,
             reagent: '#sophisticatedbackpacks:upgrades/crafting',
             output: 'sophisticatedbackpacks:compacting_upgrade',
             id: 'sophisticatedbackpacks:compacting_upgrade'
-        },
-        {
-            inputs: [
-                'botania:corporea_block',
-                'botania:red_string',
-                'botania:corporea_block',
-                'ars_nouveau:mythical_clay',
-                'ars_nouveau:mythical_clay',
-                'botania:corporea_block',
-                'botania:red_string',
-                'botania:corporea_block'
-            ],
-            sourceCost: 500,
-            reagent: 'botania:corporea_index',
-            output: 'interactive_corporea:requesting_halo',
-            id: 'interactive_corporea:requesting_halo'
-        },
-        {
-            inputs: [
-                'botania:corporea_block',
-                'botania:corporea_funnel',
-                'botania:corporea_block',
-                'ars_nouveau:relay_warp',
-                'ars_nouveau:relay_warp',
-                'botania:corporea_block',
-                'botania:corporea_funnel',
-                'botania:corporea_block'
-            ],
-            sourceCost: 500,
-            reagent: 'botania:light_relay',
-            output: 'interactive_corporea:item_quantization_device',
-            id: 'interactive_corporea:item_quantization_device'
         },
         {
             inputs: [
@@ -1551,12 +1520,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_elemental:fire_focus',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 '#botania:runes/fire',
-                'eidolon:wicked_weave',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
+                'kubejs:wicked_weave',
                 '#botania:runes/fire',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_elemental:fire_focus'
             ],
             sourceCost: 10000,
@@ -1567,12 +1536,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_elemental:water_focus',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 '#botania:runes/water',
-                'eidolon:wicked_weave',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
+                'kubejs:wicked_weave',
                 '#botania:runes/water',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_elemental:water_focus'
             ],
             sourceCost: 10000,
@@ -1583,12 +1552,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_elemental:earth_focus',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 '#botania:runes/earth',
-                'eidolon:wicked_weave',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
+                'kubejs:wicked_weave',
                 '#botania:runes/earth',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_elemental:earth_focus'
             ],
             sourceCost: 10000,
@@ -1599,12 +1568,12 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_elemental:air_focus',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 '#botania:runes/air',
-                'eidolon:wicked_weave',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
+                'kubejs:wicked_weave',
                 '#botania:runes/air',
-                'eidolon:wicked_weave',
+                'kubejs:wicked_weave',
                 'ars_elemental:air_focus'
             ],
             sourceCost: 10000,
@@ -1643,118 +1612,6 @@ onEvent('recipes', (event) => {
             reagent: 'thermal:satchel',
             output: 'naturesaura:ender_access',
             id: `${id_prefix}ender_access`
-        },
-        {
-            inputs: [
-                '#forge:inlays/pewter',
-                'eidolon:lesser_soul_gem',
-                '#forge:inlays/pewter',
-                'quark:soul_bead',
-                'quark:soul_bead',
-                '#forge:inlays/pewter',
-                'quark:soul_bead',
-                '#forge:inlays/pewter'
-            ],
-            sourceCost: 10000,
-            reagent: Item.of('minecraft:chainmail_chestplate', '{Damage:0}').weakNBT(),
-            output: 'eidolon:warded_mail',
-            id: `${id_prefix}warded_mail`
-        },
-        {
-            inputs: [
-                '#forge:plates/lead',
-                'atum:nuit_godshard',
-                '#forge:plates/lead',
-                '#forge:plates/lead',
-                '#forge:plates/lead',
-                'eidolon:soul_shard',
-                'ars_nouveau:glyph_shield',
-                'eidolon:soul_shard'
-            ],
-            sourceCost: 500,
-            reagent: 'eidolon:basic_belt',
-            output: 'eidolon:mind_shielding_plate',
-            id: `${id_prefix}mind_shielding_plate`
-        },
-        {
-            inputs: [
-                'eidolon:soul_shard',
-                '#forge:gems/apatite',
-                'eidolon:soul_shard',
-                '#forge:rods/basalz',
-                '#forge:rods/basalz',
-                '#forge:inlays/arcane_gold',
-                'ars_nouveau:glyph_dampen',
-                '#forge:inlays/arcane_gold'
-            ],
-            sourceCost: 500,
-            reagent: 'eidolon:basic_belt',
-            output: 'eidolon:resolute_belt',
-            id: `${id_prefix}resolute_belt`
-        },
-        {
-            inputs: [
-                'eidolon:soul_shard',
-                'quark:bottled_cloud',
-                'eidolon:soul_shard',
-                '#forge:rods/blitz',
-                '#forge:rods/blitz',
-                '#forge:inlays/pewter',
-                'ars_nouveau:glyph_slowfall',
-                '#forge:inlays/pewter'
-            ],
-            sourceCost: 500,
-            reagent: 'eidolon:basic_belt',
-            output: 'eidolon:gravity_belt',
-            id: `${id_prefix}gravity_belt`
-        },
-        {
-            inputs: [
-                'eidolon:wicked_weave',
-                'eidolon:soul_shard',
-                'eidolon:wicked_weave',
-                'eidolon:wicked_weave',
-                'eidolon:wicked_weave',
-                'eidolon:wicked_weave',
-                'eidolon:soul_shard',
-                'eidolon:wicked_weave'
-            ],
-            sourceCost: 100,
-            reagent: 'atum:wanderer_boots',
-            output: 'eidolon:warlock_boots',
-            id: `${id_prefix}warlock_boots`
-        },
-        {
-            inputs: [
-                'eidolon:wicked_weave',
-                'eidolon:soul_shard',
-                'eidolon:wicked_weave',
-                'eidolon:wicked_weave',
-                'eidolon:wicked_weave',
-                'eidolon:wicked_weave',
-                'eidolon:soul_shard',
-                'eidolon:wicked_weave'
-            ],
-            sourceCost: 100,
-            reagent: 'atum:wanderer_chest',
-            output: 'eidolon:warlock_cloak',
-            id: `${id_prefix}warlock_cloak`
-        },
-        {
-            inputs: [
-                'eidolon:wicked_weave',
-                'eidolon:soul_shard',
-                'eidolon:wicked_weave',
-                'eidolon:wicked_weave',
-                'eidolon:wicked_weave',
-                'eidolon:wicked_weave',
-                'eidolon:soul_shard',
-                'eidolon:wicked_weave'
-            ],
-            sourceCost: 100,
-            reagent: 'atum:wanderer_helmet',
-            output: 'eidolon:warlock_hat',
-            id: `${id_prefix}warlock_hat`
         },
         {
             inputs: [

@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
@@ -350,7 +351,7 @@ onEvent('recipes', (event) => {
             inputs: [
                 { item: 'minecraft:skeleton_skull', count: 4 },
                 { item: 'minecraft:wither_skeleton_skull', count: 4 },
-                { item: 'eidolon:candlestick', count: 8 },
+                { item: 'occultism:candle_white', count: 8 },
                 { item: 'occultism:spirit_attuned_crystal', count: 8 },
                 { item: 'occultism:golden_sacrificial_bowl', count: 1 },
                 { item: 'occultism:sacrificial_bowl', count: 12 },
@@ -397,7 +398,7 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 { item: 'pneumaticcraft:pneumatic_cylinder', count: 6 },
-                { item: 'prettypipes:pipe', count: 10 },
+                { item: 'mekanism:basic_logistical_transporter', count: 10 },
                 { item: 'pneumaticcraft:reinforced_stone_slab', count: 6 },
                 { item: 'pneumaticcraft:pneumatic_dynamo', count: 1 },
                 { item: 'create:brass_hand', count: 2 },
@@ -410,7 +411,7 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 { item: 'pneumaticcraft:pneumatic_cylinder', count: 3 },
-                { item: 'prettypipes:pipe', count: 5 },
+                { item: 'mekanism:basic_logistical_transporter', count: 5 },
                 { item: 'pneumaticcraft:reinforced_stone_slab', count: 3 },
                 { item: 'pneumaticcraft:pneumatic_dynamo', count: 1 },
                 { tag: 'powah:energizing_rod', count: 1 },
@@ -423,7 +424,7 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 { item: 'pneumaticcraft:pneumatic_cylinder', count: 3 },
-                { item: 'prettypipes:pipe', count: 5 },
+                { item: 'mekanism:basic_logistical_transporter', count: 5 },
                 { item: 'pneumaticcraft:reinforced_stone_slab', count: 3 },
                 { item: 'pneumaticcraft:pneumatic_dynamo', count: 1 },
                 { item: 'pneumaticcraft:drill_bit_diamond', count: 1 },
@@ -448,7 +449,7 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 { item: 'pneumaticcraft:printed_circuit_board', count: 3 },
-                { item: 'prettypipes:pipe', count: 5 },
+                { item: 'mekanism:basic_logistical_transporter', count: 5 },
                 { item: 'rftoolsutility:screen', count: 1 },
                 { item: 'pneumaticcraft:reinforced_stone_slab', count: 3 },
                 { item: 'pneumaticcraft:pneumatic_dynamo', count: 1 },
@@ -565,9 +566,10 @@ onEvent('recipes', (event) => {
 
         if (tier == 'basic') {
             capacitor = `powah:capacitor_${tier}_large`;
-        } else if (tier == 'hardened') {
-            crystal = 'powah:steel_energized';
         }
+        // else if (tier == 'hardened') {
+        //     let crystal = 'powah:steel_energized';
+        // }
 
         // let lower_tiers = lowerTiers(powahTiers, tier);
 

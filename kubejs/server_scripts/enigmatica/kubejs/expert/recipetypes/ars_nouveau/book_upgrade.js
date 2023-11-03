@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
@@ -6,7 +7,7 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_nouveau:novice_spell_book',
-                'eidolon:shadow_gem',
+                'redstone_arsenal:flux_gem',
                 '#forge:gems/diamond',
                 '#forge:gems/diamond',
                 '#forge:gems/diamond',
@@ -36,7 +37,7 @@ onEvent('recipes', (event) => {
     ];
 
     recipes.forEach((recipe) => {
-        var ingredients = [];
+        let ingredients = [];
         recipe.inputs.forEach((input) => {
             ingredients.push(Ingredient.of(input).toJson());
         });

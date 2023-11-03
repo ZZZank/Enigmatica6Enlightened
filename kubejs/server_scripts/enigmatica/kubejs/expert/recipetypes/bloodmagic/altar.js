@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
@@ -15,7 +16,7 @@ onEvent('recipes', (event) => {
             }*/
 
         {
-            input: 'eidolon:unholy_symbol',
+            input: 'environmental:koi',
             output: 'bloodmagic:weakbloodorb',
             syphon: 7000,
             altarLevel: 0,
@@ -141,15 +142,6 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}moonstone`
         },
         {
-            input: Item.of('eidolon:sapping_sword', '{Damage:0}').weakNBT(),
-            output: 'bloodmagic:sacrificialdagger',
-            syphon: 7000,
-            altarLevel: 1,
-            consumptionRate: 5,
-            drainRate: 5,
-            id: 'bloodmagic:sacrificial_dagger'
-        },
-        {
             input: 'create:shadow_steel',
             output: 'bloodmagic:masterbloodorb',
             syphon: 80000,
@@ -205,12 +197,12 @@ onEvent('recipes', (event) => {
         },
         {
             input: 'botania:livingwood_planks',
-            output: 'eidolon:polished_planks',
+            output: 'bloodmagic:woodtilepath',
             syphon: 50,
             altarLevel: 0,
             consumptionRate: 25,
             drainRate: 5,
-            id: `${id_prefix}polished_planks`
+            id: `bloodmagic:path/path_woodtile`
         },
         {
             input: 'ars_nouveau:ritual_warping',
@@ -229,15 +221,6 @@ onEvent('recipes', (event) => {
             consumptionRate: 5,
             drainRate: 5,
             id: `${id_prefix}fel_pumpkin`
-        },
-        {
-            input: 'eidolon:void_amulet',
-            output: 'botania:blood_pendant',
-            syphon: 7000,
-            altarLevel: 1,
-            consumptionRate: 5,
-            drainRate: 5,
-            id: `${id_prefix}blood_pendant`
         }
     ];
 

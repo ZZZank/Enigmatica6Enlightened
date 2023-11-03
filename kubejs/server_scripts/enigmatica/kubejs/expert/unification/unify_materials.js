@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
@@ -5,25 +6,25 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:expert/unification/unify_materials/';
 
     materialsToUnify.forEach((material) => {
-        var ingot = getPreferredItemInTag(Ingredient.of(`#forge:ingots/${material}`)).id;
-        var nugget = getPreferredItemInTag(Ingredient.of(`#forge:nuggets/${material}`)).id;
-        var gem = getPreferredItemInTag(Ingredient.of(`#forge:gems/${material}`)).id;
+        let ingot = getPreferredItemInTag(Ingredient.of(`#forge:ingots/${material}`)).id;
+        let nugget = getPreferredItemInTag(Ingredient.of(`#forge:nuggets/${material}`)).id;
+        let gem = getPreferredItemInTag(Ingredient.of(`#forge:gems/${material}`)).id;
 
-        var plate = getPreferredItemInTag(Ingredient.of(`#forge:plates/${material}`)).id;
-        var gear = getPreferredItemInTag(Ingredient.of(`#forge:gears/${material}`)).id;
-        var rod = getPreferredItemInTag(Ingredient.of(`#forge:rods/${material}`)).id;
-        var wire = getPreferredItemInTag(Ingredient.of(`#forge:wires/${material}`)).id;
+        let plate = getPreferredItemInTag(Ingredient.of(`#forge:plates/${material}`)).id;
+        let gear = getPreferredItemInTag(Ingredient.of(`#forge:gears/${material}`)).id;
+        let rod = getPreferredItemInTag(Ingredient.of(`#forge:rods/${material}`)).id;
+        let wire = getPreferredItemInTag(Ingredient.of(`#forge:wires/${material}`)).id;
 
         let crushed_ore = getPreferredItemInTag(Ingredient.of(`#create:crushed_ores/${material}`)).id;
-        var ore = getPreferredItemInTag(Ingredient.of(`#forge:ores/${material}`)).id;
-        var mana_cluster = getPreferredItemInTag(Ingredient.of(`#enigmatica:mana_clusters/${material}`)).id;
-        var fulminated_cluster = getPreferredItemInTag(
+        let ore = getPreferredItemInTag(Ingredient.of(`#forge:ores/${material}`)).id;
+        let mana_cluster = getPreferredItemInTag(Ingredient.of(`#enigmatica:mana_clusters/${material}`)).id;
+        let fulminated_cluster = getPreferredItemInTag(
             Ingredient.of(`#enigmatica:fulminated_clusters/${material}`)
         ).id;
-        var levigated_material = getPreferredItemInTag(
+        let levigated_material = getPreferredItemInTag(
             Ingredient.of(`#enigmatica:levigated_materials/${material}`)
         ).id;
-        var crystalline_sliver = getPreferredItemInTag(
+        let crystalline_sliver = getPreferredItemInTag(
             Ingredient.of(`#enigmatica:crystalline_slivers/${material}`)
         ).id;
 
@@ -53,15 +54,15 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        blacklistedMaterials = ['ender'];
+        let blacklistedMaterials = ['ender'];
 
-        for (var i = 0; i < blacklistedMaterials.length; i++) {
+        for (let i = 0; i < blacklistedMaterials.length; i++) {
             if (blacklistedMaterials[i] == material) {
                 return;
             }
         }
 
-        var output = ingot,
+        let output = ingot,
             input = `#forge:ores/${material}`;
         event.blasting(output, input).xp(0.7).id(`${id_prefix}blasting/${material}/ingot/from_ore`);
 
@@ -77,7 +78,7 @@ onEvent('recipes', (event) => {
 
         event.remove({ output: gear });
 
-        var output = gear,
+        let output = gear,
             input,
             mold = 'immersiveengineering:mold_gear';
 
@@ -151,6 +152,7 @@ onEvent('recipes', (event) => {
             mold = '#thermal:crafting/dies/plate',
             hammer = '#forge:tools/crafting_hammer';
 
+        let input;
         if (ingot != air) {
             input = `#forge:ingots/${material}`;
         } else if (gem != air) {
@@ -180,7 +182,8 @@ onEvent('recipes', (event) => {
         event.remove({ output: wire });
 
         const wireCutters = '#forge:tools/wirecutter';
-        let output = wire,
+        let input,
+            output = wire,
             mold = '#thermal:crafting/dies/wire';
 
         if (ingot != air) {
@@ -216,7 +219,8 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        var primaryOutput = crushed_ore,
+        let primaryOutput = crushed_ore,
+            secondaryOutput,
             input = `#forge:ores/${material}`,
             materialProperties;
 
@@ -267,7 +271,7 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        var secondary_fulminated_cluster,
+        let secondary_fulminated_cluster,
             infusing_input = `#forge:ores/${material}`,
             zapping_input = `#enigmatica:mana_clusters/${material}`,
             crumbling_input = `#enigmatica:fulminated_clusters/${material}`,

@@ -7,7 +7,7 @@
 
 	[entities.koi]
 		#Make Koi only block natural spawns
-		"Block only natural spawns" = true
+		"Block only natural spawns" = false
 		#Horizontal radius of Serenity effect in blocks
 		"Horizontal serenity range (radius)" = 32
 		#Vertical radius of Serenity effect in blocks

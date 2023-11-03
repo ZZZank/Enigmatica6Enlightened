@@ -1,5 +1,6 @@
+'use strict';
 onEvent('item.tags', (event) => {
-    var items = [
+    let items = [
         'botania:bauble_box',
         'botania:ender_hand',
         'botania:flower_bag',
@@ -11,7 +12,7 @@ onEvent('item.tags', (event) => {
         'tetra:modular_toolbelt'
     ];
 
-    var tags = ['forge:storage', 'forge:storage/bag'];
+    let tags = ['forge:storage', 'forge:storage/bag'];
 
     tags.forEach((tag) => {
         event

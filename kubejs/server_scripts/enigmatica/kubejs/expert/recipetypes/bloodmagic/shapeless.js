@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
@@ -8,10 +9,10 @@ onEvent('recipes', (event) => {
         {
             output: Item.of('bloodmagic:woodbrickpath', 4),
             inputs: [
-                'eidolon:polished_planks',
-                'eidolon:polished_planks',
-                'eidolon:polished_planks',
-                'eidolon:polished_planks',
+                'bloodmagic:woodtilepath',
+                'bloodmagic:woodtilepath',
+                'bloodmagic:woodtilepath',
+                'bloodmagic:woodtilepath',
                 { type: 'bloodmagic:bloodorb', orb_tier: 2 }
             ],
             id: 'bloodmagic:path/path_wood'

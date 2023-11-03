@@ -1,3 +1,4 @@
+'use strict';
 onEvent('jei.hide.fluids', (event) => {
     [
         'cofh_core:honey',

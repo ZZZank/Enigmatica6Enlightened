@@ -1,8 +1,7 @@
-//priority: 1000
+// priority: 1000
+'use strict';
 
 const candles = [
-    'eidolon:candle',
-    'eidolon:candlestick',
     'occultism:candle_white',
     'quark:black_candle',
     'quark:blue_candle',

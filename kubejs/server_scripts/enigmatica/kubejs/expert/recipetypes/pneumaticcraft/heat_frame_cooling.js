@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
@@ -5,7 +6,7 @@ onEvent('recipes', (event) => {
 
     const id_prefix = 'enigmatica:expert/pneumaticcraft/heat_frame_cooling/';
 
-    var data = {
+    let data = {
         recipes: [
             {
                 input: { type: 'pneumaticcraft:fluid', fluid: 'immersiveengineering:concrete', amount: 1000 },

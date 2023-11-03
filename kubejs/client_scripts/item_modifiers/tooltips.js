@@ -1,3 +1,4 @@
+'use strict';
 onEvent('item.tooltip', (event) => {
     /*
     Valid Color Codes:

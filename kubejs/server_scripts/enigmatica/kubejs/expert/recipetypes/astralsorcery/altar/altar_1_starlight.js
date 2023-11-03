@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     /*
     Note, max starlight is theoretical. In practice, assume roughly 95% as the max reasonable level
@@ -73,7 +74,7 @@ onEvent('recipes', (event) => {
                 A: { tag: 'forge:rods/treated_wood' },
                 B: { item: 'astralsorcery:hand_telescope' },
                 C: { tag: 'forge:ingots/sky' },
-                D: { item: 'eidolon:polished_planks' },
+                D: { item: 'bloodmagic:woodtilepath' },
                 E: { tag: 'botania:runes/air' },
                 F: { item: 'astralsorcery:nocturnal_powder' }
             },
@@ -147,13 +148,13 @@ onEvent('recipes', (event) => {
             starlight: 1400,
             pattern: ['A___A', '_BCB_', '_GEG_', '_FFF_', 'D___D'],
             key: {
-                A: { tag: 'forge:ingots/arcane_gold' },
+                A: { item: 'naturesaura:tainted_gold' },
                 B: { item: 'astralsorcery:marble_chiseled' },
                 C: { item: 'minecraft:conduit' },
                 D: { item: 'astralsorcery:marble_pillar' },
                 E: { item: 'bloodmagic:masterritualstone' },
                 F: { item: 'astralsorcery:marble_runed' },
-                G: { tag: 'forge:inlays/arcane_gold' }
+                G: { item: 'resourcefulbees:tainted_honeycomb' }
             },
             effects: [
                 'astralsorcery:built_in_effect_discovery_central_beam',

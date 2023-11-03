@@ -1,4 +1,5 @@
-//priority: 1001
+// priority: 1001
+'use strict';
 
 const air = 'minecraft:air';
 
@@ -20,7 +21,6 @@ const modPriorities = [
     'appliedenergistics2',
     'mapperbase',
     'bloodmagic',
-    'eidolon',
     'morevanillalib',
     'titanium',
     'mythicbotany',

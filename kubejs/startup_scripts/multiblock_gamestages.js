@@ -1,3 +1,4 @@
+'use strict';
 onEvent('ie.multiblock.form', (event) => {
     if (global.isExpertMode == false) {
         return;
@@ -39,8 +40,8 @@ onEvent('ie.multiblock.form', (event) => {
 });
 
 function titleCase(str) {
-    var splitStr = str.toLowerCase().split(' ');
-    for (var i = 0; i < splitStr.length; i++) {
+    let splitStr = str.toLowerCase().split(' ');
+    for (let i = 0; i < splitStr.length; i++) {
         splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
     }
     return splitStr.join(' ');

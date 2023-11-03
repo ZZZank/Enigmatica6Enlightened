@@ -1,9 +1,10 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
     const id_prefix = 'enigmatica:expert/immersiveengineering/arc_furnace/';
-    var data = {
+    let data = {
         recipes: [
             {
                 input1: Ingredient.of('3x #forge:ingots/cobalt'),
@@ -78,24 +79,6 @@ onEvent('recipes', (event) => {
             },
             {
                 input1: Item.of('3x modularrouters:blank_module'),
-                secondaries: [Item.of('3x prettypipes:high_retrieval_module')],
-                outputs: [Item.of('3x modularrouters:puller_module_1')],
-                id: `${id_prefix}puller_module_1`
-            },
-            {
-                input1: Item.of('3x modularrouters:blank_module'),
-                secondaries: [Item.of('3x prettypipes:high_extraction_module')],
-                outputs: [Item.of('3x modularrouters:sender_module_1')],
-                id: `${id_prefix}sender_module_1`
-            },
-            {
-                input1: Item.of('3x modularrouters:blank_module'),
-                secondaries: [Item.of('3x ppfluids:high_fluid_retrieval_module')],
-                outputs: [Item.of('3x modularrouters:fluid_module')],
-                id: `${id_prefix}fluid_module`
-            },
-            {
-                input1: Item.of('3x modularrouters:blank_module'),
                 secondaries: [Item.of('thermal:charge_bench')],
                 outputs: [Item.of('3x modularrouters:energy_output_module')],
                 id: `${id_prefix}energy_output_module`
@@ -114,7 +97,7 @@ onEvent('recipes', (event) => {
             },
             {
                 input1: 'create:honeyed_apple',
-                secondaries: [Ingredient.of('4x #forge:storage_blocks/arcane_gold')],
+                secondaries: [Ingredient.of('4x #forge:storage_blocks/tainted_gold')],
                 outputs: ['minecraft:enchanted_golden_apple'],
                 id: `${id_prefix}enchanted_golden_apple`
             },

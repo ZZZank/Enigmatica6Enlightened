@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
@@ -98,7 +99,7 @@ onEvent('recipes', (event) => {
             inputs: [
                 'farmersdelight:honey_glazed_ham_block',
                 'naturesaura:token_anger',
-                'eidolon:shadow_gem',
+                'redstone_arsenal:flux_gem',
                 '#forge:ingots/forgotten_metal'
             ],
             entity: 'undergarden:masticator',

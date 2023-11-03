@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
@@ -40,7 +41,7 @@ onEvent('recipes', (event) => {
                 A: '#forge:rods/silver',
                 B: 'betterendforge:leather_stripe',
                 C: '#forge:gems/aquamarine',
-                D: 'eidolon:ender_calx'
+                D: '#forge:dusts/flux_infused'
             },
             id: 'astralsorcery:altar/wand'
         },

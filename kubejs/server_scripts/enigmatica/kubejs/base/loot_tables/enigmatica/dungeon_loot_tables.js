@@ -1,3 +1,4 @@
+'use strict';
 onEvent('server.datapack.low_priority', (event) => {
     let lootTables = [
         {
@@ -53,7 +54,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 { item: 'darkutils:book_runelic', weight: 100 },
                 { item: 'minecraft:gold_nugget', weight: 100, amount: [8.0, 16.0] },
                 { item: 'emendatusenigmatica:silver_nugget', weight: 100, amount: [8.0, 16.0] },
-                { item: 'eidolon:zombie_heart', weight: 100 },
+                { item: 'kubejs:zombie_heart', weight: 100 },
                 { item: 'aquaculture:neptunium_fillet_knife', weight: 100, enchantRange: [30.0, 40.0] },
                 { item: 'aquaculture:neptunium_ingot', weight: 100, amount: [1.0, 3.0] },
                 { item: 'aquaculture:diamond_hook', weight: 20 },
@@ -367,7 +368,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 { item: 'minecraft:leather', weight: 100, amount: [4.0, 12.0] },
                 { item: 'minecraft:string', weight: 100, amount: [4.0, 12.0] },
                 { item: 'minecraft:warped_nylium', weight: 100, amount: [4.0, 12.0] },
-                { item: 'eidolon:warped_sprouts', weight: 100, amount: [4.0, 12.0] },
+                { item: 'byg:fungal_imparius', weight: 100, amount: [4.0, 12.0] },
                 { item: 'byg:crimson_berries', weight: 100, amount: [4.0, 12.0] },
                 { item: 'minecraft:crimson_nylium', weight: 100, amount: [4.0, 12.0] },
                 { item: 'minecraft:warped_fungus', weight: 100, amount: [4.0, 12.0] },
@@ -442,7 +443,6 @@ onEvent('server.datapack.low_priority', (event) => {
                 { item: 'artifacts:vampiric_glove', weight: 17 },
                 { item: 'artifacts:running_shoes', weight: 17 },
                 { item: 'artifacts:antidote_vessel', weight: 17 },
-                { item: 'eidolon:soul_enchanter', weight: 20 },
                 { item: 'minecraft:netherite_boots', weight: 100, enchantRange: [60.0, 100.0] },
                 { item: 'minecraft:netherite_leggings', weight: 100, enchantRange: [60.0, 100.0] },
                 { item: 'minecraft:netherite_chestplate', weight: 100, enchantRange: [60.0, 100.0] },
@@ -478,8 +478,8 @@ onEvent('server.datapack.low_priority', (event) => {
                 { item: 'botania:horn_grass', weight: 50 },
                 { item: 'emendatusenigmatica:lead_nugget', weight: 100, amount: [8.0, 16.0] },
                 { item: 'emendatusenigmatica:silver_nugget', weight: 100, amount: [8.0, 16.0] },
-                { item: 'eidolon:arcane_gold_nugget', weight: 100, amount: [8.0, 32.0] },
-                { item: 'eidolon:pewter_nugget', weight: 100, amount: [8.0, 16.0] },
+                { item: '#forge:nuggets/signalum', weight: 100, amount: [8.0, 32.0] },
+                { item: 'kubejs:pewter_nugget', weight: 100, amount: [8.0, 16.0] },
                 { item: 'naturesaura:token_sorrow', weight: 50 },
                 { item: 'naturesaura:token_anger', weight: 50 },
                 { item: 'naturesaura:token_fear', weight: 50 },
@@ -487,10 +487,10 @@ onEvent('server.datapack.low_priority', (event) => {
                 { item: 'naturesaura:gold_powder', weight: 100 },
                 { item: 'naturesaura:gold_leaf', weight: 100 },
                 { item: 'ars_nouveau:void_jar', weight: 10 },
-                { item: 'eidolon:wraith_heart', weight: 20 },
-                { item: 'eidolon:zombie_heart', weight: 20 },
+                { item: 'alexsmobs:soul_heart', weight: 20 },
+                { item: 'kubejs:zombie_heart', weight: 20 },
                 { item: 'darkutils:book_restore', weight: 100 },
-                { item: 'eidolon:candle', weight: 100, amount: [8.0, 12.0] }
+                { item: 'occultism:candle_white', weight: 100, amount: [8.0, 12.0] }
             ]
         },
         {
@@ -498,8 +498,6 @@ onEvent('server.datapack.low_priority', (event) => {
             rolls: [1, 1],
             entries: [
                 { item: 'minecraft:cat_spawn_egg', weight: 10 },
-                { item: 'eidolon:spawn_wraith', weight: 10 },
-                { item: 'eidolon:spawn_zombie_brute', weight: 10 },
                 { item: 'minecraft:glistering_melon_slice', weight: 100, amount: [1.0, 4.0] },
                 { item: 'minecraft:wither_rose', weight: 100 },
                 { item: 'occultism:chalk_purple', weight: 1 },
@@ -532,14 +530,17 @@ onEvent('server.datapack.low_priority', (event) => {
                 { item: 'ars_nouveau:apprentice_robes', weight: 100, enchantRange: [30.0, 40.0] },
                 { item: 'ars_nouveau:apprentice_leggings', weight: 100, enchantRange: [30.0, 40.0] },
                 { item: 'ars_nouveau:apprentice_boots', weight: 100, enchantRange: [30.0, 40.0] },
-                { item: 'eidolon:basic_belt', weight: 100 },
-                { item: 'eidolon:basic_amulet', weight: 100 },
-                { item: 'eidolon:basic_ring', weight: 100 },
-                { item: 'eidolon:soul_shard', weight: 100, amount: [8.0, 16.0] },
-                { item: 'eidolon:pewter_ingot', weight: 100, amount: [8.0, 16.0] },
-                { item: 'eidolon:arcane_gold_ingot', weight: 50, amount: [8.0, 16.0] },
-                { item: 'eidolon:pewter_inlay', weight: 100, amount: [1.0, 2.0] },
-                { item: 'eidolon:gold_inlay', weight: 100, amount: [1.0, 2.0] }
+                { item: 'ars_nouveau:mundane_belt', weight: 100 },
+                { item: 'ars_nouveau:dull_trinket', weight: 100 },
+                {
+                    item: 'appliedenergistics2:charged_certus_quartz_crystal',
+                    weight: 100,
+                    amount: [8.0, 16.0]
+                },
+                { item: 'kubejs:pewter_ingot', weight: 100, amount: [8.0, 16.0] },
+                { item: 'naturesaura:tainted_gold', weight: 50, amount: [8.0, 16.0] },
+                { item: 'kubejs:pewter_inlay', weight: 100, amount: [1.0, 2.0] },
+                { item: 'resourcefulbees:tainted_honeycomb', weight: 100, amount: [1.0, 2.0] }
             ]
         },
         {
@@ -564,7 +565,6 @@ onEvent('server.datapack.low_priority', (event) => {
                 { item: 'ars_nouveau:archmage_leggings', weight: 100, enchantRange: [60.0, 100.0] },
                 { item: 'ars_nouveau:archmage_boots', weight: 100, enchantRange: [60.0, 100.0] },
                 { item: 'ars_nouveau:wand', weight: 10 },
-                { item: 'eidolon:soul_enchanter', weight: 10 },
                 { item: 'alexsmobs:mimicream', weight: 5 },
                 { item: 'bloodmagic:experiencebook', weight: 10 }
             ]

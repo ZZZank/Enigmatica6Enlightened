@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
@@ -32,7 +33,7 @@ onEvent('recipes', (event) => {
             pattern: [' AB', ' CA', 'DE '],
             key: {
                 A: '#forge:rods/lead',
-                B: 'eidolon:warped_sprouts',
+                B: 'byg:fungal_imparius',
                 C: 'botania:twig_wand',
                 D: 'botania:livingwood_twig',
                 E: 'betterendforge:leather_stripe'

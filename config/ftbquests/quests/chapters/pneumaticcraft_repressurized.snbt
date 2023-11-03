@@ -1,7 +1,7 @@
 {
 	id: "00000000000000AE"
 	group: "72A9465344128AF9"
-	order_index: 4
+	order_index: 1
 	filename: "pneumaticcraft_repressurized"
 	title: "PneumaticCraft: Repressurized"
 	icon: "pneumaticcraft:pressure_gauge_module"
@@ -85,11 +85,8 @@
 				}
 				{
 					id: "0000000000000A78"
-					type: "command"
-					title: "Scavenger's Delight"
-					icon: "kubejs:scavengers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:scavengers_delight"
 				}
 			]
 		}
@@ -145,14 +142,12 @@
 				{
 					id: "00000000000000C1"
 					type: "item"
-					title: "Redstone Dust"
 					item: "minecraft:redstone"
 					count: 9
 				}
 				{
 					id: "00000000000000C2"
 					type: "item"
-					title: "Redstone Repeater"
 					item: "minecraft:repeater"
 				}
 			]
@@ -255,7 +250,6 @@
 				{
 					id: "00000000000000CE"
 					type: "item"
-					title: "Camouflage Applicator"
 					item: {
 						id: "pneumaticcraft:camo_applicator"
 						Count: 1b
@@ -266,11 +260,8 @@
 				}
 				{
 					id: "0000000000000A79"
-					type: "command"
-					title: "Farmer's Delight"
-					icon: "kubejs:farmers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:farmers_delight"
 				}
 			]
 		}
@@ -396,13 +387,11 @@
 				{
 					id: "00000000000000DE"
 					type: "item"
-					title: "Block Tracker Upgrade"
 					item: "pneumaticcraft:block_tracker_upgrade"
 				}
 				{
 					id: "00000000000000DF"
 					type: "item"
-					title: "GPS Tool"
 					item: "pneumaticcraft:gps_tool"
 				}
 			]
@@ -431,11 +420,8 @@
 				}
 				{
 					id: "0000000000000A7B"
-					type: "command"
-					title: "Scavenger's Delight"
-					icon: "kubejs:scavengers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:scavengers_delight"
 				}
 			]
 		}
@@ -533,14 +519,12 @@
 				{
 					id: "00000000000000EC"
 					type: "item"
-					title: "Cod n Chips"
 					item: "pneumaticcraft:cod_n_chips"
 					count: 16
 				}
 				{
 					id: "00000000000000ED"
 					type: "item"
-					title: "Dispenser Upgrade"
 					item: "pneumaticcraft:dispenser_upgrade"
 					count: 4
 				}
@@ -652,14 +636,12 @@
 				{
 					id: "0000000000000105"
 					type: "item"
-					title: "Red Mushroom"
 					item: "minecraft:red_mushroom"
 					count: 16
 				}
 				{
 					id: "0000000000000106"
 					type: "item"
-					title: "Podzol"
 					item: "minecraft:podzol"
 					count: 4
 				}
@@ -805,28 +787,24 @@
 				{
 					id: "000000000000010D"
 					type: "item"
-					title: "Logistic Requester Frame"
 					item: "pneumaticcraft:logistics_frame_requester"
 					count: 8
 				}
 				{
 					id: "000000000000010E"
 					type: "item"
-					title: "Logistic Passive Provider Frame"
 					item: "pneumaticcraft:logistics_frame_passive_provider"
 					count: 8
 				}
 				{
 					id: "000000000000010F"
 					type: "item"
-					title: "Logistic Storage Frame"
 					item: "pneumaticcraft:logistics_frame_storage"
 					count: 8
 				}
 				{
 					id: "00000000000006FF"
 					type: "item"
-					title: "Logistic Active Provider Frame"
 					item: "pneumaticcraft:logistics_frame_active_provider"
 					count: 8
 				}
@@ -877,7 +855,6 @@
 				{
 					id: "0000000000000118"
 					type: "item"
-					title: "Magnet Upgrade"
 					item: "pneumaticcraft:magnet_upgrade"
 				}
 			]
@@ -943,11 +920,8 @@
 				}
 				{
 					id: "0000000000000A7A"
-					type: "command"
-					title: "Farmer's Delight"
-					icon: "kubejs:farmers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:farmers_delight"
 				}
 			]
 		}
@@ -1044,13 +1018,11 @@
 				{
 					id: "000000000000012B"
 					type: "item"
-					title: "Collector Drone"
 					item: "pneumaticcraft:collector_drone"
 				}
 				{
 					id: "0000000000000701"
 					type: "item"
-					title: "Refined Obsidian Hoe"
 					item: {
 						id: "mekanismtools:refined_obsidian_hoe"
 						Count: 1b
@@ -1083,13 +1055,11 @@
 				{
 					id: "000000000000012E"
 					type: "item"
-					title: "Dispenser Upgrade"
 					item: "pneumaticcraft:dispenser_upgrade"
 				}
 				{
 					id: "0000000000000700"
 					type: "item"
-					title: "Volume Upgrade"
 					item: "pneumaticcraft:volume_upgrade"
 					count: 4
 				}
@@ -1492,14 +1462,12 @@
 				{
 					id: "0000000000000162"
 					type: "item"
-					title: "Transistor"
 					item: "pneumaticcraft:transistor"
 					count: 2
 				}
 				{
 					id: "0000000000000163"
 					type: "item"
-					title: "Capacitor"
 					item: "pneumaticcraft:capacitor"
 					count: 2
 				}

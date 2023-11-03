@@ -1,3 +1,4 @@
+'use strict';
 onEvent('server.datapack.high_priority', (event) => {
     let loot_table = {
         pools: [
@@ -174,7 +175,7 @@ onEvent('generic.loot_tables', (event) => {
             rolls: { min: 6, max: 9 },
             entries: [
                 {
-                    item: 'eidolon:death_essence',
+                    item: 'kubejs:death_essence',
                     weight: 50,
                     count: [1, 2]
                 },

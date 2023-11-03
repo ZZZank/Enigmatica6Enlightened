@@ -1,7 +1,17 @@
+'use strict';
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/naturesaura/altar/';
 
     const recipes = [
+        {
+            input: '#minecraft:fishes',
+            output: { item: 'aquaculture:fish_bones' },
+            aura_type: 'naturesaura:nether',
+            catalyst: { item: 'naturesaura:crushing_catalyst' },
+            aura: 1000,
+            time: 60,
+            id: `${id_prefix}fish_bones`
+        },
         {
             input: 'resourcefulbees:infused_honeycomb',
             output: { item: 'naturesaura:infused_iron' },

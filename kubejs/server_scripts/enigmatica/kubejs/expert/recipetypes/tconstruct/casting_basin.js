@@ -1,9 +1,10 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
     const id_prefix = 'enigmatica:expert/tconstruct/casting_basin/';
-    var data = {
+    let data = {
         recipes: [
             {
                 fluid: 'tconstruct:molten_hepatizon',

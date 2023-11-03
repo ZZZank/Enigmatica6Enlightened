@@ -1,3 +1,81 @@
+## Enlightened6 & Enlightened6Expert - 2.2.1 -> 2.3.0
+
+_Using Forge-1.16.5-36.2.39_ | _[Mod Updates](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/changelog_mods_2.3.0.md)_ | _[Modlist](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/modlist_2.3.0.md)_
+
+### Mods Added
+
+  * [Lightspeed - Launch optimizations](https://www.curseforge.com/minecraft/mc-mods/lightspeedmod) (by [ccr4ft3r](https://www.curseforge.com/members/ccr4ft3r/projects))
+
+### Mods Removed
+
+  * [RFTools Power](https://www.curseforge.com/minecraft/mc-mods/rftools-power) (by [McJty](https://www.curseforge.com/members/McJty/projects))
+
+### Fixes
+
+-   [Expert] new tainted_gold recipe causing patchouli error
+-   redunduant recipes in ArsArsenal
+-   [Expert] ingredient Buffer-s not craftable
+
+### Improvements
+
+-   HUGE internal changes, for standardlization and performance
+-   add trades for Neapolitan seeds
+-   add unboxing of actual lootbox item
+-   replace rewards in Quests with actual lootbox item
+-   hide TCon tools in JEI
+
+---
+
+## Enlightened6 & Enlightened6Expert - 2.2.0 -> 2.2.1
+
+## Due to Eidolon removal, this version is a BREAKING CHANGE! please be cautious if you want to open old worlds in this version
+
+_Using Forge-1.16.5-36.2.39_ | _[Mod Updates](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/changelog_mods_2.2.1.md)_ | _[Modlist](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/modlist_2.2.1.md)_
+
+### Improvements
+
+-   allow using compressed_iron_block to buff cobble output
+-   [Expert] make Thermal rock_gen avaliable much much earlier
+-   a new recpie for fish_bones
+
+---
+
+## Enlightened6 & Enlightened6Expert - 2.1.0 -> 2.2.0
+
+## Due to Eidolon removal, this version is a BREAKING CHANGE! please be cautious if you want to open old worlds in this version
+
+_Using Forge-1.16.5-36.2.39_ | _[Mod Updates](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/changelog_mods_2.2.0.md)_ | _[Modlist](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/modlist_2.2.0.md)_
+
+### Mods Added
+
+  * [AE2 Fluid Crafting Rework](https://www.curseforge.com/minecraft/mc-mods/ae2-fluid-crafting-rework) (by [GlodBlock](https://www.curseforge.com/members/GlodBlock/projects))
+  * [Mouse Tweaks](https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks) (by [YaLTeR](https://www.curseforge.com/members/YaLTeR/projects))
+  * [Not Enough Crashes (Forge)](https://www.curseforge.com/minecraft/mc-mods/not-enough-crashes-forge) (by [NatanFudge](https://www.curseforge.com/members/NatanFudge/projects))
+
+### Mods Removed
+
+  * [Bed Benefits](https://www.curseforge.com/minecraft/mc-mods/bed-benefits) (by [DarkhaxDev](https://www.curseforge.com/members/DarkhaxDev/projects))
+  * [Eidolon](https://www.curseforge.com/minecraft/mc-mods/eidolon) (by [elucent_](https://www.curseforge.com/members/elucent_/projects))
+  * [Equipment Compare [Forge]](https://www.curseforge.com/minecraft/mc-mods/equipment-compare) (by [Grend_G](https://www.curseforge.com/members/Grend_G/projects))
+  * [Interactive Corporea](https://www.curseforge.com/minecraft/mc-mods/interactive-corporea) (by [shBLOCK_](https://www.curseforge.com/members/shBLOCK_/projects))
+  * [Nature's Starlight](https://www.curseforge.com/minecraft/mc-mods/natures-starlight) (by [Ellpeck](https://www.curseforge.com/members/Ellpeck/projects))
+  * [Portality](https://www.curseforge.com/minecraft/mc-mods/portality) (by [Buuz135](https://www.curseforge.com/members/Buuz135/projects))
+  * [Pretty Pipes](https://www.curseforge.com/minecraft/mc-mods/pretty-pipes) (by [Ellpeck](https://www.curseforge.com/members/Ellpeck/projects))
+  * [Pretty Pipes: Fluids](https://www.curseforge.com/minecraft/mc-mods/pretty-pipes-fluids) (by [Quarris](https://www.curseforge.com/members/Quarris/projects))
+  * [The Mighty Architect](https://www.curseforge.com/minecraft/mc-mods/the-mighty-architect) (by [simibubi](https://www.curseforge.com/members/simibubi/projects))
+  * [Useful Railroads](https://www.curseforge.com/minecraft/mc-mods/useful-railroads) (by [HyCraftHD](https://www.curseforge.com/members/HyCraftHD/projects))
+
+
+### Improvements
+
+-   Add a new quest introducing Name Press
+-   [Expert] new Wicked Altar structure
+-   Encased Fan now provides higher speed when used as Kinetics sources
+-   Koi no longer spawns naturally, instead, it can be crafted
+-   Add a new recipe for obtaining Elder Prismarine
+
+---
+
 ## Enlightened6 & Enlightened6Expert - 2.0.1 -> 2.1.0
 
 _Using Forge-1.16.5-36.2.39_ | _[Mod Updates](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/changelog_mods_2.1.0.md)_ | _[Modlist](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/modlist_2.1.0.md)_

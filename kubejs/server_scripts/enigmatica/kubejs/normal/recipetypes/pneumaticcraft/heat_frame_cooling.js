@@ -1,9 +1,10 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isNormalMode == false) {
         return;
     }
     const id_prefix = 'enigmatica:normal/pneumaticcraft/heat_frame_cooling/';
-    recipes = [
+    let recipes = [
         {
             input: { type: 'pneumaticcraft:fluid', fluid: 'integrateddynamics:menril_resin', amount: 1000 },
             output: { item: 'integrateddynamics:crystalized_menril_block' },

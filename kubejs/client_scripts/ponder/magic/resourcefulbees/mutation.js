@@ -1,4 +1,5 @@
 // priority: 9
+'use strict';
 
 onEvent('ponder.registry', (event) => {
     event
@@ -105,7 +106,7 @@ onEvent('ponder.registry', (event) => {
 
                 scene.idle(20);
 
-                var bee = scene.world().createEntity('minecraft:bee', [1.5, 4, 1.5]);
+                let bee = scene.world().createEntity('minecraft:bee', [1.5, 4, 1.5]);
                 scene.world().modifyEntity(bee, (e) => {
                     e.mergeFullNBT({ Rotation: [NBT.floatTag(135), NBT.floatTag(0)], HasNectar: true });
                 });
@@ -155,7 +156,7 @@ onEvent('ponder.registry', (event) => {
 
             scene.idle(20);
 
-            var ironBee = scene.world().createEntity('resourcefulbees:iron_bee', [1.5, 4, 1.5]);
+            let ironBee = scene.world().createEntity('resourcefulbees:iron_bee', [1.5, 4, 1.5]);
             scene.world().modifyEntity(ironBee, (e) => {
                 e.mergeFullNBT({ Rotation: [NBT.floatTag(135), NBT.floatTag(0)], HasNectar: true });
             });
@@ -237,7 +238,7 @@ onEvent('ponder.registry', (event) => {
                 e.kill();
             });
             scene.idle(20);
-            var icyBee = scene.world().createEntity('resourcefulbees:icy_bee', [1.5, 4, 1.5]);
+            let icyBee = scene.world().createEntity('resourcefulbees:icy_bee', [1.5, 4, 1.5]);
             scene.world().modifyEntity(icyBee, (e) => {
                 e.mergeFullNBT({ Rotation: [NBT.floatTag(135), NBT.floatTag(0)], HasNectar: true });
             });
@@ -281,7 +282,7 @@ onEvent('ponder.registry', (event) => {
                 e.kill();
             });
             scene.idle(20);
-            var blazeBee = scene.world().createEntity('resourcefulbees:blaze_bee', [1.5, 4, 1.5]);
+            let blazeBee = scene.world().createEntity('resourcefulbees:blaze_bee', [1.5, 4, 1.5]);
             scene.world().modifyEntity(blazeBee, (e) => {
                 e.mergeFullNBT({ Rotation: [NBT.floatTag(135), NBT.floatTag(0)], HasNectar: true });
             });
@@ -297,7 +298,7 @@ onEvent('ponder.registry', (event) => {
 
             scene.idle(20);
 
-            var creeperBee = scene.world().createEntity('resourcefulbees:creeper_bee', [1.5, 1.5, 1.5]);
+            let creeperBee = scene.world().createEntity('resourcefulbees:creeper_bee', [1.5, 1.5, 1.5]);
             scene.world().modifyEntity(creeperBee, (e) => {
                 e.mergeFullNBT({ Rotation: [NBT.floatTag(135), NBT.floatTag(0)] });
             });
@@ -308,7 +309,7 @@ onEvent('ponder.registry', (event) => {
                 e.mergeFullNBT({ Pos: [1.5, 0, 1.5] });
                 e.kill();
             });
-            var ghastBee = scene.world().createEntity('resourcefulbees:ghast_bee', [1.5, 1.5, 1.5]);
+            let ghastBee = scene.world().createEntity('resourcefulbees:ghast_bee', [1.5, 1.5, 1.5]);
             scene.world().modifyEntity(ghastBee, (e) => {
                 e.mergeFullNBT({ Rotation: [NBT.floatTag(135), NBT.floatTag(0)] });
             });
@@ -330,7 +331,7 @@ onEvent('ponder.registry', (event) => {
 
             scene.idle(20);
 
-            var blizz = scene.world().createEntity('thermal:blitz', [1.5, 1.5, 1.5]);
+            let blizz = scene.world().createEntity('thermal:blitz', [1.5, 1.5, 1.5]);
 
             scene.idle(20);
 
@@ -338,7 +339,7 @@ onEvent('ponder.registry', (event) => {
                 e.mergeFullNBT({ Pos: [1.5, -1, 1.5] });
                 e.kill();
             });
-            var blizzBee = scene.world().createEntity('resourcefulbees:blizz_bee', [1.5, 1.5, 1.5]);
+            let blizzBee = scene.world().createEntity('resourcefulbees:blizz_bee', [1.5, 1.5, 1.5]);
             scene.world().modifyEntity(blizzBee, (e) => {
                 e.mergeFullNBT({ Rotation: [NBT.floatTag(135), NBT.floatTag(0)] });
             });
@@ -371,7 +372,7 @@ onEvent('ponder.registry', (event) => {
 
                 scene.addKeyframe();
 
-                var beeperBee = scene.world().createEntity('resourcefulbees:creeper_bee', [3.5, 2, 3.5]);
+                let beeperBee = scene.world().createEntity('resourcefulbees:creeper_bee', [3.5, 2, 3.5]);
                 scene.world().modifyEntity(beeperBee, (e) => {
                     e.mergeFullNBT({ Rotation: [NBT.floatTag(200), NBT.floatTag(0)] });
                 });
@@ -391,7 +392,7 @@ onEvent('ponder.registry', (event) => {
 
                 scene.idle(60);
 
-                var blazeBee = scene.world().createEntity('resourcefulbees:blaze_bee', [2.5, 3.5, 3.5]);
+                let blazeBee = scene.world().createEntity('resourcefulbees:blaze_bee', [2.5, 3.5, 3.5]);
                 scene.world().modifyEntity(blazeBee, (e) => {
                     e.mergeFullNBT({ Rotation: [NBT.floatTag(90), NBT.floatTag(0)], HasNectar: false });
                 });
@@ -453,7 +454,7 @@ onEvent('ponder.registry', (event) => {
                 scene.world().modifyEntity(beeperBee, (e) => {
                     e.mergeFullNBT({ Pos: [3.5, 0.5, 3.5] });
                 });
-                var ghastBee = scene.world().createEntity('resourcefulbees:ghast_bee', [3.5, 2, 3.5]);
+                let ghastBee = scene.world().createEntity('resourcefulbees:ghast_bee', [3.5, 2, 3.5]);
                 scene.world().modifyEntity(ghastBee, (e) => {
                     e.mergeFullNBT({ Rotation: [NBT.floatTag(200), NBT.floatTag(0)] });
                 });

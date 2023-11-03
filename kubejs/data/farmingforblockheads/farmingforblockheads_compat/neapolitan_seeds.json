@@ -1,0 +1,17 @@
+{
+    "modId": "neapolitan",
+    "group": {
+        "name": "Neapolitan Seeds",
+        "enabledByDefault": true,
+        "defaultPayment": {
+            "item": "minecraft:emerald"
+        },
+        "defaultCategory": "farmingforblockheads:seeds"
+    },
+    "customEntries": [
+        { "output": { "item": "neapolitan:strawberry_pips" } },
+        { "output": { "item": "neapolitan:adzuki_beans" } },
+        { "output": { "item": "neapolitan:vanilla_pods" } },
+        { "output": { "item": "neapolitan:mint_sprout" } }
+    ]
+}

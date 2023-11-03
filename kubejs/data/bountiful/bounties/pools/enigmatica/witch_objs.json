@@ -11,8 +11,6 @@
         { "type": "entity", "content": "ars_nouveau:wilden_hunter", "amountRange": {"min": 1, "max": 6}, "unitWorth": 400, "weight":100, "timeMult": 3.0},
         { "type": "entity", "content": "ars_nouveau:wilden_guardian", "amountRange": {"min": 1, "max": 6}, "unitWorth": 550, "weight":50, "timeMult": 3.0},
         { "type": "entity", "content": "ars_nouveau:wilden_stalker", "amountRange": {"min": 1, "max": 6}, "unitWorth": 325, "weight":100, "timeMult": 3.0},
-        { "type": "entity", "content": "eidolon:wraith", "amountRange": {"min": 1, "max": 6}, "unitWorth": 325, "weight":100, "timeMult": 3.0},
-        { "type": "entity", "content": "eidolon:zombie_brute", "amountRange": {"min": 1, "max": 6}, "unitWorth": 325, "weight":50, "timeMult": 3.0},
         { "type": "item", "content": "minecraft:rotten_flesh", "amountRange": {"min": 2, "max": 4}, "unitWorth": 100, "weight":200},
         { "type": "item", "content": "minecraft:bone", "amountRange": {"min": 2, "max": 4}, "unitWorth": 100, "weight":200},
         { "type": "item", "content": "minecraft:gunpowder", "amountRange": {"min": 2, "max": 4}, "unitWorth": 150, "weight":200},

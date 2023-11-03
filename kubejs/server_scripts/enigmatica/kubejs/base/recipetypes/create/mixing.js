@@ -1,6 +1,7 @@
+'use strict';
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/create/mixing/';
-    var data = {
+    let data = {
         recipes_unheated: [
             {
                 inputs: [
@@ -157,7 +158,7 @@ onEvent('recipes', (event) => {
             },
             {
                 inputs: ['#forge:ingots/iron', '#forge:ingots/lead'],
-                output: Item.of('eidolon:pewter_ingot', 2),
+                output: Item.of('kubejs:pewter_ingot', 2),
                 id: `${id_prefix}pewter_ingot`
             },
             {
@@ -194,6 +195,19 @@ onEvent('recipes', (event) => {
                 inputs: ['#forge:ingots/iron', 'tconstruct:sky_slime_ball', 'tconstruct:seared_brick'],
                 output: Item.of('tconstruct:slimesteel_ingot', 2),
                 id: `${id_prefix}slimesteel_ingot`
+            },
+            {
+                heated: true,
+                inputs: [
+                    'minecraft:spider_eye',
+                    'minecraft:spider_eye',
+                    'minecraft:rotten_flesh',
+                    'minecraft:rotten_flesh',
+                    'minecraft:gunpowder',
+                    'minecraft:gunpowder'
+                ],
+                output: Item.of('kubejs:monster_mash', 2),
+                id: `${id_prefix}monster_mash`
             }
         ],
         recipes_superheated: [

@@ -1,10 +1,11 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isNormalMode == false) {
         return;
     }
     const id_prefix = 'enigmatica:normal/bloodmagic/alchemytable/';
 
-    recipes = [
+    let recipes = [
         {
             inputs: [
                 'bloodmagic:tauoil',

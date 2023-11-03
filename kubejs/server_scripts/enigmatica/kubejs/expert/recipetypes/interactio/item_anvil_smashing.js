@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
@@ -12,7 +13,7 @@ onEvent('recipes', (event) => {
                     count: 1,
                     nbt: { Potion: 'minecraft:long_swiftness' }
                 },
-                [Item.of('eidolon:soul_shard'), Item.of('create:cuckoo_clock')]
+                [Item.of('appliedenergistics2:charged_certus_quartz_crystal'), Item.of('create:cuckoo_clock')]
             ],
             output: {
                 entries: [{ result: { item: 'tiab:timeinabottle' }, weight: 1 }],

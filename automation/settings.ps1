@@ -29,11 +29,11 @@ $MODPACK_NAME = "Enlightened6"
 $CLIENT_NAME = "Enlightened6"
 
 # Version Of The Modpack
-$MODPACK_VERSION = "2.1.0"
+$MODPACK_VERSION = "2.3.0"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
-$LAST_MODPACK_VERSION = "2.0.1"
+$LAST_MODPACK_VERSION = "2.2.1"
 
 # =====================================================================//
 #  CHANGELOG SETTINGS
@@ -101,7 +101,6 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"craftingtweaks-client.toml",
 	"create-client.toml",
 	"cucumber-client.toml",
-	"eidolon-client.toml",
 	"emojiful-client.toml",
 	"entity_culling-client.toml",
 	"extremesoundmuffler-client.toml", 

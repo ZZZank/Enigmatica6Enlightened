@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
@@ -43,7 +44,7 @@ onEvent('recipes', (event) => {
                 Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:end"}'),
                 'upgrade_aquatic:thrasher_tooth',
                 'naturesaura:gold_leaf',
-                'eidolon:ender_calx',
+                '#forge:dusts/flux_infused',
                 'astralsorcery:nocturnal_powder',
                 'upgrade_aquatic:thrasher_tooth',
                 'astralsorcery:nocturnal_powder',
@@ -106,7 +107,7 @@ onEvent('recipes', (event) => {
             ingredients: [
                 'naturesaura:tainted_gold',
                 'architects_palette:moonstone',
-                Item.of('eidolon:reaper_scythe', '{Damage:0}').weakNBT(),
+                Item.of('tconstruct:broad_blade', '{Material:"tconstruct:manyullyn"}'),
                 'naturesaura:token_sorrow',
                 '#forge:ingots/nether_brick',
                 'minecraft:soul_sand',
@@ -168,7 +169,7 @@ onEvent('recipes', (event) => {
         },
         {
             ingredients: [
-                'eidolon:ender_calx',
+                '#forge:dusts/flux_infused',
                 'quark:ender_watcher',
                 'ars_nouveau:glyph_blink',
                 'minecraft:chorus_flower',
@@ -188,9 +189,9 @@ onEvent('recipes', (event) => {
                 'architects_palette:moonstone',
                 'ars_nouveau:glyph_aoe',
                 'naturesaura:token_fear',
-                'eidolon:fungus_sprouts',
+                'byg:bulbis_sprouts',
                 '#forge:ingots/nether_brick',
-                'eidolon:fungus_sprouts',
+                'byg:bulbis_sprouts',
                 '#forge:ingots/nether_brick'
             ],
             output: 'naturesaura:potion_generator',
@@ -229,22 +230,6 @@ onEvent('recipes', (event) => {
             time: 6 * time_multiplier,
             sapling: 'quark:yellow_blossom_sapling',
             id: 'naturesaura:projectile_generator'
-        },
-        {
-            ingredients: [
-                'naturesaura:infused_iron',
-                'architects_palette:moonstone',
-                'ars_nouveau:glyph_grow',
-                'naturesaura:token_joy',
-                'astralsorcery:rock_crystal',
-                '#forge:ingots/starmetal',
-                'astralsorcery:rock_crystal',
-                '#forge:ingots/starmetal'
-            ],
-            output: 'naturesstarlight:crystal_generator',
-            time: 6 * time_multiplier,
-            sapling: 'quark:lavender_blossom_sapling',
-            id: 'naturesstarlight:crystal_generator'
         },
         {
             ingredients: [
@@ -301,7 +286,7 @@ onEvent('recipes', (event) => {
                 'botania:brewery',
                 '#forge:ingots/sky',
                 'naturesaura:gold_leaf',
-                'eidolon:gold_inlay'
+                'resourcefulbees:tainted_honeycomb'
             ],
             output: 'naturesaura:conversion_catalyst',
             time: 6 * time_multiplier,
@@ -440,23 +425,7 @@ onEvent('recipes', (event) => {
         },
         {
             ingredients: [
-                'naturesaura:gold_powder',
-                'naturesaura:gold_powder',
-                'astralsorcery:nocturnal_powder',
-                'astralsorcery:resonating_gem',
-                'astralsorcery:nocturnal_powder',
-                'astralsorcery:resonating_gem',
-                'astralsorcery:resonating_gem',
-                'astralsorcery:nocturnal_powder'
-            ],
-            sapling: 'quark:lavender_blossom_sapling',
-            output: Item.of('naturesaura:effect_powder', 8, '{effect:"naturesstarlight:starlight_increase"}'),
-            time: 4 * time_multiplier,
-            id: 'naturesstarlight:tree_ritual/starlight_increase_powder'
-        },
-        {
-            ingredients: [
-                'eidolon:basic_amulet',
+                'ars_nouveau:dull_trinket',
                 '#forge:ingots/tainted_gold',
                 'tconstruct:efln_ball',
                 'kubejs:firmament',

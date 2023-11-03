@@ -1,4 +1,5 @@
 // priority: 9
+'use strict';
 
 // TODO: the text on this one... isn't the best, so it'd be
 //  great if someone could help patch this up before release!
@@ -224,7 +225,7 @@ onEvent('ponder.registry', (event) => {
                     .independent(20);
 
                 // RANDOM LENSES!
-                for (var i = 0; i < 4; i++) {
+                for (let i = 0; i < 4; i++) {
                     scene
                         .overlay()
                         .showControls(
@@ -273,7 +274,7 @@ onEvent('ponder.registry', (event) => {
 
                 scene.idle(20);
 
-                for (var i = 0; i < fails; i++) {
+                for (let i = 0; i < fails; i++) {
                     scene
                         .overlay()
                         .showControls(
@@ -423,7 +424,7 @@ onEvent('ponder.registry', (event) => {
 
                 scene.idle(30);
 
-                var tank1 = util.grid().at(3, 4, 3);
+                let tank1 = util.grid().at(3, 4, 3);
                 scene
                     .world()
                     .setBlock(
@@ -631,8 +632,8 @@ onEvent('ponder.registry', (event) => {
 
                 scene.idle(60);
 
-                var soulsand = util.getDefaultState('minecraft:soul_sand');
-                var skull = Block.id('minecraft:wither_skeleton_skull').with('rotation', 0).blockState;
+                let soulsand = util.getDefaultState('minecraft:soul_sand');
+                let skull = Block.id('minecraft:wither_skeleton_skull').with('rotation', 0).blockState;
 
                 scene.world().setBlock([3, 2, 3], soulsand, false);
                 scene.idle(10);
@@ -656,7 +657,7 @@ onEvent('ponder.registry', (event) => {
                     .world()
                     .setBlocks(util.select().layers(2, 3), util.getDefaultState('minecraft:air'), true);
 
-                var wither = scene.world().createEntity('minecraft:wither', [3.5, 2, 3.5]);
+                let wither = scene.world().createEntity('minecraft:wither', [3.5, 2, 3.5]);
 
                 scene.rotateCameraY(-180);
 

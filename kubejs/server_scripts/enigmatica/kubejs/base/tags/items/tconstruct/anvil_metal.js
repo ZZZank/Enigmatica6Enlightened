@@ -1,3 +1,4 @@
+'use strict';
 onEvent('item.tags', (event) => {
     let anvil_blocks = [
         '#forge:storage_blocks/refined_obsidian',
@@ -7,7 +8,7 @@ onEvent('item.tags', (event) => {
         '#forge:storage_blocks/enderium',
         '#forge:storage_blocks/lumium',
         '#forge:storage_blocks/signalum',
-        '#forge:storage_blocks/arcane_gold',
+        '#forge:storage_blocks/tainted_gold',
         '#forge:storage_blocks/terminite',
         '#forge:storage_blocks/aeternium',
         '#forge:storage_blocks/terrasteel'

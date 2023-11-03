@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/kubejs/';
     /*
@@ -25,6 +26,22 @@ onEvent('recipes', (event) => {
                 F: 'immersiveengineering:survey_tools'
             },
             id: `${id_prefix}amadron_survey_tools`
+        },
+        {
+            output: 'kubejs:pewter_ingot',
+            pattern: ['AAA', 'AAA', 'AAA'],
+            key: {
+                A: '#forge:nuggets/pewter'
+            },
+            id: `${id_prefix}pewter_nugget_to_ingot`
+        },
+        {
+            output: '2x kubejs:pewter_inlay',
+            pattern: [' A ', 'A A', ' A '],
+            key: {
+                A: '#forge:ingots/pewter'
+            },
+            id: `${id_prefix}pewter_inlay`
         }
     ];
 

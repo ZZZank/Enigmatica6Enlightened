@@ -94,7 +94,7 @@
 			tasks: [{
 				id: "2EDC01F6C01A4342"
 				type: "item"
-				item: "eidolon:shadow_gem"
+				item: "redstone_arsenal:flux_gem"
 			}]
 		}
 		{

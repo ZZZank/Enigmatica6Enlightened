@@ -1,3 +1,4 @@
+'use strict';
 onEvent('worldgen.remove', (event) => {
     event.removeOres((ores) => {
         ores.blocks = [
@@ -5,5 +6,8 @@ onEvent('worldgen.remove', (event) => {
             'minecraft:nether_gold_ore',
             /immersiveengineering:ore\w+/
         ];
+    });
+    event.removeSpawnsByID((spawns) => {
+        spawns.entities.values = ['environmental:koi'];
     });
 });

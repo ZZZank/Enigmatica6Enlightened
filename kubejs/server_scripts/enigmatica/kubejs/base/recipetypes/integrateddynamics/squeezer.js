@@ -1,6 +1,9 @@
-/*onEvent('recipes', function (event) {
+'use strict';
+
+/*'use strict';
+onEvent('recipes', function (event) {
     // Item Inputs
-    var data = {
+    let data = {
         recipes: [
             {
                 input: 'byg:pink_sandstone',

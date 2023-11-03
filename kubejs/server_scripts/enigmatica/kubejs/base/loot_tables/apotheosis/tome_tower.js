@@ -1,3 +1,4 @@
+'use strict';
 onEvent('server.datapack.high_priority', (event) => {
     let loot_table = {
         pools: [
@@ -250,7 +251,7 @@ onEvent('generic.loot_tables', (event) => {
                     count: [1, 2]
                 },
                 {
-                    item: 'eidolon:death_essence',
+                    item: 'kubejs:death_essence',
                     weight: 50,
                     count: [1, 2]
                 },
@@ -294,7 +295,7 @@ onEvent('generic.loot_tables', (event) => {
                     count: [1, 5]
                 },
                 {
-                    item: 'eidolon:arcane_gold_ingot',
+                    item: 'naturesaura:tainted_gold',
                     weight: 100,
                     count: [2, 7]
                 },
@@ -314,7 +315,7 @@ onEvent('generic.loot_tables', (event) => {
                     count: [1, 2]
                 },
                 {
-                    item: 'eidolon:ender_calx',
+                    item: 'redstone_arsenal:flux_dust',
                     weight: 50,
                     count: [2, 7]
                 },

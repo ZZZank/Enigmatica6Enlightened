@@ -1,3 +1,4 @@
+'use strict';
 onEvent('block.loot_tables', (event) => {
     const loot_tables = [
         {
@@ -7,8 +8,8 @@ onEvent('block.loot_tables', (event) => {
                     rolls: [1, 1],
                     survivesExplosion: false,
                     droppedItems: [
-                        { weight: 10, id: 'minecraft:nautilus_shell' },
-                        { weight: 60, id: 'minecraft:prismarine_shard' },
+                        { weight: 50, id: 'minecraft:nautilus_shell' },
+                        { weight: 40, id: 'minecraft:prismarine_shard' },
                         { weight: 10, id: 'minecraft:prismarine_crystals' }
                     ]
                 }

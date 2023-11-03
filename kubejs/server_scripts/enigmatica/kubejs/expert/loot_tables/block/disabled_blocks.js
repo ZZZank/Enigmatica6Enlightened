@@ -1,3 +1,4 @@
+'use strict';
 onEvent('block.loot_tables', (event) => {
     if (global.isExpertMode == false) {
         return;
@@ -11,26 +12,6 @@ onEvent('block.loot_tables', (event) => {
                     rolls: [4, 6],
                     survivesExplosion: true,
                     droppedItems: [{ id: 'pneumaticcraft:reinforced_bricks' }]
-                }
-            ]
-        },
-        {
-            target: ['eidolon:crucible'],
-            block_pools: [
-                {
-                    rolls: [1, 2],
-                    survivesExplosion: true,
-                    droppedItems: [{ id: 'eidolon:pewter_ingot' }]
-                }
-            ]
-        },
-        {
-            target: ['eidolon:worktable'],
-            block_pools: [
-                {
-                    rolls: [1, 1],
-                    survivesExplosion: true,
-                    droppedItems: [{ id: 'minecraft:conduit' }]
                 }
             ]
         }

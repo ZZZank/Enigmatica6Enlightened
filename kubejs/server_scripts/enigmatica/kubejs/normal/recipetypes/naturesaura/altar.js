@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isNormalMode == false) {
         return;
@@ -5,7 +6,7 @@ onEvent('recipes', (event) => {
 
     const id_prefix = 'enigmatica:normal/naturesaura/altar/';
 
-    var data = {
+    let data = {
         recipes: [
             {
                 input: Ingredient.of('#forge:ingots/enderium'),

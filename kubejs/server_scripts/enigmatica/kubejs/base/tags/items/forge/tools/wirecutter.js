@@ -1,7 +1,8 @@
+'use strict';
 onEvent('item.tags', (event) => {
-    var exceptions = [];
+    let exceptions = [];
 
-    var tags = ['forge:tools', 'forge:tools/wirecutter'];
+    let tags = ['forge:tools', 'forge:tools/wirecutter'];
 
     tags.forEach((tag) => {
         event.get(tag).add('immersiveengineering:wirecutter').remove(exceptions);

@@ -1,7 +1,8 @@
+'use strict';
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/thermal/insolator_catalyst/';
 
-    var data = {
+    let data = {
         recipes: [
             {
                 input: 'industrialforegoing:fertilizer',

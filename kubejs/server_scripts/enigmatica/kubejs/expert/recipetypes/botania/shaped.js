@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
@@ -101,7 +102,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#botania:runes/earth',
                 B: '#botania:runes/fire',
-                C: 'eidolon:basic_belt',
+                C: 'ars_nouveau:mundane_belt',
                 D: '#forge:ingots/manasteel'
             },
             id: 'botania:knockback_belt'
@@ -112,7 +113,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#botania:runes/air',
                 B: '#botania:runes/earth',
-                C: 'eidolon:basic_belt',
+                C: 'ars_nouveau:mundane_belt',
                 D: '#forge:ingots/manasteel'
             },
             id: 'botania:travel_belt'

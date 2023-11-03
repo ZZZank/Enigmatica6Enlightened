@@ -1,7 +1,8 @@
+'use strict';
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/betterend/alloying/';
 
-    var data = {
+    let data = {
         recipes: [
             {
                 ingredients: [{ tag: 'forge:ingots/gold' }, { tag: 'forge:ingots/silver' }],
@@ -17,7 +18,7 @@ onEvent('recipes', (event) => {
             },
             {
                 ingredients: [{ tag: 'forge:ingots/iron' }, { tag: 'forge:ingots/lead' }],
-                result: Item.of('eidolon:pewter_ingot', 2),
+                result: Item.of('kubejs:pewter_ingot', 2),
                 experience: 2,
                 smelttime: 300
             },

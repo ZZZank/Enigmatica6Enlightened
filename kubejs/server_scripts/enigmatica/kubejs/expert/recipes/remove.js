@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
@@ -6,9 +7,7 @@ onEvent('recipes', (event) => {
     const idRemovals = [
         'architects_palette:sunstone',
 
-        'ars_nouveau:dull_trinket',
         'ars_nouveau:moonfall_2',
-        'ars_nouveau:mundane_belt',
         'ars_nouveau:ring_of_potential',
         'ars_nouveau:stone_2',
         'ars_nouveau:sunrise_2',
@@ -36,10 +35,6 @@ onEvent('recipes', (event) => {
         'darkutils:crafting/rune_damage_player',
         'darkutils:crafting/blank_plate',
         /darkutils:crafting\/export_plate/,
-
-        'eidolon:crucible',
-        'eidolon:wooden_brewing_stand',
-        'eidolon:worktable',
 
         'farmersdelight:book_from_canvas',
 
@@ -121,6 +116,8 @@ onEvent('recipes', (event) => {
         'quark:building/crafting/candles/candle_basic',
         'quark:building/crafting/red_nether_bricks_util',
         'quark:tools/crafting/runes/rainbow_rune',
+
+        'redstone_arsenal:materials/flux_ingot_fire_charge_from_dust',
 
         'rftoolscontrol:cpu_core_500',
         'rftoolscontrol:cpu_core_1000',
@@ -259,16 +256,17 @@ onEvent('recipes', (event) => {
         { output: 'mythicbotany:mana_collector', id: 'mythicbotany:mana_collector' },
         { output: 'mythicbotany:kvasir_mead', id: 'mythicbotany:kvasir_mead' },
 
-        { output: 'naturesaura:calling_spirit', id: 'naturesaura:calling_spirit' },
         { output: 'naturesaura:animal_spawner', id: 'naturesaura:animal_spawner' },
+        { output: 'naturesaura:calling_spirit', id: 'naturesaura:calling_spirit' },
+        { output: 'naturesaura:death_ring', id: 'naturesaura:death_ring' },
+        { output: 'naturesaura:ender_access', id: 'naturesaura:ender_access' },
+        { output: 'naturesaura:ender_crate', id: 'naturesaura:ender_crate' },
         { output: 'naturesaura:gold_fiber', id: 'naturesaura:gold_fiber' },
         { output: 'naturesaura:gold_brick', id: 'naturesaura:gold_brick' },
         { output: 'naturesaura:generator_limit_remover', id: 'naturesaura:generator_limit_remover' },
-        { output: 'naturesaura:shockwave_creator', id: 'naturesaura:shockwave_creator' },
-        { output: 'naturesaura:death_ring', id: 'naturesaura:death_ring' },
-        { output: 'naturesaura:ender_crate', id: 'naturesaura:ender_crate' },
-        { output: 'naturesaura:ender_access', id: 'naturesaura:ender_access' },
         { output: 'naturesaura:gold_nether_brick', id: 'naturesaura:gold_nether_brick' },
+        { output: 'naturesaura:shockwave_creator', id: 'naturesaura:shockwave_creator' },
+        { output: 'naturesaura:tainted_gold', id: 'naturesaura:tainted_gold' },
 
         { output: 'pneumaticcraft:air_compressor', id: 'pneumaticcraft:air_compressor' },
         { output: 'pneumaticcraft:advanced_air_compressor', id: 'pneumaticcraft:advanced_air_compressor' },
@@ -286,6 +284,19 @@ onEvent('recipes', (event) => {
         { output: 'pneumaticcraft:spawner_extractor', id: 'pneumaticcraft:spawner_extractor' }
     ];
 
+    const customRemovals = [
+        { type: 'minecraft:crafting_shapeless', output: '#forge:dusts', mod: 'thermal' },
+        {
+            type: 'minecraft:crafting_shapeless',
+            output: '#forge:dusts',
+            mod: 'immersiveengineering'
+        },
+        { type: 'integrateddynamics:drying_basin' },
+        { type: 'integrateddynamics:mechanical_drying_basin' },
+        { type: 'integrateddynamics:squeezer' },
+        { type: 'integrateddynamics:mechanical_squeezer' }
+    ];
+
     idRemovals.forEach((id) => {
         event.remove({ id: id });
     });
@@ -294,16 +305,9 @@ onEvent('recipes', (event) => {
         event.remove({ output: output });
     });
 
-    event.remove({ type: 'minecraft:crafting_shapeless', output: '#forge:dusts', mod: 'thermal' });
-    event.remove({
-        type: 'minecraft:crafting_shapeless',
-        output: '#forge:dusts',
-        mod: 'immersiveengineering'
+    customRemovals.forEach((customRemoval) => {
+        event.remove(customRemoval);
     });
-    event.remove({ type: 'integrateddynamics:drying_basin' });
-    event.remove({ type: 'integrateddynamics:mechanical_drying_basin' });
-    event.remove({ type: 'integrateddynamics:squeezer' });
-    event.remove({ type: 'integrateddynamics:mechanical_squeezer' });
 
     patchouli_safe_removals.forEach((recipe) => {
         event.shaped(recipe.output, ['A'], { A: 'kubejs:altered_recipe_indicator' }).id(recipe.id);

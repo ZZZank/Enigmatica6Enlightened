@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/recipes/replace_input/';
 
@@ -28,11 +29,6 @@ onEvent('recipes', (event) => {
             },
             toReplace: 'minecraft:dried_kelp',
             replaceWith: ['minecraft:dried_kelp', 'sushigocrafting:dried_seaweed']
-        },
-        {
-            filter: { id: 'eidolon:stone_hand' },
-            toReplace: 'minecraft:stone_slab',
-            replaceWith: '#enigmatica:crafting_slabs'
         },
         {
             filter: { id: 'culinaryconstruct:culinary_station' },
@@ -159,7 +155,7 @@ onEvent('recipes', (event) => {
     event.replaceInput({ mod: 'powah' }, '#forge:nuggets/iron', '#forge:nuggets/iron_copper');
 
     powahTiers.forEach(function (tier) {
-        var capacitor = `powah:capacitor_${tier}`;
+        let capacitor = `powah:capacitor_${tier}`;
         event.replaceInput({ id: `powah:crafting/energy_cell_${tier}` }, '#powah:energy_cell', capacitor);
         if (tier == 'basic') {
             capacitor = `powah:capacitor_${tier}_large`;
@@ -185,7 +181,7 @@ onEvent('recipes', (event) => {
         '#quark:stone_tool_materials'
     );
 
-    ['quark:tallow', 'eidolon:tallow', 'occultism:tallow'].forEach((tallow) => {
+    ['quark:tallow', 'occultism:tallow'].forEach((tallow) => {
         event.replaceInput({}, tallow, '#forge:tallow');
     });
 
@@ -239,7 +235,7 @@ onEvent('recipes', (event) => {
     );
 
     sharedDies.forEach((die) => {
-        var dieTag = `#thermal:crafting/dies/${die.thermalName}`;
+        let dieTag = `#thermal:crafting/dies/${die.thermalName}`;
         event.replaceInput({}, `immersiveengineering:mold_${die.immersiveEngineeringName}`, dieTag);
         event.replaceInput({}, `thermal:press_${die.thermalName}_die`, dieTag);
     });
@@ -251,7 +247,7 @@ onEvent('recipes', (event) => {
     });
 
     colors.forEach((color) => {
-        var dyeTag = `#forge:dyes/${color}`;
+        let dyeTag = `#forge:dyes/${color}`;
 
         // Replaces recipes not using forge:dyes tag for inputs
         event.replaceInput({}, `minecraft:${color}_dye`, dyeTag, true);
@@ -284,8 +280,8 @@ onEvent('recipes', (event) => {
 
         ['stained_glass', 'stained_glass_pane', 'terracotta', 'concrete_powder', 'wool', 'carpet'].forEach(
             (blockName) => {
-                var itemTag = `#forge:${blockName}`;
-                var block = `minecraft:${color}_${blockName}`;
+                let itemTag = `#forge:${blockName}`;
+                let block = `minecraft:${color}_${blockName}`;
 
                 if (blockName == 'stained_glass_pane') {
                     event.remove({ id: `${block}_from_glass_pane` });
@@ -305,8 +301,8 @@ onEvent('recipes', (event) => {
         );
 
         ['linen', 'linen_carpet'].forEach((blockName) => {
-            var itemTag = `#atum:${blockName}`;
-            var block = `atum:${blockName}_${color}`;
+            let itemTag = `#atum:${blockName}`;
+            let block = `atum:${blockName}_${color}`;
 
             if (blockName == 'linen_carpet') {
                 event.remove({ id: `atum:${color}_linen_carpet_from_white_linen_carpet` });

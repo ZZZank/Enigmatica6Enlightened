@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/minecraft/stonecutter/';
     const recipes = [
@@ -85,7 +86,8 @@ onEvent('recipes', (event) => {
     });
 
     // Recipes for masonry constants
-    masonryStoneTypes.forEach((stoneType) => {
+    // it seems that Strict Mode does not like ()=>{}, so we use function
+    masonryStoneTypes.forEach(function (stoneType) {
         masonryPatterns.forEach((pattern) => {
             let input = stoneType + pattern;
             if (!masonryIgnoredInputs.includes(input)) {

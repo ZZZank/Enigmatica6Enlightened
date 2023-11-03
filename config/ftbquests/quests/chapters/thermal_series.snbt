@@ -1,7 +1,7 @@
 {
 	id: "00000000000003A1"
 	group: "72A9465344128AF9"
-	order_index: 7
+	order_index: 6
 	filename: "thermal_series"
 	title: "Thermal Series"
 	icon: "thermal:wrench"
@@ -73,23 +73,18 @@
 				{
 					id: "00000000000004EC"
 					type: "item"
-					title: "Energy Cable (Basic)"
 					item: "mekanism:basic_universal_cable"
 					count: 8
 				}
 				{
 					id: "000000000000063A"
 					type: "item"
-					title: "Energy Cell (Basic)"
 					item: "powah:energy_cell_basic"
 				}
 				{
 					id: "0000000000000A7E"
-					type: "command"
-					title: "Farmer's Delight"
-					icon: "kubejs:farmers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:farmers_delight"
 				}
 			]
 		}
@@ -115,23 +110,24 @@
 				{
 					id: "00000000000004BA"
 					type: "item"
-					title: "Jungle Sapling"
 					auto: "disabled"
 					item: "minecraft:jungle_sapling"
 					count: 4
 				}
 				{
 					id: "00000000000004F0"
-					type: "command"
-					title: "Rare Thermal Series Loot Box"
-					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_rare"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:rare_lootbox"
+						Count: 1b
+						tag: {
+							mod: "thermal_series"
+						}
+					}
 				}
 				{
 					id: "0000000000000F87"
 					type: "item"
-					title: "Acacia Sapling"
 					item: "minecraft:acacia_sapling"
 					count: 4
 				}
@@ -164,16 +160,18 @@
 			rewards: [
 				{
 					id: "00000000000004EF"
-					type: "command"
-					title: "Epic Thermal Series Loot Box"
-					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:epic_lootbox"
+						Count: 1b
+						tag: {
+							mod: "thermal_series"
+						}
+					}
 				}
 				{
 					id: "0000000000000639"
 					type: "item"
-					title: "Basic Mechanical Pipe"
 					item: "mekanism:basic_mechanical_pipe"
 					count: 8
 				}
@@ -199,11 +197,14 @@
 			}]
 			rewards: [{
 				id: "00000000000004F2"
-				type: "command"
-				title: "Rare Thermal Series Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "thermal_series"
+					}
+				}
 			}]
 		}
 		{
@@ -226,11 +227,14 @@
 			}]
 			rewards: [{
 				id: "00000000000004F3"
-				type: "command"
-				title: "Rare Thermal Series Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "thermal_series"
+					}
+				}
 			}]
 		}
 		{
@@ -251,11 +255,14 @@
 			}]
 			rewards: [{
 				id: "00000000000004F4"
-				type: "command"
-				title: "Epic Thermal Series Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "thermal_series"
+					}
+				}
 			}]
 		}
 		{
@@ -278,17 +285,19 @@
 				{
 					id: "00000000000004ED"
 					type: "item"
-					title: "Sweet Berries"
 					item: "minecraft:sweet_berries"
 					count: 16
 				}
 				{
 					id: "000000000000063B"
-					type: "command"
-					title: "Rare Thermal Series Loot Box"
-					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_rare"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:rare_lootbox"
+						Count: 1b
+						tag: {
+							mod: "thermal_series"
+						}
+					}
 				}
 			]
 		}
@@ -312,11 +321,14 @@
 			}]
 			rewards: [{
 				id: "00000000000004EE"
-				type: "command"
-				title: "Epic Thermal Series Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "thermal_series"
+					}
+				}
 			}]
 		}
 		{
@@ -338,19 +350,19 @@
 			rewards: [
 				{
 					id: "00000000000004F1"
-					type: "command"
-					title: "Rare Thermal Series Loot Box"
-					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_rare"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:rare_lootbox"
+						Count: 1b
+						tag: {
+							mod: "thermal_series"
+						}
+					}
 				}
 				{
 					id: "0000000000000A7F"
-					type: "command"
-					title: "Scavenger's Delight"
-					icon: "kubejs:scavengers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:scavengers_delight"
 				}
 			]
 		}
@@ -374,16 +386,18 @@
 				{
 					id: "00000000000004F6"
 					type: "item"
-					title: "Metal Press Mold: Gear"
 					item: "immersiveengineering:mold_gear"
 				}
 				{
 					id: "000000000000068B"
-					type: "command"
-					title: "Epic Thermal Series Loot Box"
-					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:epic_lootbox"
+						Count: 1b
+						tag: {
+							mod: "thermal_series"
+						}
+					}
 				}
 			]
 		}
@@ -407,11 +421,14 @@
 			}]
 			rewards: [{
 				id: "00000000000004F5"
-				type: "command"
-				title: "Epic Thermal Series Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "thermal_series"
+					}
+				}
 			}]
 		}
 		{
@@ -434,11 +451,14 @@
 			}]
 			rewards: [{
 				id: "000000000000064E"
-				type: "command"
-				title: "Rare Thermal Series Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "thermal_series"
+					}
+				}
 			}]
 		}
 		{
@@ -455,11 +475,14 @@
 			}]
 			rewards: [{
 				id: "00000000000004FD"
-				type: "command"
-				title: "Epic Thermal Series Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "thermal_series"
+					}
+				}
 			}]
 		}
 		{
@@ -476,11 +499,14 @@
 			}]
 			rewards: [{
 				id: "00000000000004FE"
-				type: "command"
-				title: "Epic Thermal Series Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "thermal_series"
+					}
+				}
 			}]
 		}
 		{
@@ -497,11 +523,14 @@
 			}]
 			rewards: [{
 				id: "00000000000004FC"
-				type: "command"
-				title: "Epic Thermal Series Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "thermal_series"
+					}
+				}
 			}]
 		}
 		{
@@ -517,11 +546,14 @@
 			}]
 			rewards: [{
 				id: "00000000000004FF"
-				type: "command"
-				title: "Epic Thermal Series Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "thermal_series"
+					}
+				}
 			}]
 		}
 		{
@@ -556,11 +588,14 @@
 			]
 			rewards: [{
 				id: "00000000000004FB"
-				type: "command"
-				title: "Epic Thermal Series Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "thermal_series"
+					}
+				}
 			}]
 		}
 		{
@@ -601,11 +636,14 @@
 			}]
 			rewards: [{
 				id: "00000000000004FA"
-				type: "command"
-				title: "Rare Thermal Series Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "thermal_series"
+					}
+				}
 			}]
 		}
 		{
@@ -628,11 +666,14 @@
 			}]
 			rewards: [{
 				id: "00000000000004F8"
-				type: "command"
-				title: "Rare Thermal Series Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "thermal_series"
+					}
+				}
 			}]
 		}
 		{
@@ -669,11 +710,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000F9F"
-				type: "command"
-				title: "Rare Thermal Series Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "thermal_series"
+					}
+				}
 			}]
 		}
 		{
@@ -694,11 +738,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000F8A"
-				type: "command"
-				title: "Rare Thermal Series Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "thermal_series"
+					}
+				}
 			}]
 		}
 		{
@@ -716,11 +763,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000F8B"
-				type: "command"
-				title: "Rare Thermal Series Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "thermal_series"
+					}
+				}
 			}]
 		}
 		{
@@ -744,11 +794,14 @@
 			}]
 			rewards: [{
 				id: "124C10AC728F1A8C"
-				type: "command"
-				title: "Rare Thermal Series Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "thermal_series"
+					}
+				}
 			}]
 		}
 		{
@@ -770,11 +823,14 @@
 			}]
 			rewards: [{
 				id: "5839B6FFB471A35B"
-				type: "command"
-				title: "Rare Thermal Series Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "thermal_series"
+					}
+				}
 			}]
 		}
 		{
@@ -868,11 +924,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000FA0"
-				type: "command"
-				title: "Rare Thermal Series Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "thermal_series"
+					}
+				}
 			}]
 		}
 		{
@@ -892,11 +951,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000FA1"
-				type: "command"
-				title: "Rare Thermal Series Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "thermal_series"
+					}
+				}
 			}]
 		}
 		{
@@ -917,11 +979,14 @@
 			}]
 			rewards: [{
 				id: "052C23B5160E5C9A"
-				type: "command"
-				title: "Rare Thermal Series Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "thermal_series"
+					}
+				}
 			}]
 		}
 		{
@@ -942,11 +1007,14 @@
 			}]
 			rewards: [{
 				id: "5FF0D0F905311B5F"
-				type: "command"
-				title: "Rare Thermal Series Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "thermal_series"
+					}
+				}
 			}]
 		}
 		{
@@ -963,11 +1031,14 @@
 			}]
 			rewards: [{
 				id: "7AE5586CD4CAE2A9"
-				type: "command"
-				title: "Rare Thermal Series Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "thermal_series"
+					}
+				}
 			}]
 		}
 		{
@@ -984,11 +1055,14 @@
 			}]
 			rewards: [{
 				id: "111267C52D39C197"
-				type: "command"
-				title: "Epic Thermal Series Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "thermal_series"
+					}
+				}
 			}]
 		}
 	]

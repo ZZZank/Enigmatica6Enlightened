@@ -1,5 +1,14 @@
+'use strict';
 onEvent('jei.information', (event) => {
     const recipes = [
+        {
+            items: ['upgrade_aquatic:elder_guardian_spine'],
+            text: ['Obtained by killing Elder Guardian.']
+        },
+        {
+            items: ['neapolitan:mint_milkshake'],
+            text: [`Can "rob" potion effects belonging to one nearby mob.`]
+        },
         {
             items: ['farmersdelight:ham'],
             text: ['Obtained by killing Pigs or Hoglins with a knife.']
@@ -304,14 +313,6 @@ onEvent('jei.information', (event) => {
             text: [`Gathered with Shears.`]
         },
         {
-            items: ['eidolon:soul_shard'],
-            text: [
-                `Obtained by performing a Crystallization Ritual near undead mobs. The ritual can be found in the Ars Ecclesia.`,
-                ` `,
-                `Alternatively obtained by killing undead mobs with a Reaper's Scythe.`
-            ]
-        },
-        {
             items: ['atum:anputs_fingers_spores'],
             text: [`Found occasionally growing beneath Deadwood Trees. Requires darkness to grow.`]
         },
@@ -374,8 +375,8 @@ onEvent('jei.information', (event) => {
             text: [`Produced by growing Tau near mobs.`]
         },
         {
-            items: ['eidolon:unholy_symbol'],
-            text: [`Produced by chanting the Touch of Darkness at Pewter Inlay dropped on the ground.`]
+            items: ['environmental:koi'],
+            text: [`Will not spawn naturally. See Koi Bucket for how to obtain. `]
         },
         {
             items: [
@@ -431,12 +432,6 @@ onEvent('jei.information', (event) => {
                 `Dropped by Enderiophage.`,
                 ` `,
                 `Enderiophage may be found in the wild in the End Midlands biome. They may also be called forth by consuming Otherworldly Honey.`
-            ]
-        },
-        {
-            items: ['eidolon:sanguine_amulet', 'eidolon:sapping_sword'],
-            text: [
-                `For crafting steps, refer to the Sanguine Items section under Rituals in the Ars Ecclesia.`
             ]
         },
         {
@@ -600,7 +595,7 @@ onEvent('jei.information', (event) => {
         );
     });
 
-    var framedDrawers = [
+    let framedDrawers = [
         'compact_drawer',
         'drawer_controller',
         'slave',

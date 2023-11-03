@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
@@ -15,6 +16,12 @@ onEvent('recipes', (event) => {
             fluid: Fluid.of('kubejs:molten_compressed_iron', 18),
             output: 'pneumaticcraft:reinforced_stone',
             id: `${id_prefix}reinforced_stone`
+        },
+        {
+            input: 'minecraft:rotten_flesh',
+            fluid: Fluid.of('minecraft:milk', 500),
+            output: 'naturesaura:crimson_meal',
+            id: `${id_prefix}crimson_meal`
         }
     ];
 

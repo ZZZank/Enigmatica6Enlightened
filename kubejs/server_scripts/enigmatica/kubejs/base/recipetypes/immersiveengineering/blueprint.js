@@ -1,5 +1,6 @@
+'use strict';
 onEvent('recipes', (event) => {
-    var data = {
+    let data = {
         recipes: [
             {
                 inputs: [

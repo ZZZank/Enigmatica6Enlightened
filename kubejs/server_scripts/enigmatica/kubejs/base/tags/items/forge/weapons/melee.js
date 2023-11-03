@@ -1,5 +1,6 @@
+'use strict';
 onEvent('item.tags', (event) => {
-    var items = [
+    let items = [
         'botania:ender_dagger',
         'byg:pendorite_battleaxe',
         'immersiveengineering:sword_steel',
@@ -13,7 +14,6 @@ onEvent('item.tags', (event) => {
         'bloodmagic:soulsword',
         'bloodmagic:soulscythe',
         'meetyourfight:depth_star',
-        'eidolon:reaper_scythe',
         'atum:shus_exile',
         'atum:seths_sting',
         'atum:nuits_quarter',
@@ -34,7 +34,7 @@ onEvent('item.tags', (event) => {
         'atum:dagger_poison',
         'atum:iron_dagger'
     ];
-    var exceptions = [
+    let exceptions = [
         'betterendforge:aeternium_hammer_head',
         'betterendforge:aeternium_sword_handle',
         'betterendforge:aeternium_sword_blade',
@@ -44,7 +44,7 @@ onEvent('item.tags', (event) => {
         'betterendforge:terminite_sword_blade'
     ];
 
-    var tags = ['forge:weapons', 'forge:weapons/melee'];
+    let tags = ['forge:weapons', 'forge:weapons/melee'];
 
     tags.forEach((tag) => {
         event

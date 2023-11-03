@@ -1,7 +1,7 @@
 {
 	id: "0000000000000003"
 	group: "72A9465344128AF9"
-	order_index: 2
+	order_index: 4
 	filename: "industrial_foregoing"
 	title: "Industrial Foregoing"
 	icon: "industrialforegoing:latex_processing_unit"
@@ -35,7 +35,6 @@
 				{
 					id: "63727AE711541D73"
 					type: "item"
-					title: "Iron Ingot"
 					item: "minecraft:iron_ingot"
 					count: 6
 					random_bonus: 4
@@ -73,14 +72,12 @@
 				{
 					id: "0000000000000628"
 					type: "item"
-					title: "Acacia Log"
 					item: "minecraft:acacia_log"
 					count: 32
 				}
 				{
 					id: "0000000000000CAB"
 					type: "item"
-					title: "Acacia Sapling"
 					item: "minecraft:acacia_sapling"
 					count: 8
 				}
@@ -115,11 +112,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000629"
-				type: "command"
-				title: "Rare Industrial Foregoing Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_industrial_foregoing_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "industrial_foregoing"
+					}
+				}
 			}]
 		}
 		{
@@ -136,11 +136,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000632"
-				type: "command"
-				title: "Rare Industrial Foregoing Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_industrial_foregoing_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "industrial_foregoing"
+					}
+				}
 			}]
 		}
 		{
@@ -194,11 +197,14 @@
 			}]
 			rewards: [{
 				id: "000000000000062A"
-				type: "command"
-				title: "Rare Industrial Foregoing Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_industrial_foregoing_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "industrial_foregoing"
+					}
+				}
 			}]
 		}
 		{
@@ -231,11 +237,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000631"
-				type: "command"
-				title: "Rare Industrial Foregoing Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_industrial_foregoing_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "industrial_foregoing"
+					}
+				}
 			}]
 		}
 		{
@@ -256,11 +265,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000633"
-				type: "command"
-				title: "Epic Industrial Foregoing Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_industrial_foregoing_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "industrial_foregoing"
+					}
+				}
 			}]
 		}
 		{
@@ -276,11 +288,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000636"
-				type: "command"
-				title: "Epic Industrial Foregoing Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_industrial_foregoing_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "industrial_foregoing"
+					}
+				}
 			}]
 		}
 		{
@@ -309,16 +324,18 @@
 			rewards: [
 				{
 					id: "0000000000000635"
-					type: "command"
-					title: "Epic Industrial Foregoing Loot Box"
-					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_industrial_foregoing_loot_epic"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:epic_lootbox"
+						Count: 1b
+						tag: {
+							mod: "industrial_foregoing"
+						}
+					}
 				}
 				{
 					id: "0000000000000F3B"
 					type: "item"
-					title: "Common Black Hole Tank"
 					item: {
 						id: "industrialforegoing:common_black_hole_tank"
 						Count: 1b
@@ -360,11 +377,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000637"
-				type: "command"
-				title: "Epic Industrial Foregoing Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_industrial_foregoing_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "industrial_foregoing"
+					}
+				}
 			}]
 		}
 		{
@@ -382,21 +402,18 @@
 				{
 					id: "000000000000062C"
 					type: "item"
-					title: "Beetroot"
 					item: "minecraft:beetroot"
 					count: 8
 				}
 				{
 					id: "000000000000062D"
 					type: "item"
-					title: "Carrot"
 					item: "minecraft:carrot"
 					count: 8
 				}
 				{
 					id: "000000000000062E"
 					type: "item"
-					title: "Potato"
 					item: "minecraft:potato"
 					count: 8
 				}
@@ -492,11 +509,14 @@
 			}]
 			rewards: [{
 				id: "000000000000062B"
-				type: "command"
-				title: "Rare Industrial Foregoing Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_industrial_foregoing_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "industrial_foregoing"
+					}
+				}
 			}]
 		}
 		{
@@ -563,11 +583,14 @@
 			}]
 			rewards: [{
 				id: "00EAC9D358EBDA6E"
-				type: "command"
-				title: "Epic Industrial Foregoing Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_industrial_foregoing_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "industrial_foregoing"
+					}
+				}
 			}]
 		}
 		{

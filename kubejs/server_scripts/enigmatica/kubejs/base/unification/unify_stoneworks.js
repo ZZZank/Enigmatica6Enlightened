@@ -1,48 +1,38 @@
-//priority: 900
+// priority: 900
+'use strict';
+
 onEvent('recipes', (event) => {
+    event
+        .custom({
+            type: 'thermal:rock_gen',
+            adjacent: 'minecraft:water',
+            below: 'pneumaticcraft:compressed_iron_block',
+            result: {
+                item: 'minecraft:cobblestone',
+                count: 4
+            }
+        })
+        .id(`enigmatica:base/unification/unify_stoneworks/buffed_cobble`);
+
     generatableCobblestone.forEach((material) => {
-        var type = 'cobble';
+        let type = 'cobble';
         //console.log(`Recipe for Material: ${material}, Type: ${type}`);
-        // pedestals_stoneworks(event, material, type);
         industrialforegoing_stoneworks(event, material, type);
         thermal_stoneworks(event, material);
     });
 
     generatableStone.forEach((material) => {
-        var type = 'stone';
+        let type = 'stone';
         //console.log(`Recipe for Material: ${material}, Type: ${type}`);
-        // pedestals_stoneworks(event, material, type);
         industrialforegoing_stoneworks(event, material, type);
         thermal_stoneworks(event, material);
     });
 });
 
 //stoneworks functions
-function pedestals_stoneworks(event, material, type) {
-    var recipeType = 'pedestals:pedestal_cobblegen';
-
-    if (type == 'stone') {
-        recipeType = 'pedestals:pedestal_cobblegensilk';
-    }
-    //console.log(`Pedestals Recipe for Material: ${material}, Type: ${type}`);
-    fallback_id(
-        event.custom({
-            type: recipeType,
-            ingredient: {
-                item: material
-            },
-            result: {
-                item: material,
-                count: 1
-            }
-        }),
-        `enigmatica:base/unification/unify_stoneworks/${arguments.callee.name}/`
-    );
-}
-
 function industrialforegoing_stoneworks(event, material, type) {
-    var waterConsume = 0;
-    var lavaConsume = 0;
+    let waterConsume = 0;
+    let lavaConsume = 0;
 
     if (type == 'stone') {
         waterConsume = 1000;
@@ -61,7 +51,7 @@ function industrialforegoing_stoneworks(event, material, type) {
             lavaConsume: lavaConsume,
             type: 'industrialforegoing:stonework_generate'
         }),
-        `enigmatica:base/unification/unify_stoneworks/${arguments.callee.name}/`
+        `enigmatica:base/unification/unify_stoneworks/industrialforegoing_stoneworks/`
     );
 }
 
@@ -75,6 +65,6 @@ function thermal_stoneworks(event, material) {
                 item: material
             }
         }),
-        `enigmatica:base/unification/unify_stoneworks/${arguments.callee.name}/`
+        `enigmatica:base/unification/unify_stoneworks/thermal_stoneworks/`
     );
 }

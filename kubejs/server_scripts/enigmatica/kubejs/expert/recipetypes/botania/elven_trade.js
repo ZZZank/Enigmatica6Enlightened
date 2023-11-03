@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
@@ -22,10 +23,10 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                { item: 'eidolon:polished_planks' },
-                { item: 'eidolon:polished_planks' },
-                { item: 'eidolon:polished_planks' },
-                { item: 'eidolon:polished_planks' }
+                { item: 'bloodmagic:woodtilepath' },
+                { item: 'bloodmagic:woodtilepath' },
+                { item: 'bloodmagic:woodtilepath' },
+                { item: 'bloodmagic:woodtilepath' }
             ],
             output: {
                 item: 'botania:dreamwood'

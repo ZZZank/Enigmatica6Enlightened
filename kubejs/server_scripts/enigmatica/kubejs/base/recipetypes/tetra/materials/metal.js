@@ -1,5 +1,6 @@
+'use strict';
 onEvent('server.datapack.low_priority', (event) => {
-    var data = [
+    let data = [
         {
             type: 'base',
             recipes: [
@@ -594,23 +595,6 @@ onEvent('server.datapack.low_priority', (event) => {
                     textures: ['metal', 'default'],
                     material: { tag: 'forge:ingots/pewter' },
                     requiredTools: { hammer: 3 }
-                },
-                {
-                    key: 'arcane_gold',
-                    category: 'metal',
-                    primary: '5.7',
-                    secondary: '7.8',
-                    tertiary: '6.4',
-                    durability: '144',
-                    integrityCost: '3',
-                    integrityGain: '6',
-                    magicCapacity: '131',
-                    toolLevel: '3',
-                    toolEfficiency: '8.8',
-                    tints: { glyph: 'cd7b4b', texture: 'cd7b4b' },
-                    textures: ['metal', 'default'],
-                    material: { tag: 'forge:ingots/arcane_gold' },
-                    requiredTools: { hammer: 4 }
                 },
                 {
                     key: 'neptunium',

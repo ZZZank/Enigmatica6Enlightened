@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
@@ -33,5 +34,5 @@ onEvent('recipes', (event) => {
             ingredient: Ingredient.of('quark:black_crystal').toJson(),
             result: Ingredient.of('appliedenergistics2:sky_stone_block').toJson()
         })
-        .id(id_prefix + 'sky_stone');
+        .id(`${id_prefix}sky_stone`);
 });

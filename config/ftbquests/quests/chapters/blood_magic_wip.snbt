@@ -1,7 +1,7 @@
 {
 	id: "0000000000000895"
 	group: "5A8B89F87F77CF4C"
-	order_index: 3
+	order_index: 5
 	filename: "blood_magic_wip"
 	title: "Blood Magic"
 	icon: "bloodmagic:weakbloodshard"
@@ -74,7 +74,6 @@
 				{
 					id: "000000000000089D"
 					type: "item"
-					title: "Demon Will"
 					item: {
 						id: "bloodmagic:basemonstersoul"
 						Count: 1b
@@ -85,11 +84,8 @@
 				}
 				{
 					id: "0000000000000A7C"
-					type: "command"
-					title: "Scavenger's Delight"
-					icon: "kubejs:scavengers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:scavengers_delight"
 				}
 			]
 		}
@@ -118,11 +114,8 @@
 			}]
 			rewards: [{
 				id: "00000000000008C2"
-				type: "command"
-				title: "Farmer's Delight"
-				icon: "kubejs:farmers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
-				player_command: false
+				type: "item"
+				item: "kubejs:farmers_delight"
 			}]
 		}
 		{
@@ -180,11 +173,8 @@
 			rewards: [
 				{
 					id: "00000000000009AE"
-					type: "command"
-					title: "Sorcerer's Delight"
-					icon: "kubejs:sorcerers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:sorcerers_delight"
 				}
 				{
 					id: "6797B35CCCC56777"
@@ -219,11 +209,14 @@
 			}]
 			rewards: [{
 				id: "00000000000009AF"
-				type: "command"
-				title: "Rare Blood Magic Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "blood_magic"
+					}
+				}
 			}]
 		}
 		{
@@ -246,11 +239,14 @@
 			}]
 			rewards: [{
 				id: "00000000000009B0"
-				type: "command"
-				title: "Rare Blood Magic Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "blood_magic"
+					}
+				}
 			}]
 		}
 		{
@@ -280,35 +276,25 @@
 				type: "item"
 				item: "bloodmagic:blankslate"
 			}]
-			rewards: [
-				{
-					id: "00000000000008BB"
-					type: "item"
-					title: "Low Filter Module"
-					item: "prettypipes:low_filter_module"
+			rewards: [{
+				id: "00000000000008BB"
+				type: "item"
+				item: {
+					id: "mekanism:logistical_sorter"
+					Count: 1b
+					tag: {
+						mekData: {
+							componentUpgrade: {
+								upgrades: [{
+									type: 4
+									amount: 4
+								}]
+							}
+						}
+					}
 				}
-				{
-					id: "00000000000008BC"
-					type: "item"
-					title: "Low Extraction Module"
-					item: "prettypipes:low_extraction_module"
-					count: 2
-				}
-				{
-					id: "00000000000008BD"
-					type: "item"
-					title: "Stack Limiter Module"
-					item: "prettypipes:stack_size_module"
-					count: 2
-				}
-				{
-					id: "00000000000008BE"
-					type: "item"
-					title: "Pipe"
-					item: "prettypipes:pipe"
-					count: 4
-				}
-			]
+				count: 2
+			}]
 		}
 		{
 			x: -2.0d
@@ -402,14 +388,12 @@
 				{
 					id: "00000000000008CB"
 					type: "item"
-					title: "Sea Lantern"
 					item: "minecraft:sea_lantern"
 					count: 4
 				}
 				{
 					id: "00000000000008DA"
 					type: "item"
-					title: "Rune of Sacrifice"
 					item: "bloodmagic:sacrificerune"
 					count: 4
 				}
@@ -437,11 +421,14 @@
 			}]
 			rewards: [{
 				id: "00000000000009B7"
-				type: "command"
-				title: "Epic Blood Magic Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "blood_magic"
+					}
+				}
 			}]
 		}
 		{
@@ -464,11 +451,14 @@
 			}]
 			rewards: [{
 				id: "00000000000009B9"
-				type: "command"
-				title: "Epic Blood Magic Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "blood_magic"
+					}
+				}
 			}]
 		}
 		{
@@ -503,11 +493,14 @@
 			]
 			rewards: [{
 				id: "00000000000009B6"
-				type: "command"
-				title: "Epic Blood Magic Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "blood_magic"
+					}
+				}
 			}]
 		}
 		{
@@ -529,11 +522,14 @@
 			}]
 			rewards: [{
 				id: "00000000000009B5"
-				type: "command"
-				title: "Epic Blood Magic Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "blood_magic"
+					}
+				}
 			}]
 		}
 		{
@@ -608,11 +604,14 @@
 			]
 			rewards: [{
 				id: "00000000000009BA"
-				type: "command"
-				title: "Rare Blood Magic Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "blood_magic"
+					}
+				}
 			}]
 		}
 		{
@@ -667,11 +666,14 @@
 			}]
 			rewards: [{
 				id: "00000000000009B2"
-				type: "command"
-				title: "Rare Blood Magic Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "blood_magic"
+					}
+				}
 			}]
 		}
 		{
@@ -708,11 +710,14 @@
 			}]
 			rewards: [{
 				id: "00000000000009B8"
-				type: "command"
-				title: "Epic Blood Magic Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "blood_magic"
+					}
+				}
 			}]
 		}
 		{
@@ -801,11 +806,14 @@
 			]
 			rewards: [{
 				id: "00000000000009B3"
-				type: "command"
-				title: "Epic Blood Magic Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "blood_magic"
+					}
+				}
 			}]
 		}
 		{
@@ -826,11 +834,14 @@
 			}]
 			rewards: [{
 				id: "00000000000009B4"
-				type: "command"
-				title: "Epic Blood Magic Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "blood_magic"
+					}
+				}
 			}]
 		}
 		{
@@ -854,19 +865,19 @@
 			rewards: [
 				{
 					id: "00000000000009BB"
-					type: "command"
-					title: "Rare Blood Magic Loot Box"
-					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_rare"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:rare_lootbox"
+						Count: 1b
+						tag: {
+							mod: "blood_magic"
+						}
+					}
 				}
 				{
 					id: "0000000000000A7D"
-					type: "command"
-					title: "Alchemist's Delight"
-					icon: "kubejs:alchemists_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:alchemists_delight"
 				}
 			]
 		}
@@ -974,11 +985,14 @@
 			}]
 			rewards: [{
 				id: "0006651ED51BA2A9"
-				type: "command"
-				title: "Rare Blood Magic Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_rare"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+						mod: "blood_magic"
+					}
+				}
 			}]
 		}
 		{
@@ -1032,11 +1046,14 @@
 			}]
 			rewards: [{
 				id: "0BB215FA03536F71"
-				type: "command"
-				title: "Epic Blood Magic Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "blood_magic"
+					}
+				}
 			}]
 		}
 		{

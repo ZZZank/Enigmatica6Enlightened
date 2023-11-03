@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
@@ -17,6 +18,28 @@ onEvent('recipes', (event) => {
     */
 
     const recipes = [
+        {
+            output: Item.of('mekanism:teleporter'),
+            pattern: ['ABA', 'CDC', 'AEA'],
+            key: {
+                A: 'mekanism:teleporter_frame',
+                B: 'immersiveengineering:coil_hv',
+                C: 'immersiveengineering:current_transformer',
+                D: '#industrialforegoing:machine_frame/simple',
+                E: Item.of('waystones:warp_stone', '{Damage:0}').weakNBT()
+            },
+            id: `${id_prefix}teleporter_alternate`
+        },
+        {
+            output: Item.of('3x mekanism:teleporter_frame'),
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: '#enigmatica:stonecuttables/arcane_stone',
+                B: 'immersiveengineering:electron_tube',
+                C: 'quark:lime_rune'
+            },
+            id: 'mekanism:teleporter_frame'
+        },
         {
             output: 'mekanism:fuelwood_heater',
             pattern: ['BAB', 'CDC', 'BAB'],
@@ -46,9 +69,9 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:gears/osmium',
                 B: '#forge:circuits/basic',
-                C: 'rftoolspower:blazing_agitator',
+                C: 'powah:energizing_rod_blazing',
                 D: 'thermal:machine_bottler',
-                E: 'rftoolspower:cell1'
+                E: 'kubejs:power_core_low'
             },
             id: 'mekanism:metallurgic_infuser'
         },
@@ -335,7 +358,7 @@ onEvent('recipes', (event) => {
             id: 'mekanism:jetpack_armored'
         },
         {
-            output: 'mekanismgenerators:solar_panel',
+            output: '4x mekanismgenerators:solar_panel',
             pattern: ['AAA', 'AAA', 'BBB'],
             key: {
                 A: 'quark:blue_framed_glass_pane',
@@ -419,7 +442,7 @@ onEvent('recipes', (event) => {
                 C: 'mekanism:basic_induction_cell',
                 D: '#industrialforegoing:machine_frame/simple',
                 E: '#forge:circuits/basic',
-                F: 'rftoolspower:cell1'
+                F: 'kubejs:power_core_low'
             },
             id: 'mekanism:enrichment_chamber'
         },
@@ -445,7 +468,7 @@ onEvent('recipes', (event) => {
                 C: 'immersiveengineering:coil_hv',
                 D: '#industrialforegoing:machine_frame/simple',
                 E: '#forge:circuits/basic',
-                F: 'rftoolspower:cell1'
+                F: 'kubejs:power_core_low'
             },
             id: 'mekanism:energized_smelter'
         },
@@ -458,7 +481,7 @@ onEvent('recipes', (event) => {
                 C: 'immersiveengineering:heavy_engineering',
                 D: '#industrialforegoing:machine_frame/simple',
                 E: '#forge:circuits/basic',
-                F: 'rftoolspower:cell1'
+                F: 'kubejs:power_core_low'
             },
             id: 'mekanism:precision_sawmill'
         },
@@ -471,7 +494,7 @@ onEvent('recipes', (event) => {
                 C: 'mekanism:advanced_chemical_tank',
                 D: '#industrialforegoing:machine_frame/simple',
                 E: '#forge:circuits/basic',
-                F: 'rftoolspower:cell1'
+                F: 'kubejs:power_core_low'
             },
             id: 'mekanism:nutritional_liquifier'
         },
@@ -508,7 +531,7 @@ onEvent('recipes', (event) => {
                 C: 'mekanism:advanced_chemical_tank',
                 D: '#industrialforegoing:machine_frame/advanced',
                 E: '#forge:circuits/advanced',
-                F: 'rftoolspower:cell2'
+                F: 'kubejs:power_core_medium'
             },
             id: 'mekanism:purification_chamber'
         },
@@ -534,7 +557,7 @@ onEvent('recipes', (event) => {
                 C: 'create:basin',
                 D: '#industrialforegoing:machine_frame/advanced',
                 E: '#forge:circuits/advanced',
-                F: 'rftoolspower:cell2',
+                F: 'kubejs:power_core_medium',
                 G: 'mekanism:advanced_chemical_tank'
             },
             id: 'mekanism:chemical_injection_chamber'
@@ -550,7 +573,7 @@ onEvent('recipes', (event) => {
                 E: '#industrialforegoing:machine_frame/advanced',
                 F: 'thermal:machine_chiller',
                 G: '#forge:circuits/advanced',
-                H: 'rftoolspower:cell2'
+                H: 'kubejs:power_core_medium'
             },
             id: 'mekanism:chemical_crystallizer'
         },
@@ -563,7 +586,7 @@ onEvent('recipes', (event) => {
                 C: 'mekanismgenerators:reactor_glass',
                 D: 'resourcefulbees:elite_centrifuge_controller',
                 E: '#forge:circuits/elite',
-                F: 'rftoolspower:cell3'
+                F: 'kubejs:power_core_high'
             },
             id: 'mekanism:isotopic_centrifuge'
         },
@@ -577,7 +600,7 @@ onEvent('recipes', (event) => {
                 D: 'thermal:device_water_gen',
                 E: 'mekanism:chemical_injection_chamber',
                 F: '#forge:circuits/elite',
-                G: 'rftoolspower:cell3'
+                G: 'kubejs:power_core_high'
             },
             id: 'mekanism:chemical_oxidizer'
         },
@@ -585,11 +608,11 @@ onEvent('recipes', (event) => {
             output: 'mekanism:chemical_infuser',
             pattern: ['ABA', 'BCB', 'DED'],
             key: {
-                A: 'rftoolspower:blazing_agitator',
+                A: 'powah:energizing_rod_blazing',
                 B: 'mekanism:elite_chemical_tank',
                 C: '#industrialforegoing:machine_frame/advanced',
                 D: '#forge:circuits/elite',
-                E: 'rftoolspower:cell3'
+                E: 'kubejs:power_core_high'
             },
             id: 'mekanism:chemical_infuser'
         },
@@ -602,7 +625,7 @@ onEvent('recipes', (event) => {
                 C: 'industrialforegoing:dissolution_chamber',
                 D: '#industrialforegoing:machine_frame/advanced',
                 E: '#forge:circuits/elite',
-                F: 'rftoolspower:cell3'
+                F: 'kubejs:power_core_high'
             },
             id: 'mekanism:chemical_dissolution_chamber'
         },
@@ -793,14 +816,16 @@ onEvent('recipes', (event) => {
             id: `mekanism:bin/ultimate`
         },
         {
-            output: `mekanism:logistical_sorter`,
-            pattern: ['ABA', 'ACA', 'EDE'],
+            output: Item.of(
+                'mekanism:logistical_sorter',
+                '{mekData:{componentUpgrade:{upgrades:[{type:4,amount:4}]}}}'
+            ),
+            pattern: ['ABA', ' C ', 'ADA'],
             key: {
                 A: 'immersiveengineering:sheetmetal_colored_black',
-                B: 'prettypipes:medium_extraction_module',
-                C: 'prettypipes:medium_filter_module',
-                D: 'prettypipes:round_robin_sorting_modifier',
-                E: '#forge:plates/iron_osmium'
+                B: 'immersiveengineering:electron_tube',
+                C: 'immersiveengineering:circuit_board',
+                D: 'thermal:redstone_servo'
             },
             id: `mekanism:logistical_sorter`
         },
@@ -844,7 +869,7 @@ onEvent('recipes', (event) => {
             pattern: ['ABA', 'CDC', 'EFE'],
             key: {
                 A: '#forge:plastic',
-                B: 'ppfluids:high_fluid_retrieval_module',
+                B: 'modularrouters:fluid_module',
                 C: 'mekanism:basic_fluid_tank',
                 D: '#industrialforegoing:machine_frame/pity',
                 E: '#forge:gears/osmium',
@@ -860,7 +885,7 @@ onEvent('recipes', (event) => {
                 B: 'appliedenergistics2:biometric_card',
                 C: '#industrialforegoing:machine_frame/simple',
                 D: '#forge:circuits/advanced',
-                E: 'rftoolspower:cell1'
+                E: 'kubejs:power_core_low'
             },
             id: `mekanism:security_desk`
         },
@@ -872,7 +897,7 @@ onEvent('recipes', (event) => {
                 B: 'pneumaticcraft:assembly_io_unit_import',
                 C: '#industrialforegoing:machine_frame/simple',
                 D: '#forge:circuits/advanced',
-                E: 'rftoolspower:cell1'
+                E: 'kubejs:power_core_low'
             },
             id: `mekanism:modification_station`
         }

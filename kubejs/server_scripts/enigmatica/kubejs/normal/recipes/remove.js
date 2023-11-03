@@ -1,17 +1,17 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isNormalMode == false) {
         return;
     }
 
-    var outputRemovals = [
+    let outputRemovals = [
         'torchmaster:feral_flare_lantern',
         'torchmaster:megatorch',
         'quark:white_candle',
-        'occultism:candle_white',
-        'eidolon:candle'
+        'occultism:candle_white'
     ];
 
-    var idRemovals = [];
+    let idRemovals = [];
 
     outputRemovals.forEach(function (removal) {
         event.remove({ output: removal });

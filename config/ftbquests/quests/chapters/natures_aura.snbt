@@ -1,7 +1,7 @@
 {
 	id: "000000000000009E"
 	group: "5A8B89F87F77CF4C"
-	order_index: 6
+	order_index: 4
 	filename: "natures_aura"
 	title: "Nature's Aura"
 	icon: "naturesaura:gold_leaf"
@@ -149,11 +149,8 @@
 				}
 				{
 					id: "0000000000000A73"
-					type: "command"
-					title: "Scavenger's Delight"
-					icon: "kubejs:scavengers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:scavengers_delight"
 				}
 			]
 		}
@@ -184,11 +181,8 @@
 				}
 				{
 					id: "0000000000000A72"
-					type: "command"
-					title: "Farmer's Delight"
-					icon: "kubejs:farmers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:farmers_delight"
 				}
 			]
 		}
@@ -304,7 +298,6 @@
 				{
 					id: "000000000000035F"
 					type: "item"
-					title: "Eir's Token"
 					item: "naturesaura:break_prevention"
 				}
 				{
@@ -416,7 +409,6 @@
 				{
 					id: "000000000000035E"
 					type: "item"
-					title: "Token of Undying Friendship"
 					item: "naturesaura:pet_reviver"
 				}
 				{
@@ -462,7 +454,6 @@
 				{
 					id: "0000000000000702"
 					type: "item"
-					title: "Ancient Log"
 					item: "naturesaura:ancient_log"
 					count: 32
 				}
@@ -826,13 +817,11 @@
 				{
 					id: "000000000000031E"
 					type: "item"
-					title: "Item Frame"
 					item: "minecraft:item_frame"
 				}
 				{
 					id: "000000000000031F"
 					type: "item"
-					title: "Farming Stencil"
 					item: "naturesaura:farming_stencil"
 				}
 			]
@@ -865,7 +854,7 @@
 				count: 2L
 			}]
 			rewards: [{
-				id: "0000000000000362"
+				id: "2FFF8858032108EE"
 				type: "command"
 				title: "Rare Nature's Aura Loot Box"
 				icon: "kubejs:rare_lootbox"
@@ -950,13 +939,11 @@
 				{
 					id: "000000000000033D"
 					type: "item"
-					title: "Ender Ocular"
 					item: "naturesaura:ender_access"
 				}
 				{
 					id: "000000000000033E"
 					type: "item"
-					title: "Eye of Ender"
 					item: "minecraft:ender_eye"
 					count: 2
 				}
@@ -1204,7 +1191,6 @@
 				{
 					id: "0000000000000354"
 					type: "item"
-					title: "Powder Manipulator"
 					item: "naturesaura:powder_placer"
 				}
 				{
@@ -1216,27 +1202,6 @@
 					player_command: false
 				}
 			]
-		}
-		{
-			x: -2.0d
-			y: -15.5d
-			subtitle: "To the Stars!"
-			description: ["Growing Crystals under clear view of the sky has been known to bind the great energies of the stars into their lattice, but it seems not all of the energies are bound. The Crystalline Extractor absorbs this lost energy as crystals grow nearby, converting it into a powerful source of Aura."]
-			dependencies: ["00000000000002C1"]
-			id: "212224CE33D89381"
-			tasks: [{
-				id: "280C9FCBE6C8646D"
-				type: "item"
-				item: "naturesstarlight:crystal_generator"
-			}]
-			rewards: [{
-				id: "6C5991B03D429D92"
-				type: "command"
-				title: "Epic Nature's Aura Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_epic"
-				player_command: false
-			}]
 		}
 	]
 }

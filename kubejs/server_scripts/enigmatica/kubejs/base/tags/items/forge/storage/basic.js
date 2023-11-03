@@ -1,5 +1,6 @@
+'use strict';
 onEvent('item.tags', (event) => {
-    var items = [
+    let items = [
         'aquaculture:neptunes_bounty',
         'cookingforblockheads:corner',
         'cookingforblockheads:counter',
@@ -21,7 +22,7 @@ onEvent('item.tags', (event) => {
         'rftoolsstorage:modular_storage',
         'tetra:rack'
     ];
-    var exceptions = [
+    let exceptions = [
         'aquaculture:treasure_chest',
         'naturesaura:sky_chest',
         'naturesaura:infused_iron_chest',
@@ -31,7 +32,7 @@ onEvent('item.tags', (event) => {
         'atum:wanderer_chest'
     ];
 
-    var tags = ['forge:storage', 'forge:storage/basic'];
+    let tags = ['forge:storage', 'forge:storage/basic'];
 
     tags.forEach((tag) => {
         event

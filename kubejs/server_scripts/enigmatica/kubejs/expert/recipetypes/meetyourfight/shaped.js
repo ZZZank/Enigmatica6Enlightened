@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
@@ -21,7 +22,7 @@ onEvent('recipes', (event) => {
             pattern: ['AAA', 'ABA', 'ACA'],
             key: {
                 A: '#forge:bones',
-                B: 'eidolon:zombie_heart',
+                B: 'kubejs:zombie_heart',
                 C: 'meetyourfight:mossy_tooth'
             },
             id: 'meetyourfight:caged_heart'

@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/enigmatica/';
     const recipes = [
@@ -77,53 +78,16 @@ onEvent('recipes', (event) => {
         },
 
         {
-            output: '9x eidolon:pewter_ingot',
-            input: '#forge:storage_blocks/pewter',
-            mold: '#thermal:crafting/dies/unpacking',
-            id_suffix: 'pewter_block_to_ingots'
-        },
-        {
-            output: '9x eidolon:pewter_nugget',
+            output: '9x kubejs:pewter_nugget',
             input: '#forge:ingots/pewter',
             mold: '#thermal:crafting/dies/unpacking',
             id_suffix: 'pewter_ingot_to_nuggets'
         },
         {
-            output: 'eidolon:pewter_ingot',
+            output: 'kubejs:pewter_ingot',
             input: '9x #forge:nuggets/pewter',
             mold: '#thermal:crafting/dies/packing_3x3',
             id_suffix: 'pewter_nuggets_to_ingots'
-        },
-        {
-            output: 'eidolon:pewter_block',
-            input: '9x #forge:ingots/pewter',
-            mold: '#thermal:crafting/dies/packing_3x3',
-            id_suffix: 'pewter_ingots_to_block'
-        },
-
-        {
-            output: '9x eidolon:arcane_gold_ingot',
-            input: '#forge:storage_blocks/arcane_gold',
-            mold: '#thermal:crafting/dies/unpacking',
-            id_suffix: 'arcane_gold_block_to_ingots'
-        },
-        {
-            output: '9x eidolon:arcane_gold_nugget',
-            input: '#forge:ingots/arcane_gold',
-            mold: '#thermal:crafting/dies/unpacking',
-            id_suffix: 'arcane_gold_ingot_to_nuggets'
-        },
-        {
-            output: 'eidolon:arcane_gold_ingot',
-            input: '9x #forge:nuggets/arcane_gold',
-            mold: '#thermal:crafting/dies/packing_3x3',
-            id_suffix: 'arcane_gold_nuggets_to_ingots'
-        },
-        {
-            output: 'eidolon:arcane_gold_block',
-            input: '9x #forge:ingots/arcane_gold',
-            mold: '#thermal:crafting/dies/packing_3x3',
-            id_suffix: 'arcane_gold_ingots_to_block'
         },
 
         {
@@ -302,7 +266,7 @@ onEvent('recipes', (event) => {
         );
     });
 
-    recipetypes_packing_unpacking = (event, recipe) => {
+    let recipetypes_packing_unpacking = (event, recipe) => {
         // Thermal
         event.recipes.thermal
             .press(recipe.output, [recipe.input, recipe.mold])

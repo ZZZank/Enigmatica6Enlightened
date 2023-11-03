@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
@@ -7,7 +8,7 @@ onEvent('recipes', (event) => {
 
     const recipes = [];
 
-    recipetypes_alloying = (event, recipe) => {
+    let recipetypes_alloying = (event, recipe) => {
         if (!recipe.smelttime) {
             recipe.smelttime = 200;
         }

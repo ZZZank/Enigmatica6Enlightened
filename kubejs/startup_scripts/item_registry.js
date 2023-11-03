@@ -1,3 +1,4 @@
+'use strict';
 onEvent('item.registry', (event) => {
     const generalItems = [
         'common_lootbox',
@@ -13,12 +14,17 @@ onEvent('item.registry', (event) => {
         'quintuple_alfsteel_ingot',
         'altered_recipe_indicator',
         'disabled_recipe_indicator',
+        'dead_koi_bucket',
+        'pewter_inlay',
 
         // Expert
         'observatory_lens',
         'coarse_lapis_lazuli_compound',
         'smoldering_lapis_lazuli_compound',
         'cutting_essence',
+        'crimson_essence',
+        'death_essence',
+        'zombie_heart',
         'superheated_steel_ingot',
         'hot_compressed_iron_ingot',
         'dimensional_storage_crystal',
@@ -49,6 +55,9 @@ onEvent('item.registry', (event) => {
         'cpu_core_mk_1026',
         'cpu_core_eg_28222',
         'cpu_core_as_81221',
+        'power_core_low',
+        'power_core_medium',
+        'power_core_high',
 
         'automation_mastery_shard',
         'engineering_mastery_shard',
@@ -475,6 +484,12 @@ onEvent('item.registry', (event) => {
         { name: 'abbee',          band: 0xe5ded5, outline: 0xffb1c5 },
     ];
 
+    let customTextureItems = [
+        { name: 'pewter_ingot', texturePath: 'create:item/zinc_ingot' },
+        { name: 'pewter_nugget', texturePath: 'create:item/zinc_nugget' },
+        { name: 'wicked_weave', texturePath: 'thermal:item/beekeeper_fabric' }
+    ];
+
     let metalTypes = ['suffused', 'fulminated', 'levigated', 'sliver'];
 
     metalTypes.forEach((metalType) => {
@@ -503,6 +518,10 @@ onEvent('item.registry', (event) => {
             .parentModel('kubejs:item/bee_larva')
             .color(1, bee.band)
             .color(2, bee.outline);
+    });
+
+    customTextureItems.forEach((item) => {
+        event.create(item.name).group('KubeJS').texture(item.texturePath);
     });
 
     // Custom Occultism Miners

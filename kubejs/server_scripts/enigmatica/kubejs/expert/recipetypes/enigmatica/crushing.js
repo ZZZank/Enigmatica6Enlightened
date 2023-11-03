@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
@@ -60,7 +61,7 @@ onEvent('recipes', (event) => {
         }
     ];
 
-    recipetypes_crushing = (event, recipe) => {
+    let recipetypes_crushing = (event, recipe) => {
         // pedestals
         // event
         //     .custom({

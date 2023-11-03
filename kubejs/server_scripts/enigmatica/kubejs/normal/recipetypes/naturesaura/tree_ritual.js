@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isNormalMode == false) {
         return;
@@ -90,18 +91,6 @@ onEvent('recipes', (event) => {
             output: Item.of('naturesaura:effect_powder', 24, '{effect:"naturesaura:nether_grass"}'),
             time: 400,
             id: 'naturesaura:tree_ritual/nether_grass_powder'
-        },
-        {
-            ingredients: [
-                'naturesaura:gold_powder',
-                'naturesaura:gold_powder',
-                'astralsorcery:illumination_powder',
-                'astralsorcery:aquamarine'
-            ],
-            sapling: 'quark:yellow_blossom_sapling',
-            output: Item.of('naturesaura:effect_powder', 8, '{effect:"naturesstarlight:starlight_increase"}'),
-            time: 400,
-            id: 'naturesstarlight:tree_ritual/starlight_increase_powder'
         },
         {
             ingredients: [

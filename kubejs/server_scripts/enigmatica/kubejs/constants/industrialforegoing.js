@@ -1,4 +1,5 @@
-//priority: 1000
+// priority: 1000
+'use strict';
 
 // prettier-ignore
 const industrialforegoing = {

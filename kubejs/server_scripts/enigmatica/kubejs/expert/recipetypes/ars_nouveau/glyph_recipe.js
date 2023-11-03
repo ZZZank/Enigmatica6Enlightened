@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
@@ -94,7 +95,7 @@ onEvent('recipes', (event) => {
             id: 'ars_nouveau:glyph_launch'
         },
         {
-            input: 'eidolon:tattered_cloth',
+            input: 'atum:cloth_scrap',
             output: 'ars_nouveau:glyph_phantom_block',
             tier: 'ONE',
             id: 'ars_nouveau:glyph_phantom_block'
@@ -142,7 +143,7 @@ onEvent('recipes', (event) => {
             id: 'ars_nouveau:glyph_extract'
         },
         {
-            input: 'eidolon:shadow_gem',
+            input: 'redstone_arsenal:flux_gem',
             output: 'ars_nouveau:glyph_amplify_two',
             tier: 'TWO',
             id: 'toomanyglyphs:glyph_amplify_two'

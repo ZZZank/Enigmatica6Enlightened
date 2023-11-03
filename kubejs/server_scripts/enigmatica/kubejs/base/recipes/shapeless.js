@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/shapeless/';
     const recipes = [
@@ -170,16 +171,6 @@ onEvent('recipes', (event) => {
                             'akashictome:displayName': { text: "Engineer's Manual" },
                             display: {
                                 Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Engineer\'s Manual"}]}'
-                            }
-                        }
-                    },
-                    eidolon: {
-                        id: 'eidolon:codex',
-                        Count: 1,
-                        tag: {
-                            'akashictome:displayName': { text: 'Ars Ecclesia' },
-                            display: {
-                                Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Ars Ecclesia"}]}'
                             }
                         }
                     },
@@ -484,11 +475,6 @@ onEvent('recipes', (event) => {
             id: 'mythicbotany:wither_aconite_floating'
         },
         {
-            output: Item.of('eidolon:pewter_blend', 2),
-            inputs: ['#forge:dusts/lead', '#forge:dusts/iron'],
-            id: 'eidolon:pewter_blend'
-        },
-        {
             output: Item.of('minecraft:string', 3),
             inputs: ['#forge:crops/flax', '#forge:crops/flax', '#forge:crops/flax']
         },
@@ -602,7 +588,7 @@ onEvent('recipes', (event) => {
     });
 
     materialsToUnify.forEach((material) => {
-        var ore = Item.of(`emendatusenigmatica:${material}_ore`);
+        let ore = Item.of(`emendatusenigmatica:${material}_ore`);
         if (ore.exists) {
             fallback_id(event.shapeless(ore, `#forge:ores/${material}`), id_prefix);
         }

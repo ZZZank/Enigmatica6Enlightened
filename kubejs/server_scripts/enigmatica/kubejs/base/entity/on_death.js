@@ -1,9 +1,12 @@
+'use strict';
+
 {
     const bee_map = {};
     bees.forEach((bee) => {
         bee_map[`resourcefulbees:${bee}_bee`] = `kubejs:${bee}_larva`;
     });
 
+    ('use strict');
     onEvent('entity.death', (event) => {
         // console.log(event); // dev.latvian.kubejs.entity.LivingEntityDeathEventJS@372ec6ba [dev.latvian.kubejs.entity.LivingEntityDeathEventJS]
         // console.log(event.entity); // Clay Bee-9f197ad6-af90-4f2e-a58d-1fbec1ceb1fc

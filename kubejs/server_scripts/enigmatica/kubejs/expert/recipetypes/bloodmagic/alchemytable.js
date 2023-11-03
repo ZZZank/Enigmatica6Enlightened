@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
@@ -95,7 +96,7 @@ onEvent('recipes', (event) => {
                 'bloodmagic:plantoil',
                 'occultism:chalk_white_impure',
                 'betterendforge:enchanted_petal',
-                'eidolon:ender_calx'
+                '#forge:dusts/flux_infused'
             ],
             output: 'occultism:chalk_purple_impure',
             count: 1,
@@ -148,7 +149,7 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                'eidolon:ender_calx',
+                '#forge:dusts/flux_infused',
                 'astralsorcery:nocturnal_powder',
                 'astralsorcery:nocturnal_powder',
                 'astralsorcery:nocturnal_powder'
@@ -202,7 +203,7 @@ onEvent('recipes', (event) => {
             id: 'bloodmagic:alchemytable/reagent_holding'
         },
         {
-            inputs: ['minecraft:lodestone', 'ars_nouveau:mana_fiber', 'eidolon:gold_inlay'],
+            inputs: ['minecraft:lodestone', 'ars_nouveau:mana_fiber', 'resourcefulbees:tainted_honeycomb'],
             output: 'bloodmagic:reagentmagnetism',
             count: 1,
             syphon: 1000,
@@ -214,7 +215,7 @@ onEvent('recipes', (event) => {
             inputs: [
                 'occultism:afrit_essence',
                 Item.of('botania:brew_vial', '{brewKey:"botania:bloodthirst"}'),
-                'eidolon:crimson_essence'
+                'kubejs:crimson_essence'
             ],
             output: 'bloodmagic:weakbloodshard',
             count: 1,
@@ -227,7 +228,7 @@ onEvent('recipes', (event) => {
             inputs: [
                 'occultism:afrit_essence',
                 Item.of('botania:brew_flask', '{brewKey:"botania:bloodthirst"}'),
-                'eidolon:crimson_essence'
+                'kubejs:crimson_essence'
             ],
             output: 'bloodmagic:weakbloodshard',
             count: 2,
@@ -240,7 +241,7 @@ onEvent('recipes', (event) => {
             inputs: [
                 'occultism:afrit_essence',
                 Item.of('botania:incense_stick', '{brewKey:"botania:bloodthirst"}'),
-                'eidolon:crimson_essence'
+                'kubejs:crimson_essence'
             ],
             output: 'bloodmagic:weakbloodshard',
             count: 10,
@@ -255,7 +256,7 @@ onEvent('recipes', (event) => {
                 '#forge:crops/nether_wart',
                 '#forge:dusts/sulfur'
             ],
-            output: 'eidolon:crimson_essence',
+            output: 'kubejs:crimson_essence',
             count: 2,
             syphon: 200,
             ticks: 200,
@@ -264,13 +265,13 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                'eidolon:zombie_heart',
+                'kubejs:zombie_heart',
                 'undergarden:raw_dweller_meat',
                 'undergarden:ditchbulb',
                 'projectvibrantjourneys:charred_bones',
                 'undergarden:ink_mushroom'
             ],
-            output: 'eidolon:death_essence',
+            output: 'kubejs:death_essence',
             count: 4,
             syphon: 200,
             ticks: 200,
@@ -562,11 +563,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}intermediatecuttingfluid`
         },
         {
-            inputs: [
-                'darkutils:blank_plate',
-                Item.of('minecraft:potion', '{Potion:"eidolon:anchored"}'),
-                'bloodmagic:watersigil'
-            ],
+            inputs: ['darkutils:blank_plate', '#minecraft:boats', 'bloodmagic:watersigil'],
             output: 'darkutils:anchor_plate',
             count: 1,
             syphon: 300,
@@ -713,20 +710,19 @@ onEvent('recipes', (event) => {
             inputs: [
                 'atum:nuit_godshard',
                 'astralsorcery:nocturnal_powder',
-                'eidolon:death_essence',
-                'eidolon:death_essence',
-                'eidolon:soul_shard',
-                'eidolon:soul_shard'
+                'kubejs:death_essence',
+                'kubejs:death_essence',
+                'appliedenergistics2:charged_certus_quartz_crystal'
             ],
-            output: 'eidolon:shadow_gem',
+            output: 'redstone_arsenal:flux_gem',
             count: 1,
             syphon: 300,
             ticks: 200,
             orbLevel: 1,
-            id: `${id_prefix}shadow_gem`
+            id: 'redstone_arsenal:materials/flux_gem'
         },
         {
-            inputs: ['#forge:ingots/silicon_bronze', '#forge:shards/ender', 'eidolon:enchanted_ash'],
+            inputs: ['#forge:ingots/silicon_bronze', '#forge:shards/ender', 'naturesaura:crimson_meal'],
             output: 'bloodmagic:teleposerfocus',
             count: 1,
             syphon: 50,

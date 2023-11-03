@@ -1,3 +1,5 @@
+'use strict';
+
 onEvent('item.tooltip', (event) => {
     /*
     Valid Color Codes:
@@ -26,6 +28,10 @@ onEvent('item.tooltip', (event) => {
     const disabledInExpert = Text.of('Disabled in Expert Mode.').red();
     const recipes = [
         {
+            items: ['appliedenergistics2:me_p2p_tunnel', 'appliedenergistics2:memory_card'],
+            text: [Text.of('Channel is disabled in Expert.').green()]
+        },
+        {
             items: ['bloodmagic:soulpickaxe'],
             text: [Text.of('Capable of mining Iesnium.').color('#7e24b3')]
         },
@@ -42,10 +48,7 @@ onEvent('item.tooltip', (event) => {
                 'pneumaticcraft:air_compressor',
                 'pneumaticcraft:advanced_air_compressor',
                 'darkutils:rune_damage_player',
-                'eidolon:crucible',
-                'eidolon:wooden_brewing_stand',
                 'engineersdecor:factory_placer',
-                'eidolon:worktable',
                 'mekanism:osmium_compressor',
                 'mekanism:ultimate_compressing_factory',
                 'mekanism:elite_compressing_factory',

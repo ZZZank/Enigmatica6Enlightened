@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     /*
     Note, max starlight is theoretical. In practice, assume roughly 95% as the max reasonable level
@@ -310,7 +311,7 @@ onEvent('recipes', (event) => {
                 C: { item: 'botania:elven_spreader' },
                 D: { item: 'astralsorcery:colored_lens_spectral' }
             },
-            focus_constellation: 'naturesstarlight:naritis',
+            focus_constellation: 'astralsorcery:vicio',
             relay_inputs: [
                 { item: 'mythicbotany:dream_cherry' },
                 { item: 'botania:life_essence' },

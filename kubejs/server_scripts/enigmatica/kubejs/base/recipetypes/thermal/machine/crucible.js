@@ -1,3 +1,4 @@
+'use strict';
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/thermal/crucible/';
     const recipes = [
@@ -48,24 +49,6 @@ onEvent('recipes', (event) => {
             input: '#forge:nuggets/fairy',
             energy: 555,
             id: `${id_prefix}fairy_nugget`
-        },
-        {
-            output: Fluid.of('materialis:molten_arcane_gold', 1296),
-            input: '#forge:storage_blocks/arcane_gold',
-            energy: 40000,
-            id: `${id_prefix}arcane_gold_block`
-        },
-        {
-            output: Fluid.of('materialis:molten_arcane_gold', 144),
-            input: '#forge:ingots/arcane_gold',
-            energy: 5000,
-            id: `${id_prefix}arcane_gold_ingot`
-        },
-        {
-            output: Fluid.of('materialis:molten_arcane_gold', 16),
-            input: '#forge:nuggets/arcane_gold',
-            energy: 555,
-            id: `${id_prefix}arcane_gold_nugget`
         },
         {
             output: Fluid.of('materialis:molten_refined_obsidian', 1296),

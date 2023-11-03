@@ -1,3 +1,4 @@
+'use strict';
 onEvent('block.tags', (event) => {
     // Documentation: https://github.com/Direwolf20-MC/BuildingGadgets/tree/master/src/main/resources/data/buildinggadgets/tags/blocks/blacklist
 
@@ -10,7 +11,6 @@ onEvent('block.tags', (event) => {
         'bloodmagic:soulforge',
         'bloodmagic:alchemicalreactionchamber',
         'bloodmagic:incensealtar',
-        'eidolon:soul_enchanter',
         'occultism:sacrificial_bowl',
         'occultism:chalk_glyph_white',
         'occultism:chalk_glyph_purple',

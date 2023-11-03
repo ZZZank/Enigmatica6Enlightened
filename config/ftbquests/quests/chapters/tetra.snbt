@@ -1,7 +1,7 @@
 {
 	id: "0000000000000772"
 	group: "74B3CF67FCEAB20F"
-	order_index: 1
+	order_index: 0
 	filename: "tetra"
 	title: "Tetra"
 	icon: {
@@ -68,7 +68,6 @@
 				{
 					id: "0000000000000845"
 					type: "item"
-					title: "Wooden Hammer"
 					item: {
 						id: "tetra:modular_double"
 						Count: 1b
@@ -86,7 +85,6 @@
 				{
 					id: "0000000000000891"
 					type: "item"
-					title: "Hamburger"
 					item: "farmersdelight:hamburger"
 				}
 			]
@@ -207,21 +205,18 @@
 				{
 					id: "0000000000000A3E"
 					type: "item"
-					title: "Training Arrow"
 					item: "archers_paradox:training_arrow"
 					count: 64
 				}
 				{
 					id: "0000000000000A3F"
 					type: "item"
-					title: "Explosive Arrow"
 					item: "archers_paradox:explosive_arrow"
 					count: 16
 				}
 				{
 					id: "0000000000000A40"
 					type: "item"
-					title: "Arrow of Slowness"
 					item: {
 						id: "minecraft:tipped_arrow"
 						Count: 1b
@@ -234,7 +229,6 @@
 				{
 					id: "0000000000000A41"
 					type: "item"
-					title: "Arrow"
 					item: "minecraft:arrow"
 					count: 64
 				}
@@ -262,11 +256,8 @@
 			}]
 			rewards: [{
 				id: "0000000000000A4A"
-				type: "command"
-				title: "Miner's Delight"
-				icon: "kubejs:miners_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
-				player_command: false
+				type: "item"
+				item: "kubejs:miners_delight"
 			}]
 		}
 		{
@@ -396,16 +387,12 @@
 				{
 					id: "0000000000000A4B"
 					type: "item"
-					title: "Lava Bucket"
 					item: "minecraft:lava_bucket"
 				}
 				{
 					id: "0000000000000AA4"
-					type: "command"
-					title: "Blacksmith's Delight"
-					icon: "kubejs:blacksmiths_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blacksmiths_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:blacksmiths_delight"
 				}
 			]
 		}
@@ -530,17 +517,13 @@
 				{
 					id: "0000000000000A42"
 					type: "item"
-					title: "Copper Chunk"
 					item: "emendatusenigmatica:copper_chunk"
 					count: 8
 				}
 				{
 					id: "0000000000000A92"
-					type: "command"
-					title: "Blacksmith's Delight"
-					icon: "kubejs:blacksmiths_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blacksmiths_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:blacksmiths_delight"
 				}
 			]
 		}
@@ -580,14 +563,12 @@
 				{
 					id: "0000000000000A43"
 					type: "item"
-					title: "Osmium Chunk"
 					item: "emendatusenigmatica:osmium_chunk"
 					count: 8
 				}
 				{
 					id: "0000000000000A44"
 					type: "item"
-					title: "Splash Potion of Fire Resistance"
 					item: {
 						id: "minecraft:splash_potion"
 						Count: 1b
@@ -598,11 +579,8 @@
 				}
 				{
 					id: "0000000000000AA2"
-					type: "command"
-					title: "Blacksmith's Delight"
-					icon: "kubejs:blacksmiths_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blacksmiths_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:blacksmiths_delight"
 				}
 			]
 		}
@@ -636,13 +614,11 @@
 				{
 					id: "0000000000000A45"
 					type: "item"
-					title: "End Rod"
 					item: "minecraft:end_rod"
 				}
 				{
 					id: "0000000000000A47"
 					type: "item"
-					title: "Unbreaking II"
 					item: {
 						id: "minecraft:enchanted_book"
 						Count: 1b
@@ -657,7 +633,6 @@
 				{
 					id: "0000000000000A48"
 					type: "item"
-					title: "Splash Potion of Swiftness"
 					item: {
 						id: "minecraft:splash_potion"
 						Count: 1b
@@ -668,11 +643,8 @@
 				}
 				{
 					id: "0000000000000AA3"
-					type: "command"
-					title: "Blacksmith's Delight"
-					icon: "kubejs:blacksmiths_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blacksmiths_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:blacksmiths_delight"
 				}
 			]
 		}
@@ -714,11 +686,8 @@
 			}]
 			rewards: [{
 				id: "0000000000000A91"
-				type: "command"
-				title: "Alchemist's Delight"
-				icon: "kubejs:alchemists_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
-				player_command: false
+				type: "item"
+				item: "kubejs:alchemists_delight"
 			}]
 		}
 		{
@@ -757,19 +726,13 @@
 			rewards: [
 				{
 					id: "0000000000000A0F"
-					type: "command"
-					title: "Miner's Delight"
-					icon: "kubejs:miners_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:miners_delight"
 				}
 				{
 					id: "0000000000000AA5"
-					type: "command"
-					title: "Blacksmith's Delight"
-					icon: "kubejs:blacksmiths_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blacksmiths_delight"
-					player_command: false
+					type: "item"
+					item: "kubejs:blacksmiths_delight"
 				}
 			]
 		}
@@ -1011,11 +974,8 @@
 			}]
 			rewards: [{
 				id: "0000000000000A2D"
-				type: "command"
-				title: "Farmer's Delight"
-				icon: "kubejs:farmers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
-				player_command: false
+				type: "item"
+				item: "kubejs:farmers_delight"
 			}]
 		}
 		{
@@ -1040,11 +1000,8 @@
 			}]
 			rewards: [{
 				id: "0000000000000A2C"
-				type: "command"
-				title: "Farmer's Delight"
-				icon: "kubejs:farmers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
-				player_command: false
+				type: "item"
+				item: "kubejs:farmers_delight"
 			}]
 		}
 		{
@@ -1333,11 +1290,8 @@
 			}]
 			rewards: [{
 				id: "0000000000000A2B"
-				type: "command"
-				title: "Sorcerer's Delight"
-				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
-				player_command: false
+				type: "item"
+				item: "kubejs:sorcerers_delight"
 			}]
 		}
 		{
@@ -1361,11 +1315,8 @@
 			}]
 			rewards: [{
 				id: "0000000000000CA7"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-				player_command: false
+				type: "item"
+				item: "kubejs:scavengers_delight"
 			}]
 		}
 		{
@@ -1594,11 +1545,8 @@
 			}]
 			rewards: [{
 				id: "0000000000000A3D"
-				type: "command"
-				title: "Sorcerer's Delight"
-				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
-				player_command: false
+				type: "item"
+				item: "kubejs:sorcerers_delight"
 			}]
 		}
 		{
@@ -1618,11 +1566,8 @@
 			}]
 			rewards: [{
 				id: "0000000000000FBB"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-				player_command: false
+				type: "item"
+				item: "kubejs:scavengers_delight"
 			}]
 		}
 		{
