@@ -1,3 +1,14 @@
+## Enlightened6 & Enlightened6Expert - 2.3.0 -> 2.3.1
+
+_Using Forge-1.16.5-36.2.39_ | _[Mod Updates](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/changelog_mods_2.3.1.md)_ | _[Modlist](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/modlist_2.3.1.md)_
+
+### Fixes
+
+-   Quests were not touched with removal of RFTools Power [#7](https://github.com/ZZZank/Enlightened6/issues/7)
+-   Fake player can open lootbox, without obtaining anything
+
+---
+
 ## Enlightened6 & Enlightened6Expert - 2.2.1 -> 2.3.0
 
 _Using Forge-1.16.5-36.2.39_ | _[Mod Updates](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/changelog_mods_2.3.0.md)_ | _[Modlist](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/modlist_2.3.0.md)_
