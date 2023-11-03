@@ -137,9 +137,7 @@
 			x: 4.0d
 			y: 1.5d
 			description: [
-				"Kickstart some Blaze Rods with a zap of focused energy in an Energizing Orb to make some Blazing Rods. These make an excellent, low-cost, portable fuel source that may be burned in a Blazing Generator. "
 				""
-				"They may be inserted into a Blazing Agitator to further refine them as a fuel source. Starting off with a high-quality rod such as these is preferred."
 			]
 			dependencies: ["1E4DC3A7546EC894"]
 			id: "72945D9390F479E7"
@@ -147,12 +145,7 @@
 				{
 					id: "3C415238A247D89A"
 					type: "item"
-					item: "rftoolspower:blazing_agitator"
-				}
-				{
-					id: "29584C030AC3CC61"
-					type: "item"
-					item: "rftoolspower:blazing_rod"
+					item: "kubejs:power_core_low"
 				}
 			]
 		}
