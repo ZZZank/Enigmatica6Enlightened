@@ -166,22 +166,12 @@
   * [JustEnoughProfessions-1.16.5-1.2.2.jar](https://www.curseforge.com/minecraft/mc-mods/just-enough-professions-jep/files/3478185) (by [Mrbysco](https://www.curseforge.com/members/Mrbysco/projects))
   * [JustEnoughResources-1.16.5-0.12.2.216.jar](https://www.curseforge.com/minecraft/mc-mods/just-enough-resources-jer/files/4526612) (by [way2muchnoise](https://www.curseforge.com/members/way2muchnoise/projects))
   * [kotlinforforge-1.17.0-obf.jar](https://www.curseforge.com/minecraft/mc-mods/kotlin-for-forge/files/3675495) (by [thedarkcolour](https://www.curseforge.com/members/thedarkcolour/projects))
-<<<<<<< HEAD
-  * [kubejs-forge-1605.3.19-build.299.jar](https://www.curseforge.com/minecraft/mc-mods/kubejs/files/3647098) (by [LatvianModder](https://www.curseforge.com/members/latvianmodder/projects))
-  * [kubejs-blood-magic-1605.1.1-build.3.jar](https://www.curseforge.com/minecraft/mc-mods/kubejs-blood-magic/files/3451660) (by [LatvianModder](https://www.curseforge.com/members/latvianmodder/projects))
-  * [kubejs-create-1605.1.4-build.12.jar](https://www.curseforge.com/minecraft/mc-mods/kubejs-create/files/3584608) (by [LatvianModder](https://www.curseforge.com/members/latvianmodder/projects))
-  * [kubejs-immersive-engineering-1605.1.2-build.28.jar](https://www.curseforge.com/minecraft/mc-mods/kubejs-immersive-engineering/files/3612561) (by [LatvianModder](https://www.curseforge.com/members/latvianmodder/projects))
-  * [kubejs-mekanism-1605.1.2-build.2.jar](https://www.curseforge.com/minecraft/mc-mods/kubejs-mekanism/files/3446472) (by [LatvianModder](https://www.curseforge.com/members/latvianmodder/projects))
-  * [kubejs-thermal-1605.1.4-build.4.jar](https://www.curseforge.com/minecraft/mc-mods/kubejs-thermal/files/3573381) (by [LatvianModder](https://www.curseforge.com/members/latvianmodder/projects))
-  * [LowDragLib-1.16.5-0.7.6.jar](https://www.curseforge.com/minecraft/mc-mods/ldlib/files/4088124) (by [KilaBash](https://www.curseforge.com/members/kilabash/projects))
-=======
   * [kubejs-forge-1605.3.19-build.299.jar](https://www.curseforge.com/minecraft/mc-mods/kubejs/files/3647098) (by [LatvianModder](https://www.curseforge.com/members/LatvianModder/projects))
   * [kubejs-blood-magic-1605.1.1-build.3.jar](https://www.curseforge.com/minecraft/mc-mods/kubejs-blood-magic/files/3451660) (by [LatvianModder](https://www.curseforge.com/members/LatvianModder/projects))
   * [kubejs-create-1605.1.4-build.12.jar](https://www.curseforge.com/minecraft/mc-mods/kubejs-create/files/3584608) (by [LatvianModder](https://www.curseforge.com/members/LatvianModder/projects))
   * [kubejs-immersive-engineering-1605.1.2-build.28.jar](https://www.curseforge.com/minecraft/mc-mods/kubejs-immersive-engineering/files/3612561) (by [LatvianModder](https://www.curseforge.com/members/LatvianModder/projects))
   * [kubejs-mekanism-1605.1.2-build.2.jar](https://www.curseforge.com/minecraft/mc-mods/kubejs-mekanism/files/3446472) (by [LatvianModder](https://www.curseforge.com/members/LatvianModder/projects))
   * [kubejs-thermal-1605.1.4-build.4.jar](https://www.curseforge.com/minecraft/mc-mods/kubejs-thermal/files/3573381) (by [LatvianModder](https://www.curseforge.com/members/LatvianModder/projects))
->>>>>>> enlightened_master
   * [LibX-1.16.3-1.0.76.jar](https://www.curseforge.com/minecraft/mc-mods/libx/files/3329216) (by [noeppinoeppi](https://www.curseforge.com/members/noeppinoeppi/projects))
   * [lightspeed-1.16.5-1.0.5.jar](https://www.curseforge.com/minecraft/mc-mods/lightspeedmod/files/4594802) (by [ccr4ft3r](https://www.curseforge.com/members/ccr4ft3r/projects))
   * [littlelogistics-mc1.16.5-v1.0.8.jar](https://www.curseforge.com/minecraft/mc-mods/little-logistics/files/3707740) (by [Sveid](https://www.curseforge.com/members/Sveid/projects))
@@ -212,19 +202,11 @@
   * [[1.16.5]_More_Crafting _Tables_Forge_2.3.0.jar](https://www.curseforge.com/minecraft/mc-mods/more-crafting-tables-for-forge/files/4734101) (by [DaveDuart](https://www.curseforge.com/members/DaveDuart/projects))
   * [moredragoneggs-2.5.jar](https://www.curseforge.com/minecraft/mc-mods/more-dragon-eggs/files/3885367) (by [Darkere](https://www.curseforge.com/members/Darkere/projects))
   * [moremountedstorages-1.3.0.jar](https://www.curseforge.com/minecraft/mc-mods/more-mounted-storages/files/4396972) (by [juh9870](https://www.curseforge.com/members/juh9870/projects))
-<<<<<<< HEAD
-  * [moreoverlays-1.18.19-mc1.16.5.jar](https://www.curseforge.com/minecraft/mc-mods/more-overlays-updated/files/3924673) (by [RiDGo8](https://www.curseforge.com/members/ridgo8/projects))
-  * [Morph-o-Tool-1.4-27.jar](https://www.curseforge.com/minecraft/mc-mods/morph-o-tool/files/3190374) (by [Vazkii](https://www.curseforge.com/members/vazkii/projects))
-  * [MouseTweaks-2.14-mc1.16.2.jar](https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks/files/3202662) (by [YaLTeR](https://www.curseforge.com/members/yalter/projects))
-  * [cfm-7.0.0pre22-1.16.3.jar](https://www.curseforge.com/minecraft/mc-mods/mrcrayfish-furniture-mod/files/3346467) (by [MrCrayfish](https://www.curseforge.com/members/mrcrayfish/projects))
-  * [Multiblocked-1.16.5-0.13.1.jar](https://www.curseforge.com/minecraft/mc-mods/multiblocked/files/4124455) (by [KilaBash](https://www.curseforge.com/members/kilabash/projects))
-=======
   * [moreoverlays-1.18.19-mc1.16.5.jar](https://www.curseforge.com/minecraft/mc-mods/more-overlays-updated/files/3924673) (by [RiDGo8](https://www.curseforge.com/members/RiDGo8/projects))
   * [sounddeviceoptions-1.4.3.jar](https://www.curseforge.com/minecraft/mc-mods/more-sound-config/files/3421094) (by [ichttt](https://www.curseforge.com/members/ichttt/projects))
   * [Morph-o-Tool-1.4-27.jar](https://www.curseforge.com/minecraft/mc-mods/morph-o-tool/files/3190374) (by [Vazkii](https://www.curseforge.com/members/Vazkii/projects))
   * [MouseTweaks-2.14-mc1.16.2.jar](https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks/files/3202662) (by [YaLTeR](https://www.curseforge.com/members/YaLTeR/projects))
   * [cfm-7.0.0pre22-1.16.3.jar](https://www.curseforge.com/minecraft/mc-mods/mrcrayfish-furniture-mod/files/3346467) (by [MrCrayfish](https://www.curseforge.com/members/MrCrayfish/projects))
->>>>>>> enlightened_master
   * [mgui-1.16.5-3.3.0.jar](https://www.curseforge.com/minecraft/mc-mods/mutil/files/3456505) (by [mickelus](https://www.curseforge.com/members/mickelus/projects))
   * [MythicBotany-1.16.5-1.4.19.jar](https://www.curseforge.com/minecraft/mc-mods/mythicbotany/files/3565162) (by [noeppinoeppi](https://www.curseforge.com/members/noeppinoeppi/projects))
   * [NaturesAura-34.3.jar](https://www.curseforge.com/minecraft/mc-mods/natures-aura/files/3472977) (by [Ellpeck](https://www.curseforge.com/members/Ellpeck/projects))

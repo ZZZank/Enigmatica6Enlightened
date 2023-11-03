@@ -29,11 +29,11 @@ $MODPACK_NAME = "Enlightened6"
 $CLIENT_NAME = "Enlightened6"
 
 # Version Of The Modpack
-$MODPACK_VERSION = "2.3.0"
+$MODPACK_VERSION = "2.3.1"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
-$LAST_MODPACK_VERSION = "2.2.1"
+$LAST_MODPACK_VERSION = "2.3.0"
 
 # =====================================================================//
 #  CHANGELOG SETTINGS
@@ -59,7 +59,7 @@ $CLIENT_CHANGELOG = "The Changelog is currently being written, it should be done
 $GAME_VERSIONS = @(8203)
 
 # Can be "alpha", "beta" or "release"
-$CLIENT_RELEASE_TYPE = "beta"
+$CLIENT_RELEASE_TYPE = "release"
 
 #=====================================================================//
 #  DEPENDENCIES URL
