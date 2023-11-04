@@ -434,7 +434,7 @@ onEvent('recipes', (event) => {
         }
     ];
 
-    {
+    recipeChestSignCraftingtable: {
         let dupes = [
             'palo_verde',
             'withering_oak',
@@ -526,52 +526,40 @@ onEvent('recipes', (event) => {
 
     //Generate Forest Comb recipes for each tree type other than Oak (those are handled under newRecipes)
     treeRegistry.forEach((treeCategories) => {
-        if (treeCategories.type == 'tree') {
-            treeCategories.trees.forEach((tree) => {
-                if (tree.trunk != 'minecraft:oak_log') {
-                    event
-                        .shaped(Item.of(tree.trunk, 8), ['BCB', 'CAC', 'BCB'], {
-                            A: tree.sapling,
-                            C: 'resourcefulbees:forest_honeycomb',
-                            B: 'resourcefulbees:wax'
-                        })
-                        .id(
-                            `${id_prefix}${tree.trunk.replace(':', '_')}_from_${tree.sapling.replace(
-                                ':',
-                                '_'
-                            )}`
-                        );
-                }
-                if (tree.sapling != 'minecraft:oak_sapling') {
-                    event
-                        .shaped(Item.of(tree.sapling, 4), [' C ', 'BAB', ' C '], {
-                            A: tree.sapling,
-                            C: 'resourcefulbees:forest_honeycomb',
-                            B: 'resourcefulbees:wax'
-                        })
-                        .id(
-                            `${id_prefix}${tree.sapling.replace(':', '_')}_from_${tree.sapling.replace(
-                                ':',
-                                '_'
-                            )}`
-                        );
-                }
-                if (tree.leaf != 'minecraft:oak_leaves') {
-                    event
-                        .shaped(Item.of(tree.leaf, 16), ['   ', 'BAC', '   '], {
-                            A: tree.sapling,
-                            C: 'resourcefulbees:forest_honeycomb',
-                            B: 'resourcefulbees:wax'
-                        })
-                        .id(
-                            `${id_prefix}${tree.leaf.replace(':', '_')}_from_${tree.sapling.replace(
-                                ':',
-                                '_'
-                            )}`
-                        );
-                }
-            });
+        if (treeCategories.type != 'tree') {
+            return;
         }
+        treeCategories.trees.forEach((tree) => {
+            if (tree.trunk != 'minecraft:oak_log') {
+                event
+                    .shaped(Item.of(tree.trunk, 8), ['BCB', 'CAC', 'BCB'], {
+                        A: tree.sapling,
+                        C: 'resourcefulbees:forest_honeycomb',
+                        B: 'resourcefulbees:wax'
+                    })
+                    .id(`${id_prefix}${tree.trunk.replace(':', '_')}_from_${tree.sapling.replace(':', '_')}`);
+            }
+            if (tree.sapling != 'minecraft:oak_sapling') {
+                event
+                    .shaped(Item.of(tree.sapling, 4), [' C ', 'BAB', ' C '], {
+                        A: tree.sapling,
+                        C: 'resourcefulbees:forest_honeycomb',
+                        B: 'resourcefulbees:wax'
+                    })
+                    .id(
+                        `${id_prefix}${tree.sapling.replace(':', '_')}_from_${tree.sapling.replace(':', '_')}`
+                    );
+            }
+            if (tree.leaf != 'minecraft:oak_leaves') {
+                event
+                    .shaped(Item.of(tree.leaf, 16), ['   ', 'BAC', '   '], {
+                        A: tree.sapling,
+                        C: 'resourcefulbees:forest_honeycomb',
+                        B: 'resourcefulbees:wax'
+                    })
+                    .id(`${id_prefix}${tree.leaf.replace(':', '_')}_from_${tree.sapling.replace(':', '_')}`);
+            }
+        });
     });
 
     colors.forEach((color) => {
