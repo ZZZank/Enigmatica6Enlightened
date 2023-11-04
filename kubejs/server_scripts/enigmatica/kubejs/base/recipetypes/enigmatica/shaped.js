@@ -434,31 +434,7 @@ onEvent('recipes', (event) => {
         }
     ];
 
-    recipes.forEach((recipe) => {
-        event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
-    });
-
-    buildWoodVariants.forEach((wood) => {
-        if (wood.modId == 'minecraft') {
-            return;
-        }
-
-        //All recipes using logs here
-        let chest = wood.modId + ':' + wood.logType + '_chest';
-        if (!Item.exists(chest)) {
-            event
-                .shaped(Item.of('minecraft:chest', 4), ['AAA', 'A A', 'AAA'], {
-                    A: wood.logBlock
-                })
-                .id(`${id_prefix}chest_from_${wood.logBlock.replace(':', '_')}`);
-        } else {
-            event
-                .shaped(Item.of(chest, 4), ['AAA', 'A A', 'AAA'], {
-                    A: wood.logBlock
-                })
-                .id(`${id_prefix}${chest.replace(':', '_')}_from_${wood.logBlock.replace(':', '_')}`);
-        }
-
+    {
         let dupes = [
             'palo_verde',
             'withering_oak',
@@ -471,38 +447,81 @@ onEvent('recipes', (event) => {
             'sappy_maple',
             'avocado'
         ];
-
-        if (dupes.includes(wood.logType)) {
-            return;
-        }
-
-        //All recipes using planks here
-
-        let craftingTable = wood.modId + ':' + wood.logType + '_crafting_table';
-        if (!Item.exists(craftingTable)) {
-            event
-                .shaped('minecraft:crafting_table', ['AA', 'AA'], {
-                    A: wood.plankBlock
-                })
-                .id(`${id_prefix}crafting_table_from_${wood.plankBlock.replace(':', '_')}`);
-        }
-
-        if (!sign_wood_type_blacklist.includes(wood.logType)) {
-            event
-                .shaped(Item.of('minecraft:oak_sign'), ['AAA', 'AAA', ' B '], {
-                    A: wood.plankBlock,
+        let chestAccepedLog = [],
+            craftingTableAcceptedPlank = [],
+            signAccepedPlank = [],
+            chestAccepedPlank = [];
+        buildWoodVariants.forEach((variant) => {
+            if (variant.modId == 'minecraft') {
+                return;
+            }
+            // chest from log
+            let chest = variant.modId + ':' + variant.logType + '_chest';
+            if (Item.exists(chest)) {
+                event
+                    .shaped(Item.of(chest, 4), ['AAA', 'A A', 'AAA'], {
+                        A: variant.logBlock
+                    })
+                    .id(`${id_prefix}${chest.replace(':', '_')}_from_${variant.logBlock.replace(':', '_')}`);
+            } else {
+                chestAccepedLog.push(variant.logBlock);
+            }
+            // Check dupes
+            if (dupes.includes(variant.logType)) {
+                return;
+            }
+            // crafting table
+            if (!Item.exists(variant.modId + ':' + variant.logType + '_crafting_table')) {
+                craftingTableAcceptedPlank.push(variant.plankBlock);
+            }
+            // sign
+            if (!sign_wood_type_blacklist.includes(variant.logType)) {
+                signAccepedPlank.push(variant.plankBlock);
+            }
+            // chest from plank
+            if (!chest_wood_type_blacklist.includes(variant.logType)) {
+                chestAccepedPlank.push(variant.plankBlock);
+            }
+        });
+        recipes.push(
+            {
+                output: Item.of('minecraft:chest', 4),
+                pattern: ['AAA', 'A A', 'AAA'],
+                key: {
+                    A: chestAccepedLog
+                },
+                id: `${id_prefix}chest_from_universial_logs`
+            },
+            {
+                output: 'minecraft:crafting_table',
+                pattern: ['AA', 'AA'],
+                key: {
+                    A: craftingTableAcceptedPlank
+                },
+                id: `${id_prefix}crafting_table_from_universial_planks`
+            },
+            {
+                output: 'minecraft:oak_sign',
+                pattern: ['AAA', 'AAA', ' B '],
+                key: {
+                    A: signAccepedPlank,
                     B: '#forge:rods/wooden'
-                })
-                .id(`${id_prefix}oak_sign_from_${wood.plankBlock.replace(':', '_')}`);
-        }
+                },
+                id: `${id_prefix}sign_from_universial_planks`
+            },
+            {
+                output: 'minecraft:chest',
+                pattern: ['AAA', 'A A', 'AAA'],
+                key: {
+                    A: chestAccepedPlank
+                },
+                id: `${id_prefix}chest_from_universial_planks`
+            }
+        );
+    }
 
-        if (!chest_wood_type_blacklist.includes(wood.logType)) {
-            event
-                .shaped(Item.of('minecraft:chest'), ['AAA', 'A A', 'AAA'], {
-                    A: wood.plankBlock
-                })
-                .id(`${id_prefix}chest_from_${wood.plankBlock.replace(':', '_')}`);
-        }
+    recipes.forEach((recipe) => {
+        event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
     });
 
     //Generate Forest Comb recipes for each tree type other than Oak (those are handled under newRecipes)
