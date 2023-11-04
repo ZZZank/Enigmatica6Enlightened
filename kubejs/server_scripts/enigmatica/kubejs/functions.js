@@ -1,18 +1,14 @@
-'use strict';
 // priority: 1005
 
 /**
  * @param {ItemStackJS} item
  * @param {string} color
  * @returns {string}
- */
+*/
 function rawItemStr(item, color) {
-    let colorTag = color
-        ? `,"color":"${color}"`
-        : '';
-    let count = item.count > 1
-        ? `${item.count}*`
-        : '';
+    'use strict';
+    let colorTag = color ? `,"color":"${color}"` : '';
+    let count = item.count > 1 ? `${item.count}*` : '';
     return `{
         "translate":"[%s%s]",
         "with":["${count}","${item.getName()}"],
@@ -21,13 +17,16 @@ function rawItemStr(item, color) {
             "contents": {
                 "id": "${item.getId()}",
                 "count": ${item.count},
-                "tag":"${item.getNbtString().split('"').join('\\\"')}"
+                "tag":"${item.getNbtString().split('"').join('\\"')}"
         }}${colorTag}
-    }`.split(/[\s\s\s\s|\n]/).join('');
+    }`
+        .split(/[\s+|\n]/)
+        .join('');
 }
 
 function tellr(player, str) {
-    player.server.runCommand(`/tellraw ${player.name} ${str}`);
+    'use strict';
+    player.server.runCommandSilent(`/tellraw ${player.name} ${str}`);
 }
 
 function shapedRecipe(result, pattern, key, id) {
@@ -41,6 +40,7 @@ function unificationBlacklistEntry(material, type) {
     return { material: material, type: type };
 }
 function entryIsBlacklisted(material, type) {
+    'use strict';
     for (let i = 0; i < unificationBlacklist.length; i++) {
         if (unificationBlacklist[i].material == material && unificationBlacklist[i].type == type) {
             return true;
@@ -54,6 +54,7 @@ function tagIsEmpty(tag) {
 }
 
 function getPreferredItemInTag(tag) {
+    'use strict';
     let pref =
         utils
             .listOf(tag.stacks)
@@ -63,10 +64,12 @@ function getPreferredItemInTag(tag) {
 }
 
 function getItemsInTag(tag) {
+    'use strict';
     let items = utils.listOf(tag.stacks).toArray();
     return items;
 }
 function compareIndices(a, b, tag) {
+    'use strict';
     if (a == b) return 0; // iff a == b, they'll be found at the same position in modPriorities
 
     for (let mod of modPriorities) {
@@ -81,6 +84,7 @@ function compareIndices(a, b, tag) {
 }
 
 function getStrippedLogFrom(logBlock) {
+    'use strict';
     let result = air;
     buildWoodVariants.find((wood) => {
         if (wood.logBlock == logBlock) {
@@ -111,7 +115,7 @@ function lowerTiers(tiers, tier) {
 
 // transplant the md5 from `<type's mod>:kjs_<hash>` onto the supplied prefix
 function fallback_id(recipe, id_prefix) {
-    if (recipe.id.path.includes('kjs_')) {
+    if (recipe.getId().includes('kjs_')) {
         recipe.serializeJson(); // without this the hashes *will* collide
         recipe.id(id_prefix + 'md5_' + recipe.getUniqueId());
     }
