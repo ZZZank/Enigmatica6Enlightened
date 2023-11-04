@@ -70,7 +70,7 @@ onEvent('recipes', (event) => {
                 A: '#forge:gears/osmium',
                 B: '#forge:circuits/basic',
                 C: 'powah:energizing_rod_blazing',
-                D: 'thermal:machine_bottler',
+                D: 'rftoolsbase:machine_frame',
                 E: 'kubejs:power_core_low'
             },
             id: 'mekanism:metallurgic_infuser'
