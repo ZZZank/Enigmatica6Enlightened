@@ -8,7 +8,7 @@ function getRandomInList(entries) {
  * @param {ItemStackJS} item
  * @param {string} color
  * @returns {string}
-*/
+ */
 function rawItemStr(item, color) {
     'use strict';
     let colorTag = color ? `,"color":"${color}"` : '';
@@ -23,9 +23,7 @@ function rawItemStr(item, color) {
                 "count": ${item.count},
                 "tag":"${item.getNbtString().split('"').join('\\"')}"
         }}${colorTag}
-    }`
-        .split(/[\s+|\n]/)
-        .join('');
+    }`.replace(/\s+/g, '');
 }
 
 function tellr(player, str) {
@@ -68,9 +66,7 @@ function getPreferredItemInTag(tag) {
 }
 
 function getItemsInTag(tag) {
-    'use strict';
-    let items = utils.listOf(tag.stacks).toArray();
-    return items;
+    return utils.listOf(tag.stacks).toArray();
 }
 function compareIndices(a, b, tag) {
     'use strict';
@@ -88,15 +84,12 @@ function compareIndices(a, b, tag) {
 }
 
 function getStrippedLogFrom(logBlock) {
-    'use strict';
-    let result = air;
     buildWoodVariants.find((wood) => {
         if (wood.logBlock == logBlock) {
-            result = wood.logBlockStripped;
-            return result;
+            return wood.logBlockStripped;
         }
     });
-    return result;
+    return air;
 }
 
 const unificationBlacklist = [

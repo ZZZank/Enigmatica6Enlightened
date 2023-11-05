@@ -33,8 +33,9 @@ onEvent('block.place', (event) => {
         return;
     }
     const block = event.getBlock();
-    const player = event.getEntity();
-    if (!player || !player.isPlayer() || player.fake) {
+    /** @type {Internal.EntityJS} */
+    const entity = event.getEntity();
+    if (!entity || !entity.player || entity.fake) {
         event.cancel();
         return;
     }
@@ -48,7 +49,7 @@ onEvent('block.place', (event) => {
             (restriction.dimension && restriction.dimension != block.dimension) ||
             !restriction.additionalRequiremant(event)
         ) {
-            player.setStatusMessage(Text.translate(restriction.errorMessage).red());
+            entity.setStatusMessage(Text.translate(restriction.errorMessage).red());
             event.cancel();
             break;
         }

@@ -8,8 +8,10 @@
  */
 
 onEvent('item.right_click', (event) => {
+    /** @type {Internal.PlayerJS} */
     const player = event.player;
     if (
+        !player ||
         // fake player not allowed
         player.fake ||
         // player must be sneaking
@@ -44,5 +46,5 @@ onEvent('item.right_click', (event) => {
             `"with":[${itemMessage},{"text":"${target.name}","color":"green"}]}`
     );
     target.giveInHand(item);
-    player.setHeldItem(InteractionHand.MAIN_HAND, null);
+    player.setHeldItem(MAIN_HAND, null);
 });
