@@ -8,7 +8,7 @@ const restrictions_block_place = [
         additionalRequiremant: (event) => {
             return event.getEntity().stages.has('red_chalk');
         },
-        errorMessage: `${restrictions_prefix}master_blood_orb`
+        errorMessage: `${restrictions_prefix}red_chalk`
     },
     {
         blocks: [
@@ -48,7 +48,7 @@ onEvent('block.place', (event) => {
             (restriction.dimension && restriction.dimension != block.dimension) ||
             !restriction.additionalRequiremant(event)
         ) {
-            player.setStatusMessage(Text.translate(restriction.errorMessage));
+            player.setStatusMessage(Text.translate(restriction.errorMessage).red());
             event.cancel();
             break;
         }
