@@ -14,7 +14,7 @@ function rawItemStr(item, color) {
     let colorTag = color ? `,"color":"${color}"` : '';
     let count = item.count > 1 ? `${item.count}*` : '';
     return `{
-        "translate":"[%s%s]",
+        "translate":"%s[%s]",
         "with":["${count}","${item.getName()}"],
         "hoverEvent": {
             "action": "show_item",
