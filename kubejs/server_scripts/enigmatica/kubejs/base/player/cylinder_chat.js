@@ -11,15 +11,15 @@ onEvent('player.chat', (event) => {
 
     const amount = Number(message.substr(4));
     if (!amount || amount <= 0) {
-        player.tell(Text.of('Cylinder: Invalid amount per operation').red());
+        player.setStatusMessage([Text.of('Cylinder: Invalid amount per operation').red()]);
         return;
     }
 
     player.persistentData.cylinderAmount = amount;
-    player.tell(
+    player.setStatusMessage([
         Text.translate(
             'Cylinder: Amount per operation set to %s',
             Text.of(player.persistentData.cylinderAmount).green()
         ).blue()
-    );
+    ]);
 });
