@@ -211,6 +211,7 @@
   * [MythicBotany-1.16.5-1.4.19.jar](https://www.curseforge.com/minecraft/mc-mods/mythicbotany/files/3565162) (by [noeppinoeppi](https://www.curseforge.com/members/noeppinoeppi/projects))
   * [NaturesAura-34.3.jar](https://www.curseforge.com/minecraft/mc-mods/natures-aura/files/3472977) (by [Ellpeck](https://www.curseforge.com/members/ellpeck/projects))
   * [NaturesCompass-1.16.5-1.9.1-forge.jar](https://www.curseforge.com/minecraft/mc-mods/natures-compass/files/3382150) (by [Chaosyr](https://www.curseforge.com/members/chaosyr/projects))
+  * [NBT-Ingredient-Predicate-1.3.jar](https://www.curseforge.com/minecraft/mc-mods/nbt-ingredient-predicate/files/3425361) (by [Drullkus](https://www.curseforge.com/members/drullkus/projects))
   * [neapolitan-1.16.5-2.2.1.jar](https://www.curseforge.com/minecraft/mc-mods/neapolitan/files/3567243) (by [TeamAbnormals](https://www.curseforge.com/members/teamabnormals/projects))
   * [nethers_delight-2.1.jar](https://www.curseforge.com/minecraft/mc-mods/nethers-delight/files/3443481) (by [lumpazl](https://www.curseforge.com/members/lumpazl/projects))
   * [NetherPortalFix_1.16.3-7.2.1.jar](https://www.curseforge.com/minecraft/mc-mods/netherportalfix/files/3098229) (by [BlayTheNinth](https://www.curseforge.com/members/blaytheninth/projects))
