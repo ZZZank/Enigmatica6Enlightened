@@ -37,7 +37,8 @@ onEvent('block.place', (event) => {
     }
     const block = event.getBlock();
 
-    for (const restriction of restrictions_block_place) {
+    for (let i = 0; i < restrictions_block_place.length; i++) {
+        const restriction = restrictions_block_place[i];
         if (!restriction.blocks.includes(block.id)) {
             continue;
         }
