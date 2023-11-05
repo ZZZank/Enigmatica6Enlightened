@@ -8,7 +8,7 @@ function getRandomInList(entries) {
  * @param {ItemStackJS} item
  * @param {string} color
  * @returns {string}
-*/
+ */
 function rawItemStr(item, color) {
     'use strict';
     let colorTag = color ? `,"color":"${color}"` : '';

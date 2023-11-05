@@ -10,7 +10,6 @@ onEvent('item.right_click', (event) => {
     ) {
         return;
     }
-
 });
 
 onEvent('item.left_click', (event) => {
@@ -23,5 +22,4 @@ onEvent('item.left_click', (event) => {
     ) {
         return;
     }
-
 });
