@@ -1,5 +1,9 @@
 // priority: 1005
 
+function getRandomInList(entries) {
+    return entries[Math.floor(Math.random() * entries.length)];
+}
+
 /**
  * @param {ItemStackJS} item
  * @param {string} color
