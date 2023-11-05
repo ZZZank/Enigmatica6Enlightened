@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "lib": [
+            "ES5",
+            "ES2015"
+        ],
+        "typeRoots": [
+            "kubetypings"
+        ]
+    }
+}
