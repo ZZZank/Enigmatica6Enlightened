@@ -434,7 +434,7 @@ onEvent('recipes', (event) => {
         }
     ];
 
-    recipeChestSignCraftingtable: {
+    recipeForChestAndSignAndCraftingtable: {
         let dupes = [
             'palo_verde',
             'withering_oak',
