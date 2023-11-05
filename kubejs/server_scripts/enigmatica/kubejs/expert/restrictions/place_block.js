@@ -6,8 +6,7 @@ const restrictions_block_place = [
         blocks: ['occultism:sacrificial_bowl'],
         dimension: 'atum:atum',
         additionalRequiremant: (event) => {
-            let entity = event.getEntity();
-            return entity && entity.isPlayer() && !entity.fake && entity.stages.has('red_chalk');
+            return event.getEntity().stages.has('red_chalk');
         },
         errorMessage: `${restrictions_prefix}master_blood_orb`
     },
@@ -17,15 +16,13 @@ const restrictions_block_place = [
             'bloodmagic:alchemytable',
             'bloodmagic:demoncrucible',
             'bloodmagic:demoncrystallizer',
-            'bloodmagic:alchemytable',
             'bloodmagic:soulforge',
             'bloodmagic:alchemicalreactionchamber',
             'bloodmagic:incensealtar'
         ],
         dimension: 'undergarden:undergarden',
         additionalRequiremant: (event) => {
-            let entity = event.getEntity();
-            return entity && entity.isPlayer() && !entity.fake && entity.stages.has('master_blood_orb');
+            return event.getEntity().stages.has('master_blood_orb');
         },
         errorMessage: `${restrictions_prefix}master_blood_orb`
     }
@@ -36,17 +33,22 @@ onEvent('block.place', (event) => {
         return;
     }
     const block = event.getBlock();
+    const player = event.getEntity();
+    if (!player || !player.isPlayer() || player.fake) {
+        event.cancel();
+        return;
+    }
 
     for (let i = 0; i < restrictions_block_place.length; i++) {
-        const restriction = restrictions_block_place[i];
-        if (!restriction.blocks.includes(block.id)) {
+        let restriction = restrictions_block_place[i];
+        if (!restriction.blocks.includes(`${block}`)) {
             continue;
         }
         if (
             (restriction.dimension && restriction.dimension != block.dimension) ||
             !restriction.additionalRequiremant(event)
         ) {
-            event.entity.setStatusMessage(Text.translate(restriction.errorMessage));
+            player.setStatusMessage(Text.translate(restriction.errorMessage));
             event.cancel();
             break;
         }
