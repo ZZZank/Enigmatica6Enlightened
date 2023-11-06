@@ -17,7 +17,9 @@ onEvent('server.datapack.high_priority', (event) => {
             setMode(player);
         });
         event.getServer().sendDataToAll('reload', {});
-        if (event.getServer().isDedicated()) global.onReload();
+        if (event.getServer().isDedicated()) {
+            global.onReload.reload();
+        }
     }
 });
 
