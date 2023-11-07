@@ -1,12 +1,12 @@
 'use strict';
 onEvent('player.tick', (/** @type {Internal.PlayerEventJS} */ event) => {
     const player = event.player;
-    if (!player.player || player.fake) {
+    if (!player.isPlayer() || player.isFake()) {
         return;
     }
     // Hot Ingot Cooling
     const hotIngot = 'kubejs:hot_compressed_iron_ingot';
-    if (player.inWater) {
+    if (player.isInWater()) {
         let hotIngotCount = player.inventory.count(hotIngot);
         if (hotIngotCount > 0) {
             player.inventory.clear(Item.of(hotIngot));

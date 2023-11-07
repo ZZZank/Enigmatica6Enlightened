@@ -31,9 +31,9 @@ const isNormalMode = packMode == 'normal';
 const isExpertMode = packMode == 'expert';
 
 onEvent('player.data_from_server.reload', (event) => {
-    global.onReload.reload();
+    global.onReload();
 });
 
 onEvent('client.logged_in', (event) => {
-    global.onReload.reload();
+    global.onReload();
 });

@@ -6,7 +6,7 @@ function getRandomInList(entries) {
 }
 
 /**
- * @param {Internal.ItemStackJS} item
+ * @param {ItemStackJS} item
  * @param {string} color
  * @returns {string}
  */
@@ -19,19 +19,15 @@ function rawItemStr(item, color) {
         "hoverEvent": {
             "action": "show_item",
             "contents": {
-                "id": "${item.id}",
+                "id": "${item.getId()}",
                 "count": ${item.count},
-                "tag":"${item.nbtString.replace(/"/g, '\\"')}"
+                "tag":"${item.getNbtString().split('"').join('\\"')}"
         }}${colorTag}
     }`.replace(/\s+/g, '');
 }
 
-/**
- *
- * @param {Internal.PlayerJS} player
- * @param {string} str
- */
 function tellr(player, str) {
+    'use strict';
     player.server.runCommandSilent(`/tellraw ${player.name} ${str}`);
 }
 
@@ -59,12 +55,13 @@ function tagIsEmpty(tag) {
 }
 
 function getPreferredItemInTag(tag) {
-    return (
+    'use strict';
+    let pref =
         utils
             .listOf(tag.stacks)
             .toArray()
-            .sort(({ mod: a }, { mod: b }) => compareIndices(a, b, tag))[0] || Item.of(air)
-    );
+            .sort(({ mod: a }, { mod: b }) => compareIndices(a, b, tag))[0] || Item.of(air);
+    return pref;
 }
 
 function getItemsInTag(tag) {
@@ -117,11 +114,7 @@ function lowerTiers(tiers, tier) {
     return tiers.slice(0, tiers.indexOf(tier));
 }
 
-/**
- * transplant the md5 from `<type's mod>:kjs_<hash>` onto the supplied prefix
- * @param {Internal.RecipeJS} recipe
- * @param {string} id_prefix
- */
+// transplant the md5 from `<type's mod>:kjs_<hash>` onto the supplied prefix
 function fallback_id(recipe, id_prefix) {
     if (recipe.path.includes('kjs_')) {
         recipe.serializeJson(); // without this the hashes *will* collide

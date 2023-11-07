@@ -1,7 +1,7 @@
 'use strict';
-onEvent('player.inventory.changed', function (/** @type {Internal.PlayerEventJS} */ event) {
+onEvent('player.inventory.changed', (event) => {
     const player = event.player;
-    if (!player.player || player.fake) {
+    if (!player.isPlayer() || player.isFake()) {
         return;
     }
 
@@ -9,9 +9,9 @@ onEvent('player.inventory.changed', function (/** @type {Internal.PlayerEventJS}
         return;
     }
 
-    if (!player.inWater) {
-        player.setStatusMessage([Text.of(`A hot item is burning you!`).red()]);
-        player.setOnFire(180);
+    if (!player.isInWater()) {
+        event.player.setStatusMessage([Text.of(`A hot item is burning you!`).red()]);
+        event.player.setOnFire(180);
         global.setOnFire = true;
     }
 });
