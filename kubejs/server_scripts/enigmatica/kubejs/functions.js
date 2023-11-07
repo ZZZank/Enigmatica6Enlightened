@@ -1,4 +1,5 @@
 // priority: 1005
+'use strict';
 
 function getRandomInList(entries) {
     return entries[Math.floor(Math.random() * entries.length)];
@@ -10,7 +11,6 @@ function getRandomInList(entries) {
  * @returns {string}
  */
 function rawItemStr(item, color) {
-    'use strict';
     let colorTag = color ? `,"color":"${color}"` : '';
     let count = item.count > 1 ? `${item.count}*` : '';
     return `{
@@ -46,7 +46,6 @@ function unificationBlacklistEntry(material, type) {
     return { material: material, type: type };
 }
 function entryIsBlacklisted(material, type) {
-    'use strict';
     for (let i = 0; i < unificationBlacklist.length; i++) {
         if (unificationBlacklist[i].material == material && unificationBlacklist[i].type == type) {
             return true;
@@ -72,7 +71,6 @@ function getItemsInTag(tag) {
     return utils.listOf(tag.stacks).toArray();
 }
 function compareIndices(a, b, tag) {
-    'use strict';
     if (a == b) return 0; // iff a == b, they'll be found at the same position in modPriorities
 
     for (let mod of modPriorities) {
@@ -100,6 +98,12 @@ const unificationBlacklist = [
     unificationBlacklistEntry('quartz', 'storage_block')
 ];
 
+/**
+ * 
+ * @param {Internal.ItemStackJS} item 
+ * @param {Internal.PlayerJS} player 
+ * @returns {boolean}
+ */
 const playerHas = (item, player) => {
     return player.inventory.find(item) != -1;
 };
@@ -119,8 +123,8 @@ function lowerTiers(tiers, tier) {
  * @param {string} id_prefix
  */
 function fallback_id(recipe, id_prefix) {
-    if (recipe.getId().includes('kjs_')) {
+    if (recipe.path.includes('kjs_')) {
         recipe.serializeJson(); // without this the hashes *will* collide
-        recipe.id(id_prefix + 'md5_' + recipe.getUniqueId());
+        recipe.id(id_prefix + 'md5_' + recipe.uniqueId);
     }
 }
