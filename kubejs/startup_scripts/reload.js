@@ -14,7 +14,7 @@ global.onReload = {
         //reload randompatches config
         this.randompatches_config.reloadConfig();
     }
-}
+};
 
 onEvent('postinit', (event) => {
     global.onReload.reload().reload();

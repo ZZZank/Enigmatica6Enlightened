@@ -55,7 +55,7 @@ onEvent('block.place', (event) => {
             if (r.stageUnlock && entity.stage.has(r.stageUnlock)) {
                 return true;
             }
-            // If player doesn't has such stage, block placement will be forbidden 
+            // If player doesn't has such stage, block placement will be forbidden
             // unless all requirements are met
             if ((r.dimension && r.dimension != block.dimension) || (r.additional && !r.additional(event))) {
                 return false;

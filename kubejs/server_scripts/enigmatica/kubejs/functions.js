@@ -99,9 +99,9 @@ const unificationBlacklist = [
 ];
 
 /**
- * 
- * @param {Internal.ItemStackJS} item 
- * @param {Internal.PlayerJS} player 
+ *
+ * @param {Internal.ItemStackJS} item
+ * @param {Internal.PlayerJS} player
  * @returns {boolean}
  */
 const playerHas = (item, player) => {
