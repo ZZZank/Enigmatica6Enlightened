@@ -1,12 +1,11 @@
 'use strict';
 
-const restrictions_prefix = 'gamestage.enigmatica.restrictions.';
-const restrictions_block_place = [
+restrictions.block_place = [
     /*
     {
         blocks: [],
         dimension: '', // the restricted block must be placed in specific dimension
-        stage: '', // the restricted block can be placed anywhere by player who has this stage
+        stageUnlock: '', // the restricted block can be placed anywhere by player who has this stage
         additional: (event) => {return true},
         errorMessage: ''
     },
@@ -16,7 +15,7 @@ const restrictions_block_place = [
         dimension: 'atum:atum',
         stageUnlock: 'red_chalk',
         // additional: (event) => {return true},
-        errorMessage: `${restrictions_prefix}red_chalk`
+        errorMessage: `${restrictions.prefix}red_chalk`
     },
     {
         blocks: [
@@ -30,7 +29,7 @@ const restrictions_block_place = [
         ],
         dimension: 'undergarden:undergarden',
         stageUnlock: 'master_blood_orb',
-        errorMessage: `${restrictions_prefix}master_blood_orb`
+        errorMessage: `${restrictions.prefix}master_blood_orb`
     }
 ];
 
@@ -45,25 +44,17 @@ onEvent('block.place', (event) => {
         return;
     }
 
-    for (let i = 0; i < restrictions_block_place.length; i++) {
-        let r = restrictions_block_place[i];
-        if (!r.blocks.includes(`${block}`)) {
+    for (let r of restrictions.block_place) {
+        if (r.blocks.indexOf(block.id) == -1) {
             continue;
         }
-        let isValid = () => {
+        let isValid =
             // If player has such stage, the block can be placed anywhere
-            if (r.stageUnlock && entity.stage.has(r.stageUnlock)) {
-                return true;
-            }
+            (r.stageUnlock && entity.stages.has(r.stageUnlock)) ||
             // If player doesn't has such stage, block placement will be forbidden
             // unless all requirements are met
-            if ((r.dimension && r.dimension != block.dimension) || (r.additional && !r.additional(event))) {
-                return false;
-            }
-            // return 'valid' when all requirements are met, or when there's no requirement
-            return true;
-        };
-        if (!isValid()) {
+            (r.dimension && r.dimension == block.dimension && r.additional && r.additional(event));
+        if (!isValid) {
             entity.tell(Text.translate(r.errorMessage).red());
             event.cancel();
             break;

@@ -1,2 +1,6 @@
+// priority: 1000
 'use strict';
-// TODO: remove @ next breaking change
+
+const restrictions={
+    prefix:'gamestage.enigmatica.restrictions.'
+};
