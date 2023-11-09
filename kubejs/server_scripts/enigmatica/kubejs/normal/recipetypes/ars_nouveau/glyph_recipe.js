@@ -1,6 +1,6 @@
 'use strict';
 onEvent('recipes', (event) => {
-    if (global.isNormalMode == false) {
+    if (global.isExpertMode) {
         return;
     }
     const recipes = [];

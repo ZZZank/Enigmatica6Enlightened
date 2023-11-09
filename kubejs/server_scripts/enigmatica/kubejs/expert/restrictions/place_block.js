@@ -34,7 +34,7 @@ restrictions.block_place = [
 ];
 
 onEvent('block.place', (event) => {
-    if (global.isExpertMode == false) {
+    if (global.isNormalMode) {
         return;
     }
     const /** @type {Internal.BlockContainerJS} */ block = event.getBlock();

@@ -24,7 +24,7 @@ const ieMultiblockGameStage = {
 };
 
 onEvent('ie.multiblock.form', (event) => {
-    if (global.isExpertMode == false) {
+    if (global.isNormalMode) {
         return;
     }
 

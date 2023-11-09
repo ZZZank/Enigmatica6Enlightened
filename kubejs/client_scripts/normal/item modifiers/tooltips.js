@@ -21,7 +21,7 @@ onEvent('item.tooltip', (event) => {
     .color('#808080') //any hex color
     */
 
-    if (global.isNormalMode == false) {
+    if (global.isExpertMode) {
         return;
     }
     const recipes = [

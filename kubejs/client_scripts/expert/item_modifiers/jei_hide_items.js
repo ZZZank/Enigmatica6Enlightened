@@ -1,7 +1,7 @@
 'use strict';
 
 onEvent('jei.hide.items', (event) => {
-    if (global.isExpertMode == false) {
+    if (global.isNormalMode) {
         return;
     }
     let items = [

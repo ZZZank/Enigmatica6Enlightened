@@ -1,6 +1,6 @@
 'use strict';
 onEvent('server.datapack.high_priority', (event) => {
-    if (global.isExpertMode == false) {
+    if (global.isNormalMode) {
         return;
     }
     /*          

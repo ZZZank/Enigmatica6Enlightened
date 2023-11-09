@@ -1,6 +1,6 @@
 'use strict';
 onEvent('jei.information', (event) => {
-    if (global.isNormalMode == false) {
+    if (global.isExpertMode) {
         return;
     }
     const recipes = [

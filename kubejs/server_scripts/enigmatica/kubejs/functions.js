@@ -1,12 +1,17 @@
 // priority: 1005
 'use strict';
 
+/**
+ *
+ * @param {any[]} entries
+ * @returns {any}
+ */
 function getRandomInList(entries) {
     return entries[Math.floor(Math.random() * entries.length)];
 }
 
 /**
- * @param {ItemStackJS} item
+ * @param {Internal.ItemStackJS} item
  * @param {string} color
  * @returns {string}
  */
@@ -19,15 +24,14 @@ function rawItemStr(item, color) {
         "hoverEvent": {
             "action": "show_item",
             "contents": {
-                "id": "${item.getId()}",
+                "id": "${item.id}",
                 "count": ${item.count},
-                "tag":"${item.getNbtString().split('"').join('\\"')}"
+                "tag":"${item.nbtString.replace(/"/g, '\\"')}"
         }}${colorTag}
     }`.replace(/\s+/g, '');
 }
 
 function tellr(player, str) {
-    'use strict';
     player.server.runCommandSilent(`/tellraw ${player.name} ${str}`);
 }
 
@@ -55,13 +59,12 @@ function tagIsEmpty(tag) {
 }
 
 function getPreferredItemInTag(tag) {
-    'use strict';
-    let pref =
+    return (
         utils
             .listOf(tag.stacks)
             .toArray()
-            .sort(({ mod: a }, { mod: b }) => compareIndices(a, b, tag))[0] || Item.of(air);
-    return pref;
+            .sort(({ mod: a }, { mod: b }) => compareIndices(a, b, tag))[0] || Item.of(air)
+    );
 }
 
 function getItemsInTag(tag) {
@@ -114,7 +117,11 @@ function lowerTiers(tiers, tier) {
     return tiers.slice(0, tiers.indexOf(tier));
 }
 
-// transplant the md5 from `<type's mod>:kjs_<hash>` onto the supplied prefix
+/**
+ * transplant the md5 from `<type's mod>:kjs_<hash>` onto the supplied prefix
+ * @param {Internal.RecipeJS} recipe
+ * @param {string} id_prefix
+ */
 function fallback_id(recipe, id_prefix) {
     if (recipe.path.includes('kjs_')) {
         recipe.serializeJson(); // without this the hashes *will* collide

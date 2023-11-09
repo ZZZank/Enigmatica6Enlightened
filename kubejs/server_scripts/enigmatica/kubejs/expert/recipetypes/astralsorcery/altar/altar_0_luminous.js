@@ -7,7 +7,7 @@ onEvent('recipes', (event) => {
     altar_type: 0
     max_starlight: 1000 
     */
-    if (global.isExpertMode == false) {
+    if (global.isNormalMode) {
         return;
     }
 

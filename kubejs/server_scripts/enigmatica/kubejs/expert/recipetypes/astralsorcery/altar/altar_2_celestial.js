@@ -8,7 +8,7 @@ onEvent('recipes', (event) => {
     max_starlight: 4000
     */
 
-    if (global.isExpertMode == false) {
+    if (global.isNormalMode) {
         return;
     }
     const id_prefix = 'enigmatica:expert/astralsorcery/altar/';

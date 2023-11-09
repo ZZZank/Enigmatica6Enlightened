@@ -22,7 +22,7 @@ onEvent('item.tooltip', (event) => {
     .white()
     .color('#808080') //any hex color
     */
-    if (global.isExpertMode == false) {
+    if (global.isNormalMode) {
         return;
     }
     const disabledInExpert = Text.of('Disabled in Expert Mode.').red();
