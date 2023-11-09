@@ -39,14 +39,15 @@ onEvent('block.place', (event) => {
     }
     const /** @type {Internal.BlockContainerJS} */ block = event.getBlock();
     const /** @type {Internal.EntityJS} */ entity = event.getEntity();
-    if (!entity || !entity.player || entity.fake) {
-        event.cancel();
-        return;
-    }
 
     for (let r of restrictions.block_place) {
         if (r.blocks.indexOf(block.id) == -1) {
             continue;
+        }
+        // Resctricted blocks must be placed by player
+        if (!entity || !entity.player || entity.fake) {
+            event.cancel();
+            return;
         }
         let isValid =
             // If player has such stage, the block can be placed anywhere
@@ -57,7 +58,7 @@ onEvent('block.place', (event) => {
         if (!isValid) {
             entity.tell(Text.translate(r.errorMessage).red());
             event.cancel();
-            break;
+            return;
         }
     }
 });
