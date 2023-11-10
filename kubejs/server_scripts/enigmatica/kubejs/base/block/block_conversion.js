@@ -88,6 +88,10 @@ onEvent('recipes', (event) => {
                 },
                 {
                     type: 'masterfulmachinery:items',
+                    data: { item: 'create:brass_hand', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
                     data: { item: recipe.holding, count: 1 }
                 }
             ],
