@@ -3,7 +3,9 @@ onEvent('block.right_click', (event) => {
     const glowItem = 'minecraft:glowstone_dust';
     const glowBlock = 'mininggadgets:minerslight';
 
-    if (event.item.id != glowItem) return;
+    if (event.item.empty || event.item.id != glowItem) {
+        return;
+    }
 
     let targetBlock = event.block.offset(event.facing);
     if (
