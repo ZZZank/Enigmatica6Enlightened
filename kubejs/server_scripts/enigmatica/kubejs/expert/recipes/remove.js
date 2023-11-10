@@ -157,7 +157,6 @@ onEvent('recipes', (event) => {
     ];
 
     const outputRemovals = [
-        'astralsorcery:marble_runed',
         'tiab:timeinabottle',
         'minecraft:nautilus_shell',
         'bloodmagic:intermediatecuttingfluid',

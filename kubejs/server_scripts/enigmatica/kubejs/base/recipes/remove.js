@@ -96,6 +96,8 @@ onEvent('recipes', (event) => {
         'appliedenergistics2:gold_dust',
         'appliedenergistics2:iron_dust',
 
+        'astralsorcery:marble_runed',
+
         'byg:blue_enchanted_crafting_table',
         'byg:green_enchanted_crafting_table',
         'byg:mud_block',
