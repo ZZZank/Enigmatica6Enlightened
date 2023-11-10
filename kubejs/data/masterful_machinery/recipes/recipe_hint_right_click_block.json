@@ -1,0 +1,19 @@
+{
+    "type": "masterfulmachinery:machine_structure",
+    "controllerId": "recipe_hint_right_click_block",
+    "id": "recipe_hint_right_click_block_structure",
+    "name": "Right-Clicking Block",
+    "layout": [
+        [
+            "C"
+        ],
+        [
+            "A"
+        ]
+    ],
+    "legend": {
+        "A": {
+            "block": "supplementaries:statue"
+        }
+    }
+}
