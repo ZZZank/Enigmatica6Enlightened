@@ -9,9 +9,12 @@ onEvent('recipes', (event) => {
             input: 'occultism:infused_lenses',
             fluid: 'astralsorcery:liquid_starlight',
             consumptionChance: 0.5,
+            consumeMultipleFluids: false,
             output: 'astralsorcery:glass_lens',
             count: 2,
             duration: 100,
+            acceptChalice: true,
+            retainNBT: false,
             id: `astralsorcery:infuser/glass_pane`
         }
     ];
@@ -25,9 +28,9 @@ onEvent('recipes', (event) => {
                 output: Item.of(recipe.output, recipe.count).toResultJson(),
                 consumptionChance: recipe.consumptionChance,
                 duration: recipe.duration,
-                consumeMultipleFluids: false,
-                acceptChaliceInput: true,
-                copyNBTToOutputs: false
+                consumeMultipleFluids: recipe.consumeMultipleFluids,
+                acceptChaliceInput: recipe.acceptChalice,
+                copyNBTToOutputs: recipe.retainNBT
             })
             .id(recipe.id);
     });
