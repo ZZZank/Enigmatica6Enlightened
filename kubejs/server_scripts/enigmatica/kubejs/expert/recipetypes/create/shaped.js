@@ -27,6 +27,15 @@ onEvent('recipes', (event) => {
             id: 'create:crafting/kinetics/filter'
         },
         {
+            output: 'create:attribute_filter',
+            pattern: ['ABA'],
+            key: {
+                A: '#forge:nuggets/brass',
+                B: 'minecraft:cobweb'
+            },
+            id: 'create:crafting/kinetics/attribute_filter'
+        },
+        {
             output: 'create:millstone',
             pattern: [' A ', 'BCB', 'DDD'],
             key: {
