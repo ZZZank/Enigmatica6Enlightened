@@ -216,6 +216,7 @@
   * [nethers_delight-2.1.jar](https://www.curseforge.com/minecraft/mc-mods/nethers-delight/files/3443481) (by [lumpazl](https://www.curseforge.com/members/lumpazl/projects))
   * [NetherPortalFix_1.16.3-7.2.1.jar](https://www.curseforge.com/minecraft/mc-mods/netherportalfix/files/3098229) (by [BlayTheNinth](https://www.curseforge.com/members/blaytheninth/projects))
   * [notenoughcrashes-4.1.4+1.16.5-forge.jar](https://www.curseforge.com/minecraft/mc-mods/not-enough-crashes-forge/files/3606847) (by [NatanFudge](https://www.curseforge.com/members/natanfudge/projects))
+  * [nerb-1.16.5-0.3.1-FORGE.jar](https://www.curseforge.com/minecraft/mc-mods/notenoughrecipebook/files/4750581) (by [SSKirillSS](https://www.curseforge.com/members/sskirillss/projects))
   * [Notes-1.16.5-1.2.3.jar](https://www.curseforge.com/minecraft/mc-mods/notes/files/3191743) (by [Chaosyr](https://www.curseforge.com/members/chaosyr/projects))
   * [oauth-1.1.15-1.16.jar](https://www.curseforge.com/minecraft/mc-mods/oauth/files/4518840) (by [Sintinium](https://www.curseforge.com/members/sintinium/projects))
   * [observable-0.2.1-forge.jar](https://www.curseforge.com/minecraft/mc-mods/observable/files/3586190) (by [tasgon](https://www.curseforge.com/members/tasgon/projects))
