@@ -36,11 +36,7 @@ const generatableCobblestone = [
     'create:gabbro_cobblestone',
     'create:dolomite_cobblestone',
     'create:weathered_limestone_cobblestone',
-<<<<<<< HEAD
     'create:limestone_cobblestone'
-=======
-    'create:limestone_cobblestone',
->>>>>>> 8e60939aa (remove Atmosphere and corresponding scripts)
 ];
 // Items added here will get recipes for Pedestals & Cobblegen Randomizer stonegens.
 const generatableStone = [

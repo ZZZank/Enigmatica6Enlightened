@@ -264,16 +264,8 @@
 			}]
 			rewards: [{
 				id: "3006D73518186276"
-<<<<<<< HEAD
 				type: "item"
 				item: "kubejs:farmers_delight"
-=======
-				type: "command"
-				title: "Farmer's Delight"
-				icon: "kubejs:farmers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
-				player_command: false
->>>>>>> e9aead4ac (update scripts for connected-glass removal)
 			}]
 		}
 		{
@@ -658,16 +650,8 @@
 			}]
 			rewards: [{
 				id: "31F796972A4B7369"
-<<<<<<< HEAD
 				type: "item"
 				item: "kubejs:scavengers_delight"
-=======
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-				player_command: false
->>>>>>> 4c2146360 (update scripts for chisel removal)
 			}]
 		}
 		{
