@@ -180,12 +180,6 @@ onEvent('recipes', (event) => {
 
         'create:compat/ae2/milling/ender_pearl',
 
-        'compactcrafting:match_proxy',
-        'compactcrafting:rescan_proxy',
-        'compactcrafting:base',
-        'compactcrafting:projector_dish',
-        'compactcrafting:field_projector',
-
         'dustrial_decor:ice_chain',
 
         /emendatusenigmatica:dust_from_chunk/,
