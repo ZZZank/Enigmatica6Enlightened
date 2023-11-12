@@ -66,10 +66,14 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}black_sand`
         },
         {
+<<<<<<< HEAD
             inputs: [
                 Item.of('betterendforge:dense_snow', 1),
                 Ingredient.of('#thermal:crafting/dies/unpacking')
             ],
+=======
+            inputs: [Item.of('betterendforge:dense_snow', 1), Ingredient.of('#thermal:crafting/dies/unpacking')],
+>>>>>>> 8e60939aa (remove Atmosphere and corresponding scripts)
             outputs: [Item.of('minecraft:snow_block', 9)],
             energy: 2400,
             id: `${id_prefix}snow_block`

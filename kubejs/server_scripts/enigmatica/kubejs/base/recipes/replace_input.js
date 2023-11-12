@@ -524,11 +524,15 @@ onEvent('recipes', (event) => {
             type: 'ingots',
             replace: 'iron',
             replaceWith: 'lead',
+<<<<<<< HEAD
             items: [
                 'travel_anchors:travel_anchor',
                 'travel_anchors:travel_staff',
                 'integrateddynamics:squeezer'
             ]
+=======
+            items: ['travel_anchors:travel_anchor', 'travel_anchors:travel_staff', 'integrateddynamics:squeezer']
+>>>>>>> 4c2146360 (update scripts for chisel removal)
         },
         {
             type: 'ingots',

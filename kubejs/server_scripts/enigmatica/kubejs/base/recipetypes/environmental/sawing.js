@@ -21,10 +21,14 @@ onEvent('recipes', (event) => {
         { output: 'decorative_blocks:crimson_beam', input: '#minecraft:crimson_stems' },
         { output: 'decorative_blocks:warped_beam', input: '#minecraft:warped_stems' },
 
+<<<<<<< HEAD
         {
             output: 'decorative_blocks_abnormals:driftwood_beam',
             input: 'upgrade_aquatic:stripped_driftwood_log'
         },
+=======
+        { output: 'decorative_blocks_abnormals:driftwood_beam', input: 'upgrade_aquatic:stripped_driftwood_log' },
+>>>>>>> 8e60939aa (remove Atmosphere and corresponding scripts)
         { output: 'decorative_blocks_abnormals:river_beam', input: 'upgrade_aquatic:stripped_river_log' }
     ];
     beamRecipes.forEach((recipe) => {

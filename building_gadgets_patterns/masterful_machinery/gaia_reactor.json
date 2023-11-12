@@ -45,6 +45,7 @@
                 },
                 {
                     "item_type": "buildinggadgets:simple_item",
+<<<<<<< HEAD
                     "count": 1,
                     "item": {
                         "id": "minecraft:cobblestone"
@@ -56,6 +57,25 @@
                     "item": {
                         "id": "pneumaticcraft:compressed_brick_pillar"
                     }
+=======
+                    "count": 8,
+                    "item": { "id": "glassential:glass_dark" }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 36,
+                    "item": { "id": "tconstruct:blue_clear_stained_glass" }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 32,
+                    "item": { "id": "tconstruct:lime_clear_stained_glass" }
+                },
+                {
+                    "item_type": "buildinggadgets:simple_item",
+                    "count": 33,
+                    "item": { "id": "pneumaticcraft:compressed_brick_pillar" }
+>>>>>>> e9aead4ac (update scripts for connected-glass removal)
                 },
                 {
                     "item_type": "buildinggadgets:simple_item",

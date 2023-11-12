@@ -1183,12 +1183,20 @@
         "/": { "block": "tconstruct:lime_clear_stained_glass" },
         "0": { "block": "botania:mana_glass" },
         "1": { "block": "create:fancy_andesite_bricks" },
+<<<<<<< HEAD
         "2": { "block": "pneumaticcraft:compressed_brick_pillar" },
+=======
+        "2": { "block": "engineersdecor:dark_shingle_roof_block" },
+>>>>>>> 4c2146360 (update scripts for chisel removal)
         "3": { "block": "immersiveengineering:sheetmetal_steel" },
         "4": { "block": "immersiveengineering:steel_fence" },
         "5": { "block": "mekanism:block_bronze" },
         "6": { "block": "pneumaticcraft:compressed_brick_tile" },
+<<<<<<< HEAD
         "7": { "block": "tconstruct:black_clear_stained_glass" },
+=======
+        "7": { "block": "glassential:glass_dark" },
+>>>>>>> e9aead4ac (update scripts for connected-glass removal)
         "8": { "block": "immersiveengineering:slab_sheetmetal_steel" },
         "9": { "block": "minecraft:beacon" },
         ":": { "block": "engineersdecor:thick_steel_pole_head" },
