@@ -28,6 +28,22 @@ onEvent('item.tooltip', (event) => {
     const disabledInExpert = Text.of('Disabled in Expert Mode.').red();
     const recipes = [
         {
+            items: ['occultism:sacrificial_bowl'],
+            text: [Text.translate('gamestage.enigmatica.restrictions.red_chalk')]
+        },
+        {
+            items: [
+                'bloodmagic:altar',
+                'bloodmagic:alchemytable',
+                'bloodmagic:demoncrucible',
+                'bloodmagic:demoncrystallizer',
+                'bloodmagic:soulforge',
+                'bloodmagic:alchemicalreactionchamber',
+                'bloodmagic:incensealtar'
+            ],
+            text: [Text.translate('gamestage.enigmatica.restrictions.master_blood_orb')]
+        },
+        {
             items: ['appliedenergistics2:me_p2p_tunnel', 'appliedenergistics2:memory_card'],
             text: [Text.of('Channel is disabled in Expert.').green()]
         },
