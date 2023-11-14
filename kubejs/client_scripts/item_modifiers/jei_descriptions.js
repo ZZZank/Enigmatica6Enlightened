@@ -251,7 +251,11 @@ onEvent('jei.information', (event) => {
             text: [`${id_prefix}anputs_fingers_spores`]
         },
         {
-            items: ['immersiveengineering:furnace_heater', 'mekanism:fuelwood_heater', 'mekanism:resistive_heater'],
+            items: [
+                'immersiveengineering:furnace_heater',
+                'mekanism:fuelwood_heater',
+                'mekanism:resistive_heater'
+            ],
             text: [`${id_prefix}heater`]
         },
         {
