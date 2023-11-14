@@ -120,7 +120,7 @@ onEvent('recipes', (event) => {
             if (layer.type != 'compactcrafting:mixed') {
                 return;
             }
-            for (let i = layer.pattern.length; i >= 0; i++) {
+            for (let i = layer.pattern.length - 1; i >= 0; i++) {
                 layer.pattern[i] = layer.pattern[i].split('');
             }
         });
