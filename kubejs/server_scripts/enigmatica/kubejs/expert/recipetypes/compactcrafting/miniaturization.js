@@ -23,26 +23,14 @@ onEvent('recipes', (event) => {
                 Count: 1
             },
             components: {
-                E: {
-                    type: 'compactcrafting:block',
-                    block: 'rftoolsutility:matter_transmitter'
-                },
-                W: {
-                    type: 'compactcrafting:block',
-                    block: 'compactmachines:wall'
-                },
-                H: {
-                    type: 'compactcrafting:block',
-                    block: craftBlock
-                },
-                T: {
-                    type: 'compactcrafting:block',
-                    block: 'mekanism:teleporter'
-                }
+                E: 'rftoolsutility:matter_transmitter',
+                W: 'compactmachines:wall',
+                H: 'minecraft:stone',
+                T: 'mekanism:teleporter'
             },
             outputs: [
                 {
-                    id: `compactmachines:machine_${tier}`,
+                    id: `minecraft:stone`,
                     Count: 1
                 }
             ]
@@ -73,15 +61,15 @@ onEvent('recipes', (event) => {
                 },
                 {
                     type: 'compactcrafting:mixed',
-                    pattern: ['WWWWW', 'W H W', 'WHTHW', 'W H W', 'WWWWW']
+                    pattern: ['WWAWW', 'W H W', 'AHTHA', 'W H W', 'WWAWW']
                 },
                 {
                     type: 'compactcrafting:mixed',
                     pattern: ['WWWWW', 'W   W', 'W H W', 'W   W', 'WWWWW']
                 },
                 {
-                    type: 'compactcrafting:filled',
-                    component: 'W'
+                    type: 'compactcrafting:mixed',
+                    pattern: ['WWWWW', 'WWWWW', 'WWAWW', 'WWWWW', 'WWWWW']
                 }
             ],
             catalyst: {
@@ -89,22 +77,11 @@ onEvent('recipes', (event) => {
                 Count: 1
             },
             components: {
-                E: {
-                    type: 'compactcrafting:block',
-                    block: 'rftoolsutility:matter_transmitter'
-                },
-                W: {
-                    type: 'compactcrafting:block',
-                    block: 'compactmachines:wall'
-                },
-                H: {
-                    type: 'compactcrafting:block',
-                    block: craftBlock
-                },
-                T: {
-                    type: 'compactcrafting:block',
-                    block: 'mekanism:teleporter'
-                }
+                E: 'rftoolsutility:matter_transmitter',
+                W: 'compactmachines:wall',
+                H: craftBlock,
+                T: 'mekanism:teleporter',
+                A: 'mekanism:teleporter_frame'
             },
             outputs: [
                 {
@@ -117,13 +94,21 @@ onEvent('recipes', (event) => {
 
     recipes.forEach((recipe) => {
         recipe.layers.forEach((layer) => {
-            if (layer.type != 'compactcrafting:mixed') {
+            let pattern = layer.pattern;
+            if (!pattern) {
                 return;
             }
-            for (let i = layer.pattern.length - 1; i >= 0; i++) {
-                layer.pattern[i] = layer.pattern[i].split('');
+            for (let i = pattern.length - 1; i >= 0; i--) {
+                pattern[i] = pattern[i].split('');
             }
         });
+        for (let key in recipe.components) {
+            recipe.components[key] = {
+                type: 'compactcrafting:block',
+                block: recipe.components[key]
+            };
+        }
+        console.info(recipe);
         recipe.type = 'compactcrafting:miniaturization';
         event.custom(recipe);
     });
