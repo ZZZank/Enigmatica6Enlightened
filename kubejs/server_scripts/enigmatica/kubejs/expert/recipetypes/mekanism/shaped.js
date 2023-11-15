@@ -31,7 +31,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}teleporter_alternate`
         },
         {
-            output: Item.of('3x mekanism:teleporter_frame'),
+            output: Item.of('8x mekanism:teleporter_frame'),
             pattern: ['ABA', 'BCB', 'ABA'],
             key: {
                 A: '#enigmatica:stonecuttables/arcane_stone',

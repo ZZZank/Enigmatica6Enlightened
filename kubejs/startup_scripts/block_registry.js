@@ -1,6 +1,8 @@
 'use strict';
 onEvent('block.registry', (event) => {
     const basicBlocks = [
+        { name: 'matter_block', material: 'iron', hardness: 2 },
+        { name: 'conductive_frame', material: 'iron', hardness: 5 },
         { name: 'firmament', material: 'rock', hardness: 2 },
         { name: 'superheated_steel_block', material: 'iron', hardness: 5 },
         { name: 'hot_compressed_iron_block', material: 'iron', hardness: 5 },
