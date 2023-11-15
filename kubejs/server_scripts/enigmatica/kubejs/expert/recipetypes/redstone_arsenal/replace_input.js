@@ -6,10 +6,6 @@ onEvent('recipes', (event) => {
 
     const recipes = [
         {
-            toReplace: 'redstone_arsenal:obsidian_rod',
-            replaceWith: 'immersiveengineering:graphite_electrode'
-        },
-        {
             filter: {
                 not: [{ id: 'redstone_arsenal:storage/flux_metal_block' }]
             },
