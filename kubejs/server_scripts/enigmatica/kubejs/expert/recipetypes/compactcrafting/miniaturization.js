@@ -108,7 +108,7 @@ onEvent('recipes', (event) => {
                 block: recipe.components[key]
             };
         }
-        console.info(recipe);
+        // console.info(recipe);
         recipe.type = 'compactcrafting:miniaturization';
         event.custom(recipe);
     });
