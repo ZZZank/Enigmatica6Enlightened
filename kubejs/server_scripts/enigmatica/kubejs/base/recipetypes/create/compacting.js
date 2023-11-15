@@ -4,6 +4,24 @@ onEvent('recipes', (event) => {
 
     const recipes = [
         {
+            inputs: ['#forge:dusts/obsidian', 'appliedenergistics2:matter_ball'],
+            output: '2x fluxnetworks:flux_dust',
+            type: 'heated',
+            id: `${id_prefix}flux_dust`
+        },
+        {
+            inputs: [
+                '#forge:dusts/obsidian',
+                '#forge:dusts/obsidian',
+                '#forge:dusts/obsidian',
+                '#forge:dusts/obsidian',
+                'kubejs:matter_block'
+            ],
+            output: '16x fluxnetworks:flux_dust',
+            type: 'heated',
+            id: `${id_prefix}flux_dust_bulk`
+        },
+        {
             inputs: [Fluid.of('resourcefulbees:honey')],
             output: 'minecraft:honey_block',
             type: 'unheated',
