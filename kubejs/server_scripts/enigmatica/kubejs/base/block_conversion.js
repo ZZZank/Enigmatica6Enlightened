@@ -2,6 +2,12 @@
 
 const blockRightClickRecipes = [
     {
+        target: 'mekanism:teleporter_frame',
+        output: 'kubejs:conductive_frame',
+        holding: 'redstone_arsenal:obsidian_rod',
+        id: `en6e:right_click_block/conductive_frame`
+    },
+    {
         target: 'astralsorcery:marble_raw',
         output: 'astralsorcery:marble_runed',
         holding: 'naturesaura:gold_leaf',
