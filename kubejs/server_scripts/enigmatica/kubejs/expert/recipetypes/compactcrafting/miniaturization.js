@@ -3,6 +3,7 @@ onEvent('recipes', (event) => {
     //https://github.com/CompactMods/CompactCrafting/wiki/Recipe-Specification
 
     //Also note, can't use Item.of because Count is caps sensitive (Name too)
+    const id_prefix = 'enigmatica:expert/compactcrafting/';
 
     const recipes = [
         {
@@ -31,7 +32,8 @@ onEvent('recipes', (event) => {
                     id: 'mekanism:basic_energy_cube',
                     Count: 1
                 }
-            ]
+            ],
+            id: 'mekanism:energy_cube/basic'
         }
     ];
 
@@ -70,7 +72,8 @@ onEvent('recipes', (event) => {
                     id: `compactmachines:machine_${tier}`,
                     Count: 1
                 }
-            ]
+            ],
+            id: `${id_prefix}compactmachines_${tier}`
         });
     });
 
@@ -93,6 +96,6 @@ onEvent('recipes', (event) => {
         }
         // console.info(recipe);
         recipe.type = 'compactcrafting:miniaturization';
-        event.custom(recipe);
+        event.custom(recipe).id(recipe.id);
     });
 });
