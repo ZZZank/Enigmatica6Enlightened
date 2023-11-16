@@ -5,19 +5,9 @@ onEvent('recipes', (event) => {
     //Also note, can't use Item.of because Count is caps sensitive (Name too)
 
     const recipes = [
-        /*
         {
             recipeSize: 5,
-            layers: [
-                {
-                    type: 'compactcrafting:mixed',
-                    pattern: ['WWWWW', 'WWWWW', 'WWEWW', 'WWWWW', 'WWWWW']
-                },
-                {
-                    type: 'compactcrafting:filled',
-                    component: 'W'
-                }
-            ],
+            layers: [['WWWWW', 'WWWWW', 'WWEWW', 'WWWWW', 'WWWWW']],
             catalyst: {
                 id: 'thermal:upgrade_augment_1',
                 Count: 1
@@ -35,7 +25,6 @@ onEvent('recipes', (event) => {
                 }
             ]
         }
-        */
     ];
 
     let compactMachines = [
@@ -51,26 +40,11 @@ onEvent('recipes', (event) => {
         recipes.push({
             recipeSize: 5,
             layers: [
-                {
-                    type: 'compactcrafting:mixed',
-                    pattern: ['WWWWW', 'WWWWW', 'WWEWW', 'WWWWW', 'WWWWW']
-                },
-                {
-                    type: 'compactcrafting:mixed',
-                    pattern: ['WWWWW', 'W   W', 'W H W', 'W   W', 'WWWWW']
-                },
-                {
-                    type: 'compactcrafting:mixed',
-                    pattern: ['WWAWW', 'W H W', 'AHTHA', 'W H W', 'WWAWW']
-                },
-                {
-                    type: 'compactcrafting:mixed',
-                    pattern: ['WWWWW', 'W   W', 'W H W', 'W   W', 'WWWWW']
-                },
-                {
-                    type: 'compactcrafting:mixed',
-                    pattern: ['WWWWW', 'WWWWW', 'WWAWW', 'WWWWW', 'WWWWW']
-                }
+                ['WWWWW', 'WWWWW', 'WWEWW', 'WWWWW', 'WWWWW'],
+                ['WWWWW', 'W   W', 'W H W', 'W   W', 'WWWWW'],
+                ['WWAWW', 'W H W', 'AHTHA', 'W H W', 'WWAWW'],
+                ['WWWWW', 'W   W', 'W H W', 'W   W', 'WWWWW'],
+                ['WWWWW', 'WWWWW', 'WWAWW', 'WWWWW', 'WWWWW']
             ],
             catalyst: {
                 id: 'thermal:upgrade_augment_1',
@@ -93,15 +67,16 @@ onEvent('recipes', (event) => {
     });
 
     recipes.forEach((recipe) => {
-        recipe.layers.forEach((layer) => {
-            let pattern = layer.pattern;
-            if (!pattern) {
-                return;
+        for (let i = 0; i < recipe.layers.length; i++) {
+            let layer = recipe.layers[i];
+            for (let j = layer.length - 1; j >= 0; j--) {
+                layer[j] = layer[j].split('');
             }
-            for (let i = pattern.length - 1; i >= 0; i--) {
-                pattern[i] = pattern[i].split('');
-            }
-        });
+            layer = {
+                type: 'compactcrafting:mixed',
+                pattern: layer
+            };
+        }
         for (let key in recipe.components) {
             recipe.components[key] = {
                 type: 'compactcrafting:block',
