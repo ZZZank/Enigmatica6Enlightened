@@ -27,8 +27,7 @@ function rawItemStr(item, color) {
                 "id": "${item.id}",
                 "count": ${item.count},
                 "tag":"${item.nbtString.replace(/"/g, '\\"')}"
-        }}${colorTag}
-    }`.replace(/\s+/g, '');
+        }}${colorTag}}`.replace(/\s+/g, '');
 }
 
 function tellr(player, str) {

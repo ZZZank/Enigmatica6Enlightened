@@ -17,14 +17,14 @@ onEvent('recipes', (event) => {
                 itemInput: { ingredient: { item: 'powah:ender_cell_nitro' } },
                 gasInput: { amount: 10, gas: 'mekanism:antimatter' },
                 duration: 25000,
-                id: `${id_prefix}flux_plug`
+                id: 'fluxnetworks:fluxplug'
             },
             {
                 output: Item.of('fluxnetworks:flux_point'),
                 itemInput: { ingredient: { item: 'powah:ender_gate_nitro' } },
                 gasInput: { amount: 10, gas: 'mekanism:antimatter' },
                 duration: 25000,
-                id: `${id_prefix}flux_point`
+                id: 'fluxnetworks:fluxpoint'
             },
             {
                 output: Item.of('16x powah:crystal_blazing'),

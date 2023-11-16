@@ -407,7 +407,7 @@ onEvent('recipes', (event) => {
                 H: '#botania:runes/earth',
                 I: '#forge:circuits/ultimate'
             },
-            id: `${id_prefix}flux_controller`
+            id: 'fluxnetworks:fluxcontroller'
         },
         {
             output: 'gunswithoutroses:iron_gun',

@@ -73,7 +73,7 @@ onEvent('recipes', (event) => {
                     Count: 1
                 }
             ],
-            id: `${id_prefix}compactmachines_${tier}`
+            id: `compactmachines:machine_${tier}`
         });
     });
 
