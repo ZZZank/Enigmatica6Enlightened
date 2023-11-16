@@ -16,7 +16,6 @@ onEvent('recipes', (event) => {
         }
     ];
 
-
     recipes.forEach((recipe) => {
         event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
     });
