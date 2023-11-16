@@ -1,4 +1,7 @@
 {
+    "block.kubejs.matter_block": "Matter Block",
+    "block.kubejs.conductive_frame": "Conductive Frame",
+
     "item.kubejs.common_lootbox": "Common Loot Box",
     "item.kubejs.rare_lootbox": "Rare Loot Box",
     "item.kubejs.epic_lootbox": "Epic Loot Box",
