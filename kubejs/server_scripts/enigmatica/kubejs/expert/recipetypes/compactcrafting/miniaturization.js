@@ -7,20 +7,28 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             recipeSize: 5,
-            layers: [['WWWWW', 'WWWWW', 'WWEWW', 'WWWWW', 'WWWWW']],
-            catalyst: {
-                id: 'thermal:upgrade_augment_1',
-                Count: 1
-            },
+            layers: [
+                [')***)', '*+++*', '*+,+*', '*+++*', ')***)'],
+                ['*+++*', '+   +', '+ - +', '+   +', '*+++*'],
+                ['*+,+*', '+ - +', ',-.-,', '+ - +', '*+,+*'],
+                ['*+++*', '+   +', '+ - +', '+   +', '*+++*'],
+                [')***)', '*+++*', '*+,+*', '*+++*', ')***)']
+            ],
             components: {
-                E: 'rftoolsutility:matter_transmitter',
-                W: 'compactmachines:wall',
-                H: 'minecraft:stone',
-                T: 'mekanism:teleporter'
+                ')': 'mekanism:teleporter_frame',
+                '*': 'dustrial_decor:bolted_industrial_iron_block',
+                '+': 'botania:mana_glass',
+                ',': 'kubejs:conductive_frame',
+                '-': 'quark:iron_rod',
+                '.': 'mekanism:lithium'
+            },
+            catalyst: {
+                id: 'industrialforegoing:machine_frame_simple',
+                Count: 1
             },
             outputs: [
                 {
-                    id: `minecraft:stone`,
+                    id: 'mekanism:basic_energy_cube',
                     Count: 1
                 }
             ]
@@ -46,16 +54,16 @@ onEvent('recipes', (event) => {
                 ['WWWWW', 'W   W', 'W H W', 'W   W', 'WWWWW'],
                 ['WWWWW', 'WWWWW', 'WWAWW', 'WWWWW', 'WWWWW']
             ],
-            catalyst: {
-                id: 'thermal:upgrade_augment_1',
-                Count: 1
-            },
             components: {
                 E: 'rftoolsutility:matter_transmitter',
                 W: 'compactmachines:wall',
                 H: craftBlock,
                 T: 'mekanism:teleporter',
                 A: 'mekanism:teleporter_frame'
+            },
+            catalyst: {
+                id: 'thermal:upgrade_augment_1',
+                Count: 1
             },
             outputs: [
                 {
@@ -72,7 +80,7 @@ onEvent('recipes', (event) => {
             for (let j = layer.length - 1; j >= 0; j--) {
                 layer[j] = layer[j].split('');
             }
-            layer = {
+            recipe.layers[i] = {
                 type: 'compactcrafting:mixed',
                 pattern: layer
             };
