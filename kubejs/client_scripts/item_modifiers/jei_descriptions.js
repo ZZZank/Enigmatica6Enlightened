@@ -407,6 +407,41 @@ onEvent('jei.information', (event) => {
         {
             items: ['farmersdelight:roast_chicken'],
             text: [`${id_prefix}roast_chicken`]
+        },
+        {
+            items: ['simplefarming:brewing_barrel'],
+            text: [`${id_prefix}brewing_barrel`]
+        },
+        {
+            items: ['simplefarming:brewing_barrel'],
+            text: [`${id_prefix}brewing_barrel_2`]
+        },
+        {
+            items: disabledItems,
+            text: [`${id_prefix}disabled_please_report`]
+        },
+        {
+            items: generatableCobblestone,
+            text: [`${id_prefix}generatable_cobble`]
+        },
+        {
+            items: generatableStone,
+            text: [`${id_prefix}generatable_stone`]
+        },
+        {
+            items: [
+                'compact_drawer',
+                'drawer_controller',
+                'slave',
+                'trim',
+                'full_one',
+                'full_two',
+                'full_four',
+                'half_one',
+                'half_two',
+                'half_four'
+            ].map((item) => 'framedcompactdrawers:framed_' + item),
+            text: [`${id_prefix}framed_drawers`]
         }
     ];
 
@@ -417,34 +452,5 @@ onEvent('jei.information', (event) => {
         recipe.items.forEach((item) => {
             event.add(item, recipe.text);
         });
-    });
-
-    disabledItems.forEach((item) => {
-        event.add(item, `${id_prefix}disabled_please_report`);
-    });
-
-    generatableCobblestone.forEach((cobblestone) => {
-        event.add(cobblestone, id_prefix + 'generatable_cobble');
-    });
-
-    generatableStone.forEach((stone) => {
-        event.add(stone, id_prefix + 'generatable_stone');
-    });
-
-    let framedDrawers = [
-        'compact_drawer',
-        'drawer_controller',
-        'slave',
-        'trim',
-        'full_one',
-        'full_two',
-        'full_four',
-        'half_one',
-        'half_two',
-        'half_four'
-    ];
-
-    framedDrawers.forEach((drawer) => {
-        event.add('framedcompactdrawers:framed_' + drawer, [id_prefix + 'framed_drawers']);
     });
 });
