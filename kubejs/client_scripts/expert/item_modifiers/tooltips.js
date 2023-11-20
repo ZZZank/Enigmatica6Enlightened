@@ -25,6 +25,7 @@ onEvent('item.tooltip', (event) => {
     if (global.isNormalMode) {
         return;
     }
+    const eprefix = 'tooltips.en6e.expert.';
     const id_prefix = 'tooltips.enigmatica.expert.';
     const disabledInExpert = Text.translate(`${id_prefix}disabled`).red();
     const recipes = [
@@ -46,7 +47,7 @@ onEvent('item.tooltip', (event) => {
         },
         {
             items: ['appliedenergistics2:me_p2p_tunnel', 'appliedenergistics2:memory_card'],
-            text: [Text.of('Channel is disabled in Expert.').green()]
+            text: [Text.translate(`${eprefix}channel_disabled`).green()]
         },
         {
             items: ['bloodmagic:soulpickaxe'],

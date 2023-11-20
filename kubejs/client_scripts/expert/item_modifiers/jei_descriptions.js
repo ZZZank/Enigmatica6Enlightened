@@ -4,6 +4,7 @@ onEvent('jei.information', (event) => {
     if (global.isNormalMode) {
         return;
     }
+    const eprefix = 'descriptions.en6e.expert.';
     const id_prefix = `descriptions.enigmatica.expert.`;
 
     const recipes = [
@@ -29,11 +30,11 @@ onEvent('jei.information', (event) => {
         },
         {
             items: ['refinedstorage:4k_storage_part', 'refinedstorage:1k_storage_part'],
-            text: [`${id_prefix}small_storage_part`]
+            text: [`${eprefix}small_storage_part`]
         },
         {
             items: ['appliedenergistics2:1k_cell_component', 'appliedenergistics2:1k_fluid_cell_component'],
-            text: [`${id_prefix}small_fluid_storage_part`]
+            text: [`${eprefix}small_fluid_storage_part`]
         },
         {
             items: [
