@@ -1,4 +1,7 @@
 {
+    "block.kubejs.matter_block": "物质方块",
+    "block.kubejs.conductive_frame": "导电框架",
+
     "item.kubejs.common_lootbox": "普通战利品箱",
     "item.kubejs.rare_lootbox": "稀有战利品箱",
     "item.kubejs.epic_lootbox": "史诗战利品箱",

@@ -1,22 +1,21 @@
 'use strict';
+
+const stageMap = {
+    // item : stage ,
+    'kubejs:medium_machinery_schematics': 'medium_machinery_schematics',
+    'kubejs:heavy_machinery_schematics': 'heavy_machinery_schematics',
+    'occultism:chalk_red': 'red_chalk',
+    'bloodmagic:masterbloodorb': 'master_blood_orb',
+    'bloodmagic:soulgemlesser': 'lesser_tartaric_gem'
+};
+
 onEvent('item.right_click', (event) => {
     const player = event.player;
 
-    let stageMap = {
-        // item : stage ,
-        'kubejs:medium_machinery_schematics': 'medium_machinery_schematics',
-        'kubejs:heavy_machinery_schematics': 'heavy_machinery_schematics',
-        'occultism:chalk_red': 'red_chalk',
-        'bloodmagic:masterbloodorb': 'master_blood_orb',
-        'bloodmagic:soulgemlesser': 'lesser_tartaric_gem'
-    };
-
-    if (stageMap[player.mainHandItem]) {
-        const stage_name = stageMap[player.mainHandItem];
-        if (!event.getEntity().stages.has(`${stage_name}`)) {
-            event.player.tell(`Gamestage Granted: ${titleCase(stage_name.replace(/_+/g, ' '))}`);
-            event.getEntity().stages.add(`${stage_name}`);
-        }
+    const stage_name = stageMap[player.mainHandItem];
+    if (stage_name && !event.getEntity().stages.has(`${stage_name}`)) {
+        event.player.tell(`Gamestage Granted: ${titleCase(stage_name.replace(/_+/g, ' '))}`);
+        event.getEntity().stages.add(`${stage_name}`);
     }
 });
 

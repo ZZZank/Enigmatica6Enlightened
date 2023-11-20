@@ -36,6 +36,14 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}pewter_nugget_to_ingot`
         },
         {
+            output: 'kubejs:matter_block',
+            pattern: ['AAA', 'AAA', 'AAA'],
+            key: {
+                A: 'appliedenergistics2:matter_ball'
+            },
+            id: `${id_prefix}matter_ball_to_block`
+        },
+        {
             output: '2x kubejs:pewter_inlay',
             pattern: [' A ', 'A A', ' A '],
             key: {

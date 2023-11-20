@@ -1,6 +1,6 @@
 'use strict';
 onEvent('recipes', (event) => {
-    if (global.isExpertMode == false) {
+    if (global.isNormalMode) {
         return;
     }
     const id_prefix = 'enigmatica:expert/create/';
@@ -25,6 +25,15 @@ onEvent('recipes', (event) => {
                 B: 'minecraft:cobweb'
             },
             id: 'create:crafting/kinetics/filter'
+        },
+        {
+            output: 'create:attribute_filter',
+            pattern: ['ABA'],
+            key: {
+                A: '#forge:nuggets/brass',
+                B: 'minecraft:cobweb'
+            },
+            id: 'create:crafting/kinetics/attribute_filter'
         },
         {
             output: 'create:millstone',

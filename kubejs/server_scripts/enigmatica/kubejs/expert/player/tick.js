@@ -1,5 +1,5 @@
 'use strict';
-onEvent('player.tick', (event) => {
+onEvent('player.tick', (/** @type {Internal.PlayerEventJS} */ event) => {
     const player = event.player;
     if (!player.isPlayer() || player.isFake()) {
         return;

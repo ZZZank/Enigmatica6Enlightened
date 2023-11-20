@@ -1,6 +1,6 @@
 'use strict';
 onEvent('item.tags', (event) => {
-    if (global.isExpertMode == false) {
+    if (global.isNormalMode) {
         return;
     }
     // 'ritua_runes' not a typo

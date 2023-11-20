@@ -14,6 +14,11 @@ onEvent('recipes', (event) => {
 
     const recipes = [
         {
+            output: '9x appliedenergistics2:matter_ball',
+            inputs: ['kubejs:matter_block'],
+            id: `${id_prefix}matter_block_to_ball`
+        },
+        {
             output: '9x kubejs:pewter_nugget',
             inputs: ['#forge:ingots/pewter'],
             id: `${id_prefix}pewter_ingot_to_nugget`

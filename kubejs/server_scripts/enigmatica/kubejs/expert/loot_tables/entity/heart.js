@@ -1,6 +1,6 @@
 'use strict';
 onEvent('entity.loot_tables', (event) => {
-    if (global.isExpertMode == false) {
+    if (global.isNormalMode) {
         return;
     }
 

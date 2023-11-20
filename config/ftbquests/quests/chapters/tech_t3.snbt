@@ -136,18 +136,14 @@
 		{
 			x: 4.0d
 			y: 1.5d
-			description: [
-				""
-			]
+			description: [""]
 			dependencies: ["1E4DC3A7546EC894"]
 			id: "72945D9390F479E7"
-			tasks: [
-				{
-					id: "3C415238A247D89A"
-					type: "item"
-					item: "kubejs:power_core_low"
-				}
-			]
+			tasks: [{
+				id: "3C415238A247D89A"
+				type: "item"
+				item: "kubejs:power_core_low"
+			}]
 		}
 		{
 			x: 2.0d

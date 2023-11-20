@@ -1,10 +1,16 @@
 'use strict';
 onEvent('recipes', (event) => {
-    if (global.isExpertMode == false) {
+    if (global.isNormalMode) {
         return;
     }
     const id_prefix = 'enigmatica:expert/immersiveengineering/metal_press/';
     const recipes = [
+        {
+            output: Item.of('immersiveengineering:graphite_electrode', '{graphDmg:48000}'),
+            input: Item.of('redstone_arsenal:obsidian_rod', 4),
+            mold: '#thermal:crafting/dies/rod',
+            id: 'immersiveengineering:metalpress/electrode'
+        },
         {
             output: 'powah:thermoelectric_plate',
             input: 'immersiveengineering:thermoelectric_generator',

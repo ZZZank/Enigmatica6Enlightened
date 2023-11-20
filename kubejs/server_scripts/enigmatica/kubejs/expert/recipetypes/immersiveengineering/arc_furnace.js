@@ -1,6 +1,6 @@
 'use strict';
 onEvent('recipes', (event) => {
-    if (global.isExpertMode == false) {
+    if (global.isNormalMode) {
         return;
     }
     const id_prefix = 'enigmatica:expert/immersiveengineering/arc_furnace/';
@@ -24,7 +24,7 @@ onEvent('recipes', (event) => {
             {
                 input1: Item.of('6x ars_nouveau:warding_stone'),
                 secondaries: ['immersiveengineering:coil_mv', Item.of('3x fluxnetworks:flux_dust')],
-                outputs: [Item.of('6x compactmachines:wall')],
+                outputs: [Item.of('16x compactmachines:wall')],
                 id: `${id_prefix}cm_wall`
             },
             {

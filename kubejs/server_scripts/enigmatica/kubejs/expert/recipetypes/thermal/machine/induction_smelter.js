@@ -1,6 +1,6 @@
 'use strict';
 onEvent('recipes', (event) => {
-    if (global.isExpertMode == false) {
+    if (global.isNormalMode) {
         return;
     }
     const id_prefix = 'enigmatica:expert/thermal/induction_smelter';
@@ -50,7 +50,7 @@ onEvent('recipes', (event) => {
                 'immersiveengineering:coil_mv',
                 Item.of('3x fluxnetworks:flux_dust')
             ],
-            outputs: [Item.of('6x compactmachines:wall')],
+            outputs: [Item.of('16x compactmachines:wall')],
             id: `${id_prefix}cm_wall`
         }
     ];

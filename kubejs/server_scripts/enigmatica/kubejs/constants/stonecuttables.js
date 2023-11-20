@@ -719,7 +719,6 @@ const stonecuttables = [
             'astralsorcery:marble_chiseled',
             'astralsorcery:marble_engraved',
             'astralsorcery:marble_raw',
-            'astralsorcery:marble_runed',
             'astralsorcery:marble_arch',
             'astralsorcery:marble_pillar',
             'quark:marble',
@@ -736,7 +735,6 @@ const stonecuttables = [
         name: 'marblesooty',
         stones: [
             'astralsorcery:black_marble_raw',
-            'astralsorcery:black_marble_runed',
             'astralsorcery:black_marble_pillar',
             'astralsorcery:black_marble_arch',
             'astralsorcery:black_marble_bricks',

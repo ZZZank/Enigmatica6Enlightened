@@ -1,0 +1,274 @@
+{
+    "type": "masterfulmachinery:machine_structure",
+    "id": "change_this",
+    "controllerId": "change_this",
+    "name": "Change This",
+    "layout": [
+      [
+        "   )))))))   ",
+        "  )       )  ",
+        " )         ) ",
+        ")         **)",
+        ")           )",
+        ")           )",
+        ")           )",
+        ")            ",
+        ")            ",
+        ")          +,",
+        " ) -.        ",
+        "  )/0 .111   ",
+        "   )))))))   "
+      ],
+      [
+        "   )))))))   ",
+        "  )       )  ",
+        " )         ) ",
+        ")         23)",
+        ")          /)",
+        ")           )",
+        ")           )",
+        ")            ",
+        ")            ",
+        ")           )",
+        " ) -4        ",
+        "  )/0  ///   ",
+        "   )),,)))   "
+      ],
+      [
+        "   5  6  5   ",
+        "             ",
+        "           , ",
+        "5         275",
+        "  8          ",
+        "  8          ",
+        "6 8         6",
+        "  8          ",
+        "  8          ",
+        "5 -         5",
+        "   -         ",
+        "   /0        ",
+        "   5  6  5   "
+      ],
+      [
+        "   5     5   ",
+        "             ",
+        "  222222229  ",
+        "5 9       2:5",
+        "  ;          ",
+        "  ;          ",
+        "  ;          ",
+        "  ;          ",
+        "  ;          ",
+        "5 ;         5",
+        "   -         ",
+        "   /0        ",
+        "   5     5   "
+      ],
+      [
+        "   5     5   ",
+        "             ",
+        "             ",
+        "5         2:5",
+        "             ",
+        "             ",
+        "             ",
+        "             ",
+        "             ",
+        "5 .         5",
+        "   -         ",
+        "   /0        ",
+        "   5     5   "
+      ],
+      [
+        "   5     5   ",
+        "             ",
+        "             ",
+        "5         2:5",
+        "             ",
+        "             ",
+        "             ",
+        "             ",
+        "             ",
+        "5    <=     5",
+        "    >        ",
+        "    0        ",
+        "   5     5   "
+      ],
+      [
+        "   ?@   @?   ",
+        "             ",
+        "             ",
+        "?         27?",
+        "@          :@",
+        "           : ",
+        "     /A    : ",
+        "           : ",
+        "@          :@",
+        "?  BB77::::7?",
+        "    D        ",
+        "    0        ",
+        "   ?@   @?   "
+      ],
+      [
+        "    ?   ?    ",
+        "   ?     ?   ",
+        "  ?       ?  ",
+        " ?        2? ",
+        "?           ?",
+        "             ",
+        "    EEF      ",
+        "    E        ",
+        "?   E       ?",
+        " ?BBE      ? ",
+        "  ? E     ?  ",
+        "   ?     ?   ",
+        "    ?   ?    "
+      ],
+      [
+        "    ?????    ",
+        "    ?   ?    ",
+        "   ?     ?   ",
+        "  ?       ?  ",
+        "??         ??",
+        "?           ?",
+        "?     G     ?",
+        "?           ?",
+        "??  G      ??",
+        "  ?B      ?  ",
+        "   ?     ?   ",
+        "    ?   ?    ",
+        "    ?????    "
+      ],
+      [
+        "             ",
+        "    HHHHH    ",
+        "    ?   ?    ",
+        "   ?     ?   ",
+        " H?       ?H ",
+        " H   @G@   H ",
+        " H   GGG   H ",
+        " H   @G@   H ",
+        " H? G     ?H ",
+        "   ?     ?   ",
+        "    ?   ?    ",
+        "    HHHHH    ",
+        "             "
+      ],
+      [
+        "B            ",
+        "             ",
+        "     HHH     ",
+        "    IJJJI    ",
+        "   IIJJJII   ",
+        "  HJJIIIJJH  ",
+        "  HJJIIIJJH  ",
+        "  HJJIIIJJH  ",
+        "   IIJJJII   ",
+        "    IJJJI    ",
+        "     HHH     ",
+        "             ",
+        "             "
+      ]
+    ],
+    "legend": {
+      "@": {
+        "block": "immersiveengineering:lantern"
+      },
+      "A": {
+        "block": "create:brass_funnel"
+      },
+      "B": {
+        "block": "create:andesite_casing"
+      },
+      "D": {
+        "block": "immersiveengineering:steel_scaffolding_standard"
+      },
+      "E": {
+        "block": "immersiveengineering:conveyor_covered"
+      },
+      "F": {
+        "block": "immersiveengineering:crate"
+      },
+      "G": {
+        "block": "immersiveengineering:treated_fence"
+      },
+      "H": {
+        "block": "immersiveengineering:steel_scaffolding_wooden_top"
+      },
+      "I": {
+        "block": "immersiveengineering:slab_alu_scaffolding_wooden_top"
+      },
+      "J": {
+        "block": "immersiveengineering:alu_scaffolding_wooden_top"
+      },
+      ")": {
+        "block": "compactmachines:wall"
+      },
+      "*": {
+        "block": "create:belt"
+      },
+      "+": {
+        "block": "create:schematic_table"
+      },
+      ",": {
+        "block": "minecraft:birch_log"
+      },
+      "-": {
+        "block": "create:redstone_contact"
+      },
+      ".": {
+        "block": "create:depot"
+      },
+      "/": {
+        "block": "create:redstone_link"
+      },
+      "0": {
+        "block": "immersiveengineering:conveyor_verticalcovered"
+      },
+      "1": {
+        "block": "pneumaticcraft:programmer"
+      },
+      "2": {
+        "block": "create:gantry_shaft"
+      },
+      "3": {
+        "block": "create:sequenced_gearshift"
+      },
+      "4": {
+        "block": "create:brass_belt_funnel"
+      },
+      "5": {
+        "block": "immersiveengineering:treated_post"
+      },
+      "6": {
+        "block": "compactcrafting:field_projector"
+      },
+      "7": {
+        "block": "create:gearbox"
+      },
+      "8": {
+        "block": "create:deployer"
+      },
+      "9": {
+        "block": "create:gantry_carriage"
+      },
+      ":": {
+        "block": "create:shaft"
+      },
+      ";": {
+        "block": "create:linear_chassis"
+      },
+      "<": {
+        "block": "create:cogwheel"
+      },
+      "=": {
+        "block": "create:mechanical_arm"
+      },
+      ">": {
+        "block": "immersiveengineering:stairs_steel_scaffolding_standard"
+      },
+      "?": {
+        "block": "immersiveengineering:concrete"
+      }
+    }
+  }

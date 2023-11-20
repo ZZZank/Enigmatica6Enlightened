@@ -1,6 +1,6 @@
 'use strict';
 onEvent('recipes', (event) => {
-    if (global.isExpertMode == false) {
+    if (global.isNormalMode) {
         return;
     }
     const id_prefix = 'enigmatica:expert/mekanism/';
@@ -31,7 +31,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}teleporter_alternate`
         },
         {
-            output: Item.of('3x mekanism:teleporter_frame'),
+            output: Item.of('8x mekanism:teleporter_frame'),
             pattern: ['ABA', 'BCB', 'ABA'],
             key: {
                 A: '#enigmatica:stonecuttables/arcane_stone',
@@ -70,7 +70,7 @@ onEvent('recipes', (event) => {
                 A: '#forge:gears/osmium',
                 B: '#forge:circuits/basic',
                 C: 'powah:energizing_rod_blazing',
-                D: 'thermal:machine_bottler',
+                D: 'rftoolsbase:machine_frame',
                 E: 'kubejs:power_core_low'
             },
             id: 'mekanism:metallurgic_infuser'

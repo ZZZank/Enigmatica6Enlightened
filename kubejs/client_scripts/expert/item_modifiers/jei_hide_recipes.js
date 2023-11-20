@@ -1,7 +1,7 @@
 'use strict';
 
 onEvent('jei.remove.recipes', (event) => {
-    if (global.isExpertMode == false) {
+    if (global.isNormalMode) {
         return;
     }
 

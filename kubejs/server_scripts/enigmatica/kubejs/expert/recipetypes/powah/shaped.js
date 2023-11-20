@@ -1,6 +1,6 @@
 'use strict';
 onEvent('recipes', (event) => {
-    if (global.isExpertMode == false) {
+    if (global.isNormalMode) {
         return;
     }
     const id_prefix = 'enigmatica:expert/powah/';
@@ -150,11 +150,12 @@ onEvent('recipes', (event) => {
             },
             {
                 output: `powah:ender_cell_${tier}`,
-                pattern: ['ABA', 'BCB', 'ABA'],
+                pattern: ['ABA', 'BCB', 'ADA'],
                 key: {
                     A: 'fluxnetworks:flux_core',
                     B: capacitor,
-                    C: 'fluxnetworks:flux_block'
+                    C: 'fluxnetworks:flux_block',
+                    D: 'kubejs:conductive_frame'
                 },
                 id: `powah:crafting/ender_cell_${tier}`
             }

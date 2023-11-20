@@ -10,7 +10,7 @@ function cuttingRecipe(ingredient, tool, result) {
 }
 
 onEvent('recipes', (event) => {
-    if (global.isExpertMode == false) {
+    if (global.isNormalMode) {
         return;
     }
 

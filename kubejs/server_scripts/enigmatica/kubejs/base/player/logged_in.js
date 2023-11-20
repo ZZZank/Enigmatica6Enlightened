@@ -1,17 +1,22 @@
 'use strict';
 onEvent('player.logged_in', (event) => {
+    const player = event.player;
     const startingItemsGameStage = 'starting_items';
-    let randomWaystone = () => {
-        const waystones = ['waystones:waystone', 'waystones:mossy_waystone', 'waystones:sandy_waystone'];
-        return waystones[Math.floor(Math.random() * waystones.length)];
-    };
 
     setMode(event.player);
 
-    if (!event.hasGameStage(startingItemsGameStage)) {
-        event.player.give(Item.of('ftbquests:book'));
-        event.player.give(Item.of(randomWaystone()));
+    if (!player.stages.has(startingItemsGameStage)) {
+        player.give(Item.of('ftbquests:book'));
+        player.give(
+            Item.of(
+                getRandomInList([
+                    'waystones:waystone',
+                    'waystones:mossy_waystone',
+                    'waystones:sandy_waystone'
+                ])
+            )
+        );
 
-        event.addGameStage(startingItemsGameStage);
+        player.stages.add(startingItemsGameStage);
     }
 });

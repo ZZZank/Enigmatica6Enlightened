@@ -1,5 +1,5 @@
 'use strict';
-onEvent('recipes', (event) => {
+onEvent('recipes', (/** @type {Internal.ShapelessRecipeJS} */ event) => {
     const id_prefix = 'enigmatica:base/enigmatica/shapeless/';
     const recipes = [
         {
@@ -47,4 +47,8 @@ onEvent('recipes', (event) => {
     recipes.forEach((recipe) => {
         event.shapeless(recipe.output, recipe.inputs).id(recipe.id);
     });
+    event
+        .shapeless('environmental:koi', ['environmental:koi_bucket'])
+        .replaceIngredient('environmental:koi_bucket', 'minecraft:water_bucket')
+        .id(`${id_prefix}catch_koi`);
 });

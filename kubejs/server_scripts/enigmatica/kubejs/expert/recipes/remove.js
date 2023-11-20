@@ -1,6 +1,6 @@
 'use strict';
 onEvent('recipes', (event) => {
-    if (global.isExpertMode == false) {
+    if (global.isNormalMode) {
         return;
     }
 
@@ -29,7 +29,6 @@ onEvent('recipes', (event) => {
         'botania:mana_infusion/mana_diamond_block',
         'byg:compat/create/black_sand_from_crushing',
 
-        /compactmachines:machine_/,
         /create:pressing\/\w*_ingot/,
 
         'darkutils:crafting/rune_damage_player',
@@ -37,10 +36,6 @@ onEvent('recipes', (event) => {
         /darkutils:crafting\/export_plate/,
 
         'farmersdelight:book_from_canvas',
-
-        'fluxnetworks:fluxcontroller',
-        'fluxnetworks:fluxplug',
-        'fluxnetworks:fluxpoint',
 
         'immersiveengineering:crafting/component_iron',
         'immersiveengineering:crafting/component_steel',

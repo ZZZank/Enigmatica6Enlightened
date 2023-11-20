@@ -1,4 +1,5 @@
 'use strict';
+
 onEvent('item.registry', (event) => {
     const generalItems = [
         'common_lootbox',

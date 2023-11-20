@@ -8,7 +8,7 @@ onEvent('recipes', (event) => {
     max_starlight: 2000
     */
 
-    if (global.isExpertMode == false) {
+    if (global.isNormalMode) {
         return;
     }
 

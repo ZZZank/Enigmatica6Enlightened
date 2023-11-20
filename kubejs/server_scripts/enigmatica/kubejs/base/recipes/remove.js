@@ -96,6 +96,8 @@ onEvent('recipes', (event) => {
         'appliedenergistics2:gold_dust',
         'appliedenergistics2:iron_dust',
 
+        'astralsorcery:marble_runed',
+
         'byg:blue_enchanted_crafting_table',
         'byg:green_enchanted_crafting_table',
         'byg:mud_block',
@@ -177,12 +179,6 @@ onEvent('recipes', (event) => {
         'create:crushing/nether_quartz_ore',
 
         'create:compat/ae2/milling/ender_pearl',
-
-        'compactcrafting:match_proxy',
-        'compactcrafting:rescan_proxy',
-        'compactcrafting:base',
-        'compactcrafting:projector_dish',
-        'compactcrafting:field_projector',
 
         'dustrial_decor:ice_chain',
 

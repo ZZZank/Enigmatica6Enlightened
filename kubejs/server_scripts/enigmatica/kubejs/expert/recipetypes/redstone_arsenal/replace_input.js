@@ -1,17 +1,16 @@
 'use strict';
 onEvent('recipes', (event) => {
-    if (global.isExpertMode == false) {
+    if (global.isNormalMode) {
         return;
     }
 
     const recipes = [
         {
-            toReplace: 'redstone_arsenal:obsidian_rod',
-            replaceWith: 'immersiveengineering:graphite_electrode'
-        },
-        {
             filter: {
-                not: [{ id: 'redstone_arsenal:storage/flux_metal_block' }]
+                not: [
+                    { id: 'redstone_arsenal:storage/flux_nugget_from_ingot' },
+                    { id: 'redstone_arsenal:storage/flux_metal_block' }
+                ]
             },
             toReplace: 'redstone_arsenal:flux_ingot',
             replaceWith: 'powah:capacitor_blazing'

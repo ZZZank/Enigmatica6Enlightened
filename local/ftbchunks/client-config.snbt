@@ -2,7 +2,7 @@
 	# Biome blend
 	# Default: "blend_5x5"
 	# Valid values: "none", "blend_3x3", "blend_5x5", "blend_7x7", "blend_9x9", "blend_11x11", "blend_13x13", "blend_15x15"
-	biome_blend: "blend_3x3"
+	biome_blend: "blend_5x5"
 	
 	# Chunk grid overlay in large map
 	# Default: false
@@ -108,7 +108,7 @@
 		# Blurs minimap
 		# Default: "auto"
 		# Valid values: "auto", "on", "off"
-		blur_mode: "off"
+		blur_mode: "auto"
 		
 		# Adds NWSE compass inside minimap
 		# Default: true

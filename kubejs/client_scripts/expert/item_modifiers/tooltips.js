@@ -22,22 +22,40 @@ onEvent('item.tooltip', (event) => {
     .white()
     .color('#808080') //any hex color
     */
-    if (global.isExpertMode == false) {
+    if (global.isNormalMode) {
         return;
     }
-    const disabledInExpert = Text.of('Disabled in Expert Mode.').red();
+    const eprefix = 'tooltips.en6e.expert.';
+    const id_prefix = 'tooltips.enigmatica.expert.';
+    const disabledInExpert = Text.translate(`${id_prefix}disabled`).red();
     const recipes = [
         {
+            items: ['occultism:sacrificial_bowl'],
+            text: [Text.translate('gamestage.enigmatica.restrictions.red_chalk')]
+        },
+        {
+            items: [
+                'bloodmagic:altar',
+                'bloodmagic:alchemytable',
+                'bloodmagic:demoncrucible',
+                'bloodmagic:demoncrystallizer',
+                'bloodmagic:soulforge',
+                'bloodmagic:alchemicalreactionchamber',
+                'bloodmagic:incensealtar'
+            ],
+            text: [Text.translate('gamestage.enigmatica.restrictions.master_blood_orb')]
+        },
+        {
             items: ['appliedenergistics2:me_p2p_tunnel', 'appliedenergistics2:memory_card'],
-            text: [Text.of('Channel is disabled in Expert.').green()]
+            text: [Text.translate(`${eprefix}channel_disabled`).green()]
         },
         {
             items: ['bloodmagic:soulpickaxe'],
-            text: [Text.of('Capable of mining Iesnium.').color('#7e24b3')]
+            text: [Text.translate(`${id_prefix}soulpickaxe`).color('#7e24b3')]
         },
         {
             items: ['tconstruct:seared_melter'],
-            text: [disabledInExpert, Text.of('Use the Smeltery Controller instead.').aqua()]
+            text: [disabledInExpert, Text.translate(`${id_prefix}seared_melter`).aqua()]
         },
         {
             items: [
@@ -60,53 +78,36 @@ onEvent('item.tooltip', (event) => {
         },
         {
             items: ['resourcefulbees:t2_apiary', 'resourcefulbees:t3_apiary', 'resourcefulbees:t4_apiary'],
-            text: [
-                Text.of('Crafting this will not return any bees contained in the ingredients.').red(),
-                Text.of('Make sure to remove them before crafting!').red()
-            ]
+            text: [Text.translate(`${id_prefix}apiary`).red()]
         },
         {
             items: ['industrialforegoing:mob_slaughter_factory'],
             text: [
                 disabledInExpert,
-                Text.of('Liquid Meat can be obtained by "processing" cows.').color('#6e2a2a'),
-                Text.of('Pink Slime can be harvested from a Pink Wither using a Fluid Laser.').color(
-                    '#da07e6'
-                )
+                Text.translate(`${id_prefix}liquid_meat`).color('#6e2a2a'),
+                Text.translate(`${id_prefix}pink_slime`).color('#da07e6')
             ]
         },
         {
             items: ['kubejs:medium_machinery_schematics'],
             text: [
-                Text.of(`Unlocks the ability to form the following structures:`).blue(),
-                Text.of(`- Automated Engineer's Workbench`).aqua(),
-                Text.of(`- Diesel Generator`).aqua(),
-                Text.of(`- Excavator`).aqua(),
-                Text.of(`- Fermenter`).aqua(),
-                Text.of(`- Metal Press`).aqua(),
-                Text.of(`- Mixer`).aqua(),
-                Text.of(`- Pumpjack`).aqua(),
-                Text.of(`- Refinery`).aqua(),
-                Text.of(`- Sawmill`).aqua(),
-                Text.of(`- Squeezer`).aqua()
+                Text.translate(`${id_prefix}machinery_schematics`).blue(),
+                Text.translate(`${id_prefix}medium_machinery_schematics`).aqua()
             ]
         },
         {
             items: ['kubejs:heavy_machinery_schematics'],
             text: [
-                Text.of(`Unlocks the ability to form the following structures:`).blue(),
-                Text.of(`- Arc Furnace`).aqua(),
-                Text.of(`- Assembler`).aqua(),
-                Text.of(`- Coker Unit`).aqua(),
-                Text.of(`- Crusher`).aqua(),
-                Text.of(`- Distillation Tower`).aqua(),
-                Text.of(`- Lightning Rod`).aqua(),
-                Text.of(`- Sulfur Recovery Unit`).aqua()
+                Text.translate(`${id_prefix}machinery_schematics`).blue(),
+                Text.translate(`${id_prefix}heavy_machinery_schematics`).aqua()
             ]
         },
         {
             items: [/kubejs:diy/],
-            text: [Text.of(`Some Assembly Required.`).green(), Text.of(`Batteries Not Included.`).darkRed()]
+            text: [
+                Text.translate(`${id_prefix}some_assembly_required`).green(),
+                Text.translate(`${id_prefix}batteries_not_included`).darkRed()
+            ]
         }
     ];
 

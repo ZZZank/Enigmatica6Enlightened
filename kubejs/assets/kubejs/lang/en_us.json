@@ -1,4 +1,7 @@
 {
+    "block.kubejs.matter_block": "Matter Block",
+    "block.kubejs.conductive_frame": "Conductive Frame",
+
     "item.kubejs.common_lootbox": "Common Loot Box",
     "item.kubejs.rare_lootbox": "Rare Loot Box",
     "item.kubejs.epic_lootbox": "Epic Loot Box",
@@ -21,6 +24,7 @@
     "item.kubejs.pewter_nugget": "Pewter Nugget",
     "item.kubejs.pewter_inlay": "Pewter Inlay",
     "item.kubejs.zombie_heart": "Zombie Heart",
+    "item.kubejs.wicked_weave": "Wicked Weave",
     "item.kubejs.coarse_lapis_lazuli_compound": "Coarse Lapis Lazuli Compound",
     "item.kubejs.smoldering_lapis_lazuli_compound": "Smoldering Lapis Lazuli Compound",
     "item.kubejs.basalt_powder": "Basalt Powder",
