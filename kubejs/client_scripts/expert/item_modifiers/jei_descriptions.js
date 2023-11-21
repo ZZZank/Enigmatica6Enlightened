@@ -47,6 +47,10 @@ onEvent('jei.information', (event) => {
             text: [`${id_prefix}stage_unlock`]
         },
         {
+            items: ['mekanism:basic_energy_cube'],
+            text: [`${eprefix}basic_energy_cube`]
+        },
+        {
             // Disabled Items
             items: [
                 'pneumaticcraft:air_compressor',
