@@ -6,6 +6,26 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:expert/mekanism/shaped_data/';
     const recipes = [
         {
+            result: 'mekanism:basic_energy_cube',
+            pattern: ['ABA', 'CDC', 'EEE'],
+            key: {
+                A: { item: 'powah:capacitor_blazing' },
+                B: { tag: 'industrialforegoing:machine_frame/simple' },
+                C: {
+                    type: 'forge:nbt',
+                    item: 'immersiveengineering:graphite_electrode',
+                    nbt: '{graphDmg:0}'
+                },
+                D: {
+                    type: 'pneumaticcraft:fluid',
+                    fluid: 'mekanism:lithium',
+                    amount: 1000
+                },
+                E: { tag: 'forge:ingots/signalum' }
+            },
+            id: 'mekanism:energy_cube/basic'
+        },
+        {
             result: 'mekanism:advanced_energy_cube',
             pattern: ['ABA', 'CDC', 'EEE'],
             key: {
