@@ -108,12 +108,6 @@ onEvent('item.tooltip', (event) => {
                 Text.translate(`${id_prefix}some_assembly_required`).green(),
                 Text.translate(`${id_prefix}batteries_not_included`).darkRed()
             ]
-        },
-        {
-            items: ['mekanism:basic_energy_cube'],
-            text: [
-                Text.translate(`descriptions.en6e.expert.basic_energy_cube`).yellow()
-            ]
         }
     ];
 
