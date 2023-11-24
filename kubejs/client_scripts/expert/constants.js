@@ -1,7 +1,7 @@
 // priority: 1001
 'use strict';
 
-const isAE2Loaded = Platform.getMods().containsKey('appliedenergistics2');
+const isAE2Loaded = Platform.isLoaded('appliedenergistics2');
 
 const disabledItemsAE = [
     'appliedenergistics2:flour',
