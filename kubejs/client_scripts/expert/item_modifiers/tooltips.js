@@ -111,9 +111,7 @@ onEvent('item.tooltip', (event) => {
         },
         {
             items: ['mekanism:basic_energy_cube'],
-            text: [
-                Text.translate(`descriptions.en6e.expert.basic_energy_cube`).yellow()
-            ]
+            text: [Text.translate(`descriptions.en6e.expert.basic_energy_cube`).yellow()]
         }
     ];
 

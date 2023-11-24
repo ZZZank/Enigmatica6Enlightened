@@ -2,9 +2,9 @@
 'use strict';
 
 /**
- * 
- * @param {string} str 
- * @returns 
+ *
+ * @param {string} str
+ * @returns
  */
 function titleCase(str) {
     return str
@@ -92,7 +92,7 @@ function getPreferredItemInTag(tag) {
 /**
  *
  * @param {Internal.IngredientJS} tag
- * @return {Internal.ItemStackJS[]} 
+ * @return {Internal.ItemStackJS[]}
  */
 function getItemsInTag(tag) {
     return tag.stacks.toArray();
