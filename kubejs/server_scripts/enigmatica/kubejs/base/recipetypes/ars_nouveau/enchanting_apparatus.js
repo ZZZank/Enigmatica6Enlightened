@@ -3,6 +3,13 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/ars_nouveau/enchanting_apparatus/';
     const recipes = [
         {
+            inputs: [],
+            reagent: 'minecraft:bucket',
+            sourceCost: 1000,
+            output: 'ars_nouveau:bucket_of_mana',
+            id: `${id_prefix}bucket_of_mana`
+        },
+        {
             inputs: [
                 'minecraft:conduit',
                 'kubejs:monster_mash',
@@ -33,8 +40,13 @@ onEvent('recipes', (event) => {
         }
     ];
     recipes.forEach((recipe) => {
-        event.recipes.ars_nouveau
-            .enchanting_apparatus(recipe.output, recipe.reagent, recipe.inputs)
-            .id(recipe.id);
+        recipe.sourceCost
+            ? event.recipes.ars_nouveau
+                  .enchanting_apparatus(recipe.output, recipe.reagent, recipe.inputs)
+                  .merge({ sourceCost: recipe.sourceCost })
+                  .id(recipe.id)
+            : event.recipes.ars_nouveau
+                  .enchanting_apparatus(recipe.output, recipe.reagent, recipe.inputs)
+                  .id(recipe.id);
     });
 });
