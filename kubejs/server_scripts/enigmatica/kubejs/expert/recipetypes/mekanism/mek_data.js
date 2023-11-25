@@ -87,12 +87,13 @@ onEvent('recipes', (event) => {
         },
         {
             result: 'mekanism:basic_induction_cell',
-            pattern: ['AAA', 'DCD', 'BBB'],
+            pattern: ['AAA', 'DCD', 'BEB'],
             key: {
                 A: { item: 'powah:capacitor_blazing' },
                 B: { item: 'immersiveengineering:coil_hv' },
                 C: { item: 'mekanism:basic_energy_cube' },
-                D: { tag: 'forge:alloys/elite' }
+                D: { tag: 'forge:alloys/elite' },
+                E: { item: 'kubejs:conductive_frame' }
             },
             id: 'mekanism:induction/cell/basic'
         },
