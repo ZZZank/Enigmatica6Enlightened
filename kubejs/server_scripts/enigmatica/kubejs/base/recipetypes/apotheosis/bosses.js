@@ -1,3 +1,4 @@
+'use strict';
 /// High Priority required or Apotheosis over-writes these.
 
 /*
@@ -8,7 +9,6 @@ enchantment_levels: [50, 30, 120, 40],
     (same when ench module is disable)
 
 */
-'use strict';
 onEvent('server.datapack.high_priority', (event) => {
     let bossTypes = [
         // Overrides for default bosses
