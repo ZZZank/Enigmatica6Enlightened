@@ -10,7 +10,7 @@ onEvent('recipes', (event) => {
         recipes: [
             {
                 inputs: ['#forge:ingots/enderium', Item.of('fluxnetworks:flux_dust', 8)],
-                outputs: [Item.of('compactmachines:wall', 48)]
+                outputs: [Item.of('compactmachines:wall', 32)]
             },
             {
                 inputs: ['#forge:dusts/refined_obsidian', '#forge:ingots/osmium'],

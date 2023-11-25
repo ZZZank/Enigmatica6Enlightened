@@ -50,7 +50,7 @@ onEvent('recipes', (event) => {
                 'immersiveengineering:coil_mv',
                 Item.of('3x fluxnetworks:flux_dust')
             ],
-            outputs: [Item.of('16x compactmachines:wall')],
+            outputs: [Item.of('6x compactmachines:wall')],
             id: `${id_prefix}cm_wall`
         }
     ];
