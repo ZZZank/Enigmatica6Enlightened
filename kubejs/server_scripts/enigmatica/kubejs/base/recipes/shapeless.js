@@ -2,6 +2,15 @@
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/shapeless/';
     const recipes = [
+        {
+            output: 'cookingforblockheads:milk_jar',
+            inputs: [
+                Item.of('supplementaries:jar', {
+                    BlockEntityTag: { FluidHolder: { Count: 4, Fluid: 'minecraft:milk', CachedColor: -1 } }
+                }).weakNBT()
+            ],
+            id: 'cookingforblockheads:milk_jar'
+        },
         { output: 'botania:enchanted_soil', inputs: ['minecraft:grass_block', 'botania:overgrowth_seed'] },
         { output: 'minecraft:sticky_piston', inputs: ['minecraft:piston', '#forge:slimeballs'] },
         { output: 'minecraft:flint', inputs: ['#forge:gravel', '#forge:gravel', '#forge:gravel'] },
@@ -511,12 +520,6 @@ onEvent('recipes', (event) => {
         }
     ];
 
-    recipes.forEach((recipe) => {
-        recipe.id
-            ? event.shapeless(recipe.output, recipe.inputs).id(recipe.id)
-            : fallback_id(event.shapeless(recipe.output, recipe.inputs), id_prefix);
-    });
-
     powahTiers.forEach((tier) => {
         if (tier == 'starter') {
             return;
@@ -592,5 +595,11 @@ onEvent('recipes', (event) => {
         if (ore.exists) {
             fallback_id(event.shapeless(ore, `#forge:ores/${material}`), id_prefix);
         }
+    });
+
+    recipes.forEach((recipe) => {
+        recipe.id
+            ? event.shapeless(recipe.output, recipe.inputs).id(recipe.id)
+            : fallback_id(event.shapeless(recipe.output, recipe.inputs), id_prefix);
     });
 });
