@@ -1,4 +1,4 @@
-'use strict';
+            'use strict';
 onEvent('recipes', (event) => {
     if (global.isNormalMode) {
         return;
@@ -806,7 +806,7 @@ onEvent('recipes', (event) => {
                 F: 'modularrouters:fluid_module_2',
                 G: ['rftoolsutility:matter_transmitter', 'rftoolsutility:matter_receiver']
             },
-            id: `${id_prefix}compact_machine_${compactmachine.tier}`
+            id: `compactmachines:machine_${compactmachine.tier}`
         });
     });
 
