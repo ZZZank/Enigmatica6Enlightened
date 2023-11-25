@@ -19,11 +19,6 @@ onEvent('recipes', (event) => {
             replaceWith: 'thermal:lightning_charge'
         },
         {
-            filter: { id: 'immersivecooking:fried_potato_cubes' },
-            toReplace: 'immersivecooking:potato_slice',
-            replaceWith: 'immersivecooking:potato_cubes'
-        },
-        {
             filter: {
                 not: [{ id: 'minecraft:dried_kelp_block' }]
             },

@@ -25,11 +25,6 @@ onEvent('generic.loot_tables', (event) => {
                     count: [2, 8]
                 },
                 {
-                    item: 'immersivecooking:pyttipanna',
-                    weight: 50,
-                    count: [2, 8]
-                },
-                {
                     item: 'farmersdelight:apple_cider',
                     weight: 50,
                     count: [2, 8]
