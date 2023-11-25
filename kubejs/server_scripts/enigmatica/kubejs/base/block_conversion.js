@@ -56,11 +56,11 @@ onEvent('block.right_click', (e) => {
         if (mainHandItem != recipe.holding) {
             continue;
         }
-        e.cancel();
         const target = player.rayTrace(5).block;
         if (!target || target.id != recipe.target) {
-            return;
+            continue;
         }
+        e.cancel();
         target.set(recipe.output);
         player.mainHandItem.count--;
         return;
@@ -69,13 +69,12 @@ onEvent('block.right_click', (e) => {
 
 onEvent('recipes', (event) => {
     const id_prefix = 'en6e:right_click_block/';
-    const recipes = [];
 
     blockRightClickRecipes.forEach((recipe) => {
         // create deploying
         event.recipes.create
             .deploying(recipe.output, [recipe.target, recipe.holding])
-            .id(recipe.id + '/create');
+            .id(recipe.id + '/deploy');
         // hint
         event
             .custom({
@@ -91,7 +90,7 @@ onEvent('recipes', (event) => {
                 inputs: [
                     {
                         type: 'masterfulmachinery:items',
-                        data: { item: recipe.target, count: 1 }
+                        data: { item: recipe.holding, count: 1 }
                     },
                     {
                         type: 'masterfulmachinery:items',
@@ -99,7 +98,7 @@ onEvent('recipes', (event) => {
                     },
                     {
                         type: 'masterfulmachinery:items',
-                        data: { item: recipe.holding, count: 1 }
+                        data: { item: recipe.target, count: 1 }
                     }
                 ],
                 ticks: 1,
