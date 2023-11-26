@@ -178,6 +178,7 @@ onEvent('item.registry', (event) => {
         { name: 'diy_pumpjack', texture: 'packing_crate_yellow' },
         { name: 'diy_distillation_tower', texture: 'advanced_packing_crate_purple' },
         { name: 'diy_excavator', texture: 'advanced_packing_crate_green' },
+        { name: 'mining_gadget_kit', texture: 'packing_crate_blue' },
         { name: 'flux_bore_kit', texture: 'packing_crate_lime' },
         { name: 'diy_create_quarry', texture: 'packing_crate_red' },
         { name: 'diy_mekasuit_helmet', texture: 'packing_crate_red' },
