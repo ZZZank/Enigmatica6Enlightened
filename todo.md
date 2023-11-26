@@ -2,4 +2,4 @@
 - what can Nixie Tube do?
 - liquid source
 - try to buff TCon armor
-- remove Guns Without Roses, buff IE weapons
+- makes AS::flare looks like MiningGadget::minerslight
