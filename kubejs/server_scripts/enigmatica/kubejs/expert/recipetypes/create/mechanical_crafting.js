@@ -321,51 +321,6 @@ onEvent('recipes', (event) => {
             id: 'mekanism:digital_miner'
         },
         {
-            output: 'mininggadgets:mininggadget_simple',
-            pattern: [' AAABBB', 'CDEFFF ', ' CGCBBB', 'H      '],
-            key: {
-                A: 'immersiveengineering:toolupgrade_revolver_electro',
-                B: 'powah:dielectric_rod_horizontal',
-                C: 'mekanism:hdpe_sheet',
-                D: 'thermal:charge_bench',
-                E: 'rftoolsbase:infused_diamond',
-                F: industrialforegoing.laser_lens.magenta,
-                G: 'thermal:upgrade_augment_2',
-                H: Item.of('immersiveengineering:wooden_grip').ignoreNBT()
-            },
-            id: 'mininggadgets:mininggadget_simple'
-        },
-        {
-            output: 'mininggadgets:mininggadget_fancy',
-            pattern: [' AAABBB', 'CDEFFF ', ' CGCBBB', 'H      '],
-            key: {
-                A: 'immersiveengineering:toolupgrade_revolver_electro',
-                B: 'powah:dielectric_rod_horizontal',
-                C: 'mekanism:hdpe_sheet',
-                D: 'thermal:charge_bench',
-                E: 'rftoolsbase:infused_diamond',
-                F: industrialforegoing.laser_lens.pink,
-                G: 'thermal:upgrade_augment_2',
-                H: Item.of('immersiveengineering:wooden_grip').ignoreNBT()
-            },
-            id: 'mininggadgets:mininggadget_fancy'
-        },
-        {
-            output: 'mininggadgets:mininggadget',
-            pattern: [' AAABBB', 'CDEFFF ', ' CGCBBB', 'H      '],
-            key: {
-                A: 'immersiveengineering:toolupgrade_revolver_electro',
-                B: 'powah:dielectric_rod_horizontal',
-                C: 'mekanism:hdpe_sheet',
-                D: 'thermal:charge_bench',
-                E: 'rftoolsbase:infused_diamond',
-                F: industrialforegoing.laser_lens.light_blue,
-                G: 'thermal:upgrade_augment_2',
-                H: Item.of('immersiveengineering:wooden_grip').ignoreNBT()
-            },
-            id: 'mininggadgets:mininggadget'
-        },
-        {
             output: 'thermal:flux_saw',
             pattern: [' A  ', 'BACD', 'AEFD', ' GCC'],
             key: {
@@ -563,11 +518,7 @@ onEvent('recipes', (event) => {
                 A: 'mekanism:hdpe_sheet',
                 B: 'powah:dielectric_rod_horizontal',
                 C: 'immersiveengineering:toolupgrade_shield_magnet',
-                D: [
-                    Item.of('mininggadgets:mininggadget_simple').ignoreNBT(),
-                    Item.of('mininggadgets:mininggadget').ignoreNBT(),
-                    Item.of('mininggadgets:mininggadget_fancy').ignoreNBT()
-                ],
+                D: 'mekanism:module_laser_dissipation_unit',
                 E: Item.of('mekanism:laser_amplifier').ignoreNBT(),
                 F: 'thermal:upgrade_augment_3'
             },

@@ -7,7 +7,6 @@ onEvent('item.tags', (event) => {
         'industrialforegoing:infinity_saw',
         'mekanism:atomic_disassembler',
         'mekanism:meka_tool',
-        'mininggadgets:mininggadget',
         'pneumaticcraft:jackhammer',
         'thermal:flux_drill',
         'thermal:flux_saw'

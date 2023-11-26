@@ -327,7 +327,6 @@ onEvent('recipes', (event) => {
             replaceWith: 'aluminum',
             items: [
                 'bloodmagic:soulforge',
-                'mininggadgets:upgrade_fortune_1',
                 'resourcefulbees:centrifuge_casing',
                 'xnet:antenna_base'
             ]
@@ -429,7 +428,6 @@ onEvent('recipes', (event) => {
             items: [
                 'mekanismgenerators:electromagnetic_coil',
                 'mekanism:energy_tablet',
-                'mininggadgets:upgrade_magnet',
                 'xnet:controller',
                 'thermal:rf_coil_xfer_augment',
                 'thermal:rf_coil_storage_augment',
