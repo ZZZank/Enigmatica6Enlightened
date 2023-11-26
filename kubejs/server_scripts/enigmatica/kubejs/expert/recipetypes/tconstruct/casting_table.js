@@ -16,14 +16,6 @@ onEvent('recipes', (event) => {
             result: 'resourcefulbees:cobalt_bee_spawn_egg',
             cooling_time: 600
         }*/
-        {
-            cast: { item: 'gunswithoutroses:iron_bullet' },
-            cast_consumed: true,
-            fluid: { name: 'tconstruct:blazing_blood', amount: 5 },
-            result: Item.of('gunswithoutroses:blaze_bullet').toResultJson(),
-            cooling_time: 2,
-            id: 'gunswithoutroses:blaze_bullet'
-        }
     ];
 
     recipes.forEach((recipe) => {
