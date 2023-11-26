@@ -3,6 +3,63 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/ars_nouveau/enchanting_apparatus/';
     const recipes = [
         {
+            output: Item.of(
+                'immersiveengineering:revolver',
+                '{perks:{cooldown:0.75d,luck:1.0d,noise:0.75d},upgrades:{}}'
+            ),
+            inputs: [
+                '#forge:ingots/infused_iron',
+                '#forge:ingots/infused_iron',
+                '#forge:ingots/infused_iron',
+                '#forge:storage_blocks/mana',
+                '#forge:storage_blocks/mana',
+                'atum:godforged_block',
+                'atum:godforged_block',
+                'atum:godforged_block'
+            ],
+            reagent: 'immersiveengineering:revolver',
+            sourceCost: 2000,
+            id: `${id_prefix}revolver_tier_1`
+        },
+        {
+            output: Item.of(
+                'immersiveengineering:revolver',
+                '{perks:{cooldown:0.75d,luck:1.0d,noise:0.75d},upgrades:{}}'
+            ),
+            inputs: [
+                '#forge:ingots/infused_iron',
+                '#forge:ingots/infused_iron',
+                '#forge:ingots/infused_iron',
+                '#forge:storage_blocks/mana',
+                '#forge:storage_blocks/mana',
+                '#forge:storage_blocks/lapis',
+                'atum:anput_godforged_block',
+                '#forge:storage_blocks/lapis'
+            ],
+            reagent: 'immersiveengineering:revolver',
+            sourceCost: 2000,
+            id: `${id_prefix}revolver_tier_1_alt`
+        },
+        {
+            output: Item.of(
+                'immersiveengineering:revolver',
+                '{perks:{cooldown:0.5d,luck:1.5d,noise:0.5d},upgrades:{}}'
+            ),
+            inputs: [
+                '#forge:ingots/sky',
+                '#forge:ingots/sky',
+                '#forge:ingots/sky',
+                '#forge:storage_blocks/lapis',
+                '#forge:storage_blocks/lapis',
+                '#forge:storage_blocks/mana',
+                'bloodmagic:soulgempetty',
+                '#forge:storage_blocks/mana'
+            ],
+            reagent: 'immersiveengineering:revolver',
+            sourceCost: 5000,
+            id: `${id_prefix}revolver_tier_2`
+        },
+        {
             inputs: [],
             reagent: 'minecraft:bucket',
             sourceCost: 1000,
