@@ -7,7 +7,6 @@ onEvent('jei.add.items', (event) => {
         'lootr:lootr_trapped_chest',
         Item.of('tetra:modular_bow', {
             'bow/stave': 'bow/straight_stave',
-            honing_progress: 112,
             HideFlags: 1,
             'bow/basic_string_material': 'basic_string/string',
             'bow/string': 'bow/basic_string',
@@ -18,7 +17,6 @@ onEvent('jei.add.items', (event) => {
         Item.of('tetra:modular_double', {
             'double/butt_right_material': 'butt/oak',
             'double/handle': 'double/basic_handle',
-            honing_progress: 210,
             'double/head_left': 'double/hoe_left',
             HideFlags: 1,
             'double/head_right': 'double/butt_right',
@@ -28,7 +26,6 @@ onEvent('jei.add.items', (event) => {
         }),
         Item.of('tetra:modular_single', {
             'single/basic_shovel_material': 'basic_shovel/oak',
-            honing_progress: 80,
             HideFlags: 1,
             'single/head': 'single/basic_shovel',
             'single/handle': 'single/basic_handle',
@@ -40,7 +37,6 @@ onEvent('jei.add.items', (event) => {
             'sword/blade': 'sword/basic_blade',
             'sword/basic_blade_material': 'basic_blade/oak',
             'sword/pommel': 'sword/decorative_pommel',
-            honing_progress: 175,
             'sword/basic_hilt_material': 'basic_hilt/stick',
             HideFlags: 1,
             'sword/hilt': 'sword/basic_hilt',
@@ -52,7 +48,6 @@ onEvent('jei.add.items', (event) => {
             'double/butt_right_material': 'butt/oak',
             'double/basic_axe_left_material': 'basic_axe/oak',
             'double/handle': 'double/basic_handle',
-            honing_progress: 210,
             'double/head_left': 'double/basic_axe_left',
             HideFlags: 1,
             'double/head_right': 'double/butt_right',
@@ -61,7 +56,6 @@ onEvent('jei.add.items', (event) => {
         }),
         Item.of('tetra:modular_double', {
             'double/handle': 'double/basic_handle',
-            honing_progress: 280,
             'double/head_left': 'double/basic_pickaxe_left',
             HideFlags: 1,
             'double/head_right': 'double/basic_pickaxe_right',
@@ -72,7 +66,6 @@ onEvent('jei.add.items', (event) => {
         }),
         Item.of('tetra:modular_shield', {
             'shield/plate': 'shield/tower',
-            honing_progress: 144,
             HideFlags: 1,
             'shield/basic_grip_material': 'basic_grip/iron',
             'shield/plate:shield/studs/iron': 0,
