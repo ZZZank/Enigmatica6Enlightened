@@ -3,6 +3,33 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/atum/shaped/';
     const recipes = [
         {
+            output: Item.of('atum:linen_thread', 8),
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: '#forge:crops/flax',
+                B: '#forge:rods/wooden'
+            },
+            id: `${id_prefix}atum/linen_thread_from_flax`
+        },
+        {
+            output: Item.of('atum:linen_thread', 4),
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: 'atum:cloth_scrap',
+                B: '#forge:rods/wooden'
+            },
+            id: `${id_prefix}atum/linen_thread_from_cloth_scrap`
+        },
+        {
+            output: Item.of('atum:marl', 4),
+            pattern: ['AB', 'BA'],
+            key: {
+                A: 'atum:sand',
+                B: 'minecraft:clay'
+            },
+            id: `${id_prefix}atum/marl_from_clay`
+        },
+        {
             output: 'atum:emmer_dough',
             pattern: ['A', 'B'],
             key: {

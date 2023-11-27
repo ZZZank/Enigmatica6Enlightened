@@ -3,3 +3,4 @@
 - liquid source
 - try to buff TCon armor
 - makes AS::flare looks like MiningGadget::minerslight
+- test new BetterEnd

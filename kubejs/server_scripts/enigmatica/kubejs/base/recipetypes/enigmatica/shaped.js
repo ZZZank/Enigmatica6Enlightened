@@ -22,34 +22,6 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}betterendforge/dense_snow`
         },
         {
-            output: Item.of('atum:linen_thread', 8),
-            pattern: ['AAA', 'ABA', 'AAA'],
-            key: {
-                A: '#forge:crops/flax',
-                B: '#forge:rods/wooden'
-            },
-            id: `${id_prefix}atum/linen_thread_from_flax`
-        },
-        {
-            output: Item.of('atum:linen_thread', 4),
-            pattern: ['AAA', 'ABA', 'AAA'],
-            key: {
-                A: 'atum:cloth_scrap',
-                B: '#forge:rods/wooden'
-            },
-            id: `${id_prefix}atum/linen_thread_from_cloth_scrap`
-        },
-        {
-            output: Item.of('atum:marl', 4),
-            pattern: ['AB', 'BA'],
-            key: {
-                A: 'atum:sand',
-                B: 'minecraft:clay'
-            },
-            id: `${id_prefix}atum/marl_from_clay`
-        },
-
-        {
             output: Item.of('bloodmagic:dungeon_polished', 4),
             pattern: ['AA', 'AA'],
             key: {

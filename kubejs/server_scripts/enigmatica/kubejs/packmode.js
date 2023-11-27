@@ -1,5 +1,6 @@
 'use strict';
 // priority: 1004
+
 /**
  * Set FTBQuest for a player according to packmode
  * @param {Internal.PlayerJS} player
@@ -16,7 +17,7 @@ function setMode(player) {
 }
 
 onEvent('server.datapack.high_priority', (event) => {
-    let server = event.getServer();
+    const server = event.getServer();
     if (!server) {
         return;
     }
@@ -50,11 +51,11 @@ if (validPackMode.indexOf(config.mode) == -1) {
 }
 
 let packMode = config.mode;
-
-global.packmode = packMode;
-global.isNormalMode = packMode == 'normal';
-global.isExpertMode = packMode == 'expert';
 const isNormalMode = packMode == 'normal';
 const isExpertMode = packMode == 'expert';
+
+global.packmode = packMode;
+global.isNormalMode = isNormalMode;
+global.isExpertMode = isExpertMode;
 
 console.log(`Current packmode is: ${global.packmode}`);
