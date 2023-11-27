@@ -174,26 +174,6 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}projectvibrantjourneys/charred_bones`
         },
         {
-            output: 'tetra:hammer_base',
-            pattern: ['LXL', 'LCL', 'LXL'],
-            key: {
-                L: '#forge:ingots/steel',
-                X: '#forge:circuits/basic',
-                C: '#forge:tools/crafting_hammer'
-            },
-            id: `${id_prefix}tetra/hammer_base`
-        },
-        {
-            output: 'tetra:core_extractor',
-            pattern: ['LXL', 'LCL', 'LXL'],
-            key: {
-                L: '#forge:ingots/steel',
-                X: '#forge:circuits/basic',
-                C: 'industrialforegoing:fluid_extractor'
-            },
-            id: `${id_prefix}tetra/core_extractor`
-        },
-        {
             output: 'minecraft:hopper',
             pattern: ['ABA', 'ABA', ' A '],
             key: {
@@ -290,16 +270,6 @@ onEvent('recipes', (event) => {
                 B: '#enigmatica:ladder_planks'
             },
             id: `${id_prefix}minecraft/ladder`
-        },
-        {
-            output: 'tetra:combustion_chamber',
-            pattern: ['CBC', 'BAB', 'CBC'],
-            key: {
-                A: 'mekanism:superheating_element',
-                B: 'pneumaticcraft:heat_sink',
-                C: 'mekanism:ultimate_thermodynamic_conductor'
-            },
-            id: `${id_prefix}tetra/combustion_chamber`
         },
         {
             output: Item.of('byg:embur_hyphae', 3),
