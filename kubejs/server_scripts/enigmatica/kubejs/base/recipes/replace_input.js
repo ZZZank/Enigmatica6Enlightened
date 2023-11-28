@@ -325,11 +325,7 @@ onEvent('recipes', (event) => {
             type: 'storage_blocks',
             replace: 'iron',
             replaceWith: 'aluminum',
-            items: [
-                'bloodmagic:soulforge',
-                'resourcefulbees:centrifuge_casing',
-                'xnet:antenna_base'
-            ]
+            items: ['bloodmagic:soulforge', 'resourcefulbees:centrifuge_casing', 'xnet:antenna_base']
         },
         {
             type: 'storage_blocks',
