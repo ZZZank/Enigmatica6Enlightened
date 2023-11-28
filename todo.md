@@ -1,6 +1,7 @@
 - AS: infuser
-- what can Nixie Tube do?
 - liquid source
 - try to buff TCon armor
 - makes AS::flare looks like MiningGadget::minerslight
-- test new BetterEnd
+- BetterEnd: enchantment book
+- BetterEnd: pedestals directional texture
+- supplementaries::Jar, Faucet, Soap
