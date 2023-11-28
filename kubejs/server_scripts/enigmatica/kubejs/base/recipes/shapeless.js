@@ -394,6 +394,11 @@ onEvent('recipes', (event) => {
                                 Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Chronicle of Shadows"}]}'
                             }
                         }
+                    },
+                    supplementaries: {
+                        id: 'patchouli:guide_book',
+                        Count: 1,
+                        tag: { 'patchouli:book': 'supplementaries:supplementaries_guide' }
                     }
                 }
             }),

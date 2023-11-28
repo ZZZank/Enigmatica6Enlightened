@@ -356,6 +356,13 @@
 								id: "betterendforge:guidebook"
 								Count: 1.0d
 							}
+							supplementaries: {
+								id: "patchouli:guide_book"
+								Count: 1.0d
+								tag: { 
+									"patchouli:book": "supplementaries:supplementaries_guide"
+								}
+							}
 						}
 					}
 				}
