@@ -420,14 +420,6 @@ onEvent('jei.information', (event) => {
             text: [`${id_prefix}roast_chicken`]
         },
         {
-            items: ['simplefarming:brewing_barrel'],
-            text: [`${id_prefix}brewing_barrel`]
-        },
-        {
-            items: ['simplefarming:brewing_barrel'],
-            text: [`${id_prefix}brewing_barrel_2`]
-        },
-        {
             items: disabledItems,
             text: [`${id_prefix}disabled_please_report`]
         },
@@ -441,26 +433,26 @@ onEvent('jei.information', (event) => {
         },
         {
             items: [
-                'compact_drawer',
-                'drawer_controller',
-                'slave',
-                'trim',
-                'full_one',
-                'full_two',
-                'full_four',
-                'half_one',
-                'half_two',
-                'half_four'
-            ].map((item) => 'framedcompactdrawers:framed_' + item),
+                'framedcompactdrawers:framed_compact_drawer',
+                'framedcompactdrawers:framed_drawer_controller',
+                'framedcompactdrawers:framed_slave',
+                'framedcompactdrawers:framed_trim',
+                'framedcompactdrawers:framed_full_one',
+                'framedcompactdrawers:framed_full_two',
+                'framedcompactdrawers:framed_full_four',
+                'framedcompactdrawers:framed_half_one',
+                'framedcompactdrawers:framed_half_two',
+                'framedcompactdrawers:framed_half_four'
+            ],
             text: [`${id_prefix}framed_drawers`]
         }
     ];
 
     recipes.forEach((recipe) => {
         for (let i = 0; i < recipe.text.length; i++) {
-            if (recipe.with[i]) {
+            try {
                 recipe.text[i] = Text.translate(recipe.text[i], recipe.with[i]);
-            } else {
+            } catch (e) {
                 recipe.text[i] = Text.translate(recipe.text[i]);
             }
         }
