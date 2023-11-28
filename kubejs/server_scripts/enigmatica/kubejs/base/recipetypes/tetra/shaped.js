@@ -53,7 +53,7 @@ onEvent('recipes', (event) => {
                 'double/basic_handle_material': 'basic_handle/stick'
             }),
             pattern: [' # ', ' /#', '/  '],
-            key: { '#': '#minecraft:planks', '/': '$forge:rods/wooden' },
+            key: { '#': '#minecraft:planks', '/': '#forge:rods/wooden' },
             id: 'tetra:hammer/oak'
         }
     ];
