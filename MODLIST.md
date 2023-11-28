@@ -34,7 +34,7 @@
   * [BetterAdvancements-1.16.5-0.1.1.115.jar](https://www.curseforge.com/minecraft/mc-mods/better-advancements/files/3404330) (by [way2muchnoise](https://www.curseforge.com/members/way2muchnoise/projects))
   * [betterbiomeblend-1.16.4-1.2.9-forge.jar](https://www.curseforge.com/minecraft/mc-mods/better-biome-blend/files/3421281) (by [FionaTheMortal](https://www.curseforge.com/members/fionathemortal/projects))
   * [BetterBurning-1.16.5-6.0.8.jar](https://www.curseforge.com/minecraft/mc-mods/better-burning/files/3732288) (by [DarkhaxDev](https://www.curseforge.com/members/darkhaxdev/projects))
-  * [betterendforge-1.16.5-2.5.jar](https://www.curseforge.com/minecraft/mc-mods/betterend-re-forked/files/3523090) (by [someoneelsewastaken](https://www.curseforge.com/members/someoneelsewastaken/projects))
+  * [better-end-potato-edition-1.16.5-2.10.6.jar](https://www.curseforge.com/minecraft/mc-mods/better-end-potato-edition/files/4828383) (by [pOtAto__bOy](https://www.curseforge.com/members/potato__boy/projects))
   * [biomeidfixer-1.16.5-1.0.1.s5.jar](https://www.curseforge.com/minecraft/mc-mods/biome-id-fixer/files/3446595) (by [desagas](https://www.curseforge.com/members/desagas/projects))
   * [BHMenu-Forge-1.16.5-2.4.1.jar](https://www.curseforge.com/minecraft/mc-mods/bisecthosting-server-integration-menu-forge/files/4743098) (by [BisectHosting](https://www.curseforge.com/members/bisecthosting/projects))
   * [BloodMagic-1.16.4-3.1.13-39.jar](https://www.curseforge.com/minecraft/mc-mods/blood-magic/files/3870899) (by [WayofTime](https://www.curseforge.com/members/wayoftime/projects))
