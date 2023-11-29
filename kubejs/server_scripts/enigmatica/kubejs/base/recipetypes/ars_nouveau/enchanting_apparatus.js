@@ -43,7 +43,7 @@ onEvent('recipes', (event) => {
         {
             output: Item.of(
                 'immersiveengineering:revolver',
-                '{perks:{cooldown:0.5d,luck:1.5d,noise:0.5d},upgrades:{}}'
+                '{perks:{cooldown:0.5d,luck:2d,noise:0.5d},upgrades:{}}'
             ),
             inputs: [
                 '#forge:ingots/sky',
