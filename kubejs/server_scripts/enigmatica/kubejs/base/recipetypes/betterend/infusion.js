@@ -186,16 +186,17 @@ onEvent('recipes', (event) => {
         }
     ];
 
-    enchantments.forEach((enchant) => {
+    enchantments.forEach((enchantment) => {
+        let [modid, name] = enchantment.enchant.split(':', 2);
         recipes.push({
             input: 'minecraft:book',
             catalysts: [
                 'betterendforge:enchanted_petal',
                 'minecraft:lapis_lazuli',
                 'thermal:gold_coin',
-                enchant.inputs[0],
-                enchant.inputs[1],
-                enchant.inputs[2],
+                enchantment.inputs[0],
+                enchantment.inputs[1],
+                enchantment.inputs[2],
                 'botania:cosmetic_red_ribbons',
                 'minecraft:lapis_lazuli'
             ],
@@ -205,14 +206,14 @@ onEvent('recipes', (event) => {
                 tag: {
                     StoredEnchantments: [
                         {
-                            id: enchant.enchant,
-                            lvl: enchant.level
+                            id: enchantment.enchant,
+                            lvl: enchantment.level
                         }
                     ]
                 }
             },
             time: 300,
-            id: `betterend:${enchant.enchant.split(':')[1]}_book`
+            id: `betterendforge:${name}_book`
         });
     });
 
