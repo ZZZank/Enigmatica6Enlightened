@@ -77,7 +77,7 @@ onEvent('recipes', (event) => {
             level: 2
         },
         {
-            inputs: ['archers_paradox:blaze_arrow', 'create:rose_quartz', 'archers_paradox:blaze_arrow'],
+            inputs: ['minecraft:blaze_powder', 'create:rose_quartz', 'minecraft:blaze_powder'],
             enchant: 'minecraft:fire_aspect',
             level: 1
         },
@@ -302,8 +302,8 @@ onEvent('recipes', (event) => {
                     ]
                 }
             },
-            time: 300,
-            id: `betterendforge:${name}_book`
+            time: 100,
+            id: enchantment.id || `betterendforge:${name}_book`
         });
     });
 
