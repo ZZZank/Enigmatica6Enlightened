@@ -72,9 +72,7 @@ onEvent('recipes', (event) => {
             level: 2
         },
         {
-            inputs: ['minecraft:scute',
-                'minecraft:shield',
-                'minecraft:scute'],
+            inputs: ['minecraft:scute', 'minecraft:shield', 'minecraft:scute'],
             enchant: 'minecraft:projectile_protection',
             level: 2
         },
@@ -89,7 +87,11 @@ onEvent('recipes', (event) => {
             level: 1
         },
         {
-            inputs: ['ars_nouveau:greater_experience_gem', 'botania:rune_mana', 'ars_nouveau:greater_experience_gem'],
+            inputs: [
+                'ars_nouveau:greater_experience_gem',
+                'botania:rune_mana',
+                'ars_nouveau:greater_experience_gem'
+            ],
             enchant: 'minecraft:mending',
             level: 1
         },
@@ -114,17 +116,29 @@ onEvent('recipes', (event) => {
             level: 2
         },
         {
-            inputs: ['tconstruct:quartz_shuriken', 'tconstruct:manyullyn_ingot', 'tconstruct:quartz_shuriken'],
+            inputs: [
+                'tconstruct:quartz_shuriken',
+                'tconstruct:manyullyn_ingot',
+                'tconstruct:quartz_shuriken'
+            ],
             enchant: 'minecraft:sharpness',
             level: 2
         },
         {
-            inputs: ['minecraft:fermented_spider_eye', 'tconstruct:quartz_shuriken', 'minecraft:fermented_spider_eye'],
+            inputs: [
+                'minecraft:fermented_spider_eye',
+                'tconstruct:quartz_shuriken',
+                'minecraft:fermented_spider_eye'
+            ],
             enchant: 'minecraft:bane_of_arthropods',
             level: 2
         },
         {
-            inputs: ['minecraft:netherite_scrap', 'meetyourfight:velvet_fortune', 'minecraft:netherite_scrap'],
+            inputs: [
+                'minecraft:netherite_scrap',
+                'meetyourfight:velvet_fortune',
+                'minecraft:netherite_scrap'
+            ],
             enchant: 'minecraft:fortune',
             level: 2
         },
@@ -139,21 +153,68 @@ onEvent('recipes', (event) => {
             level: 1
         },
         {
-            inputs: ['tconstruct:sky_congealed_slime', 'ars_nouveau:glyph_gust', 'tconstruct:sky_congealed_slime'],
+            inputs: [
+                'tconstruct:sky_congealed_slime',
+                'ars_nouveau:glyph_gust',
+                'tconstruct:sky_congealed_slime'
+            ],
             enchant: 'minecraft:punch',
             level: 2
         },
         {
-            inputs: ['emendatusenigmatica:emerald_plate', 'modularrouters:blast_upgrade', 'emendatusenigmatica:emerald_plate'],
+            inputs: [
+                'emendatusenigmatica:emerald_plate',
+                'modularrouters:blast_upgrade',
+                'emendatusenigmatica:emerald_plate'
+            ],
             enchant: 'minecraft:blast_protection',
             level: 2
         },
         {
-            inputs: ['pneumaticcraft:heat_pipe', 'betterendforge:ancient_emerald_ice', 'pneumaticcraft:heat_pipe'],
+            inputs: [
+                'pneumaticcraft:heat_pipe',
+                'betterendforge:ancient_emerald_ice',
+                'pneumaticcraft:heat_pipe'
+            ],
             enchant: 'minecraft:frost_walker',
             level: 1
+        },
+        {
+            inputs: ['minecraft:lily_pad', 'betterendforge:end_lily_seed', 'minecraft:lily_pad'],
+            enchant: 'minecraft:depth_strider',
+            level: 2
         }
     ];
+
+    enchantments.forEach((enchant) => {
+        recipes.push({
+            input: 'minecraft:book',
+            catalysts: [
+                'betterendforge:enchanted_petal',
+                'minecraft:lapis_lazuli',
+                'thermal:gold_coin',
+                enchant.inputs[0],
+                enchant.inputs[1],
+                enchant.inputs[2],
+                'botania:cosmetic_red_ribbons',
+                'minecraft:lapis_lazuli'
+            ],
+            output: {
+                id: 'minecraft:enchanted_book',
+                Count: 1,
+                tag: {
+                    StoredEnchantments: [
+                        {
+                            id: enchant.enchant,
+                            lvl: enchant.level
+                        }
+                    ]
+                }
+            },
+            time: 300,
+            id: `betterend:${enchant.enchant.split(':')[1]}_book`
+        });
+    });
 
     recipes.forEach((recipe) => {
         recipe.type = 'betterendforge:infusion';
