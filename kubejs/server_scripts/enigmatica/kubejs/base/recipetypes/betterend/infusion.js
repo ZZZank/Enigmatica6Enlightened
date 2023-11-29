@@ -183,6 +183,101 @@ onEvent('recipes', (event) => {
             inputs: ['minecraft:lily_pad', 'betterendforge:end_lily_seed', 'minecraft:lily_pad'],
             enchant: 'minecraft:depth_strider',
             level: 2
+        },
+        {
+            inputs: ['minecraft:lead', 'ars_nouveau:glyph_launch', 'minecraft:heart_of_the_sea'],
+            enchant: 'minecraft:riptide',
+            level: 2
+        },
+        {
+            inputs: ['minecraft:cactus', 'botania:bellethorn', 'minecraft:cactus'],
+            enchant: 'minecraft:thorns',
+            level: 2
+        },
+        {
+            inputs: [
+                'pneumaticcraft:ingot_iron_compressed',
+                'minecraft:diamond',
+                'pneumaticcraft:ingot_iron_compressed'
+            ],
+            enchant: 'minecraft:unbreaking',
+            level: 2
+        },
+        {
+            inputs: [
+                'tconstruct:earth_congealed_slime',
+                'ars_nouveau:glyph_gust',
+                'tconstruct:earth_congealed_slime'
+            ],
+            enchant: 'minecraft:knockback',
+            level: 2
+        },
+        {
+            inputs: [
+                'minecraft:glistering_melon_slice',
+                'emendatusenigmatica:silver_plate',
+                'minecraft:glistering_melon_slice'
+            ],
+            enchant: 'minecraft:smite',
+            level: 2
+        },
+        {
+            inputs: [
+                'archers_paradox:blaze_arrow',
+                'minecraft:flint_and_steel',
+                'archers_paradox:blaze_arrow'
+            ],
+            enchant: 'minecraft:flame',
+            level: 1
+        },
+        {
+            inputs: [
+                'abnormals_delight:pickerelweed_juice',
+                'minecraft:nautilus_shell',
+                'abnormals_delight:pickerelweed_juice'
+            ],
+            enchant: 'minecraft:respiration',
+            level: 2
+        },
+        {
+            inputs: ['minecraft:magma_cream', 'emendatusenigmatica:sulfur_dust', 'minecraft:blaze_rod'],
+            enchant: 'minecraft:fire_protection',
+            level: 2
+        },
+        {
+            inputs: ['betterendforge:amber_gem', 'minecraft:redstone_block', 'betterendforge:amber_gem'],
+            enchant: 'minecraft:efficiency',
+            level: 2
+        },
+        {
+            inputs: ['minecraft:ender_eye', 'minecraft:heart_of_the_sea', 'minecraft:ender_eye'],
+            enchant: 'minecraft:loyalty',
+            level: 2
+        },
+        {
+            inputs: ['minecraft:rabbit_foot', 'minecraft:golden_carrot', 'minecraft:lapis_block'],
+            enchant: 'minecraft:looting',
+            level: 2
+        },
+        {
+            inputs: [
+                'create:polished_rose_quartz',
+                'minecraft:redstone_block',
+                'create:polished_rose_quartz'
+            ],
+            enchant: 'minecraft:quick_charge',
+            level: 2
+        },
+        {
+            inputs: ['minecraft:prismarine_shard', 'minecraft:diamond_sword', 'minecraft:prismarine_shard'],
+            enchant: 'minecraft:impaling',
+            level: 2
+        },
+        {
+            inputs: ['minecraft:emerald', 'aquaculture:gold_hook', 'minecraft:emerald'],
+            enchant: 'minecraft:luck_of_the_sea',
+            level: 2,
+            id: 'betterendforge:luck_of_sea_book'
         }
     ];
 
