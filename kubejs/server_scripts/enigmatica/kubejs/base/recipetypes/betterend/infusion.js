@@ -34,11 +34,6 @@ onEvent('recipes', (event) => {
 
     let enchantments = [
         {
-            inputs: ['botania:bellethorn', '', 'bloodmagic:sacrificialdagger'],
-            enchant: 'apotheosis:life_mending',
-            level: 2
-        },
-        {
             inputs: [
                 'emendatusenigmatica:steel_plate',
                 'minecraft:turtle_helmet',
