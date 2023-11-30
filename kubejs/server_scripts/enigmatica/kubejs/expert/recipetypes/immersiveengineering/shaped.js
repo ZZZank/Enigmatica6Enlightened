@@ -21,7 +21,7 @@ onEvent('recipes', (event) => {
             output: 'immersiveengineering:speedloader',
             pattern: ['  A', 'AAB', '  A'],
             key: {
-                A: 'forge:ingots/steel',
+                A: '#forge:ingots/steel',
                 B: 'create:precision_mechanism'
             },
             id: 'immersiveengineering:crafting/speedloader'
