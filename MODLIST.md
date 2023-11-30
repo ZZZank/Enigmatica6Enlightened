@@ -1,4 +1,4 @@
-## Enlightened6 - 2.3.9
+## Enlightened6 - 2.4.0
   * [DustrialDecor-1.3.1.jar](https://www.curseforge.com/minecraft/mc-mods/dustrial-decor/files/3845940) (by [BlueDuckYT](https://www.curseforge.com/members/blueduckyt/projects))
   * [ae2ao-8.1.1-1.16.jar](https://www.curseforge.com/minecraft/mc-mods/forge-ae2-additional-opportunity/files/4076650) (by [DomamaN202](https://www.curseforge.com/members/domaman202/projects))
   * [abnormals_delight-1.16.5-1.2.1.jar](https://www.curseforge.com/minecraft/mc-mods/abnormals-delight/files/3549585) (by [TeamAbnormals](https://www.curseforge.com/members/teamabnormals/projects))
