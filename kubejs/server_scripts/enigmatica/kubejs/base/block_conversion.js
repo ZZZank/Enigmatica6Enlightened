@@ -69,7 +69,6 @@
     });
 
     onEvent('recipes', (event) => {
-
         recipes.forEach((recipe) => {
             // create deploying
             event.recipes.create
