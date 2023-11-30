@@ -29,6 +29,33 @@ onEvent('recipes', (event) => {
             },
             time: 300,
             id: id_prefix + 'life_mending'
+        },
+        {
+            input: 'minecraft:book',
+            catalysts: [
+                '#forge:gems/nitro',
+                '#forge:ingots/sky',
+                '#forge:gems/nitro',
+                '#forge:ingots/iesnium',
+                '#forge:gems/nitro',
+                '#forge:ingots/sky',
+                '#forge:gems/nitro',
+                '#forge:ingots/iesnium'
+            ],
+            output: {
+                id: 'minecraft:enchanted_book',
+                Count: 1,
+                tag: {
+                    StoredEnchantments: [
+                        {
+                            id: 'apotheosis:true_infinity',
+                            lvl: 1
+                        }
+                    ]
+                }
+            },
+            time: 300,
+            id: id_prefix + 'true_infinity'
         }
     ];
 
