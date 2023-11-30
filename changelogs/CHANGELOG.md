@@ -1,3 +1,32 @@
+## Enlightened6 - 2.3.1 -> 2.3.9
+
+## This is a preview version of 2.4.0 update, so there can be problems. If you encounter any issue, please report it on [Github Issue page](https://github.com/ZZZank/Enlightened6/issues).
+
+### Mods Added
+
+-   [Not Enough Recipe Book [NERB]](https://www.curseforge.com/minecraft/mc-mods/notenoughrecipebook) (by [SSKirillSS](https://www.curseforge.com/members/SSKirillSS/projects))
+
+### Mods Removed
+
+-   [Game Stages](https://www.curseforge.com/minecraft/mc-mods/game-stages) (by [DarkhaxDev](https://www.curseforge.com/members/DarkhaxDev/projects))
+-   [Restriction: Re-Restricted](https://www.curseforge.com/minecraft/mc-mods/restriction-re-restricted) (by [Darkere](https://www.curseforge.com/members/Darkere/projects))
+
+### Improvement
+
+Full changelog will be avaliable when 2.4.0 is released.
+
+-   New feature: Hand over your items
+-   New: enable Compact Crafting
+-   rework GameStage and Restriction feature
+-   right-click recipe
+-   ...
+
+### Bugfixes
+
+-   ...
+
+---
+
 ## Enlightened6 & Enlightened6Expert - 2.3.0 -> 2.3.1
 
 _Using Forge-1.16.5-36.2.39_ | _[Mod Updates](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/changelog_mods_2.3.1.md)_ | _[Modlist](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/modlist_2.3.1.md)_
