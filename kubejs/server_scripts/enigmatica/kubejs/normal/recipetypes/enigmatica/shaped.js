@@ -139,12 +139,8 @@ onEvent('recipes', (event) => {
         );
     });
 
-    buildWoodVariants.forEach((wood) => {
-        if (wood.modId == 'minecraft') {
-            return;
-        }
-
-        let dupes = [
+    {
+        let woodTypeDupes = [
             'palo_verde',
             'withering_oak',
             'blue_archwood',
@@ -156,71 +152,73 @@ onEvent('recipes', (event) => {
             'sappy_maple',
             'avocado'
         ];
-
-        if (dupes.includes(wood.logType)) {
-            return;
-        }
-
-        //All recipes using planks here
-
+        let acceptedPlank = [];
+        let acceptedSlab = [];
+        buildWoodVariants.forEach((variant) => {
+            if (variant.modId == 'minecraft' || woodTypeDupes.includes(variant.logType)) {
+                return;
+            }
+            acceptedPlank.push(variant.plankBlock);
+            acceptedSlab.push(variant.slabBlock);
+        });
         recipes.push(
             {
                 output: Item.of('storagedrawers:oak_full_drawers_1'),
                 pattern: ['AAA', ' C ', 'AAA'],
                 key: {
-                    A: wood.plankBlock,
+                    A: acceptedPlank,
                     C: '#forge:chests'
                 },
-                id: `${id_prefix}oak_full_drawers_1_from_${wood.logType}_planks`
+                id: `${id_prefix}oak_full_drawers_1_from_unvanilla_planks`
             },
             {
                 output: Item.of('storagedrawers:oak_full_drawers_2', 2),
                 pattern: ['ACA', 'AAA', 'ACA'],
                 key: {
-                    A: wood.plankBlock,
+                    A: acceptedPlank,
                     C: '#forge:chests'
                 },
-                id: `${id_prefix}oak_full_drawers_2_from_${wood.logType}_planks`
+                id: `${id_prefix}oak_full_drawers_2_from_unvanilla_planks`
             },
             {
                 output: Item.of('storagedrawers:oak_full_drawers_4', 4),
                 pattern: ['CAC', 'AAA', 'CAC'],
                 key: {
-                    A: wood.plankBlock,
+                    A: acceptedPlank,
                     C: '#forge:chests'
                 },
-                id: `${id_prefix}oak_full_drawers_4_from_${wood.logType}_planks`
+                id: `${id_prefix}oak_full_drawers_4_from_unvanilla_planks`
             },
 
             {
                 output: Item.of('storagedrawers:oak_half_drawers_1'),
                 pattern: ['AAA', ' C ', 'AAA'],
                 key: {
-                    A: wood.slabBlock,
+                    A: acceptedSlab,
                     C: '#forge:chests'
                 },
-                id: `${id_prefix}oak_half_drawers_1_from_${wood.logType}_slab`
+                id: `${id_prefix}oak_half_drawers_1_from_unvanilla_slab`
             },
             {
                 output: Item.of('storagedrawers:oak_half_drawers_2', 2),
                 pattern: ['ACA', 'AAA', 'ACA'],
                 key: {
-                    A: wood.slabBlock,
+                    A: acceptedSlab,
                     C: '#forge:chests'
                 },
-                id: `${id_prefix}oak_half_drawers_2_from_${wood.logType}_slab`
+                id: `${id_prefix}oak_half_drawers_2_from_unvanilla_slab`
             },
             {
                 output: Item.of('storagedrawers:oak_half_drawers_4', 4),
                 pattern: ['CAC', 'AAA', 'CAC'],
                 key: {
-                    A: wood.slabBlock,
+                    A: acceptedSlab,
                     C: '#forge:chests'
                 },
-                id: `${id_prefix}oak_half_drawers_4_from_${wood.logType}_slab`
+                id: `${id_prefix}oak_half_drawers_4_from_unvanilla_slab`
             }
         );
-    });
+    }
 
     recipes.forEach((recipe) => {
         event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
