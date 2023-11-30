@@ -1,3 +1,60 @@
+## Enlightened6 & Enlightened6Expert - 2.3.1 -> 2.4.0
+
+_Using Forge-1.16.5-36.2.39_ | _[Mod Updates](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/changelog_mods_2.4.0.md)_ | _[Modlist](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/modlist_2.4.0.md)_
+
+### Mods Added
+
+-   [Better End Potato Edition](https://www.curseforge.com/minecraft/mc-mods/better-end-potato-edition) (by [pOtAto\_\_bOy](https://www.curseforge.com/members/pOtAto__bOy/projects))
+-   [Embeddium](https://www.curseforge.com/minecraft/mc-mods/embeddium) (by [embeddedt](https://www.curseforge.com/members/embeddedt/projects))
+-   [MmmMmmMmmMmm (Target Dummy)](https://www.curseforge.com/minecraft/mc-mods/mmmmmmmmmmmm) (by [MehVahdJukaar](https://www.curseforge.com/members/MehVahdJukaar/projects))
+-   [Not Enough Recipe Book [NERB]](https://www.curseforge.com/minecraft/mc-mods/notenoughrecipebook) (by [SSKirillSS](https://www.curseforge.com/members/SSKirillSS/projects))
+
+### Mods Removed
+
+-   [BetterEnd Reforked](https://www.curseforge.com/minecraft/mc-mods/betterend-re-forked) (by [someoneelsewastaken](https://www.curseforge.com/members/someoneelsewastaken/projects))
+-   [Compact Crafting](https://www.curseforge.com/minecraft/mc-mods/compact-crafting) (by [RobotGryphon](https://www.curseforge.com/members/RobotGryphon/projects))
+-   [Game Stages](https://www.curseforge.com/minecraft/mc-mods/game-stages) (by [DarkhaxDev](https://www.curseforge.com/members/DarkhaxDev/projects))
+-   [Guns Without Roses](https://www.curseforge.com/minecraft/mc-mods/guns-without-roses) (by [Lykrast](https://www.curseforge.com/members/Lykrast/projects))
+-   [Restriction: Re-Restricted](https://www.curseforge.com/minecraft/mc-mods/restriction-re-restricted) (by [Darkere](https://www.curseforge.com/members/Darkere/projects))
+-   [Rubidium](https://www.curseforge.com/minecraft/mc-mods/rubidium) (by [Asek3](https://www.curseforge.com/members/Asek3/projects))
+
+### Improvement
+
+-   Hand over your items
+    > You can give items on your hand to your firends simply by shift-right-click your friends, no need to toss items around anymore!
+-   Right-click block conversion
+    > Shift-right-click a block with something in your hand, boom, a new block. If you don't want to do it by hand, don't worry, it also comes with a Create Deploying recipe.
+-   Allow manually enhancing Revolver
+    > You can makes your Revolver better through custom recipes, instead of completely relying on Villager Trades
+-   rework Betterend::infusion recipe for enchantment book
+    > Including refactoring existed recipe for more than 30 kinds of enchantment. Also added recipes for two powerful enchantment
+-   Runed Marble now require Golden Leaves
+-   [Expert] Rework Storage Drawers recipe to merge hundreds of similar recipe into one
+    > Storage Drawers recipe rework for normal mode coming soon.
+-   Rework Chest/Sign/CraftingTable recipes to merge hundreds of similar recipe into one
+-   rework GameStage and Restriction feature, no additional mods required now!
+-   Rework Tooltips and JEI Descriptions to make them localizable
+    > This improvement has been brought back to original E6E
+-   Cutting recipe for turning Root into Root(item)
+    > This improvement has been brought back to original E6E
+-   A new recipe for 'catching' koi from koi_bucket
+-   A new way of producing Flux Dust, using Matter Block
+-   Ender Cell now require Conductive Frame
+-   Enable Crate and Backpack from Quark
+-   Enable Cake slices for Neapolitan cakes
+-   and many recipe changes, and internal changes, and many config cleanup, and ...
+
+### Bugfixes
+
+-   Flux Nugget recipe
+-   Immersive Cooking scrpits not fully removed
+-   packmode accepts invalid modes
+-   Serenity effect blocking nearly any spawns
+-   Supplementaries Manual not in Akashic Tome
+-   Life Mending too hard to obtain after Eidolon removal
+
+---
+
 ## Enlightened6 - 2.3.1 -> 2.3.9
 
 ## This is a preview version of 2.4.0 update, so there can be problems. If you encounter any issue, please report it on [Github Issue page](https://github.com/ZZZank/Enlightened6/issues).

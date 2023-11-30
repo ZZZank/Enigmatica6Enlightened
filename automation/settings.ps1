@@ -29,7 +29,7 @@ $MODPACK_NAME = "Enlightened6"
 $CLIENT_NAME = "Enlightened6"
 
 # Version Of The Modpack
-$MODPACK_VERSION = "2.3.9"
+$MODPACK_VERSION = "2.4.0"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
