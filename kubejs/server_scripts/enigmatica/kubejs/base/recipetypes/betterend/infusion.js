@@ -310,17 +310,21 @@ onEvent('recipes', (event) => {
     recipes.forEach((recipe) => {
         recipe.type = 'betterendforge:infusion';
         let processed = [];
-        for (let i in recipe.catalysts) {
-            if (recipe.catalysts[i] == '') {
-                continue;
+        recipe.catalysts.forEach((catalyst, i) => {
+            if (catalyst == '') {
+                return;
             }
-            processed.push({
-                item: {
-                    item: recipe.catalysts[i]
-                },
-                index: parseInt(i)
-            });
-        }
+            let entry = {
+                item: {},
+                index: i
+            };
+            if (catalyst.startsWith('#')) {
+                entry.tag = catalyst.substring(1);
+            } else {
+                entry.item = catalyst;
+            }
+            processed.push(entry);
+        });
         recipe.catalysts = processed;
         recipe.input = {
             item: recipe.input
