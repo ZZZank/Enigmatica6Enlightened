@@ -3,6 +3,70 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/ars_nouveau/enchanting_apparatus/';
     const recipes = [
         {
+            output: Item.of(
+                'immersiveengineering:revolver',
+                '{perks:{cooldown:0.75d,luck:1.0d,noise:0.75d},upgrades:{}}'
+            ),
+            inputs: [
+                '#forge:ingots/infused_iron',
+                '#forge:ingots/infused_iron',
+                '#forge:ingots/infused_iron',
+                '#forge:storage_blocks/mana',
+                '#forge:storage_blocks/mana',
+                'atum:godforged_block',
+                'atum:godforged_block',
+                'atum:godforged_block'
+            ],
+            reagent: 'immersiveengineering:revolver',
+            sourceCost: 2000,
+            id: `${id_prefix}revolver_tier_1`
+        },
+        {
+            output: Item.of(
+                'immersiveengineering:revolver',
+                '{perks:{cooldown:0.75d,luck:1.0d,noise:0.75d},upgrades:{}}'
+            ),
+            inputs: [
+                '#forge:ingots/infused_iron',
+                '#forge:ingots/infused_iron',
+                '#forge:ingots/infused_iron',
+                '#forge:storage_blocks/mana',
+                '#forge:storage_blocks/mana',
+                '#forge:storage_blocks/lapis',
+                'atum:anput_godforged_block',
+                '#forge:storage_blocks/lapis'
+            ],
+            reagent: 'immersiveengineering:revolver',
+            sourceCost: 2000,
+            id: `${id_prefix}revolver_tier_1_alt`
+        },
+        {
+            output: Item.of(
+                'immersiveengineering:revolver',
+                '{perks:{cooldown:0.5d,luck:2d,noise:0.5d},upgrades:{}}'
+            ),
+            inputs: [
+                '#forge:ingots/sky',
+                '#forge:ingots/sky',
+                '#forge:ingots/sky',
+                '#forge:storage_blocks/lapis',
+                '#forge:storage_blocks/lapis',
+                '#forge:storage_blocks/mana',
+                'bloodmagic:soulgempetty',
+                '#forge:storage_blocks/mana'
+            ],
+            reagent: 'immersiveengineering:revolver',
+            sourceCost: 5000,
+            id: `${id_prefix}revolver_tier_2`
+        },
+        {
+            inputs: [],
+            reagent: 'minecraft:bucket',
+            sourceCost: 1000,
+            output: 'ars_nouveau:bucket_of_mana',
+            id: `${id_prefix}bucket_of_mana`
+        },
+        {
             inputs: [
                 'minecraft:conduit',
                 'kubejs:monster_mash',
@@ -33,8 +97,13 @@ onEvent('recipes', (event) => {
         }
     ];
     recipes.forEach((recipe) => {
-        event.recipes.ars_nouveau
-            .enchanting_apparatus(recipe.output, recipe.reagent, recipe.inputs)
-            .id(recipe.id);
+        recipe.sourceCost
+            ? event.recipes.ars_nouveau
+                  .enchanting_apparatus(recipe.output, recipe.reagent, recipe.inputs)
+                  .merge({ sourceCost: recipe.sourceCost })
+                  .id(recipe.id)
+            : event.recipes.ars_nouveau
+                  .enchanting_apparatus(recipe.output, recipe.reagent, recipe.inputs)
+                  .id(recipe.id);
     });
 });

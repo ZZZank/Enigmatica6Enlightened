@@ -28,10 +28,10 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                Ingredient.of('#forge:ingots/copper'),
+                Ingredient.of('create:fluid_pipe'),
                 Ingredient.of('#thermal:crafting/dies/bullet_casing')
             ],
-            outputs: [Item.of('immersiveengineering:empty_casing', 2)],
+            outputs: [Item.of('immersiveengineering:empty_casing')],
             energy: 2400,
             id: `${id_prefix}empty_casing`
         },

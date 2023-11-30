@@ -96,7 +96,7 @@ onEvent('recipes', (event) => {
                 'bloodmagic:plantoil',
                 'occultism:chalk_white_impure',
                 'betterendforge:enchanted_petal',
-                '#forge:dusts/flux_infused'
+                'ars_nouveau:bucket_of_mana'
             ],
             output: 'occultism:chalk_purple_impure',
             count: 1,

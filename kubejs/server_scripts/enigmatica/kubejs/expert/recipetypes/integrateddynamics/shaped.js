@@ -51,7 +51,7 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'integrateddynamics:part_display_panel',
-            pattern: ['AAA', 'ABA', 'AAA'],
+            pattern: ['BA', 'AA'],
             key: {
                 A: Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:nether"}'),
                 B: 'integrateddynamics:part_static_light_panel'

@@ -19,11 +19,6 @@ onEvent('recipes', (event) => {
             replaceWith: 'thermal:lightning_charge'
         },
         {
-            filter: { id: 'immersivecooking:fried_potato_cubes' },
-            toReplace: 'immersivecooking:potato_slice',
-            replaceWith: 'immersivecooking:potato_cubes'
-        },
-        {
             filter: {
                 not: [{ id: 'minecraft:dried_kelp_block' }]
             },
@@ -41,89 +36,78 @@ onEvent('recipes', (event) => {
             replaceWith: '#enigmatica:crafting_slabs'
         },
         {
-            filter: {},
             toReplace: 'emendatusenigmatica:coke_block',
             replaceWith: '#forge:storage_blocks/coke'
         },
         {
-            filter: {},
             toReplace: 'emendatusenigmatica:arcane_block',
             replaceWith: '#forge:storage_blocks/mana'
         },
         {
-            filter: {},
             toReplace: 'emendatusenigmatica:sulfur_gem',
             replaceWith: '#forge:gems/sulfur'
         },
         {
-            filter: {},
             toReplace: 'emendatusenigmatica:steel_block',
             replaceWith: '#forge:storage_blocks/steel'
         },
-        { filter: {}, toReplace: 'thermal:sawdust', replaceWith: 'emendatusenigmatica:wood_dust' },
+        { toReplace: 'thermal:sawdust', replaceWith: 'emendatusenigmatica:wood_dust' },
         {
-            filter: {},
             toReplace: 'architects_palette:withered_bone',
             replaceWith: '#forge:bones/wither'
         },
-        { filter: {}, toReplace: 'appliedenergistics2:silicon', replaceWith: '#forge:silicon' },
+        { toReplace: 'appliedenergistics2:silicon', replaceWith: '#forge:silicon' },
         {
-            filter: {},
             toReplace: 'betterendforge:thallasium_ore',
             replaceWith: '#forge:ores/thallasium'
         },
         {
-            filter: {},
             toReplace: 'astralsorcery:starmetal_ore',
             replaceWith: '#forge:ores/starmetal'
         },
         {
-            filter: {},
             toReplace: 'mythicbotany:elementium_ore',
             replaceWith: '#forge:ores/elementium'
         },
-        { filter: {}, toReplace: 'thermal:rubber', replaceWith: 'industrialforegoing:dryrubber' },
-        { filter: {}, toReplace: 'thermal:cinnabar', replaceWith: '#forge:gems/cinnabar' },
-        { filter: {}, toReplace: 'thermal:sulfur', replaceWith: '#forge:gems/sulfur' },
-        { filter: {}, toReplace: 'thermal:apatite', replaceWith: '#forge:gems/apatite' },
-        { filter: {}, toReplace: 'thermal:niter', replaceWith: '#forge:gems/niter' },
-        { filter: {}, toReplace: 'thermal:coal_coke', replaceWith: '#forge:gems/coal_coke' },
+        { toReplace: 'thermal:rubber', replaceWith: 'industrialforegoing:dryrubber' },
+        { toReplace: 'thermal:cinnabar', replaceWith: '#forge:gems/cinnabar' },
+        { toReplace: 'thermal:sulfur', replaceWith: '#forge:gems/sulfur' },
+        { toReplace: 'thermal:apatite', replaceWith: '#forge:gems/apatite' },
+        { toReplace: 'thermal:niter', replaceWith: '#forge:gems/niter' },
+        { toReplace: 'thermal:coal_coke', replaceWith: '#forge:gems/coal_coke' },
         {
-            filter: {},
             toReplace: 'rftoolsbase:dimensionalshard',
             replaceWith: '#forge:gems/dimensional'
         },
-        { filter: {}, toReplace: 'ars_nouveau:mana_gem', replaceWith: '#forge:gems/mana' },
-        { filter: {}, toReplace: 'immersiveengineering:slag', replaceWith: '#forge:slag' },
-        { filter: {}, toReplace: 'thermal:slag', replaceWith: '#forge:slag' },
-        { filter: {}, toReplace: 'farmersdelight:fried_egg', replaceWith: '#forge:cooked_eggs' },
+        { toReplace: 'ars_nouveau:mana_gem', replaceWith: '#forge:gems/mana' },
+        { toReplace: 'immersiveengineering:slag', replaceWith: '#forge:slag' },
+        { toReplace: 'thermal:slag', replaceWith: '#forge:slag' },
+        { toReplace: 'farmersdelight:fried_egg', replaceWith: '#forge:cooked_eggs' },
         {
-            filter: {},
             toReplace: 'farmersdelight:brown_mushroom_colony',
             replaceWith: '#forge:mushroom_colonies/brown'
         },
         {
-            filter: {},
             toReplace: 'farmersdelight:red_mushroom_colony',
             replaceWith: '#forge:mushroom_colonies/red'
         },
-        { filter: {}, toReplace: 'betterendforge:ender_dust', replaceWith: '#forge:dusts/ender' },
-        { filter: {}, toReplace: 'minecraft:iron_ore', replaceWith: '#forge:ores/iron' },
-        { filter: {}, toReplace: 'minecraft:gold_ore', replaceWith: '#forge:ores/gold' },
-        { filter: {}, toReplace: 'upgrade_aquatic:beachgrass', replaceWith: '#forge:beach_grass' },
-        { filter: {}, toReplace: 'environmental:cattail', replaceWith: '#forge:cattails' },
-        { filter: {}, toReplace: 'pneumaticcraft:wheat_flour', replaceWith: '#forge:dusts/flour' },
-        { filter: {}, toReplace: 'create:wheat_flour', replaceWith: '#forge:dusts/flour' },
-        { filter: {}, toReplace: 'create:dough', replaceWith: '#forge:doughs' },
-        { filter: {}, toReplace: 'farmersdelight:wheat_dough', replaceWith: '#forge:doughs' },
-        { filter: {}, toReplace: 'create:bar_of_chocolate', replaceWith: '#forge:chocolate_bars' },
-        { filter: {}, toReplace: 'neapolitan:chocolate_bar', replaceWith: '#forge:chocolate_bars' },
+        { toReplace: 'betterendforge:ender_dust', replaceWith: '#forge:dusts/ender' },
+        { toReplace: 'minecraft:iron_ore', replaceWith: '#forge:ores/iron' },
+        { toReplace: 'minecraft:gold_ore', replaceWith: '#forge:ores/gold' },
+        { toReplace: 'upgrade_aquatic:beachgrass', replaceWith: '#forge:beach_grass' },
+        { toReplace: 'environmental:cattail', replaceWith: '#forge:cattails' },
+        { toReplace: 'pneumaticcraft:wheat_flour', replaceWith: '#forge:dusts/flour' },
+        { toReplace: 'create:wheat_flour', replaceWith: '#forge:dusts/flour' },
+        { toReplace: 'create:dough', replaceWith: '#forge:doughs' },
+        { toReplace: 'farmersdelight:wheat_dough', replaceWith: '#forge:doughs' },
+        { toReplace: 'create:bar_of_chocolate', replaceWith: '#forge:chocolate_bars' },
+        { toReplace: 'neapolitan:chocolate_bar', replaceWith: '#forge:chocolate_bars' },
         {
             filter: { mod: 'simplefarming' },
             toReplace: 'minecraft:cooked_chicken',
             replaceWith: '#forge:cooked_chicken'
         },
-        { filter: {}, toReplace: 'tconstruct:cobalt_nugget', replaceWith: '#forge:nuggets/cobalt' }
+        { toReplace: 'tconstruct:cobalt_nugget', replaceWith: '#forge:nuggets/cobalt' }
     ];
     event.replaceInput({}, 'thermal:bitumen', '#forge:gems/bitumen', true);
     event.replaceInput({}, 'immersivepetroleum:bitumen', '#forge:gems/bitumen', true);
@@ -172,8 +156,6 @@ onEvent('recipes', (event) => {
         'powah:solar_panel_starter',
         'powah:photoelectric_pane'
     );
-
-    event.replaceInput({ mod: 'astralsorcery' }, 'astralsorcery:marble_raw', '#forge:stones/marble');
 
     event.replaceInput(
         { type: 'minecraft:crafting_shaped', output: 'minecraft:piston' },
@@ -343,12 +325,7 @@ onEvent('recipes', (event) => {
             type: 'storage_blocks',
             replace: 'iron',
             replaceWith: 'aluminum',
-            items: [
-                'bloodmagic:soulforge',
-                'mininggadgets:upgrade_fortune_1',
-                'resourcefulbees:centrifuge_casing',
-                'xnet:antenna_base'
-            ]
+            items: ['bloodmagic:soulforge', 'resourcefulbees:centrifuge_casing', 'xnet:antenna_base']
         },
         {
             type: 'storage_blocks',
@@ -447,7 +424,6 @@ onEvent('recipes', (event) => {
             items: [
                 'mekanismgenerators:electromagnetic_coil',
                 'mekanism:energy_tablet',
-                'mininggadgets:upgrade_magnet',
                 'xnet:controller',
                 'thermal:rf_coil_xfer_augment',
                 'thermal:rf_coil_storage_augment',
@@ -576,6 +552,10 @@ onEvent('recipes', (event) => {
         });
     });
     recipes.forEach((recipe) => {
-        event.replaceInput(recipe.filter, recipe.toReplace, recipe.replaceWith);
+        let filter = {};
+        if (recipe.filter) {
+            filter = recipe.filter;
+        }
+        event.replaceInput(filter, recipe.toReplace, recipe.replaceWith);
     });
 });

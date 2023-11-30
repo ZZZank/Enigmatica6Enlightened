@@ -321,51 +321,6 @@ onEvent('recipes', (event) => {
             id: 'mekanism:digital_miner'
         },
         {
-            output: 'mininggadgets:mininggadget_simple',
-            pattern: [' AAABBB', 'CDEFFF ', ' CGCBBB', 'H      '],
-            key: {
-                A: 'immersiveengineering:toolupgrade_revolver_electro',
-                B: 'powah:dielectric_rod_horizontal',
-                C: 'mekanism:hdpe_sheet',
-                D: 'thermal:charge_bench',
-                E: 'rftoolsbase:infused_diamond',
-                F: industrialforegoing.laser_lens.magenta,
-                G: 'thermal:upgrade_augment_2',
-                H: Item.of('immersiveengineering:wooden_grip').ignoreNBT()
-            },
-            id: 'mininggadgets:mininggadget_simple'
-        },
-        {
-            output: 'mininggadgets:mininggadget_fancy',
-            pattern: [' AAABBB', 'CDEFFF ', ' CGCBBB', 'H      '],
-            key: {
-                A: 'immersiveengineering:toolupgrade_revolver_electro',
-                B: 'powah:dielectric_rod_horizontal',
-                C: 'mekanism:hdpe_sheet',
-                D: 'thermal:charge_bench',
-                E: 'rftoolsbase:infused_diamond',
-                F: industrialforegoing.laser_lens.pink,
-                G: 'thermal:upgrade_augment_2',
-                H: Item.of('immersiveengineering:wooden_grip').ignoreNBT()
-            },
-            id: 'mininggadgets:mininggadget_fancy'
-        },
-        {
-            output: 'mininggadgets:mininggadget',
-            pattern: [' AAABBB', 'CDEFFF ', ' CGCBBB', 'H      '],
-            key: {
-                A: 'immersiveengineering:toolupgrade_revolver_electro',
-                B: 'powah:dielectric_rod_horizontal',
-                C: 'mekanism:hdpe_sheet',
-                D: 'thermal:charge_bench',
-                E: 'rftoolsbase:infused_diamond',
-                F: industrialforegoing.laser_lens.light_blue,
-                G: 'thermal:upgrade_augment_2',
-                H: Item.of('immersiveengineering:wooden_grip').ignoreNBT()
-            },
-            id: 'mininggadgets:mininggadget'
-        },
-        {
             output: 'thermal:flux_saw',
             pattern: [' A  ', 'BACD', 'AEFD', ' GCC'],
             key: {
@@ -408,121 +363,6 @@ onEvent('recipes', (event) => {
                 I: '#forge:circuits/ultimate'
             },
             id: 'fluxnetworks:fluxcontroller'
-        },
-        {
-            output: 'gunswithoutroses:iron_gun',
-            pattern: ['  A ', 'BCDE', ' FGH'],
-            key: {
-                A: '#forge:plates/steel',
-                B: Item.of('immersiveengineering:gunpart_barrel').ignoreNBT(),
-                C: Item.of('immersiveengineering:gunpart_drum').ignoreNBT(),
-                D: 'create:precision_mechanism',
-                E: Item.of('immersiveengineering:gunpart_hammer').ignoreNBT(),
-                F: '#forge:treated_wood_slab',
-                G: '#forge:nuggets/steel',
-                H: Item.of('immersiveengineering:wooden_grip').ignoreNBT()
-            },
-            id: 'gunswithoutroses:iron_gun'
-        },
-        {
-            output: 'gunswithoutroses:gold_gun',
-            pattern: ['  A ', 'BCDE', ' FGH'],
-            key: {
-                A: '#forge:plates/gold',
-                B: Item.of('immersiveengineering:gunpart_barrel').ignoreNBT(),
-                C: Item.of('immersiveengineering:gunpart_drum').ignoreNBT(),
-                D: 'create:precision_mechanism',
-                E: Item.of('immersiveengineering:gunpart_hammer').ignoreNBT(),
-                F: '#forge:treated_wood_slab',
-                G: '#forge:nuggets/steel',
-                H: Item.of('immersiveengineering:wooden_grip').ignoreNBT()
-            },
-            id: 'gunswithoutroses:gold_gun'
-        },
-        {
-            output: 'gunswithoutroses:diamond_shotgun',
-            pattern: ['  ABA ', 'CCCDEF', 'CCCDEF', ' I GH '],
-            key: {
-                A: '#forge:plates/steel',
-                B: '#forge:plates/diamond',
-                C: 'pneumaticcraft:cannon_barrel',
-                D: Item.of('immersiveengineering:gunpart_hammer').ignoreNBT(),
-                E: 'create:precision_mechanism',
-                F: '#forge:treated_wood',
-                G: '#forge:nuggets/steel',
-                H: Item.of('immersiveengineering:wooden_grip').ignoreNBT(),
-                I: '#forge:wires/steel'
-            },
-            id: 'gunswithoutroses:diamond_shotgun'
-        },
-        {
-            output: 'gunswithoutroses:diamond_sniper',
-            pattern: ['   ABA ', 'CCCCDEF', ' IIIGHF'],
-            key: {
-                A: '#forge:plates/diamond',
-                B: 'immersiveengineering:toolupgrade_railgun_scope',
-                C: Item.of('immersiveengineering:gunpart_barrel').ignoreNBT(),
-                D: Item.of('immersiveengineering:gunpart_hammer').ignoreNBT(),
-                E: 'create:precision_mechanism',
-                F: '#forge:treated_wood',
-                G: '#forge:nuggets/steel',
-                H: Item.of('immersiveengineering:wooden_grip').ignoreNBT(),
-                I: '#forge:plates/steel'
-            },
-            id: 'gunswithoutroses:diamond_sniper'
-        },
-        {
-            output: 'gunswithoutroses:diamond_gatling',
-            pattern: ['   AAA ', 'BBBCDCE', 'BBBFGHE', 'III JK '],
-            key: {
-                A: '#forge:inlays/pewter',
-                B: Item.of('immersiveengineering:gunpart_barrel').ignoreNBT(),
-                C: 'create:encased_chain_drive',
-                D: 'create:adjustable_chain_gearshift',
-                E: '#forge:treated_wood',
-                F: Item.of('immersiveengineering:gunpart_drum').ignoreNBT(),
-                G: 'create:precision_mechanism',
-                H: '#forge:gears/steel',
-                I: '#forge:wires/steel',
-                J: '#forge:nuggets/steel',
-                K: Item.of('immersiveengineering:wooden_grip').ignoreNBT()
-            },
-            id: 'gunswithoutroses:diamond_gatling'
-        },
-        {
-            output: 'meetyourfight:phantasmal_rifle',
-            pattern: ['   ABA ', 'CCCCDEF', ' IIIGHF'],
-            key: {
-                A: 'resourcefulbees:tainted_honeycomb',
-                B: 'meetyourfight:phantoplasm',
-                C: Item.of('immersiveengineering:gunpart_barrel').ignoreNBT(),
-                D: Item.of('immersiveengineering:gunpart_hammer').ignoreNBT(),
-                E: 'create:precision_mechanism',
-                F: '#forge:treated_wood',
-                G: '#forge:nuggets/steel',
-                H: Item.of('immersiveengineering:wooden_grip').ignoreNBT(),
-                I: '#forge:plates/electrum'
-            },
-            id: 'meetyourfight:phantasmal_rifle'
-        },
-        {
-            output: 'meetyourfight:cocktail_shotgun',
-            pattern: ['   AAA ', 'BBBCDCE', 'BBBFGHE', 'ILI JK '],
-            key: {
-                A: '#forge:inlays/pewter',
-                B: Item.of('immersiveengineering:gunpart_barrel').ignoreNBT(),
-                C: 'create:encased_chain_drive',
-                D: 'create:adjustable_chain_gearshift',
-                E: '#forge:treated_wood',
-                F: Item.of('immersiveengineering:gunpart_drum').ignoreNBT(),
-                G: 'create:precision_mechanism',
-                H: '#forge:gears/enderium',
-                I: '#forge:wires/steel',
-                J: '#forge:nuggets/steel',
-                K: Item.of('immersiveengineering:wooden_grip').ignoreNBT(),
-                L: 'meetyourfight:fortunes_favor'
-            },
-            id: 'meetyourfight:cocktail_shotgun'
         },
         {
             output: 'industrialforegoing:mob_duplicator',
@@ -678,11 +518,7 @@ onEvent('recipes', (event) => {
                 A: 'mekanism:hdpe_sheet',
                 B: 'powah:dielectric_rod_horizontal',
                 C: 'immersiveengineering:toolupgrade_shield_magnet',
-                D: [
-                    Item.of('mininggadgets:mininggadget_simple').ignoreNBT(),
-                    Item.of('mininggadgets:mininggadget').ignoreNBT(),
-                    Item.of('mininggadgets:mininggadget_fancy').ignoreNBT()
-                ],
+                D: 'mekanism:module_laser_dissipation_unit',
                 E: Item.of('mekanism:laser_amplifier').ignoreNBT(),
                 F: 'thermal:upgrade_augment_3'
             },
@@ -781,6 +617,32 @@ onEvent('recipes', (event) => {
                 P: 'create:fluid_pipe'
             },
             id: `powah:crafting/reactor_${tier}`
+        });
+    });
+
+    const compactmachines = [
+        { tier: 'tiny', comb: 'forest' },
+        { tier: 'small', comb: 'aluminum' },
+        { tier: 'normal', comb: 'zinc' },
+        { tier: 'large', comb: 'uranium' },
+        { tier: 'giant', comb: 'cobalt' },
+        { tier: 'maximum', comb: 'industrious' }
+    ];
+
+    compactmachines.forEach((compactmachine) => {
+        recipes.push({
+            output: `compactmachines:machine_${compactmachine.tier}`,
+            pattern: ['AABAA', 'ACCCA', 'DCECF', 'ACCCA', 'AAGAA'],
+            key: {
+                A: 'compactmachines:wall',
+                B: 'thermal:upgrade_augment_1',
+                C: `resourcefulbees:${compactmachine.comb}_honeycomb_block`,
+                D: 'modularrouters:sender_module_3',
+                E: 'mekanism:teleporter',
+                F: 'modularrouters:fluid_module_2',
+                G: ['rftoolsutility:matter_transmitter', 'rftoolsutility:matter_receiver']
+            },
+            id: `compactmachines:machine_${compactmachine.tier}`
         });
     });
 

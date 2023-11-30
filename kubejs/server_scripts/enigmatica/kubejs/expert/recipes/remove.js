@@ -89,8 +89,6 @@ onEvent('recipes', (event) => {
         'minecraft:golden_apple',
         'minecraft:lodestone',
 
-        'mininggadgets:upgrade_empty',
-
         'modularrouters:energy_upgrade',
         'modularrouters:sender_module_1_alt',
 

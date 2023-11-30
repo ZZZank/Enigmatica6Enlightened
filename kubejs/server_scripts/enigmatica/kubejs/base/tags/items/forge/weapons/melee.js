@@ -5,7 +5,6 @@ onEvent('item.tags', (event) => {
         'byg:pendorite_battleaxe',
         'immersiveengineering:sword_steel',
         'industrialforegoing:infinity_hammer',
-        'meetyourfight:cocktail_cutlass',
         'mekanism:atomic_disassembler',
         'mekanism:meka_tool',
         'wstweaks:blaze_blade',

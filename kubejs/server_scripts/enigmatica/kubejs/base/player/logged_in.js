@@ -3,7 +3,7 @@ onEvent('player.logged_in', (event) => {
     const player = event.player;
     const startingItemsGameStage = 'starting_items';
 
-    setMode(event.player);
+    setMode(player);
 
     if (!player.stages.has(startingItemsGameStage)) {
         player.give(Item.of('ftbquests:book'));

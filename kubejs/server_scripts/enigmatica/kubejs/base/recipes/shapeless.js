@@ -2,6 +2,15 @@
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/shapeless/';
     const recipes = [
+        {
+            output: 'cookingforblockheads:milk_jar',
+            inputs: [
+                Item.of('supplementaries:jar', {
+                    BlockEntityTag: { FluidHolder: { Count: 4, Fluid: 'minecraft:milk', CachedColor: -1 } }
+                }).weakNBT()
+            ],
+            id: 'cookingforblockheads:milk_jar'
+        },
         { output: 'botania:enchanted_soil', inputs: ['minecraft:grass_block', 'botania:overgrowth_seed'] },
         { output: 'minecraft:sticky_piston', inputs: ['minecraft:piston', '#forge:slimeballs'] },
         { output: 'minecraft:flint', inputs: ['#forge:gravel', '#forge:gravel', '#forge:gravel'] },
@@ -385,6 +394,11 @@ onEvent('recipes', (event) => {
                                 Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Chronicle of Shadows"}]}'
                             }
                         }
+                    },
+                    supplementaries: {
+                        id: 'patchouli:guide_book',
+                        Count: 1,
+                        tag: { 'patchouli:book': 'supplementaries:supplementaries_guide' }
                     }
                 }
             }),
@@ -511,17 +525,15 @@ onEvent('recipes', (event) => {
         }
     ];
 
-    recipes.forEach((recipe) => {
-        recipe.id
-            ? event.shapeless(recipe.output, recipe.inputs).id(recipe.id)
-            : fallback_id(event.shapeless(recipe.output, recipe.inputs), id_prefix);
-    });
-
     powahTiers.forEach((tier) => {
         if (tier == 'starter') {
             return;
         }
-        fallback_id(event.shapeless(`powah:reactor_${tier}`, `powah:reactor_${tier}`), id_prefix);
+        recipes.push({
+            output: `powah:reactor_${tier}`,
+            inputs: [`powah:reactor_${tier}`],
+            id: `${id_prefix}reactor_${tier}_reset`
+        });
     });
 
     colors.forEach(function (color) {
@@ -533,56 +545,50 @@ onEvent('recipes', (event) => {
         otherSimplePots.push('botanypots:botany_pot');
         otherHopperPots.push('botanypots:hopper_botany_pot');
 
-        event
-            .shapeless(`botanypots:${color}_botany_pot`, [
-                Ingredient.of(otherSimplePots),
-                `#forge:dyes/${color}`
-            ])
-            .id(`${id_prefix}dye_botany_pot_${color}`);
-
-        event
-            .shapeless(`botanypots:hopper_${color}_botany_pot`, [
-                Ingredient.of(otherHopperPots),
-                `#forge:dyes/${color}`
-            ])
-            .id(`${id_prefix}dye_hopper_botany_pot_${color}`);
+        recipes.push(
+            {
+                output: `botanypots:${color}_botany_pot`,
+                inputs: [Ingredient.of(otherSimplePots), `#forge:dyes/${color}`],
+                id: `${id_prefix}dye_botany_pot_${color}`
+            },
+            {
+                output: `botanypots:hopper_${color}_botany_pot`,
+                inputs: [Ingredient.of(otherHopperPots), `#forge:dyes/${color}`],
+                id: `${id_prefix}dye_hopper_botany_pot_${color}`
+            }
+        );
 
         if (color != 'white') {
-            fallback_id(
-                event.shapeless(Item.of(`2x atum:ceramic_slab_${color}`), [
-                    'atum:ceramic_slab_white',
-                    'atum:ceramic_slab_white',
-                    `#forge:dyes/${color}`
-                ]),
-                id_prefix
-            );
-            fallback_id(
-                event.shapeless(Item.of(`6x atum:ceramic_tile_${color}`), [
-                    'atum:ceramic_tile_white',
-                    'atum:ceramic_tile_white',
-                    'atum:ceramic_tile_white',
-                    'atum:ceramic_tile_white',
-                    'atum:ceramic_tile_white',
-                    'atum:ceramic_tile_white',
-                    `#forge:dyes/${color}`
-                ]),
-                id_prefix
-            );
-            fallback_id(
-                event.shapeless(Item.of(`3x atum:ceramic_stairs_${color}`), [
-                    'atum:ceramic_stairs_white',
-                    'atum:ceramic_stairs_white',
-                    'atum:ceramic_stairs_white',
-                    `#forge:dyes/${color}`
-                ]),
-                id_prefix
-            );
-            fallback_id(
-                event.shapeless(`atum:ceramic_wall_${color}`, [
-                    'atum:ceramic_wall_white',
-                    `#forge:dyes/${color}`
-                ]),
-                id_prefix
+            recipes.push(
+                {
+                    output: Item.of(`atum:ceramic_slab_${color}`, 2),
+                    inputs: ['atum:ceramic_slab_white', 'atum:ceramic_slab_white', `#forge:dyes/${color}`]
+                },
+                {
+                    output: Item.of(`6x atum:ceramic_tile_${color}`),
+                    inputs: [
+                        'atum:ceramic_tile_white',
+                        'atum:ceramic_tile_white',
+                        'atum:ceramic_tile_white',
+                        'atum:ceramic_tile_white',
+                        'atum:ceramic_tile_white',
+                        'atum:ceramic_tile_white',
+                        `#forge:dyes/${color}`
+                    ]
+                },
+                {
+                    output: Item.of(`3x atum:ceramic_stairs_${color}`),
+                    inputs: [
+                        'atum:ceramic_stairs_white',
+                        'atum:ceramic_stairs_white',
+                        'atum:ceramic_stairs_white',
+                        `#forge:dyes/${color}`
+                    ]
+                },
+                {
+                    output: `atum:ceramic_wall_${color}`,
+                    inputs: ['atum:ceramic_wall_white', `#forge:dyes/${color}`]
+                }
             );
         }
     });
@@ -590,7 +596,20 @@ onEvent('recipes', (event) => {
     materialsToUnify.forEach((material) => {
         let ore = Item.of(`emendatusenigmatica:${material}_ore`);
         if (ore.exists) {
-            fallback_id(event.shapeless(ore, `#forge:ores/${material}`), id_prefix);
+            recipes.push({
+                output: ore,
+                inputs: [`#forge:ores/${material}`],
+                id: `${id_prefix}${material}_ore_variant_reset`
+            });
+        }
+    });
+
+    recipes.forEach((recipe) => {
+        let recipeEvent = event.shapeless(recipe.output, recipe.inputs);
+        if (recipe.id) {
+            recipeEvent.id(recipe.id);
+        } else {
+            fallback_id(recipeEvent, id_prefix);
         }
     });
 });

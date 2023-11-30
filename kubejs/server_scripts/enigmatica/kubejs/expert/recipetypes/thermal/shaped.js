@@ -314,8 +314,8 @@ onEvent('recipes', (event) => {
             output: 'thermal:machine_crafter',
             pattern: ['ABA', 'CDC', 'AEA'],
             key: {
-                A: '#forge:gears/brass',
-                B: 'rftoolscontrol:craftingstation',
+                A: 'create:mechanical_crafter',
+                B: 'pneumaticcraft:small_tank',
                 C: 'thermal:redstone_servo',
                 D: 'thermal:machine_frame',
                 E: 'thermal:rf_coil'

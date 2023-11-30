@@ -1,5 +1,5 @@
 'use strict';
-onEvent('recipes', (/** @type {Internal.ShapelessRecipeJS} */ event) => {
+onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/enigmatica/shapeless/';
     const recipes = [
         {

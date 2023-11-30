@@ -9,7 +9,7 @@ onEvent('recipes', (event) => {
     let data = {
         recipes: [
             {
-                output: Item.of('compactmachines:wall', 48),
+                output: Item.of('compactmachines:wall', 32),
                 inputItem: '#forge:storage_blocks/ender',
                 infusionInput: 'mekanism:refined_obsidian',
                 infusionAmount: 80,

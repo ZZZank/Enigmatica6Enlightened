@@ -10,7 +10,7 @@
 	quests: [
 		{
 			title: "Limitless Power"
-			icon: "mininggadgets:upgrade_battery_3"
+			icon: "powah:battery_nitro"
 			x: 0.5d
 			y: 2.5d
 			subtitle: "Infinite Cosmic Power!"
@@ -81,7 +81,7 @@
 					tag: {
 						BlockEntityTag: {
 							Item: {
-								id: "mininggadgets:upgrade_battery_3"
+								id: "powah:battery_nitro"
 								Count: 1b
 							}
 							DisplayScale: 1.0f

@@ -1,3 +1,5 @@
+declare class Item extends Internal.ItemStackJS {}
+
 declare interface NBT {
     static compoundTag(): Internal.INBT;
     static listTag(): Internal.INBT;

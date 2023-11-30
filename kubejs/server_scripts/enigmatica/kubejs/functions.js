@@ -3,6 +3,19 @@
 
 /**
  *
+ * @param {string} str
+ * @returns
+ */
+function titleCase(str) {
+    return str
+        .toLowerCase()
+        .split(' ')
+        .map((str) => str.charAt(0).toUpperCase() + str.substring(1))
+        .join(' ');
+}
+
+/**
+ *
  * @param {any[]} entries
  * @returns {any}
  */
@@ -30,6 +43,11 @@ function rawItemStr(item, color) {
         }}${colorTag}}`.replace(/\s+/g, '');
 }
 
+/**
+ * run `tellraw` command on a player
+ * @param {Internal.PlayerJS} player The target of tellraw command
+ * @param {string} str The content of tellraw command
+ */
 function tellr(player, str) {
     player.server.runCommandSilent(`/tellraw ${player.name} ${str}`);
 }
@@ -41,6 +59,12 @@ function shapelessRecipe(result, ingredients, id) {
     return { result: result, ingredients: ingredients, id: id };
 }
 
+/**
+ *
+ * @param {string} material
+ * @param {string} type
+ * @returns
+ */
 function unificationBlacklistEntry(material, type) {
     return { material: material, type: type };
 }
@@ -57,18 +81,23 @@ function tagIsEmpty(tag) {
     return getPreferredItemInTag(Ingredient.of(tag)).id == air;
 }
 
+/**
+ *
+ * @param {Internal.IngredientJS} tag
+ */
 function getPreferredItemInTag(tag) {
-    return (
-        utils
-            .listOf(tag.stacks)
-            .toArray()
-            .sort(({ mod: a }, { mod: b }) => compareIndices(a, b, tag))[0] || Item.of(air)
-    );
+    return getItemsInTag(tag).sort((a, b) => compareIndices(a.mod, b.mod, tag))[0] || Item.of(air);
 }
 
+/**
+ *
+ * @param {Internal.IngredientJS} tag
+ * @return {Internal.ItemStackJS[]}
+ */
 function getItemsInTag(tag) {
-    return utils.listOf(tag.stacks).toArray();
+    return tag.stacks.toArray();
 }
+
 function compareIndices(a, b, tag) {
     if (a == b) return 0; // iff a == b, they'll be found at the same position in modPriorities
 

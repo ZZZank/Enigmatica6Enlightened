@@ -22,34 +22,6 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}betterendforge/dense_snow`
         },
         {
-            output: Item.of('atum:linen_thread', 8),
-            pattern: ['AAA', 'ABA', 'AAA'],
-            key: {
-                A: '#forge:crops/flax',
-                B: '#forge:rods/wooden'
-            },
-            id: `${id_prefix}atum/linen_thread_from_flax`
-        },
-        {
-            output: Item.of('atum:linen_thread', 4),
-            pattern: ['AAA', 'ABA', 'AAA'],
-            key: {
-                A: 'atum:cloth_scrap',
-                B: '#forge:rods/wooden'
-            },
-            id: `${id_prefix}atum/linen_thread_from_cloth_scrap`
-        },
-        {
-            output: Item.of('atum:marl', 4),
-            pattern: ['AB', 'BA'],
-            key: {
-                A: 'atum:sand',
-                B: 'minecraft:clay'
-            },
-            id: `${id_prefix}atum/marl_from_clay`
-        },
-
-        {
             output: Item.of('bloodmagic:dungeon_polished', 4),
             pattern: ['AA', 'AA'],
             key: {
@@ -174,26 +146,6 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}projectvibrantjourneys/charred_bones`
         },
         {
-            output: 'tetra:hammer_base',
-            pattern: ['LXL', 'LCL', 'LXL'],
-            key: {
-                L: '#forge:ingots/steel',
-                X: '#forge:circuits/basic',
-                C: '#forge:tools/crafting_hammer'
-            },
-            id: `${id_prefix}tetra/hammer_base`
-        },
-        {
-            output: 'tetra:core_extractor',
-            pattern: ['LXL', 'LCL', 'LXL'],
-            key: {
-                L: '#forge:ingots/steel',
-                X: '#forge:circuits/basic',
-                C: 'industrialforegoing:fluid_extractor'
-            },
-            id: `${id_prefix}tetra/core_extractor`
-        },
-        {
             output: 'minecraft:hopper',
             pattern: ['ABA', 'ABA', ' A '],
             key: {
@@ -290,16 +242,6 @@ onEvent('recipes', (event) => {
                 B: '#enigmatica:ladder_planks'
             },
             id: `${id_prefix}minecraft/ladder`
-        },
-        {
-            output: 'tetra:combustion_chamber',
-            pattern: ['CBC', 'BAB', 'CBC'],
-            key: {
-                A: 'mekanism:superheating_element',
-                B: 'pneumaticcraft:heat_sink',
-                C: 'mekanism:ultimate_thermodynamic_conductor'
-            },
-            id: `${id_prefix}tetra/combustion_chamber`
         },
         {
             output: Item.of('byg:embur_hyphae', 3),

@@ -221,7 +221,7 @@ onEvent('ponder.registry', (event) => {
 
             scene.world().destroyBlock([1, 1, 1]);
             scene.idle(1);
-            spawnEgg = scene
+            let spawnEgg = scene
                 .world()
                 .createItemEntity([1, 1.5, 1], [0, 0, 0], Item.of('resourcefulbees:steel_bee_spawn_egg'));
 

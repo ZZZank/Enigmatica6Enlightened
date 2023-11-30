@@ -1,6 +1,6 @@
 'use strict';
-onEvent('player.inventory.changed', function (/** @type {Internal.PlayerEventJS} */ event) {
-    const player = event.player;
+onEvent('player.inventory.changed', function (event) {
+    const /** @type {Internal.PlayerJS} */ player = event.player;
     if (!player.player || player.fake) {
         return;
     }

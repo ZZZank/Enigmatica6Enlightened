@@ -3,6 +3,17 @@ onEvent('jei.information', (event) => {
     const id_prefix = 'descriptions.enigmatica.base.';
 
     const recipes = [
+        /*
+        {
+            items: ['modid:item'],
+            text: ['description text accepts %s and %s', `${id_prefix}cheese_slice`, '%s'],
+            with: [
+                [Text.translate('language_key'), 'raw text'],
+                ['language keys in `text` will be automatically converted to text defined in lang/xx_xx.json'],
+                ['but note that `with` does not handle language key']
+            ]
+        },
+        */
         {
             items: ['upgrade_aquatic:elder_guardian_spine'],
             text: ['Obtained by killing Elder Guardian.']
@@ -409,14 +420,6 @@ onEvent('jei.information', (event) => {
             text: [`${id_prefix}roast_chicken`]
         },
         {
-            items: ['simplefarming:brewing_barrel'],
-            text: [`${id_prefix}brewing_barrel`]
-        },
-        {
-            items: ['simplefarming:brewing_barrel'],
-            text: [`${id_prefix}brewing_barrel_2`]
-        },
-        {
             items: disabledItems,
             text: [`${id_prefix}disabled_please_report`]
         },
@@ -430,27 +433,26 @@ onEvent('jei.information', (event) => {
         },
         {
             items: [
-                'compact_drawer',
-                'drawer_controller',
-                'slave',
-                'trim',
-                'full_one',
-                'full_two',
-                'full_four',
-                'half_one',
-                'half_two',
-                'half_four'
-            ].map((item) => 'framedcompactdrawers:framed_' + item),
+                'framedcompactdrawers:framed_compact_drawer',
+                'framedcompactdrawers:framed_drawer_controller',
+                'framedcompactdrawers:framed_slave',
+                'framedcompactdrawers:framed_trim',
+                'framedcompactdrawers:framed_full_one',
+                'framedcompactdrawers:framed_full_two',
+                'framedcompactdrawers:framed_full_four',
+                'framedcompactdrawers:framed_half_one',
+                'framedcompactdrawers:framed_half_two',
+                'framedcompactdrawers:framed_half_four'
+            ],
             text: [`${id_prefix}framed_drawers`]
         }
     ];
 
     recipes.forEach((recipe) => {
         for (let i = 0; i < recipe.text.length; i++) {
-            if (recipe.with[i]) {
-                recipe.with[i] = recipe.with[i].map((str) => Text.translate(str));
-                recipe.text[i] = Text.translate(recipe.text[i], ...recipe.with[i]);
-            } else {
+            try {
+                recipe.text[i] = Text.translate(recipe.text[i], recipe.with[i]);
+            } catch (e) {
                 recipe.text[i] = Text.translate(recipe.text[i]);
             }
         }

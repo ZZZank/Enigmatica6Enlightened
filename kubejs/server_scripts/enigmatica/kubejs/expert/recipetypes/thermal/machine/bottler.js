@@ -62,13 +62,6 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}memory_ultimate_filled`
         },
         {
-            input: 'gunswithoutroses:iron_bullet',
-            fluid: Fluid.of('tconstruct:blazing_blood', 5),
-            output: 'gunswithoutroses:blaze_bullet',
-            energy: 100,
-            id: `${id_prefix}blaze_bullet`
-        },
-        {
             input: 'botania:thorn_chakram',
             fluid: Fluid.of('tconstruct:blazing_blood', 1000),
             output: 'botania:flare_chakram',

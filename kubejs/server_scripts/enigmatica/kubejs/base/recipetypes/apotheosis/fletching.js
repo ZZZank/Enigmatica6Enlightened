@@ -3,6 +3,11 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/apotheosis/fletching/';
     const recipes = [
         {
+            inputs: ['betterendforge:crystal_shards', '#forge:rods/wooden', 'minecraft:feather'],
+            result: Item.of('supplementaries:amethyst_arrow', 3),
+            id: `${id_prefix}amethyst_arrow`
+        },
+        {
             inputs: ['minecraft:prismarine_crystals', '#forge:rods/wooden', 'minecraft:feather'],
             result: Item.of('archers_paradox:prismarine_arrow', 6),
             id: `${id_prefix}prismarine_arrow`

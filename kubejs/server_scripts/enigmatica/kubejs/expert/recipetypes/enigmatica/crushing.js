@@ -52,7 +52,7 @@ onEvent('recipes', (event) => {
         },
         {
             secondary_output: Item.of('waystones:warp_dust').chance(0.15),
-            output: Item.of('waystones:warp_dust', 3),
+            output: Item.of('waystones:warp_dust', 4),
             input: Ingredient.of('waystones:warp_stone'),
             experience: 0.5,
             duration: 100,
