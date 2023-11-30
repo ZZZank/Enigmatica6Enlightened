@@ -2,6 +2,10 @@
 onEvent('recipes', (event) => {
     const id_prefix = 'enlightened6:base/betterend/infusion/';
 
+    /**
+     * NOTE: `input` and `catalysts` only accpets string style tag/item.  
+     * Adding NBT does not work for now
+     */
     const recipes = [
         {
             input: 'minecraft:book',
@@ -341,21 +345,12 @@ onEvent('recipes', (event) => {
             if (catalyst == '') {
                 return;
             }
-            let entry = {
-                item: {},
-                index: i
-            };
-            if (catalyst.startsWith('#')) {
-                entry.tag = catalyst.substring(1);
-            } else {
-                entry.item = catalyst;
-            }
+            let entry = Ingredient.of(catalyst).toJson().asJsonObject;
+            entry.addProperty('index', i);
             processed.push(entry);
         });
         recipe.catalysts = processed;
-        recipe.input = {
-            item: recipe.input
-        };
+        recipe.input = Ingredient.of(recipe.input).toJson();
         event.custom(recipe).id(recipe.id);
     });
 });
