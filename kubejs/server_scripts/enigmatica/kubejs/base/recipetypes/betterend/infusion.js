@@ -3,37 +3,10 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enlightened6:base/betterend/infusion/';
 
     /**
-     * NOTE: `input` and `catalysts` only accpets string style tag/item.  
+     * NOTE: `input` and `catalysts` only accpets string style tag/item.
      * Adding NBT does not work for now
      */
     const recipes = [
-        {
-            input: 'minecraft:book',
-            catalysts: [
-                'betterendforge:enchanted_petal',
-                'minecraft:lapis_lazuli',
-                'thermal:gold_coin',
-                '',
-                'bloodmagic:sacrificialdagger',
-                '',
-                'botania:cosmetic_red_ribbons',
-                'minecraft:lapis_lazuli'
-            ],
-            output: {
-                id: 'minecraft:enchanted_book',
-                Count: 1,
-                tag: {
-                    StoredEnchantments: [
-                        {
-                            id: 'apotheosis:life_mending',
-                            lvl: 2
-                        }
-                    ]
-                }
-            },
-            time: 300,
-            id: id_prefix + 'life_mending'
-        },
         {
             input: 'minecraft:book',
             catalysts: [
@@ -64,6 +37,12 @@ onEvent('recipes', (event) => {
     ];
 
     let enchantments = [
+        {
+            inputs: ['', 'bloodmagic:sacrificialdagger', ''],
+            enchant: 'apotheosis:life_mending',
+            level: 2,
+            id: id_prefix + 'life_mending'
+        },
         {
             inputs: [
                 'emendatusenigmatica:steel_plate',
