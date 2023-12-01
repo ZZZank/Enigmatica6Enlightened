@@ -1,5 +1,6 @@
 'use strict';
 onEvent('jei.information', (event) => {
+    const eprefix = 'descriptions.en6e.base.'
     const id_prefix = 'descriptions.enigmatica.base.';
 
     const recipes = [
@@ -421,7 +422,7 @@ onEvent('jei.information', (event) => {
         },
         {
             items: disabledItems,
-            text: [`${id_prefix}disabled_please_report`]
+            text: [`${eprefix}disabled_please_report`]
         },
         {
             items: generatableCobblestone,

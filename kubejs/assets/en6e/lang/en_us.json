@@ -4,6 +4,9 @@
     "chat.hand_over_your_items.send": "You have given %s to %s",
     "chat.hand_over_your_items.receive": "You have been given %s by %s",
 
+    "descriptions.en6e.base.disabled_please_report": "This item has been disabled, if you managed to obtain it please report it on Enlightened 6's issue tracker: https://github.com/ZZZank/Enlightened6/issues",
+    "descriptions.en6e.base.": "",
+
     "descriptions.en6e.expert.small_storage_part": "Crafting is disabled in Expert, begin with the 4k one.",
     "descriptions.en6e.expert.": "",
 
