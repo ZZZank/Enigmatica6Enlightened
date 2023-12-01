@@ -296,7 +296,7 @@ function New-ServerFiles {
         Write-Host 
         if ($uploadExpertMode) {
             Copy-Item -Path "$CLIENT_ZIP_NAME.zip" -Destination "server_files_expert\mainpack.zip" -ErrorAction SilentlyContinue
-        }else {
+        } else {
             Copy-Item -Path "$CLIENT_ZIP_NAME.zip" -Destination "server_files\mainpack.zip" -ErrorAction SilentlyContinue
         }
         7z a -tzip $serverZip "$SERVER_FILES_FOLDER\*"
@@ -408,7 +408,7 @@ if ($uploadExpertMode) {
     $CURSEFORGE_PROJECT_ID = 889901
     $SERVER_FILES_FOLDER = "$INSTANCE_ROOT/server_files_expert"
     $SERVER_SETUP_CONFIG_PATH = "$SERVER_FILES_FOLDER/server-setup-config.yaml"
-    $MODPACK_NAME = "Enlightened6Expert"
+    $MODPACK_NAME = "enlightened-6-expert"
     $CLIENT_NAME = "Enlightened6Expert"
     $CLIENT_ZIP_NAME = "$CLIENT_NAME-$MODPACK_VERSION"
     $SERVER_ZIP_NAME = "$CLIENT_NAME`Server-$MODPACK_VERSION"
@@ -417,8 +417,7 @@ if ($uploadExpertMode) {
     $SERVER_FILE_DISPLAY_NAME = "Enlightened 6 Expert Server $MODPACK_VERSION"
 
     Switch-DefaultModeTo -mode "expert"
-}
-else {
+} else {
     Switch-DefaultModeTo -mode "normal"
 }
 

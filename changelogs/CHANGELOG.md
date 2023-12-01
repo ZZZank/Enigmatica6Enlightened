@@ -1,3 +1,27 @@
+## Enlightened6 & Enlightened6Expert - 2.4.0 -> 2.4.1
+
+_Using Forge-1.16.5-36.2.39_ | _[Mod Updates](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/changelog_mods_2.4.1.md)_ | _[Modlist](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/modlist_2.4.2.md)_
+
+### Mods Added
+
+-   [Opotato](https://www.curseforge.com/minecraft/mc-mods/opotato) (by [pOtAto\_\_bOy](https://www.curseforge.com/members/pOtAto__bOy/projects))
+-   [Redirector [Modern]](https://www.curseforge.com/minecraft/mc-mods/redirectionor) (by [pOtAto\_\_bOy](https://www.curseforge.com/members/pOtAto__bOy/projects))
+-   [Rubidium](https://www.curseforge.com/minecraft/mc-mods/rubidium) (by [Asek3](https://www.curseforge.com/members/Asek3/projects))
+
+### Mods Removed
+
+-   [Better Biome Blend](https://www.curseforge.com/minecraft/mc-mods/better-biome-blend) (by [FionaTheMortal](https://www.curseforge.com/members/FionaTheMortal/projects))
+-   [Embeddium](https://www.curseforge.com/minecraft/mc-mods/embeddium) (by [embeddedt](https://www.curseforge.com/members/embeddedt/projects))
+-   [Not Enough Recipe Book [NERB]](https://www.curseforge.com/minecraft/mc-mods/notenoughrecipebook) (by [SSKirillSS](https://www.curseforge.com/members/SSKirillSS/projects))
+
+### Improvement
+
+-   Add/remove/alter performance mods, to be even more performant and reliable
+-   [normal] Rework Storage Drawers recipe, to merge so MANY similar recipes into one
+-   zh_cn localization for Tooltips and JEI descriptions
+
+---
+
 ## Enlightened6 & Enlightened6Expert - 2.3.1 -> 2.4.0
 
 _Using Forge-1.16.5-36.2.39_ | _[Mod Updates](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/changelog_mods_2.4.0.md)_ | _[Modlist](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/modlist_2.4.0.md)_
