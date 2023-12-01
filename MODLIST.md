@@ -190,7 +190,6 @@
   * [Mekanism-1.16.5-10.1.2.457.jar](https://www.curseforge.com/minecraft/mc-mods/mekanism/files/3659389) (by [bradyaidanc](https://www.curseforge.com/members/bradyaidanc/projects))
   * [MekanismGenerators-1.16.5-10.1.2.457.jar](https://www.curseforge.com/minecraft/mc-mods/mekanism-generators/files/3659391) (by [bradyaidanc](https://www.curseforge.com/members/bradyaidanc/projects))
   * [MekanismTools-1.16.5-10.1.2.457.jar](https://www.curseforge.com/minecraft/mc-mods/mekanism-tools/files/3659392) (by [bradyaidanc](https://www.curseforge.com/members/bradyaidanc/projects))
-  * [mininggadgets-1.7.6.jar](https://www.curseforge.com/minecraft/mc-mods/mining-gadgets/files/3902532) (by [Direwolf20](https://www.curseforge.com/members/direwolf20/projects))
   * [dummmmmmy-1.16.5-1.3.3.jar](https://www.curseforge.com/minecraft/mc-mods/mmmmmmmmmmmm/files/4529749) (by [MehVahdJukaar](https://www.curseforge.com/members/mehvahdjukaar/projects))
   * [modnametooltip_1.16.2-1.15.0.jar](https://www.curseforge.com/minecraft/mc-mods/mod-name-tooltip/files/3038982) (by [mezz](https://www.curseforge.com/members/mezz/projects))
   * [modernfix-forge-5.9.3+mc1.16.5.jar](https://www.curseforge.com/minecraft/mc-mods/modernfix/files/4862989) (by [embeddedt](https://www.curseforge.com/members/embeddedt/projects))
