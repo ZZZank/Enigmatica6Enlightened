@@ -54,7 +54,7 @@ onEvent('recipes', (event) => {
             }),
             pattern: [' # ', ' /#', '/  '],
             key: { '#': '#minecraft:planks', '/': '#forge:rods/wooden' },
-            id: 'tetra:hammer/oak'
+            id: `${id_prefix}hammer`
         }
     ];
 
