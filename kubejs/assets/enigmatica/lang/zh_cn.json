@@ -1,5 +1,5 @@
 {
-    "domain.enigmatica.display_name": "Enigmatica 6",
+    "domain.enigmatica.display_name": "Enlightened 6",
     "block.minecraft.nether_portal.name": "下界传送门",
 
     "block.minecraft.stonecutter": "切石机",
@@ -80,8 +80,8 @@
     "lexicon.mythicbotany.muspelheim.page1": "赋予持有者对穆斯贝尔海姆锻炉之火的免疫，同时点燃发动攻击的敌人。",
     "lexicon.mythicbotany.niflheim.page1": "佩戴这枚指环的人能承受住寒冰与岩石的粉碎性力量，并散发出冻结气场，减缓所有攻击范围内的敌人。",
     "lexicon.mythicbotany.generating.title": "产能类植物",
-    "lexicon.mythicbotany.generating.page1": "$(thing)被 Enigmatica 6$(0) 禁用",
-    "lexicon.mythicbotany.generating.page2": "$(thing)被 Enigmatica 6$(0) 禁用",
+    "lexicon.mythicbotany.generating.page1": "$(thing)被 Enlightened 6$(0) 禁用",
+    "lexicon.mythicbotany.generating.page2": "$(thing)被 Enlightened 6$(0) 禁用",
     "lexicon.mythicbotany.generating.page3": "有时，魔力发射器跟不上魔力的产出。产能类植物可以连接到一个魔力收集器，让魔力直接流向火花网络。 需要在收集器上放置火花和扩散升级。",
     "lexicon.mythicbotany.functional.title": "功能类植物",
     "lexicon.mythicbotany.functional.page1": "烈焰花将魔力传输到附近的酿造台，使它们不用燃料就能工作。",
