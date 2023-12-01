@@ -1,0 +1,6 @@
+{
+    "name": "关于我们",
+    "description": "想要了解更多有关本整合包的信息，与我们的社区互动，甚至帮助开发？$(br)$(l)我们非常欢迎！$(reset)详细信息请查看本章。",
+    "icon": "enigmatica:textures/pixel_tree.png",
+    "sortnum": 1
+}

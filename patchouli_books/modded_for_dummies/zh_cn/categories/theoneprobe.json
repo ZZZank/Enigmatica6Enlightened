@@ -1,0 +1,5 @@
+{
+	"name": "The One Probe",
+	"description": "$(l)$(#ffa500)The One Probe$(reset)是你屏幕上那个小信息框对应的模组，$(l)它会显示你鼠标准心指向的信息$(reset)。",
+	"icon": "theoneprobe:probe"
+}

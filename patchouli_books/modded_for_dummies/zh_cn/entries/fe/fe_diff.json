@@ -1,0 +1,16 @@
+{
+    "name": "那么，它们有什么区别？",
+    "icon": "enigmatica:textures/power3.png",
+    "category": "patchouli:fe",
+    "sortnum": 1,
+    "pages": [
+        {
+            "type": "text",
+            "text": "我们在上一个章节把 RF 和 FE 作为同义词，虽然这没有什么错误，但或许你想知道它们之间真正的区别。目前 Forge 官方的计量单位是 Forge Energy，所以$(l)理论上来说所有的机器都支持以 FE 为驱动能源$(reset)。"
+        },
+        {
+            "type": "text",
+            "text": "有一些机器，虽然可以用 FE 驱动，但是仍然会以 RF 显示其能源。因为在 FE 出现以前，RF 是大多数模组作者优先使用的能源单位，$(l) RF 和 FE 之间除了显示不同，其余功能都一样$(reset)。"
+        }
+    ]
+}

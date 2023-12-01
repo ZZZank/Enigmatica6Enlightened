@@ -1,0 +1,16 @@
+{
+    "name": "连锁破坏",
+    "icon": "minecraft:diamond_pickaxe",
+    "category": "patchouli:tweaks",
+    "sortnum": 3,
+    "pages": [
+        {
+            "type": "text",
+            "text": "在整合包中，有时你会需要去挖掘大量的同种方块，例如：一个大型矿脉、一栋不想要的房子、或者清理一堆石头，现在隆重介绍$(#ffa500)$(l)FTB Ultimine$(reset)！你或许更熟悉该模组的几个类似物：鼎鼎有名的$(l)VeinMiner$(reset)和$(l)OreExcavator$(reset)。"
+        },
+        {
+            "type": "text",
+            "text": "它们的功能基本相同。$(l)只需要按住$(k:ftbultimine)键就能使用连锁破坏的功能了$(reset)。按下之后，你可以看到一个可视化的区域轮廓，所有在此区域内相互连接能够被连锁破坏的方块都会被高亮，此时如果你用合适的工具去破坏方块。$(l)所有被高亮的方块都会被一起被连锁破坏$(reset)，此操作会消耗你一定的饥饿值。现在去试试吧，但在家里一定要格外小心！"
+        }
+    ]
+}

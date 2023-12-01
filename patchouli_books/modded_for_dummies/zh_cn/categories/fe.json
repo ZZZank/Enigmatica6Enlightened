@@ -1,0 +1,5 @@
+{
+    "name": "Forge能量系统",
+    "description": "机器都需要电力驱动，但是$(l)这些能量计量单位都有什么区别呢？$(reset) 在这一章，你会学习到Forge能量系统的概念和它的实例展示。",
+    "icon": "enigmatica:textures/power1.png"
+}

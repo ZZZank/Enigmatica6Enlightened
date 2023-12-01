@@ -1,0 +1,5 @@
+{
+	"name": "物品管理器",
+	"description": "$(l)$(#ffa500)Just Enough Items$(reset) (简称JEI)，$(l)在任何整合包中都极其重要$(reset)，它是你的人生导师，能更好的让你去了解物品的合成表，物品的用途等信息，本章会带你进一步的去了解它。",
+	"icon": "minecraft:writable_book"
+}

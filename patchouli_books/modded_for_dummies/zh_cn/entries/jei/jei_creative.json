@@ -1,0 +1,12 @@
+{
+    "name": "作弊模式",
+    "icon": "minecraft:command_block",
+    "category": "patchouli:jei",
+    "sortnum": 5,
+    "pages": [
+        {
+            "type": "text",
+            "text": "JEI内置了一个作弊模式。如果你拥有OP权限，你就可以在搜索栏右侧扳手处按$(l)Ctrl键+左键来打开$(reset)，当扳手变成红色时（这代表已开启作弊模式），此时JEI就可以像创造模式物品栏一样用，左键点击物品取出一个，而按下Shift键+左键则可以取出一组等。"
+        }
+    ]
+}
