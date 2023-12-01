@@ -1,6 +1,6 @@
 'use strict';
 onEvent('jei.information', (event) => {
-    const eprefix = 'descriptions.en6e.base.'
+    const eprefix = 'descriptions.en6e.base.';
     const id_prefix = 'descriptions.enigmatica.base.';
 
     const recipes = [
