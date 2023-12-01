@@ -10,5 +10,6 @@
 
   * [Better Biome Blend](https://www.curseforge.com/minecraft/mc-mods/better-biome-blend) (by [FionaTheMortal](https://www.curseforge.com/members/FionaTheMortal/projects))
   * [Embeddium](https://www.curseforge.com/minecraft/mc-mods/embeddium) (by [embeddedt](https://www.curseforge.com/members/embeddedt/projects))
+  * [Mining Gadgets](https://www.curseforge.com/minecraft/mc-mods/mining-gadgets) (by [Direwolf20](https://www.curseforge.com/members/Direwolf20/projects))
   * [Not Enough Recipe Book [NERB]](https://www.curseforge.com/minecraft/mc-mods/notenoughrecipebook) (by [SSKirillSS](https://www.curseforge.com/members/SSKirillSS/projects))
 

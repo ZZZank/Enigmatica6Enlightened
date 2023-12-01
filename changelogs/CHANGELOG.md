@@ -12,6 +12,7 @@ _Using Forge-1.16.5-36.2.39_ | _[Mod Updates](https://github.com/ZZZank/Enigmati
 
 -   [Better Biome Blend](https://www.curseforge.com/minecraft/mc-mods/better-biome-blend) (by [FionaTheMortal](https://www.curseforge.com/members/FionaTheMortal/projects))
 -   [Embeddium](https://www.curseforge.com/minecraft/mc-mods/embeddium) (by [embeddedt](https://www.curseforge.com/members/embeddedt/projects))
+-   [Mining Gadgets](https://www.curseforge.com/minecraft/mc-mods/mining-gadgets) (by [Direwolf20](https://www.curseforge.com/members/Direwolf20/projects))
 -   [Not Enough Recipe Book [NERB]](https://www.curseforge.com/minecraft/mc-mods/notenoughrecipebook) (by [SSKirillSS](https://www.curseforge.com/members/SSKirillSS/projects))
 
 ### Improvement
@@ -19,6 +20,12 @@ _Using Forge-1.16.5-36.2.39_ | _[Mod Updates](https://github.com/ZZZank/Enigmati
 -   Add/remove/alter performance mods, to be even more performant and reliable
 -   [normal] Rework Storage Drawers recipe, to merge so MANY similar recipes into one
 -   zh_cn localization for Tooltips and JEI descriptions
+-   Buff TCon armors to have diamond-tier defense
+-   Unify Tetra hammer recipe
+
+### Bugfixes
+
+-   Mining Gadgets not removed properly
 
 ---
 
