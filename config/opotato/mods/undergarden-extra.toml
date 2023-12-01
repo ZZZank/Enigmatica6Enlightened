@@ -1,0 +1,10 @@
+
+[UndergardenExtraConfig]
+	#Range: > 1
+	catacombSpacing = 24
+	#Range: > 1
+	catacombSeparation = 8
+	#Range: > 1
+	catacombSalt = 276320045
+	catacombTransformSurroundingLand = true
+

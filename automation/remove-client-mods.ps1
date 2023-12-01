@@ -9,7 +9,7 @@ $CLIENT_MODS_TO_REMOVE_FROM_SERVER_FILES = @(
 	"oauth",
 	"ponderjs",
 	"PackMenu",
-	"rubidium"
+	"rubidium",
 	"Toast-Control", 
 	"SimpleDiscordRichPresence"
 )

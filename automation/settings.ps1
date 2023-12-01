@@ -23,17 +23,17 @@ $CURSEFORGE_PROJECT_ID = 889819
 # =====================================================================//
 
 # This is the modpack name as seen in it's CurseForge url: https://www.curseforge.com/minecraft/modpacks/[enigmatica6]
-$MODPACK_NAME = "Enlightened6"
+$MODPACK_NAME = "enlightened-6"
 
 # Name of the Modpack in the ZIP File
 $CLIENT_NAME = "Enlightened6"
 
 # Version Of The Modpack
-$MODPACK_VERSION = "2.4.0"
+$MODPACK_VERSION = "2.4.1"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
-$LAST_MODPACK_VERSION = "2.3.1"
+$LAST_MODPACK_VERSION = "2.4.0"
 
 # =====================================================================//
 #  CHANGELOG SETTINGS
@@ -204,7 +204,7 @@ $ENABLE_SERVER_FILE_MODULE = $true
 # This will update the "modpackUrl" in the file found at $SERVER_SETUP_CONFIG_PATH
 # to point to your newly created client files on the CurseForge CDN.
 # Default: $false
-$ENABLE_SERVERSTARTER_MODULE = $true
+$ENABLE_SERVERSTARTER_MODULE = $false
 
 # Toggle automatic changelog generator on/off
 # This module requires an older modpack manifest zip to be present, 
