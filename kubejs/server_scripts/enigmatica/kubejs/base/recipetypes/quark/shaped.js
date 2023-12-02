@@ -5,7 +5,7 @@ onEvent('recipes', (event) => {
             output: 'quark:backpack',
             pattern: ['A A', 'ABA', 'ACA'],
             key: {
-                A: 'betterendforge:leather_stripe',
+                A: ['minecraft:leather', 'betterendforge:leather_stripe'],
                 B: '#forge:chests',
                 C: '#forge:ingots/iron'
             },
