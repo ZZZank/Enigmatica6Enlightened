@@ -35,7 +35,7 @@ onEvent('recipes', (event) => {
                 C: 'immersiveengineering:fluid_pipe',
                 D: 'thermal:redstone_servo'
             },
-            id: 'immersiveengineering:crafting/fluidpump'
+            id: 'immersiveengineering:crafting/fluid_pump'
         },
         {
             output: 'immersiveengineering:conveyor_extract',
