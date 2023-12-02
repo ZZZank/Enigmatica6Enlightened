@@ -3,7 +3,7 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             output: 'quark:backpack',
-            pattern: ['A A', 'ABA','ACA'],
+            pattern: ['A A', 'ABA', 'ACA'],
             key: {
                 A: 'betterendforge:leather_stripe',
                 B: '#forge:chests',
@@ -13,7 +13,7 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'quark:crate',
-            pattern: ['ABA', 'BCB','ABA'],
+            pattern: ['ABA', 'BCB', 'ABA'],
             key: {
                 A: '#forge:ingots/iron',
                 B: '#forge:planks/palm',
