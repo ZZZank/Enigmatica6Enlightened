@@ -2,6 +2,26 @@
 onEvent('recipes', (event) => {
     const recipes = [
         {
+            output: 'quark:backpack',
+            pattern: ['A A', 'ABA','ACA'],
+            key: {
+                A: 'betterendforge:leather_stripe',
+                B: '#forge:chests',
+                C: '#forge:ingots/iron'
+            },
+            id: 'quark:oddities/crafting/backpack'
+        },
+        {
+            output: 'quark:crate',
+            pattern: ['ABA', 'BCB','ABA'],
+            key: {
+                A: '#forge:ingots/iron',
+                B: '#forge:planks/palm',
+                C: '#forge:chests'
+            },
+            id: 'quark:oddities/crafting/crate'
+        },
+        {
             output: Item.of('4x quark:turf'),
             pattern: ['AA', 'AA'],
             key: {

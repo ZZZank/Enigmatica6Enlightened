@@ -286,8 +286,6 @@ const itemsToHide = [
 
     'quark:bonded_ravager_hide',
     'quark:ravager_hide',
-    'quark:backpack',
-    'quark:crate',
     'quark:magnet',
     'quark:soul_compass',
 
