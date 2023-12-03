@@ -25,7 +25,7 @@ onEvent('recipes', (event) => {
                 B: '#botania:runes/earth',
                 C: 'botania:livingrock',
                 D: 'minecraft:ender_eye',
-                E :'botania:mana_diamond'
+                E: 'botania:mana_diamond'
             },
             id: 'botania:third_eye'
         },
