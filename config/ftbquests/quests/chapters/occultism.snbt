@@ -450,11 +450,14 @@
 				}
 				{
 					id: "64B928DADA731482"
-					type: "command"
-					title: "Occultism Epic Loot Chest"
-					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:epic_lootbox"
+						Count: 1b
+						tag: {
+							mod: "occultism"
+						}
+					}
 				}
 			]
 		}
@@ -769,11 +772,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000E36"
-				type: "command"
-				title: "Occultism Epic Loot Chest"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "occultism"
+					}
+				}
 			}]
 		}
 		{
@@ -1589,11 +1595,14 @@
 			rewards: [
 				{
 					id: "0000000000000E76"
-					type: "command"
-					title: "Occultism Epic Loot Chest"
-					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:epic_lootbox"
+						Count: 1b
+						tag: {
+							mod: "occultism"
+						}
+					}
 				}
 				{
 					id: "0000000000000E77"
@@ -1766,19 +1775,25 @@
 			rewards: [
 				{
 					id: "6CA0ED39817B0F4E"
-					type: "command"
-					title: "Occultism Legendary Loot Chest"
-					icon: "kubejs:legendary_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_legendary"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:legendary_lootbox"
+						Count: 1b
+						tag: {
+							mod: "occultism"
+						}
+					}
 				}
 				{
 					id: "55F8A50BA2FEEFF5"
-					type: "command"
-					title: "Occultism Legendary Loot Chest"
-					icon: "kubejs:legendary_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_legendary"
-					player_command: false
+					type: "item"
+					item: {
+						id: "kubejs:legendary_lootbox"
+						Count: 1b
+						tag: {
+							mod: "occultism"
+						}
+					}
 				}
 			]
 		}
@@ -1955,11 +1970,14 @@
 			}]
 			rewards: [{
 				id: "6DB0BF49C13038F7"
-				type: "command"
-				title: "Occultism Epic Loot Box Reward"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+					id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+						mod: "occultism"
+					}
+				}
 			}]
 		}
 		{
