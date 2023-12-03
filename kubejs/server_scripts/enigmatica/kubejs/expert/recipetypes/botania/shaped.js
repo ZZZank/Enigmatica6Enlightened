@@ -18,6 +18,18 @@ onEvent('recipes', (event) => {
 
     const recipes = [
         {
+            output: 'botania:third_eye',
+            pattern: ['ABA', 'CDC', 'AEA'],
+            key: {
+                A: 'atum:coin_gold',
+                B: '#botania:runes/earth',
+                C: 'botania:livingrock',
+                D: 'minecraft:ender_eye',
+                E :'botania:mana_diamond'
+            },
+            id: 'botania:third_eye'
+        },
+        {
             output: 'botania:mana_pool',
             pattern: ['A A', 'ABA'],
             key: {

@@ -265,6 +265,22 @@ onEvent('recipes', (event) => {
         },
         {
             ingredients: [
+                'botania:third_eye',
+                '#forge:ingots/silver',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'farmersdelight:tree_bark',
+                'farmersdelight:tree_bark',
+                'farmersdelight:tree_bark',
+                'farmersdelight:tree_bark'
+            ],
+            output: 'naturesaura:eye',
+            time: 2 * time_multiplier,
+            sapling: 'quark:pink_blossom_sapling',
+            id: `${id_prefix}naturesaura_eye_alt`
+        },
+        {
+            ingredients: [
                 'naturesaura:eye',
                 '#forge:ingots/sky',
                 '#forge:ingots/sky',
