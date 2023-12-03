@@ -2,6 +2,15 @@
 onEvent('recipes', (event) => {
     const recipes = [
         {
+            output: '8x quark:dark_elder_prismarine',
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: 'quark:elder_prismarine',
+                B: '#forge:dyes/black'
+            },
+            id: 'quark:world/crafting/dark_elder_prismarine_bricks'
+        },
+        {
             output: 'quark:backpack',
             pattern: ['A A', 'ABA', 'ACA'],
             key: {
