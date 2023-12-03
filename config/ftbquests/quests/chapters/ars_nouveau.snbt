@@ -852,7 +852,7 @@
 					id: "kubejs:epic_lootbox"
 					Count: 1b
 					tag: {
-						mod: "blood_magic"
+						mod: "ars_nouveau"
 					}
 				}
 			}]
