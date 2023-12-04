@@ -30,16 +30,22 @@ function getRandomInList(entries) {
  */
 function rawItemStr(item, color) {
     let colorTag = color ? `,"color":"${color}"` : '';
-    let count = item.count > 1 ? `${item.count}*` : '';
+    let count = item.count > 1 ? `"${item.count}*"` : '""';
+    let itemName = '';
+    try {
+        itemName = item.getNbt().display.Name
+    } catch (e) {
+        itemName = `{"translate":"${item.block ? 'block' : 'item'}.${item.id.replace(':', '.')}"}`
+    }
     return `{
         "translate":"%s[%s]",
-        "with":["${count}","${item.getName()}"],
+        "with":[${count},${itemName}],
         "hoverEvent": {
             "action": "show_item",
             "contents": {
                 "id": "${item.id}",
                 "count": ${item.count},
-                "tag":"${item.nbtString.replace(/"/g, '\\"')}"
+                "tag":"${item.nbtString.replace('"', '\\"')}"
         }}${colorTag}}`.replace(/\s+/g, '');
 }
 
@@ -48,7 +54,7 @@ function rawItemStr(item, color) {
  * @param {Internal.PlayerJS} player The target of tellraw command
  * @param {string} str The content of tellraw command
  */
-function tellr(player, str) {
+function tellraw(player, str) {
     player.server.runCommandSilent(`/tellraw ${player.name} ${str}`);
 }
 

@@ -19,7 +19,7 @@ onEvent('item.right_click', (event) => {
         return;
     }
     const item = player.mainHandItem;
-    const target = player.rayTrace(5).entity;
+    const target = player.rayTrace(4).entity;
     if (
         // player must be holding something
         item.empty ||
@@ -34,12 +34,12 @@ onEvent('item.right_click', (event) => {
     event.cancel();
 
     let itemMessage = rawItemStr(item, 'white');
-    tellr(
+    tellraw(
         target,
         '{"translate":"chat.hand_over_your_items.send","color":"blue",' +
             `"with":[${itemMessage},{"text":"${player.name}","color":"dark_blue"}]}`
     );
-    tellr(
+    tellraw(
         player,
         '{"translate":"chat.hand_over_your_items.receive","color":"dark_green",' +
             `"with":[${itemMessage},{"text":"${target.name}","color":"green"}]}`
