@@ -1273,49 +1273,6 @@
 			}]
 		}
 		{
-			title: "The Mighty Architect"
-			icon: "create:crafting_blueprint"
-			x: -6.0d
-			y: -1.5d
-			shape: "square"
-			subtitle: "I love it when a plan comes together"
-			description: [
-				"If you are the type of player who avoids building a base and lives in a dirt hole somewhere because you are not confident with your building skills, or simply don't have the time and energy to plan out a full base design, then this mod is for you."
-				""
-				"The Mighty Architect allows you to plot down a dynamic design where you get to select how big or small the build is, how many floors, roof style, building materials, etc. Once your design is complete, it will save it as a schematic for you which can then be used in a Create Schematicannon to build it automatically."
-				""
-				"If the above introduction intrigues you, and you would like to learn more, or even see this mod in action, this short two minute video by the Mod Dev will show you the ins and outs of this wonderful mod."
-				"Link: https://youtu.be/VdoKmdYubBM"
-			]
-			id: "4407C59E32585B96"
-			tasks: [{
-				id: "3671CC5B42EC4DF8"
-				type: "checkmark"
-				title: "The Mighty Architect"
-			}]
-			rewards: [
-				{
-					id: "3E564C831D52F1BD"
-					type: "item"
-					item: "create:builders_tea"
-					count: 2
-					random_bonus: 2
-				}
-				{
-					id: "7FB21C0F074D7720"
-					type: "item"
-					item: "create:empty_schematic"
-				}
-				{
-					id: "1DDF6EF97DE63E61"
-					type: "item"
-					item: "minecraft:gunpowder"
-					count: 8
-					random_bonus: 8
-				}
-			]
-		}
-		{
 			title: "Rod of the Highlands"
 			icon: "botania:skydirt_rod"
 			x: 4.5d
