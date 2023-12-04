@@ -57,13 +57,13 @@
             if (mainHandItem != recipe.holding) {
                 continue;
             }
-            const target = player.rayTrace(5).block;
+            const target = player.rayTrace(3).block;
             if (!target || target.id != recipe.target) {
                 continue;
             }
             e.cancel();
             target.set(recipe.output);
-            player.mainHandItem.count--;
+            player.mainHandItem.count -= 1;
             return;
         }
     });

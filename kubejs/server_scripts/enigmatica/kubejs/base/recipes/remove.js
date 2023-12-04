@@ -19,7 +19,6 @@ onEvent('recipes', (event) => {
         { type: 'industrialforegoing:fluid_extractor' },
         { type: 'thermal:tree_extractor' },
 
-        { mod: 'ironjetpacks' },
         { mod: 'theoneprobe' },
 
         { type: 'thermal:compression_fuel' },
