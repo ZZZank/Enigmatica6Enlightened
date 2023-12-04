@@ -33,10 +33,11 @@ function rawItemStr(item, color) {
     let count = item.count > 1 ? `"${item.count}*"` : '""';
     let itemName = '';
     try {
-        itemName = item.getNbt().display.Name
+        itemName = item.getNbt().display.Name;
     } catch (e) {
-        itemName = `{"translate":"${item.block ? 'block' : 'item'}.${item.id.replace(':', '.')}"}`
+        itemName = `{"translate":"${item.block ? 'block' : 'item'}.${item.id.replace(':', '.')}"}`;
     }
+    // we use string instead of Text/TextComponent because KubeJS cannot handle `show_item` properly
     return `{
         "translate":"%s[%s]",
         "with":[${count},${itemName}],
