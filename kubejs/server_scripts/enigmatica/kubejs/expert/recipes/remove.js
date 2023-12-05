@@ -259,7 +259,6 @@ onEvent('recipes', (event) => {
         { output: 'naturesaura:generator_limit_remover', id: 'naturesaura:generator_limit_remover' },
         { output: 'naturesaura:gold_nether_brick', id: 'naturesaura:gold_nether_brick' },
         { output: 'naturesaura:shockwave_creator', id: 'naturesaura:shockwave_creator' },
-        { output: 'naturesaura:tainted_gold', id: 'naturesaura:tainted_gold' },
 
         { output: 'pneumaticcraft:air_compressor', id: 'pneumaticcraft:air_compressor' },
         { output: 'pneumaticcraft:advanced_air_compressor', id: 'pneumaticcraft:advanced_air_compressor' },
