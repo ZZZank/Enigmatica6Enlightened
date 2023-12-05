@@ -146,6 +146,8 @@ woodVariantsToConstruct.forEach((variant) => {
         logSuffix = '_log';
         woodSuffix = '_bark';
 
+        logBlock = modId + ':' + logType + logSuffix;
+        woodBlock = modId + ':' + logType + woodSuffix;
         logBlockStripped = modId + ':' + logType + '_stripped' + logSuffix;
         woodBlockStripped = modId + ':' + logType + '_stripped' + woodSuffix;
     }
