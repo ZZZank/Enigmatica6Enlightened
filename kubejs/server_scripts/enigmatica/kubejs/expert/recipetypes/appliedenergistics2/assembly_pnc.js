@@ -1,55 +1,55 @@
 'use strict';
+
+for (let type in storagePartsAE) {
+    let parts = storagePartsAE[type];
+    for (let capacity in parts) {
+        let part = parts[capacity];
+        let [mod, name] = part.split(':');
+        console.info(part);
+    }
+}
+
 onEvent('recipes', (event) => {
     if (global.isNormalMode) {
         return;
     }
-    const id_prefix = 'enigmatica:expert/appliedenergistics2/assembly_pnc/';
+    const id_prefix = 'enigmatica:expert/ae/assembly/';
     const recipes = [
         //blank for now
     ];
 
-    storagePartsAE.forEach((storagePart) => {
-        storagePart.sizes.forEach((partSize) => {
-            let partName = '';
-            if (storagePart.modID === 'appliedenergistics2') {
-                // 'appliedenergistics2:1k_cell_component'
-                partName = `${partSize}_cell_component`;
-            } else if (storagePart.modID == 'aeadditions') {
-                // 'aeadditions:item_storage_component_256'
-                partName = `${storagePart.type}_storage_component_${partSize}`;
-            } else {
-                //nothing else for now
-            }
-            let partID = `${storagePart.modID}:${partName}`;
-
+    for (let type in storagePartsAE) {
+        for (let capacity in storagePartsAE[type]) {
+            let part = storagePartsAE[type][capacity];
+            let [mod, name] = part.split(':');
             recipes.push(
                 {
-                    input: { item: `kubejs:${partName}_package`, count: 1 },
-                    output: { item: `kubejs:${partName}_assembly`, count: 1 },
+                    input: { item: `kubejs:${name}_package`, count: 1 },
+                    output: { item: `kubejs:${name}_assembly`, count: 1 },
                     program: 'drill',
-                    id: `${id_prefix}${partName}_assembly`
+                    id: `${id_prefix}${name}_assembly`
                 },
                 {
-                    input: { item: `kubejs:${partName}_assembly`, count: 1 },
-                    output: { item: partID, count: 1 },
+                    input: { item: `kubejs:${name}_assembly`, count: 1 },
+                    output: { item: part },
                     program: 'laser',
-                    id: `${id_prefix}${partName}`
+                    id: `${id_prefix}${name}`
                 },
                 {
-                    input: { item: `kubejs:batch_${partName}_package`, count: 1 },
-                    output: { item: `kubejs:batch_${partName}_assembly`, count: 1 },
+                    input: { item: `kubejs:batch_${name}_package`, count: 1 },
+                    output: { item: `kubejs:batch_${name}_assembly`, count: 1 },
                     program: 'drill',
-                    id: `${id_prefix}batch_${partName}_assembly`
+                    id: `${id_prefix}batch_${name}_assembly`
                 },
                 {
-                    input: { item: `kubejs:batch_${partName}_assembly`, count: 1 },
-                    output: { item: partID, count: 30 },
+                    input: { item: `kubejs:batch_${name}_assembly`, count: 1 },
+                    output: { item: part, count: 30 },
                     program: 'laser',
-                    id: `${id_prefix}batch_${partName}`
+                    id: `${id_prefix}batch_${name}`
                 }
             );
-        });
-    });
+        }
+    }
 
     recipes.forEach((recipe) => {
         recipe.input.type = 'pneumaticcraft:stacked_item';
