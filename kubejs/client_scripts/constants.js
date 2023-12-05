@@ -562,6 +562,10 @@ const recipesToHide = [
     {
         category: 'bloodmagic:altar',
         recipes_by_id: ['bloodmagic:altar/teleposer_focus']
+    },
+    {
+        category: 'naturesaura:altar',
+        recipes_by_id: ['naturesaura:altar/tainted_gold']
     }
 ];
 
