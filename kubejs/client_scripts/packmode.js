@@ -9,6 +9,7 @@ const defaultConfig = {
     message: `Valid modes are [${validPackMode}].`
 };
 const configName = 'mode.json';
+
 let config = JsonIO.read(configName);
 if (!config || !config.mode) {
     JsonIO.write(configName, defaultConfig);
