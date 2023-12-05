@@ -23,7 +23,6 @@ onEvent('recipes', (event) => {
                 C: { item: 'create:refined_radiance' },
                 D: { tag: 'botania:runes/winter' }
             },
-            altar_type: 0,
             duration: 100,
             starlight: 200,
             effects: ['astralsorcery:built_in_effect_discovery_central_beam'],
@@ -38,7 +37,6 @@ onEvent('recipes', (event) => {
                 C: { item: 'create:refined_radiance' },
                 D: { tag: 'botania:runes/air' }
             },
-            altar_type: 0,
             duration: 100,
             starlight: 200,
             effects: ['astralsorcery:built_in_effect_discovery_central_beam'],
@@ -51,7 +49,6 @@ onEvent('recipes', (event) => {
                 A: { item: 'astralsorcery:resonating_gem' },
                 B: { item: 'occultism:infused_lenses' }
             },
-            altar_type: 0,
             duration: 100,
             starlight: 200,
             effects: ['astralsorcery:built_in_effect_discovery_central_beam'],
@@ -76,7 +73,6 @@ onEvent('recipes', (event) => {
                 },
                 E: { tag: 'botania:runes/mana' }
             },
-            altar_type: 0,
             duration: 100,
             starlight: 500,
             recipe_class: 'astralsorcery:attunement_upgrade',
@@ -97,7 +93,6 @@ onEvent('recipes', (event) => {
                     nbt: '{aura:400000}'
                 }
             },
-            altar_type: 0,
             duration: 100,
             starlight: 500,
             effects: ['astralsorcery:built_in_effect_discovery_central_beam'],
@@ -113,7 +108,6 @@ onEvent('recipes', (event) => {
                 D: { item: 'botania:spark' },
                 E: { item: 'atum:crystal_glass_pane' }
             },
-            altar_type: 0,
             duration: 100,
             starlight: 200,
             effects: ['astralsorcery:built_in_effect_discovery_central_beam'],
@@ -129,7 +123,6 @@ onEvent('recipes', (event) => {
                 E: { tag: 'forge:bookshelves' },
                 F: { item: 'ars_nouveau:blaze_fiber' }
             },
-            altar_type: 0,
             duration: 100,
             starlight: 200,
             effects: ['astralsorcery:built_in_effect_discovery_central_beam'],
@@ -140,7 +133,7 @@ onEvent('recipes', (event) => {
     recipes.forEach((recipe) => {
         let constructed_recipe = {
             type: 'astralsorcery:altar',
-            altar_type: recipe.altar_type,
+            altar_type: 0,
             duration: recipe.duration,
             starlight: recipe.starlight,
             pattern: recipe.pattern,
