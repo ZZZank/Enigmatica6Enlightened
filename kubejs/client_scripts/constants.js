@@ -228,6 +228,8 @@ const itemsToHide = [
 
     'mekanism:fluorite_gem',
 
+    /materialis:wrench/,
+
     'neapolitan:milk_bottle',
 
     'powah:uraninite_ore',
