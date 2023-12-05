@@ -1,14 +1,5 @@
 'use strict';
 
-for (let type in storagePartsAE) {
-    let parts = storagePartsAE[type];
-    for (let capacity in parts) {
-        let part = parts[capacity];
-        let [mod, name] = part.split(':');
-        console.info(part);
-    }
-}
-
 onEvent('recipes', (event) => {
     if (global.isNormalMode) {
         return;
