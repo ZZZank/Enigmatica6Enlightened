@@ -1,15 +1,15 @@
 'use strict';
+
 onEvent('recipes', (event) => {
     if (global.isNormalMode) {
         return;
     }
-    const id_prefix = 'enigmatica:expert/appliedenergistics2/advanced_assembly_table/';
+    const id_prefix = 'enigmatica:expert/ae/advanced_assembly_table/';
     const recipes = [];
 
     for (let type in storagePartsAE) {
-        let part = storagePartsAE[type];
-        for (let capacity in part) {
-            let [mod, name] = part[capacity].split(':');
+        for (let capacity in storagePartsAE[type]) {
+            let [mod, name] = storagePartsAE[type][capacity].split(':');
             recipes.push({
                 outputs: [
                     {
@@ -25,7 +25,7 @@ onEvent('recipes', (event) => {
                     { type: 'masterfulmachinery:pncr_pressure', perTick: true, data: { air: 300 * 4 } }
                 ],
                 ticks: 240,
-                id: `${id_prefix}batch_${capacity}k_package`
+                id: `${id_prefix}batch_${type}_${capacity}k_package`
             });
         }
     }
