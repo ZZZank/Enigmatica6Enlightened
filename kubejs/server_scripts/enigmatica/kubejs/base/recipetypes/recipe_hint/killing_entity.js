@@ -62,8 +62,7 @@ onEvent('recipes', (event) => {
                         data: { item: recipe.target, count: 1 }
                     }
                 ],
-                ticks: 1,
-                id: recipe.id
+                ticks: 1
             })
             .id(recipe.id);
     });
