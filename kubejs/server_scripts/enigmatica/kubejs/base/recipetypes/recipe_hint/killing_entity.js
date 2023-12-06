@@ -42,6 +42,11 @@ onEvent('recipes', (event) => {
             target: 'meetyourfight:devils_ante',
             output: 'meetyourfight:fortunes_favor',
             id: id_prefix + 'fortunes_favor'
+        },
+        {
+            target: 'environmental:koi_bucket',
+            output: 'environmental:koi',
+            id: id_prefix + 'koi'
         }
     ];
 
