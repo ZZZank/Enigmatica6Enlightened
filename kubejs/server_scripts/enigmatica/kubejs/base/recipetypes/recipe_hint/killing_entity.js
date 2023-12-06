@@ -3,13 +3,13 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             target: 'minecraft:pig_spawn_egg',
-            weapon: { tag: 'farmersdelight:tools/knives', count: 1 },
+            weapon: '#farmersdelight:tools/knives',
             output: 'farmersdelight:ham',
             id: id_prefix + 'ham_pig'
         },
         {
             target: 'minecraft:hoglin_spawn_egg',
-            weapon: { tag: 'farmersdelight:tools/knives', count: 1 },
+            weapon: '#farmersdelight:tools/knives',
             output: 'farmersdelight:ham',
             id: id_prefix + 'ham_hoglin'
         },
@@ -17,6 +17,11 @@ onEvent('recipes', (event) => {
             target: 'upgrade_aquatic:nautilus_spawn_egg',
             output: 'minecraft:nautilus_shell',
             id: id_prefix + 'nautilus_shell'
+        },
+        {
+            target: 'ars_nouveau:ritual_wilden_summon',
+            output: 'ars_nouveau:wilden_tribute',
+            id: id_prefix + 'wilden_tribute'
         },
         {
             target: 'betterendforge:silk_moth_nest',
@@ -41,29 +46,28 @@ onEvent('recipes', (event) => {
     ];
 
     recipes.forEach((recipe) => {
-        event
-            .custom({
-                type: 'masterfulmachinery:machine_process',
-                structureId: 'killing_entity_structure',
-                controllerId: 'killing_entity',
-                outputs: [
-                    {
-                        type: 'masterfulmachinery:items',
-                        data: { item: recipe.output, count: 1 }
-                    }
-                ],
-                inputs: [
-                    {
-                        type: 'masterfulmachinery:items',
-                        data: recipe.weapon ? recipe.weapon : { tag: 'forge:weapons', count: 1 }
-                    },
-                    {
-                        type: 'masterfulmachinery:items',
-                        data: { item: recipe.target, count: 1 }
-                    }
-                ],
-                ticks: 1
-            })
-            .id(recipe.id);
+        let proc = {
+            type: 'masterfulmachinery:machine_process',
+            structureId: 'killing_entity_structure',
+            controllerId: 'killing_entity',
+            outputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    data: toJsonWithCount(recipe.output)
+                }
+            ],
+            inputs: [
+                {
+                    type: 'masterfulmachinery:items',
+                    data: recipe.weapon ? toJsonWithCount(recipe.weapon) : { tag: 'forge:weapons', count: 1 }
+                },
+                {
+                    type: 'masterfulmachinery:items',
+                    data: toJsonWithCount(recipe.target)
+                }
+            ],
+            ticks: 1
+        };
+        event.custom(proc).id(recipe.id);
     });
 });

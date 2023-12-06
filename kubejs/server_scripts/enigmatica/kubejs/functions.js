@@ -16,6 +16,29 @@ function titleCase(str) {
 
 /**
  *
+ * @param {string} ingredient like '3x #forge:grain' or 'minecraft:book'
+ * @returns {{count: number,tag?: string,item?: string}}
+ */
+function toJsonWithCount(ingredient) {
+    let json = { count: 1 };
+
+    let splited = ingredient.split('x ', 1);
+    if (splited.length != 1) {
+        // "3x kubejs:no" -> ["3", "kubejs:no"]
+        json.count = parseInt(splited[0]);
+        ingredient = splited[1];
+    }
+
+    if (ingredient.startsWith('#')) {
+        json.tag = ingredient.substring(1);
+    } else {
+        json.item = ingredient;
+    }
+    return json;
+}
+
+/**
+ *
  * @param {any[]} entries
  * @returns {any}
  */
