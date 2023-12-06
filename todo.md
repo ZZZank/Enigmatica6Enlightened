@@ -3,3 +3,5 @@
 - try to buff TCon armor
 - makes AS::flare looks like MiningGadget::minerslight
 - BetterEnd: pedestals directional texture
+- lang
+- Refined Storage?
