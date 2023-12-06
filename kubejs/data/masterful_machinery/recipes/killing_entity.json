@@ -3,17 +3,6 @@
     "controllerId": "killing_entity",
     "id": "killing_entity_structure",
     "name": "Killing Entity",
-    "layout": [
-        [
-            "C"
-        ],
-        [
-            "A"
-        ]
-    ],
-    "legend": {
-        "A": {
-            "block": "supplementaries:bamboo_spikes"
-        }
-    }
+    "layout": [["C"]],
+    "legend": {}
 }
