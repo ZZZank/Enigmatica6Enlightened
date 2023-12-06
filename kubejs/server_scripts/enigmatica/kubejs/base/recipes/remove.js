@@ -20,6 +20,7 @@ onEvent('recipes', (event) => {
         { type: 'thermal:tree_extractor' },
 
         { mod: 'theoneprobe' },
+        { mod: 'itemfilters' },
 
         { type: 'thermal:compression_fuel' },
         { type: 'mekanism:combining' },
