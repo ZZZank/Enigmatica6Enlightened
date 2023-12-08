@@ -3,11 +3,11 @@ declare const HOUR: 3600000;
 declare const SLOT_FEET: EquipmentSlot;
 declare const SLOT_HEAD: EquipmentSlot;
 declare const global: {
-  jeiRuntime: Unknown.JeiRuntime;
-  isExpertMode: true;
-  onReload: Unknown.InterpretedFunction;
-  packmode: "expert";
-  isNormalMode: false;
+    jeiRuntime: Unknown.JeiRuntime;
+    isExpertMode: boolean;
+    onReload: () => {/**@file {kubejs\startup_scripts\reload.js} */};
+    packmode: string;
+    isNormalMode: boolean;
 };
 declare const TOOL_TYPE_SHOVEL: ToolType;
 declare const SLOT_LEGS: EquipmentSlot;
