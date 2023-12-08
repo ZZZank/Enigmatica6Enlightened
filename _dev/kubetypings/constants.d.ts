@@ -2,7 +2,13 @@
 declare const HOUR: 3600000;
 declare const SLOT_FEET: EquipmentSlot;
 declare const SLOT_HEAD: EquipmentSlot;
-declare const global: {};
+declare const global: {
+  jeiRuntime: Unknown.JeiRuntime;
+  isExpertMode: true;
+  onReload: Unknown.InterpretedFunction;
+  packmode: "expert";
+  isNormalMode: false;
+};
 declare const TOOL_TYPE_SHOVEL: ToolType;
 declare const SLOT_LEGS: EquipmentSlot;
 declare const TOOL_TYPE_AXE: ToolType;
