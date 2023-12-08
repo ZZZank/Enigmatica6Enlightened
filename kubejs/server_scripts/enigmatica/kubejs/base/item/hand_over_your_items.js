@@ -8,7 +8,7 @@
  */
 
 onEvent('item.right_click', (event) => {
-    const /** @type {Internal.PlayerJS} */ player = event.player;
+    const player = event.player;
     if (
         !player ||
         // fake player not allowed

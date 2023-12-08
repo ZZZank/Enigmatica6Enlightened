@@ -37,8 +37,8 @@ onEvent('block.place', (event) => {
     if (global.isNormalMode) {
         return;
     }
-    const /** @type {Internal.BlockContainerJS} */ block = event.getBlock();
-    const /** @type {Internal.EntityJS} */ entity = event.getEntity();
+    const block = event.block;
+    const entity = event.entity;
 
     let isValid = (restriction) => {
         if (restriction.stageUnlock && entity.stages.has(restriction.stageUnlock)) {

@@ -47,7 +47,7 @@
     ];
 
     onEvent('block.right_click', (e) => {
-        const /** @type {Internal.PlayerJS} */ player = e.player;
+        const player = e.player;
         if (!player || player.fake || player.mainHandItem.empty || !player.crouching) {
             return;
         }

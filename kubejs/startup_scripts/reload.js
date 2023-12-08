@@ -1,6 +1,6 @@
 'use strict';
 
-global.onReload = function onReload() {
+global.onReload = () => {
     //reload powah configs
     let configs = java('owmii.powah.config.Configs');
     configs.ALL.forEach((config) => config.reload());
