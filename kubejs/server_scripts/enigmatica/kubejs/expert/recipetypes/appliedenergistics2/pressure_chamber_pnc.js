@@ -9,72 +9,73 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             inputs: [
-                { item: 'tconstruct:ichor_slime_crystal', count: 1 },
-                { item: 'appliedenergistics2:calculation_processor', count: 1 },
-                { item: 'botania:corporea_spark', count: 1 }
+                'tconstruct:ichor_slime_crystal',
+                'appliedenergistics2:calculation_processor',
+                'botania:corporea_spark'
             ],
             pressure: 2.0,
-            results: [{ item: 'appliedenergistics2:annihilation_core', count: 1 }],
+            results: ['appliedenergistics2:annihilation_core'],
             id: 'appliedenergistics2:materials/annihilationcore'
         },
         {
             inputs: [
-                { item: 'tconstruct:sky_slime_crystal', count: 1 },
-                { item: 'appliedenergistics2:calculation_processor', count: 1 },
-                { item: 'botania:corporea_spark', count: 1 }
+                'tconstruct:sky_slime_crystal',
+                'appliedenergistics2:calculation_processor',
+                'botania:corporea_spark'
             ],
             pressure: 2.0,
-            results: [{ item: 'appliedenergistics2:formation_core', count: 1 }],
+            results: ['appliedenergistics2:formation_core'],
             id: 'appliedenergistics2:materials/formationcore'
         },
         {
             inputs: [
-                { tag: 'forge:coins/tin', count: 1 },
-                { tag: 'forge:gems/silicon', count: 1 },
-                { item: 'appliedenergistics2:sky_dust', count: 1 },
-                { item: 'fluxnetworks:flux_dust', count: 1 }
+                '#forge:coins/tin',
+                '#forge:gems/silicon',
+                'appliedenergistics2:sky_dust',
+                'fluxnetworks:flux_dust'
             ],
             pressure: 2.0,
-            results: [{ item: 'appliedenergistics2:printed_calculation_processor', count: 1 }],
+            results: ['appliedenergistics2:printed_calculation_processor'],
             id: 'appliedenergistics2:inscriber/calculation_processor_print'
         },
         {
             inputs: [
-                { tag: 'forge:coins/lumium', count: 1 },
-                { tag: 'forge:gems/silicon', count: 1 },
-                { item: 'appliedenergistics2:sky_dust', count: 1 },
-                { item: 'fluxnetworks:flux_dust', count: 1 }
+                '#forge:coins/lumium',
+                '#forge:gems/silicon',
+                'appliedenergistics2:sky_dust',
+                'fluxnetworks:flux_dust'
             ],
             pressure: 2.0,
-            results: [{ item: 'appliedenergistics2:printed_logic_processor', count: 1 }],
+            results: ['appliedenergistics2:printed_logic_processor'],
             id: 'appliedenergistics2:inscriber/logic_processor_print'
         },
         {
             inputs: [
-                { tag: 'forge:coins/enderium', count: 1 },
-                { tag: 'forge:gems/silicon', count: 1 },
-                { item: 'appliedenergistics2:sky_dust', count: 1 },
-                { item: 'fluxnetworks:flux_dust', count: 1 }
+                '#forge:coins/enderium',
+                '#forge:gems/silicon',
+                'appliedenergistics2:sky_dust',
+                'fluxnetworks:flux_dust'
             ],
             pressure: 2.0,
-            results: [{ item: 'appliedenergistics2:printed_engineering_processor', count: 1 }],
+            results: ['appliedenergistics2:printed_engineering_processor'],
             id: 'appliedenergistics2:inscriber/engineering_processor_print'
         }
     ];
 
     recipes.forEach((recipe) => {
-        let ingredients = [];
+        let parsedInputs = [];
         recipe.inputs.forEach((input) => {
-            input.type = 'pneumaticcraft:stacked_item';
-            ingredients.push(input);
+            let parsed = toJsonWithCount(input);
+            parsed.type = 'pneumaticcraft:stacked_item';
+            parsedInputs.push(parsed);
         });
 
         event
             .custom({
                 type: 'pneumaticcraft:pressure_chamber',
-                inputs: ingredients,
+                inputs: parsedInputs,
                 pressure: recipe.pressure,
-                results: recipe.results
+                results: recipe.results.map((str) => Item.of(str).toResultJson())
             })
             .id(recipe.id);
     });
