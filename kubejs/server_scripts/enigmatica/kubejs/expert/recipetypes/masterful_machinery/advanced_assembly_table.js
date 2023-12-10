@@ -79,6 +79,21 @@ onEvent('recipes', (event) => {
         }
     ];
 
+    for (let type in storagePartsAE) {
+        for (let capacity in storagePartsAE[type]) {
+            let [mod, name] = storagePartsAE[type][capacity].split(':');
+            recipes.push({
+                outputs: [`kubejs:batch_${name}_package`],
+                inputs: [
+                    `30x kubejs:${name}_package`,
+                    { type: 'masterfulmachinery:pncr_pressure', perTick: true, data: { air: 300 * 4 } }
+                ],
+                ticks: 240,
+                id: `${id_prefix}batch_${type}_${capacity}k_package`
+            });
+        }
+    }
+
     recipes.forEach((recipe) => {
         recipe.inputs = recipe.inputs.map((val) => {
             if (typeof val == 'string') {

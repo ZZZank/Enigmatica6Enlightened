@@ -515,6 +515,59 @@ onEvent('recipes', (event) => {
             pressure: 4.5,
             results: ['kubejs:diy_bottling_machine'],
             id: `${id_prefix}diy_bottling_machine`
+        },
+        {
+            inputs: [
+                'tconstruct:ichor_slime_crystal',
+                'appliedenergistics2:calculation_processor',
+                'botania:corporea_spark'
+            ],
+            pressure: 2.0,
+            results: ['appliedenergistics2:annihilation_core'],
+            id: 'appliedenergistics2:materials/annihilationcore'
+        },
+        {
+            inputs: [
+                'tconstruct:sky_slime_crystal',
+                'appliedenergistics2:calculation_processor',
+                'botania:corporea_spark'
+            ],
+            pressure: 2.0,
+            results: ['appliedenergistics2:formation_core'],
+            id: 'appliedenergistics2:materials/formationcore'
+        },
+        {
+            inputs: [
+                '#forge:coins/tin',
+                '#forge:gems/silicon',
+                'appliedenergistics2:sky_dust',
+                'fluxnetworks:flux_dust'
+            ],
+            pressure: 2.0,
+            results: ['appliedenergistics2:printed_calculation_processor'],
+            id: 'appliedenergistics2:inscriber/calculation_processor_print'
+        },
+        {
+            inputs: [
+                '#forge:coins/lumium',
+                '#forge:gems/silicon',
+                'appliedenergistics2:sky_dust',
+                'fluxnetworks:flux_dust'
+            ],
+            pressure: 2.0,
+            results: ['appliedenergistics2:printed_logic_processor'],
+            id: 'appliedenergistics2:inscriber/logic_processor_print'
+        },
+        {
+            inputs: [
+                '#forge:coins/enderium',
+                '#forge:gems/silicon',
+                'appliedenergistics2:sky_dust',
+                'fluxnetworks:flux_dust'
+            ],
+            pressure: 2.0,
+            results: ['appliedenergistics2:printed_engineering_processor'],
+            id: 'appliedenergistics2:inscriber/engineering_processor_print'
         }
     ];
 
@@ -537,7 +590,7 @@ onEvent('recipes', (event) => {
         recipes.push({
             inputs: ['powah:blank_card', 'powah:dielectric_paste', capacitor, 'powah:ender_core'],
             pressure: 4.0,
-            results: [{ item: `powah:ender_gate_${tier}` }],
+            results: [`powah:ender_gate_${tier}`],
             id: `powah:crafting/ender_gate_${tier}`
         });
 
@@ -563,13 +616,14 @@ onEvent('recipes', (event) => {
             parsed.type = 'pneumaticcraft:stacked_item';
             ingredients.push(parsed);
         });
+        recipe.results = recipe.results.map((str) => Item.of(str).toResultJson())
 
         event
             .custom({
                 type: 'pneumaticcraft:pressure_chamber',
                 inputs: ingredients,
                 pressure: recipe.pressure,
-                results: recipe.results.map((str) => Item.of(str).toResultJson())
+                results: recipe.results
             })
             .id(recipe.id);
     });
