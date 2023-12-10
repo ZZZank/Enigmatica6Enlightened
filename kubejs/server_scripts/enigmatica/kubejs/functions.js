@@ -48,10 +48,10 @@ function getRandomInList(entries) {
 
 /**
  * @param {Internal.ItemStackJS} item
- * @param {string} color
+ * @param {string?} color
  * @returns {string}
  */
-function rawItemStr(item, color = null) {
+function rawItemStr(item, color) {
     let colorTag = color ? `,"color":"${color}"` : '';
     let count = item.count > 1 ? `"${item.count}*"` : '""';
     let itemName = '';
