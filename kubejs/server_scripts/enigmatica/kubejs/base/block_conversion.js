@@ -57,11 +57,13 @@
             if (mainHandItem != recipe.holding) {
                 continue;
             }
-            const target = player.rayTrace(3).block;
-            if (!target || target.id != recipe.target) {
+            const target = e.block;
+            if (target.id != recipe.target) {
                 continue;
             }
             e.cancel();
+            e.server.runCommandSilent(`playsound ping:bloop block ` + player.name);
+            e.server.runCommandSilent(`particle minecraft:explosion ${target.x} ${target.y} ${target.z}`);
             target.set(recipe.output);
             player.mainHandItem.count -= 1;
             return;
