@@ -9,11 +9,11 @@ onEvent('recipes', (event) => {
      */
     const recipes = [
         {
-            outputs: [{ data: { item: 'kubejs:wicked_weave', count: 2 } }],
+            outputs: ['2x kubejs:wicked_weave',],
             inputs: [
-                { data: { item: 'atum:linen_cloth', count: 2 } },
-                { data: { item: 'ars_nouveau:mana_berry', count: 1 } },
-                { data: { item: 'ars_nouveau:mana_bloom', count: 1 } },
+                '2x atum:linen_cloth',
+                '1x ars_nouveau:mana_berry',
+                '1x ars_nouveau:mana_bloom',
                 {
                     type: 'masterfulmachinery:fluids',
                     data: { fluid: 'bloodmagic:life_essence_fluid', amount: 500 }
@@ -23,17 +23,13 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}wicked_weave`
         },
         {
-            outputs: [{ data: { item: 'bloodmagic:sacrificialdagger', count: 1 } }],
+            outputs: ['1x bloodmagic:sacrificialdagger',],
             inputs: [
-                {
-                    data: { item: 'undergarden:utheric_sword', count: 1 }
-                },
-                {
-                    data: { item: 'appliedenergistics2:charged_certus_quartz_crystal', count: 2 }
-                },
-                { data: { item: 'minecraft:fermented_spider_eye', count: 2 } },
-                { data: { item: 'minecraft:ghast_tear', count: 1 } },
-                { data: { item: 'redstone_arsenal:flux_gem', count: 1 } },
+                '1x undergarden:utheric_sword',
+                '2x appliedenergistics2:charged_certus_quartz_crystal',
+                '2x minecraft:fermented_spider_eye',
+                '1x minecraft:ghast_tear',
+                '1x redstone_arsenal:flux_gem',
                 {
                     type: 'masterfulmachinery:fluids',
                     data: { fluid: 'bloodmagic:life_essence_fluid', amount: 1000 }
@@ -43,13 +39,11 @@ onEvent('recipes', (event) => {
             id: 'bloodmagic:sacrificial_dagger'
         },
         {
-            outputs: [{ data: { item: 'redstone_arsenal:flux_gem', count: 4 } }],
+            outputs: ['4x redstone_arsenal:flux_gem',],
             inputs: [
-                {
-                    data: { item: 'occultism:spirit_attuned_gem', count: 4 }
-                },
-                { data: { item: 'redstone_arsenal:flux_dust', count: 8 } },
-                { data: { item: 'atum:nepthys_godshard', count: 1 } },
+                '4x occultism:spirit_attuned_gem',
+                '8x redstone_arsenal:flux_dust',
+                '1x atum:nepthys_godshard',
                 {
                     type: 'masterfulmachinery:fluids',
                     data: { fluid: 'bloodmagic:life_essence_fluid', amount: 4000 }
@@ -59,15 +53,13 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}flux_gem`
         },
         {
-            outputs: [{ data: { item: 'alexsmobs:dimensional_carver', count: 1 } }],
+            outputs: ['1x alexsmobs:dimensional_carver',],
             inputs: [
-                { data: { item: 'redstone_arsenal:flux_gem', count: 1 } },
-                { data: { item: 'tconstruct:hepatizon_ingot', count: 3 } },
-                { data: { tag: 'forge:ingots/netherite', count: 2 } },
-                {
-                    data: { item: 'alexsmobs:void_worm_mandible', count: 2 }
-                },
-                { data: { item: 'alexsmobs:void_worm_eye', count: 1 } },
+                '1x redstone_arsenal:flux_gem',
+                '3x tconstruct:hepatizon_ingot',
+                '2x #forge:ingots/netherite',
+                '2x alexsmobs:void_worm_mandible',
+                '1x alexsmobs:void_worm_eye',
                 {
                     type: 'masterfulmachinery:fluids',
                     perTick: true,
@@ -78,15 +70,13 @@ onEvent('recipes', (event) => {
             id: 'alexsmobs:dimensional_carver'
         },
         {
-            outputs: [{ data: { item: 'botania:blood_pendant', count: 1 } }],
+            outputs: ['1x botania:blood_pendant',],
             inputs: [
-                { data: { item: 'ars_nouveau:dull_trinket', count: 1 } },
-                { data: { item: 'alexsmobs:emu_feather', count: 4 } },
-                { data: { tag: 'forge:inlays/pewter', count: 2 } },
-                {
-                    data: { item: 'appliedenergistics2:charged_certus_quartz_crystal', count: 2 }
-                },
-                { data: { item: 'ars_nouveau:potion_flask_amplify', count: 1 } },
+                '1x ars_nouveau:dull_trinket',
+                '4x alexsmobs:emu_feather',
+                '2x #forge:inlays/pewter',
+                '2x appliedenergistics2:charged_certus_quartz_crystal',
+                '1x ars_nouveau:potion_flask_amplify',
                 {
                     type: 'masterfulmachinery:fluids',
                     data: { fluid: 'bloodmagic:life_essence_fluid', amount: 10000 }
@@ -96,17 +86,12 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}void_amulet`
         },
         {
-            outputs: [
-                {
-                    data: { item: 'bloodmagic:componentframeparts', count: 1 }
-                }
+            outputs: ['1x bloodmagic:componentframeparts',
             ],
             inputs: [
-                { data: { tag: 'forge:gears/osmium', count: 1 } },
-                {
-                    data: { item: 'tconstruct:ender_slime_crystal', count: 1 }
-                },
-                { data: { tag: 'forge:nuggets/utherium', count: 4 } },
+                '1x #forge:gears/osmium',
+                '1x tconstruct:ender_slime_crystal',
+                '4x #forge:nuggets/utherium',
                 {
                     type: 'masterfulmachinery:fluids',
                     data: { fluid: 'bloodmagic:life_essence_fluid', amount: 1000 }
@@ -116,19 +101,12 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}componentframeparts`
         },
         {
-            outputs: [
-                {
-                    data: { item: 'bloodmagic:itemrouterfilterexact', count: 1 }
-                }
+            outputs: ['1x bloodmagic:itemrouterfilterexact',
             ],
             inputs: [
-                {
-                    data: { item: 'bloodmagic:componentframeparts', count: 1 }
-                },
-                {
-                    data: { item: 'atum:red_stained_crystal_glass_pane', count: 1 }
-                },
-                { data: { tag: 'forge:nuggets/signalum', count: 1 } },
+                '1x bloodmagic:componentframeparts',
+                '1x atum:red_stained_crystal_glass_pane',
+                '1x #forge:nuggets/signalum',
                 {
                     type: 'masterfulmachinery:fluids',
                     data: { fluid: 'bloodmagic:life_essence_fluid', amount: 1000 }
@@ -138,19 +116,12 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}itemrouterfilterexact`
         },
         {
-            outputs: [
-                {
-                    data: { item: 'bloodmagic:itemrouterfilteroredict', count: 1 }
-                }
+            outputs: ['1x bloodmagic:itemrouterfilteroredict',
             ],
             inputs: [
-                {
-                    data: { item: 'bloodmagic:componentframeparts', count: 1 }
-                },
-                {
-                    data: { item: 'atum:lime_stained_crystal_glass_pane', count: 1 }
-                },
-                { data: { tag: 'forge:chunks', count: 1 } },
+                '1x bloodmagic:componentframeparts',
+                '1x atum:lime_stained_crystal_glass_pane',
+                '1x #forge:chunks',
                 {
                     type: 'masterfulmachinery:fluids',
                     data: { fluid: 'bloodmagic:life_essence_fluid', amount: 1000 }
@@ -160,19 +131,12 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}itemrouterfilteroredict`
         },
         {
-            outputs: [
-                {
-                    data: { item: 'bloodmagic:itemrouterfilterenchant', count: 1 }
-                }
+            outputs: ['1x bloodmagic:itemrouterfilterenchant',
             ],
             inputs: [
-                {
-                    data: { item: 'bloodmagic:componentframeparts', count: 1 }
-                },
-                {
-                    data: { item: 'atum:green_stained_crystal_glass_pane', count: 1 }
-                },
-                { data: { item: 'minecraft:enchanted_book', count: 1 } },
+                '1x bloodmagic:componentframeparts',
+                '1x atum:green_stained_crystal_glass_pane',
+                '1x minecraft:enchanted_book',
                 {
                     type: 'masterfulmachinery:fluids',
                     data: { fluid: 'bloodmagic:life_essence_fluid', amount: 1000 }
@@ -182,19 +146,12 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}itemrouterfilterenchant`
         },
         {
-            outputs: [
-                {
-                    data: { item: 'bloodmagic:itemrouterfiltermoditems', count: 1 }
-                }
+            outputs: ['1x bloodmagic:itemrouterfiltermoditems',
             ],
             inputs: [
-                {
-                    data: { item: 'bloodmagic:componentframeparts', count: 1 }
-                },
-                {
-                    data: { item: 'atum:yellow_stained_crystal_glass_pane', count: 1 }
-                },
-                { data: { item: 'naturesaura:crimson_meal', count: 1 } },
+                '1x bloodmagic:componentframeparts',
+                '1x atum:yellow_stained_crystal_glass_pane',
+                '1x naturesaura:crimson_meal',
                 {
                     type: 'masterfulmachinery:fluids',
                     data: { fluid: 'bloodmagic:life_essence_fluid', amount: 1000 }
@@ -204,19 +161,12 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}itemrouterfiltermoditems`
         },
         {
-            outputs: [
-                {
-                    data: { item: 'bloodmagic:itemrouterfiltercomposite', count: 1 }
-                }
+            outputs: ['1x bloodmagic:itemrouterfiltercomposite',
             ],
             inputs: [
-                {
-                    data: { item: 'bloodmagic:componentframeparts', count: 1 }
-                },
-                {
-                    data: { item: 'atum:white_stained_crystal_glass_pane', count: 1 }
-                },
-                { data: { tag: 'forge:nuggets/silicon_bronze', count: 1 } },
+                '1x bloodmagic:componentframeparts',
+                '1x atum:white_stained_crystal_glass_pane',
+                '1x #forge:nuggets/silicon_bronze',
                 {
                     type: 'masterfulmachinery:fluids',
                     data: { fluid: 'bloodmagic:life_essence_fluid', amount: 1000 }
@@ -226,16 +176,12 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}itemrouterfiltercomposite`
         },
         {
-            outputs: [{ data: { item: 'bloodmagic:noderouter', count: 1 } }],
+            outputs: ['1x bloodmagic:noderouter',],
             inputs: [
-                { data: { item: 'upgrade_aquatic:elder_eye', count: 1 } },
-                {
-                    data: { item: 'occultism:spirit_attuned_gem', count: 2 }
-                },
-                { data: { tag: 'forge:rods/prismarine', count: 2 } },
-                {
-                    data: { item: 'resourcefulbees:tainted_honeycomb', count: 1 }
-                },
+                '1x upgrade_aquatic:elder_eye',
+                '2x occultism:spirit_attuned_gem',
+                '2x #forge:rods/prismarine',
+                '1x resourcefulbees:tainted_honeycomb',
                 {
                     type: 'masterfulmachinery:fluids',
                     data: { fluid: 'bloodmagic:life_essence_fluid', amount: 50000 }
@@ -245,15 +191,11 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}noderouter`
         },
         {
-            outputs: [{ data: { item: 'bloodmagic:itemroutingnode', count: 2 } }],
+            outputs: ['2x bloodmagic:itemroutingnode',],
             inputs: [
-                { data: { item: 'botania:corporea_spark', count: 2 } },
-                {
-                    data: { item: 'occultism:spirit_attuned_gem', count: 2 }
-                },
-                {
-                    data: { item: 'architects_palette:moonstone', count: 1 }
-                },
+                '2x botania:corporea_spark',
+                '2x occultism:spirit_attuned_gem',
+                '1x architects_palette:moonstone',
                 {
                     type: 'masterfulmachinery:fluids',
                     data: { fluid: 'bloodmagic:life_essence_fluid', amount: 500 }
@@ -263,11 +205,11 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}itemroutingnode`
         },
         {
-            outputs: [{ data: { item: 'bloodmagic:inputroutingnode', count: 1 } }],
+            outputs: ['1x bloodmagic:inputroutingnode',],
             inputs: [
-                { data: { item: 'bloodmagic:itemroutingnode', count: 1 } },
-                { data: { tag: 'forge:nuggets/lumium', count: 1 } },
-                { data: { tag: 'forge:dusts/fluorite', count: 1 } },
+                '1x bloodmagic:itemroutingnode',
+                '1x #forge:nuggets/lumium',
+                '1x #forge:dusts/fluorite',
                 {
                     type: 'masterfulmachinery:fluids',
                     data: { fluid: 'bloodmagic:life_essence_fluid', amount: 500 }
@@ -277,11 +219,11 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}inputroutingnode`
         },
         {
-            outputs: [{ data: { item: 'bloodmagic:outputroutingnode', count: 1 } }],
+            outputs: ['1x bloodmagic:outputroutingnode',],
             inputs: [
-                { data: { item: 'bloodmagic:itemroutingnode', count: 1 } },
-                { data: { tag: 'forge:nuggets/signalum', count: 1 } },
-                { data: { tag: 'forge:dusts/fluorite', count: 1 } },
+                '1x bloodmagic:itemroutingnode',
+                '1x #forge:nuggets/signalum',
+                '1x #forge:dusts/fluorite',
                 {
                     type: 'masterfulmachinery:fluids',
                     data: { fluid: 'bloodmagic:life_essence_fluid', amount: 500 }
@@ -291,9 +233,9 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}outputroutingnode`
         },
         {
-            outputs: [{ data: { item: 'redstone_arsenal:flux_dust', count: 8 } }],
+            outputs: ['8x redstone_arsenal:flux_dust',],
             inputs: [
-                { data: { tag: 'forge:dusts/ender_pearl', count: 8 } },
+                '8x #forge:dusts/ender_pearl',
                 {
                     type: 'masterfulmachinery:fluids',
                     data: { fluid: 'bloodmagic:life_essence_fluid', amount: 80 }
@@ -303,10 +245,10 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}flux_dust`
         },
         {
-            outputs: [{ data: { item: 'minecraft:golden_apple', count: 4 } }],
+            outputs: ['4x minecraft:golden_apple',],
             inputs: [
-                { data: { item: 'minecraft:apple', count: 4 } },
-                { data: { tag: 'forge:dusts/gold', count: 1 } },
+                '4x minecraft:apple',
+                '1x #forge:dusts/gold',
                 {
                     type: 'masterfulmachinery:fluids',
                     data: { fluid: 'bloodmagic:life_essence_fluid', amount: 150 }
@@ -316,10 +258,10 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}golden_apple`
         },
         {
-            outputs: [{ data: { item: 'minecraft:golden_carrot', count: 4 } }],
+            outputs: ['4x minecraft:golden_carrot',],
             inputs: [
-                { data: { item: 'minecraft:carrot', count: 4 } },
-                { data: { tag: 'forge:dusts/gold', count: 1 } },
+                '4x minecraft:carrot',
+                '1x #forge:dusts/gold',
                 {
                     type: 'masterfulmachinery:fluids',
                     data: { fluid: 'bloodmagic:life_essence_fluid', amount: 150 }
@@ -329,14 +271,11 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}golden_carrot`
         },
         {
-            outputs: [
-                {
-                    data: { item: 'minecraft:glistering_melon_slice', count: 4 }
-                }
+            outputs: ['4x minecraft:glistering_melon_slice',
             ],
             inputs: [
-                { data: { item: 'minecraft:melon_slice', count: 4 } },
-                { data: { tag: 'forge:dusts/gold', count: 1 } },
+                '4x minecraft:melon_slice',
+                '1x #forge:dusts/gold',
                 {
                     type: 'masterfulmachinery:fluids',
                     data: { fluid: 'bloodmagic:life_essence_fluid', amount: 150 }
@@ -346,13 +285,11 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}glistering_melon_slice`
         },
         {
-            outputs: [{ data: { item: 'bloodmagic:mastercore', count: 1 } }],
+            outputs: ['1x bloodmagic:mastercore',],
             inputs: [
-                { data: { item: 'botania:corporea_spark', count: 3 } },
-                {
-                    data: { tag: 'forge:storage_blocks/electrum', count: 1 }
-                },
-                { data: { item: 'glassential:glass_ghostly', count: 6 } },
+                '3x botania:corporea_spark',
+                '1x #forge:storage_blocks/electrum',
+                '6x glassential:glass_ghostly',
                 {
                     type: 'masterfulmachinery:fluids',
                     data: { fluid: 'bloodmagic:life_essence_fluid', amount: 2000 }
@@ -362,13 +299,11 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}mastercore`
         },
         {
-            outputs: [{ data: { item: 'bloodmagic:syntheticpoint', count: 2 } }],
+            outputs: ['2x bloodmagic:syntheticpoint',],
             inputs: [
-                {
-                    data: { item: 'undergarden:masticator_scales', count: 4 }
-                },
-                { data: { tag: 'atum:godshards/montu', count: 1 } },
-                { data: { tag: 'forge:ingots/utherium', count: 4 } },
+                '4x undergarden:masticator_scales',
+                '1x #atum:godshards/montu',
+                '4x #forge:ingots/utherium',
                 {
                     type: 'masterfulmachinery:fluids',
                     data: { fluid: 'bloodmagic:life_essence_fluid', amount: 1000 }
@@ -380,20 +315,37 @@ onEvent('recipes', (event) => {
     ];
 
     recipes.forEach((recipe) => {
+        recipe.inputs.forEach((val, i) => {
+            if (val instanceof string) {
+                // '32x kubejs:rough_machine_frame'
+                recipe.inputs[i] = {
+                    type: 'masterfulmachinery:items',
+                    data: toJsonWithCount(val)
+                }
+            } else if (val.type == 'masterfulmachinery:items') {
+                /*
+                {
+                    type: 'masterfulmachinery:items',
+                    chance: 1.0,
+                    data: '2x mekanism:solar_neutron_activator'
+                }
+                 */
+                recipe.inputs[i].data = toJsonWithCount(val.data)
+            }
+        })
+        recipe.outputs.forEach((val, i) => {
+            if (val instanceof string) {
+                recipe.outputs[i] = {
+                    type: 'masterfulmachinery:items',
+                    data: toJsonWithCount(val)
+                }
+            } else if (val.type == 'masterfulmachinery:items') {
+                recipe.outputs[i].data = toJsonWithCount(val.data)
+            }
+        })
         recipe.type = 'masterfulmachinery:machine_process';
         recipe.structureId = 'wicked_altar_structure';
         recipe.controllerId = 'wicked_altar';
-        recipe.inputs.forEach((input) => {
-            if (!input.type) {
-                input.type = 'masterfulmachinery:items';
-            }
-        });
-        recipe.outputs.forEach((output) => {
-            if (!output.type) {
-                output.type = 'masterfulmachinery:items';
-            }
-        });
-
         event.custom(recipe).id(recipe.id);
     });
 });

@@ -10,17 +10,17 @@ onEvent('recipes', (event) => {
                 {
                     type: 'masterfulmachinery:items',
                     chance: 1.0,
-                    data: { item: 'botania:life_essence', count: 8 }
+                    data: '8x botania:life_essence'
                 },
                 {
                     type: 'masterfulmachinery:items',
                     chance: 0.5,
-                    data: { item: 'botania:life_essence', count: 4 }
+                    data: '4x botania:life_essence'
                 },
                 {
                     type: 'masterfulmachinery:items',
                     chance: 0.25,
-                    data: { item: 'botania:life_essence', count: 2 }
+                    data: '2x botania:life_essence'
                 },
                 { type: 'masterfulmachinery:botania_mana', data: { amount: 9000 * 300 } }
             ],
@@ -48,6 +48,34 @@ onEvent('recipes', (event) => {
     ];
 
     recipes.forEach((recipe) => {
+        recipe.inputs.forEach((val, i) => {
+            if (val instanceof string) {
+                // '32x kubejs:rough_machine_frame'
+                recipe.inputs[i] = {
+                    type: 'masterfulmachinery:items',
+                    data: toJsonWithCount(val)
+                }
+            } else if (val.type == 'masterfulmachinery:items') {
+                /*
+                {
+                    type: 'masterfulmachinery:items',
+                    chance: 1.0,
+                    data: '2x mekanism:solar_neutron_activator'
+                }
+                 */
+                recipe.inputs[i].data = toJsonWithCount(val.data)
+            }
+        })
+        recipe.outputs.forEach((val, i) => {
+            if (val instanceof string) {
+                recipe.outputs[i] = {
+                    type: 'masterfulmachinery:items',
+                    data: toJsonWithCount(val)
+                }
+            } else if (val.type == 'masterfulmachinery:items') {
+                recipe.outputs[i].data = toJsonWithCount(val.data)
+            }
+        })
         recipe.type = 'masterfulmachinery:machine_process';
         recipe.structureId = 'gaia_reactor_structure';
         recipe.controllerId = 'gaia_reactor';

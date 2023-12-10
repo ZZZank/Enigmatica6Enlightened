@@ -10,48 +10,24 @@ onEvent('recipes', (event) => {
                 {
                     type: 'masterfulmachinery:items',
                     chance: 1.0,
-                    data: { item: 'kubejs:observatory_lens', count: 1 }
+                    data: '1x kubejs:observatory_lens'
                 },
                 {
                     type: 'masterfulmachinery:items',
                     chance: 0.05,
-                    data: { item: 'kubejs:observatory_lens', count: 1 }
+                    data: '1x kubejs:observatory_lens'
                 }
             ],
 
             inputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'forge:ingots/shadow_steel', count: 8 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'botania:runes/air', count: 4 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'astralsorcery:colored_lens_spectral', count: 4 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'astralsorcery:resonating_gem', count: 4 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'astralsorcery:illumination_powder', count: 4 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'astralsorcery:nocturnal_powder', count: 2 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'forge:dusts/starmetal', count: 2 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'astralsorcery:attuned_celestial_crystal', count: 1 }
-                },
+                '8x #forge:ingots/shadow_steel',
+                '4x #botania:runes/air',
+                '4x astralsorcery:colored_lens_spectral',
+                '4x astralsorcery:resonating_gem',
+                '4x astralsorcery:illumination_powder',
+                '2x astralsorcery:nocturnal_powder',
+                '2x #forge:dusts/starmetal',
+                '1x astralsorcery:attuned_celestial_crystal',
 
                 { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 500000 } },
                 { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
@@ -64,35 +40,20 @@ onEvent('recipes', (event) => {
                 {
                     type: 'masterfulmachinery:items',
                     chance: 1.0,
-                    data: { item: 'astralsorcery:colored_lens_fire', count: 3 }
+                    data: '3x astralsorcery:colored_lens_fire'
                 },
                 {
                     type: 'masterfulmachinery:items',
                     chance: 0.1,
-                    data: { item: 'astralsorcery:colored_lens_fire', count: 1 }
+                    data: '1x astralsorcery:colored_lens_fire'
                 }
             ],
             inputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'forge:dusts/starmetal', count: 4 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'astralsorcery:resonating_gem', count: 4 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'quark:orange_rune', count: 2 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'bloodmagic:smelting_anointment_l', count: 2 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'astralsorcery:glass_lens', count: 1 }
-                },
+                '4x #forge:dusts/starmetal',
+                '4x astralsorcery:resonating_gem',
+                '2x quark:orange_rune',
+                '2x bloodmagic:smelting_anointment_l',
+                '1x astralsorcery:glass_lens',
 
                 { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 50000 } },
                 { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
@@ -105,35 +66,20 @@ onEvent('recipes', (event) => {
                 {
                     type: 'masterfulmachinery:items',
                     chance: 1.0,
-                    data: { item: 'astralsorcery:colored_lens_break', count: 3 }
+                    data: '3x astralsorcery:colored_lens_break'
                 },
                 {
                     type: 'masterfulmachinery:items',
                     chance: 0.1,
-                    data: { item: 'astralsorcery:colored_lens_break', count: 1 }
+                    data: '1x astralsorcery:colored_lens_break'
                 }
             ],
             inputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'forge:dusts/starmetal', count: 4 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'astralsorcery:resonating_gem', count: 4 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'quark:yellow_rune', count: 2 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'bloodmagic:hidden_knowledge_anointment_l', count: 2 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'astralsorcery:glass_lens', count: 1 }
-                },
+                '4x #forge:dusts/starmetal',
+                '4x astralsorcery:resonating_gem',
+                '2x quark:yellow_rune',
+                '2x bloodmagic:hidden_knowledge_anointment_l',
+                '1x astralsorcery:glass_lens',
 
                 { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 50000 } },
                 { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
@@ -146,35 +92,20 @@ onEvent('recipes', (event) => {
                 {
                     type: 'masterfulmachinery:items',
                     chance: 1.0,
-                    data: { item: 'astralsorcery:colored_lens_growth', count: 3 }
+                    data: '3x astralsorcery:colored_lens_growth'
                 },
                 {
                     type: 'masterfulmachinery:items',
                     chance: 0.1,
-                    data: { item: 'astralsorcery:colored_lens_growth', count: 1 }
+                    data: '1x astralsorcery:colored_lens_growth'
                 }
             ],
             inputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'forge:dusts/starmetal', count: 4 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'naturesaura:gold_powder', count: 4 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'quark:lime_rune', count: 2 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'bloodmagic:fortune_anointment_l', count: 2 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'astralsorcery:glass_lens', count: 1 }
-                },
+                '4x #forge:dusts/starmetal',
+                '4x naturesaura:gold_powder',
+                '2x quark:lime_rune',
+                '2x bloodmagic:fortune_anointment_l',
+                '1x astralsorcery:glass_lens',
 
                 { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 50000 } },
                 { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
@@ -187,35 +118,20 @@ onEvent('recipes', (event) => {
                 {
                     type: 'masterfulmachinery:items',
                     chance: 1.0,
-                    data: { item: 'astralsorcery:colored_lens_damage', count: 3 }
+                    data: '3x astralsorcery:colored_lens_damage'
                 },
                 {
                     type: 'masterfulmachinery:items',
                     chance: 0.1,
-                    data: { item: 'astralsorcery:colored_lens_damage', count: 1 }
+                    data: '1x astralsorcery:colored_lens_damage'
                 }
             ],
             inputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'forge:dusts/starmetal', count: 4 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'astralsorcery:resonating_gem', count: 4 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'quark:red_rune', count: 2 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'bloodmagic:melee_anointment_l', count: 2 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'astralsorcery:glass_lens', count: 1 }
-                },
+                '4x #forge:dusts/starmetal',
+                '4x astralsorcery:resonating_gem',
+                '2x quark:red_rune',
+                '2x bloodmagic:melee_anointment_l',
+                '1x astralsorcery:glass_lens',
 
                 { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 50000 } },
                 { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
@@ -228,35 +144,20 @@ onEvent('recipes', (event) => {
                 {
                     type: 'masterfulmachinery:items',
                     chance: 1.0,
-                    data: { item: 'astralsorcery:colored_lens_regeneration', count: 3 }
+                    data: '3x astralsorcery:colored_lens_regeneration'
                 },
                 {
                     type: 'masterfulmachinery:items',
                     chance: 0.1,
-                    data: { item: 'astralsorcery:colored_lens_regeneration', count: 1 }
+                    data: '1x astralsorcery:colored_lens_regeneration'
                 }
             ],
             inputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'forge:dusts/starmetal', count: 4 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'astralsorcery:resonating_gem', count: 4 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'quark:pink_rune', count: 2 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'bloodmagic:holy_water_anointment_l', count: 2 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'astralsorcery:glass_lens', count: 1 }
-                },
+                '4x #forge:dusts/starmetal',
+                '4x astralsorcery:resonating_gem',
+                '2x quark:pink_rune',
+                '2x bloodmagic:holy_water_anointment_l',
+                '1x astralsorcery:glass_lens',
 
                 { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 50000 } },
                 { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
@@ -269,35 +170,20 @@ onEvent('recipes', (event) => {
                 {
                     type: 'masterfulmachinery:items',
                     chance: 1.0,
-                    data: { item: 'astralsorcery:colored_lens_push', count: 3 }
+                    data: '3x astralsorcery:colored_lens_push'
                 },
                 {
                     type: 'masterfulmachinery:items',
                     chance: 0.1,
-                    data: { item: 'astralsorcery:colored_lens_push', count: 1 }
+                    data: '1x astralsorcery:colored_lens_push'
                 }
             ],
             inputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'forge:dusts/starmetal', count: 4 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'astralsorcery:resonating_gem', count: 4 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'quark:light_blue_rune', count: 2 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'bloodmagic:bow_velocity_anointment_l', count: 2 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'astralsorcery:glass_lens', count: 1 }
-                },
+                '4x #forge:dusts/starmetal',
+                '4x astralsorcery:resonating_gem',
+                '2x quark:light_blue_rune',
+                '2x bloodmagic:bow_velocity_anointment_l',
+                '1x astralsorcery:glass_lens',
 
                 { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 50000 } },
                 { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
@@ -310,35 +196,20 @@ onEvent('recipes', (event) => {
                 {
                     type: 'masterfulmachinery:items',
                     chance: 1.0,
-                    data: { item: 'astralsorcery:colored_lens_spectral', count: 3 }
+                    data: '3x astralsorcery:colored_lens_spectral'
                 },
                 {
                     type: 'masterfulmachinery:items',
                     chance: 0.1,
-                    data: { item: 'astralsorcery:colored_lens_spectral', count: 1 }
+                    data: '1x astralsorcery:colored_lens_spectral'
                 }
             ],
             inputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'atum:ectoplasm', count: 4 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'astralsorcery:resonating_gem', count: 4 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'quark:purple_rune', count: 2 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'bloodmagic:silk_touch_anointment_l', count: 2 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'astralsorcery:glass_lens', count: 1 }
-                },
+                '4x atum:ectoplasm',
+                '4x astralsorcery:resonating_gem',
+                '2x quark:purple_rune',
+                '2x bloodmagic:silk_touch_anointment_l',
+                '1x astralsorcery:glass_lens',
 
                 { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 50000 } },
                 { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
@@ -351,50 +222,20 @@ onEvent('recipes', (event) => {
                 {
                     type: 'masterfulmachinery:items',
                     chance: 1.0,
-                    data: { item: 'astralsorcery:altar_radiance', count: 1 }
+                    data: '1x astralsorcery:altar_radiance'
                 }
             ],
             inputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'create:shadow_steel_casing', count: 4 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'redstone_arsenal:flux_gem', count: 4 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'astralsorcery:resonating_gem', count: 4 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'astralsorcery:colored_lens_spectral', count: 2 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'bloodmagic:etherealslate', count: 2 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'botania:runes/asgard', count: 1 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'botania:runes/niflheim', count: 1 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'botania:runes/alfheim', count: 1 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'botania:runes/midgard', count: 1 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'astralsorcery:crystals/attuned', count: 1 }
-                },
+                '4x create:shadow_steel_casing',
+                '4x redstone_arsenal:flux_gem',
+                '4x astralsorcery:resonating_gem',
+                '2x astralsorcery:colored_lens_spectral',
+                '2x bloodmagic:etherealslate',
+                '1x #botania:runes/asgard',
+                '1x #botania:runes/niflheim',
+                '1x #botania:runes/alfheim',
+                '1x #botania:runes/midgard',
+                '1x #astralsorcery:crystals/attuned',
 
                 { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 500000 } },
                 { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
@@ -407,42 +248,18 @@ onEvent('recipes', (event) => {
                 {
                     type: 'masterfulmachinery:items',
                     chance: 1.0,
-                    data: { item: 'botania:gaia_spreader', count: 1 }
+                    data: '1x botania:gaia_spreader'
                 }
             ],
             inputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'botania:bifrost_perm', count: 6 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'botania:life_essence', count: 4 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'botania:runes/midgard', count: 2 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'astralsorcery:colored_lens_spectral', count: 1 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'botania:elven_spreader', count: 1 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'naturesaura:ancient_sapling', count: 1 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'mythicbotany:dream_cherry', count: 1 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'forge:gems/dragonstone', count: 1 }
-                },
+                '6x botania:bifrost_perm',
+                '4x botania:life_essence',
+                '2x #botania:runes/midgard',
+                '1x astralsorcery:colored_lens_spectral',
+                '1x botania:elven_spreader',
+                '1x naturesaura:ancient_sapling',
+                '1x mythicbotany:dream_cherry',
+                '1x #forge:gems/dragonstone',
 
                 { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 500000 } },
                 { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
@@ -455,38 +272,17 @@ onEvent('recipes', (event) => {
                 {
                     type: 'masterfulmachinery:items',
                     chance: 1.0,
-                    data: { item: 'botania:elven_spreader', count: 1 }
+                    data: '1x botania:elven_spreader'
                 }
             ],
             inputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'forge:ingots/elementium', count: 1 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'botania:dreamwood', count: 8 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'botania:glimmering_dreamwood', count: 2 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'botania:spark', count: 1 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'botania:runes/summer', count: 2 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'botania:runes/air', count: 2 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'astralsorcery:colored_lens_push', count: 1 }
-                },
+                '1x #forge:ingots/elementium',
+                '8x botania:dreamwood',
+                '2x botania:glimmering_dreamwood',
+                '1x botania:spark',
+                '2x #botania:runes/summer',
+                '2x #botania:runes/air',
+                '1x astralsorcery:colored_lens_push',
 
                 { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 500000 } },
                 { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
@@ -499,30 +295,15 @@ onEvent('recipes', (event) => {
                 {
                     type: 'masterfulmachinery:items',
                     chance: 1.0,
-                    data: { item: 'astralsorcery:shifting_star', count: 1 }
+                    data: '1x astralsorcery:shifting_star'
                 }
             ],
             inputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'forge:gems/niotic', count: 4 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'bloodmagic:reagentbinding', count: 2 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'forge:dusts/starmetal', count: 2 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'astralsorcery:illumination_powder', count: 4 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'industrialforegoing:ether_gas_bucket', count: 1 }
-                },
+                '4x #forge:gems/niotic',
+                '2x bloodmagic:reagentbinding',
+                '2x #forge:dusts/starmetal',
+                '4x astralsorcery:illumination_powder',
+                '1x industrialforegoing:ether_gas_bucket',
 
                 { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 500000 } },
                 { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
@@ -535,30 +316,15 @@ onEvent('recipes', (event) => {
                 {
                     type: 'masterfulmachinery:items',
                     chance: 1.0,
-                    data: { item: 'astralsorcery:chalice', count: 1 }
+                    data: '1x astralsorcery:chalice'
                 }
             ],
             inputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'forge:ingots/gold', count: 4 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'astralsorcery:resonating_gem', count: 4 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'forge:ingots/starmetal', count: 2 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'astralsorcery:black_marble_raw', count: 3 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'forge:gems/aquamarine', count: 5 }
-                },
+                '4x #forge:ingots/gold',
+                '4x astralsorcery:resonating_gem',
+                '2x #forge:ingots/starmetal',
+                '3x astralsorcery:black_marble_raw',
+                '5x #forge:gems/aquamarine',
 
                 { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 500000 } },
                 { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
@@ -571,34 +337,16 @@ onEvent('recipes', (event) => {
                 {
                     type: 'masterfulmachinery:items',
                     chance: 1.0,
-                    data: { item: 'astralsorcery:shifting_star_vicio', count: 1 }
+                    data: '1x astralsorcery:shifting_star_vicio'
                 }
             ],
             inputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'astralsorcery:shifting_star', count: 1 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'forge:ingots/starmetal', count: 2 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'forge:dusts/starmetal', count: 6 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'astralsorcery:illumination_powder', count: 2 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'bloodmagic:defaultcrystal', count: 2 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'bloodmagic:reagentair', count: 2 }
-                },
+                '1x astralsorcery:shifting_star',
+                '2x #forge:ingots/starmetal',
+                '6x #forge:dusts/starmetal',
+                '2x astralsorcery:illumination_powder',
+                '2x bloodmagic:defaultcrystal',
+                '2x bloodmagic:reagentair',
 
                 { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 500000 } },
                 { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
@@ -611,34 +359,16 @@ onEvent('recipes', (event) => {
                 {
                     type: 'masterfulmachinery:items',
                     chance: 1.0,
-                    data: { item: 'astralsorcery:shifting_star_evorsio', count: 1 }
+                    data: '1x astralsorcery:shifting_star_evorsio'
                 }
             ],
             inputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'astralsorcery:shifting_star', count: 1 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'forge:ingots/starmetal', count: 2 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'forge:dusts/starmetal', count: 6 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'astralsorcery:illumination_powder', count: 2 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'bloodmagic:destructivecrystal', count: 2 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'bloodmagic:reagentfastminer', count: 2 }
-                },
+                '1x astralsorcery:shifting_star',
+                '2x #forge:ingots/starmetal',
+                '6x #forge:dusts/starmetal',
+                '2x astralsorcery:illumination_powder',
+                '2x bloodmagic:destructivecrystal',
+                '2x bloodmagic:reagentfastminer',
 
                 { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 500000 } },
                 { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
@@ -651,34 +381,16 @@ onEvent('recipes', (event) => {
                 {
                     type: 'masterfulmachinery:items',
                     chance: 1.0,
-                    data: { item: 'astralsorcery:shifting_star_discidia', count: 1 }
+                    data: '1x astralsorcery:shifting_star_discidia'
                 }
             ],
             inputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'astralsorcery:shifting_star', count: 1 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'forge:ingots/starmetal', count: 2 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'forge:dusts/starmetal', count: 6 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'astralsorcery:illumination_powder', count: 2 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'bloodmagic:vengefulcrystal', count: 2 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'bloodmagic:reagentlava', count: 2 }
-                },
+                '1x astralsorcery:shifting_star',
+                '2x #forge:ingots/starmetal',
+                '6x #forge:dusts/starmetal',
+                '2x astralsorcery:illumination_powder',
+                '2x bloodmagic:vengefulcrystal',
+                '2x bloodmagic:reagentlava',
 
                 { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 500000 } },
                 { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
@@ -691,34 +403,16 @@ onEvent('recipes', (event) => {
                 {
                     type: 'masterfulmachinery:items',
                     chance: 1.0,
-                    data: { item: 'astralsorcery:shifting_star_armara', count: 1 }
+                    data: '1x astralsorcery:shifting_star_armara'
                 }
             ],
             inputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'astralsorcery:shifting_star', count: 1 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'forge:ingots/starmetal', count: 2 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'forge:dusts/starmetal', count: 6 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'astralsorcery:illumination_powder', count: 2 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'bloodmagic:steadfastcrystal', count: 2 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'bloodmagic:reagentbinding', count: 2 }
-                },
+                '1x astralsorcery:shifting_star',
+                '2x #forge:ingots/starmetal',
+                '6x #forge:dusts/starmetal',
+                '2x astralsorcery:illumination_powder',
+                '2x bloodmagic:steadfastcrystal',
+                '2x bloodmagic:reagentbinding',
 
                 { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 500000 } },
                 { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
@@ -731,34 +425,16 @@ onEvent('recipes', (event) => {
                 {
                     type: 'masterfulmachinery:items',
                     chance: 1.0,
-                    data: { item: 'astralsorcery:shifting_star_aevitas', count: 1 }
+                    data: '1x astralsorcery:shifting_star_aevitas'
                 }
             ],
             inputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'astralsorcery:shifting_star', count: 1 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'forge:ingots/starmetal', count: 2 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'forge:dusts/starmetal', count: 6 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'astralsorcery:illumination_powder', count: 2 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'bloodmagic:corrosivecrystal', count: 2 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'bloodmagic:reagentgrowth', count: 2 }
-                },
+                '1x astralsorcery:shifting_star',
+                '2x #forge:ingots/starmetal',
+                '6x #forge:dusts/starmetal',
+                '2x astralsorcery:illumination_powder',
+                '2x bloodmagic:corrosivecrystal',
+                '2x bloodmagic:reagentgrowth',
 
                 { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 500000 } },
                 { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
@@ -771,51 +447,21 @@ onEvent('recipes', (event) => {
                 {
                     type: 'masterfulmachinery:items',
                     chance: 1.0,
-                    data: { item: 'astralsorcery:mantle', count: 1 }
+                    data: '1x astralsorcery:mantle'
                 }
             ],
             inputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'botania:balance_cloak', count: 1 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'astralsorcery:celestial_crystal', count: 1 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'magicfeather:magicfeather', count: 1 }
-                },
+                '1x botania:balance_cloak',
+                '1x astralsorcery:celestial_crystal',
+                '1x magicfeather:magicfeather',
 
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'forge:dusts/starmetal', count: 4 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'astralsorcery:illumination_powder', count: 4 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'astralsorcery:resonating_gem', count: 4 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'botania:runes/mana', count: 1 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'botania:runes/pride', count: 1 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'botania:runes/envy', count: 1 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'forge:storage_blocks/starmetal', count: 1 }
-                },
+                '4x #forge:dusts/starmetal',
+                '4x astralsorcery:illumination_powder',
+                '4x astralsorcery:resonating_gem',
+                '1x #botania:runes/mana',
+                '1x #botania:runes/pride',
+                '1x #botania:runes/envy',
+                '1x #forge:storage_blocks/starmetal',
 
                 { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 500000 } },
                 { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
@@ -828,46 +474,19 @@ onEvent('recipes', (event) => {
                 {
                     type: 'masterfulmachinery:items',
                     chance: 1.0,
-                    data: { item: 'mekanism:solar_neutron_activator', count: 2 }
+                    data: '2x mekanism:solar_neutron_activator'
                 }
             ],
             inputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'kubejs:observatory_lens', count: 5 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'powah:solar_panel_niotic', count: 5 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'mekanism:hdpe_sheet', count: 5 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'industrialforegoing:machine_frame/advanced', count: 1 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'forge:circuits/elite', count: 2 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'forge:plates/enderium', count: 2 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'forge:dusts/iesnium', count: 2 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'forge:dusts/starmetal', count: 2 }
-                },
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { tag: 'forge:dusts/end_stone', count: 2 }
-                },
+                '5x kubejs:observatory_lens',
+                '5x powah:solar_panel_niotic',
+                '5x mekanism:hdpe_sheet',
+                '1x #industrialforegoing:machine_frame/advanced',
+                '2x #forge:circuits/elite',
+                '2x #forge:plates/enderium',
+                '2x #forge:dusts/iesnium',
+                '2x #forge:dusts/starmetal',
+                '2x #forge:dusts/end_stone',
 
                 { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 500000 } },
                 { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
@@ -878,6 +497,34 @@ onEvent('recipes', (event) => {
     ];
 
     recipes.forEach((recipe) => {
+        recipe.inputs.forEach((val, i) => {
+            if (val instanceof string) {
+                // '32x kubejs:rough_machine_frame'
+                recipe.inputs[i] = {
+                    type: 'masterfulmachinery:items',
+                    data: toJsonWithCount(val)
+                }
+            } else if (val.type == 'masterfulmachinery:items') {
+                /*
+                {
+                    type: 'masterfulmachinery:items',
+                    chance: 1.0,
+                    data: '2x mekanism:solar_neutron_activator'
+                }
+                 */
+                recipe.inputs[i].data = toJsonWithCount(val.data)
+            }
+        })
+        recipe.outputs.forEach((val, i) => {
+            if (val instanceof string) {
+                recipe.outputs[i] = {
+                    type: 'masterfulmachinery:items',
+                    data: toJsonWithCount(val)
+                }
+            } else if (val.type == 'masterfulmachinery:items') {
+                recipe.outputs[i].data = toJsonWithCount(val.data)
+            }
+        })
         recipe.type = 'masterfulmachinery:machine_process';
         recipe.structureId = 'auto_iridescent_altar_structure';
         recipe.controllerId = 'auto_iridescent_altar';
