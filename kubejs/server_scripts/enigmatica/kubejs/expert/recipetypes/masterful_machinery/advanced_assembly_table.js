@@ -81,7 +81,7 @@ onEvent('recipes', (event) => {
 
     recipes.forEach((recipe) => {
         recipe.inputs.forEach((val, i) => {
-            if (val instanceof string) {
+            if (typeof val == 'string') {
                 // '32x kubejs:rough_machine_frame'
                 recipe.inputs[i] = {
                     type: 'masterfulmachinery:items',
@@ -99,7 +99,7 @@ onEvent('recipes', (event) => {
             }
         });
         recipe.outputs.forEach((val, i) => {
-            if (val instanceof string) {
+            if (typeof val == 'string') {
                 recipe.outputs[i] = {
                     type: 'masterfulmachinery:items',
                     data: toJsonWithCount(val)

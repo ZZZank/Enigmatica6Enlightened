@@ -206,10 +206,7 @@ onEvent('recipes', (event) => {
             inputs: [
                 'immersiveengineering:drill',
                 'immersiveengineering:drillhead_steel',
-                {
-                    item: 'immersiveengineering:biodiesel_bucket',
-                    count: 10
-                },
+                '10x immersiveengineering:biodiesel_bucket',
                 'immersiveengineering:toolupgrade_drill_waterproof',
                 'immersiveengineering:toolupgrade_drill_lube',
                 '3x immersiveengineering:toolupgrade_drill_damage',
@@ -347,7 +344,7 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                { item: industrialforegoing.laser_lens.purple },
+                industrialforegoing.laser_lens.purple,
                 'industrialforegoing:fluid_laser_base',
                 '4x industrialforegoing:laser_drill',
                 '4x industrialforegoing:speed_addon_2',

@@ -87,10 +87,13 @@ onEvent('recipes', (event) => {
         recipe.output.entries.forEach((val, i) => {
             recipe.output.entries[i].result = toJsonWithCount(val.result);
         });
+        recipe.inputs.forEach((input, i)=>{
+            recipe.inputs[i] = toJsonWithCount(input)
+        })
         event
             .custom({
                 type: 'interactio:item_explode',
-                inputs: recipe.inputs.map((str) => toJsonWithCount(str)),
+                inputs: recipe.inputs,
                 output: recipe.output
             })
             .id(recipe.id);
