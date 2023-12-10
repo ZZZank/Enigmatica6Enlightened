@@ -15,26 +15,26 @@ function titleCase(str) {
 }
 
 /**
- *
+ * transform string-style ingredient into JSON style
  * @param {string} ingredient like '3x #forge:grain' or 'minecraft:book'
  * @returns {{count: number,tag?: string,item?: string}}
  */
 function toJsonWithCount(ingredient) {
-    let json = { count: 1 };
+    let parsed = { count: 1 };
 
-    let splited = ingredient.split('xs');
+    let splited = ingredient.split('x ', 2);
     if (splited.length != 1) {
         // "3x kubejs:no" -> ["3", "kubejs:no"]
-        json.count = parseInt(splited[0]);
+        parsed.count = parseInt(splited[0]);
         ingredient = splited[1];
     }
 
     if (ingredient.startsWith('#')) {
-        json.tag = ingredient.substring(1);
+        parsed.tag = ingredient.substring(1);
     } else {
-        json.item = ingredient;
+        parsed.item = ingredient;
     }
-    return json;
+    return parsed;
 }
 
 /**
@@ -51,7 +51,7 @@ function getRandomInList(entries) {
  * @param {string} color
  * @returns {string}
  */
-function rawItemStr(item, color) {
+function rawItemStr(item, color = null) {
     let colorTag = color ? `,"color":"${color}"` : '';
     let count = item.count > 1 ? `"${item.count}*"` : '""';
     let itemName = '';
