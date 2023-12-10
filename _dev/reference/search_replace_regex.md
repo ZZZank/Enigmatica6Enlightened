@@ -15,7 +15,7 @@ or toJsonWithCount('$2x $1')
 ```
 ->
 ```
-'$2x $1'
+'$2x #$1'
 or toJsonWithCount('$2x #$1')
 ```
 
@@ -26,4 +26,16 @@ or toJsonWithCount('$2x #$1')
 ->
 ```
 '$1'
+```
+
+## 
+```
+(\s+)\{
+\s+type: 'masterfulmachinery:items',
+\s+data: (.+)
+\s+\},
+```
+->
+```
+$1$2,
 ```

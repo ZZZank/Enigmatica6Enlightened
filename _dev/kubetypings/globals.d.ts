@@ -1,3 +1,5 @@
+declare class Item extends Internal.ItemStackJS {}
+
 declare class PonderInput extends Internal.AnimatedOverlayElement{
     clone(): object;
     clone(): PonderInput;
