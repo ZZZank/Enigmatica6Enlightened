@@ -171,8 +171,27 @@ const playerHas = (item, player) => {
 // gt  = .slice(index)
 // gte = .slice(index + 1)
 
-function lowerTiers(tiers, tier) {
+/**
+ *
+ * @param {string[]} tiers
+ * @param {string} tier
+ * @returns
+ */
+function getLowerTiers(tiers, tier) {
     return tiers.slice(0, tiers.indexOf(tier));
+}
+
+/**
+ *
+ * @param {string[]} tiers
+ * @param {string} tier
+ */
+function getNextTier(tiers, tier) {
+    let i = tiers.indexOf(tier);
+    if (i == tiers.length() - 1) {
+        return tier;
+    }
+    return tiers[i + 1];
 }
 
 /**

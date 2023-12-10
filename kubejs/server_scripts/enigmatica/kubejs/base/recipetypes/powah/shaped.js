@@ -14,7 +14,7 @@ onEvent('recipes', (event) => {
             crystal = 'powah:steel_energized';
         }
 
-        let lower_tiers = lowerTiers(powahTiers, tier);
+        let lower_tiers = getLowerTiers(powahTiers, tier);
 
         recipes.push(
             {
