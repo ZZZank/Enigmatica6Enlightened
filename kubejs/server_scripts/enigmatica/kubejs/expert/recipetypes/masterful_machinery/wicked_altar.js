@@ -9,7 +9,7 @@ onEvent('recipes', (event) => {
      */
     const recipes = [
         {
-            outputs: ['2x kubejs:wicked_weave',],
+            outputs: ['2x kubejs:wicked_weave'],
             inputs: [
                 '2x atum:linen_cloth',
                 '1x ars_nouveau:mana_berry',
@@ -23,7 +23,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}wicked_weave`
         },
         {
-            outputs: ['1x bloodmagic:sacrificialdagger',],
+            outputs: ['1x bloodmagic:sacrificialdagger'],
             inputs: [
                 '1x undergarden:utheric_sword',
                 '2x appliedenergistics2:charged_certus_quartz_crystal',
@@ -39,7 +39,7 @@ onEvent('recipes', (event) => {
             id: 'bloodmagic:sacrificial_dagger'
         },
         {
-            outputs: ['4x redstone_arsenal:flux_gem',],
+            outputs: ['4x redstone_arsenal:flux_gem'],
             inputs: [
                 '4x occultism:spirit_attuned_gem',
                 '8x redstone_arsenal:flux_dust',
@@ -53,7 +53,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}flux_gem`
         },
         {
-            outputs: ['1x alexsmobs:dimensional_carver',],
+            outputs: ['1x alexsmobs:dimensional_carver'],
             inputs: [
                 '1x redstone_arsenal:flux_gem',
                 '3x tconstruct:hepatizon_ingot',
@@ -70,7 +70,7 @@ onEvent('recipes', (event) => {
             id: 'alexsmobs:dimensional_carver'
         },
         {
-            outputs: ['1x botania:blood_pendant',],
+            outputs: ['1x botania:blood_pendant'],
             inputs: [
                 '1x ars_nouveau:dull_trinket',
                 '4x alexsmobs:emu_feather',
@@ -86,8 +86,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}void_amulet`
         },
         {
-            outputs: ['1x bloodmagic:componentframeparts',
-            ],
+            outputs: ['1x bloodmagic:componentframeparts'],
             inputs: [
                 '1x #forge:gears/osmium',
                 '1x tconstruct:ender_slime_crystal',
@@ -101,8 +100,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}componentframeparts`
         },
         {
-            outputs: ['1x bloodmagic:itemrouterfilterexact',
-            ],
+            outputs: ['1x bloodmagic:itemrouterfilterexact'],
             inputs: [
                 '1x bloodmagic:componentframeparts',
                 '1x atum:red_stained_crystal_glass_pane',
@@ -116,8 +114,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}itemrouterfilterexact`
         },
         {
-            outputs: ['1x bloodmagic:itemrouterfilteroredict',
-            ],
+            outputs: ['1x bloodmagic:itemrouterfilteroredict'],
             inputs: [
                 '1x bloodmagic:componentframeparts',
                 '1x atum:lime_stained_crystal_glass_pane',
@@ -131,8 +128,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}itemrouterfilteroredict`
         },
         {
-            outputs: ['1x bloodmagic:itemrouterfilterenchant',
-            ],
+            outputs: ['1x bloodmagic:itemrouterfilterenchant'],
             inputs: [
                 '1x bloodmagic:componentframeparts',
                 '1x atum:green_stained_crystal_glass_pane',
@@ -146,8 +142,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}itemrouterfilterenchant`
         },
         {
-            outputs: ['1x bloodmagic:itemrouterfiltermoditems',
-            ],
+            outputs: ['1x bloodmagic:itemrouterfiltermoditems'],
             inputs: [
                 '1x bloodmagic:componentframeparts',
                 '1x atum:yellow_stained_crystal_glass_pane',
@@ -161,8 +156,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}itemrouterfiltermoditems`
         },
         {
-            outputs: ['1x bloodmagic:itemrouterfiltercomposite',
-            ],
+            outputs: ['1x bloodmagic:itemrouterfiltercomposite'],
             inputs: [
                 '1x bloodmagic:componentframeparts',
                 '1x atum:white_stained_crystal_glass_pane',
@@ -176,7 +170,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}itemrouterfiltercomposite`
         },
         {
-            outputs: ['1x bloodmagic:noderouter',],
+            outputs: ['1x bloodmagic:noderouter'],
             inputs: [
                 '1x upgrade_aquatic:elder_eye',
                 '2x occultism:spirit_attuned_gem',
@@ -191,7 +185,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}noderouter`
         },
         {
-            outputs: ['2x bloodmagic:itemroutingnode',],
+            outputs: ['2x bloodmagic:itemroutingnode'],
             inputs: [
                 '2x botania:corporea_spark',
                 '2x occultism:spirit_attuned_gem',
@@ -205,7 +199,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}itemroutingnode`
         },
         {
-            outputs: ['1x bloodmagic:inputroutingnode',],
+            outputs: ['1x bloodmagic:inputroutingnode'],
             inputs: [
                 '1x bloodmagic:itemroutingnode',
                 '1x #forge:nuggets/lumium',
@@ -219,7 +213,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}inputroutingnode`
         },
         {
-            outputs: ['1x bloodmagic:outputroutingnode',],
+            outputs: ['1x bloodmagic:outputroutingnode'],
             inputs: [
                 '1x bloodmagic:itemroutingnode',
                 '1x #forge:nuggets/signalum',
@@ -233,7 +227,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}outputroutingnode`
         },
         {
-            outputs: ['8x redstone_arsenal:flux_dust',],
+            outputs: ['8x redstone_arsenal:flux_dust'],
             inputs: [
                 '8x #forge:dusts/ender_pearl',
                 {
@@ -245,7 +239,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}flux_dust`
         },
         {
-            outputs: ['4x minecraft:golden_apple',],
+            outputs: ['4x minecraft:golden_apple'],
             inputs: [
                 '4x minecraft:apple',
                 '1x #forge:dusts/gold',
@@ -258,7 +252,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}golden_apple`
         },
         {
-            outputs: ['4x minecraft:golden_carrot',],
+            outputs: ['4x minecraft:golden_carrot'],
             inputs: [
                 '4x minecraft:carrot',
                 '1x #forge:dusts/gold',
@@ -271,8 +265,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}golden_carrot`
         },
         {
-            outputs: ['4x minecraft:glistering_melon_slice',
-            ],
+            outputs: ['4x minecraft:glistering_melon_slice'],
             inputs: [
                 '4x minecraft:melon_slice',
                 '1x #forge:dusts/gold',
@@ -285,7 +278,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}glistering_melon_slice`
         },
         {
-            outputs: ['1x bloodmagic:mastercore',],
+            outputs: ['1x bloodmagic:mastercore'],
             inputs: [
                 '3x botania:corporea_spark',
                 '1x #forge:storage_blocks/electrum',
@@ -299,7 +292,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}mastercore`
         },
         {
-            outputs: ['2x bloodmagic:syntheticpoint',],
+            outputs: ['2x bloodmagic:syntheticpoint'],
             inputs: [
                 '4x undergarden:masticator_scales',
                 '1x #atum:godshards/montu',
@@ -321,7 +314,7 @@ onEvent('recipes', (event) => {
                 recipe.inputs[i] = {
                     type: 'masterfulmachinery:items',
                     data: toJsonWithCount(val)
-                }
+                };
             } else if (val.type == 'masterfulmachinery:items') {
                 /*
                 {
@@ -330,19 +323,19 @@ onEvent('recipes', (event) => {
                     data: '2x mekanism:solar_neutron_activator'
                 }
                  */
-                recipe.inputs[i].data = toJsonWithCount(val.data)
+                recipe.inputs[i].data = toJsonWithCount(val.data);
             }
-        })
+        });
         recipe.outputs.forEach((val, i) => {
             if (val instanceof string) {
                 recipe.outputs[i] = {
                     type: 'masterfulmachinery:items',
                     data: toJsonWithCount(val)
-                }
+                };
             } else if (val.type == 'masterfulmachinery:items') {
-                recipe.outputs[i].data = toJsonWithCount(val.data)
+                recipe.outputs[i].data = toJsonWithCount(val.data);
             }
-        })
+        });
         recipe.type = 'masterfulmachinery:machine_process';
         recipe.structureId = 'wicked_altar_structure';
         recipe.controllerId = 'wicked_altar';

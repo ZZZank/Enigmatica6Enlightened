@@ -54,7 +54,7 @@ onEvent('recipes', (event) => {
                 recipe.inputs[i] = {
                     type: 'masterfulmachinery:items',
                     data: toJsonWithCount(val)
-                }
+                };
             } else if (val.type == 'masterfulmachinery:items') {
                 /*
                 {
@@ -63,19 +63,19 @@ onEvent('recipes', (event) => {
                     data: '2x mekanism:solar_neutron_activator'
                 }
                  */
-                recipe.inputs[i].data = toJsonWithCount(val.data)
+                recipe.inputs[i].data = toJsonWithCount(val.data);
             }
-        })
+        });
         recipe.outputs.forEach((val, i) => {
             if (val instanceof string) {
                 recipe.outputs[i] = {
                     type: 'masterfulmachinery:items',
                     data: toJsonWithCount(val)
-                }
+                };
             } else if (val.type == 'masterfulmachinery:items') {
-                recipe.outputs[i].data = toJsonWithCount(val.data)
+                recipe.outputs[i].data = toJsonWithCount(val.data);
             }
-        })
+        });
         recipe.type = 'masterfulmachinery:machine_process';
         recipe.structureId = 'gaia_reactor_structure';
         recipe.controllerId = 'gaia_reactor';

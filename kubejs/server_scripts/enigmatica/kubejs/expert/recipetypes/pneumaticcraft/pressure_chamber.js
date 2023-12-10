@@ -6,21 +6,13 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:expert/pneumaticcraft/pressure_chamber/';
     const recipes = [
         {
-            inputs: [
-                '2x #forge:ingots/steel',
-                '2x #forge:tar',
-                '#forge:obsidian'
-            ],
+            inputs: ['2x #forge:ingots/steel', '2x #forge:tar', '#forge:obsidian'],
             pressure: 2.0,
             results: ['4x pneumaticcraft:ingot_iron_compressed'],
             id: 'pneumaticcraft:pressure_chamber/compressed_iron_ingot'
         },
         {
-            inputs: [
-                '2x #forge:storage_blocks/steel',
-                '18x #forge:tar',
-                '9x #forge:obsidian'
-            ],
+            inputs: ['2x #forge:storage_blocks/steel', '18x #forge:tar', '9x #forge:obsidian'],
             pressure: 2.0,
             results: ['4x pneumaticcraft:compressed_iron_block'],
             id: 'pneumaticcraft:pressure_chamber/compressed_iron_block'
@@ -38,21 +30,13 @@ onEvent('recipes', (event) => {
             id: 'pneumaticcraft:pressure_chamber/ice'
         },
         {
-            inputs: [
-                'powah:blank_card',
-                '#mekanism:enriched/redstone',
-                'powah:ender_core'
-            ],
+            inputs: ['powah:blank_card', '#mekanism:enriched/redstone', 'powah:ender_core'],
             pressure: 4.0,
             results: ['powah:binding_card'],
             id: 'powah:crafting/binding_card'
         },
         {
-            inputs: [
-                '#forge:alloys/ultimate',
-                'powah:dielectric_paste',
-                'rftoolsbase:infused_enderpearl'
-            ],
+            inputs: ['#forge:alloys/ultimate', 'powah:dielectric_paste', 'rftoolsbase:infused_enderpearl'],
             pressure: 4.0,
             results: ['powah:aerial_pearl'],
             id: 'powah:crafting/aerial_pearl'
@@ -103,11 +87,7 @@ onEvent('recipes', (event) => {
             id: 'pneumaticcraft:pressure_chamber/empty_pcb'
         },
         {
-            inputs: [
-                '#forge:plates/invar',
-                'fluxnetworks:flux_dust',
-                'thermal:redstone_servo'
-            ],
+            inputs: ['#forge:plates/invar', 'fluxnetworks:flux_dust', 'thermal:redstone_servo'],
             pressure: 1.0,
             results: ['pneumaticcraft:turbine_blade'],
             id: 'pneumaticcraft:pressure_chamber/turbine_blade'
@@ -151,10 +131,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}memory_ultimate_empty`
         },
         {
-            inputs: [
-                '3x #mekanism:alloys/reinforced',
-                'pneumaticcraft:turbine_rotor'
-            ],
+            inputs: ['3x #mekanism:alloys/reinforced', 'pneumaticcraft:turbine_rotor'],
             pressure: 4.0,
             results: ['mekanismgenerators:turbine_blade'],
             id: 'mekanismgenerators:turbine/blade'
@@ -561,12 +538,7 @@ onEvent('recipes', (event) => {
 
         // Primary Craft
         recipes.push({
-            inputs: [
-                'powah:blank_card',
-                'powah:dielectric_paste',
-                capacitor,
-                'powah:ender_core'
-            ],
+            inputs: ['powah:blank_card', 'powah:dielectric_paste', capacitor, 'powah:ender_core'],
             pressure: 4.0,
             results: [{ item: `powah:ender_gate_${tier}` }],
             id: `powah:crafting/ender_gate_${tier}`

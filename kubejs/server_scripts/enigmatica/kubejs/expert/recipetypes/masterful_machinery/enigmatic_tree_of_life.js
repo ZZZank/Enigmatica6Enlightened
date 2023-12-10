@@ -7,9 +7,7 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:expert/masterful_machinery/enigmatic_tree_of_life/';
     const recipes = [
         {
-            outputs: [
-                '2x kubejs:botanical_mastery_shard',
-            ],
+            outputs: ['2x kubejs:botanical_mastery_shard'],
             inputs: [
                 '4x mythicbotany:mana_collector',
                 '16x botania:spark',
@@ -30,9 +28,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}botanical_mastery_shard`
         },
         {
-            outputs: [
-                '1x kubejs:astronomy_mastery_shard',
-            ],
+            outputs: ['1x kubejs:astronomy_mastery_shard'],
             inputs: [
                 '1x astralsorcery:observatory',
                 '1x #astralsorcery:crystals/attuned',
@@ -57,9 +53,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}astronomy_mastery_shard`
         },
         {
-            outputs: [
-                { type: 'masterfulmachinery:items', data: '1x kubejs:alchemy_mastery_shard' }
-            ],
+            outputs: [{ type: 'masterfulmachinery:items', data: '1x kubejs:alchemy_mastery_shard' }],
             inputs: [
                 '1x kubejs:diy_mixer',
                 '1x kubejs:diy_bottling_machine',
@@ -77,9 +71,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}alchemy_mastery_shard`
         },
         {
-            outputs: [
-                { type: 'masterfulmachinery:items', data: '5x kubejs:ritual_mastery_shard' }
-            ],
+            outputs: [{ type: 'masterfulmachinery:items', data: '5x kubejs:ritual_mastery_shard' }],
             inputs: [
                 '1x bloodmagic:altar',
                 '4x bloodmagic:largebloodstonebrick',
@@ -111,9 +103,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}ritual_mastery_shard`
         },
         {
-            outputs: [
-                { type: 'masterfulmachinery:items', data: '1x kubejs:aura_mastery_shard' }
-            ],
+            outputs: [{ type: 'masterfulmachinery:items', data: '1x kubejs:aura_mastery_shard' }],
             inputs: [
                 '1x naturesaura:aura_trove',
                 '1x naturesaura:firework_generator',
@@ -137,9 +127,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}aura_mastery_shard`
         },
         {
-            outputs: [
-                '2x kubejs:engineering_mastery_shard',
-            ],
+            outputs: ['2x kubejs:engineering_mastery_shard'],
             inputs: [
                 '64x pneumaticcraft:advanced_pressure_tube',
                 '1x pneumaticcraft:advanced_liquid_compressor',
@@ -169,9 +157,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}engineering_mastery_shard`
         },
         {
-            outputs: [
-                '50x kubejs:energistics_mastery_shard',
-            ],
+            outputs: ['50x kubejs:energistics_mastery_shard'],
             inputs: [
                 '1x mekanismgenerators:fusion_reactor_controller',
                 '36x mekanismgenerators:fusion_reactor_frame',
@@ -214,9 +200,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}energistics_mastery_shard`
         },
         {
-            outputs: [
-                '1x kubejs:dimensional_mastery_shard',
-            ],
+            outputs: ['1x kubejs:dimensional_mastery_shard'],
             inputs: [
                 '2x aeadditions:item_storage_cell_1024',
                 '2x aeadditions:fluid_storage_cell_1024',
@@ -238,9 +222,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}dimensional_mastery_shard`
         },
         {
-            outputs: [
-                { type: 'masterfulmachinery:items', data: '5x kubejs:battle_mastery_shard' }
-            ],
+            outputs: [{ type: 'masterfulmachinery:items', data: '5x kubejs:battle_mastery_shard' }],
             inputs: [
                 '1x kubejs:diy_mekasuit_helmet',
                 '1x kubejs:diy_mekasuit_bodyarmor',
@@ -258,9 +240,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}battle_mastery_shard`
         },
         {
-            outputs: [
-                '2x kubejs:excavation_mastery_shard',
-            ],
+            outputs: ['2x kubejs:excavation_mastery_shard'],
             inputs: [
                 '1x industrialforegoing:fluid_laser_base',
                 '1x industrialforegoing:ore_laser_base',
@@ -282,9 +262,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}excavation_mastery_shard`
         },
         {
-            outputs: [
-                '1x kubejs:culinary_mastery_shard',
-            ],
+            outputs: ['1x kubejs:culinary_mastery_shard'],
             inputs: [
                 '1x kubejs:engineering_student_meals',
                 '1x kubejs:box_of_thankful_dinners',
@@ -298,9 +276,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}culinary_mastery_shard`
         },
         {
-            outputs: [
-                '1x kubejs:automation_mastery_shard',
-            ],
+            outputs: ['1x kubejs:automation_mastery_shard'],
             inputs: [
                 '1x appliedenergistics2:controller',
                 '32x appliedenergistics2:molecular_assembler',
@@ -337,7 +313,7 @@ onEvent('recipes', (event) => {
                 recipe.inputs[i] = {
                     type: 'masterfulmachinery:items',
                     data: toJsonWithCount(val)
-                }
+                };
             } else if (val.type == 'masterfulmachinery:items') {
                 /*
                 {
@@ -346,19 +322,19 @@ onEvent('recipes', (event) => {
                     data: '2x mekanism:solar_neutron_activator'
                 }
                  */
-                recipe.inputs[i].data = toJsonWithCount(val.data)
+                recipe.inputs[i].data = toJsonWithCount(val.data);
             }
-        })
+        });
         recipe.outputs.forEach((val, i) => {
             if (val instanceof string) {
                 recipe.outputs[i] = {
                     type: 'masterfulmachinery:items',
                     data: toJsonWithCount(val)
-                }
+                };
             } else if (val.type == 'masterfulmachinery:items') {
-                recipe.outputs[i].data = toJsonWithCount(val.data)
+                recipe.outputs[i].data = toJsonWithCount(val.data);
             }
-        })
+        });
         recipe.type = 'masterfulmachinery:machine_process';
         recipe.structureId = 'enigmatic_tree_of_life_structure';
         recipe.controllerId = 'enigmatic_tree_of_life';

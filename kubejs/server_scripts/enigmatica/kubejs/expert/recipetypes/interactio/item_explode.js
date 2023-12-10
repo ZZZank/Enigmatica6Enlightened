@@ -6,10 +6,7 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:expert/interactio/item_explode/';
     const recipes = [
         {
-            inputs: [
-                '#forge:stones/andesite',
-                '#forge:ingots/iron'
-            ],
+            inputs: ['#forge:stones/andesite', '#forge:ingots/iron'],
             output: {
                 entries: [{ result: 'create:andesite_alloy', weight: 1 }],
                 empty_weight: 0,
@@ -18,10 +15,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}andesite_alloy_from_iron`
         },
         {
-            inputs: [
-                '2x #forge:stones/andesite',
-                '#forge:ingots/zinc'
-            ],
+            inputs: ['2x #forge:stones/andesite', '#forge:ingots/zinc'],
             output: {
                 entries: [{ result: '2x create:andesite_alloy', weight: 1 }],
                 empty_weight: 0,
@@ -30,11 +24,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}andesite_alloy_from_zinc`
         },
         {
-            inputs: [
-                '2x #forge:ingots/steel',
-                '2x #forge:tar',
-                '2x #forge:obsidian'
-            ],
+            inputs: ['2x #forge:ingots/steel', '2x #forge:tar', '2x #forge:obsidian'],
             output: {
                 entries: [{ result: '4x kubejs:superheated_steel_ingot', weight: 1 }],
                 empty_weight: 0,
@@ -43,11 +33,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}superheated_steel_ingot`
         },
         {
-            inputs: [
-                '2x #forge:storage_blocks/steel',
-                '18x #forge:tar',
-                '18x #forge:obsidian'
-            ],
+            inputs: ['2x #forge:storage_blocks/steel', '18x #forge:tar', '18x #forge:obsidian'],
             output: {
                 entries: [{ result: '4x kubejs:superheated_steel_block', weight: 1 }],
                 empty_weight: 0,
@@ -69,11 +55,7 @@ onEvent('recipes', (event) => {
             id: 'meetyourfight:devils_ante'
         },
         {
-            inputs: [
-                '2x thermal:phytogro',
-                '2x #forge:dusts/iron',
-                '#forge:dusts/nickel'
-            ],
+            inputs: ['2x thermal:phytogro', '2x #forge:dusts/iron', '#forge:dusts/nickel'],
             output: {
                 entries: [{ result: 'emendatusenigmatica:invar_dust', weight: 7 }],
                 empty_weight: 3,
@@ -82,10 +64,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}invar_dust`
         },
         {
-            inputs: [
-                '#botania:runes/earth',
-                '8x quark:rainbow_rune'
-            ],
+            inputs: ['#botania:runes/earth', '8x quark:rainbow_rune'],
             output: {
                 entries: [
                     { result: 'quark:red_crystal_cluster', weight: 2 },
@@ -106,8 +85,8 @@ onEvent('recipes', (event) => {
 
     recipes.forEach((recipe) => {
         recipe.output.entries.forEach((val, i) => {
-            recipe.output.entries[i].result = toJsonWithCount(val.result)
-        })
+            recipe.output.entries[i].result = toJsonWithCount(val.result);
+        });
         event
             .custom({
                 type: 'interactio:item_explode',
