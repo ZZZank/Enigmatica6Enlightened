@@ -616,7 +616,7 @@ onEvent('recipes', (event) => {
             parsed.type = 'pneumaticcraft:stacked_item';
             ingredients.push(parsed);
         });
-        recipe.results = recipe.results.map((str) => Item.of(str).toResultJson())
+        recipe.results = recipe.results.map((str) => Item.of(str).toResultJson());
 
         event
             .custom({
