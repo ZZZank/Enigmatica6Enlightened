@@ -48,10 +48,10 @@ onEvent('recipes', (event) => {
     ];
 
     recipes.forEach((recipe) => {
-        recipe.inputs.forEach((val, i) => {
+        recipe.inputs = recipe.inputs.map((val) => {
             if (typeof val == 'string') {
                 // '32x kubejs:rough_machine_frame'
-                recipe.inputs[i] = {
+                return {
                     type: 'masterfulmachinery:items',
                     data: toJsonWithCount(val)
                 };
@@ -63,18 +63,20 @@ onEvent('recipes', (event) => {
                     data: '2x mekanism:solar_neutron_activator'
                 }
                  */
-                recipe.inputs[i].data = toJsonWithCount(val.data);
+                val.data = toJsonWithCount(val.data);
             }
+            return val;
         });
-        recipe.outputs.forEach((val, i) => {
+        recipe.outputs = recipe.outputs.map((val) => {
             if (typeof val == 'string') {
-                recipe.outputs[i] = {
+                return {
                     type: 'masterfulmachinery:items',
                     data: toJsonWithCount(val)
                 };
             } else if (val.type == 'masterfulmachinery:items') {
-                recipe.outputs[i].data = toJsonWithCount(val.data);
+                val.data = toJsonWithCount(val.data);
             }
+            return val;
         });
         recipe.type = 'masterfulmachinery:machine_process';
         recipe.structureId = 'gaia_reactor_structure';
