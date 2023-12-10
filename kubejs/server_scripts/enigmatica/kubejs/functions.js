@@ -22,7 +22,7 @@ function titleCase(str) {
 function toJsonWithCount(ingredient) {
     let json = { count: 1 };
 
-    let splited = ingredient.split('x\s');
+    let splited = ingredient.split('xs');
     if (splited.length != 1) {
         // "3x kubejs:no" -> ["3", "kubejs:no"]
         json.count = parseInt(splited[0]);
