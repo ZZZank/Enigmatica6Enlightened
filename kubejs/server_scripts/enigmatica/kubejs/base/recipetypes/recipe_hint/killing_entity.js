@@ -79,7 +79,12 @@ onEvent('recipes', (event) => {
             type: 'masterfulmachinery:machine_process',
             structureId: 'killing_entity_structure',
             controllerId: 'killing_entity',
-            outputs: recipe.output.map((output) => toJsonWithCount(output)),
+            outputs: recipe.output.map((output) => {
+                return {
+                    type: 'masterfulmachinery:items',
+                    data: toJsonWithCount(output)
+                };
+            }),
             inputs: [
                 {
                     type: 'masterfulmachinery:items',
