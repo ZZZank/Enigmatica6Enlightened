@@ -18,7 +18,7 @@ onEvent('recipes', (event) => {
         {
             inputs: [{ tag: 'forge:ingots/iron', count: 1 }],
             output: {
-                entries: [{ result: { item: 'pneumaticcraft:compressed_iron_ingot', count: 1 }, weight: 4 }],
+                entries: [{ result: { item: 'pneumaticcraft:ingot_iron_compressed', count: 1 }, weight: 4 }],
                 empty_weight: 1,
                 rolls: 1
             },
