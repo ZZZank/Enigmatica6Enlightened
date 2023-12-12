@@ -44,7 +44,14 @@
             holding: 'appliedenergistics2:64k_cell_component',
             id: id_prefix + `64k_crafting_storage`
         }
-    ];
+    ].map((recipe) => {
+        return {
+            holding: Ingredient.of(recipe.holding),
+            target: Ingredient.of(recipe.target),
+            output: recipe.output,
+            id: recipe.id
+        };
+    });
 
     onEvent('block.right_click', (e) => {
         const player = e.player;
@@ -54,15 +61,15 @@
 
         const mainHandItem = player.mainHandItem.id;
         for (let recipe of recipes) {
-            if (mainHandItem != recipe.holding) {
+            if (!recipe.holding.test(mainHandItem)) {
                 continue;
             }
             const target = e.block;
-            if (target.id != recipe.target) {
+            if (!recipe.target.test(target.id)) {
                 continue;
             }
             e.cancel();
-            e.server.runCommandSilent(`playsound ping:bloop block ` + player.name);
+            // e.server.runCommandSilent(`playsound ping:bloop block ` + player.name);
             e.server.runCommandSilent(`particle minecraft:explosion ${target.x} ${target.y} ${target.z}`);
             target.set(recipe.output);
             player.mainHandItem.count -= 1;
@@ -85,13 +92,13 @@
                     outputs: [
                         {
                             type: 'masterfulmachinery:items',
-                            data: { item: recipe.output, count: 1 }
+                            data: toJsonWithCount(recipe.output)
                         }
                     ],
                     inputs: [
                         {
                             type: 'masterfulmachinery:items',
-                            data: { item: recipe.holding, count: 1 }
+                            data: toJsonWithCount(recipe.holding)
                         },
                         {
                             type: 'masterfulmachinery:items',
@@ -99,7 +106,7 @@
                         },
                         {
                             type: 'masterfulmachinery:items',
-                            data: { item: recipe.target, count: 1 }
+                            data: toJsonWithCount(recipe.target)
                         }
                     ],
                     ticks: 1
