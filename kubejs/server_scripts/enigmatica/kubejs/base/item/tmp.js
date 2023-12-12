@@ -6,8 +6,13 @@
 //         return;
 //     }
 
-//     let str = Ingredient.of('3x #forge:grain').toJson()
+//     let target = player.lastAttackedEntity
 
-//     player.tell(str.count)
+//     player.tell(target.type)
+//     console.info(target.type)
 //     player.tell(str);
+// });
+
+// onEvent('entity.death', (e) => {
+//     console.info('"' + e.entity.type + '",')
 // });
