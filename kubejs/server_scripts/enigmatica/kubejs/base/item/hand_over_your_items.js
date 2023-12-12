@@ -20,7 +20,7 @@ onEvent('item.right_click', (event) => {
     ) {
         return;
     }
-    const target = player.rayTrace(4).entity;
+    const target = player.rayTrace(3).entity;
     // const target = player;
     if (
         // player must be targeting another player

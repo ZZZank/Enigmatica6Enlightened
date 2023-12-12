@@ -6,7 +6,7 @@ onEvent('item.right_click', (event) => {
         return;
     }
 
-    let lootTable = `enigmatica:chests/quest_${id.substr(7)}`; // ('kubejs:'.length) is 7
+    let lootTable = `enigmatica:chests/quest_${id.substring(7)}`; // ('kubejs:'.length) is 7
 
     /*
     // This piece of code is disabled, baceuse if anyone let a fake player to open such

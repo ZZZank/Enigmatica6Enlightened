@@ -162,9 +162,9 @@ const unificationBlacklist = [
  * @param {Internal.PlayerJS} player
  * @returns {boolean}
  */
-const playerHas = (item, player) => {
+function playerHas(item, player) {
     return player.inventory.find(item) != -1;
-};
+}
 
 // lt  = .slice(0, index)
 // lte = .slice(0, index + 1)
