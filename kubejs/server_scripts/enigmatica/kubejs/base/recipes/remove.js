@@ -151,6 +151,7 @@ onEvent('recipes', (event) => {
         'arsarsenal:air_hood',
         'arsarsenal:aqua_hood',
 
+        'astralsorcery:altar/marble_runed',
         'astralsorcery:infuser/gold_ore',
         'astralsorcery:shaped/marble/marble_slab',
 
