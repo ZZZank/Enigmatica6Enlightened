@@ -352,16 +352,16 @@
 									"patchouli:book": "bloodmagic:guide"
 								}
 							}
-							betterendforge: {
-								id: "betterendforge:guidebook"
-								Count: 1.0d
-							}
 							supplementaries: {
 								id: "patchouli:guide_book"
 								Count: 1.0d
-								tag: { 
+								tag: {
 									"patchouli:book": "supplementaries:supplementaries_guide"
 								}
+							}
+							betterendforge: {
+								id: "betterendforge:guidebook"
+								Count: 1.0d
 							}
 						}
 					}

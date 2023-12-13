@@ -1,0 +1,12 @@
+{
+    "name": "制作名单",
+    "icon": "minecraft:writable_book",
+    "category": "patchouli:aboutus",
+    "sortnum": 2,
+    "pages": [
+        {
+            "type": "text",
+            "text": "本教程书是为了介绍$(l)Enigmatica$(reset)而写的。$(br)$(l)特此鸣谢：$(reset)$(br)-$(l)Merlo$(reset): 本书作者$(br)-$(l)Frikkle$(reset): 错误和漏洞排查者(因为他很懒所以目前并没有找到)$(br)-$(l)Ridanisaurus$(reset): 全能的像素画师$(br)-$(l)NillerMedDild$(reset): Enigmatica整合包创始人和作者$(br)"
+        }
+    ]
+}

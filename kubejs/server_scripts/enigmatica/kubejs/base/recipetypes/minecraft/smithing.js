@@ -9,7 +9,7 @@ onEvent('recipes', (event) => {
 
     black_hole_types.forEach((type) => {
         black_hole_tiers.forEach((tier) => {
-            lowerTiers(black_hole_tiers, tier).forEach((prev) => {
+            getLowerTiers(black_hole_tiers, tier).forEach((prev) => {
                 recipes.push({
                     input1: `industrialforegoing:${prev}_black_hole_${type}`,
                     input2: `industrialforegoing:machine_frame_${tier}`,

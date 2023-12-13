@@ -8,21 +8,21 @@
  */
 
 onEvent('item.right_click', (event) => {
-    const /** @type {Internal.PlayerJS} */ player = event.player;
+    const player = event.player;
     if (
         !player ||
         // fake player not allowed
         player.fake ||
         // player must be sneaking
-        !player.crouching
+        !player.crouching ||
+        // player must be holding something
+        player.mainHandItem.empty
     ) {
         return;
     }
-    const item = player.mainHandItem;
-    const target = player.rayTrace(5).entity;
+    const target = player.rayTrace(3).entity;
+    // const target = player;
     if (
-        // player must be holding something
-        item.empty ||
         // player must be targeting another player
         !target ||
         !target.player
@@ -33,17 +33,17 @@ onEvent('item.right_click', (event) => {
     // cancel original right-click operations
     event.cancel();
 
-    let itemMessage = rawItemStr(item, 'white');
-    tellr(
+    let itemMessage = rawItemStr(player.mainHandItem, 'white');
+    tellraw(
         target,
         '{"translate":"chat.hand_over_your_items.send","color":"blue",' +
             `"with":[${itemMessage},{"text":"${player.name}","color":"dark_blue"}]}`
     );
-    tellr(
+    tellraw(
         player,
         '{"translate":"chat.hand_over_your_items.receive","color":"dark_green",' +
             `"with":[${itemMessage},{"text":"${target.name}","color":"green"}]}`
     );
-    target.giveInHand(item);
-    player.setHeldItem(MAIN_HAND, null);
+    target.giveInHand(player.mainHandItem);
+    player.mainHandItem.count = 0;
 });

@@ -2,6 +2,15 @@
 onEvent('recipes', (event) => {
     const recipes = [
         {
+            output: '8x upgrade_aquatic:luminous_elder_prismarine',
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: 'quark:elder_prismarine',
+                B: 'upgrade_aquatic:glowing_ink_sac'
+            },
+            id: 'upgrade_aquatic:luminous_elder_prismarine'
+        },
+        {
             output: 'upgrade_aquatic:mulberry_pie',
             pattern: [' C ', 'DDD', 'BAB'],
             key: {

@@ -6,127 +6,72 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:expert/masterful_machinery/advanced_assembly_table/';
     const recipes = [
         {
-            outputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'kubejs:batch_basic_circuit_package', count: 1 }
-                }
-            ],
+            outputs: ['1x kubejs:batch_basic_circuit_package'],
             inputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'kubejs:basic_circuit_package', count: 32 }
-                },
+                '32x kubejs:basic_circuit_package',
                 { type: 'masterfulmachinery:pncr_pressure', perTick: true, data: { air: 300 * 4 } }
             ],
             ticks: 240,
             id: `${id_prefix}batch_basic_circuit_package`
         },
         {
-            outputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'kubejs:batch_basic_memory_package', count: 1 }
-                }
-            ],
+            outputs: ['1x kubejs:batch_basic_memory_package'],
             inputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'kubejs:basic_memory_package', count: 32 }
-                },
+                '32x kubejs:basic_memory_package',
                 { type: 'masterfulmachinery:pncr_pressure', perTick: true, data: { air: 300 * 4 } }
             ],
             ticks: 240,
             id: `${id_prefix}batch_basic_memory_package`
         },
         {
-            outputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'kubejs:batch_cpu_core_500_package', count: 1 }
-                }
-            ],
+            outputs: ['1x kubejs:batch_cpu_core_500_package'],
             inputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'kubejs:cpu_core_500_package', count: 32 }
-                },
+                '32x kubejs:cpu_core_500_package',
                 { type: 'masterfulmachinery:pncr_pressure', perTick: true, data: { air: 300 * 4 } }
             ],
             ticks: 240,
             id: `${id_prefix}batch_cpu_core_500_package`
         },
         {
-            outputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'kubejs:batch_cpu_core_1000_package', count: 1 }
-                }
-            ],
+            outputs: ['1x kubejs:batch_cpu_core_1000_package'],
             inputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'kubejs:cpu_core_1000_package', count: 32 }
-                },
+                '32x kubejs:cpu_core_1000_package',
                 { type: 'masterfulmachinery:pncr_pressure', perTick: true, data: { air: 300 * 4 } }
             ],
             ticks: 240,
             id: `${id_prefix}batch_cpu_core_1000_package`
         },
         {
-            outputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'kubejs:batch_cpu_core_2000_package', count: 1 }
-                }
-            ],
+            outputs: ['1x kubejs:batch_cpu_core_2000_package'],
             inputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'kubejs:cpu_core_2000_package', count: 32 }
-                },
+                '32x kubejs:cpu_core_2000_package',
                 { type: 'masterfulmachinery:pncr_pressure', perTick: true, data: { air: 300 * 4 } }
             ],
             ticks: 240,
             id: `${id_prefix}batch_cpu_core_2000_package`
         },
         {
-            outputs: [
-                { type: 'masterfulmachinery:items', data: { item: 'kubejs:batch_unassembled_pcb', count: 1 } }
-            ],
+            outputs: ['1x kubejs:batch_unassembled_pcb'],
             inputs: [
-                { type: 'masterfulmachinery:items', data: { item: 'pneumaticcraft:empty_pcb', count: 32 } },
+                '32x pneumaticcraft:empty_pcb',
                 { type: 'masterfulmachinery:pncr_pressure', perTick: true, data: { air: 300 * 4 } }
             ],
             ticks: 240,
             id: `${id_prefix}batch_unassembled_pcb`
         },
         {
-            outputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'kubejs:batch_unassembled_advanced_pressure_tube', count: 1 }
-                }
-            ],
+            outputs: ['1x kubejs:batch_unassembled_advanced_pressure_tube'],
             inputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'pneumaticcraft:compressed_iron_block', count: 32 }
-                },
+                '32x pneumaticcraft:compressed_iron_block',
                 { type: 'masterfulmachinery:pncr_pressure', perTick: true, data: { air: 300 * 4 } }
             ],
             ticks: 240,
             id: `${id_prefix}batch_unassembled_advanced_pressure_tube`
         },
         {
-            outputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: { item: 'kubejs:batch_unassembled_machine_frame', count: 1 }
-                }
-            ],
+            outputs: ['1x kubejs:batch_unassembled_machine_frame'],
             inputs: [
-                { type: 'masterfulmachinery:items', data: { item: 'kubejs:rough_machine_frame', count: 32 } },
+                '32x kubejs:rough_machine_frame',
                 { type: 'masterfulmachinery:pncr_pressure', perTick: true, data: { air: 300 * 4 } }
             ],
             ticks: 240,
@@ -134,7 +79,52 @@ onEvent('recipes', (event) => {
         }
     ];
 
+    for (let type in storagePartsAE) {
+        for (let capacity in storagePartsAE[type]) {
+            let [mod, name] = storagePartsAE[type][capacity].split(':');
+            recipes.push({
+                outputs: [`kubejs:batch_${name}_package`],
+                inputs: [
+                    `30x kubejs:${name}_package`,
+                    { type: 'masterfulmachinery:pncr_pressure', perTick: true, data: { air: 300 * 4 } }
+                ],
+                ticks: 240,
+                id: `${id_prefix}batch_${type}_${capacity}k_package`
+            });
+        }
+    }
+
     recipes.forEach((recipe) => {
+        recipe.inputs = recipe.inputs.map((val) => {
+            if (typeof val == 'string') {
+                // '32x kubejs:rough_machine_frame'
+                return {
+                    type: 'masterfulmachinery:items',
+                    data: toJsonWithCount(val)
+                };
+            } else if (val.type == 'masterfulmachinery:items') {
+                /*
+                {
+                    type: 'masterfulmachinery:items',
+                    chance: 1.0,
+                    data: '2x mekanism:solar_neutron_activator'
+                }
+                 */
+                val.data = toJsonWithCount(val.data);
+            }
+            return val;
+        });
+        recipe.outputs = recipe.outputs.map((val) => {
+            if (typeof val == 'string') {
+                return {
+                    type: 'masterfulmachinery:items',
+                    data: toJsonWithCount(val)
+                };
+            } else if (val.type == 'masterfulmachinery:items') {
+                val.data = toJsonWithCount(val.data);
+            }
+            return val;
+        });
         recipe.type = 'masterfulmachinery:machine_process';
         recipe.structureId = 'advanced_assembly_table_structure';
         recipe.controllerId = 'advanced_assembly_table';

@@ -1,0 +1,16 @@
+{
+    "name": "设置",
+    "icon": "theoneprobe:probenote",
+    "category": "patchouli:theoneprobe",
+    "sortnum": 1,
+    "pages": [
+        {
+            "type": "text",
+            "text": "$(#ffa500)$(l)The One Probe$(reset)有许多选项供你调整，在聊天栏中输入$(l)/theoneprobe commands.$(br)-$(l)/theoneprobe config$(reset)（也可以通过“The One Probe 阅读指南”打开）来设置游戏内的信息框提示外观，或者修改显示位置、大小等。$(br)"
+        },
+        {
+            "type": "text",
+            "text": "-$(l)/theoneprobe need$(reset)（也可以通过“The One Probe 阅读指南”打开）可以设置信息显示框是否需要持有对应物品是才会显示。默认是禁用的，但是你可以将其设置为只能在手持“The One Probe 阅读指南”时才会显示的形式（这也是“带检测器的头盔”存在的原因），如果你想更改它的话，任凭君意！"
+        }
+    ]
+}

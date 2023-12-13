@@ -1,0 +1,16 @@
+{
+    "name": "配方查看器",
+    "icon": "minecraft:crafting_table",
+    "category": "patchouli:jei",
+    "sortnum": 1,
+    "pages": [
+        {
+            "type": "text",
+            "text": "JEI主要被用于$(l)查询各个物品/方块的配方$(reset)，类似于一个加强的原版配方书。只需要对着物品左键点击就能查看该物品/方块的配方，配方顶部的不同标签还会显示该物品/方块的不同配方类型。"
+        },
+        {
+            "type": "text",
+            "text": "或者你可以在物品上按$(l)$(k:jei.showRecipe)$(reset)键来查询配方表。按$(l)$(k:jei.showUses)$(reset)键会显示该物品的用途（例如：对着橡木按下该按键可以查看到橡木能够被分解成橡木木板等信息）, $(l)点击中心标签$(reset)（例如：工作台配方、熔炉配方等字样）将会显示哪些物品/方块能够参与该配方。"
+        }
+    ]
+}

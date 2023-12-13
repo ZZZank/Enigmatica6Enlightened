@@ -6,246 +6,277 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:expert/pneumaticcraft/assembly/';
     const recipes = [
         {
-            input: { item: 'thermal:machine_frame', count: 2 },
-            output: { item: 'kubejs:rough_machine_frame_top', count: 1 },
+            input: '2x thermal:machine_frame',
+            output: 'kubejs:rough_machine_frame_top',
             program: 'drill',
             id: `${id_prefix}rough_machine_frame_top`
         },
         {
-            input: { item: 'kubejs:rough_machine_frame', count: 1 },
-            output: { item: 'rftoolsbase:machine_frame', count: 1 },
+            input: 'kubejs:rough_machine_frame',
+            output: 'rftoolsbase:machine_frame',
             program: 'laser',
             id: 'rftoolsbase:machine_frame'
         },
         {
-            input: { tag: 'forge:storage_blocks/gold', count: 1 },
-            output: { item: 'supplementaries:gold_trapdoor', count: 5 },
+            input: '#forge:storage_blocks/gold',
+            output: '5x supplementaries:gold_trapdoor',
             program: 'drill',
             id: `${id_prefix}gold_trapdoor`
         },
         {
-            input: { item: 'kubejs:basic_circuit_package', count: 1 },
-            output: { item: 'kubejs:basic_circuit_assembly', count: 1 },
+            input: 'kubejs:basic_circuit_package',
+            output: 'kubejs:basic_circuit_assembly',
             program: 'drill',
             id: `${id_prefix}basic_circuit_assembly`
         },
         {
-            input: { item: 'kubejs:basic_circuit_assembly', count: 1 },
-            output: { item: 'mekanism:basic_control_circuit', count: 2 },
+            input: 'kubejs:basic_circuit_assembly',
+            output: '2x mekanism:basic_control_circuit',
             program: 'laser',
             id: 'mekanism:control_circuit/basic'
         },
         {
-            input: { item: 'kubejs:batch_basic_circuit_package', count: 1 },
-            output: { item: 'kubejs:batch_basic_circuit_assembly', count: 1 },
+            input: 'kubejs:batch_basic_circuit_package',
+            output: 'kubejs:batch_basic_circuit_assembly',
             program: 'drill',
             id: `${id_prefix}batch_basic_circuit_assembly`
         },
         {
-            input: { item: 'kubejs:batch_basic_circuit_assembly', count: 1 },
-            output: { item: 'mekanism:basic_control_circuit', count: 64 },
+            input: 'kubejs:batch_basic_circuit_assembly',
+            output: '64x mekanism:basic_control_circuit',
             program: 'laser',
             id: `${id_prefix}batch_basic_control_circuit`
         },
         {
-            input: { item: 'kubejs:basic_lenses_package', count: 1 },
-            output: { item: 'occultism:lenses', count: 3 },
+            input: 'kubejs:basic_lenses_package',
+            output: '3x occultism:lenses',
             program: 'laser',
             id: 'occultism:crafting/lenses'
         },
         {
-            input: { item: 'kubejs:basic_memory_package', count: 1 },
-            output: { item: 'kubejs:basic_memory_assembly', count: 1 },
+            input: 'kubejs:basic_memory_package',
+            output: 'kubejs:basic_memory_assembly',
             program: 'drill',
             id: `${id_prefix}basic_memory_assembly`
         },
         {
-            input: { item: 'kubejs:basic_memory_assembly', count: 1 },
-            output: { item: 'kubejs:memory_basic_empty', count: 2 },
+            input: 'kubejs:basic_memory_assembly',
+            output: '2x kubejs:memory_basic_empty',
             program: 'laser',
             id: `${id_prefix}memory_basic_empty`
         },
         {
-            input: { item: 'kubejs:batch_basic_memory_package', count: 1 },
-            output: { item: 'kubejs:batch_basic_memory_assembly', count: 1 },
+            input: 'kubejs:batch_basic_memory_package',
+            output: 'kubejs:batch_basic_memory_assembly',
             program: 'drill',
             id: `${id_prefix}batch_basic_memory_assembly`
         },
         {
-            input: { item: 'kubejs:batch_basic_memory_assembly', count: 1 },
-            output: { item: 'kubejs:memory_basic_empty', count: 64 },
+            input: 'kubejs:batch_basic_memory_assembly',
+            output: '64x kubejs:memory_basic_empty',
             program: 'laser',
             id: `${id_prefix}batch_memory_basic_empty`
         },
         {
-            input: { item: 'kubejs:cpu_core_500_package', count: 1 },
-            output: { item: 'kubejs:cpu_core_500_assembly', count: 1 },
+            input: 'kubejs:cpu_core_500_package',
+            output: 'kubejs:cpu_core_500_assembly',
             program: 'drill',
             id: `${id_prefix}cpu_core_500_assembly`
         },
         {
-            input: { item: 'kubejs:cpu_core_500_assembly', count: 1 },
-            output: { item: 'kubejs:cpu_core_mk_1026', count: 1 },
+            input: 'kubejs:cpu_core_500_assembly',
+            output: 'kubejs:cpu_core_mk_1026',
             program: 'laser',
             id: `${id_prefix}cpu_core_mk_1026`
         },
         {
-            input: { item: 'kubejs:batch_cpu_core_500_package', count: 1 },
-            output: { item: 'kubejs:batch_cpu_core_500_assembly', count: 1 },
+            input: 'kubejs:batch_cpu_core_500_package',
+            output: 'kubejs:batch_cpu_core_500_assembly',
             program: 'drill',
             id: `${id_prefix}batch_cpu_core_500_assembly`
         },
         {
-            input: { item: 'kubejs:batch_cpu_core_500_assembly', count: 1 },
-            output: { item: 'kubejs:cpu_core_mk_1026', count: 32 },
+            input: 'kubejs:batch_cpu_core_500_assembly',
+            output: '32x kubejs:cpu_core_mk_1026',
             program: 'laser',
             id: `${id_prefix}batch_cpu_core_mk_1026`
         },
         {
-            input: { item: 'kubejs:cpu_core_1000_package', count: 1 },
-            output: { item: 'kubejs:cpu_core_1000_assembly', count: 1 },
+            input: 'kubejs:cpu_core_1000_package',
+            output: 'kubejs:cpu_core_1000_assembly',
             program: 'drill',
             id: `${id_prefix}cpu_core_1000_assembly`
         },
         {
-            input: { item: 'kubejs:cpu_core_1000_assembly', count: 1 },
-            output: { item: 'kubejs:cpu_core_eg_28222', count: 1 },
+            input: 'kubejs:cpu_core_1000_assembly',
+            output: 'kubejs:cpu_core_eg_28222',
             program: 'laser',
             id: `${id_prefix}cpu_core_eg_28222`
         },
         {
-            input: { item: 'kubejs:batch_cpu_core_1000_package', count: 1 },
-            output: { item: 'kubejs:batch_cpu_core_1000_assembly', count: 1 },
+            input: 'kubejs:batch_cpu_core_1000_package',
+            output: 'kubejs:batch_cpu_core_1000_assembly',
             program: 'drill',
             id: `${id_prefix}batch_cpu_core_1000_assembly`
         },
         {
-            input: { item: 'kubejs:batch_cpu_core_1000_assembly', count: 1 },
-            output: { item: 'kubejs:cpu_core_eg_28222', count: 32 },
+            input: 'kubejs:batch_cpu_core_1000_assembly',
+            output: '32x kubejs:cpu_core_eg_28222',
             program: 'laser',
             id: `${id_prefix}batch_cpu_core_eg_28222`
         },
         {
-            input: { item: 'kubejs:cpu_core_2000_package', count: 1 },
-            output: { item: 'kubejs:cpu_core_2000_assembly', count: 1 },
+            input: 'kubejs:cpu_core_2000_package',
+            output: 'kubejs:cpu_core_2000_assembly',
             program: 'drill',
             id: `${id_prefix}cpu_core_2000_assembly`
         },
         {
-            input: { item: 'kubejs:cpu_core_2000_assembly', count: 1 },
-            output: { item: 'kubejs:cpu_core_as_81221', count: 1 },
+            input: 'kubejs:cpu_core_2000_assembly',
+            output: 'kubejs:cpu_core_as_81221',
             program: 'laser',
             id: `${id_prefix}cpu_core_as_81221`
         },
         {
-            input: { item: 'kubejs:batch_cpu_core_2000_package', count: 1 },
-            output: { item: 'kubejs:batch_cpu_core_2000_assembly', count: 1 },
+            input: 'kubejs:batch_cpu_core_2000_package',
+            output: 'kubejs:batch_cpu_core_2000_assembly',
             program: 'drill',
             id: `${id_prefix}batch_cpu_core_2000_assembly`
         },
         {
-            input: { item: 'kubejs:batch_cpu_core_2000_assembly', count: 1 },
-            output: { item: 'kubejs:cpu_core_as_81221', count: 32 },
+            input: 'kubejs:batch_cpu_core_2000_assembly',
+            output: '32x kubejs:cpu_core_as_81221',
             program: 'laser',
             id: `${id_prefix}batch_cpu_core_as_81221`
         },
         {
-            input: { item: 'kubejs:batch_unassembled_pcb', count: 1 },
-            output: { item: 'pneumaticcraft:unassembled_pcb', count: 32 },
+            input: 'kubejs:batch_unassembled_pcb',
+            output: '32x pneumaticcraft:unassembled_pcb',
             program: 'laser',
             id: `${id_prefix}batch_unassembled_pcb`
         },
 
         {
-            input: { item: 'kubejs:batch_unassembled_advanced_pressure_tube', count: 1 },
-            output: { item: 'pneumaticcraft:advanced_pressure_tube', count: 256 },
+            input: 'kubejs:batch_unassembled_advanced_pressure_tube',
+            output: '256x pneumaticcraft:advanced_pressure_tube',
             program: 'drill',
             id: `${id_prefix}batch_unassembled_advanced_pressure_tube`
         },
         {
-            input: { item: 'kubejs:batch_unassembled_machine_frame', count: 1 },
-            output: { item: 'rftoolsbase:machine_frame', count: 32 },
+            input: 'kubejs:batch_unassembled_machine_frame',
+            output: '32x rftoolsbase:machine_frame',
             program: 'drill',
             id: `${id_prefix}batch_unassembled_machine_frame`
         },
 
         {
-            input: { item: 'kubejs:assembly_io_package', count: 1 },
-            output: { item: 'kubejs:assembly_io_assembly', count: 1 },
+            input: 'kubejs:assembly_io_package',
+            output: 'kubejs:assembly_io_assembly',
             program: 'drill',
             id: `${id_prefix}assembly_io_assembly`
         },
         {
-            input: { item: 'kubejs:assembly_io_assembly', count: 1 },
-            output: { item: 'pneumaticcraft:assembly_io_unit_import', count: 2 },
+            input: 'kubejs:assembly_io_assembly',
+            output: '2x pneumaticcraft:assembly_io_unit_import',
 
             program: 'laser',
             id: `${id_prefix}assembly_io_alternate`
         },
         {
-            input: { item: 'kubejs:assembly_laser_package', count: 1 },
-            output: { item: 'kubejs:assembly_laser_assembly', count: 1 },
+            input: 'kubejs:assembly_laser_package',
+            output: 'kubejs:assembly_laser_assembly',
             program: 'drill',
             id: `${id_prefix}assembly_laser_assembly`
         },
         {
-            input: { item: 'kubejs:assembly_laser_assembly', count: 1 },
-            output: { item: 'pneumaticcraft:assembly_laser', count: 1 },
-
+            input: 'kubejs:assembly_laser_assembly',
+            output: 'pneumaticcraft:assembly_laser',
             program: 'laser',
             id: `${id_prefix}assembly_laser_alternate`
         },
         {
-            input: { item: 'kubejs:assembly_drill_package', count: 1 },
-            output: { item: 'kubejs:assembly_drill_assembly', count: 1 },
+            input: 'kubejs:assembly_drill_package',
+            output: 'kubejs:assembly_drill_assembly',
             program: 'drill',
             id: `${id_prefix}assembly_drill_assembly`
         },
         {
-            input: { item: 'kubejs:assembly_drill_assembly', count: 1 },
-            output: { item: 'pneumaticcraft:assembly_drill', count: 1 },
-
+            input: 'kubejs:assembly_drill_assembly',
+            output: 'pneumaticcraft:assembly_drill',
             program: 'laser',
             id: `${id_prefix}assembly_drill_alternate`
         },
         {
-            input: { item: 'kubejs:assembly_platform_package', count: 1 },
-            output: { item: 'kubejs:assembly_platform_assembly', count: 1 },
+            input: 'kubejs:assembly_platform_package',
+            output: 'kubejs:assembly_platform_assembly',
             program: 'drill',
             id: `${id_prefix}assembly_platform_assembly`
         },
         {
-            input: { item: 'kubejs:assembly_platform_assembly', count: 1 },
-            output: { item: 'pneumaticcraft:assembly_platform', count: 1 },
+            input: 'kubejs:assembly_platform_assembly',
+            output: 'pneumaticcraft:assembly_platform',
 
             program: 'laser',
             id: `${id_prefix}assembly_platform_alternate`
         },
         {
-            input: { item: 'kubejs:assembly_controller_package', count: 1 },
-            output: { item: 'kubejs:assembly_controller_assembly', count: 1 },
+            input: 'kubejs:assembly_controller_package',
+            output: 'kubejs:assembly_controller_assembly',
             program: 'drill',
             id: `${id_prefix}assembly_controller_assembly`
         },
         {
-            input: { item: 'kubejs:assembly_controller_assembly', count: 1 },
-            output: { item: 'pneumaticcraft:assembly_controller', count: 1 },
+            input: 'kubejs:assembly_controller_assembly',
+            output: 'pneumaticcraft:assembly_controller',
             program: 'laser',
             id: `${id_prefix}assembly_controller_alternate`
         },
         {
-            input: { tag: 'forge:storage_blocks/brass', count: 1 },
-            output: { item: 'create:furnace_engine', count: 1 },
+            input: '#forge:storage_blocks/brass',
+            output: 'create:furnace_engine',
             program: 'drill',
             id: `${id_prefix}furnace_engine_alternate`
         },
         {
-            input: { tag: 'forge:ingots/brass', count: 32 },
-            output: { item: 'create:flywheel', count: 1 },
+            input: '32x #forge:ingots/brass',
+            output: 'create:flywheel',
             program: 'drill',
             id: `${id_prefix}flywheel_alternate`
         }
     ];
+
+    for (let type in storagePartsAE) {
+        for (let capacity in storagePartsAE[type]) {
+            let part = storagePartsAE[type][capacity];
+            let [mod, name] = part.split(':');
+            recipes.push(
+                {
+                    input: `kubejs:${name}_package`,
+                    output: `kubejs:${name}_assembly`,
+                    program: 'drill',
+                    id: `${id_prefix}${name}_assembly`
+                },
+                {
+                    input: `kubejs:${name}_assembly`,
+                    output: part,
+                    program: 'laser',
+                    id: `${id_prefix}${name}`
+                },
+                {
+                    input: `kubejs:batch_${name}_package`,
+                    output: `kubejs:batch_${name}_assembly`,
+                    program: 'drill',
+                    id: `${id_prefix}batch_${name}_assembly`
+                },
+                {
+                    input: `kubejs:batch_${name}_assembly`,
+                    output: `30x ${part}`,
+                    program: 'laser',
+                    id: `${id_prefix}batch_${name}`
+                }
+            );
+        }
+    }
 
     let armorSets = [
         {
@@ -261,14 +292,14 @@ onEvent('recipes', (event) => {
         armorSet.armorPieces.forEach((armorPiece) => {
             recipes.push(
                 {
-                    input: { item: `kubejs:${armorPiece}_package`, count: 1 },
-                    output: { item: `kubejs:${armorPiece}_assembly`, count: 1 },
+                    input: `kubejs:${armorPiece}_package`,
+                    output: `kubejs:${armorPiece}_assembly`,
                     program: 'drill',
                     id: `${id_prefix}${armorPiece}_assembly`
                 },
                 {
-                    input: { item: `kubejs:${armorPiece}_assembly`, count: 1 },
-                    output: { item: `${armorSet.modID}:${armorPiece}`, count: 1 },
+                    input: `kubejs:${armorPiece}_assembly`,
+                    output: `${armorSet.modID}:${armorPiece}`,
                     program: 'laser',
                     id: `${id_prefix}${armorPiece}`
                 }
@@ -293,20 +324,22 @@ onEvent('recipes', (event) => {
 
     masteries.forEach((mastery) => {
         recipes.push({
-            input: { item: `kubejs:${mastery}_mastery_shard`, count: 50 },
-            output: { item: `kubejs:${mastery}_mastery_token`, count: 1 },
+            input: `50x kubejs:${mastery}_mastery_shard`,
+            output: `kubejs:${mastery}_mastery_token`,
             program: 'laser',
             id: `${id_prefix}${mastery}_mastery_token`
         });
     });
 
     recipes.forEach((recipe) => {
-        recipe.input.type = 'pneumaticcraft:stacked_item';
+        let input = toJsonWithCount(recipe.input);
+        let output = toJsonWithCount(recipe.output);
+        input.type = 'pneumaticcraft:stacked_item';
         event
             .custom({
                 type: `pneumaticcraft:assembly_${recipe.program}`,
-                input: recipe.input,
-                result: recipe.output,
+                input: input,
+                result: output,
                 program: recipe.program
             })
             .id(recipe.id);

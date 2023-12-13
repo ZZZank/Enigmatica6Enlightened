@@ -1,0 +1,16 @@
+{
+    "name": "简介",
+    "icon": "minecraft:writable_book",
+    "category": "patchouli:jei",
+    "sortnum": 0,
+    "pages": [
+        {
+            "type": "text",
+            "text": "你可能已经打开过物品栏，并注意到右侧有很多页的物品，你可能认为它们太多了(too many items)，又或是不够多(not enough items)，但我会说“刚好够”(just enough items)。"
+        },
+        {
+            "type": "text",
+            "text": "$(l)$(#ffa500)Just Enough Items$(reset) 实际上就是你正在看的很多页物品对应的模组名称，它们主要被用于列出游戏内所有的物品，并让你更轻松地在其中浏览，在本章中你将会学习如何去使用它。$(br)你可以自定义设置JEI的某些功能$(l)，点击屏幕右下角的扳手图标$(reset)。尝试一下吧！"
+        }
+    ]
+}

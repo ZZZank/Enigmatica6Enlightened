@@ -32,45 +32,33 @@ const itemsToRemoveAE = [
     'appliedenergistics2:silicon_press'
 ];
 
-const storagePartsAE = [
-    {
-        modID: 'appliedenergistics2',
-        type: '',
-        sizes: ['1k', '4k', '16k', '64k', '1k_fluid', '4k_fluid', '16k_fluid', '64k_fluid']
+const storagePartsAE = {
+    item: {
+        1: 'appliedenergistics2:1k_cell_component',
+        4: 'appliedenergistics2:4k_cell_component',
+        16: 'appliedenergistics2:16k_cell_component',
+        64: 'appliedenergistics2:64k_cell_component',
+        256: 'aeadditions:item_storage_component_256',
+        1024: 'aeadditions:item_storage_component_1024',
+        4096: 'aeadditions:item_storage_component_4096',
+        16384: 'aeadditions:item_storage_component_16384'
     },
-    {
-        modID: 'aeadditions',
-        type: 'item',
-        sizes: [
-            //in K. (1024 means 1024k)
-            '256',
-            '1024',
-            '4096',
-            '16384'
-        ]
+    fluid: {
+        1: 'appliedenergistics2:1k_fluid_cell_component',
+        4: 'appliedenergistics2:4k_fluid_cell_component',
+        16: 'appliedenergistics2:16k_fluid_cell_component',
+        64: 'appliedenergistics2:64k_fluid_cell_component',
+        256: 'aeadditions:fluid_storage_component_256',
+        1024: 'aeadditions:fluid_storage_component_1024',
+        4096: 'aeadditions:fluid_storage_component_4096'
     },
-    {
-        modID: 'aeadditions',
-        type: 'fluid',
-        sizes: [
-            //in K. (1024 means 1024k)
-            '256',
-            '1024',
-            '4096'
-        ]
-    },
-    {
-        modID: 'aeadditions',
-        type: 'chemical',
-        sizes: [
-            //in K. (1024 means 1024k)
-            '1',
-            '4',
-            '16',
-            '64',
-            '256',
-            '1024',
-            '4096'
-        ]
+    chemical: {
+        1: 'aeadditions:chemical_storage_component_1',
+        4: 'aeadditions:chemical_storage_component_4',
+        16: 'aeadditions:chemical_storage_component_16',
+        64: 'aeadditions:chemical_storage_component_64',
+        256: 'aeadditions:chemical_storage_component_256',
+        1024: 'aeadditions:chemical_storage_component_1024',
+        4096: 'aeadditions:chemical_storage_component_4096'
     }
-];
+};

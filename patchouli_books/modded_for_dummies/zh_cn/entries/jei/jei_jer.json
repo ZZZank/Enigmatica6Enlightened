@@ -1,0 +1,16 @@
+{
+    "name": "资源查看器",
+    "icon": "minecraft:iron_ore",
+    "category": "patchouli:jei",
+    "sortnum": 4,
+    "pages": [
+        {
+            "type": "text",
+            "text": "$(#ffa500)$(l)Just Enough Resources$(reset)（简称JER）是JEI的一个附属，为JEI增加了几个新标签页，用来显示那些无法通过合成的方式获取到的物品（例如生物的掉落物、地牢宝箱等）。"
+        },
+        {
+            "type": "text",
+            "text": "注意：目前JER缺少一项功能，这导致无法正确显示$(l)矿物生成高度$(reset)，所以请不要过于相信JER内的矿物生成表。"
+        }
+    ]
+}

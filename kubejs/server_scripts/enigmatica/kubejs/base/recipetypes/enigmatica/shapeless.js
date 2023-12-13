@@ -41,14 +41,15 @@ onEvent('recipes', (event) => {
             output: '9x occultism:iesnium_nugget',
             inputs: ['#forge:ingots/iesnium'],
             id: `${id_prefix}iesnium_nuggets_from_ingot`
+        },
+        {
+            output: '9x emendatusenigmatica:wood_dust',
+            inputs: ['thermal:sawdust_block'],
+            id: `${id_prefix}wood_dust_from_sawdust_block`
         }
     ];
 
     recipes.forEach((recipe) => {
         event.shapeless(recipe.output, recipe.inputs).id(recipe.id);
     });
-    event
-        .shapeless('environmental:koi', ['environmental:koi_bucket'])
-        .replaceIngredient('environmental:koi_bucket', 'minecraft:water_bucket')
-        .id(`${id_prefix}catch_koi`);
 });

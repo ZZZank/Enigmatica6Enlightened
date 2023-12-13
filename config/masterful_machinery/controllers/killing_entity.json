@@ -1,0 +1,6 @@
+{
+    "controllerId": "killing_entity",
+    "name": "Killing Entity",
+    "textureOverride": "minecraft:block/white_concrete",
+    "ports": []
+}

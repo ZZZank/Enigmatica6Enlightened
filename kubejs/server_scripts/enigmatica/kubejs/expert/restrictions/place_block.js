@@ -37,25 +37,32 @@ onEvent('block.place', (event) => {
     if (global.isNormalMode) {
         return;
     }
-    const /** @type {Internal.BlockContainerJS} */ block = event.getBlock();
-    const /** @type {Internal.EntityJS} */ entity = event.getEntity();
+    const block = event.block;
+    const entity = event.entity;
+
+    let isValid = (restriction) => {
+        if (restriction.stageUnlock && entity.stages.has(restriction.stageUnlock)) {
+            return true;
+        }
+        if (restriction.dimension && restriction.dimension != block.dimension) {
+            return false;
+        }
+        if (restriction.additional && !restriction.additional(event)) {
+            return false;
+        }
+        return true;
+    };
 
     for (let r of restrictions.block_place) {
         if (r.blocks.indexOf(block.id) == -1) {
             continue;
         }
-        // Resctricted blocks must be placed by player
+        // Restricted blocks must be placed by player
         if (!entity || !entity.player || entity.fake) {
             event.cancel();
             return;
         }
-        let isValid =
-            // If player has such stage, the block can be placed anywhere
-            (r.stageUnlock && entity.stages.has(r.stageUnlock)) ||
-            // If player doesn't has such stage, block placement will be forbidden
-            // unless all requirements are met
-            (r.dimension && r.dimension == block.dimension && r.additional && r.additional(event));
-        if (!isValid) {
+        if (!isValid(r)) {
             entity.tell(Text.translate(r.errorMessage).red());
             event.cancel();
             return;

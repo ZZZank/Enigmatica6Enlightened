@@ -1,0 +1,15 @@
+{
+    "name": "R键整理",
+    "icon": "minecraft:chest",
+    "category": "patchouli:tweaks",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$(#ffa500)$(l)Inventory Tweaks$(reset)能一键整理你那杂乱的物品栏，只需要按下$(k:invtweaks_sort_either.desc)键$(l)即可对你那杂乱的物品栏一键整理。$(reset)"
+        },
+        {
+            "type": "text",
+            "text": "该模组还对其他地方有调整，例如：在你的背包中有时会有不满一组的物品而背包的其他位置上又有足够的物品，这是你就能按下快捷键来一键填充，同时如果你的背包中有合适的工具而你使用的工具即将要损坏时则会一键替换工具。"
+        }
+    ]
+}

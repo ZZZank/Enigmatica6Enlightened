@@ -230,7 +230,7 @@ onEvent('recipes', (event) => {
                 C: 'mekanism:cardboard_box',
                 D: 'aeadditions:item_storage_component_4096'
             },
-            id: 'aeadditions:components/item/16384'
+            id: 'aeadditions:components/item/16384k'
         },
 
         // Fluid Storage Parts

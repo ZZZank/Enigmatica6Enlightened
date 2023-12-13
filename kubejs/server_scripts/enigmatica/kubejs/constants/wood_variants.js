@@ -89,12 +89,11 @@ let woodVariantsToConstruct = [
     // 'sushigocrafting:avocado'
 ];
 
+/** @type {{modId:string, logType:string, logBlock:string, woodBlock:string, logBlockStripped:string, woodBlockStripped:string, plankBlock:string, slabBlock:string}} */
 let buildWoodVariants = [];
 
 woodVariantsToConstruct.forEach((variant) => {
-    let splitVariant = variant.split(':');
-    let modId = splitVariant[0];
-    let logType = splitVariant[1];
+    let [modId, logType] = variant.split(':');
     let logSuffix,
         woodSuffix,
         logBlockStripped,
@@ -151,7 +150,6 @@ woodVariantsToConstruct.forEach((variant) => {
         woodBlock = modId + ':' + logType + woodSuffix;
         logBlockStripped = modId + ':' + logType + '_stripped' + logSuffix;
         woodBlockStripped = modId + ':' + logType + '_stripped' + woodSuffix;
-        plankBlock = modId + ':' + logType + '_planks';
     }
 
     if (modId == 'tconstruct') {
@@ -173,12 +171,15 @@ woodVariantsToConstruct.forEach((variant) => {
             break;
         case 'green_archwood':
             plankBlock = 'ars_nouveau:archwood_planks';
+            slabBlock = 'ars_nouveau:archwood_slab';
             break;
         case 'purple_archwood':
             plankBlock = 'ars_nouveau:archwood_planks';
+            slabBlock = 'ars_nouveau:archwood_slab';
             break;
         case 'blue_archwood':
             plankBlock = 'ars_nouveau:archwood_planks';
+            slabBlock = 'ars_nouveau:archwood_slab';
             break;
         case 'driftwood':
             woodBlock = modId + ':' + logType;

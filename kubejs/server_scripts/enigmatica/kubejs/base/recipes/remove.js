@@ -19,8 +19,8 @@ onEvent('recipes', (event) => {
         { type: 'industrialforegoing:fluid_extractor' },
         { type: 'thermal:tree_extractor' },
 
-        { mod: 'ironjetpacks' },
         { mod: 'theoneprobe' },
+        { mod: 'itemfilters' },
 
         { type: 'thermal:compression_fuel' },
         { type: 'mekanism:combining' },
@@ -151,6 +151,7 @@ onEvent('recipes', (event) => {
         'arsarsenal:air_hood',
         'arsarsenal:aqua_hood',
 
+        'astralsorcery:altar/marble_runed',
         'astralsorcery:infuser/gold_ore',
         'astralsorcery:shaped/marble/marble_slab',
 

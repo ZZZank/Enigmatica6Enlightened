@@ -87,7 +87,7 @@ onEvent('recipes', (event) => {
             wire_coil = 'immersiveengineering:coil_hv';
         }
 
-        let lower_tiers = lowerTiers(powahTiers, tier);
+        let lower_tiers = getLowerTiers(powahTiers, tier);
 
         // Primary Craft
         recipes.push(

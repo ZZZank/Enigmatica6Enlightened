@@ -1,3 +1,62 @@
+### Enlightened6 & Enlightened6Expert - 2.4.1 -> 2.5.0
+
+🚀 Forge-1.16.5-36.2.39 | [📜 Mod Updates](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/changelog_mods_2.5.0.md) | [📋 Modlist](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/modlist_2.5.0.md)
+
+### It is highly recommended to upgrade to this version, especially when you are playing Expert Mode, because it includes many important bugfixes
+
+### 🎁 Highlights
+
+-   Refined Storage compatibility!
+    - It supports Refined Storage and some extensions, including Refined Storage Addons, Extra Storage and RSInfinityBooster
+-   Recipe hint for Killing Entity!
+    - The newly added recipe hint can helps you clearly know how to obtain some entity drops. For example, it will tells you Silk Fiber can be obtained from Silk Moth Nest
+-   Add some fancy sound and particles for Block Conversion
+-   Replace navigator of many entities, to be more performant
+-   Full lang keys for Assembly Package-s, with en_us and zh_cn localization
+-   Replace Night Vision Flashing with Fading-out
+
+### Mods Added
+
+-   [Entity Collision FPS Fix](https://www.curseforge.com/minecraft/mc-mods/entity-collision-fps-fix) (by [Corgi_Taco](https://www.curseforge.com/members/Corgi_Taco/projects))
+-   [No Night Vision Flashing](https://www.curseforge.com/minecraft/mc-mods/no-nv-flash) (by [TeamCoFH](https://www.curseforge.com/members/TeamCoFH/projects))
+
+### 🌟 Improvements
+
+-   dynamically show quest for optional mods, like Refined Storage
+-   Blacklist target dummy in BloodMagic sacrificing
+-   Do not specify name of Books in AkashicTome to allow localization
+-   Remove recipes for Itemfilters, they cause severe item dupe
+-   Hide useless JEI categories
+-   Unify explosion recipe
+-   Hide materialis::wrench in JEI
+-   zh_cn localization for Storage Paprts Package/Assembly
+-   Disable Mana Gem in loot
+-   Hide altered recipe properly
+-   Universial Crafting Table recipe will check mctb variants to prevent duplicated recipes
+-   Add manual unpacking option for sawdust
+-   explain Sand Cast usage in quest
+-   Blacklist AE ores in AS ore generating
+-   Replace Occultism lootbox with actual item
+-   Replace Nature's Aura lootbox with actual item
+-   Alt recipe for naturesaura:eye
+-   Buff quark:elder_prismarine output when crafting variants
+-   zh_cn localization for Patchouli Books
+-   zh_cn localization for Interactio
+-   zh_cn localization for Masterful Machinery blocks
+
+### 🐛 Fixed Bugs
+
+-   Crash on placing Sophisticatd Backpacks
+-   16384k Cell Component not overwritting recipe
+-   Tainted Gold Block unpacking
+-   Hand Over Your Item messages not showing
+-   Ars Nouveau quest giving wrong type of lootbox
+-   Quark backpack/crate recipe invisible
+-   Immersive Engineering Fluid Pump recipe not overwritting
+-   Interactio lang json
+
+---
+
 ## Enlightened6 & Enlightened6Expert - 2.4.0 -> 2.4.1
 
 _Using Forge-1.16.5-36.2.39_ | _[Mod Updates](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/changelog_mods_2.4.1.md)_ | _[Modlist](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/modlist_2.4.2.md)_

@@ -1,0 +1,12 @@
+{
+    "name": "小地图",
+    "icon": "minecraft:compass",
+    "category": "patchouli:ftbchunks",
+    "sortnum": 0,
+    "pages": [
+        {
+            "type": "text",
+            "text": "你应该注意到了，背包栏左上角有一个小地图，它可以让你非常方便的观察附近的环境，并且$(l)可以在菜单选项中自定义相关内容$(reset)。你可以从$(l:ftbchunks/ftbchunks_worldmap)世界地图$(reset)菜单中进入，更改位置、大小、实体显示方式等信息。试着自己去看看吧！"
+        }
+    ]
+}

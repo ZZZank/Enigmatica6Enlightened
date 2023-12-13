@@ -5,7 +5,7 @@
 	#TheNumberOfItems = basicCount + aRandomNumberBetweenZeroAndMaxCount
 	#Another example, if you turn 'manaGem' off, this items will not appear in loots anymore.
 	[ArsNouveauLootConfig.BasicLoot]
-		manaGem = true
+		manaGem = false
 		#Range: 0 ~ 64
 		manaGemBasicCount = 1
 		#Range: 1 ~ 64

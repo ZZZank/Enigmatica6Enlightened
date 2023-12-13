@@ -15,6 +15,29 @@ function titleCase(str) {
 }
 
 /**
+ * transform string-style ingredient into JSON style
+ * @param {string} ingredient like '3x #forge:grain' or 'minecraft:book'
+ * @returns {{count: number,tag?: string,item?: string}}
+ */
+function toJsonWithCount(ingredient) {
+    let parsed = { count: 1 };
+
+    let splited = ingredient.split('x ', 2);
+    if (splited.length != 1) {
+        // "3x kubejs:no" -> ["3", "kubejs:no"]
+        parsed.count = parseInt(splited[0]);
+        ingredient = splited[1];
+    }
+
+    if (ingredient.startsWith('#')) {
+        parsed.tag = ingredient.substring(1);
+    } else {
+        parsed.item = ingredient;
+    }
+    return parsed;
+}
+
+/**
  *
  * @param {any[]} entries
  * @returns {any}
@@ -25,21 +48,28 @@ function getRandomInList(entries) {
 
 /**
  * @param {Internal.ItemStackJS} item
- * @param {string} color
+ * @param {string?} color
  * @returns {string}
  */
 function rawItemStr(item, color) {
     let colorTag = color ? `,"color":"${color}"` : '';
-    let count = item.count > 1 ? `${item.count}*` : '';
+    let count = item.count > 1 ? `"${item.count}*"` : '""';
+    let itemName = '';
+    try {
+        itemName = item.getNbt().display.Name;
+    } catch (e) {
+        itemName = `{"translate":"${item.block ? 'block' : 'item'}.${item.id.replace(':', '.')}"}`;
+    }
+    // we use string instead of Text/TextComponent because KubeJS cannot handle `show_item` properly
     return `{
         "translate":"%s[%s]",
-        "with":["${count}","${item.getName()}"],
+        "with":[${count},${itemName}],
         "hoverEvent": {
             "action": "show_item",
             "contents": {
                 "id": "${item.id}",
                 "count": ${item.count},
-                "tag":"${item.nbtString.replace(/"/g, '\\"')}"
+                "tag":"${item.nbtString.replace('"', '\\"')}"
         }}${colorTag}}`.replace(/\s+/g, '');
 }
 
@@ -48,7 +78,7 @@ function rawItemStr(item, color) {
  * @param {Internal.PlayerJS} player The target of tellraw command
  * @param {string} str The content of tellraw command
  */
-function tellr(player, str) {
+function tellraw(player, str) {
     player.server.runCommandSilent(`/tellraw ${player.name} ${str}`);
 }
 
@@ -132,17 +162,36 @@ const unificationBlacklist = [
  * @param {Internal.PlayerJS} player
  * @returns {boolean}
  */
-const playerHas = (item, player) => {
+function playerHas(item, player) {
     return player.inventory.find(item) != -1;
-};
+}
 
 // lt  = .slice(0, index)
 // lte = .slice(0, index + 1)
 // gt  = .slice(index)
 // gte = .slice(index + 1)
 
-function lowerTiers(tiers, tier) {
+/**
+ *
+ * @param {string[]} tiers
+ * @param {string} tier
+ * @returns
+ */
+function getLowerTiers(tiers, tier) {
     return tiers.slice(0, tiers.indexOf(tier));
+}
+
+/**
+ *
+ * @param {string[]} tiers
+ * @param {string} tier
+ */
+function getNextTier(tiers, tier) {
+    let i = tiers.indexOf(tier);
+    if (i == tiers.length() - 1) {
+        return tier;
+    }
+    return tiers[i + 1];
 }
 
 /**

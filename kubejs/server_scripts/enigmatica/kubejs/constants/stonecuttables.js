@@ -1403,7 +1403,8 @@ const stonecuttables = [
             'chipped:vine_4',
             'chipped:vine_3',
             'chipped:vine_2',
-            'chipped:vine_1'
+            'chipped:vine_1',
+            'valhelsia_structures:hanging_vines'
         ],
         onlyAsOutput: [],
         onlyAsInput: []

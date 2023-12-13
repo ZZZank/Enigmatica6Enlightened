@@ -33,7 +33,6 @@ onEvent('recipes', (event) => {
                 F: { item: 'botania:spectral_platform' },
                 G: { tag: 'forge:storage_blocks/starmetal' }
             },
-            altar_type: 1,
             duration: 200,
             starlight: 1400,
             recipe_class: 'astralsorcery:constellation_upgrade',
@@ -57,7 +56,6 @@ onEvent('recipes', (event) => {
                 G: { tag: 'botania:runes/air' },
                 H: { tag: 'botania:runes/lust' }
             },
-            altar_type: 1,
             duration: 200,
             starlight: 1400,
             effects: [
@@ -78,7 +76,6 @@ onEvent('recipes', (event) => {
                 E: { tag: 'botania:runes/air' },
                 F: { item: 'astralsorcery:nocturnal_powder' }
             },
-            altar_type: 1,
             duration: 200,
             starlight: 800,
             effects: [
@@ -89,7 +86,6 @@ onEvent('recipes', (event) => {
         },
         {
             output: Item.of('astralsorcery:shifting_star'),
-            altar_type: 1,
             duration: 200,
             starlight: 1400,
             pattern: ['A___A', '_ECB_', '_CDC_', '_BCE_', 'A___A'],
@@ -129,7 +125,6 @@ onEvent('recipes', (event) => {
                 I: { item: 'kubejs:firmament' },
                 J: { item: 'naturesaura:infused_stone' }
             },
-            altar_type: 1,
             duration: 200,
             starlight: 1400,
             effects: [
@@ -143,7 +138,6 @@ onEvent('recipes', (event) => {
         },
         {
             output: Item.of('astralsorcery:ritual_pedestal'),
-            altar_type: 1,
             duration: 200,
             starlight: 1400,
             pattern: ['A___A', '_BCB_', '_GEG_', '_FFF_', 'D___D'],
@@ -164,7 +158,6 @@ onEvent('recipes', (event) => {
         },
         {
             output: Item.of('cookingforblockheads:sink'),
-            altar_type: 1,
             duration: 200,
             starlight: 1000,
             pattern: ['A___A', '_BCB_', '_GEG_', '_GFG_', 'D___D'],
@@ -200,7 +193,6 @@ onEvent('recipes', (event) => {
                 F: { tag: 'botania:runes/fire' },
                 G: { item: 'bloodmagic:soulgemlesser' }
             },
-            altar_type: 1,
             duration: 200,
             starlight: 1200,
             effects: [
@@ -223,7 +215,6 @@ onEvent('recipes', (event) => {
                 F: { item: 'powah:crystal_niotic' },
                 G: { item: 'bloodmagic:reagentwater' }
             },
-            altar_type: 1,
             duration: 200,
             starlight: 1400,
             effects: [
@@ -241,7 +232,6 @@ onEvent('recipes', (event) => {
             key: {
                 A: { item: 'kubejs:altered_recipe_indicator' }
             },
-            altar_type: 1,
             duration: 200,
             starlight: 1400,
             effects: ['astralsorcery:pillar_sparkle'],
@@ -252,7 +242,7 @@ onEvent('recipes', (event) => {
     recipes.forEach((recipe) => {
         let constructed_recipe = {
             type: 'astralsorcery:altar',
-            altar_type: recipe.altar_type,
+            altar_type: 1,
             duration: recipe.duration,
             starlight: recipe.starlight,
             pattern: recipe.pattern,

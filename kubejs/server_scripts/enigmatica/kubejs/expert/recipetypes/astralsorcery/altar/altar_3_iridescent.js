@@ -41,7 +41,6 @@ onEvent('recipes', (event) => {
                 { item: 'astralsorcery:illumination_powder' },
                 { item: 'astralsorcery:stardust' }
             ],
-            altar_type: 3,
             duration: 600,
             starlight: 7500,
             focus_constellation: 'astralsorcery:lucerna',
@@ -71,7 +70,6 @@ onEvent('recipes', (event) => {
                 { item: 'botania:rune_lust' },
                 { item: 'ars_nouveau:ritual_fertility' }
             ],
-            altar_type: 3,
             duration: 600,
             starlight: 7500,
             focus_constellation: 'astralsorcery:aevitas',
@@ -109,7 +107,6 @@ onEvent('recipes', (event) => {
                 { item: 'magicfeather:magicfeather' },
                 { item: 'botania:rune_pride' }
             ],
-            altar_type: 3,
             duration: 600,
             starlight: 4800,
             effects: [
@@ -126,7 +123,6 @@ onEvent('recipes', (event) => {
 
         {
             output: Item.of('astralsorcery:shifting_star_armara'),
-            altar_type: 3,
             duration: 600,
             starlight: 4800,
             pattern: ['__B__', '__A__', 'BCDCB', '__A__', '__B__'],
@@ -161,7 +157,6 @@ onEvent('recipes', (event) => {
         },
         {
             output: Item.of('astralsorcery:shifting_star_discidia'),
-            altar_type: 3,
             duration: 600,
             starlight: 4800,
             pattern: ['__B__', '__A__', 'BCDCB', '__A__', '__B__'],
@@ -196,7 +191,6 @@ onEvent('recipes', (event) => {
         },
         {
             output: Item.of('astralsorcery:shifting_star_evorsio'),
-            altar_type: 3,
             duration: 600,
             starlight: 4800,
             pattern: ['__B__', '__A__', 'BCDCB', '__A__', '__B__'],
@@ -231,7 +225,6 @@ onEvent('recipes', (event) => {
         },
         {
             output: Item.of('astralsorcery:shifting_star_vicio'),
-            altar_type: 3,
             duration: 600,
             starlight: 4800,
             pattern: ['__B__', '__A__', 'BCDCB', '__A__', '__B__'],
@@ -266,7 +259,6 @@ onEvent('recipes', (event) => {
         },
         {
             output: Item.of('astralsorcery:shifting_star_aevitas'),
-            altar_type: 3,
             duration: 600,
             starlight: 4800,
             pattern: ['__B__', '__A__', 'BCDCB', '__A__', '__B__'],
@@ -301,7 +293,6 @@ onEvent('recipes', (event) => {
         },
         {
             output: Item.of('botania:gaia_spreader'),
-            altar_type: 3,
             duration: 720,
             starlight: 6400,
             pattern: ['_____', '_AAA_', '_BCD_', '_AAA_', '_____'],
@@ -335,7 +326,6 @@ onEvent('recipes', (event) => {
         },
         {
             output: Item.of('2x mekanism:solar_neutron_activator'),
-            altar_type: 3,
             duration: 720,
             starlight: 7500,
             pattern: ['A___A', 'BAAAB', 'CBBBC', '_CCC_', 'DEFED'],
@@ -391,7 +381,6 @@ onEvent('recipes', (event) => {
                 { item: 'bloodmagic:steadfastcrystal' },
                 { item: 'bloodmagic:steadfastcrystal' }
             ],
-            altar_type: 3,
             duration: 600,
             starlight: 4800,
             effects: [
@@ -410,7 +399,6 @@ onEvent('recipes', (event) => {
         },
         {
             output: Item.of('kubejs:worldshaper_handle'),
-            altar_type: 3,
             duration: 600,
             starlight: 7000,
             pattern: ['AA___', 'ABA__', '_ACA_', '__ABA', '___AA'],
@@ -450,7 +438,6 @@ onEvent('recipes', (event) => {
         },
         {
             output: Item.of('kubejs:worldshaper_barrel'),
-            altar_type: 3,
             duration: 600,
             starlight: 7000,
             pattern: ['_____', 'AAAAA', 'BCDEF', 'AAAAA', '_____'],
@@ -490,7 +477,6 @@ onEvent('recipes', (event) => {
         },
         {
             output: Item.of('create:handheld_worldshaper'),
-            altar_type: 3,
             duration: 1200,
             starlight: 7000,
             pattern: ['_____', '_AAB_', '___C_', '_____', '_____'],
@@ -533,7 +519,7 @@ onEvent('recipes', (event) => {
     recipes.forEach((recipe) => {
         let constructed_recipe = {
             type: 'astralsorcery:altar',
-            altar_type: recipe.altar_type,
+            altar_type: 3,
             duration: recipe.duration,
             starlight: recipe.starlight,
             pattern: recipe.pattern,

@@ -8,6 +8,7 @@ onEvent('jei.remove.recipes', (event) => {
     //console.log('JEI RECIPE CATEGORIES: ' + event.getCategoryIds());
     //console.log('Valid Keys: ' + Object.keys(event));
     recipesToHide.forEach((recipe) => {
+        console.log(`Category: ${recipe.category}`);
         recipe.recipes_by_id.forEach((id) => {
             if (recipe.category == 'minecraft:crafting') {
                 try {
@@ -22,7 +23,7 @@ onEvent('jei.remove.recipes', (event) => {
                     // do nothing
                 }
             }
-            console.log(`Category: ${recipe.category}, Hiding: ${id}`);
+            console.log(`    Hiding: ${id}`);
             event.remove(recipe.category, [id]);
         });
     });

@@ -228,6 +228,8 @@ const itemsToHide = [
 
     'mekanism:fluorite_gem',
 
+    /materialis:wrench/,
+
     'neapolitan:milk_bottle',
 
     'powah:uraninite_ore',
@@ -286,8 +288,6 @@ const itemsToHide = [
 
     'quark:bonded_ravager_hide',
     'quark:ravager_hide',
-    'quark:backpack',
-    'quark:crate',
     'quark:magnet',
     'quark:soul_compass',
 
@@ -564,6 +564,10 @@ const recipesToHide = [
     {
         category: 'bloodmagic:altar',
         recipes_by_id: ['bloodmagic:altar/teleposer_focus']
+    },
+    {
+        category: 'naturesaura:altar',
+        recipes_by_id: ['naturesaura:altar/tainted_gold']
     }
 ];
 

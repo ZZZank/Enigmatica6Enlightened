@@ -413,7 +413,10 @@ onEvent('recipes', (event) => {
                 return;
             }
             // crafting table
-            if (!Item.exists(variant.modId + ':' + variant.logType + '_crafting_table')) {
+            if (
+                !Item.exists(variant.modId + ':' + variant.logType + '_crafting_table') &&
+                !Item.exists('mctb:' + variant.logType + '_crafting_table')
+            ) {
                 craftingTableAcceptedPlank.push(variant.plankBlock);
             }
             // sign

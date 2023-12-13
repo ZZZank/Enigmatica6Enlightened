@@ -1,5 +1,7 @@
 'use strict';
 onEvent('jei.hide.items', (event) => {
+    itemsToPonder.push(...disabledItems);
+
     materialsToUnify.forEach((material) => {
         if (material == 'iesnium' || material == 'graphite' || material == 'hop_graphite') {
             return;
@@ -23,13 +25,7 @@ onEvent('jei.hide.items', (event) => {
     });
 
     itemsToHide.forEach((disabledItem) => {
-        if (!Item.of(disabledItem).isEmpty()) {
-            event.hide(disabledItem);
-        }
-    });
-
-    disabledItems.forEach((disabledItem) => {
-        if (!Item.of(disabledItem).isEmpty()) {
+        if (!Item.of(disabledItem).empty) {
             event.hide(disabledItem);
         }
     });

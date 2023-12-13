@@ -6,50 +6,36 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:expert/interactio/item_explode/';
     const recipes = [
         {
-            inputs: [
-                { tag: 'forge:stones/andesite', count: 1 },
-                { tag: 'forge:ingots/iron', count: 1 }
-            ],
+            inputs: ['#forge:stones/andesite', '#forge:ingots/iron'],
             output: {
-                entries: [{ result: { item: 'create:andesite_alloy', count: 1 }, weight: 1 }],
+                entries: [{ result: 'create:andesite_alloy', weight: 1 }],
                 empty_weight: 0,
                 rolls: 1
             },
             id: `${id_prefix}andesite_alloy_from_iron`
         },
         {
-            inputs: [
-                { tag: 'forge:stones/andesite', count: 2 },
-                { tag: 'forge:ingots/zinc', count: 1 }
-            ],
+            inputs: ['2x #forge:stones/andesite', '#forge:ingots/zinc'],
             output: {
-                entries: [{ result: { item: 'create:andesite_alloy', count: 2 }, weight: 1 }],
+                entries: [{ result: '2x create:andesite_alloy', weight: 1 }],
                 empty_weight: 0,
                 rolls: 1
             },
             id: `${id_prefix}andesite_alloy_from_zinc`
         },
         {
-            inputs: [
-                { tag: 'forge:ingots/steel', count: 2 },
-                { tag: 'forge:tar', count: 2 },
-                { tag: 'forge:obsidian', count: 2 }
-            ],
+            inputs: ['2x #forge:ingots/steel', '2x #forge:tar', '2x #forge:obsidian'],
             output: {
-                entries: [{ result: { item: 'kubejs:superheated_steel_ingot', count: 4 }, weight: 1 }],
+                entries: [{ result: '4x kubejs:superheated_steel_ingot', weight: 1 }],
                 empty_weight: 0,
                 rolls: 1
             },
             id: `${id_prefix}superheated_steel_ingot`
         },
         {
-            inputs: [
-                { tag: 'forge:storage_blocks/steel', count: 2 },
-                { tag: 'forge:tar', count: 18 },
-                { tag: 'forge:obsidian', count: 18 }
-            ],
+            inputs: ['2x #forge:storage_blocks/steel', '18x #forge:tar', '18x #forge:obsidian'],
             output: {
-                entries: [{ result: { item: 'kubejs:superheated_steel_block', count: 4 }, weight: 1 }],
+                entries: [{ result: '4x kubejs:superheated_steel_block', weight: 1 }],
                 empty_weight: 0,
                 rolls: 1
             },
@@ -57,45 +43,38 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                { item: 'bloodmagic:fortune_anointment', count: 1 },
-                { item: 'atum:coin_gold', count: 7 },
-                { item: 'resourcefulbees:nether_quartz_honeycomb', count: 7 }
+                'bloodmagic:fortune_anointment',
+                '7x atum:coin_gold',
+                '7x resourcefulbees:nether_quartz_honeycomb'
             ],
             output: {
-                entries: [{ result: { item: 'meetyourfight:devils_ante', count: 1 }, weight: 1 }],
+                entries: [{ result: 'meetyourfight:devils_ante', weight: 1 }],
                 empty_weight: 0,
                 rolls: 1
             },
             id: 'meetyourfight:devils_ante'
         },
         {
-            inputs: [
-                { item: 'thermal:phytogro', count: 2 },
-                { tag: 'forge:dusts/iron', count: 2 },
-                { tag: 'forge:dusts/nickel', count: 1 }
-            ],
+            inputs: ['2x thermal:phytogro', '2x #forge:dusts/iron', '#forge:dusts/nickel'],
             output: {
-                entries: [{ result: { item: 'emendatusenigmatica:invar_dust', count: 1 }, weight: 7 }],
+                entries: [{ result: 'emendatusenigmatica:invar_dust', weight: 7 }],
                 empty_weight: 3,
                 rolls: 3
             },
             id: `${id_prefix}invar_dust`
         },
         {
-            inputs: [
-                { tag: 'botania:runes/earth', count: 1 },
-                { item: 'quark:rainbow_rune', count: 8 }
-            ],
+            inputs: ['#botania:runes/earth', '8x quark:rainbow_rune'],
             output: {
                 entries: [
-                    { result: { item: 'quark:red_crystal_cluster', count: 1 }, weight: 2 },
-                    { result: { item: 'quark:orange_crystal_cluster', count: 1 }, weight: 2 },
-                    { result: { item: 'quark:yellow_crystal_cluster', count: 1 }, weight: 2 },
-                    { result: { item: 'quark:green_crystal_cluster', count: 1 }, weight: 2 },
-                    { result: { item: 'quark:blue_crystal_cluster', count: 1 }, weight: 2 },
-                    { result: { item: 'quark:indigo_crystal_cluster', count: 1 }, weight: 2 },
-                    { result: { item: 'quark:violet_crystal_cluster', count: 1 }, weight: 2 },
-                    { result: { item: 'quark:white_crystal_cluster', count: 1 }, weight: 2 }
+                    { result: 'quark:red_crystal_cluster', weight: 2 },
+                    { result: 'quark:orange_crystal_cluster', weight: 2 },
+                    { result: 'quark:yellow_crystal_cluster', weight: 2 },
+                    { result: 'quark:green_crystal_cluster', weight: 2 },
+                    { result: 'quark:blue_crystal_cluster', weight: 2 },
+                    { result: 'quark:indigo_crystal_cluster', weight: 2 },
+                    { result: 'quark:violet_crystal_cluster', weight: 2 },
+                    { result: 'quark:white_crystal_cluster', weight: 2 }
                 ],
                 empty_weight: 84,
                 rolls: 100
@@ -105,6 +84,12 @@ onEvent('recipes', (event) => {
     ];
 
     recipes.forEach((recipe) => {
+        recipe.output.entries.forEach((val, i) => {
+            recipe.output.entries[i].result = toJsonWithCount(val.result);
+        });
+        recipe.inputs.forEach((input, i) => {
+            recipe.inputs[i] = toJsonWithCount(input);
+        });
         event
             .custom({
                 type: 'interactio:item_explode',

@@ -47,7 +47,7 @@
     ];
 
     onEvent('block.right_click', (e) => {
-        const /** @type {Internal.PlayerJS} */ player = e.player;
+        const player = e.player;
         if (!player || player.fake || player.mainHandItem.empty || !player.crouching) {
             return;
         }
@@ -57,13 +57,15 @@
             if (mainHandItem != recipe.holding) {
                 continue;
             }
-            const target = player.rayTrace(5).block;
-            if (!target || target.id != recipe.target) {
+            const target = e.block;
+            if (target.id != recipe.target) {
                 continue;
             }
             e.cancel();
+            e.server.runCommandSilent(`playsound ping:bloop block ` + player.name);
+            e.server.runCommandSilent(`particle minecraft:explosion ${target.x} ${target.y} ${target.z}`);
             target.set(recipe.output);
-            player.mainHandItem.count--;
+            player.mainHandItem.count -= 1;
             return;
         }
     });
@@ -100,8 +102,7 @@
                             data: { item: recipe.target, count: 1 }
                         }
                     ],
-                    ticks: 1,
-                    id: recipe.id
+                    ticks: 1
                 })
                 .id(recipe.id + '/hint');
         });

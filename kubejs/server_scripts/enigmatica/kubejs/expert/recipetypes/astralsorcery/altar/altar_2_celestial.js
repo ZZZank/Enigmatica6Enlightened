@@ -35,7 +35,6 @@ onEvent('recipes', (event) => {
                 J: { tag: 'botania:runes/alfheim' },
                 K: { tag: 'botania:runes/midgard' }
             },
-            altar_type: 2,
             duration: 400,
             starlight: 3500,
             recipe_class: 'astralsorcery:trait_upgrade',
@@ -63,7 +62,6 @@ onEvent('recipes', (event) => {
                 F: { item: 'betterendforge:eternal_crystal' },
                 G: { item: 'bloodmagic:reagentvoid' }
             },
-            altar_type: 2,
             duration: 200,
             starlight: 3000,
             effects: [
@@ -90,7 +88,6 @@ onEvent('recipes', (event) => {
                 K: { item: 'botania:glimmering_dreamwood' },
                 L: { tag: 'botania:runes/niflheim' }
             },
-            altar_type: 2,
             duration: 400,
             starlight: 3500,
             effects: [
@@ -120,7 +117,6 @@ onEvent('recipes', (event) => {
                 F: { item: 'bloodmagic:airsigil' },
                 G: { item: 'ars_nouveau:ritual_flight' }
             },
-            altar_type: 2,
             duration: 400,
             starlight: 3500,
             effects: [
@@ -137,7 +133,6 @@ onEvent('recipes', (event) => {
         },
         {
             output: Item.of('astralsorcery:colored_lens_regeneration', 3),
-            altar_type: 2,
             duration: 400,
             starlight: 2000,
             pattern: ['_S_S_', 'R_Q_R', '_ALA_', 'S_Q_S', 'R___R'],
@@ -159,7 +154,6 @@ onEvent('recipes', (event) => {
         },
         {
             output: Item.of('astralsorcery:colored_lens_damage', 3),
-            altar_type: 2,
             duration: 400,
             starlight: 2000,
             pattern: ['_S_S_', 'R_Q_R', '_ALA_', '_SQS_', 'R___R'],
@@ -181,7 +175,6 @@ onEvent('recipes', (event) => {
         },
         {
             output: Item.of('astralsorcery:colored_lens_fire', 3),
-            altar_type: 2,
             duration: 400,
             starlight: 2000,
             pattern: ['_S_S_', 'S_Q_S', '_ALA_', 'R_Q_R', '_R_R_'],
@@ -203,7 +196,6 @@ onEvent('recipes', (event) => {
         },
         {
             output: Item.of('astralsorcery:colored_lens_break', 3),
-            altar_type: 2,
             duration: 400,
             starlight: 2000,
             pattern: ['R___R', 'RSQSR', '_ALA_', '_SQS_', '_____'],
@@ -225,7 +217,6 @@ onEvent('recipes', (event) => {
         },
         {
             output: Item.of('astralsorcery:colored_lens_growth', 3),
-            altar_type: 2,
             duration: 400,
             starlight: 2000,
             pattern: ['_R_R_', 'R_Q_R', '_ALA_', '_SQS_', 'S___S'],
@@ -247,7 +238,6 @@ onEvent('recipes', (event) => {
         },
         {
             output: Item.of('astralsorcery:colored_lens_push', 3),
-            altar_type: 2,
             duration: 400,
             starlight: 2000,
             pattern: ['___R_', 'SSQR_', '_ALA_', '_RQSS', '_R___'],
@@ -269,7 +259,6 @@ onEvent('recipes', (event) => {
         },
         {
             output: Item.of('astralsorcery:colored_lens_spectral', 3),
-            altar_type: 2,
             duration: 400,
             starlight: 2000,
             pattern: ['S___S', '_SQS_', '_ALA_', 'R_Q_R', '_R_R_'],
@@ -301,7 +290,6 @@ onEvent('recipes', (event) => {
                 F: { tag: 'forge:ingots/elementium' },
                 G: { item: 'astralsorcery:colored_lens_push' }
             },
-            altar_type: 2,
             duration: 400,
             starlight: 3500,
             effects: [
@@ -318,7 +306,7 @@ onEvent('recipes', (event) => {
     recipes.forEach((recipe) => {
         let constructed_recipe = {
             type: 'astralsorcery:altar',
-            altar_type: recipe.altar_type,
+            altar_type: 2,
             duration: recipe.duration,
             starlight: recipe.starlight,
             pattern: recipe.pattern,
