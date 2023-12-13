@@ -3,20 +3,9 @@ onEvent('recipes', (event) => {
     if (global.isNormalMode || !Platform.isLoaded('refinedstorage')) {
         return;
     }
-    const id_prefix = 'enigmatica:expert/refinedstorage/exchange/';
+    const id_prefix = 'enlightened6:expert/refinedstorage/exchange/';
 
-    const recipes = [
-        {
-            output: Item.of('botania:corporea_block', 8),
-            inputs: ['naturesaura:infused_stone', 'botania:corporea_spark'],
-            id: 'botania:corporea_block'
-        },
-        {
-            output: Item.of('botania:corporea_spark_master', 1),
-            inputs: ['botania:corporea_spark', '#atum:godshards'],
-            id: 'botania:corporea_spark_master'
-        }
-    ];
+    const recipes = [];
 
     let exchanges = {
         // item storage

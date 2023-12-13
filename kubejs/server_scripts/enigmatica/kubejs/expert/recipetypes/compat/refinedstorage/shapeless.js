@@ -2,7 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isNormalMode || !Platform.isLoaded('refinedstorage')) {
         return;
     }
-    const id_prefix = 'enigmatica:expert/refinedstorage/shapeless/';
+    const id_prefix = 'enlightened6:expert/refinedstorage/shapeless/';
     const recipes = [
     ];
 

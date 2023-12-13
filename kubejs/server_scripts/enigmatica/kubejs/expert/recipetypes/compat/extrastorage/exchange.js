@@ -3,20 +3,9 @@ onEvent('recipes', (event) => {
     if (global.isNormalMode || !Platform.isLoaded('extrastorage')) {
         return;
     }
-    const id_prefix = 'enigmatica:expert/extrastorage/exchange/';
+    const id_prefix = 'enlightened6:expert/extrastorage/exchange/';
 
-    const recipes = [
-        {
-            output: Item.of('botania:corporea_block', 8),
-            inputs: ['naturesaura:infused_stone', 'botania:corporea_spark'],
-            id: 'botania:corporea_block'
-        },
-        {
-            output: Item.of('botania:corporea_spark_master', 1),
-            inputs: ['botania:corporea_spark', '#atum:godshards'],
-            id: 'botania:corporea_spark_master'
-        }
-    ];
+    const recipes = [];
 
     let exchanges = {
         // item storage
@@ -30,7 +19,7 @@ onEvent('recipes', (event) => {
         'extrastorage:storagepart_262144k_fluid': 'aeadditions:fluid_storage_component_4096',
         // 'extrastorage:storagepart_1048576k_fluid':
         // misc
-        'extrastorage:neural_processor': 'packagedauto:package_component',
+        'extrastorage:neural_processor': 'packagedauto:package_component'
     };
 
     for (let itemRS in exchanges) {

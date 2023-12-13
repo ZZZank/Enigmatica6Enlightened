@@ -3,7 +3,7 @@ onEvent('recipes', (event) => {
     if (global.isNormalMode || !Platform.isLoaded('refinedstorage')) {
         return;
     }
-    const id_prefix = 'enigmatica:expert/refinedstorage/misc/';
+    const id_prefix = 'enlightened6:expert/refinedstorage/misc/';
     const recipes = [];
 
     const mekInfusing = [

@@ -2,7 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isNormalMode || !Platform.isLoaded('refinedstorage')) {
         return;
     }
-    const id_prefix = 'enigmatica:expert/refinedstorage/remove/';
+    const id_prefix = 'enlightened6:expert/refinedstorage/remove/';
 
     const idRemovals = [
         'refinedstorage:raw_basic_processor',

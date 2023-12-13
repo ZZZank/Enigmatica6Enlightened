@@ -3,7 +3,7 @@ onEvent('recipes', (event) => {
     if (global.isNormalMode || !Platform.isLoaded('extrastorage')) {
         return;
     }
-    const id_prefix = 'enigmatica:expert/extrastorage/misc/';
+    const id_prefix = 'enlightened6:expert/extrastorage/misc/';
     const recipes = [];
 
     event
