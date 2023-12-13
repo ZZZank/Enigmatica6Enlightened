@@ -1,8 +1,4 @@
 - AS: infuser
 - liquid source
-- try to buff TCon armor
 - makes AS::flare looks like MiningGadget::minerslight
 - BetterEnd: pedestals directional texture
-- lang
-- Refined Storage compact
-- fixed crash on placing Sophisticatd Backpacks by upgrading ModernFix
