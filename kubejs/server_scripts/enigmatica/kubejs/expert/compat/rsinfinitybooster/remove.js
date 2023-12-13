@@ -4,10 +4,7 @@ onEvent('recipes', (event) => {
     }
     const id_prefix = 'enlightened6:expert/rsinfinitybooster/remove/';
 
-    const idRemovals = [
-        'rsinfinitybooster:dimension_card',
-        'rsinfinitybooster:infinity_card'
-    ];
+    const idRemovals = ['rsinfinitybooster:dimension_card', 'rsinfinitybooster:infinity_card'];
 
     idRemovals.forEach((id) => {
         event.remove({ id: id });
