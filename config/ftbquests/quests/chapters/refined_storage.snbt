@@ -17,6 +17,8 @@
 			shape: "gear"
 			subtitle: "Like AE2, but 100% more Refined"
 			description: ["Refined Storage offers the ability to make vast electronic storage and automation networks, storing your items in Magic Computer Space and importing/exporting/autocrafting as desired. It's a rather refined method of storage, you might say."]
+			dependencies: ["18430213B3C976A3"]
+			hide: true
 			size: 1.5d
 			optional: true
 			id: "000000000000024F"
@@ -54,6 +56,8 @@
 			subtitle: "But are they Intel or AMD?"
 			description: ["Processors are basic components needed in most RS devices. You'll want to have a decent supply of slime before getting too deep into this."]
 			dependencies: ["000000000000024F"]
+			hide: true
+			dependency_requirement: "all_started"
 			id: "0000000000000252"
 			tasks: [
 				{
@@ -92,6 +96,8 @@
 				"All parts of a network (excluding fancy wireless options later) must be connected via Cables. Interacting with the Controller itself will show a breakdown of how much power each component type is using."
 			]
 			dependencies: ["0000000000000252"]
+			hide: true
+			dependency_requirement: "all_started"
 			id: "0000000000000256"
 			tasks: [
 				{
@@ -125,6 +131,8 @@
 				"The Disk Drive is your main method of holding storage disks. Up to eight can fit in a drive; you can swap them in and out as needed."
 			]
 			dependencies: ["0000000000000264"]
+			hide: true
+			dependency_requirement: "all_started"
 			id: "0000000000000258"
 			tasks: [
 				{
@@ -186,6 +194,7 @@
 			subtitle: "Pouring water in a computer seems like a bad idea..."
 			description: ["Fluid storage disks store fluid. Imagine that! Naturally, this involves somewhat different methods of accessing the contents of the disks; see the Fluid Grid quest for more information."]
 			dependencies: ["0000000000000268"]
+			hide: true
 			id: "000000000000025D"
 			tasks: [{
 				id: "000000000000025E"
@@ -231,6 +240,8 @@
 			subtitle: "Business at its finest!"
 			description: ["Importers automatically pull items from the connected inventory, and exporters automatically push (configured) items to the connected inventory. Both can be set to have filters or sped up with upgrades."]
 			dependencies: ["0000000000000256"]
+			hide: true
+			dependency_requirement: "all_started"
 			id: "000000000000025F"
 			tasks: [
 				{
@@ -263,6 +274,8 @@
 				"Incidentally, this can also work with fluids by attaching it to any sort of tank and setting the type to fluids. "
 			]
 			dependencies: ["0000000000000256"]
+			hide: true
+			dependency_requirement: "all_started"
 			id: "0000000000000262"
 			tasks: [{
 				id: "0000000000000263"
@@ -283,6 +296,8 @@
 			subtitle: "Off the grid? More like in the grid"
 			description: ["The Grid is the primary means by which you can actually access the items in your storage. Simply connect a grid to the network and you can start chuckin' items in and out."]
 			dependencies: ["0000000000000256"]
+			hide: true
+			dependency_requirement: "all_started"
 			id: "0000000000000264"
 			tasks: [{
 				id: "0000000000000265"
@@ -307,6 +322,8 @@
 				"You can even insert/extract the relevant item/fluid directly to/from this block."
 			]
 			dependencies: ["0000000000000264"]
+			hide: true
+			dependency_requirement: "all_started"
 			id: "0000000000000266"
 			tasks: [{
 				id: "0000000000000267"
@@ -327,6 +344,8 @@
 			subtitle: "Tanks? Who needs them! They can't even shoot..."
 			description: ["The Fluid Grid works a bit differently from the normal Grid. Fluids can only be inserted/extracted via the use of fluid container items such as buckets."]
 			dependencies: ["0000000000000264"]
+			hide: true
+			dependency_requirement: "all_started"
 			id: "0000000000000268"
 			tasks: [{
 				id: "0000000000000269"
@@ -351,6 +370,8 @@
 				"The \"crafting table\" part of this block will retain its inventory when closed, and will automatically pull more items from the network into the grid to replace those that you use."
 			]
 			dependencies: ["0000000000000264"]
+			hide: true
+			dependency_requirement: "all_started"
 			id: "000000000000026A"
 			tasks: [{
 				id: "000000000000026B"
@@ -378,6 +399,8 @@
 				"These items must be charged, and they only work when near a Wireless Transmitter. These transmitters have a base range of 16 blocks."
 			]
 			dependencies: ["000000000000026A"]
+			hide: true
+			dependency_requirement: "all_started"
 			id: "000000000000026C"
 			tasks: [
 				{
@@ -406,6 +429,8 @@
 			subtitle: "My house isn't that small!"
 			description: ["16 blocks ain't enough! Each Range Upgrade will significantly increase a Wireless Transmitter's range, albeit at an increased power cost."]
 			dependencies: ["000000000000026C"]
+			hide: true
+			dependency_requirement: "all_started"
 			id: "000000000000026E"
 			tasks: [{
 				id: "000000000000026F"
@@ -434,6 +459,8 @@
 				"Processing recipes can take a greater variety of inputs/outputs (e.g. stack sizes larger than 1) and represent operations that need machines or devices to perform."
 			]
 			dependencies: ["0000000000000264"]
+			hide: true
+			dependency_requirement: "all_started"
 			id: "0000000000000270"
 			tasks: [
 				{
@@ -471,6 +498,8 @@
 				"Note: Placing identical processing patterns in multiple crafters will allow the system to intelligently share the job between multiple machines. This is particularly useful for crafts that involve multiple inputs, as otherwise distributing them would be complicated with most pipes."
 			]
 			dependencies: ["0000000000000270"]
+			hide: true
+			dependency_requirement: "all_started"
 			size: 1.25d
 			min_width: 300
 			id: "0000000000000272"
@@ -504,6 +533,8 @@
 			subtitle: "Gotta go fast!"
 			description: ["When placed in a device, the Speed Upgrade will increase its speed (and power consumption). This is useful for Importers, Exporters, Crafters, etc."]
 			dependencies: ["0000000000000256"]
+			hide: true
+			dependency_requirement: "all_started"
 			id: "0000000000000274"
 			tasks: [{
 				id: "0000000000000275"
@@ -524,6 +555,8 @@
 			subtitle: "The need for speed!"
 			description: ["The Stack Upgrade often serves as a more useful Speed Upgrade. It doesn't speed up individual operations, but instead allows each operation to move up to a stack of items."]
 			dependencies: ["0000000000000274"]
+			hide: true
+			dependency_requirement: "all_started"
 			id: "0000000000000276"
 			tasks: [{
 				id: "0000000000000277"
@@ -549,6 +582,8 @@
 				"These blocks are quite important, particularly if you're setting up complex processing recipes and you need to be able to troubleshoot."
 			]
 			dependencies: ["0000000000000272"]
+			hide: true
+			dependency_requirement: "all_started"
 			id: "0000000000000278"
 			tasks: [{
 				id: "0000000000000279"
@@ -574,6 +609,8 @@
 				"The Interface is most useful as a simple (and perhaps less laggy) alternative to the Importer when the external item source can handle the \"pushing\" itself, e.g. depositing items in the Interface with a conveyor belt."
 			]
 			dependencies: ["000000000000025F"]
+			hide: true
+			dependency_requirement: "all_started"
 			id: "0000000000000298"
 			tasks: [{
 				id: "0000000000000299"
@@ -601,6 +638,8 @@
 				"Note that the Transmitter must be chunk loaded for this to work, and that you still must have only one Controller in the entire network (across all locations)."
 			]
 			dependencies: ["0000000000000256"]
+			hide: true
+			dependency_requirement: "all_started"
 			id: "000000000000029B"
 			tasks: [
 				{
@@ -649,6 +688,8 @@
 				"Can you guess what Destructors will do too?"
 			]
 			dependencies: ["0000000000000256"]
+			hide: true
+			dependency_requirement: "all_started"
 			id: "0000000000000F3F"
 			tasks: [
 				{
@@ -680,7 +721,11 @@
 				""
 				"Introducing the Iron Crafter! With three times as many slots as a normal Crafter, this machine will help you organize and keep your base tidy. Oh, and it might be upgraded further too..."
 			]
-			dependencies: ["0000000000000272"]
+			dependencies: [
+				"0000000000000272"
+				"35EC3A42F878F086"
+			]
+			hide: true
 			id: "0000000000000F42"
 			tasks: [{
 				id: "0000000000000F43"
@@ -703,6 +748,8 @@
 			subtitle: "Too bad Netherite Man doesn't exist!"
 			description: ["Absolute overkill? I don't know what that means! With a whopping 81 slots, the Netherite Crafter is the top tier option for all your autocrafting needs. It's never enough!"]
 			dependencies: ["0000000000000F42"]
+			hide: true
+			dependency_requirement: "all_started"
 			id: "0000000000000F44"
 			tasks: [{
 				id: "0000000000000F45"
@@ -728,6 +775,8 @@
 				"This handy block will connect to all the Crafters in your system and give you access to them all from the same block, for easy pattern management. You can even name your Crafters in an Anvil and the name will appear in the Manager!"
 			]
 			dependencies: ["0000000000000272"]
+			hide: true
+			dependency_requirement: "all_started"
 			id: "0000000000000F46"
 			tasks: [{
 				id: "0000000000000F47"
@@ -750,7 +799,11 @@
 				""
 				"Only one card is required."
 			]
-			dependencies: ["000000000000026E"]
+			dependencies: [
+				"000000000000026E"
+				"43D9240089434F1B"
+			]
+			hide: true
 			id: "2306493F2E5034A9"
 			tasks: [{
 				id: "6F47C4273FB03E51"
@@ -776,6 +829,8 @@
 				"This replaces the Infinity Booster, allowing limitless range even across dimensions."
 			]
 			dependencies: ["2306493F2E5034A9"]
+			hide: true
+			dependency_requirement: "all_started"
 			id: "005B9AE555D13DE7"
 			tasks: [{
 				id: "7AFFE72DF5E94D4F"
@@ -792,24 +847,39 @@
 			}]
 		}
 		{
-			x: -2.5d
-			y: 9.5d
-			subtitle: "You Want How Many?"
-			description: ["TODO: An Interface with a Crafting card is pretty good at keeping a small amount of several items in stock, but what if we need to go bigger? Well, now we can. The Requester is an addon block that allows Refined Storage to keep an internal stock of a given item at all times. Want 5000 glass ready and waiting for you? Set up a Requester to do just that. "]
-			dependencies: ["0000000000000298"]
-			id: "5DA4C492523C7D72"
+			x: 0.5d
+			y: -1.5d
+			hide_text_until_complete: true
+			id: "677DC1C80749B025"
 			tasks: [{
-				id: "34568F90E5706133"
-				type: "item"
-				item: "rsrequestify:requester"
+				id: "18430213B3C976A3"
+				type: "gamestage"
+				title: "Install Refined Storage"
+				stage: "refinedstorage"
 			}]
-			rewards: [{
-				id: "504B58199A20F9B0"
-				type: "command"
-				title: "Refined Storage Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
-				player_command: false
+		}
+		{
+			x: 2.0d
+			y: -1.5d
+			hide_text_until_complete: true
+			id: "6AF98EC1E2FAC245"
+			tasks: [{
+				id: "35EC3A42F878F086"
+				type: "gamestage"
+				title: "Install Extra Storage"
+				stage: "extrastorage"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -1.5d
+			hide_text_until_complete: true
+			id: "73AEB07CD7BD4E28"
+			tasks: [{
+				id: "43D9240089434F1B"
+				type: "gamestage"
+				title: "Install RS Infinity Booster"
+				stage: "rsinfinitybooster"
 			}]
 		}
 	]
