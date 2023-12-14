@@ -2,3 +2,7 @@
 - liquid source
 - makes AS::flare looks like MiningGadget::minerslight
 - BetterEnd: pedestals directional texture
+- custom Thermal Augments
+- koi loot
+- AE Growth Accelerator custom usage
+    - fluid/item, when placed next to Growth Accelerator, will drain power from it, having a chance to transform

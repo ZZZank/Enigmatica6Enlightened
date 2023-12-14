@@ -1,4 +1,4 @@
-### Enlightened6 & Enlightened6Expert - 2.4.1 -> 2.5.0
+## Enlightened6 & Enlightened6Expert - 2.4.1 -> 2.5.0
 
 🚀 Forge-1.16.5-36.2.39 | [📜 Mod Updates](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/changelog_mods_2.5.0.md) | [📋 Modlist](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/modlist_2.5.0.md)
 
