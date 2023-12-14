@@ -3,8 +3,8 @@
 
 /**
  *
- * @param {string} str
- * @returns
+ * @param {string} str : e.g. `an example sTRing`
+ * @returns {string}: e.g. `An Exmaple String`
  */
 function titleCase(str) {
     return str
@@ -99,16 +99,12 @@ function unificationBlacklistEntry(material, type) {
     return { material: material, type: type };
 }
 function entryIsBlacklisted(material, type) {
-    for (let i = 0; i < unificationBlacklist.length; i++) {
-        if (unificationBlacklist[i].material == material && unificationBlacklist[i].type == type) {
+    for (let blacklist of unificationBlacklist) {
+        if (blacklist.material == material && blacklist.type == type) {
             return true;
         }
     }
     return false;
-}
-
-function tagIsEmpty(tag) {
-    return getPreferredItemInTag(Ingredient.of(tag)).id == air;
 }
 
 /**

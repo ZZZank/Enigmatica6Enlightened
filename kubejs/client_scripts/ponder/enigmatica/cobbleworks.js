@@ -1,10 +1,10 @@
 // priority: 9
 'use strict';
 
-let itemsToPonder = generatableCobblestone;
-itemsToPonder.push('minecraft:cobblestone');
-
 onEvent('ponder.registry', (event) => {
+    let itemsToPonder = generatableCobblestone;
+    itemsToPonder.push('minecraft:cobblestone');
+
     event
         .create('enigmatica:cobbleworks', itemsToPonder)
 

@@ -2,15 +2,16 @@
 'use strict';
 
 onEvent('ponder.registry', (event) => {
+    let itemsToPonder = [
+        'industrialforegoing:latex_processing_unit',
+        'industrialforegoing:fluid_extractor',
+        'industrialforegoing:tinydryrubber',
+        'industrialforegoing:dryrubber',
+        'industrialforegoing:plastic',
+        'industrialforegoing:latex_bucket'
+    ];
     event
-        .create('enigmatica:latex', [
-            'industrialforegoing:latex_processing_unit',
-            'industrialforegoing:fluid_extractor',
-            'industrialforegoing:tinydryrubber',
-            'industrialforegoing:dryrubber',
-            'industrialforegoing:plastic',
-            'industrialforegoing:latex_bucket'
-        ])
+        .create('enigmatica:latex', itemsToPonder)
         //.tag('enigmatica:industrial_foregoing')
         .scene(
             'extracting_fluids',
@@ -40,13 +41,12 @@ onEvent('ponder.registry', (event) => {
                 scene.idle(60);
 
                 // hide basically everything except for the acacia log
-                scene.world().hideSection(
-                    util
-                        .select()
-                        .layersFrom(1)
-                        .substract(util.select().position(4, 1, 4)),
-                    Facing.up
-                );
+                scene
+                    .world()
+                    .hideSection(
+                        util.select().layersFrom(1).substract(util.select().position(4, 1, 4)),
+                        Facing.up
+                    );
 
                 scene.idle(10);
 
