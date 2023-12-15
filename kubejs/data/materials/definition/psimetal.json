@@ -1,0 +1,23 @@
+{
+  "condition": {
+    "type": "forge:or",
+    "values": [
+      {
+        "type": "tconstruct:config",
+        "prop": "force_integration_materials"
+      },
+      {
+        "type": "forge:not",
+        "value": {
+          "tag": "forge:ingots/psimetal",
+          "type": "forge:tag_empty"
+        }
+      }
+    ]
+  },
+  "craftable": false,
+  "tier": 3,
+  "sortOrder": 8,
+  "textColor": "#B6A9E7",
+  "hidden": false
+}
