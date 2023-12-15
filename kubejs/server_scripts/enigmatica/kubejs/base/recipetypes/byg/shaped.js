@@ -2,6 +2,22 @@
 onEvent('recipes', (event) => {
     const recipes = [
         {
+            output: Item.of('byg:embur_hyphae', 3),
+            pattern: ['AA', 'AA'],
+            key: {
+                A: 'byg:embur_pedu'
+            },
+            id: `${id_prefix}byg/embur_hyphae`
+        },
+        {
+            output: Item.of('byg:pollen_block', 1),
+            pattern: ['AA', 'AA'],
+            key: {
+                A: 'byg:pollen_dust'
+            },
+            id: `${id_prefix}byg/pollen_dust`
+        },
+        {
             output: 'byg:blueberry_pie',
             pattern: [' C ', 'DDD', 'BAB'],
             key: {
