@@ -1,0 +1,8 @@
+'use strict';
+
+onEvent('entity.loot_tables', (event) => {
+    event.addEntity('environmental:koi', (table) => {
+        table.addPool((pool) => pool.addItem('aquaculture:fish_bones'));
+        table.addPool((pool) => pool.addItem('bloodmagic:slate_ampoule'));
+    });
+});

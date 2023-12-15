@@ -69,7 +69,7 @@ onEvent('recipes', (event) => {
         },
         {
             target: 'environmental:koi_bucket',
-            output: ['environmental:koi'],
+            output: ['bloodmagic:slate_ampoule', 'aquaculture:fish_bones'],
             id: id_prefix + 'koi'
         }
     ];

@@ -7,7 +7,4 @@ onEvent('worldgen.remove', (event) => {
             /immersiveengineering:ore\w+/
         ];
     });
-    event.removeSpawnsByID((spawns) => {
-        spawns.entities.values = ['environmental:koi'];
-    });
 });

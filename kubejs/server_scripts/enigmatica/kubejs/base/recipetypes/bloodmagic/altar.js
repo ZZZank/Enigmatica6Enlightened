@@ -25,12 +25,12 @@ onEvent('recipes', (event) => {
             },
             {
                 input: 'kubejs:dead_koi_bucket',
-                output: 'environmental:koi_bucket',
+                output: 'environmental:koi',
                 syphon: 3000,
                 altarLevel: 0,
                 consumptionRate: 25,
                 drainRate: 1,
-                id: `${id_prefix}koi_bucket`
+                id: `${id_prefix}koi`
             },
             {
                 input: Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:bronze_bee' }).weakNBT(),
