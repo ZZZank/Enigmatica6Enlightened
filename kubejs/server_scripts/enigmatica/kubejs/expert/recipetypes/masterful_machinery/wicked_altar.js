@@ -227,12 +227,13 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}outputroutingnode`
         },
         {
-            outputs: ['8x redstone_arsenal:flux_dust'],
+            outputs: ['16x redstone_arsenal:flux_dust'],
             inputs: [
-                '8x #forge:dusts/ender_pearl',
+                '4x #forge:dusts/ender_pearl',
+                '4x #forge:dusts/gold',
                 {
                     type: 'masterfulmachinery:fluids',
-                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 80 }
+                    data: { fluid: 'bloodmagic:life_essence_fluid', amount: 100 }
                 }
             ],
             ticks: 10,
