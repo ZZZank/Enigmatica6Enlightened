@@ -170,6 +170,8 @@ onEvent('recipes', (event) => {
         'byg:vermilion_sculk',
         '/byg:\\w+_glass_from_sand/',
         'byg:compat/create/end_sand_from_crushing',
+        'byg:pendorite_scraps_from_blasting',
+        'byg:emeraldite_from_blasting',
 
         'compactmachines:wall',
 

@@ -3,6 +3,12 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/create/filling/';
     const recipes = [
         {
+            input: 'minecraft:crying_obsidian',
+            fluid: Fluid.of('pneumaticcraft:etching_acid', 250),
+            output: ['2x byg:pendorite_scraps', Item.of('byg:pendorite_scraps').withChance(0.25)],
+            id: `${id_prefix}pendorite_scraps`
+        },
+        {
             input: 'upgrade_aquatic:squid_bucket',
             fluid: Fluid.of('astralsorcery:liquid_starlight', 250),
             output: 'upgrade_aquatic:glow_squid_bucket',
