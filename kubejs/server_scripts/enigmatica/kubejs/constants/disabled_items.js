@@ -49,7 +49,6 @@ const disabledItems = [
     'byg:pendorite_shovel',
     'byg:pendorite_sword',
     'byg:emeraldite_ore',
-    'byg:emeraldite_shards',
 
     'create:dough',
 

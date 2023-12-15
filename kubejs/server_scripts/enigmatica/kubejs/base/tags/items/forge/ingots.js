@@ -1,8 +1,9 @@
 'use strict';
 onEvent('item.tags', (event) => {
-    event.get('forge:ingots/uraninite').add('powah:uraninite');
-    event.get('forge:ingots/energized_steel').add('powah:steel_energized');
-    event.get('forge:ingots/radioactive').add('#forge:ingots/uraninite').add('#forge:ingots/uranium');
+    event.add('forge:ingots/psimetal', ['byg:pendorite_ingot']);
+    event.add('forge:ingots/uraninite', ['powah:uraninite']);
+    event.add('forge:ingots/energized_steel', ['powah:steel_energized']);
+    event.add('forge:ingots/radioactive', ['#forge:ingots/uraninite', '#forge:ingots/uranium']);
 
     event.add('forge:ingots', [
         'architects_palette:sunmetal_brick',

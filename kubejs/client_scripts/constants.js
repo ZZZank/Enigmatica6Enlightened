@@ -620,7 +620,6 @@ const disabledItems = [
     'byg:pendorite_shovel',
     'byg:pendorite_sword',
     'byg:emeraldite_ore',
-    'byg:emeraldite_shards',
 
     'create:dough',
 
@@ -637,8 +636,6 @@ const disabledItems = [
     'losttrinkets:tha_cloud',
     'losttrinkets:rock_candy',
     'losttrinkets:mad_aura',
-
-    /materialis:psimetal/,
 
     'mekanism:sawdust',
     'mekanism:dust_lapis_lazuli',

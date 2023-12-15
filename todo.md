@@ -7,3 +7,4 @@
 - AE Growth Accelerator custom usage
     - fluid/item, when placed next to Growth Accelerator, will drain power from it, having a chance to transform
 - (storage module n) + 1 = (n+1)
+- "psimetal" recipe
