@@ -7,7 +7,7 @@
  * @link https://github.com/ZZZank
  */
 
-onEvent('item.right_click', (event) => {
+onEvent('item.entity_interact', (event) => {
     const player = event.player;
     if (
         !player ||
@@ -20,14 +20,11 @@ onEvent('item.right_click', (event) => {
     ) {
         return;
     }
-    const target = player.rayTrace(3).entity;
+    const target = event.target;
     // const target = player;
-    if (
-        // player must be targeting another player
-        !target ||
-        !target.player
-    ) {
-        return;
+
+    if (!target || !target.player) {
+        return; // player must be targeting another player
     }
 
     // cancel original right-click operations
