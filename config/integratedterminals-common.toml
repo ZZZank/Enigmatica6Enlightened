@@ -21,7 +21,7 @@
 		#The maximum number of terminal storage instances that can be sent in a single packet. Reduce this when you have packet overflows.
 		terminalStoragePacketMaxInstances = 1024
 		#If an anonymous mod startup analytics request may be sent to our analytics service.
-		analytics = true
+		analytics = false
 		#If the version checker should be enabled.
 		versionChecker = false
 
