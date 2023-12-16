@@ -1,4 +1,5 @@
 'use strict';
+
 {
     const id_prefix = 'enlightened6:right_click_block/';
     const recipes = [
@@ -62,7 +63,7 @@
                 continue;
             }
             e.cancel();
-            e.server.runCommandSilent(`playsound ping:bloop block ` + player.name);
+            player.playSound('ping:bloop')
             e.server.runCommandSilent(`particle minecraft:explosion ${target.x} ${target.y} ${target.z}`);
             target.set(recipe.output);
             player.mainHandItem.count -= 1;

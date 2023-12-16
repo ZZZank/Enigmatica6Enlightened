@@ -56,13 +56,11 @@ onEvent('recipes', (event) => {
                     data: toJsonWithCount(val)
                 };
             } else if (val.type == 'masterfulmachinery:items') {
-                /*
-                {
+                /*{
                     type: 'masterfulmachinery:items',
                     chance: 1.0,
                     data: '2x mekanism:solar_neutron_activator'
-                }
-                 */
+                }*/
                 val.data = toJsonWithCount(val.data);
             }
             return val;
