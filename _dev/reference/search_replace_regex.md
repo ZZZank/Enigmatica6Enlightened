@@ -39,3 +39,17 @@ or toJsonWithCount('$2x #$1')
 ```
 $1$2,
 ```
+
+## event
+```js
+captureEvent\("(.+)", \(event\) => \{ (.+) \}\)
+
+captureEvent("$1", (event) => {
+    if (!serverSet.has("$1")) {
+        serverSet.add("$1")
+        console.info("$1")
+    }
+})
+
+["(.+)"]
+```
