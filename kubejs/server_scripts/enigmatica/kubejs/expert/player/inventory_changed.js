@@ -1,5 +1,5 @@
 'use strict';
-onEvent('player.inventory.changed', function (event) {
+onEvent('player.inventory.changed', (event) => {
     const player = event.player;
     if (!player.player || player.fake) {
         return;

@@ -75,16 +75,3 @@ onEvent('recipes', (event) => {
         event.shapeless(recipe.output, recipe.inputs).id(recipe.id);
     });
 });
-
-/*
-{
-    inputs: ['extrastorage:diamond_crafter'],
-    inputFluid: 'tconstruct:molten_netherite',
-    inputFluidAmount: 144 * 9,
-    processingTime: 200,
-    outputItem: { item: 'extrastorage:netherite_crafter', count: 1 },
-    outputFluid: '',
-    outputFluidAmount: 0,
-    id: 'extrastorage:netherite_crafter'
-},
-*/

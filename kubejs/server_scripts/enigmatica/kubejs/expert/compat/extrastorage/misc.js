@@ -13,7 +13,7 @@ onEvent('recipes', (event) => {
             inputFluid: `{FluidName:"${'tconstruct:molten_netherite'}",Amount:${144 * 9}}`,
             processingTime: 200,
             output: toJsonWithCount('extrastorage:netherite_crafter'),
-            outputFluid: `{FluidName:"${''}",Amount:${0}}`
+            outputFluid: `{FluidName:"",Amount:0}`
         })
         .id('extrastorage:netherite_crafter');
 
