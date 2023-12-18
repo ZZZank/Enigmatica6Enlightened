@@ -36,7 +36,7 @@ onEvent('recipes', (event) => {
                 C: 'immersiveengineering:wirecoil_redstone',
                 D: 'integrateddynamics:cable'
             },
-            id: `${id_prefix}cable_alt`
+            id: 'refinedstorage:cable'
         },
         {
             output: 'refinedstorage:importer',
@@ -167,7 +167,7 @@ onEvent('recipes', (event) => {
                 C: 'immersiveengineering:logic_unit',
                 D: 'refinedstorage:machine_casing'
             },
-            id: `${id_prefix}disk_drive_alt`
+            id: 'refinedstorage:disk_drive'
         }
     ];
 
