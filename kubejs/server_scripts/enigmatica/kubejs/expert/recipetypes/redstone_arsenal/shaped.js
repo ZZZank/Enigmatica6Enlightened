@@ -10,7 +10,10 @@ onEvent('recipes', (event) => {
             pattern: ['  A', ' B ', 'A  '],
             key: {
                 A: '#forge:dusts/obsidian',
-                B: 'immersiveengineering:ingot_hop_graphite'
+                B: [
+                    Item.of('immersiveengineering:graphite_electrode', '{graphDmg:48000}').weakNBT(),
+                    Item.of('immersiveengineering:graphite_electrode', '{graphDmg:0}').weakNBT()
+                ]
             },
             id: 'redstone_arsenal:materials/obsidian_rod'
         }

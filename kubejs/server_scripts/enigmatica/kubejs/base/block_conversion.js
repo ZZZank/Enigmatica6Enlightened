@@ -6,7 +6,7 @@
         {
             target: 'mekanism:teleporter_frame',
             output: 'kubejs:conductive_frame',
-            holding: 'redstone_arsenal:obsidian_rod',
+            holding: 'immersiveengineering:dust_hop_graphite',
             id: id_prefix + 'conductive_frame'
         },
         {
