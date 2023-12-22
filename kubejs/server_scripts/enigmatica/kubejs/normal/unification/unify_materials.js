@@ -33,7 +33,7 @@ onEvent('recipes', (event) => {
 
         let blacklistedMaterials = ['ender'];
 
-        if (blacklistedMaterials.find(material) != undefined) {
+        if (blacklistedMaterials.indexOf(material) != -1) {
             return;
         }
 
