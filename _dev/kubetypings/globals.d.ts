@@ -1,4 +1,142 @@
-declare class Item extends Internal.ItemStackJS {}
+declare const Item = Internal.ItemStackJS;
+
+namespace stub.probejs {
+    class RecipeHolder {
+        appliedenergistics2: stub.probejs.recipes.Appliedenergistics2
+        mekanism: stub.probejs.recipes.Mekanism
+        bloodmagic: stub.probejs.recipes.Bloodmagic
+        thermal: stub.probejs.recipes.Thermal
+        integrateddynamics: stub.probejs.recipes.Integrateddynamics
+        immersiveengineering: stub.probejs.recipes.Immersiveengineering
+        minecraft: stub.probejs.recipes.Minecraft
+        create: stub.probejs.recipes.Create
+        cucumber: stub.probejs.recipes.Cucumber
+        ars_nouveau: stub.probejs.recipes.Ars_nouveau
+        botanypots: stub.probejs.recipes.Botanypots
+        botania: stub.probejs.recipes.Botania
+        kubejs: stub.probejs.recipes.Kubejs
+    }
+}
+namespace stub.probejs.recipes {
+    class Bloodmagic {
+        array(...args: object): Internal.ArrayRecipeJS
+        soulforge(...args: object): Internal.SoulForgeRecipeJS
+        altar(...args: object): Internal.AltarRecipeJS
+        alchemytable(...args: object): Internal.AlchemyTableRecipeJS
+        arc(...args: object): Internal.ArcRecipeJS
+    }
+    class Integrateddynamics {
+        squeezer(...args: object): Internal.IDSqueezerRecipeJS
+        mechanical_squeezer(...args: object): Internal.IDSqueezerRecipeJS
+    }
+    class Ars_nouveau {
+        enchanting_apparatus(...args: object): Internal.ArsNouveauEnchantingApparatusRecipeJS
+        glyph_recipe(...args: object): Internal.ArsNouveauGlyphPressRecipeJS
+        enchantment(...args: object): Internal.ArsNouveauEnchantmentRecipeJS
+    }
+    class Appliedenergistics2 {
+        grinder(...args: object): Internal.AE2GrinderRecipeJS
+    }
+    class Kubejs {
+        shapeless(...args: object): Internal.ShapelessRecipeJS
+        shaped(...args: object): Internal.ShapedRecipeJS
+    }
+    class Minecraft {
+        stonecutting(...args: object): Internal.StonecuttingRecipeJS
+        campfire_cooking(...args: object): Internal.CookingRecipeJS
+        crafting_shaped(...args: object): Internal.ShapedRecipeJS
+        smithing(...args: object): Internal.SmithingRecipeJS
+        crafting_shapeless(...args: object): Internal.ShapelessRecipeJS
+        smoking(...args: object): Internal.CookingRecipeJS
+        smelting(...args: object): Internal.CookingRecipeJS
+        blasting(...args: object): Internal.CookingRecipeJS
+    }
+    class Botanypots {
+        crop(...args: object): Internal.BotanyPotsCropRecipeJS
+    }
+    class Mekanism {
+        reaction(...args: object): Internal.PressurizedReactionRecipeJS
+        combining(...args: object): Internal.CombiningRecipeJS
+        chemical_infusing(...args: object): Internal.ChemicalInfusingRecipeJS
+        compressing(...args: object): Internal.ItemAndGasToItemRecipeJS
+        gas_conversion(...args: object): Internal.GasConversionRecipeJS
+        purifying(...args: object): Internal.ItemAndGasToItemRecipeJS
+        energy_conversion(...args: object): Internal.EnergyConversionRecipeJS
+        crushing(...args: object): Internal.ItemToItemRecipeJS
+        smelting(...args: object): Internal.ItemToItemRecipeJS
+        oxidizing(...args: object): Internal.OxidizingRecipeJS
+        sawing(...args: object): Internal.SawingRecipeJS
+        metallurgic_infusing(...args: object): Internal.MetallurgicInfusingRecipeJS
+        dissolution(...args: object): Internal.ChemicalDissolutionRecipeJS
+        enriching(...args: object): Internal.ItemToItemRecipeJS
+        crystallizing(...args: object): Internal.CrystallizingRecipeJS
+        injecting(...args: object): Internal.ItemAndGasToItemRecipeJS
+    }
+    class Create {
+        conversion(...args: object): Internal.ProcessingRecipeJS
+        emptying(...args: object): Internal.ProcessingRecipeJS
+        cutting(...args: object): Internal.ProcessingRecipeJS
+        splashing(...args: object): Internal.ProcessingRecipeJS
+        deploying(...args: object): Internal.ProcessingRecipeJS
+        sandpaper_polishing(...args: object): Internal.ProcessingRecipeJS
+        mixing(...args: object): Internal.ProcessingRecipeJS
+        compacting(...args: object): Internal.ProcessingRecipeJS
+        filling(...args: object): Internal.ProcessingRecipeJS
+        basin(...args: object): Internal.ProcessingRecipeJS
+        crushing(...args: object): Internal.ProcessingRecipeJS
+        milling(...args: object): Internal.ProcessingRecipeJS
+        mechanical_crafting(...args: object): Internal.ShapedRecipeJS
+        sequenced_assembly(...args: object): Internal.SequencedAssemblyRecipeJS
+        pressing(...args: object): Internal.ProcessingRecipeJS
+    }
+    class Botania {
+        runic_altar(...args: object): Internal.BotaniaRunicAltarRecipeJS
+    }
+    class Immersiveengineering {
+        arc_furnace(...args: object): Internal.ArcFurnaceRecipeJS
+        cloche(...args: object): Internal.ClocheRecipeJS
+        metal_press(...args: object): Internal.MetalPressRecipeJS
+        alloy(...args: object): Internal.AlloyRecipeJS
+        blast_furnace_fuel(...args: object): Internal.BlastFurnaceFuelRecipeJS
+        fertilizer(...args: object): Internal.ClocheFertilizerRecipeJS
+        turn_and_copy(...args: object): Internal.ShapedRecipeJS
+        crusher(...args: object): Internal.CrusherRecipeJS
+        coke_oven(...args: object): Internal.CokeOvenRecipeJS
+        sawmill(...args: object): Internal.SawmillRecipeJS
+        blast_furnace(...args: object): Internal.BlastFurnaceRecipeJS
+    }
+    class Cucumber {
+        shaped_no_mirror(...args: object): Internal.ShapedRecipeJS
+    }
+    class Thermal {
+        insolator_catalyst(...args: object): Internal.CatalystRecipeJS
+        potion_diffuser_boost(...args: object): Internal.PotionDiffuserBoostRecipeJS
+        stirling_fuel(...args: object): Internal.FuelRecipeJS
+        crucible(...args: object): Internal.BasicThermalRecipeJS
+        pulverizer(...args: object): Internal.BasicThermalRecipeJS
+        smelter_catalyst(...args: object): Internal.CatalystRecipeJS
+        furnace(...args: object): Internal.BasicThermalRecipeJS
+        pyrolyzer(...args: object): Internal.BasicThermalRecipeJS
+        compression_fuel(...args: object): Internal.FuelRecipeJS
+        magmatic_fuel(...args: object): Internal.FuelRecipeJS
+        refinery(...args: object): Internal.BasicThermalRecipeJS
+        tree_extractor(...args: object): Internal.TreeExtractorMappingRecipeJS
+        numismatic_fuel(...args: object): Internal.FuelRecipeJS
+        bottler(...args: object): Internal.BasicThermalRecipeJS
+        rock_gen(...args: object): Internal.RockGenMappingRecipeJS
+        chiller(...args: object): Internal.BasicThermalRecipeJS
+        insolator(...args: object): Internal.InsolatorRecipeJS
+        centrifuge(...args: object): Internal.BasicThermalRecipeJS
+        lapidary_fuel(...args: object): Internal.FuelRecipeJS
+        tree_extractor_boost(...args: object): Internal.TreeExtractorBoostRecipeJS
+        press(...args: object): Internal.BasicThermalRecipeJS
+        sawmill(...args: object): Internal.BasicThermalRecipeJS
+        smelter(...args: object): Internal.BasicThermalRecipeJS
+        pulverizer_catalyst(...args: object): Internal.CatalystRecipeJS
+        fisher_boost(...args: object): Internal.FisherBoostRecipeJS
+        brewer(...args: object): Internal.BasicThermalRecipeJS
+    }
+}
 
 declare class JavaMath {
     static abs(arg0: number): number;
@@ -813,28 +951,6 @@ namespace Internal.it.unimi.dsi.fastutil {
         apply(arg0: K): V;
         containsKey(arg0: object): boolean;
     }
-}
-namespace stub.probejs {
-    class RecipeHolder {
-        minecraft: stub.probejs.recipes.Minecraft
-        kubejs: stub.probejs.recipes.Kubejs
-}
-}
-namespace stub.probejs.recipes {
-    class Kubejs {
-        shaped(...args: object): Internal.ShapedRecipeJS
-        shapeless(...args: object): Internal.ShapelessRecipeJS
-}
-    class Minecraft {
-        stonecutting(...args: object): Internal.StonecuttingRecipeJS
-        crafting_shaped(...args: object): Internal.ShapedRecipeJS
-        smelting(...args: object): Internal.CookingRecipeJS
-        smoking(...args: object): Internal.CookingRecipeJS
-        blasting(...args: object): Internal.CookingRecipeJS
-        campfire_cooking(...args: object): Internal.CookingRecipeJS
-        smithing(...args: object): Internal.SmithingRecipeJS
-        crafting_shapeless(...args: object): Internal.ShapelessRecipeJS
-}
 }
 namespace Internal.com.mojang.blaze3d.vertex {
     interface IVertexConsumer extends Internal.IVertexBuilder{
