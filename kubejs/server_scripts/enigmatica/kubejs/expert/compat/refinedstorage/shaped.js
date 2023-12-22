@@ -157,17 +157,6 @@ onEvent('recipes', (event) => {
                 G: 'kubejs:cpu_core_as_81221'
             },
             id: 'refinedstorage:network_receiver'
-        },
-        {
-            output: 'refinedstorage:disk_drive',
-            pattern: ['ABA', 'CDC', 'ABA'],
-            key: {
-                A: '#forge:circuits/elite',
-                B: 'extrastorage:neural_processor',
-                C: 'immersiveengineering:logic_unit',
-                D: 'refinedstorage:machine_casing'
-            },
-            id: 'refinedstorage:disk_drive'
         }
     ];
 

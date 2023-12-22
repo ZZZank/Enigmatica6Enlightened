@@ -89,7 +89,7 @@ const woodVariantsToConstruct = [
     // 'sushigocrafting:avocado'
 ];
 
-/** @type {{modId:string, logType:string, logBlock:string, woodBlock:string, logBlockStripped:string, woodBlockStripped:string, plankBlock:string, slabBlock:string}} */
+/** @type {{modId:string, logType:string, logBlock:string, woodBlock:string, logBlockStripped:string, woodBlockStripped:string, plankBlock:string, slabBlock:string}[]} */
 const buildWoodVariants = [];
 
 woodVariantsToConstruct.forEach((variant) => {

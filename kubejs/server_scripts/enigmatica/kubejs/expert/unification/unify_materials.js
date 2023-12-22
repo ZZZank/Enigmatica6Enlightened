@@ -56,10 +56,8 @@ onEvent('recipes', (event) => {
 
         let blacklistedMaterials = ['ender'];
 
-        for (let i = 0; i < blacklistedMaterials.length; i++) {
-            if (blacklistedMaterials[i] == material) {
-                return;
-            }
+        if (blacklistedMaterials.find(material) != undefined) {
+            return;
         }
 
         let output = ingot,

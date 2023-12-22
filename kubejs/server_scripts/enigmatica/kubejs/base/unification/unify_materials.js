@@ -99,10 +99,8 @@ onEvent('recipes', (event) => {
         }
 
         let blacklistedMaterials = ['redstone', 'lapis', 'emerald', 'diamond', 'iron'];
-        for (let i = 0; i < blacklistedMaterials.length; i++) {
-            if (blacklistedMaterials[i] == material) {
-                return;
-            }
+        if (blacklistedMaterials.find(material) != undefined) {
+            return;
         }
 
         let input = `forge:ores/${material}`,
@@ -761,10 +759,8 @@ onEvent('recipes', (event) => {
         }
 
         let blacklistedMaterials = ['copper', 'gold', 'iron', 'lead', 'osmium', 'tin', 'uranium'];
-        for (let i = 0; i < blacklistedMaterials.length; i++) {
-            if (blacklistedMaterials[i] == material) {
-                return;
-            }
+        if (blacklistedMaterials.find(material) != undefined) {
+            return;
         }
 
         let mek_dirty_slurry = `emendatusenigmatica:dirty_${material}`,
@@ -856,11 +852,8 @@ onEvent('recipes', (event) => {
         }
 
         let blacklistedMaterials = ['amber', 'ender'];
-
-        for (let i = 0; i < blacklistedMaterials.length; i++) {
-            if (blacklistedMaterials[i] == material) {
-                return;
-            }
+        if (blacklistedMaterials.find(material) != undefined) {
+            return;
         }
 
         let input = `#forge:ores/${material}`,
@@ -876,11 +869,8 @@ onEvent('recipes', (event) => {
         }
 
         let blacklistedMaterials = ['starmetal'];
-
-        for (let i = 0; i < blacklistedMaterials.length; i++) {
-            if (blacklistedMaterials[i] == material) {
-                return;
-            }
+        if (blacklistedMaterials.find(material) != undefined) {
+            return;
         }
 
         let input = `#forge:dusts/${material}`,
@@ -954,11 +944,8 @@ onEvent('recipes', (event) => {
         }
 
         let blacklistedMaterials = ['silver'];
-
-        for (let i = 0; i < blacklistedMaterials.length; i++) {
-            if (blacklistedMaterials[i] == material) {
-                return;
-            }
+        if (blacklistedMaterials.find(material) != undefined) {
+            return;
         }
 
         let input,
@@ -1072,11 +1059,8 @@ onEvent('recipes', (event) => {
         }
 
         let blacklistedMaterials = [];
-
-        for (let i = 0; i < blacklistedMaterials.length; i++) {
-            if (blacklistedMaterials[i] == material) {
-                return;
-            }
+        if (blacklistedMaterials.find(material) != undefined) {
+            return;
         }
 
         let input,
@@ -1391,11 +1375,8 @@ onEvent('recipes', (event) => {
         }
 
         let blacklistedMaterials = ['ender'];
-
-        for (let i = 0; i < blacklistedMaterials.length; i++) {
-            if (blacklistedMaterials[i] == material) {
-                return;
-            }
+        if (blacklistedMaterials.find(material) != undefined) {
+            return;
         }
 
         let recipes = [{ type: 'gem', amount: 144, output: gem, energy: 5000 }];
@@ -1440,10 +1421,8 @@ onEvent('recipes', (event) => {
         }
 
         let blacklistedMaterials = ['ender'];
-        for (let i = 0; i < blacklistedMaterials.length; i++) {
-            if (blacklistedMaterials[i] == material) {
-                return;
-            }
+        if (blacklistedMaterials.find(material) != undefined) {
+            return;
         }
 
         let baseAmount = 144,
@@ -1578,10 +1557,8 @@ onEvent('recipes', (event) => {
         }
 
         let blacklistedMaterials = ['ender'];
-        for (let i = 0; i < blacklistedMaterials.length; i++) {
-            if (blacklistedMaterials[i] == material) {
-                return;
-            }
+        if (blacklistedMaterials.find(material) != undefined) {
+            return;
         }
 
         let recipes = [{ type: 'gem', amount: 144, cooling: 64, output: gem }];
@@ -1627,10 +1604,8 @@ onEvent('recipes', (event) => {
 
     function material_packing_unpacking(event, material, block, ingot, gem, nugget) {
         let blacklistedMaterials = ['ender', 'amber', 'quartz'];
-        for (let i = 0; i < blacklistedMaterials.length; i++) {
-            if (blacklistedMaterials[i] == material) {
-                return;
-            }
+        if (blacklistedMaterials.find(material) != undefined) {
+            return;
         }
 
         let recipes = [];

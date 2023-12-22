@@ -139,11 +139,11 @@ function compareIndices(a, b, tag) {
 }
 
 function getStrippedLogFrom(logBlock) {
-    buildWoodVariants.find((wood) => {
+    for (let wood of buildWoodVariants) {
         if (wood.logBlock == logBlock) {
             return wood.logBlockStripped;
         }
-    });
+    }
     return air;
 }
 
