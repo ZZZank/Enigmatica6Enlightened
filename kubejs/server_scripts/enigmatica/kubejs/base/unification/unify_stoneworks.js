@@ -67,5 +67,4 @@ onEvent('recipes', (event) => {
             `enigmatica:base/unification/unify_stoneworks/thermal_stoneworks/`
         );
     }
-
 });

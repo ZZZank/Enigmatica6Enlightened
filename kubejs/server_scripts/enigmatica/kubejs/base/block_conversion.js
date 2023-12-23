@@ -63,7 +63,7 @@
                 continue;
             }
             e.cancel();
-            player.playSound('ping:bloop')
+            player.playSound('ping:bloop');
             e.server.runCommandSilent(`particle minecraft:explosion ${target.x} ${target.y} ${target.z}`);
             target.set(recipe.output);
             player.mainHandItem.count -= 1;
