@@ -117,6 +117,26 @@ function getPreferredItemInTag(tag) {
 
 /**
  *
+ * @param {T[]} arr the array to be splited
+ * @param {number} sizeLimit the max size of spilitted parts of `arr`
+ * @returns {T[][]} the spilitted array containing spilitted parts
+ */
+function splitArray(arr, sizeLimit) {
+    if (sizeLimit <= 0) {
+        throw 'Invalid param, `sizeLimit` must be positive number';
+    }
+    let unProcessed = arr.slice(0);
+    let result = [];
+    while (unProcessed.length > sizeLimit) {
+        result.push(unProcessed.slice(0, sizeLimit));
+        unProcessed = unProcessed.slice(sizeLimit);
+    }
+    result.push(unProcessed);
+    return result;
+}
+
+/**
+ *
  * @param {Internal.IngredientJS} tag
  * @return {Internal.ItemStackJS[]}
  */
