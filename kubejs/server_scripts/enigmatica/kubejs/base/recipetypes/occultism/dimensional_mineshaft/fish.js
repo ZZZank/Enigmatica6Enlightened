@@ -59,4 +59,26 @@ onEvent('recipes', (event) => {
 
         event.custom(recipe).id(recipe.id);
     });
+
+    RecipeHint: {
+        let weightSum = 0;
+        recipes.forEach((recipe) => (weightSum += recipe.weight));
+        let unProcessed = recipes.map((recipe) => {
+            return {
+                data: { item: recipe.output, count: 1 },
+                chance: (recipe.weight / weightSum).toFixed(4)
+            };
+        });
+        splitArray(unProcessed, 18).forEach((output, index) => {
+            let recipe_hint = {
+                inputs: [
+                    '#occultism:miners/fish',
+                    'occultism:dimensional_mineshaft'
+                ],
+                outputs: output,
+                id: id_prefix + 'hint' + index
+            }
+            addGeneralRecipeHint(recipe_hint, event);
+        });
+    }
 });

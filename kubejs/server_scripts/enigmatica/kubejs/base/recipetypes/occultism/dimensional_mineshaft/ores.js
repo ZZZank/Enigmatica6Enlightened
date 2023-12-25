@@ -1,4 +1,5 @@
 'use strict';
+
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/occultism/miners/ores/';
     const recipes = [
@@ -177,31 +178,20 @@ onEvent('recipes', (event) => {
         recipes.forEach((recipe) => (weightSum += recipe.weight));
         let unProcessed = recipes.map((recipe) => {
             return {
-                type: 'masterfulmachinery:items',
                 data: { item: recipe.output, count: 1 },
                 chance: (recipe.weight / weightSum).toFixed(4)
             };
         });
-        splitArray(unProcessed, 15).forEach((output, index) => {
-            event
-                .custom({
-                    type: 'masterfulmachinery:machine_process',
-                    structureId: 'killing_entity_structure',
-                    controllerId: 'killing_entity',
-                    outputs: output,
-                    inputs: [
-                        {
-                            type: 'masterfulmachinery:items',
-                            data: { item: 'occultism:miner_djinni_ores', count: 1 }
-                        },
-                        {
-                            type: 'masterfulmachinery:items',
-                            data: { item: 'occultism:dimensional_mineshaft', count: 1 }
-                        }
-                    ],
-                    ticks: 1
-                })
-                .id(id_prefix + 'hint' + index);
+        splitArray(unProcessed, 18).forEach((output, index) => {
+            let recipe_hint = {
+                inputs: [
+                    '#occultism:miners/ores',
+                    'occultism:dimensional_mineshaft'
+                ],
+                outputs: output,
+                id: id_prefix + 'hint' + index
+            }
+            addGeneralRecipeHint(recipe_hint, event);
         });
     }
 });
