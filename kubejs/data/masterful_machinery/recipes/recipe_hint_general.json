@@ -1,0 +1,8 @@
+{
+    "type": "masterfulmachinery:machine_structure",
+    "controllerId": "recipe_hint_general",
+    "id": "recipe_hint_general_structure",
+    "name": "Recipe Hint: General",
+    "layout": [["C"]],
+    "legend": {}
+}
