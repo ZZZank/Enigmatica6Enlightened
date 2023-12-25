@@ -1,3 +1,4 @@
 {
-    "insertUseStrict.globPattern": "kubejs/**/*.{js,ts}"
+    "insertUseStrict.globPattern": "kubejs/**/*.{js,ts}",
+    "python.analysis.typeCheckingMode": "basic"
 }
