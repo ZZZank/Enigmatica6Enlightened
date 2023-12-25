@@ -1,3 +1,5 @@
+'use strict';
+
 onEvent('recipes', (event) => {
     const id_prefix = 'enlightened6:killing_entity/';
     const recipes = [
