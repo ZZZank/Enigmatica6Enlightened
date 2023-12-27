@@ -55,9 +55,9 @@ function addGeneralRecipeHint(recipe, event) {
 }
 
 /**
- * transform string-style ingredient into JSON style
+ * transform string-style ingredient into Masterful Machinery JSON style
  * @param {string} ingredient like '3x #forge:grain' or 'minecraft:book'
- * @returns {{count: number,tag?: string,item?: string}}
+ * @returns {{tag:string,count:number}|{item:string,count:number}}
  */
 function toJsonWithCount(ingredient) {
     let parsed = { count: 1 };
@@ -244,7 +244,7 @@ function getLowerTiers(tiers, tier) {
  */
 function getNextTier(tiers, tier) {
     let i = tiers.indexOf(tier);
-    if (i == tiers.length() - 1) {
+    if (i == tiers.length - 1) {
         return tier;
     }
     return tiers[i + 1];

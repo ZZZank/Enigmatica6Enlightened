@@ -1,4 +1,5 @@
 'use strict';
+
 onEvent('block.tags', (event) => {
     event.add('forge:beehives/tier_0', tier0Hives);
     event.add('forge:beehives/tier_1', tier1Hives);
