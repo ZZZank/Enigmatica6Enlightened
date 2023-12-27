@@ -207,11 +207,14 @@
 			}]
 			rewards: [{
 				id: "16C58C7C9C601B77"
-				type: "command"
-				title: "Common Tinkers Loot"
-				icon: "kubejs:common_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_common"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:common_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -231,11 +234,14 @@
 			}]
 			rewards: [{
 				id: "33A455096D43FDA9"
-				type: "command"
-				title: "Epic Tinkers Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -251,11 +257,14 @@
 			}]
 			rewards: [{
 				id: "193895CBB3D7B7AF"
-				type: "command"
-				title: "Legendary Tinkers Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_legendary"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -336,11 +345,14 @@
 			}]
 			rewards: [{
 				id: "1CD2DCB53AC39809"
-				type: "command"
-				title: "Common Tinkers Loot"
-				icon: "kubejs:common_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_common"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:common_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -362,11 +374,14 @@
 			}]
 			rewards: [{
 				id: "6E0B79AF590A85C8"
-				type: "command"
-				title: "Common Tinkers Loot"
-				icon: "kubejs:common_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_common"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:common_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -394,11 +409,14 @@
 			}]
 			rewards: [{
 				id: "48AAC24DE364756A"
-				type: "command"
-				title: "Common Tinkers Loot"
-				icon: "kubejs:common_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_common"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:common_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -414,11 +432,14 @@
 			}]
 			rewards: [{
 				id: "7B852A7C57B1D2A9"
-				type: "command"
-				title: "Common Tinkers Loot"
-				icon: "kubejs:common_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_common"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:common_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -434,11 +455,14 @@
 			}]
 			rewards: [{
 				id: "0A14FCF62978D6ED"
-				type: "command"
-				title: "Common Tinkers Loot"
-				icon: "kubejs:common_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_common"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:common_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -463,11 +487,14 @@
 				}
 				{
 					id: "25EAF2E7866A5BC8"
-					type: "command"
-					title: "Rare Tinkers Loot Box"
-					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_rare"
-					player_command: false
+					type: "item"
+					item: {
+    					id: "kubejs:rare_lootbox"
+						Count: 1b
+						tag: {
+        					mod: "tinkers"
+						}
+					}
 				}
 			]
 		}
@@ -530,11 +557,14 @@
 			]
 			rewards: [{
 				id: "767CD1B19307EC7E"
-				type: "command"
-				title: "Rare Tinkers Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_rare"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -628,11 +658,14 @@
 				}
 				{
 					id: "00651FA7443BD662"
-					type: "command"
-					title: "Rare Tinkers Loot Box"
-					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_rare"
-					player_command: false
+					type: "item"
+					item: {
+    					id: "kubejs:rare_lootbox"
+						Count: 1b
+						tag: {
+        					mod: "tinkers"
+						}
+					}
 				}
 			]
 		}
@@ -654,11 +687,14 @@
 			}]
 			rewards: [{
 				id: "49CC339E8B83FF16"
-				type: "command"
-				title: "Rare Tinkers Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_rare"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -687,11 +723,14 @@
 				}
 				{
 					id: "2872C6E42017722A"
-					type: "command"
-					title: "Rare Tinkers Loot Box"
-					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_rare"
-					player_command: false
+					type: "item"
+					item: {
+    					id: "kubejs:rare_lootbox"
+						Count: 1b
+						tag: {
+        					mod: "tinkers"
+						}
+					}
 				}
 			]
 		}
@@ -708,11 +747,14 @@
 			}]
 			rewards: [{
 				id: "234C52AF09D0B5F7"
-				type: "command"
-				title: "Rare Tinkers Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_rare"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -757,11 +799,14 @@
 			]
 			rewards: [{
 				id: "083A5F8C6F937F35"
-				type: "command"
-				title: "Tinkers Epic Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -805,11 +850,14 @@
 			}]
 			rewards: [{
 				id: "741689DFA0B4E6A4"
-				type: "command"
-				title: "Epic Tinkers Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -979,11 +1027,14 @@
 			]
 			rewards: [{
 				id: "4CC70CD149953DE0"
-				type: "command"
-				title: "Epic Tinkers Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -1139,11 +1190,14 @@
 			]
 			rewards: [{
 				id: "5980002F94B77766"
-				type: "command"
-				title: "Epic Tinkers Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -1307,11 +1361,14 @@
 			]
 			rewards: [{
 				id: "7A45DEF9D00CAE1F"
-				type: "command"
-				title: "Epic Tinkers Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -1481,11 +1538,14 @@
 			]
 			rewards: [{
 				id: "2A78F695A00CAAC1"
-				type: "command"
-				title: "Epic Tinkers Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -1651,11 +1711,14 @@
 			]
 			rewards: [{
 				id: "24378B74017AE217"
-				type: "command"
-				title: "Epic Tinkers Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -1809,11 +1872,14 @@
 			]
 			rewards: [{
 				id: "2E9D3BDDA1C917DB"
-				type: "command"
-				title: "Epic Tinkers Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -1961,11 +2027,14 @@
 			]
 			rewards: [{
 				id: "7B6CD460C9115C68"
-				type: "command"
-				title: "Common Tinkers Loot"
-				icon: "kubejs:common_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_common"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:common_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -2102,11 +2171,14 @@
 			]
 			rewards: [{
 				id: "1EA77611F0AC1E99"
-				type: "command"
-				title: "Common Tinkers Loot"
-				icon: "kubejs:common_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_common"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:common_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -2237,11 +2309,14 @@
 			]
 			rewards: [{
 				id: "621BBB412302C46E"
-				type: "command"
-				title: "Common Tinkers Loot"
-				icon: "kubejs:common_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_common"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:common_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -2373,11 +2448,14 @@
 			]
 			rewards: [{
 				id: "47C2863E17519633"
-				type: "command"
-				title: "Common Tinkers Loot"
-				icon: "kubejs:common_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_common"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:common_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -2528,11 +2606,14 @@
 			]
 			rewards: [{
 				id: "2948AA63DF7E591E"
-				type: "command"
-				title: "Common Tinkers Loot"
-				icon: "kubejs:common_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_common"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:common_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -2683,11 +2764,14 @@
 			]
 			rewards: [{
 				id: "064C84E7962377DE"
-				type: "command"
-				title: "Common Tinkers Loot"
-				icon: "kubejs:common_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_common"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:common_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -2718,11 +2802,14 @@
 			}]
 			rewards: [{
 				id: "27D0A07F410FABC6"
-				type: "command"
-				title: "Common Tinkers Loot"
-				icon: "kubejs:common_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_common"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:common_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -2856,11 +2943,14 @@
 			]
 			rewards: [{
 				id: "38E9F61A1FE02FAC"
-				type: "command"
-				title: "Epic Tinkers Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -2879,11 +2969,14 @@
 			}]
 			rewards: [{
 				id: "401E5383DA0E156C"
-				type: "command"
-				title: "Rare Tinkers Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_rare"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -2902,11 +2995,14 @@
 			}]
 			rewards: [{
 				id: "35F2AA26A4D5D8D2"
-				type: "command"
-				title: "Rare Tinkers Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_rare"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -2925,11 +3021,14 @@
 			}]
 			rewards: [{
 				id: "3695278114E43DE3"
-				type: "command"
-				title: "Epic Tinkers Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -2948,11 +3047,14 @@
 			}]
 			rewards: [{
 				id: "14B1C5BAFCC29C7F"
-				type: "command"
-				title: "Epic Tinkers Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -2969,11 +3071,14 @@
 			}]
 			rewards: [{
 				id: "59AAD91F145CFF75"
-				type: "command"
-				title: "Rare Tinkers Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_rare"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -3035,11 +3140,14 @@
 			]
 			rewards: [{
 				id: "0D399ECD900A5194"
-				type: "command"
-				title: "Legendary Tinkers Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_legendary"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -3083,11 +3191,14 @@
 			}]
 			rewards: [{
 				id: "7DE85E011FF0A2CC"
-				type: "command"
-				title: "Legendary Tinkers Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_legendary"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -3126,11 +3237,14 @@
 			]
 			rewards: [{
 				id: "3A2C7744EA23580D"
-				type: "command"
-				title: "Legendary Tinkers Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_legendary"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -3154,11 +3268,14 @@
 			]
 			rewards: [{
 				id: "4DBE23D96A29B760"
-				type: "command"
-				title: "Epic Tinkers Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -3175,11 +3292,14 @@
 			}]
 			rewards: [{
 				id: "453BCD8A3851B3D5"
-				type: "command"
-				title: "Epic Tinkers Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -3196,11 +3316,14 @@
 			}]
 			rewards: [{
 				id: "02884B430B3BF339"
-				type: "command"
-				title: "Epic Tinkers Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -3245,11 +3368,14 @@
 			]
 			rewards: [{
 				id: "7E5386B6B02AB842"
-				type: "command"
-				title: "Legendary Tinkers Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_legendary"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -3267,11 +3393,14 @@
 			}]
 			rewards: [{
 				id: "64293FDBCA193636"
-				type: "command"
-				title: "Legendary Tinkers Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_legendary"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -3289,11 +3418,14 @@
 			}]
 			rewards: [{
 				id: "08D2DAC0A6FB6AA8"
-				type: "command"
-				title: "Legendary Tinkers Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_legendary"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -3340,11 +3472,14 @@
 			}]
 			rewards: [{
 				id: "3C720973EBA7E4F7"
-				type: "command"
-				title: "Epic Tinkers Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -3369,11 +3504,14 @@
 			}]
 			rewards: [{
 				id: "036E87473B7C85A8"
-				type: "command"
-				title: "Epic Tinkers Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -3409,11 +3547,14 @@
 			]
 			rewards: [{
 				id: "0D18F8A84FD9D693"
-				type: "command"
-				title: "Legendary Tinkers Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_legendary"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -3439,11 +3580,14 @@
 				}
 				{
 					id: "0F2EE0DB50A0B61E"
-					type: "command"
-					title: "Legendary Tinkers Loot Box"
-					icon: "kubejs:legendary_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_legendary"
-					player_command: false
+					type: "item"
+					item: {
+    					id: "kubejs:legendary_lootbox"
+						Count: 1b
+						tag: {
+        					mod: "tinkers"
+						}
+					}
 				}
 			]
 		}
@@ -3492,11 +3636,14 @@
 			]
 			rewards: [{
 				id: "1B8ABABF76B47D58"
-				type: "command"
-				title: "Legendary Tinkers Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_legendary"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -3518,11 +3665,14 @@
 			}]
 			rewards: [{
 				id: "1BDD19DE0C12C98D"
-				type: "command"
-				title: "Legendary Tinkers Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_legendary"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -3572,11 +3722,14 @@
 			}]
 			rewards: [{
 				id: "1F552B03FA0AA138"
-				type: "command"
-				title: "Rare Tinkers Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_rare"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -3613,11 +3766,14 @@
 			}]
 			rewards: [{
 				id: "53E6B568FDDCCB88"
-				type: "command"
-				title: "Rare Tinkers Loot Chest"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_rare"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -3646,11 +3802,14 @@
 			}]
 			rewards: [{
 				id: "104FB75E9793E8FE"
-				type: "command"
-				title: "Epic Tinkers Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_epic"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -3684,11 +3843,14 @@
 			]
 			rewards: [{
 				id: "12A49D4465A41A74"
-				type: "command"
-				title: "Rare Tinkers Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_rare"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -3706,11 +3868,14 @@
 			}]
 			rewards: [{
 				id: "6CA368A371E00A05"
-				type: "command"
-				title: "Rare Tinkers Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_rare"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:rare_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
@@ -3728,11 +3893,14 @@
 			}]
 			rewards: [{
 				id: "587FF35C8CD308E1"
-				type: "command"
-				title: "Legendary Tinkers Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_legendary"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "tinkers"
+					}
+				}
 			}]
 		}
 		{
