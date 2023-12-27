@@ -165,11 +165,14 @@
 				}
 				{
 					id: "0000000000000288"
-					type: "command"
-					title: "Powah Loot Box"
-					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
-					player_command: false
+					type: "item"
+					item: {
+    					id: "kubejs:epic_lootbox"
+						Count: 1b
+						tag: {
+        					mod: "powah"
+						}
+					}
 				}
 			]
 		}
@@ -294,11 +297,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000289"
-				type: "command"
-				title: "Powah Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "powah"
+					}
+				}
 			}]
 		}
 		{
@@ -416,11 +422,14 @@
 				}
 				{
 					id: "000000000000064D"
-					type: "command"
-					title: "Powah Loot Box"
-					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
-					player_command: false
+					type: "item"
+					item: {
+    					id: "kubejs:epic_lootbox"
+						Count: 1b
+						tag: {
+        					mod: "powah"
+						}
+					}
 				}
 			]
 		}
@@ -475,11 +484,14 @@
 			}]
 			rewards: [{
 				id: "000000000000028A"
-				type: "command"
-				title: "Powah Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "powah"
+					}
+				}
 			}]
 		}
 		{
@@ -499,11 +511,14 @@
 			}]
 			rewards: [{
 				id: "000000000000064C"
-				type: "command"
-				title: "Powah Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "powah"
+					}
+				}
 			}]
 		}
 		{
@@ -751,11 +766,14 @@
 			}]
 			rewards: [{
 				id: "000000000000028E"
-				type: "command"
-				title: "Powah Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "powah"
+					}
+				}
 			}]
 		}
 		{
@@ -882,11 +900,14 @@
 			]
 			rewards: [{
 				id: "000000000000028F"
-				type: "command"
-				title: "Powah Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "powah"
+					}
+				}
 			}]
 		}
 		{
@@ -965,11 +986,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000290"
-				type: "command"
-				title: "Powah Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "powah"
+					}
+				}
 			}]
 		}
 		{
@@ -1098,11 +1122,14 @@
 				}
 				{
 					id: "0000000000000294"
-					type: "command"
-					title: "Powah Loot Box"
-					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
-					player_command: false
+					type: "item"
+					item: {
+    					id: "kubejs:epic_lootbox"
+						Count: 1b
+						tag: {
+        					mod: "powah"
+						}
+					}
 				}
 			]
 		}
@@ -1128,11 +1155,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000291"
-				type: "command"
-				title: "Powah Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "powah"
+					}
+				}
 			}]
 		}
 		{
@@ -1153,11 +1183,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000292"
-				type: "command"
-				title: "Powah Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "powah"
+					}
+				}
 			}]
 		}
 		{
@@ -1178,11 +1211,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000293"
-				type: "command"
-				title: "Powah Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "powah"
+					}
+				}
 			}]
 		}
 		{
@@ -1239,11 +1275,14 @@
 				}
 				{
 					id: "0000000000000295"
-					type: "command"
-					title: "Powah Loot Box"
-					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
-					player_command: false
+					type: "item"
+					item: {
+    					id: "kubejs:epic_lootbox"
+						Count: 1b
+						tag: {
+        					mod: "powah"
+						}
+					}
 				}
 			]
 		}
@@ -1343,11 +1382,14 @@
 				}
 				{
 					id: "000000000000064B"
-					type: "command"
-					title: "Powah Loot Box"
-					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
-					player_command: false
+					type: "item"
+					item: {
+    					id: "kubejs:epic_lootbox"
+						Count: 1b
+						tag: {
+        					mod: "powah"
+						}
+					}
 				}
 			]
 		}
