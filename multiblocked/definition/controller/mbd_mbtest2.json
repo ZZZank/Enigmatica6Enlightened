@@ -1,0 +1,245 @@
+{
+  "version": 2,
+  "location": "mbd:mbtest2",
+  "traits": {
+    "item": [
+      {
+        "cIO": 2,
+        "gIO": 2,
+        "mIO": 2,
+        "slotName": "item1",
+        "x": 39,
+        "y": 103,
+        "autoIO": false
+      }
+    ]
+  },
+  "properties": {
+    "rotationState": "NONE",
+    "showInJei": true,
+    "isOpaque": false,
+    "hasDynamicShape": false,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 6.0,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
+    "friction": 0.6,
+    "harvestLevel": 1,
+    "stackSize": 64,
+    "tabGroup": "multiblocked.all"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "state": {
+          "id": "atum:crystal_glass",
+          "meta": 0
+        },
+        "type": "blockstate",
+        "postRenderer": true
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "t1",
+  "catalyst": "{id:\"astralsorcery:wand\",Count:1b}",
+  "consumeCatalyst": "NOT_CONSUMED",
+  "noNeedController": false,
+  "basePattern": {
+    "structureDir": [
+      "LEFT",
+      "UP",
+      "BACK"
+    ],
+    "pattern": [
+      [
+        "       ",
+        "  AAA  ",
+        "       ",
+        "       ",
+        "       "
+      ],
+      [
+        " BBBBB ",
+        " CDDDC ",
+        " E   E ",
+        " C   C ",
+        "       "
+      ],
+      [
+        " B   B ",
+        "ADAAADA",
+        "       ",
+        "       ",
+        "       "
+      ],
+      [
+        " B   B ",
+        "ADAFADA",
+        "   G   ",
+        "       ",
+        "   @   "
+      ],
+      [
+        " B   B ",
+        "ADAAADA",
+        "       ",
+        "       ",
+        "       "
+      ],
+      [
+        " BBBBB ",
+        " CDDDC ",
+        " E   E ",
+        " C   C ",
+        "       "
+      ],
+      [
+        "       ",
+        "  AAA  ",
+        "       ",
+        "       ",
+        "       "
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "blocks": [
+          {
+            "id": "astralsorcery:marble_runed"
+          }
+        ],
+        "type": "blocks"
+      },
+      "controller": {
+        "location": "mbd:mbtest2",
+        "type": "component"
+      },
+      "B": {
+        "blocks": [
+          {
+            "id": "astralsorcery:marble_raw"
+          }
+        ],
+        "type": "blocks"
+      },
+      "C": {
+        "blocks": [
+          {
+            "id": "astralsorcery:marble_chiseled"
+          }
+        ],
+        "type": "blocks"
+      },
+      "D": {
+        "blocks": [
+          {
+            "id": "astralsorcery:liquid_starlight"
+          }
+        ],
+        "type": "blocks"
+      },
+      "E": {
+        "blocks": [
+          {
+            "id": "astralsorcery:marble_pillar"
+          }
+        ],
+        "type": "blocks"
+      },
+      "F": {
+        "blocks": [
+          {
+            "id": "minecraft:lapis_block"
+          }
+        ],
+        "type": "blocks"
+      },
+      "G": {
+        "blocks": [
+          {
+            "id": "astralsorcery:infuser"
+          }
+        ],
+        "type": "blocks"
+      },
+      "air": {
+        "type": "air"
+      },
+      "any": {
+        "type": "any"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "D"
+      ],
+      "E": [
+        "E"
+      ],
+      "F": [
+        "F"
+      ],
+      "G": [
+        "G"
+      ],
+      "-": [
+        "air"
+      ]
+    }
+  }
+}
