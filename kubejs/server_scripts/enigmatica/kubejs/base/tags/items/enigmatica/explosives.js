@@ -2,10 +2,13 @@
 
 onEvent('item.tags', (event) => {
     /**
+     * Templates for tagging items, with automatic handling of "base tag".  
+     * E.g. when adding `thermal:ice_tnt` into `#enlightened6:explosives/ice`, it will also be added into `#enlightened6:explosives`  
+     * For a targeted tag, it will first remove entries that match elements in `firstRemove`, then add entries in `thenAdd` into it.  
      * @type {{tag:string,firstRemove?:any|any[],thenAdd?:any|any[]}[]}
      * @param tag the tag string WITHOUT `#` prefix, like `forge:ingots` or `why:using/this/tag`
-     * @param firstRemove You can use RegEx, tag string, item string, or combine them into an array, or ignore this entry
-     * @param thenAdd You can use RegEx, tag string, item string, or combine them into an array, or ignore this entry
+     * @param firstRemove (Optional) Accepts RegEx, tag string, item string.
+     * @param thenAdd (Optional) Accepts can use RegEx, tag string, item string.
      */
     let recipes = [
         {
