@@ -11,9 +11,12 @@ onEvent('item.tooltip', (event) => {
     lootboxes.forEach((lootbox) => {
         event.addAdvanced(lootbox, {
             accept: (self, isAdvanced, tooltips) => {
-                try {
-                    tooltips.add(self.nbt.mod.toString());
-                } catch (e) {}
+                if (self.hasNBT()) {
+                    let mod = self.nbt.mod;
+                    if (mod) {
+                        tooltips.add(Text.of(mod.toString()).green());
+                    }
+                }
             }
         });
     });
