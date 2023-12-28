@@ -44,36 +44,8 @@ onEvent('recipes', (event) => {
     ];
 
     recipes.forEach((recipe) => {
-        recipe.inputs = recipe.inputs.map((val) => {
-            if (typeof val == 'string') {
-                // '32x kubejs:rough_machine_frame'
-                return {
-                    type: 'masterfulmachinery:items',
-                    data: toJsonWithCount(val)
-                };
-            } else if (val.type == 'masterfulmachinery:items') {
-                /*
-                {
-                    type: 'masterfulmachinery:items',
-                    chance: 1.0,
-                    data: '2x mekanism:solar_neutron_activator'
-                }
-                 */
-                val.data = toJsonWithCount(val.data);
-            }
-            return val;
-        });
-        recipe.outputs = recipe.outputs.map((val) => {
-            if (typeof val == 'string') {
-                return {
-                    type: 'masterfulmachinery:items',
-                    data: toJsonWithCount(val)
-                };
-            } else if (val.type == 'masterfulmachinery:items') {
-                val.data = toJsonWithCount(val.data);
-            }
-            return val;
-        });
+        recipe.inputs = recipe.inputs.map((val) => toMMJson(val));
+        recipe.outputs = recipe.outputs.map((val) => toMMJson(val));
         recipe.type = 'masterfulmachinery:machine_process';
         recipe.structureId = 'industrial_deuterium_plant_structure';
         recipe.controllerId = 'industrial_deuterium_plant';
