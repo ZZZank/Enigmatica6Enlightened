@@ -78,7 +78,7 @@ onEvent('item.tags', (event) => {
         },
         {
             tag: 'forge:ingots/tainted_gold',
-            thenAdd: ['naturesaura:taited_gold']
+            thenAdd: ['naturesaura:tainted_gold']
         },
         {
             tag: 'forge:ingots/infused_iron',
