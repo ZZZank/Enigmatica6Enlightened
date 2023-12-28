@@ -28,7 +28,7 @@ or toJsonWithCount('$2x #$1')
 '$1'
 ```
 
-## 
+## masterfulmachinery
 ```
 (\s+)\{
 \s+type: 'masterfulmachinery:items',
@@ -52,4 +52,24 @@ captureEvent("$1", (event) => {
 })
 
 ["(.+)"]
+```
+
+## quest
+```
+(\t+)type: "command"
+\s+title: ".+"
+\s+icon: "(.+)"
+\s+command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_(.+)_.+"
+\s+player_command: false
+```
+->
+```
+$1type: "item"
+$1item: {
+    $1id: "$2"
+	$1Count: 1b
+	$1tag: {
+        $1mod: "$3"
+	$1}
+$1}
 ```
