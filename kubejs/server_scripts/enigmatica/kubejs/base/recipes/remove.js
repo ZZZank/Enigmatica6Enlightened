@@ -95,6 +95,7 @@ onEvent('recipes', (event) => {
         'appliedenergistics2:flour',
         'appliedenergistics2:gold_dust',
         'appliedenergistics2:iron_dust',
+        'appliedenergistics2:ender_dust',
 
         'astralsorcery:marble_runed',
 

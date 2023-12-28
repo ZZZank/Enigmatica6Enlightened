@@ -100,6 +100,11 @@ const colors = [
 ];
 
 const itemsToHide = [
+    'appliedenergistics2:flour',
+    'appliedenergistics2:gold_dust',
+    'appliedenergistics2:iron_dust',
+    'appliedenergistics2:ender_dust',
+
     // Deprecated Ars Arsenal items
     'arsarsenal:aqua_hood',
     'arsarsenal:fire_hood',

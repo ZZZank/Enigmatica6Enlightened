@@ -1,4 +1,5 @@
 'use strict';
+
 onEvent('item.tooltip', (event) => {
     /*
     Valid Color Codes:
@@ -181,10 +182,6 @@ onEvent('item.tooltip', (event) => {
                 'kubejs:crystalline_dark_oak_wood'
             ],
             text: [Text.translate(`${id_prefix}crystalline`).gold()]
-        },
-        {
-            items: 'appliedenergistics2:ender_dust',
-            text: [Text.translate('Only used for creating Quantum Entangled Singularity').red()]
         }
     ];
 

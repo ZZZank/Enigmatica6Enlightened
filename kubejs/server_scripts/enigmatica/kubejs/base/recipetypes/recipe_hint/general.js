@@ -7,6 +7,15 @@ onEvent('recipes', (event) => {
             inputs: ['minecraft:bucket', 'ars_nouveau:mana_jar'],
             outputs: ['ars_nouveau:bucket_of_mana'],
             id: id_prefix + 'bucket_of_mana'
+        },
+        {
+            inputs: [
+                'minecraft:ender_pearl',
+                '#enigmatica:explosives/base',
+                'appliedenergistics2:singularity'
+            ],
+            outputs: ['2x appliedenergistics2:quantum_entangled_singularity'],
+            id: id_prefix + 'quantum_entangled_singularity'
         }
     ];
 
