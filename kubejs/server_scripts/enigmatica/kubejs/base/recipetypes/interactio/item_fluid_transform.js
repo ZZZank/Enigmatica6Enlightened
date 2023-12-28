@@ -7,9 +7,7 @@ onEvent('recipes', (event) => {
             inputs: [{ tag: 'forge:dusts/emerald', count: 1, return_chance: 0 }],
             fluid: { fluid: 'astralsorcery:liquid_starlight' },
             output: {
-                entries: [
-                    { result: { item: 'byg:emeraldite_shards', count: 1 }, weight: 3 }
-                ],
+                entries: [{ result: { item: 'byg:emeraldite_shards', count: 1 }, weight: 3 }],
                 empty_weight: 1,
                 rolls: 4
             },
@@ -175,5 +173,4 @@ onEvent('recipes', (event) => {
             id_prefix
         );
     });
-
 });

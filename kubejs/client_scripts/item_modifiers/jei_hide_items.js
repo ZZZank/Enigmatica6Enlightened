@@ -1,7 +1,7 @@
 'use strict';
 onEvent('jei.hide.items', (event) => {
     for (let item of disabledItems) {
-        itemsToHide.push(item)
+        itemsToHide.push(item);
     }
 
     materialsToUnify.forEach((material) => {
