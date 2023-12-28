@@ -47,26 +47,23 @@
         }
     ];
 
-    onEvent('block.right_click', (e) => {
-        const player = e.player;
+    onEvent('block.right_click', (event) => {
+        const player = event.player;
         if (!player || player.fake || player.mainHandItem.empty || !player.crouching) {
             return;
         }
 
         const mainHandItem = player.mainHandItem.id;
+        const target = event.block;
         for (let recipe of recipes) {
-            if (mainHandItem != recipe.holding) {
+            if (mainHandItem != recipe.holding || target.id != recipe.target) {
                 continue;
             }
-            const target = e.block;
-            if (target.id != recipe.target) {
-                continue;
-            }
-            e.cancel();
-            player.playSound('ping:bloop')
-            e.server.runCommandSilent(`particle minecraft:explosion ${target.x} ${target.y} ${target.z}`);
+            player.playSound('ping:bloop');
+            event.server.runCommandSilent(`particle minecraft:explosion ${target.x} ${target.y} ${target.z}`);
             target.set(recipe.output);
             player.mainHandItem.count -= 1;
+            event.cancel();
             return;
         }
     });
