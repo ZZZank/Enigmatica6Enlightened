@@ -11,7 +11,7 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'minecraft:ender_pearl',
-                '#enigmatica:explosives/base',
+                '#enlightened6:explosives/base',
                 'appliedenergistics2:singularity'
             ],
             outputs: ['2x appliedenergistics2:quantum_entangled_singularity'],
