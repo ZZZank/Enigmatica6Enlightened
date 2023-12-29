@@ -1,7 +1,7 @@
 'use strict';
 onEvent('item.tags', (event) => {
     /**
-     * 
+     *
      * @type {{tag:string,firstRemove?:any|any[],thenAdd?:any|any[]}[]}
      * @param tag the tag string WITHOUT `#` prefix, like `forge:ingots` or `why:using/this/tag`
      * @param firstRemove You can use RegEx, tag string, item string, or combine them into an array, or ignore this entry

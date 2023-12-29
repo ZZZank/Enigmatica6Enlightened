@@ -46,7 +46,7 @@ function toMMJson(ingredient) {
         };
     } else if (typeof ingredient.data == 'string') {
         // { chance: 1.0, data: '2x mekanism:solar_neutron_activator' }
-        ingredient.data = toJsonWithCount(ingredient.data)
+        ingredient.data = toJsonWithCount(ingredient.data);
     }
     if (!ingredient.type) {
         ingredient.type = 'masterfulmachinery:items';
