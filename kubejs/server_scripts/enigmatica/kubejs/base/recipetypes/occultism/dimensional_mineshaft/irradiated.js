@@ -38,13 +38,10 @@ onEvent('recipes', (event) => {
         });
         splitArray(unProcessed, 18).forEach((output, index) => {
             let recipe_hint = {
-                inputs: [
-                    '#occultism:miners/irradiated',
-                    'occultism:dimensional_mineshaft'
-                ],
+                inputs: ['#occultism:miners/irradiated', 'occultism:dimensional_mineshaft'],
                 outputs: output,
                 id: id_prefix + 'hint' + index
-            }
+            };
             addGeneralRecipeHint(recipe_hint, event);
         });
     }
