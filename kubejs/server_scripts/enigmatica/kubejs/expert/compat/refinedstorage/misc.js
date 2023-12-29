@@ -4,7 +4,6 @@ onEvent('recipes', (event) => {
         return;
     }
     const id_prefix = 'enlightened6:expert/refinedstorage/misc/';
-    const recipes = [];
 
     const mekInfusing = [
         {
@@ -69,9 +68,5 @@ onEvent('recipes', (event) => {
         );
         // thermal
         fallback_id(event.recipes.thermal.smelter([recipe.output], recipe.inputs), id_prefix);
-    });
-
-    recipes.forEach((recipe) => {
-        event.shapeless(recipe.output, recipe.inputs).id(recipe.id);
     });
 });
