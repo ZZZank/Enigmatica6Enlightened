@@ -96,7 +96,7 @@ function rawItemStr(item, color) {
     let count = item.count > 1 ? `"${item.count}*"` : '""';
     let itemName = '';
     try {
-        itemName = item.getNbt().display.Name;
+        itemName = item.nbt.display.Name;
     } catch (e) {
         itemName = `{"translate":"${item.block ? 'block' : 'item'}.${item.id.replace(':', '.')}"}`;
     }
@@ -119,25 +119,15 @@ function rawItemStr(item, color) {
  * @param {string} str The content of tellraw command
  */
 function tellraw(player, str) {
-    player.server.runCommandSilent(`/tellraw ${player.name} ${str}`);
+    player.server.runCommandSilent('/tellraw ' + player.name + ' ' + str);
 }
 
-function shapedRecipe(result, pattern, key, id) {
-    return { result: result, pattern: pattern, key: key, id: id };
-}
-function shapelessRecipe(result, ingredients, id) {
-    return { result: result, ingredients: ingredients, id: id };
-}
+const unificationBlacklist = [
+    { material: 'quartz', type: 'gem' },
+    { material: 'quartz', type: 'storage_block' }
+];
 
-/**
- *
- * @param {string} material
- * @param {string} type
- * @returns
- */
-function unificationBlacklistEntry(material, type) {
-    return { material: material, type: type };
-}
+
 function entryIsBlacklisted(material, type) {
     for (let blacklist of unificationBlacklist) {
         if (blacklist.material == material && blacklist.type == type) {
@@ -152,7 +142,10 @@ function entryIsBlacklisted(material, type) {
  * @param {Internal.IngredientJS} tag
  */
 function getPreferredItemInTag(tag) {
-    return getItemsInTag(tag).sort((a, b) => compareIndices(a.mod, b.mod, tag))[0] || Item.of(air);
+    if (tag.empty) {
+        return Item.of(air);
+    }
+    return getItemsInTag(tag).sort((a, b) => compareIndices(a.mod, b.mod, tag))[0];
 }
 
 /**
@@ -161,7 +154,7 @@ function getPreferredItemInTag(tag) {
  * @param {number} sizeLimit the max size of spilitted parts of `arr`
  * @returns {T[][]} the spilitted array containing spilitted parts
  */
-function splitArray(arr, sizeLimit) {
+function toPagedArray(arr, sizeLimit) {
     if (sizeLimit <= 0) {
         throw 'Invalid param, `sizeLimit` must be positive number';
     }
@@ -206,11 +199,6 @@ function getStrippedLogFrom(logBlock) {
     }
     return air;
 }
-
-const unificationBlacklist = [
-    unificationBlacklistEntry('quartz', 'gem'),
-    unificationBlacklistEntry('quartz', 'storage_block')
-];
 
 /**
  *

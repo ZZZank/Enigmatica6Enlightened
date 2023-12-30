@@ -126,10 +126,10 @@ onEvent('recipes', (event) => {
                 chance: (recipe.weight / weightSum).toFixed(4)
             };
         });
-        splitArray(unProcessed, 18).forEach((output, index) => {
+        toPagedArray(unProcessed, 18).forEach((page, index) => {
             let recipe_hint = {
                 inputs: ['#occultism:miners/basic_resources', 'occultism:dimensional_mineshaft'],
-                outputs: output,
+                outputs: page,
                 id: id_prefix + 'hint' + index
             };
             addGeneralRecipeHint(recipe_hint, event);
