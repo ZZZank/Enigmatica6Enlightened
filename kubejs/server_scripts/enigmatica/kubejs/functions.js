@@ -127,7 +127,6 @@ const unificationBlacklist = [
     { material: 'quartz', type: 'storage_block' }
 ];
 
-
 function entryIsBlacklisted(material, type) {
     for (let blacklist of unificationBlacklist) {
         if (blacklist.material == material && blacklist.type == type) {
@@ -142,10 +141,11 @@ function entryIsBlacklisted(material, type) {
  * @param {Internal.IngredientJS} tag
  */
 function getPreferredItemInTag(tag) {
-    if (tag.empty) {
+    let items = getItemsInTag(tag);
+    if (items.length == 0) {
         return Item.of(air);
     }
-    return getItemsInTag(tag).sort((a, b) => compareIndices(a.mod, b.mod, tag))[0];
+    return items.sort((a, b) => compareIndices(a.mod, b.mod, tag))[0];
 }
 
 /**

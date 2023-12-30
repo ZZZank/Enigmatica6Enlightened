@@ -6,13 +6,7 @@
 //         return;
 //     }
 
-//     let target = player.lastAttackedEntity
+//     let a = getPreferredItemInTag(Ingredient.of('#forge:gems/iron'))
 
-//     player.tell(target.type)
-//     console.info(target.type)
-//     player.tell(str);
-// });
-
-// onEvent('entity.death', (e) => {
-//     console.info('"' + e.entity.type + '",')
+//     player.tell(a)
 // });
