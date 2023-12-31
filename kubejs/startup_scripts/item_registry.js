@@ -342,28 +342,6 @@ onEvent('item.registry', (event) => {
         }
     }
 
-    let metals = [
-        'aluminum',
-        'cloggrum',
-        'cobalt',
-        'copper',
-        'froststeel',
-        'gold',
-        'iesnium',
-        'iron',
-        'lead',
-        'nebu',
-        'nickel',
-        'osmium',
-        'regalium',
-        'silver',
-        'thallasium',
-        'tin',
-        'uranium',
-        'utherium',
-        'zinc'
-    ];
-
     // prettier-ignore
     const bees = [
         //keep changes mostly synced to "server_scripts/constants/resourcefulbees.js", combVariants constant
@@ -471,6 +449,28 @@ onEvent('item.registry', (event) => {
 
     let metalTypes = ['suffused', 'fulminated', 'levigated', 'sliver'];
 
+    let metals = [
+        'aluminum',
+        'cloggrum',
+        'cobalt',
+        'copper',
+        'froststeel',
+        'gold',
+        'iesnium',
+        'iron',
+        'lead',
+        'nebu',
+        'nickel',
+        'osmium',
+        'regalium',
+        'silver',
+        'thallasium',
+        'tin',
+        'uranium',
+        'utherium',
+        'zinc'
+    ];
+
     metalTypes.forEach((metalType) => {
         metals.forEach((metal) => {
             generalItems.push(`${metalType}_${metal}`);
@@ -509,15 +509,13 @@ onEvent('item.registry', (event) => {
         .group('KubeJS')
         .texture('kubejs:item/magic_lamp')
         .maxStackSize(1)
-        .maxDamage(500)
-        .displayName('Fisher Foliot');
+        .maxDamage(500);
     event
         .create('miner_marid_irradiated')
         .group('KubeJS')
         .texture('kubejs:item/magic_lamp')
         .maxStackSize(1)
-        .maxDamage(50)
-        .displayName('Irradiated Ore Miner Marid');
+        .maxDamage(50);
 
     // Custom Foods
     event
@@ -526,6 +524,5 @@ onEvent('item.registry', (event) => {
         .texture('kubejs:item/meat_ingot')
         .food((food) => {
             food.hunger(8).saturation(0.5).effect('upgrade_aquatic:vibing', 2400, 1, 1.0);
-        })
-        .displayName('Meat Ingot');
+        });
 });
