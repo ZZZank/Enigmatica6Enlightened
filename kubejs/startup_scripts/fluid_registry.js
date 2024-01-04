@@ -3,8 +3,8 @@ onEvent('fluid.registry', (event) => {
     /**
      * @type {{type:string,id:string,color:number,display?:string,still?:string,flowing?:string}[]}
      * @param type Can be `thin`, `thick`, or `custom`
-     * @param display Deprecated, DO NOT USE. Please switch to lang file. 
-     * Tips: For a targeted fluid, its language key is `"fluid.kubejs.{id}"`, 
+     * @param display Deprecated, DO NOT USE. Please switch to lang file.
+     * Tips: For a targeted fluid, its language key is `"fluid.kubejs.{id}"`,
      * and the language key for its bucket item is `"item.kubejs.{id}_bucket"`
      * @param still Valid only when `type` is `custom`
      * @param flowing Valid only when `type` is `custom`

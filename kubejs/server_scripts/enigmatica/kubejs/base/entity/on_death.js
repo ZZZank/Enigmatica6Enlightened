@@ -12,7 +12,7 @@
         // console.log(event.entity.type); // resourcefulbees:clay_bee
         // console.log(event.entity.name); // Clay Bee
 
-        const larvaItem = bee_map[event.entity.type]
+        const larvaItem = bee_map[event.entity.type];
         if (bee_map[event.entity.type]) {
             // https://discord.com/channels/303440391124942858/993995629577633893/994009200034324600
             const larva = event.world.createEntity('item');
