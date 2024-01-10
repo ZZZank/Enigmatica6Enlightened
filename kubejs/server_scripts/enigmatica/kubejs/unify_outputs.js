@@ -20,8 +20,8 @@ onEvent('recipes', (event) => {
                 let tagString = `#forge:${type}s/${material}`;
                 let tag = Ingredient.of(tagString);
                 if (tag.count > 1) {
-                    let prefItem = getPreferredItemInTag(tag);
-                    event.replaceOutput({}, tagString, prefItem);
+                    let prefered = getPreferredItemInTag(tag);
+                    event.replaceOutput(tagString, prefered);
                 }
             }
         });

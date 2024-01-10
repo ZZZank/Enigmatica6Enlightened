@@ -51,6 +51,7 @@ function toMMJson(ingredient) {
     if (!ingredient.type) {
         ingredient.type = 'masterfulmachinery:items';
     }
+    // @ts-ignore
     return ingredient;
 }
 
@@ -74,6 +75,7 @@ function toJsonWithCount(ingredient) {
     } else {
         parsed.item = ingredient;
     }
+    // @ts-ignore
     return parsed;
 }
 
@@ -96,6 +98,7 @@ function rawItemStr(item, color) {
     let count = item.count > 1 ? `"${item.count}*"` : '""';
     let itemName = '';
     try {
+        // @ts-ignore
         itemName = item.nbt.display.Name;
     } catch (e) {
         itemName = `{"translate":"${item.block ? 'block' : 'item'}.${item.id.replace(':', '.')}"}`;
@@ -115,7 +118,7 @@ function rawItemStr(item, color) {
 
 /**
  * run `tellraw` command on a player
- * @param {Internal.PlayerJS} player The target of tellraw command
+ * @param {Internal.PlayerJS<any>} player The target of tellraw command
  * @param {string} str The content of tellraw command
  */
 function tellraw(player, str) {
@@ -127,6 +130,10 @@ const unificationBlacklist = [
     { material: 'quartz', type: 'storage_block' }
 ];
 
+/**
+ * @param {string} material
+ * @param {string} type
+ */
 function entryIsBlacklisted(material, type) {
     for (let blacklist of unificationBlacklist) {
         if (blacklist.material == material && blacklist.type == type) {
@@ -150,9 +157,9 @@ function getPreferredItemInTag(tag) {
 
 /**
  *
- * @param {T[]} arr the array to be splited
+ * @param {any[]} arr the array to be splited
  * @param {number} sizeLimit the max size of spilitted parts of `arr`
- * @returns {T[][]} the spilitted array containing spilitted parts
+ * @returns {any[][]} the spilitted array containing spilitted parts
  */
 function toPagedArray(arr, sizeLimit) {
     if (sizeLimit <= 0) {
@@ -177,6 +184,11 @@ function getItemsInTag(tag) {
     return tag.stacks.toArray();
 }
 
+/**
+ * @param {string} a
+ * @param {string} b
+ * @param {null | string | Internal.IngredientJS} tag
+ */
 function compareIndices(a, b, tag) {
     if (a == b) return 0; // iff a == b, they'll be found at the same position in modPriorities
 
@@ -191,6 +203,10 @@ function compareIndices(a, b, tag) {
     return 0;
 }
 
+/**
+ * Get the stripped variant of targeted log, or `minecraft:air` if not found
+ * @param {string} logBlock The id of targeted log block
+ */
 function getStrippedLogFrom(logBlock) {
     for (let wood of buildWoodVariants) {
         if (wood.logBlock == logBlock) {
@@ -203,7 +219,7 @@ function getStrippedLogFrom(logBlock) {
 /**
  *
  * @param {Internal.ItemStackJS} item
- * @param {Internal.PlayerJS} player
+ * @param {Internal.PlayerJS<any>} player
  * @returns {boolean}
  */
 function playerHas(item, player) {

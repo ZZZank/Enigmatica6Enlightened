@@ -8,6 +8,8 @@
 - (storage module n) + 1 = (n+1)
 - "psimetal" recipe
 - astral mineralis ritual
+- Ethylene(mek) earlier
+- "throw" Divide By Zero Exception
 ```toml
 	[registries.perk_stone_enrichment_ore]
 		#Format: '<tagName>;<integerWeight>' Defines random-weighted ore-selection data. Define block-tags to select from here with associated weight. Specific mods can be blacklisted in the general AstralSorcery config in 'modidOreBlacklist'.
