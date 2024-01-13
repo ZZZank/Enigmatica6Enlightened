@@ -6,7 +6,7 @@
  * @param {string} str : e.g. `an example sTRing`
  * @returns {string}: e.g. `An Exmaple String`
  */
-function titleCase(str) {
+const titleCase = (str) => {
     return str
         .toLowerCase()
         .split(' ')
@@ -19,7 +19,7 @@ function titleCase(str) {
  * @param {{inputs:(string|{type?:string,data:{},chance?:number})[],outputs:(string|{type?:string,data:{},chance?:number})[],id:string}} recipe
  * @param {Internal.RecipeEventJS} event
  */
-function addGeneralRecipeHint(recipe, event) {
+const addGeneralRecipeHint = (recipe, event) => {
     let proc = {
         type: 'masterfulmachinery:machine_process',
         structureId: 'recipe_hint_general_structure',
@@ -37,7 +37,7 @@ function addGeneralRecipeHint(recipe, event) {
  * @param {string|{type?:string,data:string|{},chance?:number}} ingredient
  * @returns {{type:string,data:{},chance?:number}}
  */
-function toMMJson(ingredient) {
+const toMMJson = (ingredient) => {
     if (typeof ingredient == 'string') {
         // '32x kubejs:rough_machine_frame'
         ingredient = {
@@ -60,7 +60,7 @@ function toMMJson(ingredient) {
  * @param {string} ingredient like '3x #forge:grain' or 'minecraft:book'
  * @returns {{tag:string,count:number}|{item:string,count:number}}
  */
-function toJsonWithCount(ingredient) {
+const toJsonWithCount = (ingredient) => {
     let parsed = { count: 1 };
 
     let splited = ingredient.split('x ', 2);
@@ -79,13 +79,9 @@ function toJsonWithCount(ingredient) {
     return parsed;
 }
 
-/**
- *
- * @param {any[]} entries
- * @returns {any}
- */
-function getRandomInList(entries) {
-    return entries[Math.floor(Math.random() * entries.length)];
+// @ts-ignore
+const randomOf = (entries) => {
+    return utils.randomOf(utils.getRandom(), entries)
 }
 
 /**
@@ -93,7 +89,7 @@ function getRandomInList(entries) {
  * @param {string?} color
  * @returns {string}
  */
-function rawItemStr(item, color) {
+const rawItemStr = (item, color) => {
     let colorTag = color ? `,"color":"${color}"` : '';
     let count = item.count > 1 ? `"${item.count}*"` : '""';
     let itemName = '';
@@ -121,7 +117,7 @@ function rawItemStr(item, color) {
  * @param {Internal.PlayerJS<any>} player The target of tellraw command
  * @param {string} str The content of tellraw command
  */
-function tellraw(player, str) {
+const tellraw = (player, str) => {
     player.server.runCommandSilent('/tellraw ' + player.name + ' ' + str);
 }
 
@@ -134,7 +130,7 @@ const unificationBlacklist = [
  * @param {string} material
  * @param {string} type
  */
-function entryIsBlacklisted(material, type) {
+const entryIsBlacklisted = (material, type) => {
     for (let blacklist of unificationBlacklist) {
         if (blacklist.material == material && blacklist.type == type) {
             return true;
@@ -147,7 +143,7 @@ function entryIsBlacklisted(material, type) {
  *
  * @param {Internal.IngredientJS} tag
  */
-function getPreferredItemInTag(tag) {
+const getPreferredItemInTag = (tag) => {
     let items = getItemsInTag(tag);
     if (items.length == 0) {
         return Item.of(air);
@@ -161,7 +157,7 @@ function getPreferredItemInTag(tag) {
  * @param {number} sizeLimit the max size of spilitted parts of `arr`
  * @returns {any[][]} the spilitted array containing spilitted parts
  */
-function toPagedArray(arr, sizeLimit) {
+const toPagedArray = (arr, sizeLimit) => {
     if (sizeLimit <= 0) {
         throw 'Invalid param, `sizeLimit` must be positive number';
     }
@@ -180,7 +176,7 @@ function toPagedArray(arr, sizeLimit) {
  * @param {Internal.IngredientJS} tag
  * @return {Internal.ItemStackJS[]}
  */
-function getItemsInTag(tag) {
+const getItemsInTag = (tag) => {
     return tag.stacks.toArray();
 }
 
@@ -189,7 +185,7 @@ function getItemsInTag(tag) {
  * @param {string} b
  * @param {null | string | Internal.IngredientJS} tag
  */
-function compareIndices(a, b, tag) {
+const compareIndices = (a, b, tag) => {
     if (a == b) return 0; // iff a == b, they'll be found at the same position in modPriorities
 
     for (let mod of modPriorities) {
@@ -207,7 +203,7 @@ function compareIndices(a, b, tag) {
  * Get the stripped variant of targeted log, or `minecraft:air` if not found
  * @param {string} logBlock The id of targeted log block
  */
-function getStrippedLogFrom(logBlock) {
+const getStrippedLogFrom = (logBlock) => {
     for (let wood of buildWoodVariants) {
         if (wood.logBlock == logBlock) {
             return wood.logBlockStripped;
@@ -222,7 +218,7 @@ function getStrippedLogFrom(logBlock) {
  * @param {Internal.PlayerJS<any>} player
  * @returns {boolean}
  */
-function playerHas(item, player) {
+const playerHas = (item, player) => {
     return player.inventory.find(item) != -1;
 }
 
@@ -237,7 +233,7 @@ function playerHas(item, player) {
  * @param {string} tier
  * @returns
  */
-function getLowerTiers(tiers, tier) {
+const getLowerTiers = (tiers, tier) => {
     return tiers.slice(0, tiers.indexOf(tier));
 }
 
@@ -246,7 +242,7 @@ function getLowerTiers(tiers, tier) {
  * @param {string[]} tiers
  * @param {string} tier
  */
-function getNextTier(tiers, tier) {
+const getNextTier = (tiers, tier) => {
     let i = tiers.indexOf(tier);
     if (i == tiers.length - 1) {
         return tier;
@@ -259,7 +255,7 @@ function getNextTier(tiers, tier) {
  * @param {Internal.RecipeJS} recipe
  * @param {string} id_prefix
  */
-function fallback_id(recipe, id_prefix) {
+const fallback_id = (recipe, id_prefix) => {
     if (recipe.path.includes('kjs_')) {
         recipe.serializeJson(); // without this the hashes *will* collide
         recipe.id(id_prefix + 'md5_' + recipe.uniqueId);
