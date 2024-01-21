@@ -1,8 +1,5 @@
 /// <reference path="./internal.d.ts" />
 
-class Text extends text {}
-class Ingredient extends ingredient {}
-
 declare interface AABB {
     static ofBlock(pos: BlockPos): Internal.AxisAlignedBB;
     static ofSize(x: number, y: number, z: number): Internal.AxisAlignedBB;

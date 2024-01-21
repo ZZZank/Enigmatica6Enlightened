@@ -12,7 +12,7 @@ const titleCase = (str) => {
         .split(' ')
         .map((str) => str.charAt(0).toUpperCase() + str.substring(1))
         .join(' ');
-}
+};
 
 /**
  *
@@ -30,7 +30,7 @@ const addGeneralRecipeHint = (recipe, event) => {
     };
 
     event.custom(proc).id(recipe.id);
-}
+};
 
 /**
  * transform String/JSON style ingredient into Masterful Machinery JSON style
@@ -53,7 +53,7 @@ const toMMJson = (ingredient) => {
     }
     // @ts-ignore
     return ingredient;
-}
+};
 
 /**
  * transform string-style ingredient into Masterful Machinery JSON style
@@ -77,12 +77,12 @@ const toJsonWithCount = (ingredient) => {
     }
     // @ts-ignore
     return parsed;
-}
+};
 
 // @ts-ignore
 const randomOf = (entries) => {
-    return utils.randomOf(utils.getRandom(), entries)
-}
+    return Utils.randomOf(Utils.getRandom(), entries);
+};
 
 /**
  * @param {Internal.ItemStackJS} item
@@ -90,27 +90,33 @@ const randomOf = (entries) => {
  * @returns {string}
  */
 const rawItemStr = (item, color) => {
-    let colorTag = color ? `,"color":"${color}"` : '';
-    let count = item.count > 1 ? `"${item.count}*"` : '""';
-    let itemName = '';
+    const count = item.count > 1 ? `${item.count}*` : '';
+    let itemName;
     try {
-        // @ts-ignore
-        itemName = item.nbt.display.Name;
+        //@ts-ignore
+        itemName = JSON.parse(item.getNbt().display.Name);
     } catch (e) {
-        itemName = `{"translate":"${item.block ? 'block' : 'item'}.${item.id.replace(':', '.')}"}`;
+        itemName = { translate: `${item.block ? 'block' : 'item'}.${item.id.replace(':', '.')}` };
     }
-    // we use string instead of Text/TextComponent because KubeJS cannot handle `show_item` properly
-    return `{
-        "translate":"%s[%s]",
-        "with":[${count},${itemName}],
-        "hoverEvent": {
-            "action": "show_item",
-            "contents": {
-                "id": "${item.id}",
-                "count": ${item.count},
-                "tag":"${item.nbtString.replace('"', '\\"')}"
-        }}${colorTag}}`.replace(/\s+/g, '');
-}
+    // not `%s[%s]` because JSON.stringify() seems unable to support multiple elements in an array
+    let rawItem = {
+        translate: count + '[%s]',
+        with: [itemName],
+        hoverEvent: {
+            action: 'show_item',
+            contents: {
+                id: item.id,
+                count: item.count,
+                tag: item.nbtString
+            }
+        }
+    };
+    if (color) {
+        // @ts-ignore
+        rawItem.color = color;
+    }
+    return JSON.stringify(rawItem);
+};
 
 /**
  * run `tellraw` command on a player
@@ -119,7 +125,7 @@ const rawItemStr = (item, color) => {
  */
 const tellraw = (player, str) => {
     player.server.runCommandSilent('/tellraw ' + player.name + ' ' + str);
-}
+};
 
 const unificationBlacklist = [
     { material: 'quartz', type: 'gem' },
@@ -137,7 +143,7 @@ const entryIsBlacklisted = (material, type) => {
         }
     }
     return false;
-}
+};
 
 /**
  *
@@ -149,7 +155,7 @@ const getPreferredItemInTag = (tag) => {
         return Item.of(air);
     }
     return items.sort((a, b) => compareIndices(a.mod, b.mod, tag))[0];
-}
+};
 
 /**
  *
@@ -169,7 +175,7 @@ const toPagedArray = (arr, sizeLimit) => {
     }
     result.push(unProcessed);
     return result;
-}
+};
 
 /**
  *
@@ -177,8 +183,8 @@ const toPagedArray = (arr, sizeLimit) => {
  * @return {Internal.ItemStackJS[]}
  */
 const getItemsInTag = (tag) => {
-    return tag.stacks.toArray();
-}
+    return tag.getStacks().toArray();
+};
 
 /**
  * @param {string} a
@@ -197,7 +203,7 @@ const compareIndices = (a, b, tag) => {
         '[' + a + ', ' + b + '] were both unaccounted for in mod unification' + (tag ? ' for ' + tag : '!')
     );
     return 0;
-}
+};
 
 /**
  * Get the stripped variant of targeted log, or `minecraft:air` if not found
@@ -210,7 +216,7 @@ const getStrippedLogFrom = (logBlock) => {
         }
     }
     return air;
-}
+};
 
 /**
  *
@@ -220,7 +226,7 @@ const getStrippedLogFrom = (logBlock) => {
  */
 const playerHas = (item, player) => {
     return player.inventory.find(item) != -1;
-}
+};
 
 // lt  = .slice(0, index)
 // lte = .slice(0, index + 1)
@@ -235,7 +241,7 @@ const playerHas = (item, player) => {
  */
 const getLowerTiers = (tiers, tier) => {
     return tiers.slice(0, tiers.indexOf(tier));
-}
+};
 
 /**
  *
@@ -248,7 +254,7 @@ const getNextTier = (tiers, tier) => {
         return tier;
     }
     return tiers[i + 1];
-}
+};
 
 /**
  * transplant the md5 from `<type's mod>:kjs_<hash>` onto the supplied prefix
@@ -260,4 +266,4 @@ const fallback_id = (recipe, id_prefix) => {
         recipe.serializeJson(); // without this the hashes *will* collide
         recipe.id(id_prefix + 'md5_' + recipe.uniqueId);
     }
-}
+};
