@@ -18,12 +18,12 @@ onEvent('recipes', (event) => {
         event.remove({ output: itemRS });
         recipes.push(
             {
-                inputs: itemAE,
+                inputs: [itemAE],
                 output: itemRS,
                 id: `${id_prefix}ae_rs/${id}`
             },
             {
-                inputs: itemRS,
+                inputs: [itemRS],
                 output: itemAE,
                 id: `${id_prefix}rs_ae/${id}`
             }

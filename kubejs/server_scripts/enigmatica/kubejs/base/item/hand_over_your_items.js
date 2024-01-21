@@ -20,7 +20,8 @@ onEvent('item.entity_interact', (event) => {
     ) {
         return;
     }
-    const target = event.target;
+    //@ts-ignore
+    const /** @type {Internal.PlayerJS} */ target = event.target;
     // const target = player;
 
     if (!target || !target.player) {

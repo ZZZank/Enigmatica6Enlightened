@@ -8,9 +8,8 @@
  */
 const titleCase = (str) => {
     return str
-        .toLowerCase()
         .split(' ')
-        .map((str) => str.charAt(0).toUpperCase() + str.substring(1))
+        .map((str) => str.charAt(0).toUpperCase() + str.substring(1).toLowerCase())
         .join(' ');
 };
 
@@ -20,7 +19,7 @@ const titleCase = (str) => {
  * @param {Internal.RecipeEventJS} event
  */
 const addGeneralRecipeHint = (recipe, event) => {
-    let proc = {
+    const proc = {
         type: 'masterfulmachinery:machine_process',
         structureId: 'recipe_hint_general_structure',
         controllerId: 'recipe_hint_general',
@@ -79,8 +78,11 @@ const toJsonWithCount = (ingredient) => {
     return parsed;
 };
 
-// @ts-ignore
+/**
+ * @param {any[]|Internal.Collection<any>} entries
+ */
 const randomOf = (entries) => {
+    // @ts-ignore
     return Utils.randomOf(Utils.getRandom(), entries);
 };
 
@@ -99,7 +101,7 @@ const rawItemStr = (item, color) => {
         itemName = { translate: `${item.block ? 'block' : 'item'}.${item.id.replace(':', '.')}` };
     }
     // not `%s[%s]` because JSON.stringify() seems unable to support multiple elements in an array
-    let rawItem = {
+    const rawItem = {
         translate: count + '[%s]',
         with: [itemName],
         hoverEvent: {
@@ -127,12 +129,8 @@ const tellraw = (player, str) => {
     player.server.runCommandSilent('/tellraw ' + player.name + ' ' + str);
 };
 
-const unificationBlacklist = [
-    { material: 'quartz', type: 'gem' },
-    { material: 'quartz', type: 'storage_block' }
-];
-
 /**
+ * @see unificationBlacklist
  * @param {string} material
  * @param {string} type
  */
@@ -146,7 +144,8 @@ const entryIsBlacklisted = (material, type) => {
 };
 
 /**
- *
+ * get the most prefered item in a tag based on priorities from variable `modPriorities`
+ * @see modPriorities
  * @param {Internal.IngredientJS} tag
  */
 const getPreferredItemInTag = (tag) => {
@@ -180,22 +179,20 @@ const maxOf = (list, comparator) => {
 
 /**
  *
- * @param {any[]} arr the array to be splited
- * @param {number} sizeLimit the max size of spilitted parts of `arr`
- * @returns {any[][]} the spilitted array containing spilitted parts
+ * @param {any[]} arr the array to be splited into "pages"
+ * @param {number} pageSize the max size of spilitted parts of `arr`
+ * @returns {any[][]} the paged array containing spilitted parts
  */
-const toPagedArray = (arr, sizeLimit) => {
-    if (sizeLimit <= 0) {
-        throw 'Invalid param, `sizeLimit` must be positive number';
+const toPagedArray = (arr, pageSize) => {
+    if (pageSize <= 0) {
+        throw 'Invalid param, `pageSize` must be positive number';
     }
-    let unProcessed = arr.slice(0);
-    let result = [];
-    while (unProcessed.length > sizeLimit) {
-        result.push(unProcessed.slice(0, sizeLimit));
-        unProcessed = unProcessed.slice(sizeLimit);
+    const paged = [];
+    for (let i = 0; i < arr.length; i += pageSize) {
+        let end = JavaMath.min(i + pageSize, arr.length);
+        paged.push(arr.slice(i, end));
     }
-    result.push(unProcessed);
-    return result;
+    return paged;
 };
 
 /**
