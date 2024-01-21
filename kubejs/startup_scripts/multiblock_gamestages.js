@@ -32,7 +32,7 @@ onEvent('ie.multiblock.form', (event) => {
     if (stage && !event.getEntity().stages.has(stage)) {
         event.cancel();
         if (!event.getEntity().getServer()) {
-            let error_message = `Invalid structure or missing gamestage. Double check the structure and/or obtain the appropriate Machinery Schematic to be able to form this multiblock.`;
+            let error_message = Text.translate('desc.enigmatica.base.ie_multiblock_error');
             event.getEntity().tell(error_message);
         }
     }
