@@ -11,7 +11,13 @@ onEvent('recipes', (event) => {
                 type: 'ITEM',
                 id: 'pneumaticcraft:reinforced_chest',
                 amount: 1,
-                nbt: `{display:{Name:'[{"text":"Atum Mineral Survey"}]',Lore:['[{"text":"A collection of minerals from Atum.","color":"gold"}]']},BlockEntityTag:{LootTable:"enigmatica:chests/amadron_mineral_survey_atum_combo"}}`
+                nbt: JSON.stringify({
+                    display: {
+                        Name: { translate: 'desc.enigmatica.amadron.atum_mineral' },
+                        Lore: [{ translate: 'desc.enigmatica.amadron.atum_mineral.lore', color: 'gold' }]
+                    },
+                    BlockEntityTag: { LootTable: 'enigmatica:chests/amadron_mineral_survey_atum_combo' }
+                })
             },
             level: 0,
             maxStock: 5,
@@ -25,7 +31,13 @@ onEvent('recipes', (event) => {
                 type: 'ITEM',
                 id: 'pneumaticcraft:reinforced_chest',
                 amount: 1,
-                nbt: `{display:{Name:'[{"text":"Undergarden Mineral Survey"}]',Lore:['[{"text":"A collection of minerals from the Undergarden.","color":"gold"}]']},BlockEntityTag:{LootTable:"enigmatica:chests/amadron_mineral_survey_undergarden_combo"}}`
+                nbt: JSON.stringify({
+                    display: {
+                        Name: { translate: 'desc.enigmatica.amadron.undergarden_mineral' },
+                        Lore: [{ translate: 'desc.enigmatica.amadron.undergarden_mineral.lore', color: 'gold' }]
+                    },
+                    BlockEntityTag: { LootTable: 'enigmatica:chests/amadron_mineral_survey_undergarden_combo' }
+                })
             },
             level: 0,
             maxStock: 5,
@@ -39,7 +51,13 @@ onEvent('recipes', (event) => {
                 type: 'ITEM',
                 id: 'pneumaticcraft:reinforced_chest',
                 amount: 1,
-                nbt: `{display:{Name:'[{"text":"Nether Botanical Survey"}]',Lore:['[{"text":"A collection of botanical samples from the Nether.","color":"gold"}]']},BlockEntityTag:{LootTable:"enigmatica:chests/amadron_botanical_survey_nether_combo"}}`
+                nbt: JSON.stringify({
+                    display: {
+                        Name: { translate: 'desc.enigmatica.amadron.nether_botanical' },
+                        Lore: [{ translate: 'desc.enigmatica.amadron.nether_botanical.lore', color: 'gold' }]
+                    },
+                    BlockEntityTag: { LootTable: 'enigmatica:chests/amadron_botanical_survey_nether_combo' }
+                })
             },
             level: 0,
             maxStock: 5,
@@ -53,7 +71,13 @@ onEvent('recipes', (event) => {
                 type: 'ITEM',
                 id: 'pneumaticcraft:reinforced_chest',
                 amount: 1,
-                nbt: `{display:{Name:'[{"text":"End Botanical Survey"}]',Lore:['[{"text":"A collection of botanical samples from the End.","color":"gold"}]']},BlockEntityTag:{LootTable:"enigmatica:chests/amadron_botanical_survey_end_combo"}}`
+                nbt: JSON.stringify({
+                    display: {
+                        Name: { translate: 'desc.enigmatica.amadron.end_botanical' },
+                        Lore: [{ translate: 'desc.enigmatica.amadron.end_botanical.lore', color: 'gold' }]
+                    },
+                    BlockEntityTag: { LootTable: 'enigmatica:chests/amadron_botanical_survey_end_combo' }
+                })
             },
             level: 0,
             maxStock: 5,
@@ -67,7 +91,13 @@ onEvent('recipes', (event) => {
                 type: 'ITEM',
                 id: 'pneumaticcraft:reinforced_chest',
                 amount: 1,
-                nbt: `{display:{Name:'[{"text":"The End Mineral Survey"}]',Lore:['[{"text":"A collection of minerals from the The End.","color":"gold"}]']},BlockEntityTag:{LootTable:"enigmatica:chests/amadron_mineral_survey_the_end_combo"}}`
+                nbt: JSON.stringify({
+                    display: {
+                        Name: { translate: 'desc.enigmatica.amadron.end_mineral' },
+                        Lore: [{ translate: 'desc.enigmatica.amadron.end_mineral.lore', color: 'gold' }]
+                    },
+                    BlockEntityTag: { LootTable: 'enigmatica:chests/amadron_mineral_survey_the_end_combo' }
+                })
             },
             level: 0,
             maxStock: 5,
