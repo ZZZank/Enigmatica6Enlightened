@@ -515,9 +515,9 @@ declare class Item extends Document.Object {
     static clearListCache(): void;
     static getList(): Internal.ListJS;
     static of(in_: Internal.ItemStackJS_): Internal.ItemStackJS;
-    static of(in_: Internal.ItemStackJS_, count: number, nbt: Internal.CompoundNBT): Internal.ItemStackJS;
+    static of(in_: Internal.ItemStackJS_, count: number, nbt: Internal.CompoundNBT_): Internal.ItemStackJS;
     static of(in_: Internal.ItemStackJS_, count: number): Internal.ItemStackJS;
-    static of(in_: Internal.ItemStackJS_, tag: Internal.CompoundNBT): Internal.ItemStackJS;
+    static of(in_: Internal.ItemStackJS_, tag: Internal.CompoundNBT_): Internal.ItemStackJS;
     static getEmpty(): Internal.ItemStackJS;
     static getTypeList(): Internal.ListJS;
     static getItem(id: ResourceLocation_): Internal.Item;
@@ -15075,7 +15075,7 @@ declare namespace Internal {
          */
         protected constructor();
     }
-    type CompoundNBT_ = CompoundNBT;
+    type CompoundNBT_ = CompoundNBT | {};
     class VertexFormatElement$Type extends Internal.Enum<Internal.VertexFormatElement$Type> {
         func_177395_a(): number;
         func_177397_c(): number;
@@ -46332,7 +46332,7 @@ declare namespace Internal {
         toJson(): Internal.JsonElement;
         darkGray(): Internal.Text;
         insertion(value: string): Internal.Text;
-        color(c: dev.latvian.mods.rhino.mod.util.color.Color): Internal.Text;
+        color(c: dev.latvian.mods.rhino.mod.util.color.Color_): Internal.Text;
         yellow(): Internal.Text;
         darkBlue(): Internal.Text;
         gold(): Internal.Text;
@@ -53155,7 +53155,7 @@ declare namespace dev.latvian.mods.rhino.mod.util.color {
         getSerializeKJS(): string;
         specialEquals(o: any, shallow: boolean): boolean;
     }
-    type Color_ = Color;
+    type Color_ = Color | string;
 }
 declare namespace net.minecraftforge.fluids {
     class FluidStack extends Document.Object {

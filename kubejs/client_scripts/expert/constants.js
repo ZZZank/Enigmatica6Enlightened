@@ -1,8 +1,6 @@
 // priority: 1001
 'use strict';
 
-const isAE2Loaded = Platform.isLoaded('appliedenergistics2');
-
 const disabledItemsAE = [
     'appliedenergistics2:nether_quartz_dust',
     'appliedenergistics2:fluix_dust',
