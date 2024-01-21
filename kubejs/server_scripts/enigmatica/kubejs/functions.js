@@ -154,7 +154,28 @@ const getPreferredItemInTag = (tag) => {
     if (items.length == 0) {
         return Item.of(air);
     }
-    return items.sort((a, b) => compareIndices(a.mod, b.mod, tag))[0];
+    return maxOf(items, (a, b) => compareIndices(a.mod, b.mod, tag));
+};
+
+/**
+ *
+ * @param {any[]} list
+ * @param {null|((a:any,b:any)=>number)} comparator
+ */
+const maxOf = (list, comparator) => {
+    if (list.length == 0) {
+        return null;
+    }
+    if (!comparator) {
+        comparator = (a, b) => a - b;
+    }
+    let targetIndex = 0;
+    for (let i = 1; i < list.length; i++) {
+        if (comparator(list[i], list[targetIndex]) > 0) {
+            targetIndex = i;
+        }
+    }
+    return list[targetIndex];
 };
 
 /**
