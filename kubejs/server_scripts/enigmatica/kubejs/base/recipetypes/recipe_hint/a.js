@@ -25,7 +25,7 @@ onEvent('server.datapack.first', (event) => {
         .concat(new CMGrid(5, 1, 'in', 'slot').build())
         .concat(new CMGrid(9, 3, 'out', 'slot').offset(0, 40).build());
 
-    event.addJson('enligntened6:machines/recipe_hint.json', {
+    event.addJson('enlightened6:machines/recipe_hint.json', {
         name: {
             text: 'Recipe Hint',
             color: 'green'

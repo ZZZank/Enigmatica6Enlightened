@@ -153,7 +153,9 @@ const getPreferredItemInTag = (tag) => {
     if (items.length == 0) {
         return Item.of(air);
     }
-    return maxOf(items, (a, b) => compareIndices(a.mod, b.mod, tag));
+    //use "max" instead of "sorting", to decrease time complexity from O(n*log(n)) to O(n)
+    //being "bigger" here means having smaller index, which means -1, so there's an `-`
+    return maxOf(items, (a, b) => -compareIndices(a.mod, b.mod, tag));
 };
 
 /**

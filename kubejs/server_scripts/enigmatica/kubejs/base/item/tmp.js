@@ -6,7 +6,15 @@
 //         return;
 //     }
 
-//     let a = getPreferredItemInTag(Ingredient.of('#forge:gems/iron'))
+//     let a = Item.of('pneumaticcraft:reinforced_chest', JSON.stringify({
+//         display: {
+//             Name: '[{"translate":"desc.enigmatica.amadron.atum_mineral"}]',
+//             Lore: ['[{"translate":"desc.enigmatica.amadron.atum_mineral.lore","color":"gold"}]']
+//         },
+//         BlockEntityTag: { LootTable: 'enigmatica:chests/amadron_mineral_survey_atum_combo' }
+//     }));
 
-//     player.tell(a)
+//     player.give(a);
+
+//     player.tell(a);
 // });
