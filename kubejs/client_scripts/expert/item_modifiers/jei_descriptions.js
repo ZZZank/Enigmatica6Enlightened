@@ -62,11 +62,11 @@ onEvent('jei.information', (event) => {
                 /powah:energy_cable_/,
                 'engineersdecor:factory_placer'
             ],
-            text: [`descriptions.enigmatica.base.disabled_please_report`]
+            text: [`descriptions.en6e.base.disabled_please_report`]
         },
         {
-            items: itemsToRemoveAE,
-            text: [`descriptions.enigmatica.base.disabled_please_report`]
+            items: disabledItemsAE,
+            text: [`descriptions.en6e.base.disabled_please_report`]
         }
     ];
 
