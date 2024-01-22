@@ -63,6 +63,10 @@ onEvent('jei.information', (event) => {
                 'engineersdecor:factory_placer'
             ],
             text: [`descriptions.enigmatica.base.disabled_please_report`]
+        },
+        {
+            items: itemsToRemoveAE,
+            text: [`descriptions.enigmatica.base.disabled_please_report`]
         }
     ];
 

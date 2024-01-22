@@ -9,12 +9,9 @@ onEvent('jei.hide.items', (event) => {
         /darkutils:export_plate/,
         /integrateddynamics:energy_battery/,
         /powah:energy_cable_/
-    ];
-    items.forEach((entry) => {
-        event.hide(entry);
-    });
+    ].concat(disabledItemsAE);
 
-    disabledItemsAE.forEach((entry) => {
+    items.forEach((entry) => {
         event.hide(entry);
     });
 });
