@@ -7,9 +7,7 @@ onEvent('player.logged_in', (event) => {
 
     if (!player.stages.has(startingItemsGameStage)) {
         player.give('ftbquests:book');
-        player.give(
-            randomOf(['waystones:waystone', 'waystones:mossy_waystone', 'waystones:sandy_waystone'])
-        );
+        player.give(randomOf(['waystones:waystone', 'waystones:mossy_waystone', 'waystones:sandy_waystone']));
 
         player.stages.add(startingItemsGameStage);
     }
