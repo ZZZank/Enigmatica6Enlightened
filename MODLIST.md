@@ -177,6 +177,7 @@
   * [LostTrinkets-1.16.5-0.1.27.jar](https://www.curseforge.com/minecraft/mc-mods/lost-trinkets/files/3242497) (by [owmii](https://www.curseforge.com/members/owmii/projects))
   * [mcw-bridges-2.1.0-mc1.16.5forge.jar](https://www.curseforge.com/minecraft/mc-mods/macaws-bridges/files/4599793) (by [sketch_macaw](https://www.curseforge.com/members/sketch_macaw/projects))
   * [mcw-doors-1.1.0forge-mc1.16.5.jar](https://www.curseforge.com/minecraft/mc-mods/macaws-doors/files/4649900) (by [sketch_macaw](https://www.curseforge.com/members/sketch_macaw/projects))
+  * [mcw-fences-1.0.7-mc1.16.5forge.jar](https://www.curseforge.com/minecraft/mc-mods/macaws-fences-and-walls/files/4203536) (by [sketch_macaw](https://www.curseforge.com/members/sketch_macaw/projects))
   * [mcw-trapdoors-1.1.2-mc1.16.5forge.jar](https://www.curseforge.com/minecraft/mc-mods/macaws-trapdoors/files/4841541) (by [sketch_macaw](https://www.curseforge.com/members/sketch_macaw/projects))
   * [mcw-windows-2.2.1-mc1.16.5forge.jar](https://www.curseforge.com/minecraft/mc-mods/macaws-windows/files/4961131) (by [sketch_macaw](https://www.curseforge.com/members/sketch_macaw/projects))
   * [magicfeather-1.16.2-3.2.0.jar](https://www.curseforge.com/minecraft/mc-mods/magic-feather/files/3224434) (by [Ephys](https://www.curseforge.com/members/ephys/projects))
