@@ -45,7 +45,12 @@ onEvent('recipes', (event) => {
             id: id_prefix + 'nautilus'
         },
         {
-            target: ['ars_nouveau:ritual_wilden_summon'],
+            target: [
+                'ars_nouveau:ritual_wilden_summon',
+                'ars_nouveau:wilden_horn',
+                'ars_nouveau:wilden_wing',
+                'ars_nouveau:wilden_spike'
+            ],
             output: ['ars_nouveau:wilden_tribute'],
             id: id_prefix + 'wilden_summon'
         },
