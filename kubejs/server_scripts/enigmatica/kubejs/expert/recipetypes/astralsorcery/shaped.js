@@ -19,6 +19,18 @@ onEvent('recipes', (event) => {
 
     const recipes = [
         {
+            output: Item.of('astralsorcery:celestial_gateway', 2, '{astralsorcery:{}}'),
+            pattern: ['ABA', 'ACA', 'DED'],
+            key: {
+                A: 'atum:black_stained_crystal_glass_pane',
+                B: 'botania:light_relay',
+                C: '#waystones:waystone',
+                D: 'emendatusenigmatica:brass_plate',
+                E: 'astralsorcery:marble_runed'
+            },
+            id: id_prefix + 'celestial_gateway'
+        },
+        {
             output: 'astralsorcery:linking_tool',
             pattern: [' CD', ' AC', 'AB '],
             key: {
