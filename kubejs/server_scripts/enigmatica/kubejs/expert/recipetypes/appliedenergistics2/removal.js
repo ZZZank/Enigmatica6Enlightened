@@ -12,6 +12,7 @@ onEvent('recipes', (event) => {
 
     //Remove a recipe by id
     const recipeIDs = [
+        'appliedenergistics2:misc/meteors_sky_compass',
         'appliedenergistics2:decorative/fluix_block_pure',
         'appliedenergistics2:decorative/certus_quartz_block_pure',
         'appliedenergistics2:network/cells/storage_components_cell_1k_part',
