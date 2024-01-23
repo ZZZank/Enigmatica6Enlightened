@@ -1,13 +1,14 @@
 'use strict';
 onEvent('fluid.registry', (event) => {
     /**
-     * @type {{type:string,id:string,color:number,display?:string,still?:string,flowing?:string}[]}
+     * @type {{type:string,id:string,color:number,display?:string,still?:string,flowing?:string,additional?:(i:Internal.FluidBuilder)=>void}[]}
      * @param type Can be `thin`, `thick`, or `custom`
      * @param display Deprecated, DO NOT USE. Please switch to lang file.
      * Tips: For a targeted fluid, its language key is `"fluid.kubejs.{id}"`,
      * and the language key for its bucket item is `"item.kubejs.{id}_bucket"`
      * @param still Valid only when `type` is `custom`
      * @param flowing Valid only when `type` is `custom`
+     * @param additional additional steps to execute. Valid only when `type` is `custom`
      */
     const generalFluids = [
         {
@@ -134,6 +135,9 @@ onEvent('fluid.registry', (event) => {
                 .textureStill(fluid.still)
                 .textureFlowing(fluid.flowing)
                 .bucketColor(fluid.color);
+            if (fluid.additional) {
+                fluid.additional(builder);
+            }
         } else {
             console.error('Invalid fluid registry type: ' + fluid.type);
         }
