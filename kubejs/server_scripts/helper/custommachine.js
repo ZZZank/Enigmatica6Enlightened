@@ -5,7 +5,7 @@
  *
  * @param {number} column Number of slots per row
  * @param {number} row Number of slots per column
- * @param {string} prefix Prefix of slot ID
+ * @param {string} prefix Prefix of slot ID. Actual ID will be `{prefix}_{index}`
  * @param {string} type Type of slots, like `item`. Actual slot type will be `custommachinery:{type}`
  */
 function CMGrid(column, row, prefix, type) {

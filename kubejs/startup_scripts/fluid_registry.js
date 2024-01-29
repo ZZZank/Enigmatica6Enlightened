@@ -8,7 +8,7 @@ onEvent('fluid.registry', (event) => {
      * and the language key for its bucket item is `"item.kubejs.{id}_bucket"`
      * @param still Valid only when `type` is `custom`
      * @param flowing Valid only when `type` is `custom`
-     * @param additional additional steps to execute. Valid only when `type` is `custom`
+     * @param additional additional steps to execute.
      */
     const generalFluids = [
         {
@@ -135,11 +135,11 @@ onEvent('fluid.registry', (event) => {
                 .textureStill(fluid.still)
                 .textureFlowing(fluid.flowing)
                 .bucketColor(fluid.color);
-            if (fluid.additional) {
-                fluid.additional(builder);
-            }
         } else {
             console.error('Invalid fluid registry type: ' + fluid.type);
+        }
+        if (fluid.additional) {
+            fluid.additional(builder);
         }
         if (fluid.display) {
             console.warn(

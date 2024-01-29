@@ -2,9 +2,9 @@
 
 onEvent('item.tooltip', (event) => {
     /**
-     * @type {{target:Internal.IngredientJS_,execute:(arg0: Internal.ItemStackJS, arg1: boolean, arg2: Internal.List<any>) => void}[]}
+     * @type {{target:Internal.IngredientJS_,handler:(item:Internal.ItemStackJS,isAdvanced:boolean,tooltips:Internal.List<any>) => void}[]}
      * @param target Item(s) you want to add/modify tooltip(s) for
-     * @param execute What to do for targeted item(s)
+     * @param handler What to do for targeted item(s)
      */
     const recipes = [
         {
@@ -14,7 +14,7 @@ onEvent('item.tooltip', (event) => {
                 'kubejs:epic_lootbox',
                 'kubejs:legendary_lootbox'
             ],
-            execute: (item, isAdvanced, tooltipList) => {
+            handler: (item, isAdvanced, tooltipList) => {
                 if (item.hasNBT()) {
                     // @ts-ignore
                     let mod = item.nbt.mod;
@@ -27,6 +27,6 @@ onEvent('item.tooltip', (event) => {
     ];
 
     for (let recipe of recipes) {
-        event.addAdvanced(recipe.target, recipe.execute);
+        event.addAdvanced(recipe.target, recipe.handler);
     }
 });

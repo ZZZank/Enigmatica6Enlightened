@@ -19,30 +19,27 @@ const titleCase = (str) => {
  * @param {Internal.RecipeEventJS} event
  */
 const addGeneralRecipeHint = (recipe, event) => {
-    const proc = {
-        type: 'masterfulmachinery:machine_process',
-        structureId: 'recipe_hint_general_structure',
-        controllerId: 'recipe_hint_general',
-        outputs: recipe.outputs.map((output) => toMMJson(output)),
-        inputs: recipe.inputs.map((input) => toMMJson(input)),
-        ticks: 1
-    };
-
-    event.custom(proc).id(recipe.id);
+    event
+        .custom({
+            type: 'masterfulmachinery:machine_process',
+            structureId: 'recipe_hint_general_structure',
+            controllerId: 'recipe_hint_general',
+            outputs: recipe.outputs.map((output) => toMMJson(output)),
+            inputs: recipe.inputs.map((input) => toMMJson(input)),
+            ticks: 10
+        })
+        .id(recipe.id);
 };
 
 /**
- * transform String/JSON style ingredient into Masterful Machinery JSON style
+ * transform String/JSON style ingredient into Masterful Machinery JSON
  * @param {string|{type?:string,data:string|{},chance?:number}} ingredient
  * @returns {{type:string,data:{},chance?:number}}
  */
 const toMMJson = (ingredient) => {
     if (typeof ingredient == 'string') {
         // '32x kubejs:rough_machine_frame'
-        ingredient = {
-            type: 'masterfulmachinery:items',
-            data: toJsonWithCount(ingredient)
-        };
+        ingredient = { data: toJsonWithCount(ingredient) };
     } else if (typeof ingredient.data == 'string') {
         // { chance: 1.0, data: '2x mekanism:solar_neutron_activator' }
         ingredient.data = toJsonWithCount(ingredient.data);
@@ -55,14 +52,14 @@ const toMMJson = (ingredient) => {
 };
 
 /**
- * transform string-style ingredient into Masterful Machinery JSON style
+ * transform string-style ingredient into JSON style
  * @param {string} ingredient like '3x #forge:grain' or 'minecraft:book'
- * @returns {{tag:string,count:number}|{item:string,count:number}}
+ * @returns {{tag:string,item:null,count:number}|{tag:null,item:string,count:number}}
  */
 const toJsonWithCount = (ingredient) => {
-    let parsed = { count: 1 };
+    const parsed = { tag: null, item: null, count: 1 };
 
-    let splited = ingredient.split('x ', 2);
+    const splited = ingredient.split('x ', 2);
     if (splited.length != 1) {
         // "3x kubejs:no" -> ["3", "kubejs:no"]
         parsed.count = parseInt(splited[0]);
@@ -74,7 +71,6 @@ const toJsonWithCount = (ingredient) => {
     } else {
         parsed.item = ingredient;
     }
-    // @ts-ignore
     return parsed;
 };
 
@@ -161,7 +157,7 @@ const getPreferredItemInTag = (tag) => {
 /**
  *
  * @param {any[]} list
- * @param {null|((a:any,b:any)=>number)} comparator
+ * @param {null|((a:any,b:any)=>number)} comparator If not specified, will use `(a, b) => a - b`
  */
 const maxOf = (list, comparator) => {
     if (list.length == 0) {
@@ -240,7 +236,7 @@ const getStrippedLogFrom = (logBlock) => {
 
 /**
  *
- * @param {Internal.ItemStackJS} item
+ * @param {Internal.IngredientJS_} item
  * @param {Internal.PlayerJS<any>} player
  * @returns {boolean}
  */
