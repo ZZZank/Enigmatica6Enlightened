@@ -6,7 +6,7 @@ declare const global: {
     jeiRuntime: Internal.JeiRuntime;
     isExpertMode: boolean;
     onReload: () => {/**@file {kubejs\startup_scripts\reload.js} */};
-    packmode: string;
+    packmode: "expert" | "normal";
     isNormalMode: boolean;
 };
 declare const TOOL_TYPE_SHOVEL: ToolType;
