@@ -120,15 +120,11 @@ onEvent('recipes', (event) => {
     RecipeHint: {
         let weightSum = 0;
         recipes.forEach((recipe) => (weightSum += recipe.weight));
-        let unProcessed = recipes.map((recipe) => {
-            return {
-                data: { item: recipe.output, count: 1 },
-                chance: (recipe.weight / weightSum).toFixed(4)
-            };
-        });
-        toPagedArray(unProcessed, 18).forEach((page, index) => {
+        let unProcessed = recipes.map((recipe) => Item.of(recipe.output).chance(recipe.weight / weightSum));
+        toPagedArray(unProcessed, 15).forEach((page, index) => {
             let recipe_hint = {
-                inputs: ['#occultism:miners/basic_resources', 'occultism:dimensional_mineshaft'],
+                inputs: ['#occultism:miners/basic_resources'],
+                catalyst: 'occultism:dimensional_mineshaft',
                 outputs: page,
                 id: id_prefix + 'hint' + index
             };
