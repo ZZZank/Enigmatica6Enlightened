@@ -2,19 +2,6 @@
 'use strict';
 
 /**
- * Gets a ItemStackJS with its `chance` property displayed in its name, or itself if
- * its chance is not specified
- * @param {Internal.ItemStackJS} item
- */
-const withChanceInName = (item) => {
-    const chance = item.getChance();
-    if (!chance) {
-        return item;
-    }
-    return item.withName(item.name.append(text.of(' ' + (chance * 100).toPrecision(3) + '%').gray()));
-};
-
-/**
  *
  * @param {string} str : e.g. `an example sTRing`
  * @returns {string}: e.g. `An Exmaple String`
@@ -25,59 +12,6 @@ const titleCase = (str) => {
         .map((str) => str.charAt(0).toUpperCase() + str.substring(1).toLowerCase())
         .join(' ');
 };
-
-/**
- *
- * @param {{inputs:(string|Internal.ItemStackJS)[],catalyst:(string|Internal.ItemStackJS),outputs:Internal.ItemStackJS_[],id:string}} recipe
- * @param {Internal.RecipeEventJS} event
- */
-function addGeneralRecipeHint(recipe, event) {
-    //pre-processing for chance display
-    if (typeof recipe.catalyst != 'string') {
-        recipe.catalyst = withChanceInName(recipe.catalyst);
-    }
-    recipe.inputs = recipe.inputs.map((input) =>
-        typeof input == 'string' ? input : withChanceInName(input)
-    );
-    recipe.outputs = recipe.outputs.map(Item.of).map(withChanceInName);
-    //actual starting point
-    const builder = event.recipes.custommachinery
-        .custom_machine('enlightened6:recipe_hint_general', 123456)
-        .jei();
-    //catalyst
-    if (recipe.catalyst === '') {
-        builder.requireItem(Item.of(air), 'catalyst');
-    } else if (typeof recipe.catalyst == 'string') {
-        let parsed = toJsonWithCount(recipe.catalyst);
-        if (parsed.tag) {
-            builder.requireItemTag(parsed.tag, parsed.count, 'catalyst');
-        } else {
-            builder.requireItem(Item.of(parsed.item, parsed.count), 'catalyst');
-        }
-    } else {
-        builder.requireItem(recipe.catalyst);
-    }
-    //inputs
-    for (let input of recipe.inputs) {
-        if (typeof input == 'string') {
-            let parsed = toJsonWithCount(input);
-            if (parsed.tag) {
-                builder.requireItemTag(parsed.tag, parsed.count);
-            } else {
-                builder.requireItem(Item.of(parsed.item, parsed.count));
-                builder.requireBlock.bind(null);
-            }
-        } else {
-            builder.requireItem(input);
-        }
-    }
-    //outputs
-    for (let output of recipe.outputs) {
-        builder.produceItem(output);
-    }
-    //id
-    builder.id(recipe.id);
-}
 
 /**
  * transform String/JSON style ingredient into Masterful Machinery JSON

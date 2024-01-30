@@ -82,20 +82,58 @@ onEvent('recipes', (event) => {
     ];
 
     recipes.forEach((recipe) => {
+        const builder = event.recipes.custommachinery.custom_machine('enlightened6:killing_entity', 1).jei();
         if (!recipe.weapon) {
             recipe.weapon = '#forge:weapons';
         }
+        addCMRecipe(builder, {
+            inputs: recipe.target,
+            catalyst: recipe.weapon,
+            outputs: recipe.output,
+            id: recipe.id
+        })
+    });
+});
 
-        let proc = {
-            type: 'masterfulmachinery:machine_process',
-            structureId: 'killing_entity_structure',
-            controllerId: 'killing_entity',
-            outputs: recipe.output.map(toMMJson),
-            inputs: recipe.target.map(toMMJson),
-            ticks: 1
-        };
-        proc.inputs.push(toMMJson(recipe.weapon))
+onEvent('server.datapack.high_priority', (event) => {
+    const components = [
+        {
+            type: 'custommachinery:item',
+            mode: 'input',
+            id: 'catalyst'
+        }
+    ]
+        // @ts-ignore
+        .concat(new CMGrid(3, 2, 'in', 'item').setMode('input').build())
+        // @ts-ignore
+        .concat(new CMGrid(3, 2, 'out', 'item').setMode('output').build());
+    const gui = [
+        {
+            type: 'custommachinery:progress',
+            x: 18 * 4.5 - 24 / 2,
+            y: 19, //18*2-16, with additional 1 as divider
+            id: 'progress'
+        },
+        {
+            type: 'custommachinery:slot',
+            x: 18 * 4,
+            y: 0,
+            id: 'catalyst'
+        }
+    ]
+        .concat(new CMGrid(3, 2, 'in', 'slot').build())
+        .concat(new CMGrid(3, 2, 'out', 'slot').offset(18 * 6, 0).build());
 
-        event.custom(proc).id(recipe.id);
+    event.addJson('enlightened6:machines/killing_entity.json', {
+        name: {
+            text: 'Killing Entity',
+            color: 'green'
+        },
+        appearance: {},
+        tooltips: [],
+        components: components,
+        gui: gui,
+        jei: [],
+        catalysts: []
     });
 });

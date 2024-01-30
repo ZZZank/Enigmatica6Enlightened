@@ -1,12 +1,13 @@
 'use strict';
 
-{
+block_conversion: {
     const id_prefix = 'enlightened6:right_click_block/';
     const recipes = [
         {
             target: 'mekanism:teleporter_frame',
             output: 'kubejs:conductive_frame',
             holding: 'immersiveengineering:dust_hop_graphite',
+            additional: (event) => { },
             id: id_prefix + 'conductive_frame'
         },
         {
@@ -75,34 +76,13 @@
                 .deploying(recipe.output, [recipe.target, recipe.holding])
                 .id(recipe.id + '/deploy');
             // hint
-            event
-                .custom({
-                    type: 'masterfulmachinery:machine_process',
-                    structureId: 'recipe_hint_right_click_block_structure',
-                    controllerId: 'recipe_hint_right_click_block',
-                    outputs: [
-                        {
-                            type: 'masterfulmachinery:items',
-                            data: { item: recipe.output, count: 1 }
-                        }
-                    ],
-                    inputs: [
-                        {
-                            type: 'masterfulmachinery:items',
-                            data: { item: recipe.holding, count: 1 }
-                        },
-                        {
-                            type: 'masterfulmachinery:items',
-                            data: { item: 'create:brass_hand', count: 1 }
-                        },
-                        {
-                            type: 'masterfulmachinery:items',
-                            data: { item: recipe.target, count: 1 }
-                        }
-                    ],
-                    ticks: 1
-                })
-                .id(recipe.id + '/hint');
+            const builder = event.recipes.custommachinery.custom_machine('in_world_interaction', 1).jei();
+            addCMRecipe(builder, {
+                inputs: [recipe.target],
+                catalyst: recipe.holding,
+                outputs: [recipe.output],
+                id: recipe.id + '/hint'
+            })
         });
     });
 }

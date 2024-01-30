@@ -27,6 +27,8 @@ function CMGrid(column, row, prefix, type) {
     }
 }
 
+CMGrid.SIZE_PRESET = CMGrid.prototype.SIZE_PRESET
+
 CMGrid.prototype = {
     // prettier-ignore
     SIZE_PRESET: {
