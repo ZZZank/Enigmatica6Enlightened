@@ -26,8 +26,8 @@ onEvent('recipes', (event) => {
         },
         {
             target: 'ars_nouveau:summoning_crystal',
-            holding: 'ars_nouveau:sylph_charm', 
-            output: 'ars_nouveau:sylph_se', 
+            holding: 'ars_nouveau:sylph_charm',
+            output: 'ars_nouveau:sylph_se',
             id: id_prefix + 'sylph_summoning'
         },
         {

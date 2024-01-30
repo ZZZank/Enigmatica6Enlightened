@@ -91,7 +91,7 @@ onEvent('recipes', (event) => {
             catalyst: recipe.weapon,
             outputs: recipe.output,
             id: recipe.id
-        })
+        });
     });
 });
 
