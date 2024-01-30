@@ -90,7 +90,7 @@ onEvent('server.datapack.high_priority', (event) => {
         },
         {
             type: 'custommachinery:slot',
-            x: 18 * 7,
+            x: 18 * 6,
             y: 0,
             id: 'output_0'
         }
