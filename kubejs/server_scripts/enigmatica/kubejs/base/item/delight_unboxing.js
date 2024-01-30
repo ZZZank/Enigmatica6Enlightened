@@ -3,7 +3,7 @@ onEvent('item.right_click', (event) => {
     const player = event.player;
 
     let [mod, id] = player.mainHandItem.id.split(':', 2);
-    if (player.fake || mod != 'kubsje' || !id.endsWith('_delight')) {
+    if (player.fake || mod != 'kubejs' || !id.endsWith('_delight')) {
         return;
     }
 
