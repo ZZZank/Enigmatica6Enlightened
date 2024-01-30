@@ -2,6 +2,12 @@
 
 onEvent('item.registry', (event) => {
     const generalItems = [
+        // 'unit_fe',
+        // 'unit_mana',
+        // 'unit_pressure',
+        // 'unit_rotation',
+        // 'unit_source',
+
         'common_lootbox',
         'rare_lootbox',
         'epic_lootbox',
@@ -161,8 +167,8 @@ onEvent('item.registry', (event) => {
         { name: 'pewter_nugget', texturePath: 'create:item/zinc_nugget' },
         { name: 'wicked_weave', texturePath: 'thermal:item/beekeeper_fabric' },
 
-        { name: 'medium_machinery_schematics', texture: 'kubejs:item/blueprint' },
-        { name: 'heavy_machinery_schematics', texture: 'kubejs:item/blueprint' },
+        { name: 'medium_machinery_schematics', texture: 'immersiveengineering:item/blueprint' },
+        { name: 'heavy_machinery_schematics', texture: 'immersiveengineering:item/blueprint' },
 
         /*
         { name: 'machine_speed_augment_mk2', texture: 'kubejs:item/machine_speed_augment' },
@@ -256,7 +262,10 @@ onEvent('item.registry', (event) => {
 
         { name: 'basic_lenses_package', texture: 'kubejs:item/assembly_package_filled' },
         { name: 'batch_unassembled_pcb', texture: 'kubejs:item/packing_crate_lime' },
-        { name: 'batch_unassembled_advanced_pressure_tube', texture: 'kubejs:item/advanced_packing_crate_green' },
+        {
+            name: 'batch_unassembled_advanced_pressure_tube',
+            texture: 'kubejs:item/advanced_packing_crate_green'
+        },
         { name: 'batch_unassembled_machine_frame', texture: 'kubejs:item/advanced_packing_crate_gray' },
 
         { name: 'soggy_treasure_box', texture: 'kubejs:item/common_lootbox' },
