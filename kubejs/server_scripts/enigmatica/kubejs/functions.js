@@ -39,10 +39,10 @@ function addGeneralRecipeHint(recipe, event) {
     recipe.inputs = recipe.inputs.map((input) =>
         typeof input == 'string' ? input : withChanceInName(input)
     );
-    recipe.outputs = recipe.outputs.map((output) => withChanceInName(Item.of(output)));
+    recipe.outputs = recipe.outputs.map(Item.of).map(withChanceInName);
     //actual starting point
     const builder = event.recipes.custommachinery
-        .custom_machine('enlightened6:recipe_hint_general', 1)
+        .custom_machine('enlightened6:recipe_hint_general', 123456)
         .jei();
     //catalyst
     if (recipe.catalyst === '') {
@@ -191,6 +191,7 @@ const entryIsBlacklisted = (material, type) => {
  * get the most prefered item in a tag based on priorities from variable `modPriorities`
  * @see modPriorities
  * @param {Internal.IngredientJS} tag
+ * @returns {Internal.ItemStackJS}
  */
 const getPreferredItemInTag = (tag) => {
     let items = getItemsInTag(tag);

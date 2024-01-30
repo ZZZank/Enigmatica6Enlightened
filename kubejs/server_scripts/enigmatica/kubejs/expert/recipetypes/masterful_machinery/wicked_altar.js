@@ -309,8 +309,8 @@ onEvent('recipes', (event) => {
     ];
 
     recipes.forEach((recipe) => {
-        recipe.inputs = recipe.inputs.map((val) => toMMJson(val));
-        recipe.outputs = recipe.outputs.map((val) => toMMJson(val));
+        recipe.inputs = recipe.inputs.map(toMMJson);
+        recipe.outputs = recipe.outputs.map(toMMJson);
         recipe.type = 'masterfulmachinery:machine_process';
         recipe.structureId = 'wicked_altar_structure';
         recipe.controllerId = 'wicked_altar';

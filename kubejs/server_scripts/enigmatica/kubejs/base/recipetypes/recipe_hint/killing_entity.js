@@ -82,28 +82,19 @@ onEvent('recipes', (event) => {
     ];
 
     recipes.forEach((recipe) => {
+        if (!recipe.weapon) {
+            recipe.weapon = '#forge:weapons';
+        }
+
         let proc = {
             type: 'masterfulmachinery:machine_process',
             structureId: 'killing_entity_structure',
             controllerId: 'killing_entity',
-            outputs: recipe.output.map((output) => {
-                return {
-                    type: 'masterfulmachinery:items',
-                    data: toJsonWithCount(output)
-                };
-            }),
-            inputs: recipe.target.map((input) => {
-                return {
-                    type: 'masterfulmachinery:items',
-                    data: toJsonWithCount(input)
-                };
-            }),
+            outputs: recipe.output.map(toMMJson),
+            inputs: recipe.target.map(toMMJson),
             ticks: 1
         };
-        proc.inputs.push({
-            type: 'masterfulmachinery:items',
-            data: toJsonWithCount(recipe.weapon ? recipe.weapon : '#forge:weapons')
-        });
+        proc.inputs.push(toMMJson(recipe.weapon))
 
         event.custom(proc).id(recipe.id);
     });
