@@ -1,6 +1,0 @@
-{
-    "controllerId": "recipe_hint_general",
-    "name": "Recipe Hint: General",
-    "textureOverride": "minecraft:block/white_concrete",
-    "ports": []
-}
