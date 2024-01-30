@@ -7,7 +7,7 @@ block_conversion: {
             target: 'mekanism:teleporter_frame',
             output: 'kubejs:conductive_frame',
             holding: 'immersiveengineering:dust_hop_graphite',
-            additional: (event) => { },
+            additional: (event) => {},
             id: id_prefix + 'conductive_frame'
         },
         {
@@ -76,13 +76,15 @@ block_conversion: {
                 .deploying(recipe.output, [recipe.target, recipe.holding])
                 .id(recipe.id + '/deploy');
             // hint
-            const builder = event.recipes.custommachinery.custom_machine('in_world_interaction', 1).jei();
+            const builder = event.recipes.custommachinery
+                .custom_machine('enlightened6:in_world_interaction', 1)
+                .jei();
             addCMRecipe(builder, {
                 inputs: [recipe.target],
                 catalyst: recipe.holding,
                 outputs: [recipe.output],
                 id: recipe.id + '/hint'
-            })
+            });
         });
     });
 }
