@@ -5,7 +5,38 @@ onEvent('recipes', (event) => {
     /**
      * @type {{target:string,output:string,holding:string,id:string}[]}
      */
-    const recipes = [];
+    const recipes = [
+        {
+            target: 'minecraft:cauldron',
+            holding: 'ars_nouveau:wixie_charm',
+            output: 'ars_nouveau:wixie_cauldron',
+            id: id_prefix + 'wixie_cauldron'
+        },
+        {
+            target: 'minecraft:mossy_cobblestone',
+            holding: 'ars_nouveau:drygmy_charm',
+            output: 'ars_nouveau:drygmy_stone',
+            id: id_prefix + 'drygmy_stone'
+        },
+        {
+            target: 'minecraft:lectern',
+            holding: 'ars_nouveau:whelp_charm',
+            output: 'ars_nouveau:bookwyrm_lectern',
+            id: id_prefix + 'bookwyrm_lectern'
+        },
+        {
+            target: 'ars_nouveau:summoning_crystal',
+            holding: 'ars_nouveau:sylph_charm', 
+            output: 'ars_nouveau:sylph_se', 
+            id: id_prefix + 'sylph_summoning'
+        },
+        {
+            target: 'ars_nouveau:summoning_crystal',
+            holding: 'ars_nouveau:carbuncle_charm',
+            output: 'ars_nouveau:carbuncle_se',
+            id: id_prefix + 'carbuncle_summoning'
+        }
+    ];
 
     recipes.forEach((recipe) => {
         const builder = event.recipes.custommachinery
