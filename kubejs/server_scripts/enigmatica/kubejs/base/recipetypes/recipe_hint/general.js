@@ -33,16 +33,57 @@ onEvent('recipes', (event) => {
             outputs: ['2x appliedenergistics2:quantum_entangled_singularity'],
             id: id_prefix + 'quantum_entangled_singularity'
         }
-        ,
-        {
-            inputs: [Item.of('create:black_seat', 30).chance(0.4), 'minecraft:beacon'],
-            catalyst: 'farsight_spyglasses:spyglass',
-            outputs: [Item.of('create:blue_seat', 30).chance(0.4), 'create:analog_lever'],
-            id: 'enl:try'
-        }
-
     ];
 
+    astralsorcery_mineralis: {
+        let weightSum = 0;
+        let perk_stone_enrichment_ore = [
+            'forge:ores/aluminum;1200',
+            'forge:ores/apatite;700',
+            'forge:ores/mana;200',
+            'forge:ores/bitumen;1000',
+            'forge:ores/cinnabar;500',
+            'forge:ores/coal;5200',
+            'forge:ores/copper;2000',
+            'forge:ores/diamond;120',
+            'forge:ores/dimensional;20',
+            'forge:ores/emerald;100',
+            'forge:ores/fluorite;50',
+            'forge:ores/gold;550',
+            'forge:ores/iron;2500',
+            'forge:ores/lapis;360',
+            'forge:ores/lead;1500',
+            'forge:ores/nickel;100',
+            'forge:ores/osmium;1500',
+            'forge:ores/potassium_nitrate;250',
+            'forge:ores/redstone;700',
+            'forge:ores/silver;1000',
+            'forge:ores/sulfur;300',
+            'forge:ores/tin;1800',
+            'forge:ores/uranium;400',
+            'forge:ores/zinc;1000'
+        ]
+            .map((entry) => {
+                let [tag, weightStr] = entry.split(';', 2);
+                let weight = parseInt(weightStr);
+                let item = getPreferredItemInTag(ingredient.of('#' + tag));
+                weightSum += weight;
+                return { item: item, weight: weight };
+            })
+            .map((entry) => entry.item.chance(entry.weight / weightSum));
+        toPagedArray(perk_stone_enrichment_ore, 15).forEach((page, i) => {
+            recipes.push({
+                inputs: [
+                    Item.of('astralsorcery:attuned_rock_crystal', {
+                        astralsorcery: { constellationName: 'astralsorcery:mineralis' }
+                    })
+                ],
+                catalyst: 'astralsorcery:ritual_pedestal',
+                outputs: page,
+                id: id_prefix + 'astralsorcery_mineralis_' + i
+            });
+        });
+    }
     recipes.forEach((recipe) => {
         addGeneralRecipeHint(recipe, event);
     });
@@ -63,8 +104,8 @@ onEvent('server.datapack.high_priority', (event) => {
     const gui = [
         {
             type: 'custommachinery:progress',
-            x: 18 * 4,
-            y: 20,
+            x: 18 * 4.5 - 24 / 2,
+            y: 18 * 1.5,
             id: 'progress'
         },
         {
