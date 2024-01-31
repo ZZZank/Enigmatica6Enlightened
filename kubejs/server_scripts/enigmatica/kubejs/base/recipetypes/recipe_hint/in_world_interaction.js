@@ -3,9 +3,23 @@
 onEvent('recipes', (event) => {
     const id_prefix = 'enlightened6:in_world_interaction/';
     /**
-     * @type {{target:string,output:string,holding:string,id:string}[]}
+     * @type {{target:string,output:string,holding:string|Internal.ItemStackJS,id:string}[]}
      */
     const recipes = [
+        {
+            target: 'minecraft:crafting_table',
+            holding: Item.of('tetra:modular_double', {
+                Damage: 0,
+                'double/handle': 'double/basic_handle',
+                'double/head_left': 'double/basic_hammer_left',
+                'double/head_right': 'double/basic_hammer_right',
+                'double/basic_handle_material': 'basic_handle/stick',
+                'double/basic_hammer_right_material': 'basic_hammer/oak',
+                'double/basic_hammer_left_material': 'basic_hammer/oak'
+            }),
+            output: 'tetra:basic_workbench',
+            id: id_prefix + 'tetra_workbench'
+        },
         {
             target: 'minecraft:cauldron',
             holding: 'ars_nouveau:wixie_charm',
