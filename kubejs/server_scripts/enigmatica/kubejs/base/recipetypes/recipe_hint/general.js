@@ -37,7 +37,7 @@ onEvent('recipes', (event) => {
 
     astralsorcery_mineralis: {
         let weightSum = 0;
-        let perk_stone_enrichment_ore = [
+        const perk_stone_enrichment_ore = [
             'forge:ores/aluminum;1200',
             'forge:ores/apatite;700',
             'forge:ores/mana;200',
@@ -64,9 +64,9 @@ onEvent('recipes', (event) => {
             'forge:ores/zinc;1000'
         ]
             .map((entry) => {
-                let [tag, weightStr] = entry.split(';', 2);
-                let weight = parseInt(weightStr);
-                let item = getPreferredItemInTag(ingredient.of('#' + tag));
+                const [tag, weightStr] = entry.split(';', 2);
+                const weight = parseInt(weightStr);
+                const item = getPreferredItemInTag(ingredient.of('#' + tag));
                 weightSum += weight;
                 return { item: item, weight: weight };
             })
@@ -84,6 +84,7 @@ onEvent('recipes', (event) => {
             });
         });
     }
+
     recipes.forEach((recipe) => {
         addGeneralRecipeHint(recipe, event);
     });

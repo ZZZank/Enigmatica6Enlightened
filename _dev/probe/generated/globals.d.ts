@@ -103,8 +103,8 @@ declare class Item extends Document.Object {
     static clearListCache(): void;
     static getList(): Internal.ListJS;
     static getEmpty(): Internal.ItemStackJS;
-    static of(in_: Internal.ItemStackJS_, count: number, nbt: Internal.CompoundNBT): Internal.ItemStackJS;
-    static of(in_: Internal.ItemStackJS_, tag: Internal.CompoundNBT): Internal.ItemStackJS;
+    static of(in_: Internal.ItemStackJS_, count: number, nbt: Internal.CompoundNBT_): Internal.ItemStackJS;
+    static of(in_: Internal.ItemStackJS_, tag: Internal.CompoundNBT_): Internal.ItemStackJS;
     static of(in_: Internal.ItemStackJS_, count: number): Internal.ItemStackJS;
     static of(in_: Internal.ItemStackJS_): Internal.ItemStackJS;
     static getTypeList(): Internal.ListJS;
@@ -114,7 +114,7 @@ declare class Item extends Document.Object {
     static exists(id: ResourceLocation_): boolean;
     static withChance(in_: Internal.ItemStackJS_, c: number): Internal.ItemStackJS;
     static fireworks(properties: Internal.Map_<string, any>): Internal.FireworksJS;
-    static withNBT(in_: Internal.ItemStackJS_, nbt: Internal.CompoundNBT): Internal.ItemStackJS;
+    static withNBT(in_: Internal.ItemStackJS_, nbt: Internal.CompoundNBT_): Internal.ItemStackJS;
     get typeList(): Internal.ListJS;
     get list(): Internal.ListJS;
     get empty(): Internal.ItemStackJS;
@@ -17502,7 +17502,7 @@ declare namespace Internal {
          */
         protected constructor();
     }
-    type CompoundNBT_ = CompoundNBT;
+    type CompoundNBT_ = object | CompoundNBT;
     class LootBuilder extends Document.Object implements Internal.FunctionContainer, Internal.ConditionContainer {
         clearFunctions(): void;
         toJson(): Internal.JsonObject;
