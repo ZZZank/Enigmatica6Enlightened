@@ -4,6 +4,7 @@ onEvent('jei.remove.categories', (event) => {
     // console.log('JEI RECIPE CATEGORIES: ' + event.getCategoryIds());
 
     let categories = [
+        'portable_stonecutter:jei_anvil_flattening',
         'masterfulmachinery:machine_structure_auto_iridescent_altar',
         'masterfulmachinery:machine_structure_advanced_assembly_table',
         'masterfulmachinery:machine_structure_enigmatic_tree_of_life',
