@@ -510,13 +510,13 @@ onEvent('item.registry', (event) => {
     event
         .create('fisher_foliot')
         .group('KubeJS')
-        .texture('kubejs:item/magic_lamp')
+        .texture('occultism:item/magic_lamp')
         .maxStackSize(1)
         .maxDamage(500);
     event
         .create('miner_marid_irradiated')
         .group('KubeJS')
-        .texture('kubejs:item/magic_lamp')
+        .texture('occultism:item/magic_lamp')
         .maxStackSize(1)
         .maxDamage(50);
 
