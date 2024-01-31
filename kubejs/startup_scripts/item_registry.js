@@ -163,9 +163,9 @@ onEvent('item.registry', (event) => {
     ];
 
     const reusableItemTextures = [
-        { name: 'pewter_ingot', texturePath: 'create:item/zinc_ingot' },
-        { name: 'pewter_nugget', texturePath: 'create:item/zinc_nugget' },
-        { name: 'wicked_weave', texturePath: 'thermal:item/beekeeper_fabric' },
+        { name: 'pewter_ingot', texture: 'create:item/zinc_ingot' },
+        { name: 'pewter_nugget', texture: 'create:item/zinc_nugget' },
+        { name: 'wicked_weave', texture: 'thermal:item/beekeeper_fabric' },
 
         { name: 'medium_machinery_schematics', texture: 'immersiveengineering:item/blueprint' },
         { name: 'heavy_machinery_schematics', texture: 'immersiveengineering:item/blueprint' },
