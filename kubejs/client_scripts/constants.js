@@ -196,6 +196,8 @@ const itemsToHide = [
 
     'farmersdelight:fried_egg',
 
+    /ftblibrary:fluid_container/,
+
     'immersiveengineering:dust_coke',
     'immersiveengineering:dust_saltpeter',
     'immersiveengineering:dust_wood',
