@@ -15,6 +15,10 @@
     "descriptions.en6e.expert.small_storage_part": "Crafting is disabled in Expert, begin with the 4k one.",
     "descriptions.en6e.expert.": "",
 
+    "tooltips.enlightened.base.altered_recipe_indicator": "Recipe altered for Enlightened 6. Refer to JEI.",
+    "tooltips.enlightened.base.disabled_recipe_indicator": "Recipe disabled for Enlightened 6",
+    "tooltips.enlightened.base.": "",
+
     "tooltips.en6e.expert.channel_disabled": "Channel is disabled in Expert Mode.",
     "tooltips.en6e.expert.": "",
 

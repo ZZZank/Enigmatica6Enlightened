@@ -23,6 +23,7 @@ onEvent('item.tooltip', (event) => {
     .color('#808080') //any hex color
     */
     const id_prefix = 'tooltips.enigmatica.base.';
+    const eprefix = 'tooltips.enlightened.base.';
     const recipes = [
         {
             items: [
@@ -46,11 +47,11 @@ onEvent('item.tooltip', (event) => {
         },
         {
             items: ['kubejs:altered_recipe_indicator'],
-            text: [Text.translate(`${id_prefix}altered_recipe_indicator`).gold()]
+            text: [Text.translate(`${eprefix}altered_recipe_indicator`).gold()]
         },
         {
             items: ['kubejs:disabled_recipe_indicator'],
-            text: [Text.translate(`${id_prefix}disabled_recipe_indicator`).gold()]
+            text: [Text.translate(`${eprefix}disabled_recipe_indicator`).gold()]
         },
         {
             items: ['tconstruct:crafting_station', 'tconstruct:part_builder', 'tconstruct:tinker_station'],
