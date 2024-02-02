@@ -2,6 +2,10 @@
 
 block_conversion: {
     const id_prefix = 'enlightened6:right_click_block/';
+    /**
+     * @type {{target:string,output:Internal.ItemStackJS_,holding:string,
+     * additional?:(e:Internal.BlockRightClickEventJS)=>void,id:string}[]}
+     */
     const recipes = [
         {
             target: 'mekanism:teleporter_frame',
@@ -45,6 +49,36 @@ block_conversion: {
             output: 'appliedenergistics2:64k_crafting_storage',
             holding: 'appliedenergistics2:64k_cell_component',
             id: id_prefix + `64k_crafting_storage`
+        },
+        {
+            target: 'minecraft:conduit',
+            output: Item.of('minecraft:trident', {
+                nullptrType: 1,
+                Damage: 225,
+                display: {
+                    Name: '[{ "translate": "item.en6e.null_pointer" }]',
+                    Lore: ['[{ "translate": "lore.en6e.null_pointer" }]']
+                },
+                'quark:RuneAttached': true,
+                'quark:RuneColor': { id: 'quark:gray_rune', Count: 1 }
+            }).enchant('minecraft:vanishing_curse', 1),
+            holding: 'pneumaticcraft:nuke_virus',
+            id: id_prefix + 'null_pointer'
+        },
+        {
+            target: 'minecraft:conduit',
+            output: Item.of('minecraft:trident', {
+                nullptrType: 1,
+                Damage: 225,
+                display: {
+                    Name: '[{ "translate": "item.en6e.null_pointer" }]',
+                    Lore: ['[{ "translate": "lore.en6e.null_pointer" }]']
+                },
+                'quark:RuneAttached': true,
+                'quark:RuneColor': { id: 'quark:gray_rune', Count: 1 }
+            }).enchant('minecraft:vanishing_curse', 1),
+            holding: 'pneumaticcraft:stop_worm',
+            id: id_prefix + 'null_pointer_alt'
         }
     ];
 
