@@ -4,6 +4,27 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enlightened6:killing_entity/';
     const recipes = [
         {
+            target: [
+                Item.of('ars_nouveau:glyph_filter_monster', {
+                    display: {
+                        Lore: ['[{ "text": "Any monsters with no more than 20 healths(10 hearts)" }]']
+                    }
+                })
+            ],
+            weapon: Item.of('minecraft:trident', {
+                nullptrType: 1,
+                Damage: 225,
+                display: {
+                    Name: '[{ "translate": "item.en6e.null_pointer" }]',
+                    Lore: ['[{ "translate": "lore.en6e.null_pointer" }]']
+                },
+                'quark:RuneAttached': true,
+                'quark:RuneColor': { id: 'quark:gray_rune', Count: 1 }
+            }).enchant('minecraft:vanishing_curse', 1),
+            output: ['appliedenergistics2:charged_certus_quartz_crystal'],
+            id: id_prefix + 'null_pointer'
+        },
+        {
             target: ['minecraft:ravager_spawn_egg'],
             output: ['quark:ravager_hide'],
             id: id_prefix + 'ravager'
