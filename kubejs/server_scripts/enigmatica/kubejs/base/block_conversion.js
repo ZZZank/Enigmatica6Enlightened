@@ -62,7 +62,16 @@ block_conversion: {
             }
             player.playSound('ping:bloop');
             event.server.runCommandSilent(`particle minecraft:explosion ${target.x} ${target.y} ${target.z}`);
-            target.set(recipe.output);
+            if (Item.of(recipe.output).isBlock()) {
+                target.set(Item.of(recipe.output).id);
+            } else {
+                target.set(air);
+                const drop = event.world.createEntity('minecraft:item');
+                drop.item = recipe.output;
+                drop.setPosition(target);
+                drop.setMotionY(0.2);
+                drop.spawn();
+            }
             player.mainHandItem.count -= 1;
             event.cancel();
             return;
