@@ -1,5 +1,5 @@
 {
-    "block.kubejs.matter_block": "物质方块",
+"block.kubejs.matter_block": "物质方块",
     "block.kubejs.conductive_frame": "导电框架",
     "item.kubejs.common_lootbox": "普通战利品箱",
     "item.kubejs.rare_lootbox": "稀有战利品箱",
@@ -193,7 +193,7 @@
     "item.kubejs.craft_magicfeather.tooltip": "将一个巨灵绑定到一种制备好的特殊羽毛上以获得靠近激活信标飞行的能力。",
     "ritual.enigmatica.occultism/ritual/magicfeather.started": "飞行仪式已开始。",
     "ritual.enigmatica.occultism/ritual/magicfeather.finished": "飞行仪式已成功完成。",
-    "ritual.enigmatica.occultism/ritual/magicfeather.interrupted": "飞行仪式被中断。",
+    "ritual.enigmatica.occultism/ritual/magicfeather.interrupted": "飞行仪式已中断。",
     "ritual.enigmatica.occultism/ritual/magicfeather.conditions": "该仪式的部分条件仍未满足。",
     "item.kubejs.summon_pharaoh": "仪式：召唤法老。",
     "item.kubejs.summon_pharaoh.tooltip": "召唤强大的阿图姆法老。",
