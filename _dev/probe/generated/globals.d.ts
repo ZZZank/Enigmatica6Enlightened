@@ -850,7 +850,7 @@ declare namespace net.minecraft.util {
          */
         protected constructor();
     }
-    type SoundEvent_ = SoundEvent;
+    type SoundEvent_ = string | SoundEvent;
 }
 declare namespace cofh.lib.fluid {
     class FluidIngredient extends Document.Object implements Internal.Predicate<net.minecraftforge.fluids.FluidStack> {
@@ -17434,6 +17434,7 @@ declare namespace Internal {
     }
     type Language_ = Language;
     class CompoundNBT extends Document.Object implements Internal.INBT, Internal.MapLike<any, any> {
+        [x: string]: any;
         func_202168_c(arg0: string, arg1: Internal.List<number>): void;
         func_186855_b(arg0: string): boolean;
         func_186857_a(arg0: string): Internal.UUID;
@@ -42767,7 +42768,7 @@ declare namespace Internal {
         removeNBT(): Internal.ItemStackJS;
         static resultFromRecipeJson(json: Internal.JsonElement): Internal.ItemStackJS;
         testVanilla(other: Internal.ItemStack): boolean;
-        enchant(enchantment: Internal.Enchantment, level: number): Internal.ItemStackJS;
+        enchant(enchantment: Internal.Enchantment_, level: number): Internal.ItemStackJS;
         enchant(enchantments: Internal.MapJS): Internal.ItemStackJS;
         equals(o: any): boolean;
         x(c: number): Internal.ItemStackJS;
@@ -47518,8 +47519,8 @@ declare namespace Internal {
         removePassengers(): void;
         attack(hp: number): void;
         attack(source: string, hp: number): void;
-        playSound(id: net.minecraft.util.SoundEvent, volume: number, pitch: number): void;
-        playSound(id: net.minecraft.util.SoundEvent): void;
+        playSound(id: net.minecraft.util.SoundEvent_, volume: number, pitch: number): void;
+        playSound(id: net.minecraft.util.SoundEvent_): void;
         getDistance(x: number, y: number, z: number): number;
         getDistance(pos: BlockPos): number;
         isSwimming(): boolean;
@@ -55350,16 +55351,16 @@ declare namespace Internal {
     }
     type PrintWriter_ = PrintWriter;
     class EntityPotionEffectsJS extends Document.Object {
-        add(mobEffect: Internal.Effect, duration: number, amplifier: number): void;
-        add(mobEffect: Internal.Effect, duration: number): void;
-        add(mobEffect: Internal.Effect): void;
-        add(mobEffect: Internal.Effect, duration: number, amplifier: number, ambient: boolean, showParticles: boolean): void;
-        getDuration(mobEffect: Internal.Effect): number;
+        add(mobEffect: Internal.Effect_, duration: number, amplifier: number): void;
+        add(mobEffect: Internal.Effect_, duration: number): void;
+        add(mobEffect: Internal.Effect_): void;
+        add(mobEffect: Internal.Effect_, duration: number, amplifier: number, ambient: boolean, showParticles: boolean): void;
+        getDuration(mobEffect: Internal.Effect_): number;
         isApplicable(effect: Internal.EffectInstance): boolean;
         clear(): void;
-        getActive(mobEffect: Internal.Effect): Internal.EffectInstance;
+        getActive(mobEffect: Internal.Effect_): Internal.EffectInstance;
         getActive(): Internal.Collection<Internal.EffectInstance>;
-        isActive(mobEffect: Internal.Effect): boolean;
+        isActive(mobEffect: Internal.Effect_): boolean;
         getMap(): Internal.Map<Internal.Effect, Internal.EffectInstance>;
         get active(): Internal.Collection<Internal.EffectInstance>;
         get map(): Internal.Map<Internal.Effect, Internal.EffectInstance>;
@@ -60652,7 +60653,7 @@ declare namespace Internal {
          */
         protected constructor();
     }
-    type Enchantment_ = Enchantment;
+    type Enchantment_ = string | Enchantment;
     class HeatRegistrationEvent extends net.minecraftforge.eventbus.api.Event {
         getListenerList(): Internal.ListenerList;
         registerBlockExchanger(arg0: Internal.Block, arg1: number, arg2: number): void;
@@ -62064,7 +62065,7 @@ declare namespace Internal {
          */
         protected constructor();
     }
-    type Effect_ = Effect;
+    type Effect_ = string | Effect;
     class ServerRecipeBook extends Internal.RecipeBook {
         func_192826_c(arg0: Internal.ServerPlayerEntity): void;
         func_192824_e(): Internal.CompoundNBT;
