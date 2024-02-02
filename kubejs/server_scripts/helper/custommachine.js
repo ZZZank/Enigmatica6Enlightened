@@ -10,6 +10,7 @@
  */
 function CMGrid(column, row, prefix, type) {
     this._ = {
+        preset: {},
         column: column,
         row: row,
         prefix: prefix,
@@ -26,8 +27,6 @@ function CMGrid(column, row, prefix, type) {
         this._.height = preset.height;
     }
 }
-
-CMGrid.SIZE_PRESET = CMGrid.prototype.SIZE_PRESET;
 
 CMGrid.prototype = {
     // prettier-ignore
@@ -65,9 +64,21 @@ CMGrid.prototype = {
         this._.mode = mode;
         return this;
     },
+    /**
+     * Set the preset of elements of this grid. All elements of the result will have properties
+     * defined in `preset`
+     * 
+     * But, properties that are supposed to be generated automatically(e.g. `x`, `type`) will be
+     * overwritten. 
+     * @param {{}} preset
+     */
+    setPreset: function (preset) {
+        this._.preset = preset;
+        return this;
+    },
     build: function () {
         let grid = [];
-        const { dx, dy, prefix, column, row, type, width, height } = this._;
+        const { dx, dy, prefix, column, row, type, width, height, preset } = this._;
         for (let i = 0; i < column; i++) {
             for (let j = 0; j < row; j++) {
                 let target = {
@@ -77,8 +88,10 @@ CMGrid.prototype = {
                     id: `${prefix}_${i + j * row}`
                 };
                 if (this._.mode.length != 0) {
-                    //@ts-ignore
                     target.mode = this._.mode;
+                }
+                for (let key in preset) {
+                    target[key] = preset[key];
                 }
                 grid.push(target);
             }
@@ -86,3 +99,5 @@ CMGrid.prototype = {
         return grid;
     }
 };
+
+CMGrid.SIZE_PRESET = CMGrid.prototype.SIZE_PRESET;
