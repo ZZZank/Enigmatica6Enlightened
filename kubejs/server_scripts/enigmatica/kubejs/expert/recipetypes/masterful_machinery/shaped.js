@@ -3,7 +3,7 @@ onEvent('recipes', (event) => {
     if (global.isNormalMode) {
         return;
     }
-    const id_prefix = 'enigmatica:expert/masterful_machinery/shaped';
+    const id_prefix = 'enigmatica:expert/masterful_machinery/shaped/';
     /*
         ,
         {

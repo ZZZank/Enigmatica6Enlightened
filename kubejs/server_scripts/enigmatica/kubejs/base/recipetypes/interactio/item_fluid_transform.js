@@ -4,6 +4,16 @@ onEvent('recipes', (event) => {
 
     const recipes = [
         {
+            inputs: [{ tag: 'forge:dusts/emerald', count: 1, return_chance: 0 }],
+            fluid: { fluid: 'astralsorcery:liquid_starlight' },
+            output: {
+                entries: [{ result: { item: 'byg:emeraldite_shards', count: 1 }, weight: 3 }],
+                empty_weight: 1,
+                rolls: 4
+            },
+            consume_fluid: 0.125
+        },
+        {
             inputs: [{ tag: 'minecraft:planks', count: 1, return_chance: 0 }],
             fluid: { fluid: 'immersiveengineering:creosote' },
             output: {
@@ -99,19 +109,6 @@ onEvent('recipes', (event) => {
         'dustrial_decor:rusty_sheet_metal_door'
     ];
 
-    recipes.forEach((recipe) => {
-        fallback_id(
-            event.custom({
-                type: 'interactio:item_fluid_transform',
-                inputs: recipe.inputs,
-                fluid: recipe.fluid,
-                output: recipe.output,
-                consume_fluid: recipe.consume_fluid
-            }),
-            id_prefix
-        );
-    });
-
     simpleTagRecipes.forEach((recipe) => {
         fallback_id(
             event.custom({
@@ -159,6 +156,19 @@ onEvent('recipes', (event) => {
                     rolls: 1
                 },
                 consume_fluid: 0.0
+            }),
+            id_prefix
+        );
+    });
+
+    recipes.forEach((recipe) => {
+        fallback_id(
+            event.custom({
+                type: 'interactio:item_fluid_transform',
+                inputs: recipe.inputs,
+                fluid: recipe.fluid,
+                output: recipe.output,
+                consume_fluid: recipe.consume_fluid
             }),
             id_prefix
         );

@@ -86,22 +86,24 @@ onEvent('recipes', (event) => {
     });
 
     // Recipes for masonry constants
-    // it seems that Strict Mode does not like ()=>{}, so we use function
-    masonryStoneTypes.forEach(function (stoneType) {
-        masonryPatterns.forEach((pattern) => {
+    // it seems that Strict Mode does not like ()=>{}, so we use dual loop
+    for (let stoneType of masonryStoneTypes) {
+        for (let pattern of masonryPatterns) {
             let input = stoneType + pattern;
             if (!masonryIgnoredInputs.includes(input)) {
-                recipes.push({
-                    output: `2x masonry:${input}slab`,
-                    input: `masonry:${input}`
-                });
-                recipes.push({
-                    output: `masonry:${input}wall`,
-                    input: `masonry:${input}`
-                });
+                recipes.push(
+                    {
+                        output: `2x masonry:${input}slab`,
+                        input: `masonry:${input}`
+                    },
+                    {
+                        output: `masonry:${input}wall`,
+                        input: `masonry:${input}`
+                    }
+                );
             }
-        });
-    });
+        }
+    }
 
     masonryTiledStoneTypes.forEach((stoneType) => {
         recipes.push({
@@ -132,13 +134,17 @@ onEvent('recipes', (event) => {
     // Tag conversion
     conversionTypes = ['#forge:dirt', '#forge:workbenches', '#forge:grass'];
     conversionTypes.forEach((tag) => {
-        let ingredient = Ingredient.of(tag);
-        ingredient.stacks.forEach((block) => {
-            recipes.push({ output: block.id, input: ingredient });
+        Ingredient.of(tag).stacks.forEach((block) => {
+            recipes.push({ output: block.id, input: Ingredient.of(tag) });
         });
     });
 
     recipes.forEach((recipe) => {
-        fallback_id(event.stonecutting(recipe.output, recipe.input), id_prefix);
+        let re = event.stonecutting(recipe.output, recipe.input);
+        if (recipe.id) {
+            re.id(recipe.id);
+        } else {
+            fallback_id(re, id_prefix);
+        }
     });
 });

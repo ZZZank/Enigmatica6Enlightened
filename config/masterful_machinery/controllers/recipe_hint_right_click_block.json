@@ -1,6 +1,0 @@
-{
-    "controllerId": "recipe_hint_right_click_block",
-    "name": "Recipe Hint: Right-Click Block",
-    "textureOverride": "minecraft:block/white_concrete",
-    "ports": []
-}

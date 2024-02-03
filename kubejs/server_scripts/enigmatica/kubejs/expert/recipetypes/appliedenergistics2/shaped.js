@@ -29,7 +29,7 @@ onEvent('recipes', (event) => {
             id: 'appliedenergistics2:tools/network_memory_card'
         },
         {
-            output: 'appliedenergistics2:blank_pattern',
+            output: '2x appliedenergistics2:blank_pattern',
             patterns: ['QGQ', 'GAG', 'RSR'],
             inputs: {
                 S: 'create:empty_schematic',

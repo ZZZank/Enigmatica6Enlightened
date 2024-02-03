@@ -1,4 +1,4 @@
 'use strict';
 onEvent('item.tags', (event) => {
-    event.add('diet:proteins', ['mekanism:canteen', 'environmental:fried_egg']);
+    event.get('diet:proteins').add(['mekanism:canteen', 'environmental:fried_egg']);
 });

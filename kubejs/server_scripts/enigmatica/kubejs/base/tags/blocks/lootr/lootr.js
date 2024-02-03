@@ -1,6 +1,6 @@
 'use strict';
 onEvent('block.tags', (event) => {
-    event.add('lootr:chests', lootChests);
-    event.add('lootr:loot_chests', lootChests);
-    event.add('lootr:loot', lootChests);
+    event.add('lootr:chests', lootrChests);
+    event.add('lootr:loot_chests', lootrChests);
+    event.add('lootr:loot', lootrChests);
 });

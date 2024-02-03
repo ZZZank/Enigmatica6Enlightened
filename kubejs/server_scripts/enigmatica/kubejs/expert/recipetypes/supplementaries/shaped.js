@@ -26,6 +26,16 @@ onEvent('recipes', (event) => {
                 B: '#forge:fabric_hemp'
             },
             id: 'supplementaries:bellows'
+        },
+        {
+            output: 'supplementaries:faucet',
+            pattern: ['AB ', 'CCC', '  C'],
+            key: {
+                A: 'farmersdelight:tree_bark',
+                B: 'minecraft:tripwire_hook',
+                C: 'immersiveengineering:fluid_pipe'
+            },
+            id: 'supplementaries:faucet'
         }
     ];
 

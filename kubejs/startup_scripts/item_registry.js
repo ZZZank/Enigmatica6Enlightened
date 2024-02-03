@@ -2,6 +2,12 @@
 
 onEvent('item.registry', (event) => {
     const generalItems = [
+        // 'unit_fe',
+        // 'unit_mana',
+        // 'unit_pressure',
+        // 'unit_rotation',
+        // 'unit_source',
+
         'common_lootbox',
         'rare_lootbox',
         'epic_lootbox',
@@ -157,134 +163,141 @@ onEvent('item.registry', (event) => {
     ];
 
     const reusableItemTextures = [
-        { name: 'medium_machinery_schematics', texture: 'blueprint' },
-        { name: 'heavy_machinery_schematics', texture: 'blueprint' },
+        { name: 'pewter_ingot', texture: 'create:item/zinc_ingot' },
+        { name: 'pewter_nugget', texture: 'create:item/zinc_nugget' },
+        { name: 'wicked_weave', texture: 'thermal:item/beekeeper_fabric' },
+
+        { name: 'medium_machinery_schematics', texture: 'immersiveengineering:item/blueprint' },
+        { name: 'heavy_machinery_schematics', texture: 'immersiveengineering:item/blueprint' },
 
         /*
-        { name: 'machine_speed_augment_mk2', texture: 'machine_speed_augment' },
-        { name: 'machine_speed_augment_mk3', texture: 'machine_speed_augment' },
-        { name: 'machine_speed_augment_mk4', texture: 'machine_speed_augment' },
+        { name: 'machine_speed_augment_mk2', texture: 'kubejs:item/machine_speed_augment' },
+        { name: 'machine_speed_augment_mk3', texture: 'kubejs:item/machine_speed_augment' },
+        { name: 'machine_speed_augment_mk4', texture: 'kubejs:item/machine_speed_augment' },
 
-        { name: 'dynamo_output_augment_mk2', texture: 'dynamo_output_augment' },
-        { name: 'dynamo_output_augment_mk3', texture: 'dynamo_output_augment' },
-        { name: 'dynamo_output_augment_mk4', texture: 'dynamo_output_augment' },
+        { name: 'dynamo_output_augment_mk2', texture: 'kubejs:item/dynamo_output_augment' },
+        { name: 'dynamo_output_augment_mk3', texture: 'kubejs:item/dynamo_output_augment' },
+        { name: 'dynamo_output_augment_mk4', texture: 'kubejs:item/dynamo_output_augment' },
 
-        { name: 'dynamo_fuel_augment_mk2', texture: 'dynamo_fuel_augment' },
-        { name: 'dynamo_fuel_augment_mk3', texture: 'dynamo_fuel_augment' },
-        { name: 'dynamo_fuel_augment_mk4', texture: 'dynamo_fuel_augment' },
+        { name: 'dynamo_fuel_augment_mk2', texture: 'kubejs:item/dynamo_fuel_augment' },
+        { name: 'dynamo_fuel_augment_mk3', texture: 'kubejs:item/dynamo_fuel_augment' },
+        { name: 'dynamo_fuel_augment_mk4', texture: 'kubejs:item/dynamo_fuel_augment' },
         */
 
-        { name: 'diy_arc_furnace', texture: 'packing_crate_gray' },
-        { name: 'diy_pumpjack', texture: 'packing_crate_yellow' },
-        { name: 'diy_distillation_tower', texture: 'advanced_packing_crate_purple' },
-        { name: 'diy_excavator', texture: 'advanced_packing_crate_green' },
-        { name: 'mining_gadget_kit', texture: 'packing_crate_blue' },
-        { name: 'flux_bore_kit', texture: 'packing_crate_lime' },
-        { name: 'diy_create_quarry', texture: 'packing_crate_red' },
-        { name: 'diy_mekasuit_helmet', texture: 'packing_crate_red' },
-        { name: 'diy_mekasuit_bodyarmor', texture: 'packing_crate_red' },
-        { name: 'diy_mekasuit_pants', texture: 'packing_crate_red' },
-        { name: 'diy_mekasuit_boots', texture: 'packing_crate_red' },
-        { name: 'diy_meka_tool', texture: 'packing_crate_red' },
-        { name: 'artisinal_ritual_kit', texture: 'advanced_packing_crate_purple' },
-        { name: 'artisinal_chalk_set', texture: 'advanced_packing_crate_green' },
-        { name: 'diy_pressure_chamber', texture: 'packing_crate_lime' },
-        { name: 'diy_drone_kit', texture: 'packing_crate_red' },
-        { name: 'assorted_router_kit', texture: 'advanced_packing_crate_purple' },
-        { name: 'altar_of_birthing_kit', texture: 'packing_crate_blue' },
-        { name: 'diy_furnace_engine_kit', texture: 'packing_crate_blue' },
-        { name: 'imaharas_indelible_electrodes', texture: 'advanced_packing_crate_green' },
-        { name: 'diy_mixer', texture: 'advanced_packing_crate_green' },
-        { name: 'diy_bottling_machine', texture: 'advanced_packing_crate_purple' },
-        { name: 'bright_constellation_box', texture: 'advanced_packing_crate_purple' },
-        { name: 'dim_constellation_box', texture: 'advanced_packing_crate_green' },
+        { name: 'diy_arc_furnace', texture: 'kubejs:item/packing_crate_gray' },
+        { name: 'diy_pumpjack', texture: 'kubejs:item/packing_crate_yellow' },
+        { name: 'diy_distillation_tower', texture: 'kubejs:item/advanced_packing_crate_purple' },
+        { name: 'diy_excavator', texture: 'kubejs:item/advanced_packing_crate_green' },
+        { name: 'mining_gadget_kit', texture: 'kubejs:item/packing_crate_blue' },
+        { name: 'flux_bore_kit', texture: 'kubejs:item/packing_crate_lime' },
+        { name: 'diy_create_quarry', texture: 'kubejs:item/packing_crate_red' },
+        { name: 'diy_mekasuit_helmet', texture: 'kubejs:item/packing_crate_red' },
+        { name: 'diy_mekasuit_bodyarmor', texture: 'kubejs:item/packing_crate_red' },
+        { name: 'diy_mekasuit_pants', texture: 'kubejs:item/packing_crate_red' },
+        { name: 'diy_mekasuit_boots', texture: 'kubejs:item/packing_crate_red' },
+        { name: 'diy_meka_tool', texture: 'kubejs:item/packing_crate_red' },
+        { name: 'artisinal_ritual_kit', texture: 'kubejs:item/advanced_packing_crate_purple' },
+        { name: 'artisinal_chalk_set', texture: 'kubejs:item/advanced_packing_crate_green' },
+        { name: 'diy_pressure_chamber', texture: 'kubejs:item/packing_crate_lime' },
+        { name: 'diy_drone_kit', texture: 'kubejs:item/packing_crate_red' },
+        { name: 'assorted_router_kit', texture: 'kubejs:item/advanced_packing_crate_purple' },
+        { name: 'altar_of_birthing_kit', texture: 'kubejs:item/packing_crate_blue' },
+        { name: 'diy_furnace_engine_kit', texture: 'kubejs:item/packing_crate_blue' },
+        { name: 'imaharas_indelible_electrodes', texture: 'kubejs:item/advanced_packing_crate_green' },
+        { name: 'diy_mixer', texture: 'kubejs:item/advanced_packing_crate_green' },
+        { name: 'diy_bottling_machine', texture: 'kubejs:item/advanced_packing_crate_purple' },
+        { name: 'bright_constellation_box', texture: 'kubejs:item/advanced_packing_crate_purple' },
+        { name: 'dim_constellation_box', texture: 'kubejs:item/advanced_packing_crate_green' },
 
-        { name: 'engineers_school_project', texture: 'packing_crate_gray' },
-        { name: 'partial_engineers_school_project', texture: 'packing_crate_gray' },
-        { name: 'foundation_materials', texture: 'packing_crate_red' },
-        { name: 'partial_foundation_materials', texture: 'packing_crate_red' },
-        { name: 'construction_tools', texture: 'packing_crate_yellow' },
-        { name: 'partial_construction_tools', texture: 'packing_crate_yellow' },
-        { name: 'landscaping_materials', texture: 'packing_crate_lime' },
-        { name: 'partial_landscaping_materials', texture: 'packing_crate_lime' },
-        { name: 'engineering_student_meals', texture: 'packing_crate_blue' },
-        { name: 'partial_engineering_student_meals', texture: 'packing_crate_blue' },
-        { name: 'building_materials', texture: 'packing_crate_orange' },
-        { name: 'partial_building_materials', texture: 'packing_crate_orange' },
-        { name: 'big_box_o_boom', texture: 'packing_crate_gray' },
-        { name: 'partial_big_box_o_boom', texture: 'packing_crate_gray' },
-        { name: 'mimirs_memory_box', texture: 'packing_crate_lime' },
-        { name: 'partial_mimirs_memory_box', texture: 'packing_crate_lime' },
-        { name: 'box_of_thankful_dinners', texture: 'advanced_packing_crate_purple' },
-        { name: 'partial_box_of_thankful_dinners', texture: 'advanced_packing_crate_purple' },
-        { name: 'stim_pack', texture: 'packing_crate_red' },
-        { name: 'partial_stim_pack', texture: 'packing_crate_red' },
+        { name: 'engineers_school_project', texture: 'kubejs:item/packing_crate_gray' },
+        { name: 'partial_engineers_school_project', texture: 'kubejs:item/packing_crate_gray' },
+        { name: 'foundation_materials', texture: 'kubejs:item/packing_crate_red' },
+        { name: 'partial_foundation_materials', texture: 'kubejs:item/packing_crate_red' },
+        { name: 'construction_tools', texture: 'kubejs:item/packing_crate_yellow' },
+        { name: 'partial_construction_tools', texture: 'kubejs:item/packing_crate_yellow' },
+        { name: 'landscaping_materials', texture: 'kubejs:item/packing_crate_lime' },
+        { name: 'partial_landscaping_materials', texture: 'kubejs:item/packing_crate_lime' },
+        { name: 'engineering_student_meals', texture: 'kubejs:item/packing_crate_blue' },
+        { name: 'partial_engineering_student_meals', texture: 'kubejs:item/packing_crate_blue' },
+        { name: 'building_materials', texture: 'kubejs:item/packing_crate_orange' },
+        { name: 'partial_building_materials', texture: 'kubejs:item/packing_crate_orange' },
+        { name: 'big_box_o_boom', texture: 'kubejs:item/packing_crate_gray' },
+        { name: 'partial_big_box_o_boom', texture: 'kubejs:item/packing_crate_gray' },
+        { name: 'mimirs_memory_box', texture: 'kubejs:item/packing_crate_lime' },
+        { name: 'partial_mimirs_memory_box', texture: 'kubejs:item/packing_crate_lime' },
+        { name: 'box_of_thankful_dinners', texture: 'kubejs:item/advanced_packing_crate_purple' },
+        { name: 'partial_box_of_thankful_dinners', texture: 'kubejs:item/advanced_packing_crate_purple' },
+        { name: 'stim_pack', texture: 'kubejs:item/packing_crate_red' },
+        { name: 'partial_stim_pack', texture: 'kubejs:item/packing_crate_red' },
 
-        { name: 'engineers_school_upgrades', texture: 'advanced_packing_crate_gray' },
-        { name: 'partial_engineers_school_upgrades', texture: 'advanced_packing_crate_gray' },
-        { name: 'computer_package', texture: 'advanced_packing_crate_green' },
-        { name: 'partial_computer_package', texture: 'advanced_packing_crate_green' },
-        { name: 'fluid_drill_package', texture: 'advanced_packing_crate_purple' },
-        { name: 'partial_fluid_drill_package', texture: 'advanced_packing_crate_purple' },
+        { name: 'engineers_school_upgrades', texture: 'kubejs:item/advanced_packing_crate_gray' },
+        { name: 'partial_engineers_school_upgrades', texture: 'kubejs:item/advanced_packing_crate_gray' },
+        { name: 'computer_package', texture: 'kubejs:item/advanced_packing_crate_green' },
+        { name: 'partial_computer_package', texture: 'kubejs:item/advanced_packing_crate_green' },
+        { name: 'fluid_drill_package', texture: 'kubejs:item/advanced_packing_crate_purple' },
+        { name: 'partial_fluid_drill_package', texture: 'kubejs:item/advanced_packing_crate_purple' },
 
-        { name: 'basic_memory_package', texture: 'assembly_package_filled' },
-        { name: 'basic_memory_assembly', texture: 'assembly_package_processing' },
-        { name: 'batch_basic_memory_package', texture: 'packing_crate_yellow' },
-        { name: 'batch_basic_memory_assembly', texture: 'assembly_package_processing' },
+        { name: 'basic_memory_package', texture: 'kubejs:item/assembly_package_filled' },
+        { name: 'basic_memory_assembly', texture: 'kubejs:item/assembly_package_processing' },
+        { name: 'batch_basic_memory_package', texture: 'kubejs:item/packing_crate_yellow' },
+        { name: 'batch_basic_memory_assembly', texture: 'kubejs:item/assembly_package_processing' },
 
-        { name: 'cpu_core_500_package', texture: 'assembly_package_filled' },
-        { name: 'cpu_core_500_assembly', texture: 'assembly_package_processing' },
-        { name: 'batch_cpu_core_500_package', texture: 'packing_crate_blue' },
-        { name: 'batch_cpu_core_500_assembly', texture: 'assembly_package_processing' },
-        { name: 'cpu_core_1000_package', texture: 'assembly_package_filled' },
-        { name: 'cpu_core_1000_assembly', texture: 'assembly_package_processing' },
-        { name: 'batch_cpu_core_1000_package', texture: 'packing_crate_blue' },
-        { name: 'batch_cpu_core_1000_assembly', texture: 'assembly_package_processing' },
-        { name: 'cpu_core_2000_package', texture: 'assembly_package_filled' },
-        { name: 'cpu_core_2000_assembly', texture: 'assembly_package_processing' },
-        { name: 'batch_cpu_core_2000_package', texture: 'packing_crate_blue' },
-        { name: 'batch_cpu_core_2000_assembly', texture: 'assembly_package_processing' },
+        { name: 'cpu_core_500_package', texture: 'kubejs:item/assembly_package_filled' },
+        { name: 'cpu_core_500_assembly', texture: 'kubejs:item/assembly_package_processing' },
+        { name: 'batch_cpu_core_500_package', texture: 'kubejs:item/packing_crate_blue' },
+        { name: 'batch_cpu_core_500_assembly', texture: 'kubejs:item/assembly_package_processing' },
+        { name: 'cpu_core_1000_package', texture: 'kubejs:item/assembly_package_filled' },
+        { name: 'cpu_core_1000_assembly', texture: 'kubejs:item/assembly_package_processing' },
+        { name: 'batch_cpu_core_1000_package', texture: 'kubejs:item/packing_crate_blue' },
+        { name: 'batch_cpu_core_1000_assembly', texture: 'kubejs:item/assembly_package_processing' },
+        { name: 'cpu_core_2000_package', texture: 'kubejs:item/assembly_package_filled' },
+        { name: 'cpu_core_2000_assembly', texture: 'kubejs:item/assembly_package_processing' },
+        { name: 'batch_cpu_core_2000_package', texture: 'kubejs:item/packing_crate_blue' },
+        { name: 'batch_cpu_core_2000_assembly', texture: 'kubejs:item/assembly_package_processing' },
 
-        { name: 'basic_circuit_package', texture: 'assembly_package_filled' },
-        { name: 'basic_circuit_assembly', texture: 'assembly_package_processing' },
-        { name: 'batch_basic_circuit_package', texture: 'packing_crate_lime' },
-        { name: 'batch_basic_circuit_assembly', texture: 'assembly_package_processing' },
+        { name: 'basic_circuit_package', texture: 'kubejs:item/assembly_package_filled' },
+        { name: 'basic_circuit_assembly', texture: 'kubejs:item/assembly_package_processing' },
+        { name: 'batch_basic_circuit_package', texture: 'kubejs:item/packing_crate_lime' },
+        { name: 'batch_basic_circuit_assembly', texture: 'kubejs:item/assembly_package_processing' },
 
-        { name: 'basic_lenses_package', texture: 'assembly_package_filled' },
-        { name: 'batch_unassembled_pcb', texture: 'packing_crate_lime' },
-        { name: 'batch_unassembled_advanced_pressure_tube', texture: 'advanced_packing_crate_green' },
-        { name: 'batch_unassembled_machine_frame', texture: 'advanced_packing_crate_gray' },
+        { name: 'basic_lenses_package', texture: 'kubejs:item/assembly_package_filled' },
+        { name: 'batch_unassembled_pcb', texture: 'kubejs:item/packing_crate_lime' },
+        {
+            name: 'batch_unassembled_advanced_pressure_tube',
+            texture: 'kubejs:item/advanced_packing_crate_green'
+        },
+        { name: 'batch_unassembled_machine_frame', texture: 'kubejs:item/advanced_packing_crate_gray' },
 
-        { name: 'soggy_treasure_box', texture: 'common_lootbox' },
+        { name: 'soggy_treasure_box', texture: 'kubejs:item/common_lootbox' },
 
-        { name: 'pneumatic_helmet_package', texture: 'assembly_package_filled' },
-        { name: 'pneumatic_helmet_assembly', texture: 'assembly_package_processing' },
-        { name: 'pneumatic_chestplate_package', texture: 'assembly_package_filled' },
-        { name: 'pneumatic_chestplate_assembly', texture: 'assembly_package_processing' },
-        { name: 'pneumatic_leggings_package', texture: 'assembly_package_filled' },
-        { name: 'pneumatic_leggings_assembly', texture: 'assembly_package_processing' },
-        { name: 'pneumatic_boots_package', texture: 'assembly_package_filled' },
-        { name: 'pneumatic_boots_assembly', texture: 'assembly_package_processing' },
+        { name: 'pneumatic_helmet_package', texture: 'kubejs:item/assembly_package_filled' },
+        { name: 'pneumatic_helmet_assembly', texture: 'kubejs:item/assembly_package_processing' },
+        { name: 'pneumatic_chestplate_package', texture: 'kubejs:item/assembly_package_filled' },
+        { name: 'pneumatic_chestplate_assembly', texture: 'kubejs:item/assembly_package_processing' },
+        { name: 'pneumatic_leggings_package', texture: 'kubejs:item/assembly_package_filled' },
+        { name: 'pneumatic_leggings_assembly', texture: 'kubejs:item/assembly_package_processing' },
+        { name: 'pneumatic_boots_package', texture: 'kubejs:item/assembly_package_filled' },
+        { name: 'pneumatic_boots_assembly', texture: 'kubejs:item/assembly_package_processing' },
 
-        { name: 'mekasuit_helmet_package', texture: 'assembly_package_filled' },
-        { name: 'mekasuit_helmet_assembly', texture: 'assembly_package_processing' },
-        { name: 'mekasuit_bodyarmor_package', texture: 'assembly_package_filled' },
-        { name: 'mekasuit_bodyarmor_assembly', texture: 'assembly_package_processing' },
-        { name: 'mekasuit_pants_package', texture: 'assembly_package_filled' },
-        { name: 'mekasuit_pants_assembly', texture: 'assembly_package_processing' },
-        { name: 'mekasuit_boots_package', texture: 'assembly_package_filled' },
-        { name: 'mekasuit_boots_assembly', texture: 'assembly_package_processing' },
+        { name: 'mekasuit_helmet_package', texture: 'kubejs:item/assembly_package_filled' },
+        { name: 'mekasuit_helmet_assembly', texture: 'kubejs:item/assembly_package_processing' },
+        { name: 'mekasuit_bodyarmor_package', texture: 'kubejs:item/assembly_package_filled' },
+        { name: 'mekasuit_bodyarmor_assembly', texture: 'kubejs:item/assembly_package_processing' },
+        { name: 'mekasuit_pants_package', texture: 'kubejs:item/assembly_package_filled' },
+        { name: 'mekasuit_pants_assembly', texture: 'kubejs:item/assembly_package_processing' },
+        { name: 'mekasuit_boots_package', texture: 'kubejs:item/assembly_package_filled' },
+        { name: 'mekasuit_boots_assembly', texture: 'kubejs:item/assembly_package_processing' },
 
-        { name: 'assembly_io_package', texture: 'advanced_packing_crate_green' },
-        { name: 'assembly_io_assembly', texture: 'assembly_package_processing' },
-        { name: 'assembly_laser_package', texture: 'advanced_packing_crate_green' },
-        { name: 'assembly_laser_assembly', texture: 'assembly_package_processing' },
-        { name: 'assembly_drill_package', texture: 'advanced_packing_crate_green' },
-        { name: 'assembly_drill_assembly', texture: 'assembly_package_processing' },
-        { name: 'assembly_platform_package', texture: 'advanced_packing_crate_green' },
-        { name: 'assembly_platform_assembly', texture: 'assembly_package_processing' },
-        { name: 'assembly_controller_package', texture: 'advanced_packing_crate_green' },
-        { name: 'assembly_controller_assembly', texture: 'assembly_package_processing' }
+        { name: 'assembly_io_package', texture: 'kubejs:item/advanced_packing_crate_green' },
+        { name: 'assembly_io_assembly', texture: 'kubejs:item/assembly_package_processing' },
+        { name: 'assembly_laser_package', texture: 'kubejs:item/advanced_packing_crate_green' },
+        { name: 'assembly_laser_assembly', texture: 'kubejs:item/assembly_package_processing' },
+        { name: 'assembly_drill_package', texture: 'kubejs:item/advanced_packing_crate_green' },
+        { name: 'assembly_drill_assembly', texture: 'kubejs:item/assembly_package_processing' },
+        { name: 'assembly_platform_package', texture: 'kubejs:item/advanced_packing_crate_green' },
+        { name: 'assembly_platform_assembly', texture: 'kubejs:item/assembly_package_processing' },
+        { name: 'assembly_controller_package', texture: 'kubejs:item/advanced_packing_crate_green' },
+        { name: 'assembly_controller_assembly', texture: 'kubejs:item/assembly_package_processing' }
     ];
 
     const storagePartsAE = {
@@ -324,23 +337,124 @@ onEvent('item.registry', (event) => {
             reusableItemTextures.push(
                 {
                     name: `${name}_package`,
-                    texture: 'assembly_package_filled'
+                    texture: 'kubejs:item/assembly_package_filled'
                 },
                 {
                     name: `${name}_assembly`,
-                    texture: 'assembly_package_processing'
+                    texture: 'kubejs:item/assembly_package_processing'
                 },
                 {
                     name: `batch_${name}_package`,
-                    texture: 'packing_crate_lime'
+                    texture: 'kubejs:item/packing_crate_lime'
                 },
                 {
                     name: `batch_${name}_assembly`,
-                    texture: 'assembly_package_processing'
+                    texture: 'kubejs:item/assembly_package_processing'
                 }
             );
         }
     }
+
+    // prettier-ignore
+    const bees = [
+        //keep changes mostly synced to "server_scripts/constants/resourcefulbees.js", combVariants constant
+        // alloy
+        { name: 'brass',          band: 0x998d38, outline: 0x998d38 },
+        { name: 'bronze',         band: 0xd38c53, outline: 0xd38c53 },
+        { name: 'constantan',     band: 0xd8876b, outline: 0xd8876b },
+        { name: 'electrum',       band: 0xe5b840, outline: 0xe5b840 },
+        { name: 'enderium',       band: 0x0a4a4a, outline: 0x0a4a4a },
+        { name: 'invar',          band: 0xdfe5e2, outline: 0xdfe5e2 },
+        { name: 'lumium',         band: 0xe5f3b5, outline: 0xe5f3b5 },
+        { name: 'signalum',       band: 0xfd641a, outline: 0xfd641a },
+        { name: 'steel',          band: 0x858585, outline: 0x858585 },
+        // dev
+        { name: 'kitten',         band: 0xeaa939, outline: 0x4c483b },
+        { name: 'oreo',           band: 0x442920, outline: 0xe1d9b8 },
+        { name: 'starry_lexxie',  band: 0xffffff, outline: 0xffa500 },
+        { name: 'yeti',           band: 0xe9f4f6, outline: 0x777e86 },
+        // gem
+        { name: 'diamond',        band: 0x00ffff, outline: 0x00ffff },
+        { name: 'emerald',        band: 0x18eb09, outline: 0x18eb09 },
+        { name: 'lapis',          band: 0x345ec3, outline: 0x345ec3 },
+        { name: 'redstone',       band: 0xaa0f01, outline: 0xaa0f01 },
+        // magic
+        { name: 'bloody',         band: 0x80251f, outline: 0x80251f },
+        { name: 'carbee',         band: 0xe39c27, outline: 0xe39c27 },
+        { name: 'elven',          band: 0xff66cc, outline: 0xff66cc },
+        { name: 'infused',        band: 0x1bb373, outline: 0x1bb373 },
+        { name: 'mana',           band: 0x4c97ff, outline: 0x4c97ff },
+        { name: 'otherworldly',   band: 0x1d1d24, outline: 0x1d1d24 },
+        { name: 'sky',            band: 0x73d0ff, outline: 0x73d0ff },
+        { name: 'starry',         band: 0x002184, outline: 0x002184 },
+        { name: 'tainted',        band: 0xcc6d3d, outline: 0xcc6d3d },
+        { name: 'terrestrial',    band: 0x5bf23d, outline: 0x5bf23d },
+        // material
+        { name: 'clay',           band: 0xacaebd, outline: 0xacaebd },
+        { name: 'enderslime',     band: 0xa777e1, outline: 0xa777e1 },
+        { name: 'gravel',         band: 0x968e8e, outline: 0x968e8e },
+        { name: 'ichor',          band: 0xf7731f, outline: 0xf7731f },
+        { name: 'shepherd',       band: 0x945c45, outline: 0x945c45 },
+        { name: 'skyslime',       band: 0x4ab1a4, outline: 0x4ab1a4 },
+        // metal
+        { name: 'aluminum',       band: 0xdce6f7, outline: 0xdce6f7 },
+        { name: 'cobalt',         band: 0x20adc9, outline: 0x20adc9 },
+        { name: 'copper',         band: 0xbb5b30, outline: 0xbb5b30 },
+        { name: 'frosty',         band: 0xb9d3ec, outline: 0xb9d3ec },
+        { name: 'gold',           band: 0xffdc00, outline: 0xffdc00 },
+        { name: 'iron',           band: 0xffcc99, outline: 0xffcc99 },
+        { name: 'lead',           band: 0x333952, outline: 0x333952 },
+        { name: 'nickel',         band: 0x8c8f86, outline: 0x8c8f86 },
+        { name: 'osmium',         band: 0xc1e0e7, outline: 0xc1e0e7 },
+        { name: 'regal',          band: 0xebbe76, outline: 0xebbe76 },
+        { name: 'silver',         band: 0xc5d1fe, outline: 0xc5d1fe },
+        { name: 'tin',            band: 0x7d81a4, outline: 0x7d81a4 },
+        { name: 'uranium',        band: 0x333c2f, outline: 0x333c2f },
+        { name: 'zinc',           band: 0x818653, outline: 0x818653 },
+        // natural
+        { name: 'brutish_zombee', band: 0x2f4e32, outline: 0x2f4e32 },
+        { name: 'clogged',        band: 0xba9d7b, outline: 0xba9d7b },
+        { name: 'coal',           band: 0x303030, outline: 0x303030 },
+        { name: 'creeper',        band: 0x0c9f0a, outline: 0x0c9f0a },
+        { name: 'ender',          band: 0x339786, outline: 0x339786 },
+        { name: 'forest',         band: 0x4c4c26, outline: 0x4c4c26 },
+        { name: 'glowstone',      band: 0xffbc5e, outline: 0xffbc5e },
+        { name: 'icy',            band: 0x92b9fe, outline: 0x92b9fe },
+        { name: 'obsidian',       band: 0x663399, outline: 0x663399 },
+        { name: 'pigman',         band: 0x885956, outline: 0x885956 },
+        { name: 'rgbee',          band: 0xffffff, outline: 0xffffff },
+        { name: 'rocky',          band: 0x8f8f8f, outline: 0x8f8f8f },
+        { name: 'sand',           band: 0xe7e4bb, outline: 0xe7e4bb },
+        { name: 'skeleton',       band: 0xf6f2e6, outline: 0xf6f2e6 },
+        { name: 'slimy',          band: 0x73c262, outline: 0x73c262 },
+        { name: 'water',          band: 0x5979ef, outline: 0x5979ef },
+        { name: 'zombie',         band: 0x2f4e32, outline: 0x2f4e32 },
+        // nether
+        { name: 'blaze',          band: 0xfff32d, outline: 0xfff32d },
+        { name: 'ghast',          band: 0xfaebd7, outline: 0xfaebd7 },
+        { name: 'netherite',      band: 0x654740, outline: 0x654740 },
+        { name: 'wither',         band: 0x444444, outline: 0x444444 },
+        { name: 'nether_quartz',  band: 0xd4caba, outline: 0xd4caba },
+        // special
+        { name: 'boobee',         band: 0xe9f3ea, outline: 0xe9f3ea },
+        { name: 'clockwork',      band: 0x70522e, outline: 0x70522e },
+        { name: 'direbee20',      band: 0x859292, outline: 0x859292 },
+        { name: 'dusty_mummbee',  band: 0xe7e4bb, outline: 0xe7e4bb },
+        { name: 'generikbee',     band: 0xf25843, outline: 0xf25843 },
+        { name: 'soup',           band: 0x8b7173, outline: 0x8b7173 },
+        { name: 'spelling',       band: 0x905e43, outline: 0x905e43 },
+        { name: 'wasabee',        band: 0x59a523, outline: 0x59a523 },
+        // tech
+        { name: 'basalz',         band: 0x1b141d, outline: 0x1b141d },
+        { name: 'blitz',          band: 0xdef7fa, outline: 0xdef7fa },
+        { name: 'blizz',          band: 0x37b7fe, outline: 0x37b7fe },
+        { name: 'industrious',    band: 0xce7dce, outline: 0xce7dce },
+        { name: 'pcbee',          band: 0x7a7f80, outline: 0x7a7f80 },
+        // manual
+        { name: 'abbee',          band: 0xe5ded5, outline: 0xffb1c5 },
+    ];
+
+    let metalTypes = ['suffused', 'fulminated', 'levigated', 'sliver'];
 
     let metals = [
         'aluminum',
@@ -364,113 +478,6 @@ onEvent('item.registry', (event) => {
         'zinc'
     ];
 
-    // prettier-ignore
-    const bees = [
-        //keep changes mostly synced to "server_scripts/constants/resourcefulbees.js", combVariants constant
-        // alloy
-        { name: 'brass', band: 0x998d38, outline: 0x998d38 },
-        { name: 'bronze', band: 0xd38c53, outline: 0xd38c53 },
-        { name: 'constantan', band: 0xd8876b, outline: 0xd8876b },
-        { name: 'electrum', band: 0xe5b840, outline: 0xe5b840 },
-        { name: 'enderium', band: 0x0a4a4a, outline: 0x0a4a4a },
-        { name: 'invar', band: 0xdfe5e2, outline: 0xdfe5e2 },
-        { name: 'lumium', band: 0xe5f3b5, outline: 0xe5f3b5 },
-        { name: 'signalum', band: 0xfd641a, outline: 0xfd641a },
-        { name: 'steel', band: 0x858585, outline: 0x858585 },
-        // dev
-        { name: 'kitten', band: 0xeaa939, outline: 0x4c483b },
-        { name: 'oreo', band: 0x442920, outline: 0xe1d9b8 },
-        { name: 'starry_lexxie', band: 0xffffff, outline: 0xffa500 },
-        { name: 'yeti', band: 0xe9f4f6, outline: 0x777e86 },
-        // gem
-        { name: 'diamond', band: 0x00ffff, outline: 0x00ffff },
-        { name: 'emerald', band: 0x18eb09, outline: 0x18eb09 },
-        { name: 'lapis', band: 0x345ec3, outline: 0x345ec3 },
-        { name: 'redstone', band: 0xaa0f01, outline: 0xaa0f01 },
-        // magic
-        { name: 'bloody', band: 0x80251f, outline: 0x80251f },
-        { name: 'carbee', band: 0xe39c27, outline: 0xe39c27 },
-        { name: 'elven', band: 0xff66cc, outline: 0xff66cc },
-        { name: 'infused', band: 0x1bb373, outline: 0x1bb373 },
-        { name: 'mana', band: 0x4c97ff, outline: 0x4c97ff },
-        { name: 'otherworldly', band: 0x1d1d24, outline: 0x1d1d24 },
-        { name: 'sky', band: 0x73d0ff, outline: 0x73d0ff },
-        { name: 'starry', band: 0x002184, outline: 0x002184 },
-        { name: 'tainted', band: 0xcc6d3d, outline: 0xcc6d3d },
-        { name: 'terrestrial', band: 0x5bf23d, outline: 0x5bf23d },
-        // material
-        { name: 'clay', band: 0xacaebd, outline: 0xacaebd },
-        { name: 'enderslime', band: 0xa777e1, outline: 0xa777e1 },
-        { name: 'gravel', band: 0x968e8e, outline: 0x968e8e },
-        { name: 'ichor', band: 0xf7731f, outline: 0xf7731f },
-        { name: 'shepherd', band: 0x945c45, outline: 0x945c45 },
-        { name: 'skyslime', band: 0x4ab1a4, outline: 0x4ab1a4 },
-        // metal
-        { name: 'aluminum', band: 0xdce6f7, outline: 0xdce6f7 },
-        { name: 'cobalt', band: 0x20adc9, outline: 0x20adc9 },
-        { name: 'copper', band: 0xbb5b30, outline: 0xbb5b30 },
-        { name: 'frosty', band: 0xb9d3ec, outline: 0xb9d3ec },
-        { name: 'gold', band: 0xffdc00, outline: 0xffdc00 },
-        { name: 'iron', band: 0xffcc99, outline: 0xffcc99 },
-        { name: 'lead', band: 0x333952, outline: 0x333952 },
-        { name: 'nickel', band: 0x8c8f86, outline: 0x8c8f86 },
-        { name: 'osmium', band: 0xc1e0e7, outline: 0xc1e0e7 },
-        { name: 'regal', band: 0xebbe76, outline: 0xebbe76 },
-        { name: 'silver', band: 0xc5d1fe, outline: 0xc5d1fe },
-        { name: 'tin', band: 0x7d81a4, outline: 0x7d81a4 },
-        { name: 'uranium', band: 0x333c2f, outline: 0x333c2f },
-        { name: 'zinc', band: 0x818653, outline: 0x818653 },
-        // natural
-        { name: 'brutish_zombee', band: 0x2f4e32, outline: 0x2f4e32 },
-        { name: 'clogged', band: 0xba9d7b, outline: 0xba9d7b },
-        { name: 'coal', band: 0x303030, outline: 0x303030 },
-        { name: 'creeper', band: 0x0c9f0a, outline: 0x0c9f0a },
-        { name: 'ender', band: 0x339786, outline: 0x339786 },
-        { name: 'forest', band: 0x4c4c26, outline: 0x4c4c26 },
-        { name: 'glowstone', band: 0xffbc5e, outline: 0xffbc5e },
-        { name: 'icy', band: 0x92b9fe, outline: 0x92b9fe },
-        { name: 'obsidian', band: 0x663399, outline: 0x663399 },
-        { name: 'pigman', band: 0x885956, outline: 0x885956 },
-        { name: 'rgbee', band: 0xffffff, outline: 0xffffff },
-        { name: 'rocky', band: 0x8f8f8f, outline: 0x8f8f8f },
-        { name: 'sand', band: 0xe7e4bb, outline: 0xe7e4bb },
-        { name: 'skeleton', band: 0xf6f2e6, outline: 0xf6f2e6 },
-        { name: 'slimy', band: 0x73c262, outline: 0x73c262 },
-        { name: 'water', band: 0x5979ef, outline: 0x5979ef },
-        { name: 'zombie', band: 0x2f4e32, outline: 0x2f4e32 },
-        // nether
-        { name: 'blaze', band: 0xfff32d, outline: 0xfff32d },
-        { name: 'ghast', band: 0xfaebd7, outline: 0xfaebd7 },
-        { name: 'netherite', band: 0x654740, outline: 0x654740 },
-        { name: 'wither', band: 0x444444, outline: 0x444444 },
-        { name: 'nether_quartz', band: 0xd4caba, outline: 0xd4caba },
-        // special
-        { name: 'boobee', band: 0xe9f3ea, outline: 0xe9f3ea },
-        { name: 'clockwork', band: 0x70522e, outline: 0x70522e },
-        { name: 'direbee20', band: 0x859292, outline: 0x859292 },
-        { name: 'dusty_mummbee', band: 0xe7e4bb, outline: 0xe7e4bb },
-        { name: 'generikbee', band: 0xf25843, outline: 0xf25843 },
-        { name: 'soup', band: 0x8b7173, outline: 0x8b7173 },
-        { name: 'spelling', band: 0x905e43, outline: 0x905e43 },
-        { name: 'wasabee', band: 0x59a523, outline: 0x59a523 },
-        // tech
-        { name: 'basalz', band: 0x1b141d, outline: 0x1b141d },
-        { name: 'blitz', band: 0xdef7fa, outline: 0xdef7fa },
-        { name: 'blizz', band: 0x37b7fe, outline: 0x37b7fe },
-        { name: 'industrious', band: 0xce7dce, outline: 0xce7dce },
-        { name: 'pcbee', band: 0x7a7f80, outline: 0x7a7f80 },
-        // manual
-        { name: 'abbee', band: 0xe5ded5, outline: 0xffb1c5 },
-    ];
-
-    let customTextureItems = [
-        { name: 'pewter_ingot', texturePath: 'create:item/zinc_ingot' },
-        { name: 'pewter_nugget', texturePath: 'create:item/zinc_nugget' },
-        { name: 'wicked_weave', texturePath: 'thermal:item/beekeeper_fabric' }
-    ];
-
-    let metalTypes = ['suffused', 'fulminated', 'levigated', 'sliver'];
-
     metalTypes.forEach((metalType) => {
         metals.forEach((metal) => {
             generalItems.push(`${metalType}_${metal}`);
@@ -486,7 +493,7 @@ onEvent('item.registry', (event) => {
     });
 
     reusableItemTextures.forEach((item) => {
-        event.create(item.name).group('KubeJS').texture(`kubejs:item/${item.texture}`);
+        event.create(item.name).group('KubeJS').texture(item.texture);
     });
 
     bees.forEach((bee) => {
@@ -499,25 +506,19 @@ onEvent('item.registry', (event) => {
             .color(2, bee.outline);
     });
 
-    customTextureItems.forEach((item) => {
-        event.create(item.name).group('KubeJS').texture(item.texturePath);
-    });
-
     // Custom Occultism Miners
     event
         .create('fisher_foliot')
         .group('KubeJS')
-        .texture('kubejs:item/magic_lamp')
+        .texture('occultism:item/magic_lamp')
         .maxStackSize(1)
-        .maxDamage(500)
-        .displayName('Fisher Foliot');
+        .maxDamage(500);
     event
         .create('miner_marid_irradiated')
         .group('KubeJS')
-        .texture('kubejs:item/magic_lamp')
+        .texture('occultism:item/magic_lamp')
         .maxStackSize(1)
-        .maxDamage(50)
-        .displayName('Irradiated Ore Miner Marid');
+        .maxDamage(50);
 
     // Custom Foods
     event
@@ -526,6 +527,5 @@ onEvent('item.registry', (event) => {
         .texture('kubejs:item/meat_ingot')
         .food((food) => {
             food.hunger(8).saturation(0.5).effect('upgrade_aquatic:vibing', 2400, 1, 1.0);
-        })
-        .displayName('Meat Ingot');
+        });
 });

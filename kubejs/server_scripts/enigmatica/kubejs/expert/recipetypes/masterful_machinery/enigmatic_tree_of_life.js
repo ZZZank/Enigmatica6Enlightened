@@ -14,10 +14,10 @@ onEvent('recipes', (event) => {
                 '8x botania:spark_upgrade_recessive',
                 '4x botania:mana_ring_greater',
                 '8x botania:fabulous_pool',
-                '1x botania:kekimurus',
-                '1x botania:shulk_me_not',
-                '1x botania:rosa_arcana',
-                '1x botania:dandelifeon',
+                'botania:kekimurus',
+                'botania:shulk_me_not',
+                'botania:rosa_arcana',
+                'botania:dandelifeon',
                 {
                     type: 'masterfulmachinery:botania_mana',
                     consumeInstantly: true,
@@ -28,15 +28,15 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}botanical_mastery_shard`
         },
         {
-            outputs: ['1x kubejs:astronomy_mastery_shard'],
+            outputs: ['kubejs:astronomy_mastery_shard'],
             inputs: [
-                '1x astralsorcery:observatory',
-                '1x #astralsorcery:crystals/attuned',
-                '1x astralsorcery:mantle',
-                '1x astralsorcery:marble_raw',
-                '1x thermal:device_rock_gen',
-                '1x create:mechanical_saw',
-                '1x #astralsorcery:stars/irradiant',
+                'astralsorcery:observatory',
+                '#astralsorcery:crystals/attuned',
+                'astralsorcery:mantle',
+                'astralsorcery:marble_raw',
+                'thermal:device_rock_gen',
+                'create:mechanical_saw',
+                '#astralsorcery:stars/irradiant',
 
                 {
                     type: 'masterfulmachinery:fluids',
@@ -53,11 +53,11 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}astronomy_mastery_shard`
         },
         {
-            outputs: [{ type: 'masterfulmachinery:items', data: '1x kubejs:alchemy_mastery_shard' }],
+            outputs: [{ type: 'masterfulmachinery:items', data: 'kubejs:alchemy_mastery_shard' }],
             inputs: [
-                '1x kubejs:diy_mixer',
-                '1x kubejs:diy_bottling_machine',
-                '1x kubejs:stim_pack',
+                'kubejs:diy_mixer',
+                'kubejs:diy_bottling_machine',
+                'kubejs:stim_pack',
                 '5x naturesaura:death_ring',
                 '5x naturesaura:pet_reviver',
 
@@ -73,7 +73,7 @@ onEvent('recipes', (event) => {
         {
             outputs: [{ type: 'masterfulmachinery:items', data: '5x kubejs:ritual_mastery_shard' }],
             inputs: [
-                '1x bloodmagic:altar',
+                'bloodmagic:altar',
                 '4x bloodmagic:largebloodstonebrick',
                 '4x minecraft:sea_lantern',
                 '4x minecraft:beacon',
@@ -82,10 +82,10 @@ onEvent('recipes', (event) => {
                 '8x bloodmagic:dislocationrune',
                 '16x bloodmagic:altarcapacityrune',
                 '16x bloodmagic:bettercapacityrune',
-                '1x bloodmagic:masterritualstone',
+                'bloodmagic:masterritualstone',
                 '36x bloodmagic:ritualstone',
-                '1x bloodmagic:ritualdivinerdusk',
-                '1x bloodmagic:ritualtinkerer',
+                'bloodmagic:ritualdivinerdusk',
+                'bloodmagic:ritualtinkerer',
                 '10x kubejs:artisinal_ritual_kit',
                 '10x kubejs:artisinal_chalk_set',
                 {
@@ -103,17 +103,17 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}ritual_mastery_shard`
         },
         {
-            outputs: [{ type: 'masterfulmachinery:items', data: '1x kubejs:aura_mastery_shard' }],
+            outputs: [{ type: 'masterfulmachinery:items', data: 'kubejs:aura_mastery_shard' }],
             inputs: [
-                '1x naturesaura:aura_trove',
-                '1x naturesaura:firework_generator',
-                '1x kubejs:big_box_o_boom',
-                '1x naturesaura:generator_limit_remover',
-                '1x naturesaura:projectile_generator',
-                '1x kubejs:mimirs_memory_box',
-                '1x kubejs:altar_of_birthing_kit',
+                'naturesaura:aura_trove',
+                'naturesaura:firework_generator',
+                'kubejs:big_box_o_boom',
+                'naturesaura:generator_limit_remover',
+                'naturesaura:projectile_generator',
+                'kubejs:mimirs_memory_box',
+                'kubejs:altar_of_birthing_kit',
                 '8x naturesaura:aura_detector',
-                '1x naturesaura:mover_cart',
+                'naturesaura:mover_cart',
                 '64x minecraft:powered_rail',
                 '32x minecraft:rail',
                 '8x minecraft:activator_rail',
@@ -130,18 +130,18 @@ onEvent('recipes', (event) => {
             outputs: ['2x kubejs:engineering_mastery_shard'],
             inputs: [
                 '64x pneumaticcraft:advanced_pressure_tube',
-                '1x pneumaticcraft:advanced_liquid_compressor',
+                'pneumaticcraft:advanced_liquid_compressor',
                 '4x create:rotation_speed_controller',
                 '4x create:large_cogwheel',
                 '64x create:shaft',
                 '32x create:encased_chain_drive',
 
-                '1x kubejs:diy_arc_furnace',
-                '1x kubejs:imaharas_indelible_electrodes',
-                '1x kubejs:diy_pumpjack',
-                '1x kubejs:diy_distillation_tower',
-                '1x kubejs:diy_pressure_chamber',
-                '1x kubejs:diy_furnace_engine_kit',
+                'kubejs:diy_arc_furnace',
+                'kubejs:imaharas_indelible_electrodes',
+                'kubejs:diy_pumpjack',
+                'kubejs:diy_distillation_tower',
+                'kubejs:diy_pressure_chamber',
+                'kubejs:diy_furnace_engine_kit',
                 {
                     type: 'masterfulmachinery:fluids',
                     perTick: true,
@@ -159,13 +159,13 @@ onEvent('recipes', (event) => {
         {
             outputs: ['50x kubejs:energistics_mastery_shard'],
             inputs: [
-                '1x mekanismgenerators:fusion_reactor_controller',
+                'mekanismgenerators:fusion_reactor_controller',
                 '36x mekanismgenerators:fusion_reactor_frame',
                 '5x mekanismgenerators:fusion_reactor_port',
                 '24x mekanismgenerators:reactor_glass',
                 '5x mekanismgenerators:electromagnetic_coil',
                 '224x mekanism:pressure_disperser',
-                '1x mekanismgenerators:rotational_complex',
+                'mekanismgenerators:rotational_complex',
                 '293x mekanismgenerators:saturating_condenser',
                 '598x mekanism:structural_glass',
                 '417x mekanismgenerators:turbine_casing',
@@ -175,9 +175,9 @@ onEvent('recipes', (event) => {
                 '585x mekanismgenerators:turbine_vent',
                 '64x mekanism:induction_casing',
                 '2x mekanism:induction_port',
-                '1x mekanism:ultimate_induction_provider',
+                'mekanism:ultimate_induction_provider',
                 '8x mekanism:ultimate_induction_cell',
-                '1x fluxnetworks:flux_controller',
+                'fluxnetworks:flux_controller',
                 '50x fluxnetworks:flux_point',
                 '2x fluxnetworks:flux_plug',
                 {
@@ -200,17 +200,17 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}energistics_mastery_shard`
         },
         {
-            outputs: ['1x kubejs:dimensional_mastery_shard'],
+            outputs: ['kubejs:dimensional_mastery_shard'],
             inputs: [
                 '2x aeadditions:item_storage_cell_1024',
                 '2x aeadditions:fluid_storage_cell_1024',
                 '4x mekanism:quantum_entangloporter',
-                '1x aeinfinitybooster:dimension_card',
+                'aeinfinitybooster:dimension_card',
                 '64x appliedenergistics2:quantum_ring',
                 '8x appliedenergistics2:quantum_link',
                 '2x appliedenergistics2:quantum_entangled_singularity',
                 '5x mekanism:teleporter',
-                '1x mekanism:portable_teleporter',
+                'mekanism:portable_teleporter',
 
                 {
                     type: 'masterfulmachinery:botania_mana',
@@ -224,11 +224,11 @@ onEvent('recipes', (event) => {
         {
             outputs: [{ type: 'masterfulmachinery:items', data: '5x kubejs:battle_mastery_shard' }],
             inputs: [
-                '1x kubejs:diy_mekasuit_helmet',
-                '1x kubejs:diy_mekasuit_bodyarmor',
-                '1x kubejs:diy_mekasuit_pants',
-                '1x kubejs:diy_mekasuit_boots',
-                '1x kubejs:diy_meka_tool',
+                'kubejs:diy_mekasuit_helmet',
+                'kubejs:diy_mekasuit_bodyarmor',
+                'kubejs:diy_mekasuit_pants',
+                'kubejs:diy_mekasuit_boots',
+                'kubejs:diy_meka_tool',
 
                 {
                     type: 'masterfulmachinery:botania_mana',
@@ -242,16 +242,16 @@ onEvent('recipes', (event) => {
         {
             outputs: ['2x kubejs:excavation_mastery_shard'],
             inputs: [
-                '1x industrialforegoing:fluid_laser_base',
-                '1x industrialforegoing:ore_laser_base',
+                'industrialforegoing:fluid_laser_base',
+                'industrialforegoing:ore_laser_base',
                 '8x industrialforegoing:laser_drill',
-                '1x occultism:dimensional_mineshaft',
-                '1x kubejs:miner_marid_irradiated',
-                '1x kubejs:diy_excavator',
-                '1x immersiveengineering:survey_tools',
-                '1x kubejs:mining_gadget_kit',
-                '1x kubejs:flux_bore_kit',
-                '1x kubejs:diy_create_quarry',
+                'occultism:dimensional_mineshaft',
+                'kubejs:miner_marid_irradiated',
+                'kubejs:diy_excavator',
+                'immersiveengineering:survey_tools',
+                'kubejs:mining_gadget_kit',
+                'kubejs:flux_bore_kit',
+                'kubejs:diy_create_quarry',
                 {
                     type: 'masterfulmachinery:botania_mana',
                     consumeInstantly: true,
@@ -262,10 +262,10 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}excavation_mastery_shard`
         },
         {
-            outputs: ['1x kubejs:culinary_mastery_shard'],
+            outputs: ['kubejs:culinary_mastery_shard'],
             inputs: [
-                '1x kubejs:engineering_student_meals',
-                '1x kubejs:box_of_thankful_dinners',
+                'kubejs:engineering_student_meals',
+                'kubejs:box_of_thankful_dinners',
                 {
                     type: 'masterfulmachinery:botania_mana',
                     consumeInstantly: true,
@@ -276,25 +276,25 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}culinary_mastery_shard`
         },
         {
-            outputs: ['1x kubejs:automation_mastery_shard'],
+            outputs: ['kubejs:automation_mastery_shard'],
             inputs: [
-                '1x appliedenergistics2:controller',
+                'appliedenergistics2:controller',
                 '32x appliedenergistics2:molecular_assembler',
                 '4x appliedenergistics2:interface',
-                '1x appliedenergistics2:pattern_terminal',
+                'appliedenergistics2:pattern_terminal',
                 '64x appliedenergistics2:blank_pattern',
                 '64x appliedenergistics2:fluix_smart_cable',
                 '8x create:deployer',
                 '8x create:mechanical_arm',
                 '8x create:content_observer',
                 '8x create:stockpile_switch',
-                '1x botania:auto_crafting_halo',
+                'botania:auto_crafting_halo',
                 '2x naturesaura:field_creator',
-                '1x naturesaura:placer',
+                'naturesaura:placer',
                 '4x entangled:block',
                 '4x pneumaticcraft:universal_sensor',
-                '1x kubejs:diy_drone_kit',
-                '1x kubejs:assorted_router_kit',
+                'kubejs:diy_drone_kit',
+                'kubejs:assorted_router_kit',
                 {
                     type: 'masterfulmachinery:botania_mana',
                     consumeInstantly: true,
@@ -307,36 +307,8 @@ onEvent('recipes', (event) => {
     ];
 
     recipes.forEach((recipe) => {
-        recipe.inputs = recipe.inputs.map((val) => {
-            if (typeof val == 'string') {
-                // '32x kubejs:rough_machine_frame'
-                return {
-                    type: 'masterfulmachinery:items',
-                    data: toJsonWithCount(val)
-                };
-            } else if (val.type == 'masterfulmachinery:items') {
-                /*
-                {
-                    type: 'masterfulmachinery:items',
-                    chance: 1.0,
-                    data: '2x mekanism:solar_neutron_activator'
-                }
-                 */
-                val.data = toJsonWithCount(val.data);
-            }
-            return val;
-        });
-        recipe.outputs = recipe.outputs.map((val) => {
-            if (typeof val == 'string') {
-                return {
-                    type: 'masterfulmachinery:items',
-                    data: toJsonWithCount(val)
-                };
-            } else if (val.type == 'masterfulmachinery:items') {
-                val.data = toJsonWithCount(val.data);
-            }
-            return val;
-        });
+        recipe.inputs = recipe.inputs.map(toMMJson);
+        recipe.outputs = recipe.outputs.map(toMMJson);
         recipe.type = 'masterfulmachinery:machine_process';
         recipe.structureId = 'enigmatic_tree_of_life_structure';
         recipe.controllerId = 'enigmatic_tree_of_life';

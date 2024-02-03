@@ -28,6 +28,8 @@ onEvent('item.modification', (event) => {
         'rftoolsbase:infused_enderpearl',
         'rftoolsbase:infused_diamond',
 
+        'tconstruct:glow_ball',
+
         'undergarden:goo_ball',
 
         //signs

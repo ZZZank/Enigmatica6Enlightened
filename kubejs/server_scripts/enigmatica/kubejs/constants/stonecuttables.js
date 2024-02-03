@@ -1680,6 +1680,7 @@ colors.forEach((color) => {
         });
     });
 
+    /*
     let chiselStoneTypes = [
         'cracked',
         'solid_bricks',
@@ -1717,15 +1718,16 @@ colors.forEach((color) => {
     ];
 
     // @Chisel concrete
-    // let stonecuttablesIndex = stonecuttables.findIndex((obj) => {
-    //     return obj.name == `${color}_concrete`;
-    // });
-    // if (stonecuttablesIndex > -1) {
-    //     let stones = stonecuttables[stonecuttablesIndex].stones;
-    //     chiselStoneTypes.forEach((chiselStoneType) => {
-    //         stones.push(`chisel:concrete/${color}/${chiselStoneType}`);
-    //     });
-    // }
+    let stonecuttablesIndex = stonecuttables.findIndex((obj) => {
+        return obj.name == `${color}_concrete`;
+    });
+    if (stonecuttablesIndex > -1) {
+        let stones = stonecuttables[stonecuttablesIndex].stones;
+        chiselStoneTypes.forEach((chiselStoneType) => {
+            stones.push(`chisel:concrete/${color}/${chiselStoneType}`);
+        });
+    }
+    */
 });
 
 // @Chisel Planks

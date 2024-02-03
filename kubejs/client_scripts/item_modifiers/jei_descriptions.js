@@ -16,12 +16,12 @@ onEvent('jei.information', (event) => {
         },
         */
         {
-            items: ['upgrade_aquatic:elder_guardian_spine'],
-            text: ['Obtained by killing Elder Guardian.']
+            items: ['environmental:koi'],
+            text: [eprefix + 'koi']
         },
         {
             items: ['neapolitan:mint_milkshake'],
-            text: [`Can "rob" potion effects belonging to one nearby mob.`]
+            text: [eprefix + 'mint_milkshake']
         },
         {
             items: ['farmersdelight:ham'],
@@ -301,10 +301,6 @@ onEvent('jei.information', (event) => {
         {
             items: ['bloodmagic:strong_tau'],
             text: [`${id_prefix}strong_tau`]
-        },
-        {
-            items: ['environmental:koi'],
-            text: [`Will not spawn naturally. See Koi Bucket for how to obtain. `]
         },
         {
             items: [

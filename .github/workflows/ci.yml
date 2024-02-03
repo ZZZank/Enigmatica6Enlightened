@@ -1,5 +1,7 @@
 name: Continuous Integration
+
 on:
+  workflow_dispatch:
   push:
     branches:
       - 'enlightened_develop'
@@ -64,7 +66,7 @@ jobs:
       - uses: actions/setup-java@v3
         with:
           distribution: 'zulu'
-          java-version: '14'
+          java-version: '16'
 
       - uses: actions/cache@v3
         with:

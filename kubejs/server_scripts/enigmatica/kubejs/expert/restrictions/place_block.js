@@ -53,8 +53,8 @@ onEvent('block.place', (event) => {
         return true;
     };
 
-    for (let r of restrictions.block_place) {
-        if (r.blocks.indexOf(block.id) == -1) {
+    for (let restriction of restrictions.block_place) {
+        if (restriction.blocks.indexOf(block.id) == -1) {
             continue;
         }
         // Restricted blocks must be placed by player
@@ -62,8 +62,8 @@ onEvent('block.place', (event) => {
             event.cancel();
             return;
         }
-        if (!isValid(r)) {
-            entity.tell(Text.translate(r.errorMessage).red());
+        if (!isValid(restriction)) {
+            entity.tell(Text.translate(restriction.errorMessage).red());
             event.cancel();
             return;
         }

@@ -62,16 +62,17 @@ onEvent('jei.information', (event) => {
                 /powah:energy_cable_/,
                 'engineersdecor:factory_placer'
             ],
-            text: [`descriptions.enigmatica.base.disabled_please_report`]
+            text: [`descriptions.en6e.base.disabled_please_report`]
+        },
+        {
+            items: disabledItemsAE,
+            text: [`descriptions.en6e.base.disabled_please_report`]
         }
     ];
 
     recipes.forEach((recipe) => {
-        for (let i = 0; i < recipe.text.length; i++) {
-            recipe.text[i] = Text.translate(recipe.text[i]);
-        }
         recipe.items.forEach((item) => {
-            event.add(item, recipe.text);
+            event.add(item, recipe.text.map(Text.translate));
         });
     });
 });

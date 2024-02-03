@@ -34,17 +34,18 @@ onEvent('recipes', (event) => {
 
     for (let itemRS in exchanges) {
         let itemAE = exchanges[itemRS];
+        let [mod, id] = itemRS.split(':');
         event.remove({ output: itemRS });
         recipes.push(
             {
-                inputs: itemAE,
+                inputs: [itemAE],
                 output: itemRS,
-                id: `${id_prefix}ae_rs/${itemRS.split(':')[1]}`
+                id: `${id_prefix}ae_rs/${id}`
             },
             {
-                inputs: itemRS,
+                inputs: [itemRS],
                 output: itemAE,
-                id: `${id_prefix}rs_ae/${itemRS.split(':')[1]}`
+                id: `${id_prefix}rs_ae/${id}`
             }
         );
     }

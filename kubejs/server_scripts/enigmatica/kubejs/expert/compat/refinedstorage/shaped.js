@@ -1,3 +1,5 @@
+'use strict';
+
 onEvent('recipes', (event) => {
     if (global.isNormalMode || !Platform.isLoaded('refinedstorage')) {
         return;
@@ -36,7 +38,7 @@ onEvent('recipes', (event) => {
                 C: 'immersiveengineering:wirecoil_redstone',
                 D: 'integrateddynamics:cable'
             },
-            id: `${id_prefix}cable_alt`
+            id: 'refinedstorage:cable'
         },
         {
             output: 'refinedstorage:importer',
@@ -157,17 +159,6 @@ onEvent('recipes', (event) => {
                 G: 'kubejs:cpu_core_as_81221'
             },
             id: 'refinedstorage:network_receiver'
-        },
-        {
-            output: 'refinedstorage:disk_drive',
-            pattern: ['ABA', 'CDC', 'ABA'],
-            key: {
-                A: '#forge:circuits/elite',
-                B: 'extrastorage:neural_processor',
-                C: 'immersiveengineering:logic_unit',
-                D: 'refinedstorage:machine_casing'
-            },
-            id: `${id_prefix}disk_drive_alt`
         }
     ];
 

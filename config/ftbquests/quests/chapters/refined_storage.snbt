@@ -172,11 +172,14 @@
 			rewards: [
 				{
 					id: "00000000000005B1"
-					type: "command"
-					title: "Refined Storage Loot Box"
-					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
-					player_command: false
+					type: "item"
+					item: {
+    					id: "kubejs:epic_lootbox"
+						Count: 1b
+						tag: {
+        					mod: "refined_storage"
+						}
+					}
 				}
 				{
 					id: "00000000000005BD"
@@ -256,11 +259,14 @@
 			]
 			rewards: [{
 				id: "00000000000005BA"
-				type: "command"
-				title: "Refined Storage Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "refined_storage"
+					}
+				}
 			}]
 		}
 		{
@@ -379,11 +385,14 @@
 			}]
 			rewards: [{
 				id: "00000000000005C5"
-				type: "command"
-				title: "Refined Storage Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "refined_storage"
+					}
+				}
 			}]
 		}
 		{
@@ -415,11 +424,14 @@
 			]
 			rewards: [{
 				id: "00000000000005C3"
-				type: "command"
-				title: "Refined Storage Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "refined_storage"
+					}
+				}
 			}]
 		}
 		{
@@ -475,11 +487,14 @@
 			]
 			rewards: [{
 				id: "00000000000005C1"
-				type: "command"
-				title: "Refined Storage Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "refined_storage"
+					}
+				}
 			}]
 		}
 		{
@@ -510,19 +525,25 @@
 			rewards: [
 				{
 					id: "00000000000005B2"
-					type: "command"
-					title: "Refined Storage Loot Box"
-					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
-					player_command: false
+					type: "item"
+					item: {
+    					id: "kubejs:epic_lootbox"
+						Count: 1b
+						tag: {
+        					mod: "refined_storage"
+						}
+					}
 				}
 				{
 					id: "00000000000005B3"
-					type: "command"
-					title: "Refined Storage Loot Box"
-					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
-					player_command: false
+					type: "item"
+					item: {
+    					id: "kubejs:epic_lootbox"
+						Count: 1b
+						tag: {
+        					mod: "refined_storage"
+						}
+					}
 				}
 			]
 		}
@@ -564,11 +585,14 @@
 			}]
 			rewards: [{
 				id: "00000000000005B4"
-				type: "command"
-				title: "Refined Storage Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "refined_storage"
+					}
+				}
 			}]
 		}
 		{
@@ -591,11 +615,14 @@
 			}]
 			rewards: [{
 				id: "00000000000005BC"
-				type: "command"
-				title: "Refined Storage Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "refined_storage"
+					}
+				}
 			}]
 		}
 		{
@@ -660,19 +687,25 @@
 			rewards: [
 				{
 					id: "00000000000005B6"
-					type: "command"
-					title: "Refined Storage Loot Box"
-					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
-					player_command: false
+					type: "item"
+					item: {
+    					id: "kubejs:epic_lootbox"
+						Count: 1b
+						tag: {
+        					mod: "refined_storage"
+						}
+					}
 				}
 				{
 					id: "00000000000005B7"
-					type: "command"
-					title: "Refined Storage Loot Box"
-					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
-					player_command: false
+					type: "item"
+					item: {
+    					id: "kubejs:epic_lootbox"
+						Count: 1b
+						tag: {
+        					mod: "refined_storage"
+						}
+					}
 				}
 			]
 		}
@@ -704,11 +737,14 @@
 			]
 			rewards: [{
 				id: "0000000000000F4C"
-				type: "command"
-				title: "Refined Storage Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "refined_storage"
+					}
+				}
 			}]
 		}
 		{
@@ -733,11 +769,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000F4F"
-				type: "command"
-				title: "Refined Storage Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "refined_storage"
+					}
+				}
 			}]
 		}
 		{
@@ -757,11 +796,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000F50"
-				type: "command"
-				title: "Refined Storage Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "refined_storage"
+					}
+				}
 			}]
 		}
 		{
@@ -811,11 +853,14 @@
 			}]
 			rewards: [{
 				id: "20EF5FBDB4D844CB"
-				type: "command"
-				title: "Refined Storage Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "refined_storage"
+					}
+				}
 			}]
 		}
 		{
@@ -838,11 +883,14 @@
 			}]
 			rewards: [{
 				id: "3E28C6692FC99AEB"
-				type: "command"
-				title: "Refined Storage Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "refined_storage"
+					}
+				}
 			}]
 		}
 		{

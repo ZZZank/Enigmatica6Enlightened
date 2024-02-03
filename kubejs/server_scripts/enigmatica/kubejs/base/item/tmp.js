@@ -6,13 +6,15 @@
 //         return;
 //     }
 
-//     let target = player.lastAttackedEntity
+//     let a = Item.of('pneumaticcraft:reinforced_chest', JSON.stringify({
+//         display: {
+//             Name: '[{"translate":"desc.enigmatica.amadron.atum_mineral"}]',
+//             Lore: ['[{"translate":"desc.enigmatica.amadron.atum_mineral.lore","color":"gold"}]']
+//         },
+//         BlockEntityTag: { LootTable: 'enigmatica:chests/amadron_mineral_survey_atum_combo' }
+//     }));
 
-//     player.tell(target.type)
-//     console.info(target.type)
-//     player.tell(str);
-// });
+//     player.give(a);
 
-// onEvent('entity.death', (e) => {
-//     console.info('"' + e.entity.type + '",')
+//     player.tell(a);
 // });

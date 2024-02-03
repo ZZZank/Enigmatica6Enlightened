@@ -14,7 +14,9 @@ const validApiaryBlocks = [
 
 // Items added here will be removed from the "valid_apiary" tag
 const invalidApiaryBlocks = ['upgrade_aquatic:bedroll'];
-colors.forEach((color) => invalidApiaryBlocks.push(`upgrade_aquatic:${color}_bedroll`));
+colors.forEach((color) => {
+    invalidApiaryBlocks.push(`upgrade_aquatic:${color}_bedroll`);
+});
 
 const honeyVarieties = [
     'resourcefulbees:blaze_honey',

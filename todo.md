@@ -2,3 +2,11 @@
 - liquid source
 - makes AS::flare looks like MiningGadget::minerslight
 - BetterEnd: pedestals directional texture
+- custom Thermal Augments
+- AE Growth Accelerator custom usage
+    - fluid/item, when placed next to Growth Accelerator, will drain power from it, having a chance to transform
+- (storage module n) + 1 = (n+1)
+- "psimetal" recipe
+- astral mineralis ritual
+- Ethylene(mek) earlier
+- note that 2.6.0 needs fresh install, or at least deleting kubejs & config folder

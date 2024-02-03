@@ -100,6 +100,11 @@ const colors = [
 ];
 
 const itemsToHide = [
+    'appliedenergistics2:flour',
+    'appliedenergistics2:gold_dust',
+    'appliedenergistics2:iron_dust',
+    'appliedenergistics2:ender_dust',
+
     // Deprecated Ars Arsenal items
     'arsarsenal:aqua_hood',
     'arsarsenal:fire_hood',
@@ -190,6 +195,8 @@ const itemsToHide = [
     'environmental:apple_pie',
 
     'farmersdelight:fried_egg',
+
+    /ftblibrary:fluid_container/,
 
     'immersiveengineering:dust_coke',
     'immersiveengineering:dust_saltpeter',
@@ -613,14 +620,11 @@ const disabledItems = [
     'byg:pendorite_battleaxe',
     'byg:pendorite_block',
     'byg:pendorite_hoe',
-    'byg:pendorite_horse_armor',
     'byg:pendorite_ore',
     'byg:pendorite_pickaxe',
-    'byg:pendorite_scraps',
     'byg:pendorite_shovel',
     'byg:pendorite_sword',
     'byg:emeraldite_ore',
-    'byg:emeraldite_shards',
 
     'create:dough',
 
@@ -637,8 +641,6 @@ const disabledItems = [
     'losttrinkets:tha_cloud',
     'losttrinkets:rock_candy',
     'losttrinkets:mad_aura',
-
-    /materialis:psimetal/,
 
     'mekanism:sawdust',
     'mekanism:dust_lapis_lazuli',

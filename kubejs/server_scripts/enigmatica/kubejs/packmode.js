@@ -3,7 +3,7 @@
 
 /**
  * Set FTBQuest for a player according to packmode
- * @param {Internal.PlayerJS} player
+ * @param {Internal.PlayerJS<any>} player
  */
 function setMode(player) {
     const expertModeQuestId = '0000000000000FEB';

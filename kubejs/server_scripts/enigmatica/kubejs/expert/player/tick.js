@@ -1,4 +1,6 @@
 'use strict';
+
+/*
 onEvent('player.tick', (event) => {
     const player = event.player;
     if (!player.isPlayer() || player.isFake()) {
@@ -15,3 +17,4 @@ onEvent('player.tick', (event) => {
         }
     }
 });
+*/

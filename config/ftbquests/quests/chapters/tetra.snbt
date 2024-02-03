@@ -1604,11 +1604,8 @@
 			}]
 			rewards: [{
 				id: "59B2B9FCD1E15324"
-				type: "command"
-				title: "Blacksmith's Delight"
-				icon: "kubejs:blacksmiths_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blacksmiths_delight"
-				player_command: false
+				type: "item"
+				item:  "kubejs:blacksmiths_delight"
 			}]
 		}
 		{
@@ -1645,11 +1642,8 @@
 			}]
 			rewards: [{
 				id: "49D9C81C252CD109"
-				type: "command"
-				title: "Blacksmith's Delight"
-				icon: "kubejs:blacksmiths_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blacksmiths_delight"
-				player_command: false
+				type: "item"
+				item:  "kubejs:blacksmiths_delight"
 			}]
 		}
 		{
@@ -1693,11 +1687,8 @@
 			}]
 			rewards: [{
 				id: "25764538285A2048"
-				type: "command"
-				title: "Blacksmith's Delight"
-				icon: "kubejs:blacksmiths_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blacksmiths_delight"
-				player_command: false
+				type: "item"
+				item:  "kubejs:blacksmiths_delight"
 			}]
 		}
 	]

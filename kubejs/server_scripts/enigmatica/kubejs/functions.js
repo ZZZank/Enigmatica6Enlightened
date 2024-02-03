@@ -3,26 +3,45 @@
 
 /**
  *
- * @param {string} str
- * @returns
+ * @param {string} str : e.g. `an example sTRing`
+ * @returns {string}: e.g. `An Exmaple String`
  */
-function titleCase(str) {
+const titleCase = (str) => {
     return str
-        .toLowerCase()
         .split(' ')
-        .map((str) => str.charAt(0).toUpperCase() + str.substring(1))
+        .map((str) => str.charAt(0).toUpperCase() + str.substring(1).toLowerCase())
         .join(' ');
-}
+};
+
+/**
+ * transform String/JSON style ingredient into Masterful Machinery JSON
+ * @param {string|{type?:string,data:string|{},chance?:number}} ingredient
+ * @returns {{type:string,data:{},chance?:number}}
+ */
+const toMMJson = (ingredient) => {
+    if (typeof ingredient == 'string') {
+        // '32x kubejs:rough_machine_frame'
+        ingredient = { data: toJsonWithCount(ingredient) };
+    } else if (typeof ingredient.data == 'string') {
+        // { chance: 1.0, data: '2x mekanism:solar_neutron_activator' }
+        ingredient.data = toJsonWithCount(ingredient.data);
+    }
+    if (!ingredient.type) {
+        ingredient.type = 'masterfulmachinery:items';
+    }
+    // @ts-ignore
+    return ingredient;
+};
 
 /**
  * transform string-style ingredient into JSON style
  * @param {string} ingredient like '3x #forge:grain' or 'minecraft:book'
- * @returns {{count: number,tag?: string,item?: string}}
+ * @returns {{tag:string,item:null,count:number}|{tag:null,item:string,count:number}}
  */
-function toJsonWithCount(ingredient) {
-    let parsed = { count: 1 };
+const toJsonWithCount = (ingredient) => {
+    const parsed = { tag: null, item: null, count: 1 };
 
-    let splited = ingredient.split('x ', 2);
+    const splited = ingredient.split('x ', 2);
     if (splited.length != 1) {
         // "3x kubejs:no" -> ["3", "kubejs:no"]
         parsed.count = parseInt(splited[0]);
@@ -35,100 +54,143 @@ function toJsonWithCount(ingredient) {
         parsed.item = ingredient;
     }
     return parsed;
-}
+};
 
 /**
- *
- * @param {any[]} entries
- * @returns {any}
+ * @param {any[]|Internal.Collection<any>} entries
  */
-function getRandomInList(entries) {
-    return entries[Math.floor(Math.random() * entries.length)];
-}
+const randomOf = (entries) => {
+    // @ts-ignore
+    return Utils.randomOf(Utils.getRandom(), entries);
+};
 
 /**
  * @param {Internal.ItemStackJS} item
  * @param {string?} color
  * @returns {string}
  */
-function rawItemStr(item, color) {
-    let colorTag = color ? `,"color":"${color}"` : '';
-    let count = item.count > 1 ? `"${item.count}*"` : '""';
-    let itemName = '';
+const rawItemStr = (item, color) => {
+    const count = item.count > 1 ? `${item.count}*` : '';
+    let itemName;
     try {
-        itemName = item.getNbt().display.Name;
+        //@ts-ignore
+        itemName = JSON.parse(item.getNbt().display.Name);
     } catch (e) {
-        itemName = `{"translate":"${item.block ? 'block' : 'item'}.${item.id.replace(':', '.')}"}`;
+        itemName = { translate: `${item.block ? 'block' : 'item'}.${item.id.replace(':', '.')}` };
     }
-    // we use string instead of Text/TextComponent because KubeJS cannot handle `show_item` properly
-    return `{
-        "translate":"%s[%s]",
-        "with":[${count},${itemName}],
-        "hoverEvent": {
-            "action": "show_item",
-            "contents": {
-                "id": "${item.id}",
-                "count": ${item.count},
-                "tag":"${item.nbtString.replace('"', '\\"')}"
-        }}${colorTag}}`.replace(/\s+/g, '');
-}
+    // not `%s[%s]` because JSON.stringify() seems unable to support multiple elements in an array
+    const rawItem = {
+        translate: count + '[%s]',
+        with: [itemName],
+        hoverEvent: {
+            action: 'show_item',
+            contents: {
+                id: item.id,
+                count: item.count,
+                tag: item.nbtString
+            }
+        }
+    };
+    if (color) {
+        // @ts-ignore
+        rawItem.color = color;
+    }
+    return JSON.stringify(rawItem);
+};
 
 /**
  * run `tellraw` command on a player
- * @param {Internal.PlayerJS} player The target of tellraw command
+ * @param {Internal.PlayerJS<any>} player The target of tellraw command
  * @param {string} str The content of tellraw command
  */
-function tellraw(player, str) {
-    player.server.runCommandSilent(`/tellraw ${player.name} ${str}`);
-}
-
-function shapedRecipe(result, pattern, key, id) {
-    return { result: result, pattern: pattern, key: key, id: id };
-}
-function shapelessRecipe(result, ingredients, id) {
-    return { result: result, ingredients: ingredients, id: id };
-}
+const tellraw = (player, str) => {
+    player.server.runCommandSilent('/tellraw ' + player.name + ' ' + str);
+};
 
 /**
- *
+ * @see unificationBlacklist
  * @param {string} material
  * @param {string} type
- * @returns
  */
-function unificationBlacklistEntry(material, type) {
-    return { material: material, type: type };
-}
-function entryIsBlacklisted(material, type) {
-    for (let i = 0; i < unificationBlacklist.length; i++) {
-        if (unificationBlacklist[i].material == material && unificationBlacklist[i].type == type) {
+const entryIsBlacklisted = (material, type) => {
+    for (let blacklist of unificationBlacklist) {
+        if (blacklist.material == material && blacklist.type == type) {
             return true;
         }
     }
     return false;
-}
+};
 
-function tagIsEmpty(tag) {
-    return getPreferredItemInTag(Ingredient.of(tag)).id == air;
-}
+/**
+ * get the most prefered item in a tag based on priorities from variable `modPriorities`
+ * @see modPriorities
+ * @param {Internal.IngredientJS} tag
+ * @returns {Internal.ItemStackJS}
+ */
+const getPreferredItemInTag = (tag) => {
+    let items = getItemsInTag(tag);
+    if (items.length == 0) {
+        return Item.of(air);
+    }
+    //use "max" instead of "sorting", to decrease time complexity from O(n*log(n)) to O(n)
+    //being "bigger" here means having smaller index, which means -1, so there's an `-`
+    return maxOf(items, (a, b) => -compareIndices(a.mod, b.mod, tag));
+};
 
 /**
  *
- * @param {Internal.IngredientJS} tag
+ * @param {any[]} list
+ * @param {null|((a:any,b:any)=>number)} comparator If not specified, will use `(a, b) => a - b`
  */
-function getPreferredItemInTag(tag) {
-    return getItemsInTag(tag).sort((a, b) => compareIndices(a.mod, b.mod, tag))[0] || Item.of(air);
-}
+const maxOf = (list, comparator) => {
+    if (list.length == 0) {
+        return null;
+    }
+    if (!comparator) {
+        comparator = (a, b) => a - b;
+    }
+    let targetIndex = 0;
+    for (let i = 1; i < list.length; i++) {
+        if (comparator(list[i], list[targetIndex]) > 0) {
+            targetIndex = i;
+        }
+    }
+    return list[targetIndex];
+};
+
+/**
+ *
+ * @param {any[]} arr the array to be splited into "pages"
+ * @param {number} pageSize the max size of spilitted parts of `arr`
+ * @returns {any[][]} the paged array containing spilitted parts
+ */
+const toPagedArray = (arr, pageSize) => {
+    if (pageSize <= 0) {
+        throw 'Invalid param, `pageSize` must be positive number';
+    }
+    const paged = [];
+    for (let i = 0; i < arr.length; i += pageSize) {
+        let end = JavaMath.min(i + pageSize, arr.length);
+        paged.push(arr.slice(i, end));
+    }
+    return paged;
+};
 
 /**
  *
  * @param {Internal.IngredientJS} tag
  * @return {Internal.ItemStackJS[]}
  */
-function getItemsInTag(tag) {
-    return tag.stacks.toArray();
-}
+const getItemsInTag = (tag) => {
+    return tag.getStacks().toArray();
+};
 
-function compareIndices(a, b, tag) {
+/**
+ * @param {string} a
+ * @param {string} b
+ * @param {null | string | Internal.IngredientJS} tag
+ */
+const compareIndices = (a, b, tag) => {
     if (a == b) return 0; // iff a == b, they'll be found at the same position in modPriorities
 
     for (let mod of modPriorities) {
@@ -140,31 +202,30 @@ function compareIndices(a, b, tag) {
         '[' + a + ', ' + b + '] were both unaccounted for in mod unification' + (tag ? ' for ' + tag : '!')
     );
     return 0;
-}
+};
 
-function getStrippedLogFrom(logBlock) {
-    buildWoodVariants.find((wood) => {
+/**
+ * Get the stripped variant of targeted log, or `minecraft:air` if not found
+ * @param {string} logBlock The id of targeted log block
+ */
+const getStrippedLogFrom = (logBlock) => {
+    for (let wood of buildWoodVariants) {
         if (wood.logBlock == logBlock) {
             return wood.logBlockStripped;
         }
-    });
+    }
     return air;
-}
-
-const unificationBlacklist = [
-    unificationBlacklistEntry('quartz', 'gem'),
-    unificationBlacklistEntry('quartz', 'storage_block')
-];
+};
 
 /**
  *
- * @param {Internal.ItemStackJS} item
- * @param {Internal.PlayerJS} player
+ * @param {Internal.IngredientJS_} item
+ * @param {Internal.PlayerJS<any>} player
  * @returns {boolean}
  */
-function playerHas(item, player) {
+const playerHas = (item, player) => {
     return player.inventory.find(item) != -1;
-}
+};
 
 // lt  = .slice(0, index)
 // lte = .slice(0, index + 1)
@@ -177,31 +238,31 @@ function playerHas(item, player) {
  * @param {string} tier
  * @returns
  */
-function getLowerTiers(tiers, tier) {
+const getLowerTiers = (tiers, tier) => {
     return tiers.slice(0, tiers.indexOf(tier));
-}
+};
 
 /**
  *
  * @param {string[]} tiers
  * @param {string} tier
  */
-function getNextTier(tiers, tier) {
+const getNextTier = (tiers, tier) => {
     let i = tiers.indexOf(tier);
-    if (i == tiers.length() - 1) {
+    if (i == tiers.length - 1) {
         return tier;
     }
     return tiers[i + 1];
-}
+};
 
 /**
  * transplant the md5 from `<type's mod>:kjs_<hash>` onto the supplied prefix
  * @param {Internal.RecipeJS} recipe
  * @param {string} id_prefix
  */
-function fallback_id(recipe, id_prefix) {
+const fallback_id = (recipe, id_prefix) => {
     if (recipe.path.includes('kjs_')) {
         recipe.serializeJson(); // without this the hashes *will* collide
         recipe.id(id_prefix + 'md5_' + recipe.uniqueId);
     }
-}
+};

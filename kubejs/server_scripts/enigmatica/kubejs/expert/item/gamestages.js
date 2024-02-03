@@ -11,15 +11,18 @@
     };
 
     onEvent('item.right_click', (event) => {
+        if (global.isNormalMode) {
+            return;
+        }
         const player = event.player;
         if (!player || !player.player || player.fake || player.mainHandItem.empty) {
             return;
         }
 
-        const stage_name = stageMap[player.mainHandItem];
+        const stage_name = stageMap[player.mainHandItem.id];
         if (stage_name && !player.stages.has(stage_name)) {
             player.tell(`Gamestage Granted: ${titleCase(stage_name.replace(/_+/g, ' '))}`);
-            player.stages.add(`${stage_name}`);
+            player.stages.add(stage_name);
         }
     });
 }

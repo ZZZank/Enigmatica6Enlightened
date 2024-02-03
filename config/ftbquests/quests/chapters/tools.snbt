@@ -122,11 +122,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000650"
-				type: "command"
-				title: "Epic PNC:R Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "pneumaticcraft"
+					}
+				}
 			}]
 		}
 		{
@@ -158,11 +161,14 @@
 			}]
 			rewards: [{
 				id: "000000000000064F"
-				type: "command"
-				title: "Epic PNC:R Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "pneumaticcraft"
+					}
+				}
 			}]
 		}
 		{
@@ -191,11 +197,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000651"
-				type: "command"
-				title: "Epic PNC:R Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "pneumaticcraft"
+					}
+				}
 			}]
 		}
 		{
@@ -227,11 +236,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000652"
-				type: "command"
-				title: "Epic PNC:R Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "pneumaticcraft"
+					}
+				}
 			}]
 		}
 		{
@@ -274,11 +286,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000645"
-				type: "command"
-				title: "Epic PNC:R Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "pneumaticcraft"
+					}
+				}
 			}]
 		}
 		{
@@ -293,11 +308,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000644"
-				type: "command"
-				title: "Epic PNC:R Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "pneumaticcraft"
+					}
+				}
 			}]
 		}
 		{
@@ -312,11 +330,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000642"
-				type: "command"
-				title: "Epic PNC:R Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "pneumaticcraft"
+					}
+				}
 			}]
 		}
 		{
@@ -331,11 +352,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000643"
-				type: "command"
-				title: "Epic PNC:R Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "pneumaticcraft"
+					}
+				}
 			}]
 		}
 		{
@@ -350,11 +374,14 @@
 			}]
 			rewards: [{
 				id: "000000000000063F"
-				type: "command"
-				title: "Epic PNC:R Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "pneumaticcraft"
+					}
+				}
 			}]
 		}
 		{
@@ -389,11 +416,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000641"
-				type: "command"
-				title: "Legendary PNC:R Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_legendary"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "pneumaticcraft"
+					}
+				}
 			}]
 		}
 		{
@@ -410,11 +440,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000640"
-				type: "command"
-				title: "Legendary PNC:R Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_legendary"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:legendary_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "pneumaticcraft"
+					}
+				}
 			}]
 		}
 		{
@@ -1515,11 +1548,14 @@
 			]
 			rewards: [{
 				id: "0000000000000665"
-				type: "command"
-				title: "Epic Nature's Aura Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "natures_aura"
+					}
+				}
 			}]
 		}
 		{
@@ -1795,11 +1831,14 @@
 			}]
 			rewards: [{
 				id: "0000000000000664"
-				type: "command"
-				title: "Epic Nature's Aura Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_epic"
-				player_command: false
+				type: "item"
+				item: {
+    				id: "kubejs:epic_lootbox"
+					Count: 1b
+					tag: {
+        				mod: "natures_aura"
+					}
+				}
 			}]
 		}
 		{

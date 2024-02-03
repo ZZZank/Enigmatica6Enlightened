@@ -1,8 +1,6 @@
 // priority: 1001
 'use strict';
 
-const isAE2Loaded = Platform.getMods().containsKey('appliedenergistics2');
-
 const itemsToRemoveAE = [
     'appliedenergistics2:nether_quartz_dust',
     'appliedenergistics2:fluix_dust',

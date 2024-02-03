@@ -1,8 +1,0 @@
-{
-    "type": "masterfulmachinery:machine_structure",
-    "controllerId": "killing_entity",
-    "id": "killing_entity_structure",
-    "name": "Killing Entity",
-    "layout": [["C"]],
-    "legend": {}
-}

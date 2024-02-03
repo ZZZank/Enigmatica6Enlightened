@@ -1,13 +1,12 @@
 // priority: 9
 'use strict';
 
-let itemsToPonder = generatableStone;
-itemsToPonder.push('minecraft:stone');
-
 onEvent('ponder.registry', (event) => {
+    let itemsToPonder = generatableStone;
+    itemsToPonder.push('minecraft:stone');
+
     event
         .create('enigmatica:stoneworks', itemsToPonder)
-
         .scene(
             'vanilla_stonegen',
             'Stone Generators - so simple Vanilla has one!',

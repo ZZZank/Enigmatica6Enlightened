@@ -2,15 +2,16 @@
 'use strict';
 
 onEvent('ponder.registry', (event) => {
+    let itemsToPonder = [
+        'industrialforegoing:latex_processing_unit',
+        'industrialforegoing:fluid_extractor',
+        'industrialforegoing:tinydryrubber',
+        'industrialforegoing:dryrubber',
+        'industrialforegoing:plastic',
+        'industrialforegoing:latex_bucket'
+    ];
     event
-        .create('enigmatica:latex', [
-            'industrialforegoing:latex_processing_unit',
-            'industrialforegoing:fluid_extractor',
-            'industrialforegoing:tinydryrubber',
-            'industrialforegoing:dryrubber',
-            'industrialforegoing:plastic',
-            'industrialforegoing:latex_bucket'
-        ])
+        .create('enigmatica:latex', itemsToPonder)
         //.tag('enigmatica:industrial_foregoing')
         .scene(
             'extracting_fluids',

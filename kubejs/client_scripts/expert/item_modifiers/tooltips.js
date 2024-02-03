@@ -46,7 +46,11 @@ onEvent('item.tooltip', (event) => {
             text: [Text.translate('gamestage.enigmatica.restrictions.master_blood_orb')]
         },
         {
-            items: ['appliedenergistics2:me_p2p_tunnel', 'appliedenergistics2:memory_card'],
+            items: [
+                'appliedenergistics2:controller',
+                'appliedenergistics2:me_p2p_tunnel',
+                'appliedenergistics2:memory_card'
+            ],
             text: [Text.translate(`${eprefix}channel_disabled`).green()]
         },
         {

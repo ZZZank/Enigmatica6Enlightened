@@ -1,11 +1,17 @@
 'use strict';
-{
+
+block_conversion: {
     const id_prefix = 'enlightened6:right_click_block/';
+    /**
+     * @type {{target:string,output:Internal.ItemStackJS_,holding:string,
+     * additional?:(e:Internal.BlockRightClickEventJS)=>void,id:string}[]}
+     */
     const recipes = [
         {
             target: 'mekanism:teleporter_frame',
             output: 'kubejs:conductive_frame',
-            holding: 'redstone_arsenal:obsidian_rod',
+            holding: 'immersiveengineering:dust_hop_graphite',
+            additional: (event) => {},
             id: id_prefix + 'conductive_frame'
         },
         {
@@ -43,29 +49,65 @@
             output: 'appliedenergistics2:64k_crafting_storage',
             holding: 'appliedenergistics2:64k_cell_component',
             id: id_prefix + `64k_crafting_storage`
+        },
+        {
+            target: 'minecraft:conduit',
+            output: Item.of('minecraft:trident', {
+                nullptrType: 1,
+                Damage: 225,
+                display: {
+                    Name: '[{ "translate": "item.en6e.null_pointer" }]',
+                    Lore: ['[{ "translate": "lore.en6e.null_pointer" }]']
+                },
+                'quark:RuneAttached': true,
+                'quark:RuneColor': { id: 'quark:gray_rune', Count: 1 }
+            }).enchant('minecraft:vanishing_curse', 1),
+            holding: 'pneumaticcraft:nuke_virus',
+            id: id_prefix + 'null_pointer'
+        },
+        {
+            target: 'minecraft:conduit',
+            output: Item.of('minecraft:trident', {
+                nullptrType: 1,
+                Damage: 225,
+                display: {
+                    Name: '[{ "translate": "item.en6e.null_pointer" }]',
+                    Lore: ['[{ "translate": "lore.en6e.null_pointer" }]']
+                },
+                'quark:RuneAttached': true,
+                'quark:RuneColor': { id: 'quark:gray_rune', Count: 1 }
+            }).enchant('minecraft:vanishing_curse', 1),
+            holding: 'pneumaticcraft:stop_worm',
+            id: id_prefix + 'null_pointer_alt'
         }
     ];
 
-    onEvent('block.right_click', (e) => {
-        const player = e.player;
+    onEvent('block.right_click', (event) => {
+        const player = event.player;
         if (!player || player.fake || player.mainHandItem.empty || !player.crouching) {
             return;
         }
 
         const mainHandItem = player.mainHandItem.id;
+        const target = event.block;
         for (let recipe of recipes) {
-            if (mainHandItem != recipe.holding) {
+            if (mainHandItem != recipe.holding || target.id != recipe.target) {
                 continue;
             }
-            const target = e.block;
-            if (target.id != recipe.target) {
-                continue;
+            player.playSound('ping:bloop');
+            event.server.runCommandSilent(`particle minecraft:explosion ${target.x} ${target.y} ${target.z}`);
+            if (Item.of(recipe.output).isBlock()) {
+                target.set(Item.of(recipe.output).id);
+            } else {
+                target.set(air);
+                const drop = event.world.createEntity('minecraft:item');
+                drop.item = recipe.output;
+                drop.setPosition(target);
+                drop.setMotionY(0.2);
+                drop.spawn();
             }
-            e.cancel();
-            e.server.runCommandSilent(`playsound ping:bloop block ` + player.name);
-            e.server.runCommandSilent(`particle minecraft:explosion ${target.x} ${target.y} ${target.z}`);
-            target.set(recipe.output);
             player.mainHandItem.count -= 1;
+            event.cancel();
             return;
         }
     });
@@ -77,34 +119,15 @@
                 .deploying(recipe.output, [recipe.target, recipe.holding])
                 .id(recipe.id + '/deploy');
             // hint
-            event
-                .custom({
-                    type: 'masterfulmachinery:machine_process',
-                    structureId: 'recipe_hint_right_click_block_structure',
-                    controllerId: 'recipe_hint_right_click_block',
-                    outputs: [
-                        {
-                            type: 'masterfulmachinery:items',
-                            data: { item: recipe.output, count: 1 }
-                        }
-                    ],
-                    inputs: [
-                        {
-                            type: 'masterfulmachinery:items',
-                            data: { item: recipe.holding, count: 1 }
-                        },
-                        {
-                            type: 'masterfulmachinery:items',
-                            data: { item: 'create:brass_hand', count: 1 }
-                        },
-                        {
-                            type: 'masterfulmachinery:items',
-                            data: { item: recipe.target, count: 1 }
-                        }
-                    ],
-                    ticks: 1
-                })
-                .id(recipe.id + '/hint');
+            const builder = event.recipes.custommachinery
+                .custom_machine('enlightened6:in_world_interaction', 1)
+                .jei();
+            addCMRecipe(builder, {
+                inputs: [recipe.target],
+                catalyst: recipe.holding,
+                outputs: [recipe.output],
+                id: recipe.id + '/hint'
+            });
         });
     });
 }

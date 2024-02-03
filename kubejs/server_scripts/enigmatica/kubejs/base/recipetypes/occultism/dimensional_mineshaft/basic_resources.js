@@ -116,4 +116,19 @@ onEvent('recipes', (event) => {
 
         event.custom(recipe).id(recipe.id);
     });
+
+    RecipeHint: {
+        let weightSum = 0;
+        recipes.forEach((recipe) => (weightSum += recipe.weight));
+        let unProcessed = recipes.map((recipe) => Item.of(recipe.output).chance(recipe.weight / weightSum));
+        toPagedArray(unProcessed, 15).forEach((page, index) => {
+            let recipe_hint = {
+                inputs: ['#occultism:miners/basic_resources'],
+                catalyst: 'occultism:dimensional_mineshaft',
+                outputs: page,
+                id: id_prefix + 'hint' + index
+            };
+            addGeneralRecipeHint(recipe_hint, event);
+        });
+    }
 });

@@ -3,7 +3,7 @@
 
 // Used to populate the buildWoodVariants constant - Add variants here to enable compat with various cutting mechanics.
 // Be aware that you may need to specify exceptions in the loop below for this to work properly.
-let woodVariantsToConstruct = [
+const woodVariantsToConstruct = [
     'minecraft:acacia',
     'minecraft:birch',
     'minecraft:dark_oak',
@@ -89,8 +89,8 @@ let woodVariantsToConstruct = [
     // 'sushigocrafting:avocado'
 ];
 
-/** @type {{modId:string, logType:string, logBlock:string, woodBlock:string, logBlockStripped:string, woodBlockStripped:string, plankBlock:string, slabBlock:string}} */
-let buildWoodVariants = [];
+/** @type {{modId:string, logType:string, logBlock:string, woodBlock:string, logBlockStripped:string, woodBlockStripped:string, plankBlock:string, slabBlock:string}[]} */
+const buildWoodVariants = [];
 
 woodVariantsToConstruct.forEach((variant) => {
     let [modId, logType] = variant.split(':');

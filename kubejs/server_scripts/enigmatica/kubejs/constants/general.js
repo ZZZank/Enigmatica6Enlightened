@@ -33,7 +33,12 @@ const modPriorities = [
     'tconstruct'
 ];
 
-const lootChests = ['lootr:lootr_chest', 'lootr:lootr_barrel', 'lootr:lootr_trapped_chest'];
+const unificationBlacklist = [
+    { material: 'quartz', type: 'gem' },
+    { material: 'quartz', type: 'storage_block' }
+];
+
+const lootrChests = ['lootr:lootr_chest', 'lootr:lootr_barrel', 'lootr:lootr_trapped_chest'];
 
 // Used for recipes/tags that use colors
 const colors = [

@@ -3,17 +3,6 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/enigmatica/shaped/';
     const recipes = [
         {
-            output: 'minecraft:lava_bucket',
-            pattern: ['BDB', 'CAC', 'BDB'],
-            key: {
-                D: 'resourcefulbees:blaze_honeycomb',
-                C: 'resourcefulbees:coal_honeycomb',
-                B: 'resourcefulbees:wax',
-                A: 'minecraft:bucket'
-            },
-            id: `${id_prefix}minecraft/lava_bucket`
-        },
-        {
             output: 'betterendforge:dense_snow',
             pattern: ['AAA', 'AAA', 'AAA'],
             key: {
@@ -144,120 +133,6 @@ onEvent('recipes', (event) => {
                 B: 'minecraft:charcoal'
             },
             id: `${id_prefix}projectvibrantjourneys/charred_bones`
-        },
-        {
-            output: 'minecraft:hopper',
-            pattern: ['ABA', 'ABA', ' A '],
-            key: {
-                A: '#forge:ingots/iron',
-                B: '#minecraft:logs'
-            },
-            id: `${id_prefix}minecraft/hopper`
-        },
-        {
-            output: 'minecraft:tube_coral_block',
-            pattern: ['AA', 'AA'],
-            key: {
-                A: 'minecraft:tube_coral_fan'
-            },
-            id: `${id_prefix}minecraft/tube_coral_block_from_fan`
-        },
-        {
-            output: 'minecraft:brain_coral_block',
-            pattern: ['AA', 'AA'],
-            key: {
-                A: 'minecraft:brain_coral_fan'
-            },
-            id: `${id_prefix}minecraft/brain_coral_block_from_fan`
-        },
-        {
-            output: 'minecraft:bubble_coral_block',
-            pattern: ['AA', 'AA'],
-            key: {
-                A: 'minecraft:bubble_coral_fan'
-            },
-            id: `${id_prefix}minecraft/bubble_coral_block_from_fan`
-        },
-        {
-            output: 'minecraft:fire_coral_block',
-            pattern: ['AA', 'AA'],
-            key: {
-                A: 'minecraft:fire_coral_fan'
-            },
-            id: `${id_prefix}minecraft/fire_coral_block_from_fan`
-        },
-        {
-            output: 'minecraft:horn_coral_block',
-            pattern: ['AA', 'AA'],
-            key: {
-                A: 'minecraft:horn_coral_fan'
-            },
-            id: `${id_prefix}minecraft/horn_coral_block_from_fan`
-        },
-        {
-            output: 'minecraft:tube_coral_block',
-            pattern: ['AA', 'AA'],
-            key: {
-                A: 'minecraft:tube_coral'
-            },
-            id: `${id_prefix}minecraft/tube_coral_block`
-        },
-        {
-            output: 'minecraft:brain_coral_block',
-            pattern: ['AA', 'AA'],
-            key: {
-                A: 'minecraft:brain_coral'
-            },
-            id: `${id_prefix}minecraft/brain_coral_block`
-        },
-        {
-            output: 'minecraft:bubble_coral_block',
-            pattern: ['AA', 'AA'],
-            key: {
-                A: 'minecraft:bubble_coral'
-            },
-            id: `${id_prefix}minecraft/bubble_coral_block`
-        },
-        {
-            output: 'minecraft:fire_coral_block',
-            pattern: ['AA', 'AA'],
-            key: {
-                A: 'minecraft:fire_coral'
-            },
-            id: `${id_prefix}minecraft/fire_coral_block`
-        },
-        {
-            output: 'minecraft:horn_coral_block',
-            pattern: ['AA', 'AA'],
-            key: {
-                A: 'minecraft:horn_coral'
-            },
-            id: `${id_prefix}minecraft/horn_coral_block`
-        },
-        {
-            output: Item.of('minecraft:ladder', 4),
-            pattern: ['A A', 'ABA', 'A A'],
-            key: {
-                A: '#forge:rods/wooden',
-                B: '#enigmatica:ladder_planks'
-            },
-            id: `${id_prefix}minecraft/ladder`
-        },
-        {
-            output: Item.of('byg:embur_hyphae', 3),
-            pattern: ['AA', 'AA'],
-            key: {
-                A: 'byg:embur_pedu'
-            },
-            id: `${id_prefix}byg/embur_hyphae`
-        },
-        {
-            output: Item.of('byg:pollen_block', 1),
-            pattern: ['AA', 'AA'],
-            key: {
-                A: 'byg:pollen_dust'
-            },
-            id: `${id_prefix}byg/pollen_dust`
         },
         {
             output: Item.of('quark:turf', 1),

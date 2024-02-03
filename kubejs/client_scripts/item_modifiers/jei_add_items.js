@@ -165,7 +165,15 @@ onEvent('jei.add.items', (event) => {
 /*  Any item can become an augment by giving it the proper NBT tags.
         Reference: https://github.com/KingLemming/1.16/blob/fe263e24b6f872bbacd7599c73f78ed44098d105/CoFHCore/src/main/java/cofh/lib/util/constants/NBTTags.java#L101
 
-        These follow the pattern of {AugmentData:{Type:"<TYPE>",<AUGMENT_1>:<FLOAT>,<AUGMENT_2>:<FLOAT>,<AUGMENT_3>:<FLOAT>}}
+        These follow the pattern of 
+            {
+                AugmentData:{
+                    Type:"<TYPE>",
+                    <AUGMENT_1>:<FLOAT>,
+                    <AUGMENT_2>:<FLOAT>,
+                    <AUGMENT_3>:<FLOAT>
+                }
+            }
         All augments use a Float to define their level. 
 
         Types:

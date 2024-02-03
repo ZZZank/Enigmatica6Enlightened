@@ -1,6 +1,7 @@
 name: Update Modlist
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - 'enlightened_develop'
