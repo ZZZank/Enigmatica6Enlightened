@@ -1,3 +1,73 @@
+## Enlightened6 & Enlightened6Expert - 2.5.0 -> 2.6.0
+
+🚀 Forge-1.16.5-36.2.41 | [📜 Mod Updates](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/changelog_mods_2.6.0.md) | [📋 Modlist](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/modlist_2.6.0.md)
+
+### WARNING: This version introduces many internal cleanups, so a clean install is recommended. If you would like to upgrade from previous version, make sure to delete `config` and `kubejs` folders before updating!
+
+### 🎁 Highlights
+
+-   Null Pointer, without exception.
+    -   Infect a Conduit using artificial virus to obtain a "Null Pointer", which will allow you to make your enemies devoured by spatial turbulance, only lefting some wierd crystals. This crystal will be useful for your progression.
+-   Reworked recipe hint
+    -   The brand new recipe hint is more compact, and provides more infomations like catalyst, input consume chances and nbt.
+-   dynamic tooltip for KubeJS lootboxes, showing type of this lootbox.
+
+### Mods Added
+
+-   [Custom Machinery](https://www.curseforge.com/minecraft/mc-mods/custom-machinery) (by [frinn38](https://www.curseforge.com/members/frinn38/projects))
+-   [Embeddium](https://www.curseforge.com/minecraft/mc-mods/embeddium) (by [embeddedt](https://www.curseforge.com/members/embeddedt/projects))
+-   [Forge Config Screens [Forge & Fabric]](https://www.curseforge.com/minecraft/mc-mods/config-menus-forge) (by [Fuzs](https://www.curseforge.com/members/Fuzs/projects))
+-   [Inventory Tweaks Renewed](https://www.curseforge.com/minecraft/mc-mods/inventory-tweaks-renewed) (by [godemperordoge](https://www.curseforge.com/members/godemperordoge/projects))
+-   [ProbeJS Legacy](https://www.curseforge.com/minecraft/mc-mods/probejs-legacy) (by [ZZZank](https://www.curseforge.com/members/ZZZank/projects))
+-   [Rapid Leaf Decay](https://www.curseforge.com/minecraft/mc-mods/rapid-leaf-decay) (by [GeheimagentNr1](https://www.curseforge.com/members/GeheimagentNr1/projects))
+-   [Seamless Loading Screen (Forge)](https://www.curseforge.com/minecraft/mc-mods/seamless-loading-screen-forge) (by [TimScript](https://www.curseforge.com/members/TimScript/projects))
+
+### Mods Removed
+
+-   [BisectHosting Server Integration Menu [FORGE]](https://www.curseforge.com/minecraft/mc-mods/bisecthosting-server-integration-menu-forge) (by [BisectHosting](https://www.curseforge.com/members/BisectHosting/projects))
+-   [Configured](https://www.curseforge.com/minecraft/mc-mods/configured) (by [MrCrayfish](https://www.curseforge.com/members/MrCrayfish/projects))
+-   [Fast Leaf Decay](https://www.curseforge.com/minecraft/mc-mods/fast-leaf-decay) (by [olafskiii](https://www.curseforge.com/members/olafskiii/projects))
+-   [Rubidium](https://www.curseforge.com/minecraft/mc-mods/rubidium) (by [Asek3](https://www.curseforge.com/members/Asek3/projects))
+
+### 🌟 Improvements
+
+-   Forge 36.2.41
+    -   Do you know that you can run 1.16.5 using Java21? With some JVM args from https://github.com/embeddedt/ModernFix/wiki/1.16---required-arguments-for-Java-17 , you can do that easily. Java21 can provide significant performance benefits when compared with Java8.
+-   localization ability for custom fluids
+    -   This improvement has been contributed back to original E6/E6E
+-   localization ability for special custom items
+    -   This improvement has been contributed back to original E6/E6E
+-   localization ability for custom Amadron entries
+    -   This improvement has been contributed back to original E6/E6E
+-   Change `environmental:koi` death drops, instead of banning worldgen
+-   Buff Wicked Altar `redstone_arsenal:flux_dust` recipe output
+-   Psimetal is now enabled, with `byg:pendorite_ingot` being its ingredient
+-   Buff `tconstruct:glow_ball` stack size
+-   Replace occultism miner JEI page with recipe_hint
+-   Replace Blacksmith's Delight in `Tetra` chapter with actual item
+-   Replace lootbox in Powah chapter with actual item
+-   Replace lootbox in PNC chapter with actual item
+-   Replace lootbox in Refined Storage(Optional) chapter with actual item
+-   Replace lootbox in TCon chapter with actual item
+-   Remove usage of AE ender dust, fully switched to EE ender dust
+-   Add `#enlightened:explosives` tag
+-   Add mod aliases for ae2fc & aeadditions in Morph Tool
+-   Buff `appliedenergistics2:blank_pattern` output
+-   Remove MM structure display in JEI
+-   Hide `ftblibrary:fluid_container` since they are unused
+-   Redirect portable_stonecutter recipe to interactio
+
+### 🐛 Fixed Bugs
+
+-   Hand Over Your Items some times buggy
+-   Unused altered_recipe_indicator for tainted_gold_block
+-   Recipe for `"kubejs:power_core_low"` not matching progression
+-   Tooltips misplaced/disappeared sometimes
+-   Missing JEI desc for some disabled items
+-   [Expert]sky_compass still obtainable, despite fully useless
+
+---
+
 ## Enlightened6 & Enlightened6Expert - 2.4.1 -> 2.5.0
 
 🚀 Forge-1.16.5-36.2.39 | [📜 Mod Updates](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/changelog_mods_2.5.0.md) | [📋 Modlist](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/modlist_2.5.0.md)
@@ -7,9 +77,9 @@
 ### 🎁 Highlights
 
 -   Refined Storage compatibility!
-    - It supports Refined Storage and some extensions, including Refined Storage Addons, Extra Storage and RSInfinityBooster
+    -   It supports Refined Storage and some extensions, including Refined Storage Addons, Extra Storage and RSInfinityBooster
 -   Recipe hint for Killing Entity!
-    - The newly added recipe hint can helps you clearly know how to obtain some entity drops. For example, it will tells you Silk Fiber can be obtained from Silk Moth Nest
+    -   The newly added recipe hint can helps you clearly know how to obtain some entity drops. For example, it will tells you Silk Fiber can be obtained from Silk Moth Nest
 -   Add some fancy sound and particles for Block Conversion
 -   Replace navigator of many entities, to be more performant
 -   Full lang keys for Assembly Package-s, with en_us and zh_cn localization

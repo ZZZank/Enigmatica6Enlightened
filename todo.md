@@ -9,5 +9,4 @@
 - "psimetal" recipe
 - astral mineralis ritual
 - Ethylene(mek) earlier
-- "throw" Divide By Zero Exception
 - note that 2.6.0 needs fresh install, or at least deleting kubejs & config folder
