@@ -1,11 +1,15 @@
 'use strict';
 
 onEvent('entity.attack', (event) => {
-    const source = event.source;
+    const { source, entity } = event;
     const { player, immediate } = source;
-    if (!player || !source.actual || source.type != 'trident' || immediate.type != 'minecraft:trident') {
-        // event.source.type == 'trident'
-        // event.source.immediate.type == def_id, like 'redstone_arsenal:flux_trident'
+    if (
+        !player ||
+        !source.actual ||
+        !entity.monster ||
+        source.type != 'trident' ||
+        immediate.type != 'minecraft:trident'
+    ) {
         return;
     }
     const nbt = immediate.fullNBT.Trident.tag;
@@ -15,13 +19,14 @@ onEvent('entity.attack', (event) => {
 
     player.potionEffects.add('minecraft:blindness', 20);
 
-    const { x, y, z } = event.entity;
+    const { x, y, z } = entity;
     event.world
         .getEntitiesWithin(AABB.of(x - 3, y - 1, z - 3, x + 3, y + 1, z + 3))
-        .filter((/** @type {Internal.LivingEntityJS} */ entity) => {
-            //we mark `LivingEntityJS` here, or VSCode will say `entity.health` is wrong
-            return entity.living && entity.monster && entity.health <= 20;
-        })
+        .filter(
+            (/** @type {Internal.LivingEntityJS} */ entity) =>
+                //we mark `LivingEntityJS` here, or VSCode will say `entity.health` is wrong
+                entity.living && entity.monster && entity.health <= 20
+        )
         .forEach((/** @type {Internal.LivingEntityJS} */ entity) => {
             entity.potionEffects.add('minecraft:glowing', 120);
             entity.potionEffects.add('cofh_core:shocked', 120);
