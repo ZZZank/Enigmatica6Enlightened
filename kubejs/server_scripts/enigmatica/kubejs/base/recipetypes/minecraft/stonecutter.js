@@ -106,14 +106,16 @@ onEvent('recipes', (event) => {
     }
 
     masonryTiledStoneTypes.forEach((stoneType) => {
-        recipes.push({
-            output: Item.of(`2x masonry:${stoneType}tiledslab`),
-            input: `masonry:${stoneType}tiled`
-        });
-        recipes.push({
-            output: `masonry:${stoneType}tiledwall`,
-            input: `masonry:${stoneType}tiled`
-        });
+        recipes.push(
+            {
+                output: Item.of(`2x masonry:${stoneType}tiledslab`),
+                input: `masonry:${stoneType}tiled`
+            },
+            {
+                output: `masonry:${stoneType}tiledwall`,
+                input: `masonry:${stoneType}tiled`
+            }
+        );
     });
 
     // Conversion between different storage_blocks of the same material
@@ -139,6 +141,7 @@ onEvent('recipes', (event) => {
         });
     });
 
+    console.info('stonecutting recipe size: ' + recipes.length);
     recipes.forEach((recipe) => {
         let re = event.stonecutting(recipe.output, recipe.input);
         if (recipe.id) {

@@ -12,62 +12,58 @@ onEvent('recipes', (event) => {
         thermal_sawing(variant, sawDust);
     });
     function create_cutting(variant, sawDust, treeBark) {
-        let data = {
-            recipes: [
-                {
-                    input: variant.logBlock,
-                    output: variant.logBlockStripped,
-                    secondaryOutput: treeBark,
-                    count: 1,
-                    time: 50
-                },
-                {
-                    input: variant.woodBlock,
-                    output: variant.woodBlockStripped,
-                    secondaryOutput: treeBark,
-                    count: 1,
-                    time: 50
-                },
-                {
-                    input: variant.logBlockStripped,
-                    output: variant.plankBlock,
-                    secondaryOutput: sawDust,
-                    count: 6,
-                    time: 100
-                },
-                {
-                    input: variant.woodBlockStripped,
-                    output: variant.plankBlock,
-                    secondaryOutput: sawDust,
-                    count: 6,
-                    time: 100
-                }
-            ]
-        };
+        let recipes = [
+            {
+                input: variant.logBlock,
+                output: variant.logBlockStripped,
+                secondaryOutput: treeBark,
+                count: 1,
+                time: 50
+            },
+            {
+                input: variant.woodBlock,
+                output: variant.woodBlockStripped,
+                secondaryOutput: treeBark,
+                count: 1,
+                time: 50
+            },
+            {
+                input: variant.logBlockStripped,
+                output: variant.plankBlock,
+                secondaryOutput: sawDust,
+                count: 6,
+                time: 100
+            },
+            {
+                input: variant.woodBlockStripped,
+                output: variant.plankBlock,
+                secondaryOutput: sawDust,
+                count: 6,
+                time: 100
+            }
+        ];
 
-        data.recipes.forEach((recipe) => {
-            fallback_id(
-                event.recipes.create.cutting({
-                    type: 'create:cutting',
-                    ingredients: [
-                        {
-                            item: recipe.input
-                        }
-                    ],
-                    results: [
-                        {
-                            item: recipe.output,
-                            count: recipe.count
-                        },
-                        {
-                            item: recipe.secondaryOutput,
-                            count: 1
-                        }
-                    ],
-                    processingTime: recipe.time
-                }),
-                `enigmatica:base/unification/unify_sawables/create_cutting/`
-            );
+        recipes.forEach((recipe) => {
+            const builder = event.recipes.create.cutting({
+                type: 'create:cutting',
+                ingredients: [
+                    {
+                        item: recipe.input
+                    }
+                ],
+                results: [
+                    {
+                        item: recipe.output,
+                        count: recipe.count
+                    },
+                    {
+                        item: recipe.secondaryOutput,
+                        count: 1
+                    }
+                ],
+                processingTime: recipe.time
+            });
+            fallback_id(builder, `enigmatica:base/unification/unify_sawables/create_cutting/`);
         });
     }
 
@@ -119,28 +115,26 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        let data = {
-            recipes: [
-                {
-                    input: variant.logBlock,
-                    output: variant.plankBlock
-                },
-                {
-                    input: variant.woodBlock,
-                    output: variant.plankBlock
-                },
-                {
-                    input: variant.logBlockStripped,
-                    output: variant.plankBlock
-                },
-                {
-                    input: variant.woodBlockStripped,
-                    output: variant.plankBlock
-                }
-            ]
-        };
+        let recipes = [
+            {
+                input: variant.logBlock,
+                output: variant.plankBlock
+            },
+            {
+                input: variant.woodBlock,
+                output: variant.plankBlock
+            },
+            {
+                input: variant.logBlockStripped,
+                output: variant.plankBlock
+            },
+            {
+                input: variant.woodBlockStripped,
+                output: variant.plankBlock
+            }
+        ];
 
-        data.recipes.forEach((recipe) => {
+        recipes.forEach((recipe) => {
             fallback_id(
                 event.recipes.mekanism.sawing(
                     Item.of(recipe.output, 6),

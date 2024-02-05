@@ -5,31 +5,31 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/unification/unify_materials/';
 
     materialsToUnify.forEach((material) => {
-        let ore = getPreferredItemInTag(Ingredient.of(`#forge:ores/${material}`)).id;
-        let block = getPreferredItemInTag(Ingredient.of(`#forge:storage_blocks/${material}`)).id;
-        let ingot = getPreferredItemInTag(Ingredient.of(`#forge:ingots/${material}`)).id;
-        let nugget = getPreferredItemInTag(Ingredient.of(`#forge:nuggets/${material}`)).id;
+        const ore = getPreferredItemInTag(Ingredient.of(`#forge:ores/${material}`)).id;
+        const block = getPreferredItemInTag(Ingredient.of(`#forge:storage_blocks/${material}`)).id;
+        const ingot = getPreferredItemInTag(Ingredient.of(`#forge:ingots/${material}`)).id;
+        const nugget = getPreferredItemInTag(Ingredient.of(`#forge:nuggets/${material}`)).id;
 
-        let gem = getPreferredItemInTag(Ingredient.of(`#forge:gems/${material}`)).id;
-        let chunk = getPreferredItemInTag(Ingredient.of(`#forge:chunks/${material}`)).id;
+        const gem = getPreferredItemInTag(Ingredient.of(`#forge:gems/${material}`)).id;
+        const chunk = getPreferredItemInTag(Ingredient.of(`#forge:chunks/${material}`)).id;
 
-        let crushed_ore = getPreferredItemInTag(Ingredient.of(`#create:crushed_ores/${material}`)).id;
-        let dust = getPreferredItemInTag(Ingredient.of(`#forge:dusts/${material}`)).id;
-        let shard = getPreferredItemInTag(Ingredient.of(`#forge:shards/${material}`)).id;
+        const crushed_ore = getPreferredItemInTag(Ingredient.of(`#create:crushed_ores/${material}`)).id;
+        const dust = getPreferredItemInTag(Ingredient.of(`#forge:dusts/${material}`)).id;
+        const shard = getPreferredItemInTag(Ingredient.of(`#forge:shards/${material}`)).id;
 
-        let mek_crystal = getPreferredItemInTag(Ingredient.of(`#mekanism:crystals/${material}`)).id;
-        let mek_shard = getPreferredItemInTag(Ingredient.of(`#mekanism:shards/${material}`)).id;
-        let mek_clump = getPreferredItemInTag(Ingredient.of(`#mekanism:clumps/${material}`)).id;
-        let mek_dirty_dust = getPreferredItemInTag(Ingredient.of(`#mekanism:dirty_dusts/${material}`)).id;
+        const mek_crystal = getPreferredItemInTag(Ingredient.of(`#mekanism:crystals/${material}`)).id;
+        const mek_shard = getPreferredItemInTag(Ingredient.of(`#mekanism:shards/${material}`)).id;
+        const mek_clump = getPreferredItemInTag(Ingredient.of(`#mekanism:clumps/${material}`)).id;
+        const mek_dirty_dust = getPreferredItemInTag(Ingredient.of(`#mekanism:dirty_dusts/${material}`)).id;
 
-        let fragment = getPreferredItemInTag(Ingredient.of(`#bloodmagic:fragments/${material}`)).id;
-        let gravel = getPreferredItemInTag(Ingredient.of(`#bloodmagic:gravels/${material}`)).id;
+        const fragment = getPreferredItemInTag(Ingredient.of(`#bloodmagic:fragments/${material}`)).id;
+        const gravel = getPreferredItemInTag(Ingredient.of(`#bloodmagic:gravels/${material}`)).id;
 
-        let gear = getPreferredItemInTag(Ingredient.of(`#forge:gears/${material}`)).id;
-        let rod = getPreferredItemInTag(Ingredient.of(`#forge:rods/${material}`)).id;
-        let plate = getPreferredItemInTag(Ingredient.of(`#forge:plates/${material}`)).id;
+        const gear = getPreferredItemInTag(Ingredient.of(`#forge:gears/${material}`)).id;
+        const rod = getPreferredItemInTag(Ingredient.of(`#forge:rods/${material}`)).id;
+        const plate = getPreferredItemInTag(Ingredient.of(`#forge:plates/${material}`)).id;
 
-        let coin = getPreferredItemInTag(Ingredient.of(`#forge:coins/${material}`)).id;
+        const coin = getPreferredItemInTag(Ingredient.of(`#forge:coins/${material}`)).id;
 
         astralsorcery_ore_processing_infuser(event, material, ore, ingot, gem, shard);
 

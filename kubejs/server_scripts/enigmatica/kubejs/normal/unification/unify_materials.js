@@ -6,16 +6,16 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:normal/unification/unify_materials/';
 
     materialsToUnify.forEach((material) => {
-        let ingot = getPreferredItemInTag(Ingredient.of('#forge:ingots/' + material)).id;
-        let gem = getPreferredItemInTag(Ingredient.of('#forge:gems/' + material)).id;
+        const ingot = getPreferredItemInTag(Ingredient.of('#forge:ingots/' + material)).id;
+        const gem = getPreferredItemInTag(Ingredient.of('#forge:gems/' + material)).id;
 
-        let plate = getPreferredItemInTag(Ingredient.of('#forge:plates/' + material)).id;
-        let gear = getPreferredItemInTag(Ingredient.of('#forge:gears/' + material)).id;
-        let rod = getPreferredItemInTag(Ingredient.of('#forge:rods/' + material)).id;
-        let wire = getPreferredItemInTag(Ingredient.of('#forge:wires/' + material)).id;
+        const plate = getPreferredItemInTag(Ingredient.of('#forge:plates/' + material)).id;
+        const gear = getPreferredItemInTag(Ingredient.of('#forge:gears/' + material)).id;
+        const rod = getPreferredItemInTag(Ingredient.of('#forge:rods/' + material)).id;
+        const wire = getPreferredItemInTag(Ingredient.of('#forge:wires/' + material)).id;
 
-        let ore = getPreferredItemInTag(Ingredient.of(`#forge:ores/${material}`)).id;
-        let dust = getPreferredItemInTag(Ingredient.of(`#forge:dusts/${material}`)).id;
+        const ore = getPreferredItemInTag(Ingredient.of(`#forge:ores/${material}`)).id;
+        const dust = getPreferredItemInTag(Ingredient.of(`#forge:dusts/${material}`)).id;
 
         minecraft_ore_ingot_smelting(event, material, ore, ingot);
         gear_unification(event, material, ingot, gem, gear);

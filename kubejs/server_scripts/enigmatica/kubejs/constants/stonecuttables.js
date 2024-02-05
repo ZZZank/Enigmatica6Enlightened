@@ -1764,7 +1764,7 @@ plankTypes.forEach((plankType) => {
         stones.push(`chipped:${plankType}_planks_${i}`);
     }
     stonecuttables.push({
-        name: `${plankType}`,
+        name: plankType,
         stones: stones,
         onlyAsOutput: [],
         onlyAsInput: []

@@ -6,25 +6,25 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:expert/unification/unify_materials/';
 
     materialsToUnify.forEach((material) => {
-        let ingot = getPreferredItemInTag(Ingredient.of(`#forge:ingots/${material}`)).id;
-        let nugget = getPreferredItemInTag(Ingredient.of(`#forge:nuggets/${material}`)).id;
-        let gem = getPreferredItemInTag(Ingredient.of(`#forge:gems/${material}`)).id;
+        const ingot = getPreferredItemInTag(Ingredient.of(`#forge:ingots/${material}`)).id;
+        const nugget = getPreferredItemInTag(Ingredient.of(`#forge:nuggets/${material}`)).id;
+        const gem = getPreferredItemInTag(Ingredient.of(`#forge:gems/${material}`)).id;
 
-        let plate = getPreferredItemInTag(Ingredient.of(`#forge:plates/${material}`)).id;
-        let gear = getPreferredItemInTag(Ingredient.of(`#forge:gears/${material}`)).id;
-        let rod = getPreferredItemInTag(Ingredient.of(`#forge:rods/${material}`)).id;
-        let wire = getPreferredItemInTag(Ingredient.of(`#forge:wires/${material}`)).id;
+        const plate = getPreferredItemInTag(Ingredient.of(`#forge:plates/${material}`)).id;
+        const gear = getPreferredItemInTag(Ingredient.of(`#forge:gears/${material}`)).id;
+        const rod = getPreferredItemInTag(Ingredient.of(`#forge:rods/${material}`)).id;
+        const wire = getPreferredItemInTag(Ingredient.of(`#forge:wires/${material}`)).id;
 
-        let crushed_ore = getPreferredItemInTag(Ingredient.of(`#create:crushed_ores/${material}`)).id;
-        let ore = getPreferredItemInTag(Ingredient.of(`#forge:ores/${material}`)).id;
-        let mana_cluster = getPreferredItemInTag(Ingredient.of(`#enigmatica:mana_clusters/${material}`)).id;
-        let fulminated_cluster = getPreferredItemInTag(
+        const crushed_ore = getPreferredItemInTag(Ingredient.of(`#create:crushed_ores/${material}`)).id;
+        const ore = getPreferredItemInTag(Ingredient.of(`#forge:ores/${material}`)).id;
+        const mana_cluster = getPreferredItemInTag(Ingredient.of(`#enigmatica:mana_clusters/${material}`)).id;
+        const fulminated_cluster = getPreferredItemInTag(
             Ingredient.of(`#enigmatica:fulminated_clusters/${material}`)
         ).id;
-        let levigated_material = getPreferredItemInTag(
+        const levigated_material = getPreferredItemInTag(
             Ingredient.of(`#enigmatica:levigated_materials/${material}`)
         ).id;
-        let crystalline_sliver = getPreferredItemInTag(
+        const crystalline_sliver = getPreferredItemInTag(
             Ingredient.of(`#enigmatica:crystalline_slivers/${material}`)
         ).id;
 

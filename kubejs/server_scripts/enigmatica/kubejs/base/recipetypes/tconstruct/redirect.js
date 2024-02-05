@@ -20,11 +20,7 @@ onEvent('server.datapack.low_priority', (event) => {
 
     data.forEach((recipeType) => {
         event.addJson(`enigmatica:materials/definition/${recipeType.identifier}.json`, {
-            redirect: [
-                {
-                    id: `materialis:${recipeType.identifier}`
-                }
-            ]
+            redirect: [{ id: `materialis:${recipeType.identifier}` }]
         });
     });
 });
