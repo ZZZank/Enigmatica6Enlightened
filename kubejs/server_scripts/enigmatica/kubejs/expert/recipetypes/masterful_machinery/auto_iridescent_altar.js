@@ -469,8 +469,8 @@ onEvent('recipes', (event) => {
     ];
 
     recipes.forEach((recipe) => {
-        recipe.inputs = recipe.inputs.map(toMMJson);
-        recipe.outputs = recipe.outputs.map(toMMJson);
+        recipe.inputs = recipe.inputs.map((val) => toMMJson(val));
+        recipe.outputs = recipe.outputs.map((val) => toMMJson(val));
         recipe.type = 'masterfulmachinery:machine_process';
         recipe.structureId = 'auto_iridescent_altar_structure';
         recipe.controllerId = 'auto_iridescent_altar';

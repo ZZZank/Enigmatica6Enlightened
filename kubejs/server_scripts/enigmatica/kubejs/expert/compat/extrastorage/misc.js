@@ -9,7 +9,7 @@ onEvent('recipes', (event) => {
     event
         .custom({
             type: 'industrialforegoing:dissolution_chamber',
-            input: ['extrastorage:diamond_crafter'].map(Ingredient.of),
+            input: ['extrastorage:diamond_crafter'].map((input) => Ingredient.of(input)),
             inputFluid: `{FluidName:"tconstruct:molten_netherite",Amount:${144 * 9}}`,
             processingTime: 200,
             output: toJsonWithCount('extrastorage:netherite_crafter'),
