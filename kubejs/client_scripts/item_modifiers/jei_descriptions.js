@@ -446,15 +446,12 @@ onEvent('jei.information', (event) => {
     ];
 
     recipes.forEach((recipe) => {
-        for (let i = 0; i < recipe.text.length; i++) {
-            try {
-                recipe.text[i] = Text.translate(recipe.text[i], recipe.with[i]);
-            } catch (e) {
-                recipe.text[i] = Text.translate(recipe.text[i]);
+        const parsed = recipe.text.map((text, i) => {
+            if (recipe.with && recipe.with.length > i) {
+                return Text.translate(text, recipe.with[i]);
             }
-        }
-        recipe.items.forEach((item) => {
-            event.add(item, recipe.text);
+            return Text.translate(text);
         });
+        event.add(recipe.items, parsed);
     });
 });
