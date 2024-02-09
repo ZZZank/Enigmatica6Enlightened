@@ -284,6 +284,7 @@ onEvent('recipes', (event) => {
         'tconstruct:smeltery/melting/metal/gold/enchanted_apple',
         'tconstruct:smeltery/melting/metal/gold/apple',
         /tconstruct:smeltery\/melting\/metal\/\w+\/wire/,
+        /tconstruct:smeltery\/casting\/filling\/(seared|scorched)_\w+/,
 
         /tetra:hammer\/\w+/,
 
