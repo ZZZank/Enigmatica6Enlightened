@@ -1,5 +1,7 @@
 'use strict';
 onEvent('recipes', (event) => {
+    const id_prefix = 'enigmatica:base/byg/shaped/';
+
     const recipes = [
         {
             output: Item.of('byg:embur_hyphae', 3),
@@ -7,7 +9,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'byg:embur_pedu'
             },
-            id: `${id_prefix}byg/embur_hyphae`
+            id: `${id_prefix}embur_hyphae`
         },
         {
             output: Item.of('byg:pollen_block', 1),
@@ -15,7 +17,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'byg:pollen_dust'
             },
-            id: `${id_prefix}byg/pollen_dust`
+            id: `${id_prefix}pollen_dust`
         },
         {
             output: 'byg:blueberry_pie',
