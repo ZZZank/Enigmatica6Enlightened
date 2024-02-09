@@ -90,12 +90,12 @@ onEvent('recipes', (event) => {
     });
 
     recipes.forEach((recipe) => {
-        const re = event.recipes.create.compacting(recipe.output, recipe.inputs).id(recipe.id);
+        const re = event.recipes.create.compacting(recipe.output, recipe.inputs);
         if (recipe.type == 'heated') {
             re.heated();
-        }
-        if (recipe.type == 'superheated') {
+        }else if (recipe.type == 'superheated') {
             re.superheated();
         }
+        re.id(recipe.id);
     });
 });

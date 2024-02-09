@@ -6,7 +6,6 @@ onEvent('recipes', (event) => {
 
     const black_hole_types = ['tank', 'unit'];
     const black_hole_tiers = ['common', 'pity', 'simple', 'advanced', 'supreme'];
-
     black_hole_types.forEach((type) => {
         black_hole_tiers.forEach((tier) => {
             getLowerTiers(black_hole_tiers, tier).forEach((prev) => {

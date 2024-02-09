@@ -47,11 +47,11 @@ onEvent('recipes', (event) => {
             input: 'betterendforge:endstone_dust'
         },
         {
-            output: Item.of('2x occultism:otherstone_slab'),
+            output: '2x occultism:otherstone_slab',
             input: 'occultism:otherstone'
         },
         {
-            output: Item.of('8x darkutils:blank_plate'),
+            output: '8x darkutils:blank_plate',
             input: 'occultism:otherstone'
         },
         {
@@ -61,28 +61,16 @@ onEvent('recipes', (event) => {
     ];
 
     // Color based recipes
-    colors.forEach((color) => {
-        recipes.push({
-            output: `minecraft:${color}_terracotta`,
-            input: `quark:${color}_shingles`
-        });
-    });
+    colors.forEach((color) =>
+        recipes.push({ output: `minecraft:${color}_terracotta`, input: `quark:${color}_shingles` })
+    );
 
     // Recipes for stonecuttables constant
     stonecuttables.forEach((stoneType) => {
-        stoneType.stones.forEach((stone) => {
-            recipes.push({
-                output: stone,
-                input: `#enigmatica:stonecuttables/${stoneType.name}`
-            });
-        });
-
-        stoneType.onlyAsOutput.forEach((stone) => {
-            recipes.push({
-                output: stone,
-                input: `#enigmatica:stonecuttables/${stoneType.name}`
-            });
-        });
+        const tag = `#enigmatica:stonecuttables/${stoneType.name}`;
+        stoneType.stones
+            .concat(stoneType.onlyAsOutput)
+            .forEach((stone) => recipes.push({ output: stone, input: tag }));
     });
 
     // Recipes for masonry constants
@@ -108,7 +96,7 @@ onEvent('recipes', (event) => {
     masonryTiledStoneTypes.forEach((stoneType) => {
         recipes.push(
             {
-                output: Item.of(`2x masonry:${stoneType}tiledslab`),
+                output: `2x masonry:${stoneType}tiledslab`,
                 input: `masonry:${stoneType}tiled`
             },
             {
@@ -119,35 +107,33 @@ onEvent('recipes', (event) => {
     });
 
     // Conversion between different storage_blocks of the same material
-    let conversionTypes = ['storage_block', 'ore'];
-    conversionTypes.forEach((type) => {
+    ['storage_block', 'ore'].forEach((type) => {
         materialsToUnify.forEach((material) => {
-            if (!entryIsBlacklisted(material, type)) {
-                let tag = Ingredient.of(`#forge:${type}s/${material}`);
-                if (tag.stacks.size() > 1) {
-                    tag.stacks.forEach((block) => {
-                        recipes.push({ output: block.id, input: tag });
-                    });
-                }
+            if (entryIsBlacklisted(material, type)) {
+                return;
+            }
+            const tag = `#forge:${type}s/${material}`;
+            const stacks = Ingredient.of(tag).getStacks();
+            if (stacks.size() > 1) {
+                stacks.forEach((block) => recipes.push({ output: block.id, input: tag }));
             }
         });
     });
 
     // Tag conversion
-    conversionTypes = ['#forge:dirt', '#forge:workbenches', '#forge:grass'];
-    conversionTypes.forEach((tag) => {
-        Ingredient.of(tag).stacks.forEach((block) => {
-            recipes.push({ output: block.id, input: Ingredient.of(tag) });
-        });
+    ['#forge:dirt', '#forge:workbenches', '#forge:grass'].forEach((tag) => {
+        Ingredient.of(tag)
+            .getStacks()
+            .forEach((block) => recipes.push({ output: block.id, input: tag }));
     });
 
-    console.info('stonecutting recipe size: ' + recipes.length);
+    // console.info('stonecutting recipe size: ' + recipes.length); // 4183, wow
     recipes.forEach((recipe) => {
-        let re = event.stonecutting(recipe.output, recipe.input);
+        const builder = event.stonecutting(recipe.output, recipe.input);
         if (recipe.id) {
-            re.id(recipe.id);
+            builder.id(recipe.id);
         } else {
-            fallback_id(re, id_prefix);
+            fallback_id(builder, id_prefix);
         }
     });
 });

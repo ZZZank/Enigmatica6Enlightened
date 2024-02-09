@@ -1,6 +1,9 @@
 'use strict';
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/minecraft/smelting/';
+    /**
+     * @type {{input:Internal.ItemStackJS_,output:Internal.ItemStackJS_,xp?:number,id:string}[]}
+     */
     const recipes = [
         {
             input: '#forge:ores/ender',
@@ -178,7 +181,7 @@ onEvent('recipes', (event) => {
         }
     ];
 
-    let atumRecyclables = {
+    const atumRecyclables = {
         iron: [
             'desert_boots_iron',
             'desert_chest_iron',
@@ -201,17 +204,16 @@ onEvent('recipes', (event) => {
             'desert_wolf_gold_armor'
         ]
     };
-
-    Object.keys(atumRecyclables).forEach((mat) => {
-        atumRecyclables[mat].forEach((item) => {
+    for (let material in atumRecyclables) {
+        atumRecyclables[material].forEach((item) => {
             recipes.push({
                 input: Item.of(`atum:${item}`).ignoreNBT(),
-                output: `minecraft:${mat}_nugget`,
+                output: `minecraft:${material}_nugget`,
                 xp: 0.1,
-                id: `${id_prefix}${mat}_nugget_from_${item}`
+                id: `${id_prefix}${material}_nugget_from_${item}`
             });
         });
-    });
+    }
 
     let stones = [
         'granite',
@@ -238,9 +240,10 @@ onEvent('recipes', (event) => {
     });
 
     recipes.forEach((recipe) => {
-        const re = event.smelting(recipe.output, recipe.input).id(recipe.id);
+        const re = event.smelting(recipe.output, recipe.input);
         if (recipe.xp) {
             re.xp(recipe.xp);
         }
+        re.id(recipe.id);
     });
 });

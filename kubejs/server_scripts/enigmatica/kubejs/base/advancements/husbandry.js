@@ -8,9 +8,7 @@ onEvent('server.datapack.high_priority', function (event) {
                 entity: [
                     {
                         condition: 'minecraft:entity_properties',
-                        predicate: {
-                            type: entityType
-                        },
+                        predicate: { type: entityType },
                         entity: 'this'
                     }
                 ]
@@ -45,9 +43,7 @@ onEvent('server.datapack.high_priority', function (event) {
                 child: [
                     {
                         condition: 'minecraft:entity_properties',
-                        predicate: {
-                            type: entityType
-                        },
+                        predicate: { type: entityType },
                         entity: 'this'
                     }
                 ]
@@ -61,18 +57,14 @@ onEvent('server.datapack.high_priority', function (event) {
                 parent: [
                     {
                         condition: 'minecraft:entity_properties',
-                        predicate: {
-                            type: entityType
-                        },
+                        predicate: { type: entityType },
                         entity: 'this'
                     }
                 ],
                 partner: [
                     {
                         condition: 'minecraft:entity_properties',
-                        predicate: {
-                            type: entityType
-                        },
+                        predicate: { type: entityType },
                         entity: 'this'
                     }
                 ]

@@ -1,6 +1,6 @@
 'use strict';
 
-/*'use strict';
+/*
 onEvent('recipes', function (event) {
     // Item Inputs
     let data = {

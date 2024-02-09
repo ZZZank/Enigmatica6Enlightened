@@ -93,7 +93,7 @@ onEvent('recipes', (event) => {
     ];
 
     recipes.forEach((recipe) => {
-        let sequence = [];
+        const sequence = [];
 
         recipe.sequence.forEach((step) => {
             if (step.type == 'deploying') {
@@ -113,7 +113,6 @@ onEvent('recipes', (event) => {
             .sequenced_assembly(recipe.outputs, recipe.input, sequence)
             .loops(recipe.loops)
             .transitionalItem(recipe.transitionalItem);
-
         if (recipe.id) {
             re.id(recipe.id);
         }

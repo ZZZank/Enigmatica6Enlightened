@@ -4,14 +4,15 @@ onEvent('jei.hide.items', (event) => {
     if (global.isNormalMode) {
         return;
     }
-    let items = [
+
+    const items = [
         'integrateddynamics:coal_generator',
         /darkutils:export_plate/,
         /integrateddynamics:energy_battery/,
         /powah:energy_cable_/
-    ].concat(disabledItemsAE);
+    ];
+    // @ts-ignore
+    items.push(disabledItemsAE)
 
-    items.forEach((entry) => {
-        event.hide(entry);
-    });
+    event.hide(items);
 });

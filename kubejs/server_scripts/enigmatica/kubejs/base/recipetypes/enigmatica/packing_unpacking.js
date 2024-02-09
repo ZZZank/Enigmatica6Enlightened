@@ -266,7 +266,7 @@ onEvent('recipes', (event) => {
         );
     });
 
-    let recipetypes_packing_unpacking = (event, recipe) => {
+    recipes.forEach((recipe) => {
         // Thermal
         event.recipes.thermal
             .press(recipe.output, [recipe.input, recipe.mold])
@@ -277,9 +277,5 @@ onEvent('recipes', (event) => {
         event.recipes.immersiveengineering
             .metal_press(recipe.output, recipe.input, recipe.mold)
             .id(`${id_prefix}immersiveengineering/metal_press/${recipe.id_suffix}`);
-    };
-
-    recipes.forEach((recipe) => {
-        recipetypes_packing_unpacking(event, recipe);
     });
 });
