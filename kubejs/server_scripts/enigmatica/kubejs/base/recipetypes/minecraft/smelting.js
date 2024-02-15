@@ -205,14 +205,14 @@ onEvent('recipes', (event) => {
         ]
     };
     for (let material in atumRecyclables) {
-        atumRecyclables[material].forEach((item) => {
+        for (let item of atumRecyclables[material]) {
             recipes.push({
                 input: Item.of(`atum:${item}`).ignoreNBT(),
                 output: `minecraft:${material}_nugget`,
                 xp: 0.1,
                 id: `${id_prefix}${material}_nugget_from_${item}`
             });
-        });
+        }
     }
 
     let stones = [

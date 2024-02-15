@@ -8,7 +8,7 @@
     };
     onEvent('item.right_click', (event) => {
         const player = event.player;
-        let id = player.mainHandItem.id;
+        const id = player.mainHandItem.id;
         if (player.fake || !id.startsWith('kubejs:') || !id.endsWith('_lootbox')) {
             return;
         }
@@ -17,8 +17,8 @@
             return;
         }
 
-        let rarity = rarityMap[id.charAt(7)];
-        let mod = player.mainHandItem.nbt.mod.toString();
+        const rarity = rarityMap[id.charAt(7)];
+        const mod = player.mainHandItem.nbt.mod.toString();
 
         event.server.runCommandSilent(
             `/execute at ${player.name} run loot spawn ${player.x} ${player.y + 1} ${

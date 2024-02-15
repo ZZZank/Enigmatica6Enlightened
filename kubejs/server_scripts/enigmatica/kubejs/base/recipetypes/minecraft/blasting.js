@@ -191,10 +191,10 @@ onEvent('recipes', (event) => {
     ];
 
     recipes.forEach((recipe) => {
-        const re = event.blasting(recipe.output, recipe.input).id(recipe.id);
-
+        const re = event.blasting(recipe.output, recipe.input);
         if (recipe.xp) {
             re.xp(recipe.xp);
         }
+        re.id(recipe.id)
     });
 });

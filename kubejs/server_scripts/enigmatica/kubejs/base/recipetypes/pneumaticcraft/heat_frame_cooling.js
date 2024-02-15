@@ -6,7 +6,6 @@ onEvent('recipes', (event) => {
 
     honeyVarieties.forEach((honeyVariety) => {
         let output = `${honeyVariety}_block`;
-
         if (honeyVariety == 'resourcefulbees:honey') {
             output = 'minecraft:honey_block';
         }

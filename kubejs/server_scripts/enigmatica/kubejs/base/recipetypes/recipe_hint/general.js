@@ -3,7 +3,8 @@
 onEvent('recipes', (event) => {
     const id_prefix = 'enlightened6:recipe_hint_general/';
     /**
-     * @type {{inputs:(string|Internal.ItemStackJS)[],catalyst:''|string|Internal.ItemStackJS,outputs:Internal.ItemStackJS_[],id:string}[]}
+     * @type {{inputs:(string|Internal.ItemStackJS)[],catalyst:''|string|Internal.ItemStackJS,
+     * outputs:Internal.ItemStackJS_[],id:string}[]}
      */
     const recipes = [
         {

@@ -3,18 +3,19 @@ onEvent('recipes', (event) => {
     const id_prefix = 'powah:base/shaped/';
     const recipes = [];
 
-    powahTiers.forEach(function (tier) {
-        let capacitor = 'powah:capacitor_' + tier,
-            crystal = 'powah:crystal_' + tier,
-            cable = 'powah:energy_cable_' + tier;
-
+    powahTiers.forEach((tier) => {
         if (tier == 'basic' || tier == 'starter') {
             return;
-        } else if (tier == 'hardened') {
+        }
+        let capacitor = 'powah:capacitor_' + tier;
+        let crystal = 'powah:crystal_' + tier;
+        let cable = 'powah:energy_cable_' + tier;
+
+        if (tier == 'hardened') {
             crystal = 'powah:steel_energized';
         }
 
-        let lower_tiers = getLowerTiers(powahTiers, tier);
+        const lower_tiers = getLowerTiers(powahTiers, tier);
 
         recipes.push(
             {
@@ -23,7 +24,7 @@ onEvent('recipes', (event) => {
                 key: {
                     A: crystal,
                     B: capacitor,
-                    C: Ingredient.of(lower_tiers.map((item) => `powah:energy_cell_${item}`))
+                    C: lower_tiers.map((item) => `powah:energy_cell_${item}`)
                 },
                 id: `${id_prefix}energy_cell_${tier}`
             },
@@ -33,18 +34,17 @@ onEvent('recipes', (event) => {
                 key: {
                     A: crystal,
                     B: capacitor,
-                    C: Ingredient.of(lower_tiers.map((item) => `powah:battery_${item}`))
+                    C: lower_tiers.map((item) => `powah:battery_${item}`)
                 },
                 id: `${id_prefix}battery_${tier}`
             },
-
             {
                 output: Item.of(`powah:solar_panel_${tier}`),
                 pattern: ['BCB', 'AAA'],
                 key: {
                     A: crystal,
                     B: capacitor,
-                    C: Ingredient.of(lower_tiers.map((item) => `powah:solar_panel_${item}`))
+                    C: lower_tiers.map((item) => `powah:solar_panel_${item}`)
                 },
                 id: `${id_prefix}solar_panel_${tier}`
             }

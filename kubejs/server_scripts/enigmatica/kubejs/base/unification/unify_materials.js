@@ -98,7 +98,7 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        let blacklistedMaterials = ['redstone', 'lapis', 'emerald', 'diamond', 'iron'];
+        const blacklistedMaterials = ['redstone', 'lapis', 'emerald', 'diamond', 'iron'];
         if (blacklistedMaterials.indexOf(material) != -1) {
             return;
         }

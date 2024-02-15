@@ -7,7 +7,7 @@ onEvent('item.right_click', (e) => {
 
     player.mainHandItem.count--;
 
-    let playerCoords = `${player.x} ${player.y + 1} ${player.z}`;
+    const playerCoords = `${player.x} ${player.y + 1} ${player.z}`;
 
     // universial solutions for both fake and real player
     e.server.runCommandSilent(

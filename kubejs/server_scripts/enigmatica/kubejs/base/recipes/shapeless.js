@@ -15,12 +15,12 @@ onEvent('recipes', (event) => {
         { output: 'minecraft:sticky_piston', inputs: ['minecraft:piston', '#forge:slimeballs'] },
         { output: 'minecraft:flint', inputs: ['#forge:gravel', '#forge:gravel', '#forge:gravel'] },
         { output: 'minecraft:chest', inputs: ['#forge:chests/wooden'] },
-        { output: Item.of('powah:uraninite', 9), inputs: ['#forge:storage_blocks/uraninite'] },
-        { output: Item.of('betterendforge:thallasium_nugget', 9), inputs: ['#forge:ingots/thallasium'] },
-        { output: Item.of('betterendforge:terminite_nugget', 9), inputs: ['#forge:ingots/terminite'] },
-        { output: Item.of('atum:nebu_drop', 9), inputs: ['#forge:ingots/nebu'] },
+        { output: '9x powah:uraninite', inputs: ['#forge:storage_blocks/uraninite'] },
+        { output: '9x betterendforge:thallasium_nugget', inputs: ['#forge:ingots/thallasium'] },
+        { output: '9x betterendforge:terminite_nugget', inputs: ['#forge:ingots/terminite'] },
+        { output: '9x atum:nebu_drop', inputs: ['#forge:ingots/nebu'] },
         {
-            output: Item.of('farmersdelight:milk_bottle', 4),
+            output: '4x farmersdelight:milk_bottle',
             inputs: [
                 'minecraft:milk_bucket',
                 'minecraft:glass_bottle',
@@ -275,25 +275,25 @@ onEvent('recipes', (event) => {
             }),
             inputs: ['minecraft:book', '#forge:bookshelves']
         },
-        { output: Item.of('occultism:tallow', 9), inputs: ['quark:tallow_block'] },
+        { output: '9x occultism:tallow', inputs: ['quark:tallow_block'] },
         {
             output: 'minecraft:writable_book',
             inputs: ['minecraft:book', '#forge:dyes/black', '#forge:feathers'],
             id: 'minecraft:writable_book'
         },
-        { output: Item.of('minecraft:honeycomb', 9), inputs: ['minecraft:honeycomb_block'] },
-        { output: Item.of('byg:pollen_dust', 4), inputs: ['byg:pollen_block'] },
+        { output: '9x minecraft:honeycomb', inputs: ['minecraft:honeycomb_block'] },
+        { output: '4x byg:pollen_dust', inputs: ['byg:pollen_block'] },
 
-        { output: Item.of('betterendforge:lumecorn_seed', 6), inputs: ['betterendforge:lumecorn_rod'] },
-        { output: Item.of('betterendforge:bulb_vine_seed', 4), inputs: ['betterendforge:glowing_bulb'] },
-        { output: Item.of('betterendforge:end_lily_seed', 1), inputs: ['betterendforge:end_lily_leaf'] },
-        { output: Item.of('betterendforge:blue_vine_seed', 4), inputs: ['betterendforge:blue_vine_lantern'] },
+        { output: '6x betterendforge:lumecorn_seed', inputs: ['betterendforge:lumecorn_rod'] },
+        { output: '4x betterendforge:bulb_vine_seed', inputs: ['betterendforge:glowing_bulb'] },
+        { output: 'betterendforge:end_lily_seed', inputs: ['betterendforge:end_lily_leaf'] },
+        { output: '4x betterendforge:blue_vine_seed', inputs: ['betterendforge:blue_vine_lantern'] },
         {
-            output: Item.of('betterendforge:glowing_pillar_seed', 4),
+            output: '4x betterendforge:glowing_pillar_seed',
             inputs: ['betterendforge:glowing_pillar_luminophor']
         },
         {
-            output: Item.of('minecraft:paper', 3),
+            output: '3x minecraft:paper',
             inputs: ['minecraft:sugar_cane', 'minecraft:sugar_cane', 'minecraft:sugar_cane']
         },
         {
@@ -318,35 +318,35 @@ onEvent('recipes', (event) => {
             inputs: ['byg:quartzite_sand', 'byg:quartzite_sand', 'byg:quartzite_sand']
         },
         {
-            output: Item.of('botanypots:botany_pot'),
+            output: 'botanypots:botany_pot',
             inputs: ['#botanypots:botany_pots/simple', 'minecraft:water_bucket']
         },
         {
-            output: Item.of('botanypots:hopper_botany_pot'),
+            output: 'botanypots:hopper_botany_pot',
             inputs: ['#botanypots:botany_pots/hopper', 'minecraft:water_bucket']
         },
         {
-            output: Item.of('minecraft:terracotta'),
+            output: 'minecraft:terracotta',
             inputs: ['#enigmatica:washables/terracotta', 'minecraft:water_bucket']
         },
         {
-            output: Item.of('atum:ceramic_white'),
+            output: 'atum:ceramic_white',
             inputs: ['#enigmatica:washables/ceramic', 'minecraft:water_bucket']
         },
         {
-            output: Item.of('atum:ceramic_slab_white'),
+            output: 'atum:ceramic_slab_white',
             inputs: ['#enigmatica:washables/ceramic_slab', 'minecraft:water_bucket']
         },
         {
-            output: Item.of('atum:ceramic_tile_white'),
+            output: 'atum:ceramic_tile_white',
             inputs: ['#enigmatica:washables/ceramic_tile', 'minecraft:water_bucket']
         },
         {
-            output: Item.of('atum:ceramic_stairs_white'),
+            output: 'atum:ceramic_stairs_white',
             inputs: ['#enigmatica:washables/ceramic_stairs', 'minecraft:water_bucket']
         },
         {
-            output: Item.of('atum:ceramic_wall_white'),
+            output: 'atum:ceramic_wall_white',
             inputs: ['#enigmatica:washables/ceramic_wall', 'minecraft:water_bucket']
         },
         {
@@ -360,15 +360,15 @@ onEvent('recipes', (event) => {
             id: 'mythicbotany:wither_aconite_floating'
         },
         {
-            output: Item.of('minecraft:string', 3),
+            output: '3x minecraft:string',
             inputs: ['#forge:crops/flax', '#forge:crops/flax', '#forge:crops/flax']
         },
         {
-            output: Item.of('minecraft:green_dye', 2),
+            output: '2x minecraft:green_dye',
             inputs: ['#forge:dyes/blue', '#forge:dyes/yellow']
         },
         {
-            output: Item.of('minecraft:brown_dye', 2),
+            output: '2x minecraft:brown_dye',
             inputs: ['#forge:dyes/red', '#forge:dyes/green']
         },
         {
@@ -376,7 +376,7 @@ onEvent('recipes', (event) => {
             inputs: ['sushigocrafting:soy_bean']
         },
         {
-            output: Item.of('ars_nouveau:source_berry_roll', 3),
+            output: '3x ars_nouveau:source_berry_roll',
             inputs: [
                 'farmersdelight:wheat_dough',
                 'farmersdelight:wheat_dough',
@@ -386,7 +386,7 @@ onEvent('recipes', (event) => {
             id: 'ars_nouveau:source_berry_roll'
         },
         {
-            output: Item.of('byg:brimstone', 2),
+            output: '2x byg:brimstone',
             inputs: ['minecraft:netherrack', 'byg:sythian_wart_block']
         }
     ];
@@ -403,10 +403,9 @@ onEvent('recipes', (event) => {
     });
 
     colors.forEach(function (color) {
-        let otherColors = colors.filter((filterColor) => filterColor !== color);
-
-        let otherSimplePots = otherColors.map((otherColor) => `botanypots:${otherColor}_botany_pot`),
-            otherHopperPots = otherColors.map((otherColor) => `botanypots:hopper_${otherColor}_botany_pot`);
+        const otherColors = colors.filter((filterColor) => filterColor !== color);
+        const otherSimplePots = otherColors.map((otherColor) => `botanypots:${otherColor}_botany_pot`)
+        const otherHopperPots = otherColors.map((otherColor) => `botanypots:hopper_${otherColor}_botany_pot`);
 
         otherSimplePots.push('botanypots:botany_pot');
         otherHopperPots.push('botanypots:hopper_botany_pot');
@@ -414,12 +413,12 @@ onEvent('recipes', (event) => {
         recipes.push(
             {
                 output: `botanypots:${color}_botany_pot`,
-                inputs: [Ingredient.of(otherSimplePots), `#forge:dyes/${color}`],
+                inputs: [otherSimplePots, `#forge:dyes/${color}`],
                 id: `${id_prefix}dye_botany_pot_${color}`
             },
             {
                 output: `botanypots:hopper_${color}_botany_pot`,
-                inputs: [Ingredient.of(otherHopperPots), `#forge:dyes/${color}`],
+                inputs: [otherHopperPots, `#forge:dyes/${color}`],
                 id: `${id_prefix}dye_hopper_botany_pot_${color}`
             }
         );
@@ -427,11 +426,11 @@ onEvent('recipes', (event) => {
         if (color != 'white') {
             recipes.push(
                 {
-                    output: Item.of(`atum:ceramic_slab_${color}`, 2),
+                    output: `2x atum:ceramic_slab_${color}`,
                     inputs: ['atum:ceramic_slab_white', 'atum:ceramic_slab_white', `#forge:dyes/${color}`]
                 },
                 {
-                    output: Item.of(`6x atum:ceramic_tile_${color}`),
+                    output: `6x atum:ceramic_tile_${color}`,
                     inputs: [
                         'atum:ceramic_tile_white',
                         'atum:ceramic_tile_white',
@@ -443,7 +442,7 @@ onEvent('recipes', (event) => {
                     ]
                 },
                 {
-                    output: Item.of(`3x atum:ceramic_stairs_${color}`),
+                    output: `3x atum:ceramic_stairs_${color}`,
                     inputs: [
                         'atum:ceramic_stairs_white',
                         'atum:ceramic_stairs_white',
@@ -460,10 +459,9 @@ onEvent('recipes', (event) => {
     });
 
     materialsToUnify.forEach((material) => {
-        let ore = Item.of(`emendatusenigmatica:${material}_ore`);
-        if (ore.exists) {
+        if (Item.exists(`emendatusenigmatica:${material}_ore`)) {
             recipes.push({
-                output: ore,
+                output: `emendatusenigmatica:${material}_ore`,
                 inputs: [`#forge:ores/${material}`],
                 id: `${id_prefix}${material}_ore_variant_reset`
             });
@@ -471,7 +469,7 @@ onEvent('recipes', (event) => {
     });
 
     recipes.forEach((recipe) => {
-        let recipeEvent = event.shapeless(recipe.output, recipe.inputs);
+        const recipeEvent = event.shapeless(recipe.output, recipe.inputs);
         if (recipe.id) {
             recipeEvent.id(recipe.id);
         } else {

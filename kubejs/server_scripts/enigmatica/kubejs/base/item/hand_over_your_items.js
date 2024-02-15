@@ -31,7 +31,7 @@ onEvent('item.entity_interact', (event) => {
     // cancel original right-click operations
     event.cancel();
 
-    let itemMessage = rawItemStr(player.mainHandItem, 'white');
+    const itemMessage = rawItemStr(player.mainHandItem, 'white');
     tellraw(
         target,
         '{"translate":"chat.hand_over_your_items.send","color":"blue",' +

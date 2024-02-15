@@ -96,12 +96,13 @@ block_conversion: {
             }
             player.playSound('ping:bloop');
             event.server.runCommandSilent(`particle minecraft:explosion ${target.x} ${target.y} ${target.z}`);
-            if (Item.of(recipe.output).isBlock()) {
-                target.set(Item.of(recipe.output).id);
+            const output = Item.of(recipe.output)
+            if (output.isBlock()) {
+                target.set(output.id, output.nbt);
             } else {
                 target.set(air);
                 const drop = event.world.createEntity('minecraft:item');
-                drop.item = recipe.output;
+                drop.item = output;
                 drop.setPosition(target);
                 drop.setMotionY(0.2);
                 drop.spawn();
