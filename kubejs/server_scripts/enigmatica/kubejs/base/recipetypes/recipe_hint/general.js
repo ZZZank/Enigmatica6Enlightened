@@ -72,7 +72,7 @@ onEvent('recipes', (event) => {
                 return { item: item, weight: weight };
             })
             .map((entry) => entry.item.chance(entry.weight / weightSum));
-        toPagedArray(perk_stone_enrichment_ore, 15).forEach((page, i) => {
+        toPagedArray(perk_stone_enrichment_ore, 20).forEach((page, i) => {
             recipes.push({
                 inputs: [
                     Item.of('astralsorcery:attuned_rock_crystal', {
@@ -100,25 +100,25 @@ onEvent('server.datapack.high_priority', (event) => {
         }
     ]
         // @ts-ignore
-        .concat(new CMGrid(3, 3, 'in', 'item').setMode('input').build())
+        .concat(new CMGrid(2, 5, 'in', 'item').setMode('input').build())
         // @ts-ignore
-        .concat(new CMGrid(3, 5, 'out', 'item').setMode('output').build());
+        .concat(new CMGrid(4, 5, 'out', 'item').setMode('output').build());
     const gui = [
         {
             type: 'custommachinery:progress',
-            x: 18 * 4.5 - 24 / 2,
+            x: 18 * 3.5 - 24 / 2,
             y: 18 * 1.5,
             id: 'progress'
         },
         {
             type: 'custommachinery:slot',
-            x: 18 * 4,
+            x: 18 * 3,
             y: 0,
             id: 'catalyst'
         }
     ]
-        .concat(new CMGrid(3, 3, 'in', 'slot').build())
-        .concat(new CMGrid(3, 5, 'out', 'slot').offset(18 * 6, 0).build());
+        .concat(new CMGrid(2, 5, 'in', 'slot').build())
+        .concat(new CMGrid(4, 5, 'out', 'slot').offset(18 * 5, 0).build());
 
     event.addJson('enlightened6:machines/recipe_hint_general.json', {
         name: {
