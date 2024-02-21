@@ -56,13 +56,9 @@ const toJsonWithCount = (ingredient) => {
     return parsed;
 };
 
-/**
- * @param {any[]|Internal.Collection<any>} entries
- */
-const randomOf = (entries) => {
-    // @ts-ignore
+function randomOf(entries) {
     return Utils.randomOf(Utils.getRandom(), entries);
-};
+}
 
 /**
  * @param {Internal.ItemStackJS} item
@@ -137,12 +133,7 @@ const getPreferredItemInTag = (tag) => {
     return maxOf(items, (a, b) => -compareIndices(a.mod, b.mod, tag));
 };
 
-/**
- *
- * @param {any[]} list
- * @param {null|((a:any,b:any)=>number)} comparator If not specified, will use `(a, b) => a - b`
- */
-const maxOf = (list, comparator) => {
+function maxOf(list, comparator) {
     if (list.length == 0) {
         return null;
     }
@@ -156,15 +147,9 @@ const maxOf = (list, comparator) => {
         }
     }
     return list[targetIndex];
-};
+}
 
-/**
- *
- * @param {any[]} arr the array to be splited into "pages"
- * @param {number} pageSize the max size of spilitted parts of `arr`
- * @returns {any[][]} the paged array containing spilitted parts
- */
-const toPagedArray = (arr, pageSize) => {
+function toPagedArray(arr, pageSize) {
     if (pageSize <= 0) {
         throw 'Invalid param, `pageSize` must be positive number';
     }
@@ -174,7 +159,7 @@ const toPagedArray = (arr, pageSize) => {
         paged.push(arr.slice(i, end));
     }
     return paged;
-};
+}
 
 /**
  *
