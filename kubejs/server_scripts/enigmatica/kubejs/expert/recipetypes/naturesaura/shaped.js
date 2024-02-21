@@ -27,6 +27,17 @@ onEvent('recipes', (event) => {
             id: 'naturesaura:grated_chute'
         },
         {
+            output: 'naturesaura:auto_crafter',
+            pattern: ['ABA', 'ACA', 'ADA'],
+            key: {
+                A: '#forge:planks/ancient',
+                B: '#forge:ingots/infused_iron',
+                C: 'create:electron_tube',
+                D: 'create:chute'
+            },
+            id: 'naturesaura:auto_crafter'
+        },
+        {
             output: 'naturesaura:offering_table',
             pattern: ['BAB', 'CED', 'EFE'],
             key: {
@@ -116,10 +127,10 @@ onEvent('recipes', (event) => {
             pattern: ['ACA', 'ABA', 'AAA'],
             key: {
                 A: '#upgrade_aquatic:coralstone/infused',
-                B: Item.of(
-                    'minecraft:water_bucket',
-                    '{Enchantments:[{lvl:1s,id:"minecraft:infinity"}],display:{Name:\'{"text":"#MLG-YOLO"}\'}}'
-                ).weakNBT(),
+                B: Item.of('minecraft:water_bucket', {
+                    Enchantments: [{ lvl: 1, id: 'minecraft:infinity' }],
+                    display: { Name: '{"text":"#MLG-YOLO"}' }
+                }).weakNBT(),
                 C: 'naturesaura:token_euphoria'
             },
             id: 'naturesaura:spring'
