@@ -17,11 +17,10 @@ onEvent('recipes', (event) => {
     materialsToUnify.forEach((material) => {
         typesToUnify.forEach((type) => {
             if (!entryIsBlacklisted(material, type)) {
-                let tagString = `#forge:${type}s/${material}`;
-                let tag = Ingredient.of(tagString);
-                if (tag.count > 1) {
-                    let prefered = getPreferredItemInTag(tag);
-                    event.replaceOutput(tagString, prefered);
+                const tagString = `#forge:${type}s/${material}`;
+                const tag = Ingredient.of(tagString);
+                if (tag.getCount() > 1) {
+                    event.replaceOutput(tagString, getPreferredItemInTag(tag));
                 }
             }
         });

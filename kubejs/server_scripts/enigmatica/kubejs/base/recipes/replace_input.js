@@ -91,7 +91,7 @@ onEvent('recipes', (event) => {
             toReplace: 'farmersdelight:red_mushroom_colony',
             replaceWith: '#forge:mushroom_colonies/red'
         },
-        { toReplace: 'betterendforge:ender_dust', replaceWith: '#forge:dusts/ender' },
+        { toReplace: 'betterendforge:ender_dust', replaceWith: '#forge:dusts/ender_pearl' },
         { toReplace: 'minecraft:iron_ore', replaceWith: '#forge:ores/iron' },
         { toReplace: 'minecraft:gold_ore', replaceWith: '#forge:ores/gold' },
         { toReplace: 'upgrade_aquatic:beachgrass', replaceWith: '#forge:beach_grass' },
@@ -109,8 +109,8 @@ onEvent('recipes', (event) => {
         },
         { toReplace: 'tconstruct:cobalt_nugget', replaceWith: '#forge:nuggets/cobalt' }
     ];
-    event.replaceInput({}, 'thermal:bitumen', '#forge:gems/bitumen', true);
-    event.replaceInput({}, 'immersivepetroleum:bitumen', '#forge:gems/bitumen', true);
+    event.replaceInput(() => true, 'thermal:bitumen', '#forge:gems/bitumen', true);
+    event.replaceInput(() => true, 'immersivepetroleum:bitumen', '#forge:gems/bitumen', true);
     event.replaceInput(
         {
             not: [{ type: 'ars_nouveau:glyph_recipe' }]
@@ -138,7 +138,7 @@ onEvent('recipes', (event) => {
     event.replaceInput({ mod: 'powah' }, '#forge:ingots/iron', '#forge:ingots/iron_copper');
     event.replaceInput({ mod: 'powah' }, '#forge:nuggets/iron', '#forge:nuggets/iron_copper');
 
-    powahTiers.forEach(function (tier) {
+    powahTiers.forEach((tier) => {
         let capacitor = `powah:capacitor_${tier}`;
         event.replaceInput({ id: `powah:crafting/energy_cell_${tier}` }, '#powah:energy_cell', capacitor);
         if (tier == 'basic') {
@@ -164,7 +164,7 @@ onEvent('recipes', (event) => {
     );
 
     ['quark:tallow', 'occultism:tallow'].forEach((tallow) => {
-        event.replaceInput({}, tallow, '#forge:tallow');
+        event.replaceInput(tallow, '#forge:tallow');
     });
 
     event.replaceInput(
@@ -229,7 +229,7 @@ onEvent('recipes', (event) => {
     });
 
     colors.forEach((color) => {
-        let dyeTag = `#forge:dyes/${color}`;
+        const dyeTag = `#forge:dyes/${color}`;
 
         // Replaces recipes not using forge:dyes tag for inputs
         event.replaceInput({}, `minecraft:${color}_dye`, dyeTag, true);
@@ -262,8 +262,8 @@ onEvent('recipes', (event) => {
         );
 
         ['linen', 'linen_carpet'].forEach((blockName) => {
-            let itemTag = `#atum:${blockName}`;
-            let block = `atum:${blockName}_${color}`;
+            const itemTag = `#atum:${blockName}`;
+            const block = `atum:${blockName}_${color}`;
 
             if (blockName == 'linen_carpet') {
                 event.remove({ id: `atum:${color}_linen_carpet_from_white_linen_carpet` });
@@ -531,10 +531,10 @@ onEvent('recipes', (event) => {
         });
     });
     recipes.forEach((recipe) => {
-        let filter = {};
         if (recipe.filter) {
-            filter = recipe.filter;
+            event.replaceInput(recipe.filter, recipe.toReplace, recipe.replaceWith);
+        } else {
+            event.replaceInput(recipe.toReplace, recipe.replaceWith);
         }
-        event.replaceInput(filter, recipe.toReplace, recipe.replaceWith);
     });
 });

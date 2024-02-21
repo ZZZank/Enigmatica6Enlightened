@@ -1,6 +1,6 @@
 {
   "keepBeaned": true,
-  "disabled": true,
+  "disabled": false,
   "vanillaOrder": true,
   "exportClassNames": false,
   "autoExport": true,
