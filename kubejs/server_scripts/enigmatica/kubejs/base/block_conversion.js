@@ -96,7 +96,7 @@ block_conversion: {
             }
             player.playSound('ping:bloop');
             event.server.runCommandSilent(`particle minecraft:explosion ${target.x} ${target.y} ${target.z}`);
-            const output = Item.of(recipe.output)
+            const output = Item.of(recipe.output);
             if (output.isBlock()) {
                 target.set(output.id, output.nbt);
             } else {

@@ -93,7 +93,7 @@ onEvent('recipes', (event) => {
         const re = event.recipes.create.compacting(recipe.output, recipe.inputs);
         if (recipe.type == 'heated') {
             re.heated();
-        }else if (recipe.type == 'superheated') {
+        } else if (recipe.type == 'superheated') {
             re.superheated();
         }
         re.id(recipe.id);

@@ -1576,8 +1576,7 @@ onEvent('recipes', (event) => {
                     .custom({
                         type: 'tconstruct:casting_table',
                         cast: {
-                            tag: `tconstruct:casts/${cast == 'sand' ? 'single' : 'multi'}_use/${recipe.type
-                                }`
+                            tag: `tconstruct:casts/${cast == 'sand' ? 'single' : 'multi'}_use/${recipe.type}`
                         },
                         cast_consumed: cast == 'sand',
                         fluid: { name: `${modId}:molten_${material}`, amount: recipe.amount },

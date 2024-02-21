@@ -195,6 +195,6 @@ onEvent('recipes', (event) => {
         if (recipe.xp) {
             re.xp(recipe.xp);
         }
-        re.id(recipe.id)
+        re.id(recipe.id);
     });
 });

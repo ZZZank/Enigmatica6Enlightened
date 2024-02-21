@@ -71,6 +71,9 @@ onEvent('jei.information', (event) => {
     ];
 
     recipes.forEach((recipe) => {
-        event.add(recipe.items, recipe.text.map((str) => Text.translate(str)));
+        event.add(
+            recipe.items,
+            recipe.text.map((str) => Text.translate(str))
+        );
     });
 });

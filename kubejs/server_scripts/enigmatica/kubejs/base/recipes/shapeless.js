@@ -404,7 +404,7 @@ onEvent('recipes', (event) => {
 
     colors.forEach(function (color) {
         const otherColors = colors.filter((filterColor) => filterColor !== color);
-        const otherSimplePots = otherColors.map((otherColor) => `botanypots:${otherColor}_botany_pot`)
+        const otherSimplePots = otherColors.map((otherColor) => `botanypots:${otherColor}_botany_pot`);
         const otherHopperPots = otherColors.map((otherColor) => `botanypots:hopper_${otherColor}_botany_pot`);
 
         otherSimplePots.push('botanypots:botany_pot');

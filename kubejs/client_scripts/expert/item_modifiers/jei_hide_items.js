@@ -12,7 +12,7 @@ onEvent('jei.hide.items', (event) => {
         /powah:energy_cable_/
     ];
     // @ts-ignore
-    items.push(disabledItemsAE)
+    items.push(disabledItemsAE);
 
     event.hide(items);
 });
