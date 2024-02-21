@@ -237,33 +237,11 @@ onEvent('recipes', (event) => {
         event.remove({
             id: `minecraft:${color}_carpet_from_white_carpet`
         });
-        fallback_id(
-            event.shaped(Item.of(`minecraft:${color}_carpet`, 3), ['WW'], {
-                W: `minecraft:${color}_wool`
-            }),
-            id_prefix
-        );
-
-        fallback_id(
-            event.shaped(Item.of(`minecraft:${color}_stained_glass_pane`, 8), ['GGG', 'GDG', 'GGG'], {
-                G: 'minecraft:glass_pane',
-                D: dyeTag
-            }),
-            id_prefix
-        );
-
-        fallback_id(
-            event.shaped(Item.of(`minecraft:${color}_stained_glass`, 8), ['GGG', 'GDG', 'GGG'], {
-                G: 'minecraft:glass',
-                D: dyeTag
-            }),
-            id_prefix
-        );
 
         ['stained_glass', 'stained_glass_pane', 'terracotta', 'concrete_powder', 'wool', 'carpet'].forEach(
             (blockName) => {
-                let itemTag = `#forge:${blockName}`;
-                let block = `minecraft:${color}_${blockName}`;
+                const itemTag = `#forge:${blockName}`;
+                const block = `minecraft:${color}_${blockName}`;
 
                 if (blockName == 'stained_glass_pane') {
                     event.remove({ id: `${block}_from_glass_pane` });
@@ -271,14 +249,15 @@ onEvent('recipes', (event) => {
                     event.remove({ id: block });
                 }
 
-                fallback_id(
-                    event.shaped(Item.of(block, 8), ['SSS', 'SDS', 'SSS'], {
+                event
+                    .shaped(Item.of(block, 8), ['SSS', 'SDS', 'SSS'], {
                         S: itemTag,
                         D: dyeTag
-                    }),
-                    id_prefix
-                );
-                fallback_id(event.shapeless(Item.of(block, 1), [dyeTag, itemTag]), id_prefix);
+                    })
+                    .id(id_prefix + blockName + '_batch_dyeing_' + color);
+                event
+                    .shapeless(Item.of(block), [dyeTag, itemTag])
+                    .id(id_prefix + blockName + '_dyeing_' + color);
             }
         );
 

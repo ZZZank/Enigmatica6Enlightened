@@ -157,6 +157,38 @@ onEvent('recipes', (event) => {
         }
     ];
 
+    colors.forEach((color) => {
+        const dyeTag = `#forge:dyes/${color}`;
+        recipes.push(
+            {
+                output: `3x minecraft:${color}_carpet`,
+                pattern: ['AA'],
+                key: {
+                    A: `minecraft:${color}_wool`
+                },
+                id: `${id_prefix}${color}_wool_to_carpet`
+            },
+            {
+                output: `8x minecraft:${color}_stained_glass_pane`,
+                pattern: ['AAA', 'ABA', 'AAA'],
+                key: {
+                    A: 'minecraft:glass_pane',
+                    B: dyeTag
+                },
+                id: `${id_prefix}glass_pane_batch_dyeing_${color}`
+            },
+            {
+                output: `8x minecraft:${color}_stained_glass`,
+                pattern: ['AAA', 'ABA', 'AAA'],
+                key: {
+                    A: 'minecraft:glass',
+                    B: dyeTag
+                },
+                id: `${id_prefix}glass_batch_dyeing_${color}`
+            }
+        );
+    });
+
     recipes.forEach((recipe) => {
         event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
     });
