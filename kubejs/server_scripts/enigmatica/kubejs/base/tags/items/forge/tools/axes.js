@@ -1,6 +1,9 @@
 'use strict';
 onEvent('item.tags', (event) => {
     let items = [
+        /_axe$/,
+        /_paxel/,
+        /_aiot/,
         'immersiveengineering:axe_steel',
         'bloodmagic:soulaxe',
         'atum:montus_strike',
@@ -15,12 +18,6 @@ onEvent('item.tags', (event) => {
     let tags = ['forge:tools', 'forge:tools/axe'];
 
     tags.forEach((tag) => {
-        event
-            .get(tag)
-            .add(items)
-            .add(/_axe$/)
-            .add(/_paxel/)
-            .add(/_aiot/)
-            .remove(exceptions);
+        event.get(tag).add(items).remove(exceptions);
     });
 });

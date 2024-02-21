@@ -1,5 +1,4 @@
 'use strict';
 onEvent('entity_type.tags', (event) => {
-    let entities = ['atum:pharaoh'];
-    event.get('enigmatica:pharaohs').add(entities);
+    event.get('enigmatica:pharaohs').add(['atum:pharaoh']);
 });

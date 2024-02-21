@@ -1,6 +1,4 @@
 'use strict';
 onEvent('item.tags', (event) => {
-    for (let i = 0; i < colors.length; i++) {
-        event.get('forge:concrete_powder').add('minecraft:' + colors[i] + '_concrete_powder');
-    }
+    event.get('forge:concrete_powder').add(colors.map((color) => 'minecraft:' + color + '_concrete_powder'));
 });

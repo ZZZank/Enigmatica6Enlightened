@@ -2,8 +2,8 @@
 onEvent('item.tags', (event) => {
     event.get('botanypots:hopper_botany_pots').removeAll();
 
-    let simple_pots = ['botanypots:botany_pot'];
-    let hopper_pots = ['botanypots:hopper_botany_pot'];
+    const simple_pots = ['botanypots:botany_pot'];
+    const hopper_pots = ['botanypots:hopper_botany_pot'];
 
     colors.forEach((color) => {
         simple_pots.push(`botanypots:${color}_botany_pot`);

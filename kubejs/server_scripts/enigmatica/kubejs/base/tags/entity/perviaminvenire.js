@@ -1,5 +1,6 @@
 'use strict';
 
+/*
 onEvent('entity_type.tags', (event) => {
     let entities = [
         'alexsmobs:alligator_snapping_turtle',
@@ -55,3 +56,4 @@ onEvent('entity_type.tags', (event) => {
     ];
     event.get('per-viam-invenire:replace_vanilla_navigator').add(entities);
 });
+*/

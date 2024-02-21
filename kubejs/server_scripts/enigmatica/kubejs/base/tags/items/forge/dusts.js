@@ -35,16 +35,24 @@ onEvent('item.tags', (event) => {
 
     // Temporary until EE adapts this change
     event.get('forge:chunks/arcane').remove('emendatusenigmatica:arcane_chunk');
-    event.get('forge:ores/arcane').remove('emendatusenigmatica:arcane_chunk');
-    event.get('forge:ores/arcane').remove('emendatusenigmatica:arcane_ore');
-    event.get('forge:ores/arcane').remove('ars_nouveau:arcane_ore');
+    event.get('forge:chunks/mana').add('emendatusenigmatica:arcane_chunk');
+    event
+        .get('forge:ores/arcane')
+        .remove([
+            'emendatusenigmatica:arcane_chunk',
+            'emendatusenigmatica:arcane_ore',
+            'ars_nouveau:arcane_ore'
+        ]);
+    event
+        .get('forge:ores/mana')
+        .add([
+            'emendatusenigmatica:arcane_chunk',
+            'emendatusenigmatica:arcane_ore',
+            'ars_nouveau:arcane_ore'
+        ]);
     event.get('forge:ores/mana_gem').remove('ars_nouveau:arcane_ore');
     event.get('forge:gems/arcane').remove('emendatusenigmatica:arcane_gem');
+    event.get('forge:gems/mana').add('emendatusenigmatica:arcane_gem');
     event.get('forge:storage_blocks/arcane').remove('emendatusenigmatica:arcane_block');
     event.get('forge:storage_blocks/mana').add('emendatusenigmatica:arcane_block');
-    event.get('forge:chunks/mana').add('emendatusenigmatica:arcane_chunk');
-    event.get('forge:ores/mana').add('emendatusenigmatica:arcane_ore');
-    event.get('forge:ores/mana').add('emendatusenigmatica:arcane_chunk');
-    event.get('forge:gems/mana').add('emendatusenigmatica:arcane_gem');
-    event.get('forge:ores/mana').add('ars_nouveau:arcane_ore');
 });

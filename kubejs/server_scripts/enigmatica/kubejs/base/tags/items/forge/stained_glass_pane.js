@@ -1,6 +1,6 @@
 'use strict';
 onEvent('item.tags', (event) => {
-    for (let i = 0; i < colors.length; i++) {
-        event.get('forge:stained_glass_pane').add('minecraft:' + colors[i] + '_stained_glass_pane');
-    }
+    event
+        .get('forge:stained_glass_pane')
+        .add(colors.map((color) => 'minecraft:' + color + '_stained_glass_pane'));
 });

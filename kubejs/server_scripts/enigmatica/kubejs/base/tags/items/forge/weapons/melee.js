@@ -1,6 +1,10 @@
 'use strict';
 onEvent('item.tags', (event) => {
     let items = [
+        /_sword/,
+        /_paxel/,
+        /_aiot/,
+        /betterendforge:\w+_hammer/,
         'botania:ender_dagger',
         'byg:pendorite_battleaxe',
         'immersiveengineering:sword_steel',
@@ -46,13 +50,6 @@ onEvent('item.tags', (event) => {
     let tags = ['forge:weapons', 'forge:weapons/melee'];
 
     tags.forEach((tag) => {
-        event
-            .get(tag)
-            .add(items)
-            .add(/_sword/)
-            .add(/_paxel/)
-            .add(/_aiot/)
-            .add(/betterendforge:\w+_hammer/)
-            .remove(exceptions);
+        event.get(tag).add(items).remove(exceptions);
     });
 });

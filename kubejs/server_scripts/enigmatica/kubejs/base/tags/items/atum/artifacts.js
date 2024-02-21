@@ -7,15 +7,19 @@ onEvent('item.tags', (event) => {
         event.get('atum:artifacts').add(`/atum:.*_${atum_aspect}/`);
         event.get(`atum:artifacts/${atum_aspect}`).add(`/atum:.*_${atum_aspect}/`);
 
-        event.get('atum:artifacts').remove(`atum:${atum_aspect}_godforged_block`);
-        event.get('atum:artifacts').remove(`atum:torch_of_${atum_aspect}`);
-        event.get('atum:artifacts').remove(`atum:lantern_of_${atum_aspect}`);
-        event.get('atum:artifacts').remove(`atum:${atum_aspect}_godshard`);
+        event
+            .get('atum:artifacts')
+            .remove(`atum:${atum_aspect}_godforged_block`)
+            .remove(`atum:torch_of_${atum_aspect}`)
+            .remove(`atum:lantern_of_${atum_aspect}`)
+            .remove(`atum:${atum_aspect}_godshard`);
 
-        event.get(`atum:artifacts/${atum_aspect}`).remove(`atum:${atum_aspect}_godforged_block`);
-        event.get(`atum:artifacts/${atum_aspect}`).remove(`atum:torch_of_${atum_aspect}`);
-        event.get(`atum:artifacts/${atum_aspect}`).remove(`atum:lantern_of_${atum_aspect}`);
-        event.get(`atum:artifacts/${atum_aspect}`).remove(`atum:${atum_aspect}_godshard`);
+        event
+            .get(`atum:artifacts/${atum_aspect}`)
+            .remove(`atum:${atum_aspect}_godforged_block`)
+            .remove(`atum:torch_of_${atum_aspect}`)
+            .remove(`atum:lantern_of_${atum_aspect}`)
+            .remove(`atum:${atum_aspect}_godshard`);
     });
 
     event.get('atum:artifacts').remove('atum:anputs_fingers_spores');

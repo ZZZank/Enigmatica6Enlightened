@@ -1,6 +1,7 @@
 'use strict';
 onEvent('item.tags', (event) => {
     let items = [
+        /_bow$/,
         'botania:flare_chakram',
         'botania:thorn_chakram',
         'immersiveengineering:chemthrower',
@@ -29,6 +30,6 @@ onEvent('item.tags', (event) => {
     let tags = ['forge:weapons', 'forge:weapons/ranged'];
 
     tags.forEach((tag) => {
-        event.get(tag).add(items).add(/_bow$/);
+        event.get(tag).add(items);
     });
 });

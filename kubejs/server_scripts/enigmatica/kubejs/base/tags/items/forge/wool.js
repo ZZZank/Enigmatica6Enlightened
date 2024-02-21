@@ -1,6 +1,4 @@
 'use strict';
 onEvent('item.tags', (event) => {
-    for (let i = 0; i < colors.length; i++) {
-        event.get('forge:wool').add('minecraft:' + colors[i] + '_wool');
-    }
+    event.get('forge:wool').add(colors.map((color) => `minecraft:${color}_wool`));
 });
