@@ -385,10 +385,10 @@ declare class fluid extends Document.Object {
     static lava(): Internal.FluidStackJS;
     static getType(id: ResourceLocation_): Internal.Fluid;
     static getEmpty(): Internal.FluidStackJS;
-    static of(o: Internal.FluidStackJS): Internal.FluidStackJS;
-    static of(o: Internal.FluidStackJS, amount: number, nbt: Internal.CompoundNBT_): Internal.FluidStackJS;
-    static of(o: Internal.FluidStackJS, nbt: Internal.CompoundNBT_): Internal.FluidStackJS;
-    static of(o: Internal.FluidStackJS, amount: number): Internal.FluidStackJS;
+    static of(o: Internal.FluidStackJS_): Internal.FluidStackJS;
+    static of(o: Internal.FluidStackJS_, amount: number, nbt: Internal.CompoundNBT_): Internal.FluidStackJS;
+    static of(o: Internal.FluidStackJS_, nbt: Internal.CompoundNBT_): Internal.FluidStackJS;
+    static of(o: Internal.FluidStackJS_, amount: number): Internal.FluidStackJS;
     static exists(id: ResourceLocation_): boolean;
     static getTypes(): Internal.List<string>;
     static water(amount: number): Internal.FluidStackJS;
@@ -16161,11 +16161,11 @@ declare namespace Internal {
         giveEffectEachTick(arg0: string, arg1: number, arg2: number): Internal.CustomMachineJSRecipeBuilder;
         serialize(): void;
         delay(arg0: number): Internal.CustomMachineJSRecipeBuilder;
-        requireFluid(arg0: Internal.FluidStackJS): Internal.CustomMachineJSRecipeBuilder;
-        requireFluid(arg0: Internal.FluidStackJS, arg1: string): Internal.CustomMachineJSRecipeBuilder;
+        requireFluid(arg0: Internal.FluidStackJS_): Internal.CustomMachineJSRecipeBuilder;
+        requireFluid(arg0: Internal.FluidStackJS_, arg1: string): Internal.CustomMachineJSRecipeBuilder;
         requireWeather(arg0: string): Internal.CustomMachineJSRecipeBuilder;
-        produceFluid(arg0: Internal.FluidStackJS): Internal.CustomMachineJSRecipeBuilder;
-        produceFluid(arg0: Internal.FluidStackJS, arg1: string): Internal.CustomMachineJSRecipeBuilder;
+        produceFluid(arg0: Internal.FluidStackJS_): Internal.CustomMachineJSRecipeBuilder;
+        produceFluid(arg0: Internal.FluidStackJS_, arg1: string): Internal.CustomMachineJSRecipeBuilder;
         biomeBlacklist(arg0: string[]): Internal.CustomMachineJSRecipeBuilder;
         breakBlockOnEnd(arg0: string[], arg1: boolean, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): Internal.CustomMachineJSRecipeBuilder;
         breakBlockOnEnd(arg0: string[], arg1: boolean, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number): Internal.CustomMachineJSRecipeBuilder;
@@ -16202,8 +16202,8 @@ declare namespace Internal {
         destroyAndPlaceBlockOnStart(arg0: string, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number): Internal.CustomMachineJSRecipeBuilder;
         requireTime(arg0: string[]): Internal.CustomMachineJSRecipeBuilder;
         createRecipe(): Internal.IRecipe<any>;
-        requireFluidPerTick(arg0: Internal.FluidStackJS): Internal.CustomMachineJSRecipeBuilder;
-        requireFluidPerTick(arg0: Internal.FluidStackJS, arg1: string): Internal.CustomMachineJSRecipeBuilder;
+        requireFluidPerTick(arg0: Internal.FluidStackJS_): Internal.CustomMachineJSRecipeBuilder;
+        requireFluidPerTick(arg0: Internal.FluidStackJS_, arg1: string): Internal.CustomMachineJSRecipeBuilder;
         getFromToString(): string;
         runCommandOnStart(arg0: string, arg1: boolean): Internal.CustomMachineJSRecipeBuilder;
         runCommandOnStart(arg0: string): Internal.CustomMachineJSRecipeBuilder;
@@ -16233,8 +16233,8 @@ declare namespace Internal {
         placeBlockOnEnd(arg0: string, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number): Internal.CustomMachineJSRecipeBuilder;
         requireEnergyPerTick(arg0: number): Internal.CustomMachineJSRecipeBuilder;
         dimensionWhitelist(arg0: string[]): Internal.CustomMachineJSRecipeBuilder;
-        produceFluidPerTick(arg0: Internal.FluidStackJS, arg1: string): Internal.CustomMachineJSRecipeBuilder;
-        produceFluidPerTick(arg0: Internal.FluidStackJS): Internal.CustomMachineJSRecipeBuilder;
+        produceFluidPerTick(arg0: Internal.FluidStackJS_, arg1: string): Internal.CustomMachineJSRecipeBuilder;
+        produceFluidPerTick(arg0: Internal.FluidStackJS_): Internal.CustomMachineJSRecipeBuilder;
         hide(): Internal.CustomMachineJSRecipeBuilder;
         damageItemTag(arg0: string, arg1: number, arg2: Internal.MapJS, arg3: string): Internal.CustomMachineJSRecipeBuilder;
         damageItemTag(arg0: string, arg1: number): Internal.CustomMachineJSRecipeBuilder;
@@ -32540,7 +32540,7 @@ declare namespace Internal {
          */
         constructor();
     }
-    type FluidStackJS_ = FluidStackJS;
+    type FluidStackJS_ = string | FluidStackJS;
     class VillagerHostilesSensor extends Internal.Sensor<Internal.LivingEntity> {
         func_220974_a(): Internal.Set<Internal.MemoryModuleType<any>>;
         /**
@@ -58785,7 +58785,7 @@ declare namespace Internal {
     abstract class ThermalRecipeJS extends Internal.RecipeJS {
         serializeIngredientStack(arg0: Internal.IngredientStackJS): Internal.JsonElement;
         energyMod(arg0: number): Internal.ThermalRecipeJS;
-        fluidFrom(arg0: Internal.FluidStackJS): Internal.FluidIngredient;
+        fluidFrom(arg0: Internal.FluidStackJS_): Internal.FluidIngredient;
         energy(arg0: number): Internal.ThermalRecipeJS;
         /**
          * Internal constructor, not callable unless via `java()`.
