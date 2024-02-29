@@ -100,6 +100,9 @@ const colors = [
 ];
 
 const itemsToHide = [
+    'appliedenergistics2:nether_quartz_dust',
+    'appliedenergistics2:fluix_dust',
+    'appliedenergistics2:certus_quartz_dust',
     'appliedenergistics2:flour',
     'appliedenergistics2:gold_dust',
     'appliedenergistics2:iron_dust',
@@ -114,6 +117,8 @@ const itemsToHide = [
     'ars_nouveau:arcane_brick',
     'ars_nouveau:arcane_ore',
     'ars_nouveau:mana_gem_block',
+
+    'betterendforge:ender_dust',
 
     'bloodmagic:coalsand',
     'bloodmagic:saltpeter',

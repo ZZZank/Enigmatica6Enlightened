@@ -149,7 +149,7 @@ onEvent('item.tooltip', (event) => {
             text: [Text.translate(`${id_prefix}beehive`).red()]
         },
         {
-            items: [/natures\w+:\w+_generator/],
+            items: [/naturesaura:\w+_generator/],
             text: [Text.translate(`${id_prefix}aura_generator`).green()]
         },
         {

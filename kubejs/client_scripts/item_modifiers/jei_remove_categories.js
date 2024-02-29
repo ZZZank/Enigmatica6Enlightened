@@ -3,7 +3,7 @@
 onEvent('jei.remove.categories', (event) => {
     // console.log('JEI RECIPE CATEGORIES: ' + event.getCategoryIds());
 
-    let categories = [
+    const categories = [
         'pneumaticcraft:compressed_iron_explosion',
         'portable_stonecutter:jei_anvil_flattening',
         'masterfulmachinery:machine_structure_auto_iridescent_altar',

@@ -16,11 +16,9 @@ onEvent('jei.information', (event) => {
     ];
 
     recipes.forEach((recipe) => {
-        for (let i = 0; i < recipe.description.length; i++) {
-            recipe.description[i] = Text.translate(recipe.description[i]);
-        }
-        recipe.items.forEach((item) => {
-            event.add(item, recipe.description);
-        });
+        event.add(
+            recipe.items,
+            recipe.description.map((desc) => Text.translate(desc))
+        );
     });
 });

@@ -46951,7 +46951,7 @@ declare namespace Internal {
         yeet(category: ResourceLocation_, recipesToYeet: ResourceLocation[]): void;
         getCategories(): Internal.Collection<Internal.IRecipeCategory<any>>;
         getCategoryIds(): Internal.Collection<ResourceLocation>;
-        remove(category: ResourceLocation_, recipesToRemove: ResourceLocation[]): void;
+        remove(category: ResourceLocation_, recipesToRemove: ResourceLocation_[]): void;
         get categoryIds(): Internal.Collection<ResourceLocation>;
         get categories(): Internal.Collection<Internal.IRecipeCategory<any>>;
         /**

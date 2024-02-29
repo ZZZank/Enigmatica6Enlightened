@@ -1,6 +1,6 @@
 'use strict';
 onEvent('jei.hide.fluids', (event) => {
-    [
+    const disabled = [
         'cofh_core:honey',
         'create:honey',
         'thermal:crude_oil',
@@ -43,7 +43,9 @@ onEvent('jei.hide.fluids', (event) => {
         'emendatusenigmatica:molten_signalum',
         'emendatusenigmatica:molten_sapphire',
         'emendatusenigmatica:molten_ruby'
-    ].forEach((disabledFluid) => {
+    ];
+
+    disabled.forEach((disabledFluid) => {
         if (!Fluid.of(disabledFluid).isEmpty()) {
             event.hide(disabledFluid);
         }
