@@ -23,7 +23,7 @@
 	allowShapedSquareInPress = true
 	#
 	#When true, allows any standard crafting recipes to be processed by Mechanical Crafters.
-	allowRegularCraftingInCrafter = false
+	allowRegularCraftingInCrafter = true
 	#
 	#When true, allows any stonecutting recipes to be processed by a Mechanical Saw.
 	allowStonecuttingOnSaw = true
