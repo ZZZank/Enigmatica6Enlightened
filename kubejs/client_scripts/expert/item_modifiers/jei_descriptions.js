@@ -44,28 +44,7 @@ onEvent('jei.information', (event) => {
         },
         {
             // Disabled Items
-            items: [
-                'pneumaticcraft:air_compressor',
-                'pneumaticcraft:advanced_air_compressor',
-                'industrialforegoing:mob_slaughter_factory',
-                'integrateddynamics:energy_battery',
-                'integrateddynamics:mechanical_squeezer',
-                'integrateddynamics:mechanical_drying_basin',
-                'integrateddynamics:squeezer',
-                'integrateddynamics:drying_basin',
-                'integrateddynamics:coal_generator',
-                'mekanism:upgrade_filter',
-                'darkutils:rune_damage_player',
-                'integrateddynamics:coal_generator',
-                /darkutils:export_plate/,
-                /integrateddynamics:energy_battery/,
-                /powah:energy_cable_/,
-                'engineersdecor:factory_placer'
-            ],
-            text: [`descriptions.en6e.base.disabled_please_report`]
-        },
-        {
-            items: disabledItemsAE,
+            items: disabledItemsExpert,
             text: [`descriptions.en6e.base.disabled_please_report`]
         }
     ];
