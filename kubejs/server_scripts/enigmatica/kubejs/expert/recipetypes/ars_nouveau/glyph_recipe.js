@@ -3,6 +3,11 @@ onEvent('recipes', (event) => {
     if (global.isNormalMode) {
         return;
     }
+    /**
+     * @type {{input:Internal.IngredientJS_,output:Internal.ItemStackJS_,
+     * tier:'ONE'|'TWO'|'THREE',id:string}[]}
+     * @param tier ONE: Magic Clay, TWO: Marvelous Clay, THREE: Mythical Clay
+     */
     const recipes = [
         {
             input: 'alexsmobs:guster_eye',
@@ -168,16 +173,7 @@ onEvent('recipes', (event) => {
         }
     ];
 
-    /*
-    Tiers
-    ONE: Magic Clay
-    TWO: Marvelous Clay
-    THREE: Mythical Clay
-    */
-
     recipes.forEach((recipe) => {
-        recipe.type = 'ars_nouveau:glyph_recipe';
-
-        event.custom(recipe).id(recipe.id);
+        event.recipes.ars_nouveau.glyph_recipe(recipe.output, recipe.input, recipe.tier).id(recipe.id);
     });
 });
