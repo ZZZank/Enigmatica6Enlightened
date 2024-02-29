@@ -1,9 +1,11 @@
 'use strict';
 onEvent('item.right_click', (event) => {
-    const player = event.player;
-
-    const [mod, id] = player.mainHandItem.id.split(':', 2);
-    if (player.fake || mod != 'kubejs' || !id.endsWith('_delight')) {
+    const { player, item } = event;
+    if (event.hand != MAIN_HAND || player.fake || item.empty) {
+        return;
+    }
+    const [mod, id] = item.id.split(':', 2);
+    if (mod != 'kubejs' || !id.endsWith('_delight')) {
         return;
     }
 
@@ -11,7 +13,6 @@ onEvent('item.right_click', (event) => {
     event.server.runCommandSilent(
         `/execute at ${player.name} run loot spawn ${player.x} ${player.y + 1} ${player.z} loot ${lootTable}`
     );
-
     // not handling 'gamemode creative' case, due to performance and rarity of such a case
-    player.mainHandItem.count--;
+    item.count--;
 });

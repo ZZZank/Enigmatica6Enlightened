@@ -8,30 +8,29 @@
  */
 
 onEvent('item.entity_interact', (event) => {
-    const player = event.player;
+    const { player, item } = event;
     if (
-        !player ||
-        // fake player not allowed
+        // ignore off-hand interaction
+        event.hand != MAIN_HAND ||
+        // ignore fake player
         player.fake ||
         // player must be sneaking
         !player.crouching ||
         // player must be holding something
-        player.mainHandItem.empty
+        item.empty
     ) {
         return;
     }
     //@ts-ignore
     const /** @type {Internal.PlayerJS} */ target = event.target;
     // const target = player;
-
     if (!target || !target.player) {
         return; // player must be targeting another player
     }
 
     // cancel original right-click operations
     event.cancel();
-
-    const itemMessage = rawItemStr(player.mainHandItem, 'white');
+    const itemMessage = rawItemStr(item, 'white');
     tellraw(
         target,
         '{"translate":"chat.hand_over_your_items.send","color":"blue",' +
@@ -42,6 +41,6 @@ onEvent('item.entity_interact', (event) => {
         '{"translate":"chat.hand_over_your_items.receive","color":"dark_green",' +
             `"with":[${itemMessage},{"text":"${target.name}","color":"green"}]}`
     );
-    target.giveInHand(player.mainHandItem);
-    player.mainHandItem.count = 0;
+    target.giveInHand(item);
+    player.mainHandItem = Item.getEmpty();
 });
