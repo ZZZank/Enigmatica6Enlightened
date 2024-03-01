@@ -2,7 +2,6 @@
     "compilerOptions": {
         "lib": ["ES5","ES2015"],
         "typeRoots": ["_dev/probe/generated","_dev/probe/user"],
-        "allowJs": true,
         "checkJs": true
     }
 }

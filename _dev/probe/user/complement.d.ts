@@ -1,5 +1,5 @@
 
-declare function randomOf<T>(inputs: T[]): T;
+declare function randomOf<T>(inputs: T[]|Internal.Collection<T>): T;
 /**
  *
  * @param {T[]} arr the array to be splited into "pages"
