@@ -28,12 +28,13 @@ onEvent('ie.multiblock.form', (event) => {
         return;
     }
 
+    // @ts-ignore
+    const /** @type {Internal.PlayerJS} */ player = event.entity;
     const stage = ieMultiblockGameStage[event.getMultiblock()];
-    if (stage && !event.getEntity().stages.has(stage)) {
+    if (stage && !player.stages.has(stage)) {
         event.cancel();
-        if (!event.getEntity().getServer()) {
-            const error_message = Text.translate('desc.enigmatica.ie_multiblock_error');
-            event.getEntity().tell(error_message);
+        if (!player.getServer()) {
+            player.tell(Text.translate('desc.enigmatica.ie_multiblock_error'));
         }
     }
 });

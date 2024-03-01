@@ -36,7 +36,6 @@ const addCMRecipe = (builder, recipe) => {
                 builder.requireItemTag(parsed.tag, parsed.count);
             } else {
                 builder.requireItem(Item.of(parsed.item, parsed.count));
-                builder.requireBlock.bind(null);
             }
         } else {
             builder.requireItem(input);

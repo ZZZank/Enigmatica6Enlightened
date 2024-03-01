@@ -6,7 +6,7 @@ restrictions.block_place = [
         blocks: [],
         dimension: '', // the restricted block must be placed in specific dimension
         stageUnlock: '', // the restricted block can be placed anywhere by player who has this stage
-        additional: (event) => {return true},
+        additional: (event) => {return true}, //optioanl
         errorMessage: ''
     },
     */

@@ -259,9 +259,6 @@ onEvent('recipes', (event) => {
         'minecraft:crystal_glass',
         'minecraft:bone_pile_from_bone_pile_block',
 
-        'morevanillalib:obsidian_shard',
-        'morevanillalib:obsidian',
-
         'neapolitan:chocolate/chocolate_bar',
 
         'quark:building/crafting/tallow_from_block',
@@ -332,17 +329,6 @@ onEvent('recipes', (event) => {
 
         'upgrade_aquatic:bone_meal_from_tooth',
 
-        '/integrateddynamics:\\w+/convenience/minecraft_dye/',
-        '/integrateddynamics:\\w+/ore/dust/',
-        '/integrateddynamics:\\w+/ore/redstone/',
-        '/integrateddynamics:\\w+/ore/quartz/',
-
-        '/integrateddynamics:\\w+/convenience/',
-        '/integrateddynamics:\\w+/ore/',
-        '/integrateddynamics:blasting/menril_log/'
-    ];
-
-    let regexIdRemovals = [
         /emendatusenigmatica:ore_from_chunk_crafting/,
         /emendatusenigmatica:ore_from_chunk_stonecutting/,
         /create:\w+\/bread/,
@@ -381,7 +367,16 @@ onEvent('recipes', (event) => {
         /create:crafting\/materials\/\w+_nugget_from_decompacting/,
         /occultism:crafting\/\w+_block/,
         /occultism:crafting\/\w+_nugget/,
-        /occultism:crafting\/\w+_ingot_from_nuggets/
+        /occultism:crafting\/\w+_ingot_from_nuggets/,
+
+        '/integrateddynamics:\\w+/convenience/minecraft_dye/',
+        '/integrateddynamics:\\w+/ore/dust/',
+        '/integrateddynamics:\\w+/ore/redstone/',
+        '/integrateddynamics:\\w+/ore/quartz/',
+
+        '/integrateddynamics:\\w+/convenience/',
+        '/integrateddynamics:\\w+/ore/',
+        '/integrateddynamics:blasting/menril_log/'
     ];
 
     stonecuttables.forEach((stoneType) => {
@@ -398,10 +393,6 @@ onEvent('recipes', (event) => {
     });
 
     idRemovals.forEach((removal) => {
-        event.remove({ id: removal });
-    });
-
-    regexIdRemovals.forEach((removal) => {
         event.remove({ id: removal });
     });
 

@@ -156,8 +156,6 @@ onEvent('recipes', (event) => {
 
     /**
      * @param {{input:string,type:string,primary:string,secondary:string,tertiary:string}} recipe
-     * @param {Internal.RecipeEventJS} event
-     * @param {any} id_prefix
      */
     function pedestals_dye_crushing(recipe) {
         if (recipe.input == 'minecraft:bone') {

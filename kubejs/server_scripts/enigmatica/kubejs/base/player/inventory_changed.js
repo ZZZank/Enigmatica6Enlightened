@@ -2,7 +2,7 @@
 
 onEvent('player.inventory.changed', (event) => {
     const player = event.player;
-    if (!player.player || player.fake) {
+    if (player.fake) {
         return;
     }
 

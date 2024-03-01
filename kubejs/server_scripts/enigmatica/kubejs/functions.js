@@ -124,7 +124,7 @@ const entryIsBlacklisted = (material, type) => {
  * @returns {Internal.ItemStackJS}
  */
 const getPreferredItemInTag = (tag) => {
-    let items = getItemsInTag(tag);
+    const items = getItemsInTag(tag);
     if (items.length == 0) {
         return Item.of(air);
     }
