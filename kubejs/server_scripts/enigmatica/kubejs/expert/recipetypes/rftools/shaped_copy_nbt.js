@@ -6,6 +6,18 @@ onEvent('recipes', (event) => {
 
     const recipes = [
         {
+            result: { item: 'rftoolsstorage:storage_module0' },
+            pattern: [' C ', 'gig', 'qrq'],
+            key: {
+                g: { tag: 'forge:nuggets/gold_bronze' },
+                q: { item: 'minecraft:quartz' },
+                r: { item: 'minecraft:redstone' },
+                C: { tag: 'forge:chests' },
+                i: { tag: 'forge:ingots/iron_tin' }
+            },
+            id: 'rftoolsstorage:storage_module0'
+        },
+        {
             result: { item: 'rftoolsstorage:storage_module1' },
             pattern: ['AEA', 'CDC', 'ABA'],
             key: {
