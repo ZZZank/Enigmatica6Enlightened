@@ -6,7 +6,7 @@ onEvent('recipes', (event) => {
             output: 'cookingforblockheads:milk_jar',
             inputs: [
                 Item.of('supplementaries:jar', {
-                    BlockEntityTag: { FluidHolder: { Count: 4, Fluid: 'minecraft:milk' } }
+                    BlockEntityTag: { FluidHolder: { Count: 4, Fluid: 'minecraft:milk' }, CachedColor: -1 }
                 }).weakNBT()
             ],
             id: 'cookingforblockheads:milk_jar'
