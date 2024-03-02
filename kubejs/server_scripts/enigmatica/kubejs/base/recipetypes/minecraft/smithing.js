@@ -19,6 +19,26 @@ onEvent('recipes', (event) => {
         });
     });
 
+    const chippedBenches = {
+        'chipped:botanist_workbench': 'minecraft:flower_pot',
+        'chipped:glassblower': 'minecraft:blast_furnace',
+        'chipped:carpenters_table': Item.of('minecraft:wooden_axe', { Damage: 0 }),
+        'chipped:loom_table': '#forge:wool',
+        'chipped:mason_table': 'minecraft:brick',
+        'chipped:alchemy_bench': 'minecraft:brewing_stand',
+        'chipped:mechanist_workbench': 'minecraft:piston'
+    };
+    for (let bench in chippedBenches) {
+        let input2 = chippedBenches[bench];
+        let [mod, id] = bench.split(':', 2);
+        recipes.push({
+            input1: 'minecraft:stonecutter',
+            input2: input2,
+            output: bench,
+            id: mod + ':benches/' + id
+        });
+    }
+
     recipes.forEach((recipe) => {
         event.smithing(recipe.output, recipe.input1, recipe.input2).id(recipe.id);
     });
