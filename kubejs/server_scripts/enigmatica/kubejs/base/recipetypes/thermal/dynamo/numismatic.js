@@ -1,7 +1,14 @@
 'use strict';
 onEvent('recipes', (event) => {
+    const id_prefix = 'enigmatica:base/thermal/numismatic/';
+
     let multiplier = 40;
     const recipes = [
+        {
+            input: 'atum:coin_gold',
+            energy: 16000,
+            id: id_prefix + 'atum_coin_gold'
+        },
         {
             input: '#forge:coins/gold',
             energy: 64000,
