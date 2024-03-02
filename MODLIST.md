@@ -269,7 +269,6 @@
   * [scaffoldingpower-1.16.5-1.3.0.jar](https://www.curseforge.com/minecraft/mc-mods/scaffolding-behavior/files/3211052) (by [Lothrazar](https://www.curseforge.com/members/lothrazar/projects))
   * [SoL-Carrot-1.16.5-1.10.1.jar](https://www.curseforge.com/minecraft/mc-mods/spice-of-life-carrot-edition/files/3420107) (by [lordcazsius](https://www.curseforge.com/members/lordcazsius/projects))
   * [starlight-1.2.jar](https://www.curseforge.com/minecraft/mc-mods/starlight-x-create/files/3583654) (by [SirOMGitsYOU](https://www.curseforge.com/members/siromgitsyou/projects))
-  * [stonecutter_recipe_tags-2.0.0-forge-1.16.jar](https://www.curseforge.com/minecraft/mc-mods/stonecutter-recipe-tags/files/3529953) (by [tropheusj](https://www.curseforge.com/members/tropheusj/projects))
   * [StorageDrawers-1.16.3-8.5.2.jar](https://www.curseforge.com/minecraft/mc-mods/storage-drawers/files/3776277) (by [Texelsaur](https://www.curseforge.com/members/texelsaur/projects))
   * [storagedrawersfixes-1.0.0.jar](https://www.curseforge.com/minecraft/mc-mods/storage-drawers-fixes/files/4418065) (by [juh9870](https://www.curseforge.com/members/juh9870/projects))
   * [structure_gel-1.16.5-1.7.8.jar](https://www.curseforge.com/minecraft/mc-mods/structure-gel-api/files/3498310) (by [ModdingLegacy](https://www.curseforge.com/members/moddinglegacy/projects))
