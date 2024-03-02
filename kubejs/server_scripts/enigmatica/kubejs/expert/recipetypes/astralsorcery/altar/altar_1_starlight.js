@@ -16,6 +16,32 @@ onEvent('recipes', (event) => {
     const recipes = [
         /// Starlight Crafting Altar Recipes
         {
+            output: Item.of('astralsorcery:celestial_gateway', 4),
+            pattern: ['A___A', '__D__', '_EFE_', '_BAB_', 'C___C'],
+            key: {
+                A: { tag: 'astralsorcery:stardust' },
+                B: { item: 'astralsorcery:marble_runed' },
+                C: { tag: 'forge:ingots/gold' },
+                D: { item: 'astralsorcery:nocturnal_powder' },
+                E: { item: 'astralsorcery:glass_lens' },
+                F: {
+                    type: 'astralsorcery:crystal',
+                    hasToBeAttuned: false,
+                    hasToBeCelestial: false,
+                    canBeAttuned: true,
+                    canBeCelestialCrystal: true
+                }
+            },
+            duration: 200,
+            starlight: 1400,
+            effects: [
+                'astralsorcery:built_in_effect_discovery_central_beam',
+                'astralsorcery:gateway_edge',
+                'astralsorcery:built_in_effect_attunement_sparkle'
+            ],
+            id: 'astralsorcery:altar/celestial_gateway'
+        },
+        {
             output: Item.of('astralsorcery:altar_constellation', 1),
             pattern: ['B___B', '_CDC_', '_EAE_', '_FGF_', 'B___B'],
             key: {
