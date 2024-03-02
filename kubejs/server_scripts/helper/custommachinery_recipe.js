@@ -17,7 +17,7 @@ const addCMRecipe = (builder, recipe) => {
     recipe.outputs = recipe.outputs.map((output) => withChanceInName(Item.of(output)));
     //catalyst
     if (recipe.catalyst === '') {
-        builder.requireItem(Item.of(air), 'catalyst');
+        builder.requireItem(Item.of('itemfilters:always_true'), 'catalyst');
     } else if (typeof recipe.catalyst == 'string') {
         let parsed = toJsonWithCount(recipe.catalyst);
         if (parsed.tag) {
@@ -56,7 +56,7 @@ const addCMRecipe = (builder, recipe) => {
  */
 const addGeneralRecipeHint = (recipe, event) => {
     const builder = event.recipes.custommachinery
-        .custom_machine('enlightened6:recipe_hint_general', 123456)
+        .custom_machine('enlightened6:recipe_hint_general', 1)
         .jei();
     addCMRecipe(builder, recipe);
 };
