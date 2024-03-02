@@ -2,9 +2,37 @@
 
 onEvent('jei.add.items', (event) => {
     const items = [
+        //immersiveengineering multiblock
+        'immersiveengineering:advanced_blast_furnace',
+        'immersiveengineering:alloy_smelter',
+        'immersiveengineering:arc_furnace',
+        'immersiveengineering:assembler',
+        'immersiveengineering:auto_workbench',
+        'immersiveengineering:blast_furnace',
+        'immersiveengineering:bottling_machine',
+        'immersiveengineering:coke_oven',
+        'immersiveengineering:crusher',
+        'immersiveengineering:diesel_generator',
+        'immersiveengineering:excavator',
+        'immersiveengineering:fermenter',
+        'immersiveengineering:lightning_rod',
+        'immersiveengineering:metal_press',
+        'immersiveengineering:mixer',
+        'immersiveengineering:refinery',
+        'immersiveengineering:sawmill',
+        'immersiveengineering:silo',
+        'immersiveengineering:squeezer',
+        'immersiveengineering:tank',
+        //immersivepetroleum multiblock
+        'immersivepetroleum:cokerunit',
+        'immersivepetroleum:distillationtower',
+        'immersivepetroleum:hydrotreater',
+        'immersivepetroleum:pumpjack',
+        //lootr
         'lootr:lootr_chest',
         'lootr:lootr_barrel',
         'lootr:lootr_trapped_chest',
+        //tetra
         Item.of('tetra:modular_bow', {
             'bow/stave': 'bow/straight_stave',
             HideFlags: 1,
