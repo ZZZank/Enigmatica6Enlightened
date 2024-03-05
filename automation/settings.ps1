@@ -119,7 +119,6 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"occultism-client.toml",
 	"refinedstorage-client.toml",
 	"rftoolsbuilder-client.toml",
-	"rftoolspower-client.toml",
 	"rftoolscontrol-client.toml",
 	"rftoolsstorage-client.toml",
 	"rftoolsutility-client.toml",
