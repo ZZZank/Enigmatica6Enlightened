@@ -55,9 +55,7 @@ const addCMRecipe = (builder, recipe) => {
  * @param {Internal.RecipeEventJS} event
  */
 const addGeneralRecipeHint = (recipe, event) => {
-    const builder = event.recipes.custommachinery
-        .custom_machine('enlightened6:recipe_hint_general', 1)
-        .jei();
+    const builder = event.recipes.custommachinery.custom_machine('enlightened6:recipe_hint_general', 1).jei();
     addCMRecipe(builder, recipe);
 };
 
