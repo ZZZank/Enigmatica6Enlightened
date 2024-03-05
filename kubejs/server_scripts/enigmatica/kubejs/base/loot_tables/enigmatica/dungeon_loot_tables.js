@@ -478,7 +478,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 { item: 'botania:horn_grass', weight: 50 },
                 { item: 'emendatusenigmatica:lead_nugget', weight: 100, amount: [8.0, 16.0] },
                 { item: 'emendatusenigmatica:silver_nugget', weight: 100, amount: [8.0, 16.0] },
-                { item: '#forge:nuggets/signalum', weight: 100, amount: [8.0, 32.0] },
+                { item: 'emendatusenigmatica:signalum_nugget', weight: 100, amount: [8.0, 32.0] },
                 { item: 'kubejs:pewter_nugget', weight: 100, amount: [8.0, 16.0] },
                 { item: 'naturesaura:token_sorrow', weight: 50 },
                 { item: 'naturesaura:token_anger', weight: 50 },
