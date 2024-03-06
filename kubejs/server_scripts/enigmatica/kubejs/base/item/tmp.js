@@ -6,11 +6,10 @@ onEvent('item.right_click', (e) => {
         return;
     }
 
-    let a = [
-    ]
+    let a = [];
 
-    a.forEach(s => {
-        player.give(s)
+    a.forEach((s) => {
+        player.give(s);
     });
 
     // player.tell(a);
