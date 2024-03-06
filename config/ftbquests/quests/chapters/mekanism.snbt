@@ -194,7 +194,6 @@
 			rewards: [{
 				id: "00000000000007D2"
 				type: "item"
-				title: "Quantum Entangloporter"
 				item: "mekanism:quantum_entangloporter"
 				count: 2
 			}]
@@ -272,7 +271,6 @@
 			rewards: [{
 				id: "00000000000006CC"
 				type: "item"
-				title: "Network Reader"
 				item: {
 					id: "mekanism:network_reader"
 					Count: 1b
@@ -632,7 +630,7 @@
 				{
 					id: "0000000000000704"
 					type: "item"
-					type: "item"nductor"
+					item: "mekanism:advanced_thermodynamic_conductor"
 					count: 16
 				}
 			]
