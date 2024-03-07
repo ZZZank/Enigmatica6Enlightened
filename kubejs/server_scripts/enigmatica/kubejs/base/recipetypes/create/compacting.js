@@ -83,7 +83,7 @@ onEvent('recipes', (event) => {
 
         recipes.push({
             inputs: [Fluid.of(honeyVariety, 1000)],
-            output: Item.of(honeyVariety + '_block'),
+            output: honeyVariety + '_block',
             type: 'unheated',
             id: `${id_prefix}${honeyVariety.split(':')[1]}`
         });

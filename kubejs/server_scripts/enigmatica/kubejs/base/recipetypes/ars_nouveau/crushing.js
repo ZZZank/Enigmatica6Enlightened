@@ -320,10 +320,11 @@ onEvent('recipes', (event) => {
     ];
 
     recipes.forEach((recipe) => {
-        recipe.type = 'ars_nouveau:crush';
-        recipe.input = Ingredient.of(recipe.input).toJson();
-        recipe.output = recipe.outputs;
-
-        event.custom(recipe).id(recipe.id);
+        const parsed = {
+            type: 'ars_nouveau:crush',
+            input: Ingredient.of(recipe.input).toJson(),
+            output: recipe.outputs
+        };
+        event.custom(parsed).id(recipe.id);
     });
 });

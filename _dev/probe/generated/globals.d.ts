@@ -66720,11 +66720,11 @@ declare namespace Document {
     }
 }
 declare namespace Type {
-    type ItemStackOrFluid = Internal.ItemStackJS | Internal.FluidStackJS;
-    type IngredientOrFluid = Internal.IngredientJS | Internal.FluidStackJS;
+    type ItemStackOrFluid = Internal.ItemStackJS_ | Internal.FluidStackJS_;
+    type IngredientOrFluid = Internal.IngredientJS_ | Internal.FluidStackJS_;
     type SelfOrArray<T> = T | T[];
-    type TEMixedOutput = Internal.ItemStackJS | Internal.FluidStackJS;
-    type TEMixedInput = Internal.IngredientJS | Internal.FluidStackJS;
+    type TEMixedOutput = Internal.ItemStackJS_ | Internal.FluidStackJS_;
+    type TEMixedInput = Internal.IngredientJS_ | Internal.FluidStackJS_;
 }
 // Raw TS doc region start
 const Text = text;

@@ -110,9 +110,12 @@ onEvent('recipes', (event) => {
     ];
 
     recipes.forEach((recipe) => {
-        recipe.type = 'apotheosis:fletching';
-        recipe.conditions = [{ type: 'apotheosis:module', module: 'village' }];
-        recipe.ingredients = recipe.inputs.map((input) => Ingredient.of(input).toJson());
-        event.custom(recipe).id(recipe.id);
+        const parsed = {
+            type: 'apotheosis:fletching',
+            conditions: [{ type: 'apotheosis:module', module: 'village' }],
+            ingredients: recipe.inputs.map((ingr) => Ingredient.of(ingr).toJson()),
+            result: recipe.result
+        };
+        event.custom(parsed).id(recipe.id);
     });
 });

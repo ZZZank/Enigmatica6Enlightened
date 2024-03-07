@@ -9,7 +9,7 @@ onEvent('server.datapack.high_priority', (event) => {
                 clues: max useful probably around 10,
                 rectification: max 100      // Reduces variance from Quanta
     */
-    let enchantingBlocks = [
+    const enchantingBlocks = [
         {
             block: 'botania:mana_pylon',
             stats: {

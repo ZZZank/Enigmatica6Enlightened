@@ -346,9 +346,9 @@ onEvent('recipes', (event) => {
         event.recipes.create.mixing(recipe.output, recipe.inputs).id(recipe.id);
     });
     data.recipes_heated.forEach((recipe) => {
-        event.recipes.create.mixing(recipe.output, recipe.inputs).id(recipe.id).heated();
+        event.recipes.create.mixing(recipe.output, recipe.inputs).heated().id(recipe.id);
     });
     data.recipes_superheated.forEach((recipe) => {
-        event.recipes.create.mixing(recipe.output, recipe.inputs).id(recipe.id).superheated();
+        event.recipes.create.mixing(recipe.output, recipe.inputs).superheated().id(recipe.id);
     });
 });

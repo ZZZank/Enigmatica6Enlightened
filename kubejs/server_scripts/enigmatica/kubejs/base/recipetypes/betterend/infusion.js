@@ -319,16 +319,16 @@ onEvent('recipes', (event) => {
 
     recipes.forEach((recipe) => {
         recipe.type = 'betterendforge:infusion';
-        let processed = [];
+        const catalysts = [];
         recipe.catalysts.forEach((catalyst, i) => {
             if (catalyst == '') {
                 return;
             }
-            let entry = Ingredient.of(catalyst).toJson().asJsonObject;
+            const entry = Ingredient.of(catalyst).toJson().asJsonObject;
             entry.addProperty('index', i);
-            processed.push(entry);
+            catalysts.push(entry);
         });
-        recipe.catalysts = processed;
+        recipe.catalysts = catalysts;
         recipe.input = Ingredient.of(recipe.input).toJson();
         event.custom(recipe).id(recipe.id);
     });

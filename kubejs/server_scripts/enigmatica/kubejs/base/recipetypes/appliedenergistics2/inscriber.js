@@ -6,7 +6,7 @@ onEvent('recipes', (event) => {
     /**
      * @param mode 'press': consume all items, 'inscribe': only consume item in the middle
      * @type {{mode:'press'|'inscribe',result:string,
-     * ingredients:{top:string,middle:string,bottom:string},id:string}[]}
+     * ingredients:{top?:string,middle?:string,bottom?:string},id:string}[]}
      */
     const recipes = [
         // {
