@@ -1,4 +1,4 @@
-To refresh this file, delete it and run /reload command again! Last updated: Dec 10, 2023, 11:26:52 PM
+To refresh this file, delete it and run /reload command again! Last updated: Mar 2, 2024, 12:16:28 PM
 
 #bloodmagic:gravels/utherium
 - emendatusenigmatica:utherium_gravel
@@ -965,7 +965,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 #curios:hands
 - curios:knuckles
 - occultism:storage_remote
-- farsight_spyglasses:spyglass
 - artifacts:digging_claws
 - artifacts:feral_claws
 - artifacts:fire_gauntlet
@@ -975,6 +974,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - artifacts:golden_hook
 - meetyourfight:spectres_grasp
 - meetyourfight:bone_raker
+- farsight_spyglasses:spyglass
 
 #bloodmagic:fragments/cobalt
 - emendatusenigmatica:cobalt_fragment
@@ -1182,12 +1182,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - minecraft:light_gray_dye
 
 #forge:milk
-- minecraft:milk_bucket
 - #forge:milk/milk
 - #forge:milk/milk_bottle
 - #forge:buckets/milk
 - #forge:buckets/milk
 - #forge:bottles/milk
+- minecraft:milk_bucket
 
 #forge:ingots/copper
 - mekanism:ingot_copper
@@ -2456,9 +2456,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - minecraft:blackstone_slab
 - minecraft:polished_blackstone_brick_slab
 - minecraft:polished_blackstone_slab
-- supplementaries:checker_slab
-- supplementaries:stone_tile_slab
-- supplementaries:blackstone_tile_slab
 - betterendforge:dragon_bone_slab
 - betterendforge:neon_cactus_slab
 - betterendforge:mossy_glowshroom_slab
@@ -2991,6 +2988,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - engineersdecor:rebar_concrete_tile_slab
 - engineersdecor:gas_concrete_slab
 - engineersdecor:panzerglass_slab
+- supplementaries:checker_slab
+- supplementaries:stone_tile_slab
+- supplementaries:blackstone_tile_slab
 
 #supplementaries:pedestal_upright
 - minecraft:wooden_sword
@@ -5002,7 +5002,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - byg:stripped_palm_wood
 
 #forge:crops
-- supplementaries:flax
 - sushigocrafting:rice
 - sushigocrafting:cucumber
 - sushigocrafting:soy_bean
@@ -5023,6 +5022,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - #forge:crops/onion
 - #forge:crops/rice
 - #forge:crops/tomato
+- supplementaries:flax
 
 #forge:buckets/quartz
 - emendatusenigmatica:molten_quartz_bucket
@@ -5151,6 +5151,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - minecraft:lingering_potion
 - minecraft:enchanted_book
 - minecraft:tipped_arrow
+- custommachinery:custom_machine_item
 
 #minecraft:birch_logs
 - minecraft:birch_log
@@ -5719,8 +5720,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - emendatusenigmatica:potassium_nitrate_gem
 
 #sereneseasons:spring_crops
-- supplementaries:flax
 - farmersdelight:onion
+- supplementaries:flax
 
 #forge:wool/pink
 - minecraft:pink_wool
@@ -6013,7 +6014,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - powah:battery_niotic
 - powah:battery_spirited
 - powah:battery_nitro
-- supplementaries:key
 - botania:cosmetic_black_bowtie
 - botania:cosmetic_black_tie
 - botania:cosmetic_red_glasses
@@ -6049,6 +6049,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - botania:cosmetic_thinking_hand
 - pneumaticcraft:memory_stick
 - artifacts:whoopee_cushion
+- supplementaries:key
 
 #forge:buckets/sapphire
 - emendatusenigmatica:molten_sapphire_bucket
@@ -7230,8 +7231,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 #minecraft:doors
 - #minecraft:wooden_doors
 - minecraft:iron_door
-- supplementaries:gold_door
-- supplementaries:netherite_door
 - betterendforge:mossy_glowshroom_door
 - betterendforge:lacugrove_door
 - betterendforge:end_lotus_door
@@ -7282,6 +7281,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - upgrade_aquatic:tooth_door
 - upgrade_aquatic:glass_door
 - engineersdecor:metal_sliding_door
+- supplementaries:gold_door
+- supplementaries:netherite_door
 
 #botania:petals/red
 - botania:red_petal
@@ -8583,10 +8584,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - minecraft:soul_torch
 - minecraft:soul_lantern
 - minecraft:soul_campfire
-- supplementaries:sconce_soul
 - #chipped:soul_lantern
 - tconstruct:zombified_piglin_head
 - valhelsia_structures:soul_brazier
+- supplementaries:sconce_soul
 
 #bloodmagic:gravels/silver
 - emendatusenigmatica:silver_gravel
@@ -9177,8 +9178,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - thermal:electrum_gear
 
 #forge:crops/flax
-- supplementaries:flax
 - atum:flax
+- supplementaries:flax
 
 #buildinggadgets:template_convertible
 - minecraft:paper
@@ -13090,6 +13091,17 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - minecraft:blackstone_wall
 - minecraft:polished_blackstone_brick_wall
 - minecraft:polished_blackstone_wall
+- mcwfences:stone_grass_topped_wall
+- mcwfences:andesite_grass_topped_wall
+- mcwfences:diorite_grass_topped_wall
+- mcwfences:granite_grass_topped_wall
+- mcwfences:sandstone_grass_topped_wall
+- mcwfences:red_sandstone_grass_topped_wall
+- mcwfences:blackstone_grass_topped_wall
+- mcwfences:nether_brick_grass_topped_wall
+- mcwfences:end_brick_grass_topped_wall
+- mcwfences:quartz_grass_topped_wall
+- mcwfences:prismarine_grass_topped_wall
 - mcwfences:oak_hedge
 - mcwfences:spruce_hedge
 - mcwfences:birch_hedge
@@ -13896,8 +13908,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - apotheosis:explosive_arrow?
 - apotheosis:iron_mining_arrow?
 - apotheosis:diamond_mining_arrow?
-- supplementaries:rope_arrow
-- supplementaries:amethyst_arrow
 - alexsmobs:shark_tooth_arrow
 - neapolitan:bananarrow
 - archers_paradox:blaze_arrow
@@ -13918,6 +13928,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - archers_paradox:spore_arrow
 - archers_paradox:training_arrow
 - archers_paradox:verdant_arrow
+- supplementaries:rope_arrow
+- supplementaries:amethyst_arrow
 
 #bloodmagic:gravels/peridot
 - emendatusenigmatica:peridot_gravel
@@ -15833,6 +15845,19 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - mcwfences:modern_sandstone_wall
 - mcwfences:modern_red_sandstone_wall
 - mcwfences:modern_quartz_wall
+- mcwfences:stone_pillar_wall
+- mcwfences:andesite_pillar_wall
+- mcwfences:diorite_pillar_wall
+- mcwfences:granite_pillar_wall
+- mcwfences:sandstone_pillar_wall
+- mcwfences:red_sandstone_pillar_wall
+- mcwfences:blackstone_pillar_wall
+- mcwfences:nether_brick_pillar_wall
+- mcwfences:end_brick_pillar_wall
+- mcwfences:quartz_pillar_wall
+- mcwfences:prismarine_pillar_wall
+- mcwfences:wooden_cheval_de_frise
+- mcwfences:iron_cheval_de_frise
 - mcwfences:railing_stone_brick_wall
 - mcwfences:railing_andesite_wall
 - mcwfences:railing_diorite_wall
@@ -16489,8 +16514,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 #minecraft:trapdoors
 - #minecraft:wooden_trapdoors
 - minecraft:iron_trapdoor
-- supplementaries:gold_trapdoor
-- supplementaries:netherite_trapdoor
 - betterendforge:mossy_glowshroom_trapdoor
 - betterendforge:lacugrove_trapdoor
 - betterendforge:end_lotus_trapdoor
@@ -16555,6 +16578,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - ars_nouveau:archwood_trapdoor
 - upgrade_aquatic:tooth_trapdoor
 - upgrade_aquatic:glass_trapdoor
+- supplementaries:gold_trapdoor
+- supplementaries:netherite_trapdoor
 
 #forge:ingots/gold
 - minecraft:gold_ingot
@@ -17281,6 +17306,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - botanypots:cyan_botany_pot
 - immersiveengineering:connector_mv
 - quark:diorite_bricks_stairs
+- mcwfences:prismarine_pillar_wall
 - betterendforge:azure_jadestone_pillar
 - undergarden:cloggrum_tile_stairs
 - byg:stripped_sythian_stem
@@ -17423,6 +17449,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - chipped:red_nether_bricks_17
 - environmental:cyan_terracotta_brick_slab
 - chipped:red_nether_bricks_14
+- mcwfences:granite_grass_topped_wall
 - chipped:red_nether_bricks_15
 - chipped:red_nether_bricks_12
 - chipped:red_nether_bricks_13
@@ -18132,6 +18159,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - emendatusenigmatica:quartz_sand_ore
 - byg:mangrove_slab
 - environmental:stripped_willow_wood
+- mcwfences:sandstone_pillar_wall
 - botania:white_pavement_slab
 - emendatusenigmatica:peridot_sand_ore
 - botania:livingrock_bricks_stairs
@@ -18265,6 +18293,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - resourcefulbees:spelling_honeycomb_block
 - atum:palm_framed_crystal_glass_pane
 - mcwfences:oak_horse_fence
+- mcwfences:blackstone_pillar_wall
 - atum:chiseled_stairs
 - appliedenergistics2:quartz_stairs
 - byg:brimstone_nether_gold_ore
@@ -18350,6 +18379,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - create:crimson_window_pane
 - quark:black_crystal_pane
 - immersiveengineering:radiator
+- mcwfences:quartz_grass_topped_wall
 - atum:alabaster
 - emendatusenigmatica:lead_blackstone_ore
 - quark:blackstone_bricks_wall
@@ -18458,7 +18488,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - create:lime_valve_handle
 - industrialforegoing:fluid_laser_base
 - farmersdelight:onion_crate
-- masterfulmachinery:recipe_hint_right_click_block_controller
 - mekanism:ultimate_smelting_factory
 - architects_palette:algal_cage_lantern
 - atum:ceramic_wall_green
@@ -18699,6 +18728,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - naturesaura:aura_detector
 - simplylight:illuminant_light_blue_block_on
 - cfm:stripped_jungle_upgraded_gate
+- mcwfences:nether_brick_grass_topped_wall
 - create:scoria_bricks_wall
 - minecraft:repeater
 - powah:blazing_crystal_block
@@ -18728,6 +18758,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - powah:ender_cell_basic
 - valhelsia_structures:diorite
 - emendatusenigmatica:coal_jasper_ore
+- mcwfences:stone_grass_topped_wall
 - projectvibrantjourneys:palm_log
 - architects_palette:lapis_ore_brick_stairs
 - architects_palette:sunmetal_bars
@@ -19223,11 +19254,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - emendatusenigmatica:coal_c_limestone_ore
 - bloodmagic:dungeon_tilespecial
 - emendatusenigmatica:nickel_cryptic_stone_ore
+- mcwfences:red_sandstone_grass_topped_wall
 - quark:dark_oak_trapped_chest
 - architects_palette:chiseled_lapis_ore_bricks
 - masonry:prismarineengravedslab
-- quark:crimson_trapped_chest
 - quark:purple_shingles
+- quark:crimson_trapped_chest
 - create:cyan_toolbox
 - tetra:forged_platform
 - cfm:orange_kitchen_counter
@@ -19810,6 +19842,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - valhelsia_structures:white_glazed_jar
 - mcwtrpdoors:crimson_ranch_trapdoor
 - quark:bonded_leather
+- mcwwindows:one_way_glass
 - byg:jacaranda_trapdoor
 - botania:metamorphic_mountain_cobblestone_wall
 - masterfulmachinery:enigmatic_tree_of_life_item_port_items_output
@@ -19988,6 +20021,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - create:andesite_cobblestone_wall
 - emendatusenigmatica:osmium_flavolite_ore
 - environmental:lime_terracotta_brick_wall
+- mcwfences:andesite_grass_topped_wall
 - betterendforge:pythadendron_stripped_log
 - mcwdoors:jungle_tropical_door
 - tconstruct:part_chest
@@ -20648,6 +20682,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - supplementaries:cage
 - betterendforge:andesite_lantern
 - emendatusenigmatica:tin_violecite_ore
+- mcwfences:diorite_grass_topped_wall
 - undergarden:shiverstone_stairs
 - tconstruct:skyroot_planks
 - mcwwindows:stone_window2
@@ -21157,6 +21192,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - minecraft:gray_stained_glass
 - byg:redwood_leaves
 - mcwbridges:birch_log_bridge_stair
+- mcwfences:wooden_cheval_de_frise
 - create:deployer
 - upgrade_aquatic:dead_silk_coral_block
 - emendatusenigmatica:silver_sulphuric_rock_ore
@@ -21402,6 +21438,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - betterendforge:dragon_tree_door
 - minecraft:cyan_bed
 - mekanism:induction_casing
+- mcwfences:prismarine_grass_topped_wall
 - bloodmagic:destructivedemoncrystal
 - byg:stripped_willow_log
 - emendatusenigmatica:quartz_mossy_stone_ore
@@ -22784,10 +22821,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - mcwtrpdoors:dark_oak_beach_trapdoor
 - byg:ebony_crafting_table
 - framedblocks:framed_pillar
+- custommachinery:custom_machine_item
 - occultism:iesnium_ore
 - ars_nouveau:arcane_pedestal
 - valhelsia_structures:granite
 - emendatusenigmatica:peridot_raw_marble_ore
+- mcwfences:blackstone_grass_topped_wall
 - mcwdoors:oak_glass_door
 - cfm:stripped_acacia_kitchen_drawer
 - emendatusenigmatica:redstone_deepslate_ore
@@ -22994,6 +23033,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - chipped:yellow_carpet_7
 - tconstruct:scorched_glass_pane
 - chipped:yellow_carpet_6
+- mcwfences:iron_cheval_de_frise
 - decorative_blocks:warped_support
 - chipped:yellow_carpet_5
 - chipped:yellow_carpet_4
@@ -23560,6 +23600,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - quark:iron_plate_stairs
 - chipped:black_wool_17
 - chipped:black_wool_18
+- mcwfences:nether_brick_pillar_wall
 - quark:oak_hedge
 - upgrade_aquatic:beachgrass_thatch
 - byg:large_subzero_crystal_bud
@@ -23778,6 +23819,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - thermal:cinnabar_ore
 - quark:diorite_speleothem
 - emendatusenigmatica:silver_gabbro_ore
+- mcwfences:andesite_pillar_wall
 - supplementaries:present_brown
 - tconstruct:seared_melter
 - quark:light_gray_stained_planks_stairs
@@ -25678,7 +25720,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - chipped:gray_carpet_12
 - atum:linen_cyan
 - cfm:gray_kitchen_sink
-- masterfulmachinery:killing_entity_controller
 - quark:orange_stool
 - ars_nouveau:as_gold_herring
 - create:yellow_seat
@@ -25758,6 +25799,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - mcwwindows:oak_plank_parapet
 - architects_palette:diamond_ore_brick_vertical_slab
 - byg:blue_nether_quartz_ore
+- mcwwindows:one_way_glass_pane
 - mcwdoors:wooden_portcullis
 - cfm:stripped_spruce_upgraded_fence
 - betterendforge:lucernia_planks
@@ -25876,6 +25918,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - quark:spruce_trapped_chest
 - resourcefulbees:waxed_planks
 - emendatusenigmatica:cobalt_soul_soil_ore
+- mcwfences:quartz_pillar_wall
 - create:polished_dark_scoria_stairs
 - immersiveengineering:rs_engineering
 - emendatusenigmatica:cobalt_nylium_soul_soil_ore
@@ -26634,8 +26677,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - byg:podzol_dacite
 - appliedenergistics2:quartz_pillar_slab
 - betterendforge:thallasium_bulb_lantern_pink
-- quark:magenta_stained_planks
 - quark:gray_stool
+- quark:magenta_stained_planks
 - masonry:granitecarvedcreeper
 - betterendforge:hydralux_petal_block_magenta
 - chipped:light_blue_wool_12
@@ -26773,6 +26816,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - astralsorcery:infused_wood_infused
 - cfm:stripped_spruce_kitchen_counter
 - emendatusenigmatica:certus_quartz_nylium_soul_soil_ore
+- mcwfences:red_sandstone_pillar_wall
 - minecraft:soul_lantern
 - emendatusenigmatica:charged_certus_quartz_slate_ore
 - thermal:gray_rockwool
@@ -26919,6 +26963,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - mythicbotany:yggdrasil_branch
 - architects_palette:placid_acacia_totem
 - mcwdoors:acacia_classic_door
+- mcwfences:end_brick_grass_topped_wall
 - dustrial_decor:sheet_metal_plating_slab
 - resourcefulbees:clay_honeycomb_block
 - quark:yellow_stained_planks_stairs
@@ -27091,6 +27136,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - cfm:brown_cooler
 - chipped:warped_wood_glass_3
 - chipped:warped_wood_glass_2
+- mcwfences:diorite_pillar_wall
 - chipped:brown_concrete_1
 - minecraft:spruce_trapdoor
 - mcwwindows:dark_prismarine_parapet
@@ -27849,6 +27895,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - mcwwindows:pink_mosaic_glass_pane
 - environmental:blue_terracotta_brick_slab
 - cookingforblockheads:counter
+- mcwfences:sandstone_grass_topped_wall
 - byg:imparius_crafting_table
 - minecraft:glowstone
 - masonry:dioritesmallbrickwall
@@ -28703,6 +28750,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - decorative_blocks:spruce_beam
 - appliedenergistics2:condenser
 - resourcefulbees:waxed_door
+- mcwfences:granite_pillar_wall
 - emendatusenigmatica:ruby_weathered_limestone_ore
 - darkutils:filter_illager
 - quark:lime_stained_planks_stairs
@@ -28866,6 +28914,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - botania:gaia_head
 - chipped:white_concrete_7
 - industrialforegoing:mycelial_death
+- mcwfences:end_brick_pillar_wall
 - resourcefulbees:apiary_storage
 - mcwwindows:prismarine_brick_arrow_slit
 - upgrade_aquatic:ochre_kelpy_stone_bricks
@@ -29657,6 +29706,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - integrateddynamics:crystalized_menril_block_slab
 - cfm:magenta_grill
 - mcwtrpdoors:dark_oak_bamboo_trapdoor
+- mcwfences:stone_pillar_wall
 - minecraft:command_block
 - immersiveengineering:fluid_sorter
 - architects_palette:limestone_vertical_slab
@@ -30269,7 +30319,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - neapolitan:banana
 
 #forge:seeds
-- supplementaries:flax_seeds
 - betterendforge:blue_vine_seed
 - betterendforge:end_lily_seed
 - betterendforge:hydralux_sapling
@@ -30301,6 +30350,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - undergarden:gloomgourd_seeds
 - #forge:seeds/strawberry
 - immersiveengineering:seed
+- supplementaries:flax_seeds
 
 #botania:rods
 - botania:dirt_rod
@@ -30384,8 +30434,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - #forge:slimeball/blood
 
 #forge:dirt
-- supplementaries:fodder
 - engineersdecor:dense_grit_dirt_block
+- supplementaries:fodder
 
 #pneumaticcraft:doors
 - pneumaticcraft:pneumatic_door
@@ -30568,9 +30618,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - minecraft:bowl
 
 #forge:grain
-- minecraft:wheat
 - #forge:grain/wheat
 - #forge:grain/rice
+- minecraft:wheat
 
 #forge:ingots/lead
 - mekanism:ingot_lead
@@ -31853,8 +31903,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - astralsorcery:starmetal?
 
 #forge:seeds/flax
-- supplementaries:flax_seeds
 - atum:flax_seeds
+- supplementaries:flax_seeds
 
 #immersiveengineering:circuits/pcb
 - immersiveengineering:circuit_board
@@ -35108,14 +35158,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - emendatusenigmatica:nickel_crystal
 
 #forge:eggs
-- minecraft:egg
-- minecraft:turtle_egg
 - alexsmobs:crocodile_egg
 - alexsmobs:emu_egg
 - minecraft:egg
 - atum:quail_egg
 - minecraft:egg
 - environmental:duck_egg
+- minecraft:egg
+- minecraft:turtle_egg
 
 #mantle:offhand_cooldown
 
@@ -36027,14 +36077,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - minecraft:golden_shovel
 - minecraft:golden_axe
 - minecraft:golden_hoe
-- supplementaries:candelabra
-- supplementaries:hourglass
-- supplementaries:gold_door
-- supplementaries:gold_trapdoor
-- supplementaries:gold_gate
-- supplementaries:clock_block
-- supplementaries:crimson_lantern
-- supplementaries:key
 - betterendforge:golden_hammer
 - botania:alchemy_catalyst
 - botania:cacophonium
@@ -36096,6 +36138,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - quark:gold_bars
 - quark:golden_frog_leg
 - quark:golden_apple_crate
+- supplementaries:candelabra
+- supplementaries:hourglass
+- supplementaries:gold_door
+- supplementaries:gold_trapdoor
+- supplementaries:gold_gate
+- supplementaries:clock_block
+- supplementaries:crimson_lantern
+- supplementaries:key
 
 #forge:terracotta/gray
 - #chipped:gray_terracotta

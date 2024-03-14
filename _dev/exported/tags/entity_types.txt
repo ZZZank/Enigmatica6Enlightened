@@ -1,4 +1,4 @@
-To refresh this file, delete it and run /reload command again! Last updated: Dec 10, 2023, 11:26:53 PM
+To refresh this file, delete it and run /reload command again! Last updated: Mar 2, 2024, 12:16:28 PM
 
 #supplementaries:cage_baby_catchable
 - minecraft:cow
@@ -191,9 +191,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - minecraft:trident
 - minecraft:dragon_fireball
 - minecraft:wither_skull
-- supplementaries:rope_arrow
-- supplementaries:amethyst_arrow
-- supplementaries:brick_projectile
 - mekanism:flame
 - undergarden:blisterbomb
 - undergarden:rotten_blisterberry
@@ -202,6 +199,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - undergarden:minion_projectile
 - environmental:mud_ball
 - environmental:duck_egg
+- supplementaries:rope_arrow
+- supplementaries:amethyst_arrow
+- supplementaries:brick_projectile
 
 #minecraft:beehive_inhabitors
 - minecraft:bee
@@ -305,9 +305,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 #minecraft:arrows
 - minecraft:arrow
 - minecraft:spectral_arrow
+- neapolitan:bananarrow
 - supplementaries:rope_arrow
 - supplementaries:amethyst_arrow
-- neapolitan:bananarrow
 
 #forge:sheep
 - minecraft:sheep
