@@ -1615,22 +1615,6 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                'bloodmagic:etherealslate',
-                '#botania:runes/nidavellir',
-                'bloodmagic:etherealslate',
-                '#forge:pellets/antimatter',
-                '#forge:pellets/antimatter',
-                'bloodmagic:etherealslate',
-                'naturesaura:break_prevention',
-                'bloodmagic:etherealslate'
-            ],
-            sourceCost: 5000,
-            reagent: Item.of('immersiveengineering:graphite_electrode', '{graphDmg:0}'),
-            output: Item.of('immersiveengineering:graphite_electrode', '{graphDmg:0,Unbreakable:1}'),
-            id: `${id_prefix}unbreakable_graphite_electrode`
-        },
-        {
-            inputs: [
                 'botania:pixie_dust',
                 'integratedterminals:chorus_glass',
                 'botania:pixie_dust',

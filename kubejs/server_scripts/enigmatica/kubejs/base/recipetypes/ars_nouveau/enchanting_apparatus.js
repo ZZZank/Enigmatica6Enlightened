@@ -3,6 +3,23 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/ars_nouveau/enchanting_apparatus/';
     const recipes = [
         {
+            inputs: [
+                'bloodmagic:etherealslate',
+                '#botania:runes/nidavellir',
+                'bloodmagic:etherealslate',
+                '#forge:pellets/antimatter',
+                '#forge:pellets/antimatter',
+                'bloodmagic:etherealslate',
+                'naturesaura:break_prevention',
+                'bloodmagic:etherealslate'
+            ],
+            sourceCost: 5000,
+            reagent: Item.of('immersiveengineering:graphite_electrode', '{graphDmg:0}'),
+            output: Item.of('immersiveengineering:graphite_electrode', '{graphDmg:0,Unbreakable:1}'),
+            id: `${id_prefix}unbreakable_graphite_electrode`
+        },
+
+        {
             output: Item.of(
                 'immersiveengineering:revolver',
                 '{perks:{cooldown:0.75d,luck:1.0d,noise:0.75d},upgrades:{}}'
