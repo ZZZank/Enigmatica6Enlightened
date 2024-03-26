@@ -2,7 +2,6 @@
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/pneumaticcraft/pressure_chamber/';
     const recipes = [
-
         {
             inputs: [
                 'thermal:flux_drill',
@@ -224,22 +223,25 @@ onEvent('recipes', (event) => {
         }
     ];
     recipes.forEach((recipe) => {
-        const ingredients = [];
-        recipe.inputs.forEach((input) => {
+        const ingredients = recipe.inputs.map((input) => {
             if (typeof input != 'string') {
-                ingredients.push(input)
-                return
+                return input;
             }
             const parsed = toJsonWithCount(input);
             parsed.type = 'pneumaticcraft:stacked_item';
-            ingredients.push(parsed);
+            return parsed;
         });
         event
             .custom({
                 type: 'pneumaticcraft:pressure_chamber',
                 inputs: ingredients,
                 pressure: recipe.pressure,
-                results: recipe.results.map((str) => Item.of(str).toResultJson())
+                results: recipe.results.map((str) => {
+                    if (typeof str != 'string') {
+                        return str;
+                    }
+                    return Item.of(str).toResultJson();
+                })
             })
             .id(recipe.id);
     });
