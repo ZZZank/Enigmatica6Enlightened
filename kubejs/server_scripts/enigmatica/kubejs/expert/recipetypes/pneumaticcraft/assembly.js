@@ -307,30 +307,6 @@ onEvent('recipes', (event) => {
         });
     });
 
-    let masteries = [
-        'automation',
-        'botanical',
-        'astronomy',
-        'alchemy',
-        'ritual',
-        'aura',
-        'engineering',
-        'energistics',
-        'dimensional',
-        'battle',
-        'excavation',
-        'culinary'
-    ];
-
-    masteries.forEach((mastery) => {
-        recipes.push({
-            input: `50x kubejs:${mastery}_mastery_shard`,
-            output: `kubejs:${mastery}_mastery_token`,
-            program: 'laser',
-            id: `${id_prefix}${mastery}_mastery_token`
-        });
-    });
-
     recipes.forEach((recipe) => {
         let input = toJsonWithCount(recipe.input);
         let output = toJsonWithCount(recipe.output);
