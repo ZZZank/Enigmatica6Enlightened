@@ -4,6 +4,8 @@
     "chat.hand_over_your_items.send": "You have given %s to %s",
     "chat.hand_over_your_items.receive": "You have been given %s by %s",
 
+    "item.kubejs.diy_create_quarry": "Diy Create Quarry",
+
     "item.en6e.null_pointer": "Null Pointer",
     "lore.en6e.null_pointer": "Throw it against monsters with no more than 20 healths(10 hearts), and wait for them to be devoured by spatial turbulence.",
 
