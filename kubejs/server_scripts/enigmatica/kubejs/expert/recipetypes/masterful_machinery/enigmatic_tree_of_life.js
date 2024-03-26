@@ -1,16 +1,16 @@
 'use strict';
 
 onEvent('recipes', (event) => {
-    const id_prefix = 'enigmatica:base/masterful_machinery/advanced_assembly_table/';
-    const recipes = [
-    ];
-
+    
+    const id_prefix = 'enigmatica:expert/masterful_machinery/enigmatic_tree_of_life/';
+    const recipes = []
+    
     recipes.forEach((recipe) => {
         recipe.inputs = recipe.inputs.map((val) => toMMJson(val));
         recipe.outputs = recipe.outputs.map((val) => toMMJson(val));
         recipe.type = 'masterfulmachinery:machine_process';
-        recipe.structureId = 'advanced_assembly_table_structure';
-        recipe.controllerId = 'advanced_assembly_table';
+        recipe.structureId = 'enigmatic_tree_of_life_structure';
+        recipe.controllerId = 'enigmatic_tree_of_life';
         event.custom(recipe).id(recipe.id);
     });
 });
