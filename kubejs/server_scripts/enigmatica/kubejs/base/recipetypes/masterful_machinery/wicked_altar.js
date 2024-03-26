@@ -1,8 +1,6 @@
 'use strict';
+
 onEvent('recipes', (event) => {
-    if (global.isNormalMode) {
-        return;
-    }
     const id_prefix = 'enigmatica:expert/masterful_machinery/wicked_altar/';
     /**
      * if type is not specified, it will be 'masterfulmachinery:items'
