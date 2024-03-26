@@ -3,21 +3,21 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/pneumaticcraft/pressure_chamber/';
     const recipes = [
         {
-            ingredients: [{ type: 'pneumaticcraft:stacked_item', tag: 'forge:grain', count: 1 }],
+            ingredients: ['#forge:grain'],
             pressure: 1.5,
-            output: [{ item: 'create:wheat_flour', count: 2 }],
+            output: ['create:wheat_flour'],
             id: 'pneumaticcraft:pressure_chamber/wheat_flour'
         },
         {
-            ingredients: [{ type: 'pneumaticcraft:stacked_item', item: 'atum:emmer', count: 1 }],
+            ingredients: ['atum:emmer'],
             pressure: 1.5,
-            output: [{ item: 'atum:emmer_flour', count: 2 }],
+            output: ['atum:emmer_flour'],
             id: `${id_prefix}emmer_flour`
         },
         {
             ingredients: [
                 Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:iron_bee' }).weakNBT().toJson(),
-                { item: 'pneumaticcraft:lubricant_bucket' },
+                'pneumaticcraft:lubricant_bucket',
                 Item.of('pneumaticcraft:pneumatic_helmet').ignoreNBT().toJson()
             ],
             pressure: 4.5,
@@ -28,12 +28,22 @@ onEvent('recipes', (event) => {
         }
     ];
     recipes.forEach((recipe) => {
+        const ingredients = [];
+        recipe.inputs.forEach((input) => {
+            if (typeof input != 'string') {
+                ingredients.push(input)
+                return
+            }
+            const parsed = toJsonWithCount(input);
+            parsed.type = 'pneumaticcraft:stacked_item';
+            ingredients.push(parsed);
+        });
         event
             .custom({
                 type: 'pneumaticcraft:pressure_chamber',
-                inputs: recipe.ingredients,
+                inputs: ingredients,
                 pressure: recipe.pressure,
-                results: recipe.output
+                results: recipe.results.map((str) => Item.of(str).toResultJson())
             })
             .id(recipe.id);
     });
