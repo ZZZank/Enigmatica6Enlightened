@@ -172,14 +172,6 @@ onEvent('recipes', (event) => {
                 secondaries: [Item.of('3x glassential:glass_ghostly')],
                 outputs: [Item.of('4x atum:crystal_glass')],
                 id: `${id_prefix}crystal_glass_2`
-            },
-            {
-                input1: Ingredient.of('12x #forge:ingots/refined_radiance'),
-                secondaries: ['astralsorcery:shifting_star', 'botania:laputa_shard'],
-                outputs: ['kubejs:laputian_ingot'],
-                time: 100 * 64,
-                energy: 51200 * 64,
-                id: `${id_prefix}laputian_ingot`
             }
         ]
     };

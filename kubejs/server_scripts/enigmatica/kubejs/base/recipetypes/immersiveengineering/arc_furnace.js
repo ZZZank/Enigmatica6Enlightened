@@ -3,6 +3,14 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/immersiveengineering/arc_furnace/';
     let recipes = [
         {
+            input1: Ingredient.of('12x #forge:ingots/refined_radiance'),
+            secondaries: ['astralsorcery:shifting_star', 'botania:laputa_shard'],
+            outputs: ['kubejs:laputian_ingot'],
+            time: 100 * 64,
+            energy: 51200 * 64,
+            id: `${id_prefix}laputian_ingot`
+        },
+        {
             input1: '#forge:ingots/copper',
             secondaries: ['#forge:ingots/zinc'],
             outputs: [Item.of('emendatusenigmatica:brass_ingot', 2)],
