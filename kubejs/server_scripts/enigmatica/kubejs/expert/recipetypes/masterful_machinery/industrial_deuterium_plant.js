@@ -1,6 +1,10 @@
 'use strict';
 
 onEvent('recipes', (event) => {
+    if (global.isNormalMode) {
+        return;
+    }
+
     const id_prefix = 'enigmatica:expert/masterful_machinery/industrial_deuterium_plant/';
     const recipes = [
         // {

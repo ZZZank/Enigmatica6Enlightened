@@ -1,6 +1,9 @@
 'use strict';
 
 onEvent('recipes', (event) => {
+    if (global.isNormalMode) {
+        return;
+    }
     
     const id_prefix = 'enigmatica:expert/masterful_machinery/enigmatic_tree_of_life/';
     const recipes = []

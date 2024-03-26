@@ -9,9 +9,6 @@ onEvent('recipes', (event) => {
 
     */
 
-    if (global.isNormalMode) {
-        return;
-    }
     const id_prefix = 'enigmatica:base/astralsorcery/altar/';
     const recipes = [
         {
