@@ -192,6 +192,7 @@ const compareIndices = (a, b, tag) => {
 /**
  * Get the stripped variant of targeted log, or `minecraft:air` if not found
  * @param {string} logBlock The id of targeted log block
+ * @see buildWoodVariants
  */
 const getStrippedLogFrom = (logBlock) => {
     for (let wood of buildWoodVariants) {

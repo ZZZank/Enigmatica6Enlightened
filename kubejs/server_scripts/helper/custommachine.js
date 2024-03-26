@@ -67,9 +67,6 @@ CMGrid.prototype = {
     /**
      * Set the preset of elements of this grid. All elements of the result will have properties
      * defined in `preset`
-     *
-     * But, properties that are supposed to be generated automatically(e.g. `x`, `type`) will be
-     * overwritten.
      * @param {{}} preset
      */
     setPreset: function (preset) {

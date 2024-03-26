@@ -11,7 +11,6 @@ block_conversion: {
             target: 'mekanism:teleporter_frame',
             output: 'kubejs:conductive_frame',
             holding: 'immersiveengineering:dust_hop_graphite',
-            additional: (event) => {},
             id: id_prefix + 'conductive_frame'
         },
         {

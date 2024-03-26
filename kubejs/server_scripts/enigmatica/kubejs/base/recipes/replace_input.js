@@ -109,8 +109,8 @@ onEvent('recipes', (event) => {
         },
         { toReplace: 'tconstruct:cobalt_nugget', replaceWith: '#forge:nuggets/cobalt' }
     ];
-    event.replaceInput(() => true, 'thermal:bitumen', '#forge:gems/bitumen', true);
-    event.replaceInput(() => true, 'immersivepetroleum:bitumen', '#forge:gems/bitumen', true);
+    event.replaceInput({}, 'thermal:bitumen', '#forge:gems/bitumen', true);
+    event.replaceInput({}, 'immersivepetroleum:bitumen', '#forge:gems/bitumen', true);
     event.replaceInput(
         {
             not: [{ type: 'ars_nouveau:glyph_recipe' }]
@@ -182,7 +182,7 @@ onEvent('recipes', (event) => {
     event.replaceInput(
         { id: 'create:mixing/chromatic_compound' },
         'create:powdered_obsidian',
-        Ingredient.of('#forge:dusts/obsidian')
+        '#forge:dusts/obsidian'
     );
 
     event.replaceInput({ id: 'fluxnetworks:fluxconfigurator' }, 'minecraft:ender_eye', 'powah:ender_core');
@@ -193,9 +193,7 @@ onEvent('recipes', (event) => {
         'powah:ender_gate_nitro'
     );
     event.replaceInput(
-        {
-            not: [{ type: 'ars_nouveau:glyph_recipe' }]
-        },
+        { not: { type: 'ars_nouveau:glyph_recipe' } },
         'minecraft:crafting_table',
         '#forge:workbenches'
     );
@@ -217,15 +215,15 @@ onEvent('recipes', (event) => {
     );
 
     sharedDies.forEach((die) => {
-        let dieTag = `#thermal:crafting/dies/${die.thermalName}`;
-        event.replaceInput({}, `immersiveengineering:mold_${die.immersiveEngineeringName}`, dieTag);
-        event.replaceInput({}, `thermal:press_${die.thermalName}_die`, dieTag);
+        const dieTag = `#thermal:crafting/dies/${die.thermalName}`;
+        event.replaceInput(`immersiveengineering:mold_${die.immersiveEngineeringName}`, dieTag);
+        event.replaceInput(`thermal:press_${die.thermalName}_die`, dieTag);
     });
     thermalDies.forEach((dieName) => {
-        event.replaceInput({}, `thermal:press_${dieName}_die`, `#thermal:crafting/dies/${dieName}`);
+        event.replaceInput(`thermal:press_${dieName}_die`, `#thermal:crafting/dies/${dieName}`);
     });
     immersiveEngineeringDies.forEach((dieName) => {
-        event.replaceInput({}, `immersiveengineering:mold_${dieName}`, `#thermal:crafting/dies/${dieName}`);
+        event.replaceInput(`immersiveengineering:mold_${dieName}`, `#thermal:crafting/dies/${dieName}`);
     });
 
     colors.forEach((color) => {
