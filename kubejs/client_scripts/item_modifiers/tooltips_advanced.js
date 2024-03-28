@@ -16,7 +16,7 @@ onEvent('item.tooltip', (event) => {
             ],
             handler: (item, isAdvanced, tooltipList) => {
                 if (item.hasNBT()) {
-                    let mod = item.nbt.mod;
+                    const mod = item.nbt.mod;
                     if (mod) {
                         tooltipList.add(Text.of(mod).green());
                     }

@@ -68940,10 +68940,10 @@ declare namespace Type {
     type TEMixedInput = Internal.IngredientJS | Internal.FluidStackJS;
 }
 // Raw TS doc region start
-type Text = text;
-type Ingredient = ingredient;
-type Utils = utils;
-type Fluid = fluid;
+declare const Text = text;
+declare const Ingredient = ingredient;
+declare const Utils = utils;
+declare const Fluid = fluid;
 
 type SelfOrArray<T> = T | T[]
 // Raw TS doc region end
