@@ -12,6 +12,177 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/astralsorcery/altar/';
     const recipes = [
         {
+            output: Item.of('astralsorcery:shifting_star_armara'),
+            duration: 600,
+            starlight: 4800,
+            pattern: ['__B__', '__A__', 'BCDCB', '__A__', '__B__'],
+            key: {
+                A: { item: 'bloodmagic:reagentbinding' },
+                B: { tag: 'astralsorcery:stardust' },
+                C: { tag: 'astralsorcery:starmetal' },
+                D: { item: 'astralsorcery:shifting_star' }
+            },
+            focus_constellation: 'astralsorcery:armara',
+            relay_inputs: [
+                { item: 'bloodmagic:steadfastcrystal' },
+                { item: 'astralsorcery:illumination_powder' },
+                { item: 'astralsorcery:stardust' },
+                { item: 'bloodmagic:steadfastcrystal' },
+                { item: 'astralsorcery:illumination_powder' },
+                { item: 'astralsorcery:stardust' }
+            ],
+            effects: [
+                'astralsorcery:built_in_effect_constellation_finish',
+                'astralsorcery:built_in_effect_trait_relay_highlight',
+                'astralsorcery:built_in_effect_discovery_central_beam',
+                'astralsorcery:built_in_effect_trait_focus_circle',
+                'astralsorcery:focus_dust_swirl',
+                'astralsorcery:focus_edge',
+                'astralsorcery:altar_focus_sparkle',
+                'astralsorcery:altar_default_sparkle',
+                'astralsorcery:built_in_effect_constellation_lines',
+                'astralsorcery:built_in_effect_attunement_sparkle'
+            ],
+            id: 'astralsorcery:altar/shifting_star_armara'
+        },
+        {
+            output: Item.of('astralsorcery:shifting_star_discidia'),
+            duration: 600,
+            starlight: 4800,
+            pattern: ['__B__', '__A__', 'BCDCB', '__A__', '__B__'],
+            key: {
+                A: { item: 'bloodmagic:reagentlava' },
+                B: { tag: 'astralsorcery:stardust' },
+                C: { tag: 'astralsorcery:starmetal' },
+                D: { item: 'astralsorcery:shifting_star' }
+            },
+            focus_constellation: 'astralsorcery:discidia',
+            relay_inputs: [
+                { item: 'bloodmagic:vengefulcrystal' },
+                { item: 'astralsorcery:illumination_powder' },
+                { item: 'astralsorcery:stardust' },
+                { item: 'bloodmagic:vengefulcrystal' },
+                { item: 'astralsorcery:illumination_powder' },
+                { item: 'astralsorcery:stardust' }
+            ],
+            effects: [
+                'astralsorcery:built_in_effect_constellation_finish',
+                'astralsorcery:built_in_effect_trait_relay_highlight',
+                'astralsorcery:built_in_effect_discovery_central_beam',
+                'astralsorcery:built_in_effect_trait_focus_circle',
+                'astralsorcery:focus_dust_swirl',
+                'astralsorcery:focus_edge',
+                'astralsorcery:altar_focus_sparkle',
+                'astralsorcery:altar_default_sparkle',
+                'astralsorcery:built_in_effect_constellation_lines',
+                'astralsorcery:built_in_effect_attunement_sparkle'
+            ],
+            id: 'astralsorcery:altar/shifting_star_discidia'
+        },
+        {
+            output: Item.of('astralsorcery:shifting_star_evorsio'),
+            duration: 600,
+            starlight: 4800,
+            pattern: ['__B__', '__A__', 'BCDCB', '__A__', '__B__'],
+            key: {
+                A: { item: 'bloodmagic:reagentfastminer' },
+                B: { tag: 'astralsorcery:stardust' },
+                C: { tag: 'astralsorcery:starmetal' },
+                D: { item: 'astralsorcery:shifting_star' }
+            },
+            focus_constellation: 'astralsorcery:evorsio',
+            relay_inputs: [
+                { item: 'bloodmagic:destructivecrystal' },
+                { item: 'astralsorcery:illumination_powder' },
+                { item: 'astralsorcery:stardust' },
+                { item: 'bloodmagic:destructivecrystal' },
+                { item: 'astralsorcery:illumination_powder' },
+                { item: 'astralsorcery:stardust' }
+            ],
+            effects: [
+                'astralsorcery:built_in_effect_constellation_finish',
+                'astralsorcery:built_in_effect_trait_relay_highlight',
+                'astralsorcery:built_in_effect_discovery_central_beam',
+                'astralsorcery:built_in_effect_trait_focus_circle',
+                'astralsorcery:focus_dust_swirl',
+                'astralsorcery:focus_edge',
+                'astralsorcery:altar_focus_sparkle',
+                'astralsorcery:altar_default_sparkle',
+                'astralsorcery:built_in_effect_constellation_lines',
+                'astralsorcery:built_in_effect_attunement_sparkle'
+            ],
+            id: 'astralsorcery:altar/shifting_star_evorsio'
+        },
+        {
+            output: Item.of('astralsorcery:shifting_star_vicio'),
+            duration: 600,
+            starlight: 4800,
+            pattern: ['__B__', '__A__', 'BCDCB', '__A__', '__B__'],
+            key: {
+                A: { item: 'bloodmagic:reagentair' },
+                B: { tag: 'astralsorcery:stardust' },
+                C: { tag: 'astralsorcery:starmetal' },
+                D: { item: 'astralsorcery:shifting_star' }
+            },
+            focus_constellation: 'astralsorcery:vicio',
+            relay_inputs: [
+                { item: 'bloodmagic:defaultcrystal' },
+                { item: 'astralsorcery:illumination_powder' },
+                { item: 'astralsorcery:stardust' },
+                { item: 'bloodmagic:defaultcrystal' },
+                { item: 'astralsorcery:illumination_powder' },
+                { item: 'astralsorcery:stardust' }
+            ],
+            effects: [
+                'astralsorcery:built_in_effect_constellation_finish',
+                'astralsorcery:built_in_effect_trait_relay_highlight',
+                'astralsorcery:built_in_effect_discovery_central_beam',
+                'astralsorcery:built_in_effect_trait_focus_circle',
+                'astralsorcery:focus_dust_swirl',
+                'astralsorcery:focus_edge',
+                'astralsorcery:altar_focus_sparkle',
+                'astralsorcery:altar_default_sparkle',
+                'astralsorcery:built_in_effect_constellation_lines',
+                'astralsorcery:built_in_effect_attunement_sparkle'
+            ],
+            id: 'astralsorcery:altar/shifting_star_vicio'
+        },
+        {
+            output: Item.of('astralsorcery:shifting_star_aevitas'),
+            duration: 600,
+            starlight: 4800,
+            pattern: ['__B__', '__A__', 'BCDCB', '__A__', '__B__'],
+            key: {
+                A: { item: 'bloodmagic:reagentgrowth' },
+                B: { tag: 'astralsorcery:stardust' },
+                C: { tag: 'astralsorcery:starmetal' },
+                D: { item: 'astralsorcery:shifting_star' }
+            },
+            focus_constellation: 'astralsorcery:aevitas',
+            relay_inputs: [
+                { item: 'bloodmagic:corrosivecrystal' },
+                { item: 'astralsorcery:illumination_powder' },
+                { item: 'astralsorcery:stardust' },
+                { item: 'bloodmagic:corrosivecrystal' },
+                { item: 'astralsorcery:illumination_powder' },
+                { item: 'astralsorcery:stardust' }
+            ],
+            effects: [
+                'astralsorcery:built_in_effect_constellation_finish',
+                'astralsorcery:built_in_effect_trait_relay_highlight',
+                'astralsorcery:built_in_effect_discovery_central_beam',
+                'astralsorcery:built_in_effect_trait_focus_circle',
+                'astralsorcery:focus_dust_swirl',
+                'astralsorcery:focus_edge',
+                'astralsorcery:altar_focus_sparkle',
+                'astralsorcery:altar_default_sparkle',
+                'astralsorcery:built_in_effect_constellation_lines',
+                'astralsorcery:built_in_effect_attunement_sparkle'
+            ],
+            id: 'astralsorcery:altar/shifting_star_aevitas'
+        },
+
+        {
             output: Item.of('kubejs:observatory_lens', 1),
             pattern: ['_DCD_', 'DEBED', 'CBABC', 'DEBED', '_DCD_'],
             key: {
