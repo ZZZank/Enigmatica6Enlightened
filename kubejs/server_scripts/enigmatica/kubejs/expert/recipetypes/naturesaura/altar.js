@@ -196,15 +196,6 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}slate_ampoule`
         },
         {
-            input: 'ars_nouveau:ritual_fertility',
-            output: { item: 'naturesaura:birth_spirit', count: 8 },
-            catalyst: { item: 'naturesaura:conversion_catalyst' },
-            aura_type: 'naturesaura:overworld',
-            aura: 300000,
-            time: 1000,
-            id: `${id_prefix}birth_spirit`
-        },
-        {
             input: 'astralsorcery:infused_wood',
             output: { item: 'astralsorcery:infused_wood_infused' },
             aura_type: 'naturesaura:overworld',

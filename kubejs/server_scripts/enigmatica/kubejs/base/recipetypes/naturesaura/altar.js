@@ -4,6 +4,15 @@ onEvent('recipes', (event) => {
 
     const recipes = [
         {
+            input: 'ars_nouveau:ritual_fertility',
+            output: { item: 'naturesaura:birth_spirit', count: 8 },
+            catalyst: { item: 'naturesaura:conversion_catalyst' },
+            aura_type: 'naturesaura:overworld',
+            aura: 300000,
+            time: 1000,
+            id: `${id_prefix}birth_spirit`
+        },
+        {
             input: '#minecraft:fishes',
             output: { item: 'aquaculture:fish_bones' },
             aura_type: 'naturesaura:nether',
