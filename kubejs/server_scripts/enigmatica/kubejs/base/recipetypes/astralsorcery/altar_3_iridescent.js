@@ -12,6 +12,43 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/astralsorcery/altar/';
     const recipes = [
         {
+            output: Item.of('astralsorcery:mantle'),
+            pattern: ['_____', 'A_B_A', 'ACDCA', 'ECFCE', 'E___E'],
+            key: {
+                A: { item: 'astralsorcery:resonating_gem' },
+                B: {
+                    type: 'astralsorcery:crystal',
+                    hasToBeAttuned: false,
+                    hasToBeCelestial: true,
+                    canBeAttuned: true,
+                    canBeCelestialCrystal: true
+                },
+                C: { item: 'astralsorcery:illumination_powder' },
+                D: { item: 'botania:balance_cloak' },
+                E: { tag: 'astralsorcery:stardust' },
+                F: { tag: 'botania:runes/mana' }
+            },
+            relay_inputs: [
+                { item: 'astralsorcery:starmetal' },
+                { item: 'botania:rune_envy' },
+                { item: 'magicfeather:magicfeather' },
+                { item: 'botania:rune_pride' }
+            ],
+            duration: 600,
+            starlight: 4800,
+            effects: [
+                'astralsorcery:built_in_effect_constellation_finish',
+                'astralsorcery:built_in_effect_trait_relay_highlight',
+                'astralsorcery:built_in_effect_discovery_central_beam',
+                'astralsorcery:built_in_effect_trait_focus_circle',
+                'astralsorcery:altar_default_sparkle',
+                'astralsorcery:built_in_effect_constellation_lines',
+                'astralsorcery:built_in_effect_attunement_sparkle'
+            ],
+            id: 'astralsorcery:altar/mantle'
+        },
+
+        {
             output: Item.of('astralsorcery:shifting_star_armara'),
             duration: 600,
             starlight: 4800,
