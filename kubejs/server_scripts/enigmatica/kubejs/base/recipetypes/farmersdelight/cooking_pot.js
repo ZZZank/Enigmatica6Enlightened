@@ -3,6 +3,12 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/farmersdelight/cooking/';
     const recipes = [
         {
+            inputs: ['#resourcefulbees:resourceful_honeycomb', 'naturesaura:tainted_gold'],
+            output: 'resourcefulbees:tainted_honeycomb',
+            cookingTime: 200,
+            id: `${id_prefix}tainted_honeycomb`
+        },
+        {
             inputs: [
                 '#forge:crops/rice',
                 '#forge:vegetables',
@@ -13,7 +19,6 @@ onEvent('recipes', (event) => {
             ],
             output: 'farmersdelight:stuffed_pumpkin_block',
             container: 'minecraft:pumpkin',
-            count: 1,
             cookingTime: 400,
             id: `farmersdelight:cooking/stuffed_pumpkin_block`
         },
@@ -26,7 +31,6 @@ onEvent('recipes', (event) => {
             ],
             output: 'abnormals_delight:perch_with_mushrooms',
             container: 'minecraft:bowl',
-            count: 1,
             cookingTime: 200,
             id: `abnormals_delight:perch_with_mushrooms`
         }
@@ -35,7 +39,7 @@ onEvent('recipes', (event) => {
     recipes.forEach((recipe) => {
         recipe.type = 'farmersdelight:cooking';
         recipe.ingredients = recipe.inputs.map((input) => Ingredient.of(input).toJson());
-        recipe.result = { item: recipe.output, count: recipe.count };
+        recipe.result = toJsonWithCount(recipe.output);
         if (recipe.container) {
             recipe.container = { item: recipe.container };
         }

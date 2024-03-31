@@ -8,16 +8,8 @@ onEvent('recipes', (event) => {
         {
             inputs: ['naturesaura:crimson_meal', '#forge:dusts/coal'],
             output: 'emendatusenigmatica:sulfur_dust',
-            count: 1,
             cookingTime: 200,
             id: `${id_prefix}sulfur_dust`
-        },
-        {
-            inputs: ['#resourcefulbees:resourceful_honeycomb', 'naturesaura:tainted_gold'],
-            output: 'resourcefulbees:tainted_honeycomb',
-            count: 1,
-            cookingTime: 200,
-            id: `${id_prefix}tainted_honeycomb`
         },
         {
             inputs: [
@@ -28,15 +20,13 @@ onEvent('recipes', (event) => {
                 'minecraft:rotten_flesh',
                 'minecraft:rotten_flesh'
             ],
-            output: 'minecraft:leather',
-            count: 5,
+            output: '5x minecraft:leather',
             cookingTime: 200,
             id: `${id_prefix}leather`
         },
         {
             inputs: ['#forge:dusts/gold', '#forge:dusts/ender'],
-            output: 'redstone_arsenal:flux_dust',
-            count: 2,
+            output: '2x redstone_arsenal:flux_dust',
             cookingTime: 50,
             id: 'redstone_arsenal:materials/flux_dust'
         },
@@ -49,8 +39,7 @@ onEvent('recipes', (event) => {
                 'minecraft:melon_slice',
                 'minecraft:melon_slice'
             ],
-            output: 'minecraft:glistering_melon_slice',
-            count: 4,
+            output: '4x minecraft:glistering_melon_slice',
             cookingTime: 200,
             id: `${id_prefix}glistering_melon_slice`
         },
@@ -63,8 +52,7 @@ onEvent('recipes', (event) => {
                 'minecraft:carrot',
                 'minecraft:carrot'
             ],
-            output: 'minecraft:golden_carrot',
-            count: 4,
+            output: '4x minecraft:golden_carrot',
             cookingTime: 200,
             id: `${id_prefix}golden_carrot`
         },
@@ -77,15 +65,13 @@ onEvent('recipes', (event) => {
                 'minecraft:apple',
                 'minecraft:apple'
             ],
-            output: 'minecraft:golden_apple',
-            count: 4,
+            output: '4x minecraft:golden_apple',
             cookingTime: 200,
             id: `${id_prefix}golden_apple`
         },
         {
             inputs: ['naturesaura:crimson_meal', '#forge:dusts/charcoal', '#forge:dusts/sulfur'],
-            output: 'minecraft:gunpowder',
-            count: 4,
+            output: '4x minecraft:gunpowder',
             cookingTime: 50,
             id: `${id_prefix}gunpowder`
         }
@@ -96,7 +82,6 @@ onEvent('recipes', (event) => {
             inputs: [`#forge:dyes/${color}`, '#enigmatica:candle_materials'],
             output: `quark:${color}_candle`,
             container: 'minecraft:string',
-            count: 1,
             cookingTime: 50,
             id: `quark:building/crafting/candles/${color}_candle`
         });
@@ -105,7 +90,7 @@ onEvent('recipes', (event) => {
     recipes.forEach((recipe) => {
         recipe.type = 'farmersdelight:cooking';
         recipe.ingredients = recipe.inputs.map((input) => Ingredient.of(input).toJson());
-        recipe.result = { item: recipe.output, count: recipe.count };
+        recipe.result = toJsonWithCount(recipe.output);
         if (recipe.container) {
             recipe.container = { item: recipe.container };
         }
