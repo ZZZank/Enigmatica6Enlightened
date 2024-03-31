@@ -1,7 +1,0 @@
-{
-    "compilerOptions": {
-        "lib": ["ES5","ES2015"],
-        "typeRoots": ["_dev/probe/generated","_dev/probe/user"],
-        "checkJs": true
-    }
-}
