@@ -1,8 +1,7 @@
 {
   "keepBeaned": true,
-  "disabled": false,
+  "enabled": true,
   "vanillaOrder": true,
   "exportClassNames": false,
-  "autoExport": true,
   "trimming": true
 }
