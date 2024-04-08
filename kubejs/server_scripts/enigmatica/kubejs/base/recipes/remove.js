@@ -1,6 +1,6 @@
 'use strict';
 onEvent('recipes', (event) => {
-    let customRemovals = [
+    const customRemovals = [
         { type: 'create:cutting', input: '#minecraft:logs' },
         { type: 'immersiveengineering:sawmill', input: '#minecraft:logs' },
 
@@ -91,7 +91,7 @@ onEvent('recipes', (event) => {
         { type: 'immersiveengineering:crusher', output: '#forge:dyes' }
     ];
 
-    let outputRemovals = [
+    const outputRemovals = [
         'appliedenergistics2:flour',
         'appliedenergistics2:gold_dust',
         'appliedenergistics2:iron_dust',
@@ -127,7 +127,9 @@ onEvent('recipes', (event) => {
         'thermal:bamboo_block'
     ];
 
-    let idRemovals = [
+    const patchouli_safe_removals = [];
+
+    const idRemovals = [
         'apotheosis:spawner/max_delay_inverted',
         'apotheosis:spawner/max_delay',
 
@@ -161,6 +163,7 @@ onEvent('recipes', (event) => {
         'betterendforge:gunpowder_from_sulphur',
         'betterendforge:ender_block',
 
+        'bloodmagic:largebloodstonebrick',
         'bloodmagic:smelting/ingot_netherite_scrap',
         'bloodmagic:alchemytable/gunpowder',
 
@@ -402,5 +405,9 @@ onEvent('recipes', (event) => {
 
     customRemovals.forEach((customRemoval) => {
         event.remove(customRemoval);
+    });
+
+    patchouli_safe_removals.forEach((recipe) => {
+        event.shaped(recipe.output, ['A'], { A: 'kubejs:altered_recipe_indicator' }).id(recipe.id);
     });
 });

@@ -8,46 +8,52 @@ block_conversion: {
      */
     const recipes = [
         {
+            target: 'redstone_arsenal:flux_gem_block',
+            output: '4x bloodmagic:largebloodstonebrick',
+            holding: 'bloodmagic:weakbloodshard',
+            id: 'largebloodstonebrick'
+        },
+        {
             target: 'mekanism:teleporter_frame',
             output: 'kubejs:conductive_frame',
             holding: 'immersiveengineering:dust_hop_graphite',
-            id: id_prefix + 'conductive_frame'
+            id: 'conductive_frame'
         },
         {
             target: 'astralsorcery:marble_raw',
             output: 'astralsorcery:marble_runed',
             holding: 'naturesaura:gold_leaf',
-            id: id_prefix + `marble_runed`
+            id: `marble_runed`
         },
         {
             target: 'appliedenergistics2:crafting_unit',
             output: 'appliedenergistics2:crafting_accelerator',
             holding: 'appliedenergistics2:engineering_processor',
-            id: id_prefix + `crafting_accelerator`
+            id: `crafting_accelerator`
         },
         {
             target: 'appliedenergistics2:crafting_unit',
             output: 'appliedenergistics2:1k_crafting_storage',
             holding: 'appliedenergistics2:1k_cell_component',
-            id: id_prefix + `1k_crafting_storage`
+            id: `1k_crafting_storage`
         },
         {
             target: 'appliedenergistics2:crafting_unit',
             output: 'appliedenergistics2:4k_crafting_storage',
             holding: 'appliedenergistics2:4k_cell_component',
-            id: id_prefix + `4k_crafting_storage`
+            id: `4k_crafting_storage`
         },
         {
             target: 'appliedenergistics2:crafting_unit',
             output: 'appliedenergistics2:16k_crafting_storage',
             holding: 'appliedenergistics2:16k_cell_component',
-            id: id_prefix + `16k_crafting_storage`
+            id: `16k_crafting_storage`
         },
         {
             target: 'appliedenergistics2:crafting_unit',
             output: 'appliedenergistics2:64k_crafting_storage',
             holding: 'appliedenergistics2:64k_cell_component',
-            id: id_prefix + `64k_crafting_storage`
+            id: `64k_crafting_storage`
         },
         {
             target: 'minecraft:conduit',
@@ -62,7 +68,7 @@ block_conversion: {
                 'quark:RuneColor': { id: 'quark:gray_rune', Count: 1 }
             }).enchant('minecraft:vanishing_curse', 1),
             holding: 'pneumaticcraft:nuke_virus',
-            id: id_prefix + 'null_pointer'
+            id: 'null_pointer'
         },
         {
             target: 'minecraft:conduit',
@@ -77,7 +83,7 @@ block_conversion: {
                 'quark:RuneColor': { id: 'quark:gray_rune', Count: 1 }
             }).enchant('minecraft:vanishing_curse', 1),
             holding: 'pneumaticcraft:stop_worm',
-            id: id_prefix + 'null_pointer_alt'
+            id: 'null_pointer_alt'
         }
     ];
 
@@ -96,11 +102,12 @@ block_conversion: {
             player.playSound('ping:bloop');
             event.server.runCommandSilent(`particle minecraft:explosion ${target.x} ${target.y} ${target.z}`);
             const output = Item.of(recipe.output);
-            if (output.isBlock()) {
+            if (output.count == 1 && output.isBlock()) {
                 target.set(output.id, output.nbt);
             } else {
                 target.set(air);
                 const drop = event.world.createEntity('minecraft:item');
+                // @ts-ignore
                 drop.item = output;
                 drop.setPosition(target);
                 drop.setMotionY(0.2);
@@ -117,7 +124,7 @@ block_conversion: {
             // create deploying
             event.recipes.create
                 .deploying(recipe.output, [recipe.target, recipe.holding])
-                .id(recipe.id + '/deploy');
+                .id(id_prefix + recipe.id + '/deploy');
             // hint
             const builder = event.recipes.custommachinery
                 .custom_machine('enlightened6:in_world_interaction', 1)
@@ -126,7 +133,7 @@ block_conversion: {
                 inputs: [recipe.target],
                 catalyst: recipe.holding,
                 outputs: [recipe.output],
-                id: recipe.id + '/hint'
+                id: id_prefix + recipe.id + '/hint'
             });
         });
     });
