@@ -13,6 +13,34 @@ onEvent('recipes', (event) => {
             id: id_prefix + 'name_press'
         },
         {
+            inputs: [],
+            catalyst: 'industrialforegoing:latex_processing_unit',
+            outputs: ['industrialforegoing:dryrubber'],
+            additional: (builder) => {
+                builder.requireFluid(Fluid.of('industrialforegoing:latex', 100));
+                builder.requireFluid(Fluid.of('minecraft:water', 500));
+            },
+            id: id_prefix + 'latex'
+        },
+        {
+            inputs: [],
+            catalyst: 'industrialforegoing:sludge_refiner',
+            outputs: getItemsInTag(Ingredient.of('#industrialforegoing:sludge')),
+            additional: (builder) => {
+                builder.requireFluid(Fluid.of('industrialforegoing:sludge', 500));
+            },
+            id: id_prefix + 'sludge'
+        },
+        {
+            inputs: [],
+            catalyst: 'industrialforegoing:sewage_composter',
+            outputs: ['industrialforegoing:fertilizer'],
+            additional: (builder) => {
+                builder.requireFluid(Fluid.of('industrialforegoing:sewage', 1000));
+            },
+            id: id_prefix + 'sewage'
+        },
+        {
             inputs: [
                 Item.of('ars_nouveau:mana_jar', {
                     BlockEntityTag: { mana: 10000, max_mana: 10000, id: 'ars_nouveau:mana_jar' }
@@ -99,9 +127,17 @@ onEvent('server.datapack.high_priority', (event) => {
         }
     ]
         // @ts-ignore
-        .concat(new CMGrid(2, 5, 'in', 'item').setMode('input').build())
+        .concat(new CMHelper.Grid(2, 4, 'in', 'item').setMode('input').build())
+        .concat(
+            // @ts-ignore
+            new CMHelper.Grid(2, 1, 'in', 'fluid')
+                .offsetY(4 * 18)
+                .setMode('input')
+                .setPreset({ capacity: 10000 })
+                .build()
+        )
         // @ts-ignore
-        .concat(new CMGrid(4, 5, 'out', 'item').setMode('output').build());
+        .concat(new CMHelper.Grid(4, 5, 'out', 'item').setMode('output').build());
     const gui = [
         {
             type: 'custommachinery:progress',
@@ -116,8 +152,14 @@ onEvent('server.datapack.high_priority', (event) => {
             id: 'catalyst'
         }
     ]
-        .concat(new CMGrid(2, 5, 'in', 'slot').build())
-        .concat(new CMGrid(4, 5, 'out', 'slot').offsetX(18 * 5).build());
+        .concat(new CMHelper.Grid(2, 4, 'in', 'slot').build())
+        .concat(
+            new CMHelper.Grid(2, 1, 'in', 'fluid')
+                .setPreset(CMHelper.Slot.fluidSlotPreset)
+                .offsetY(4 * 18)
+                .build()
+        )
+        .concat(new CMHelper.Grid(4, 5, 'out', 'slot').offsetX(18 * 5).build());
 
     event.addJson('enlightened6:machines/recipe_hint_general.json', {
         name: {
