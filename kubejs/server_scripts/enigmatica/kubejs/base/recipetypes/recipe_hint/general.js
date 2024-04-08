@@ -118,7 +118,7 @@ onEvent('server.datapack.high_priority', (event) => {
         }
     ]
         .concat(new CMGrid(2, 5, 'in', 'slot').build())
-        .concat(new CMGrid(4, 5, 'out', 'slot').offset(18 * 5, 0).build());
+        .concat(new CMGrid(4, 5, 'out', 'slot').offsetX(18 * 5).build());
 
     event.addJson('enlightened6:machines/recipe_hint_general.json', {
         name: {

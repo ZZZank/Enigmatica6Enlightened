@@ -51,7 +51,8 @@ const addCMRecipe = (builder, recipe) => {
 
 /**
  *
- * @param {{inputs:(string|Internal.ItemStackJS)[],catalyst:(string|Internal.ItemStackJS),outputs:Internal.ItemStackJS_[],id:string}} recipe
+ * @param {{inputs:(string|Internal.ItemStackJS)[],catalyst:(string|Internal.ItemStackJS),
+ * outputs:Internal.ItemStackJS_[],id:string}} recipe
  * @param {Internal.RecipeEventJS} event
  */
 const addGeneralRecipeHint = (recipe, event) => {

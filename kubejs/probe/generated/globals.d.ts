@@ -31717,7 +31717,7 @@ declare namespace Internal {
          */
         constructor(s: Internal.ItemStack);
     }
-    type ItemStackJS_ = Internal.Item_ | `${number}x ${string}` | object | ItemStackJS;
+    type ItemStackJS_ = Internal.Item_ | `${number}x ${string}` | string | object | ItemStackJS;
     interface AttributeView {
         name(): string;
     }

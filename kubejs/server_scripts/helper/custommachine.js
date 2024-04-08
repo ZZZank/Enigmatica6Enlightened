@@ -21,7 +21,7 @@ function CMGrid(column, row, prefix, type) {
         width: 18,
         height: 18
     };
-    let preset = this.SIZE_PRESET[type];
+    const preset = CMGrid.SIZE_PRESET[type];
     if (preset) {
         this._.width = preset.width;
         this._.height = preset.height;
@@ -29,18 +29,6 @@ function CMGrid(column, row, prefix, type) {
 }
 
 CMGrid.prototype = {
-    // prettier-ignore
-    SIZE_PRESET: {
-        slot            : { width: 18,  height: 18 },
-        progress        : { width: 24,  height: 16 },
-        fuel            : { width: 14,  height: 14 },
-        fluid           : { width: 18,  height: 44 },
-        energy          : { width: 18,  height: 44 },
-        player_inventory: { width: 162, height: 76 },
-        dump            : { width: 29,  height: 13 },
-        reset           : { width: 33,  height: 13 },
-        status          : { width: 16,  height: 16 },
-    },
     /**
      * Set the offset of grid. Will be applied to all slots in this grid
      * @param {number} dx
@@ -48,6 +36,14 @@ CMGrid.prototype = {
      */
     offset: function (dx, dy) {
         this._.dx = dx;
+        this._.dy = dy;
+        return this;
+    },
+    offsetX: function (dx) {
+        this._.dx = dx;
+        return this;
+    },
+    offsetY: function (dy) {
         this._.dy = dy;
         return this;
     },
@@ -74,7 +70,7 @@ CMGrid.prototype = {
         return this;
     },
     build: function () {
-        let grid = [];
+        const grid = [];
         const { dx, dy, prefix, column, row, type, width, height, preset } = this._;
         for (let i = 0; i < column; i++) {
             for (let j = 0; j < row; j++) {
@@ -97,4 +93,15 @@ CMGrid.prototype = {
     }
 };
 
-CMGrid.SIZE_PRESET = CMGrid.prototype.SIZE_PRESET;
+// prettier-ignore
+CMGrid.SIZE_PRESET = Object.freeze({
+    slot            : { width: 18,  height: 18 },
+    progress        : { width: 24,  height: 16 },
+    fuel            : { width: 14,  height: 14 },
+    fluid           : { width: 18,  height: 44 },
+    energy          : { width: 18,  height: 44 },
+    player_inventory: { width: 162, height: 76 },
+    dump            : { width: 29,  height: 13 },
+    reset           : { width: 33,  height: 13 },
+    status          : { width: 16,  height: 16 },
+});
