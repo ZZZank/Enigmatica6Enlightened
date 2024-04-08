@@ -1,14 +1,36 @@
 // priority: 1005
 'use strict';
 
+const CMHelper = {
+    Slot: {
+        fluidSlotPreset:{
+            // "texture": "mekanism:textures/gui/fluids.png"
+            width: 18,
+            height: 18
+        }
+    },
+    // prettier-ignore
+    SIZE_PRESET: Object.freeze({
+        slot            : { width: 18,  height: 18 },
+        progress        : { width: 24,  height: 16 },
+        fuel            : { width: 14,  height: 14 },
+        fluid           : { width: 18,  height: 44 },
+        energy          : { width: 18,  height: 44 },
+        player_inventory: { width: 162, height: 76 },
+        dump            : { width: 29,  height: 13 },
+        reset           : { width: 33,  height: 13 },
+        status          : { width: 16,  height: 16 },
+    }),
+    Grid: __CMGrid__
+};
+
 /**
- *
  * @param {number} column Number of slots per row
  * @param {number} row Number of slots per column
  * @param {string} prefix Prefix of slot ID. Actual ID will be `{prefix}_{index}`
  * @param {string} type Type of slots, like `item`. Actual slot type will be `custommachinery:{type}`
  */
-function CMGrid(column, row, prefix, type) {
+function __CMGrid__(column, row, prefix, type) {
     this._ = {
         preset: {},
         column: column,
@@ -21,14 +43,14 @@ function CMGrid(column, row, prefix, type) {
         width: 18,
         height: 18
     };
-    const preset = CMGrid.SIZE_PRESET[type];
+    const preset = CMHelper.SIZE_PRESET[type];
     if (preset) {
         this._.width = preset.width;
         this._.height = preset.height;
     }
 }
 
-CMGrid.prototype = {
+__CMGrid__.prototype = {
     /**
      * Set the offset of grid. Will be applied to all slots in this grid
      * @param {number} dx
@@ -39,10 +61,16 @@ CMGrid.prototype = {
         this._.dy = dy;
         return this;
     },
+    /**
+     * @param {number} dx 
+     */
     offsetX: function (dx) {
         this._.dx = dx;
         return this;
     },
+    /**
+     * @param {number} dy 
+     */
     offsetY: function (dy) {
         this._.dy = dy;
         return this;
@@ -92,16 +120,3 @@ CMGrid.prototype = {
         return grid;
     }
 };
-
-// prettier-ignore
-CMGrid.SIZE_PRESET = Object.freeze({
-    slot            : { width: 18,  height: 18 },
-    progress        : { width: 24,  height: 16 },
-    fuel            : { width: 14,  height: 14 },
-    fluid           : { width: 18,  height: 44 },
-    energy          : { width: 18,  height: 44 },
-    player_inventory: { width: 162, height: 76 },
-    dump            : { width: 29,  height: 13 },
-    reset           : { width: 33,  height: 13 },
-    status          : { width: 16,  height: 16 },
-});

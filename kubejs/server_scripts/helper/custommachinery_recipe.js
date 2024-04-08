@@ -2,9 +2,8 @@
 'use strict';
 
 /**
- *
  * @param {Internal.CustomMachineJSRecipeBuilder} builder
- * @param {{inputs:(string|Internal.ItemStackJS)[],catalyst:(''|string|Internal.ItemStackJS),outputs:Internal.ItemStackJS_[],id:string}} recipe
+ * @param {CMRecipeHint} recipe
  */
 const addCMRecipe = (builder, recipe) => {
     //pre-processing for chance display
@@ -47,18 +46,15 @@ const addCMRecipe = (builder, recipe) => {
     }
     //id
     builder.id(recipe.id);
+    if (recipe.additional !== undefined) {
+        recipe.additional(builder)
+    }
 };
 
-/**
- *
- * @param {{inputs:(string|Internal.ItemStackJS)[],catalyst:(string|Internal.ItemStackJS),
- * outputs:Internal.ItemStackJS_[],id:string}} recipe
- * @param {Internal.RecipeEventJS} event
- */
-const addGeneralRecipeHint = (recipe, event) => {
+function addGeneralRecipeHint(recipe, event, additional) {
     const builder = event.recipes.custommachinery.custom_machine('enlightened6:recipe_hint_general', 1).jei();
     addCMRecipe(builder, recipe);
-};
+}
 
 /**
  * Gets a ItemStackJS with its `chance` property displayed in its name, or itself if

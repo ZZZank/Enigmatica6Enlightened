@@ -125,9 +125,9 @@ onEvent('server.datapack.high_priority', (event) => {
         }
     ]
         // @ts-ignore
-        .concat(new CMGrid(3, 2, 'in', 'item').setMode('input').build())
+        .concat(new CMHelper.Grid(3, 2, 'in', 'item').setMode('input').build())
         // @ts-ignore
-        .concat(new CMGrid(3, 2, 'out', 'item').setMode('output').build());
+        .concat(new CMHelper.Grid(3, 2, 'out', 'item').setMode('output').build());
     const gui = [
         {
             type: 'custommachinery:progress',
@@ -142,8 +142,8 @@ onEvent('server.datapack.high_priority', (event) => {
             id: 'catalyst'
         }
     ]
-        .concat(new CMGrid(3, 2, 'in', 'slot').build())
-        .concat(new CMGrid(3, 2, 'out', 'slot').offset(18 * 6, 0).build());
+        .concat(new CMHelper.Grid(3, 2, 'in', 'slot').build())
+        .concat(new CMHelper.Grid(3, 2, 'out', 'slot').offset(18 * 6, 0).build());
 
     event.addJson('enlightened6:machines/killing_entity.json', {
         name: {
