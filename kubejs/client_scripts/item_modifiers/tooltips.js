@@ -34,6 +34,10 @@ onEvent('item.tooltip', (event) => {
             text: [Text.translate(`${id_prefix}integratedtunnels_fluid`).red()]
         },
         {
+            items: ['arsarsenal:source_steel_ingot'],
+            text: [Text.translate(`${eprefix}eww`).lightPurple()]
+        },
+        {
             items: [
                 'integratedtunnels:part_interface_energy',
                 'integratedtunnels:part_importer_energy',

@@ -8,6 +8,7 @@
 -   "psimetal" recipe
 -   Ethylene(mek) earlier
 -   any ways of trimming stonecutting recipe? (4138 addition, 6000+ total currently)
+-   "minecraft:dragon_head" and "immersiveengineering:metal_press"
 
 ## warn
 

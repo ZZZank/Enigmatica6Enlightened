@@ -4,6 +4,18 @@ onEvent('recipes', (event) => {
 
     const recipes = [
         {
+            output: 'immersiveengineering:dragons_breath',
+            input: 'immersiveengineering:empty_shell',
+            mold: 'minecraft:dragon_head',
+            id: `${id_prefix}ie_dragons_breath`
+        },
+        {
+            output: 'arsarsenal:source_steel_ingot',
+            input: '#forge:ingots/netherite',
+            mold: 'minecraft:dragon_head',
+            id: `${id_prefix}source_steel_ingot`
+        },
+        {
             output: 'mekanism:hdpe_sheet',
             input: 'mekanism:hdpe_pellet',
             mold: '#thermal:crafting/dies/plate',
