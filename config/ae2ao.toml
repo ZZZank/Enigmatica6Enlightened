@@ -1,5 +1,5 @@
 #Disable all channels logic. If true amount of used channels is always 0.
-DisableChannels = true
+DisableChannels = false
 
 [Cells]
 	CellFireResistance = false

@@ -1,7 +1,6 @@
 'use strict';
 onEvent('fluid.registry', (event) => {
     /**
-     * @type {{type:string,id:string,color:number,display?:string,still?:string,flowing?:string,additional?:(i:Internal.FluidBuilder)=>void}[]}
      * @param type Can be `thin`, `thick`, or `custom`
      * @param display Deprecated, DO NOT USE. Please switch to lang file.
      * Tips: For a targeted fluid, its language key is `"fluid.kubejs.{id}"`,
@@ -9,6 +8,8 @@ onEvent('fluid.registry', (event) => {
      * @param still Valid only when `type` is `custom`
      * @param flowing Valid only when `type` is `custom`
      * @param additional additional steps to execute.
+     * @type {{type:string,id:string,color:number,display?:string,still?:string,flowing?:string,
+     * additional?:(i:Internal.FluidBuilder)=>void}[]}
      */
     const generalFluids = [
         {

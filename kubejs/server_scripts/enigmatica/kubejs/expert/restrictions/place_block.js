@@ -40,7 +40,7 @@ onEvent('block.place', (event) => {
     const block = event.block;
     const entity = event.entity;
 
-    let isValid = (restriction) => {
+    const isValid = (restriction) => {
         if (restriction.stageUnlock && entity.stages.has(restriction.stageUnlock)) {
             return true;
         }
