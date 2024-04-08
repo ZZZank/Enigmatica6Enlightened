@@ -24,33 +24,6 @@ onEvent('recipes', (event) => {
             id_suffix: 'basalt_powder'
         },
         {
-            secondary_output: Item.of('minecraft:bone_meal').chance(0.15),
-            output: Item.of('kubejs:ground_meat', 1),
-            input: Ingredient.of('#enigmatica:meats/small'),
-            experience: 0.5,
-            duration: 100,
-            ignore_occultism_multiplier: true,
-            id_suffix: 'ground_meat_small'
-        },
-        {
-            secondary_output: Item.of('minecraft:bone_meal').chance(0.15),
-            output: Item.of('kubejs:ground_meat', 2),
-            input: Ingredient.of('#enigmatica:meats/medium'),
-            experience: 0.5,
-            duration: 100,
-            ignore_occultism_multiplier: true,
-            id_suffix: 'ground_meat_medium'
-        },
-        {
-            secondary_output: Item.of('minecraft:bone_meal').chance(0.15),
-            output: Item.of('kubejs:ground_meat', 3),
-            input: Ingredient.of('#enigmatica:meats/large'),
-            experience: 0.5,
-            duration: 100,
-            ignore_occultism_multiplier: true,
-            id_suffix: 'ground_meat_large'
-        },
-        {
             secondary_output: Item.of('waystones:warp_dust').chance(0.15),
             output: Item.of('waystones:warp_dust', 4),
             input: Ingredient.of('waystones:warp_stone'),

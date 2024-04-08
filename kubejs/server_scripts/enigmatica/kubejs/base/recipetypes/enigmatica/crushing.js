@@ -10,6 +10,33 @@ onEvent('recipes', (event) => {
         //     duration: 100,
         //     ignore_occultism_multiplier: true
         // }
+        {
+            secondary_output: Item.of('minecraft:bone_meal').chance(0.15),
+            output: Item.of('kubejs:ground_meat', 1),
+            input: Ingredient.of('#enigmatica:meats/small'),
+            experience: 0.5,
+            duration: 100,
+            ignore_occultism_multiplier: true,
+            id_suffix: 'ground_meat_small'
+        },
+        {
+            secondary_output: Item.of('minecraft:bone_meal').chance(0.15),
+            output: Item.of('kubejs:ground_meat', 2),
+            input: Ingredient.of('#enigmatica:meats/medium'),
+            experience: 0.5,
+            duration: 100,
+            ignore_occultism_multiplier: true,
+            id_suffix: 'ground_meat_medium'
+        },
+        {
+            secondary_output: Item.of('minecraft:bone_meal').chance(0.15),
+            output: Item.of('kubejs:ground_meat', 3),
+            input: Ingredient.of('#enigmatica:meats/large'),
+            experience: 0.5,
+            duration: 100,
+            ignore_occultism_multiplier: true,
+            id_suffix: 'ground_meat_large'
+        },
 
         {
             secondary_output: Item.of('minecraft:bone_meal').chance(0.15),
@@ -67,15 +94,17 @@ onEvent('recipes', (event) => {
         }
     ];
 
-    let recipetypes_crushing = (event, recipe) => {
+    recipes.forEach((recipe) => {
         // pedestals
-        // event
-        //     .custom({
-        //         type: 'pedestals:pedestal_crushing',
-        //         ingredient: recipe.input,
-        //         result: recipe.output
-        //     })
-        //     .id(`${id_prefix}pedestal_crushing/${recipe.id_suffix}`);
+        /*
+        event
+            .custom({
+                type: 'pedestals:pedestal_crushing',
+                ingredient: recipe.input,
+                result: recipe.output
+            })
+            .id(`${id_prefix}pedestal_crushing/${recipe.id_suffix}`);
+        */
 
         // occultism
         event
@@ -141,9 +170,5 @@ onEvent('recipes', (event) => {
                 output: [recipe.output.withChance(1.0), recipe.secondary_output]
             })
             .id(`${id_prefix}ars_nouveau_crushing/${recipe.id_suffix}`);
-    };
-
-    recipes.forEach((recipe) => {
-        recipetypes_crushing(event, recipe);
     });
 });

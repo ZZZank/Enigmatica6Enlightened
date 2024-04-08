@@ -12,6 +12,13 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}ender_shard`
         },
         {
+            input: 'kubejs:ground_meat',
+            output: 'kubejs:meat_ingot',
+            xp: 0.5,
+            id: `${id_prefix}meat_ingot`
+
+        },
+        {
             input: '#forge:ores/amber',
             output: Item.of('#forge:shards/amber'),
             xp: 0.5,
