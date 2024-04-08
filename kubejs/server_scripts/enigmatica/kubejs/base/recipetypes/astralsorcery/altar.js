@@ -4,6 +4,34 @@ onEvent('recipes', (event) => {
 
     const recipes = [
         {
+            output: Item.of('astralsorcery:shifting_star'),
+            altar_type: 1,
+            duration: 200,
+            starlight: 1400,
+            pattern: ['A___A', '_ECB_', '_CDC_', '_BCE_', 'A___A'],
+            key: {
+                A: { tag: 'forge:gems/niotic' },
+                B: { tag: 'astralsorcery:stardust' },
+                C: { item: 'astralsorcery:illumination_powder' },
+                D: {
+                    type: 'astralsorcery:fluid',
+                    fluid: [
+                        {
+                            fluid: 'industrialforegoing:ether_gas',
+                            amount: 1000
+                        }
+                    ]
+                },
+                E: { item: 'bloodmagic:reagentbinding' }
+            },
+            effects: [
+                'astralsorcery:built_in_effect_discovery_central_beam',
+                'astralsorcery:built_in_effect_attunement_sparkle'
+            ],
+            id: 'astralsorcery:altar/shifting_star'
+        },
+
+        {
             output: Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:starry_bee' }),
             pattern: ['_____', '__E__', '_DCB_', '__A__', '_____'],
             key: {

@@ -7,6 +7,26 @@ onEvent('recipes', (event) => {
             outputs: [
                 {
                     chance: 1.0,
+                    data: 'astralsorcery:shifting_star'
+                }
+            ],
+            inputs: [
+                '4x #forge:gems/niotic',
+                '2x bloodmagic:reagentbinding',
+                '2x #forge:dusts/starmetal',
+                '4x astralsorcery:illumination_powder',
+                'industrialforegoing:ether_gas_bucket',
+
+                { type: 'masterfulmachinery:energy', perTick: true, data: { amount: 500000 } },
+                { type: 'masterfulmachinery:astral_starlight', perTick: true, data: { amount: 50 } }
+            ],
+            ticks: 400,
+            id: `${id_prefix}shifting_star`
+        },
+        {
+            outputs: [
+                {
+                    chance: 1.0,
                     data: 'astralsorcery:mantle'
                 }
             ],

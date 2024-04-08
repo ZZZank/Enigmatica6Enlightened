@@ -111,32 +111,6 @@ onEvent('recipes', (event) => {
             id: 'astralsorcery:altar/telescope'
         },
         {
-            output: Item.of('astralsorcery:shifting_star'),
-            duration: 200,
-            starlight: 1400,
-            pattern: ['A___A', '_ECB_', '_CDC_', '_BCE_', 'A___A'],
-            key: {
-                A: { tag: 'forge:gems/niotic' },
-                B: { tag: 'astralsorcery:stardust' },
-                C: { item: 'astralsorcery:illumination_powder' },
-                D: {
-                    type: 'astralsorcery:fluid',
-                    fluid: [
-                        {
-                            fluid: 'industrialforegoing:ether_gas',
-                            amount: 1000
-                        }
-                    ]
-                },
-                E: { item: 'bloodmagic:reagentbinding' }
-            },
-            effects: [
-                'astralsorcery:built_in_effect_discovery_central_beam',
-                'astralsorcery:built_in_effect_attunement_sparkle'
-            ],
-            id: 'astralsorcery:altar/shifting_star'
-        },
-        {
             output: Item.of('botania:terra_plate', 1),
             pattern: ['A___B', '_FGF_', '_IEI_', '_JHJ_', 'D___C'],
             key: {
