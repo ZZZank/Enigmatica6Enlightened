@@ -547,6 +547,11 @@ onEvent('recipes', (event) => {
                     type: 'deploying',
                     input: ['create:incomplete_precision_mechanism', '#forge:nuggets/iron'],
                     output: 'create:incomplete_precision_mechanism'
+                },
+                {
+                    type: 'pressing',
+                    input: ['create:incomplete_precision_mechanism'],
+                    output: 'create:incomplete_precision_mechanism'
                 }
             ],
             id: 'create:precision_mechanism'
