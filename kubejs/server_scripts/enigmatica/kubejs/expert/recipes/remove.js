@@ -87,7 +87,6 @@ onEvent('recipes', (event) => {
         'minecraft:golden_carrot',
         'minecraft:glistering_melon_slice',
         'minecraft:golden_apple',
-        'minecraft:lodestone',
 
         'modularrouters:energy_upgrade',
         'modularrouters:sender_module_1_alt',

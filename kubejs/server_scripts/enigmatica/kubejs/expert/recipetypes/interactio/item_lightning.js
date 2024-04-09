@@ -92,11 +92,11 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:overworld"}'),
+                Item.of('naturesaura:aura_bottle', { stored_type: 'naturesaura:overworld' }),
                 'naturesaura:infused_iron',
                 '#botania:runes/water',
                 '#botania:runes/earth',
-                Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:nether"}'),
+                Item.of('naturesaura:aura_bottle', { stored_type: 'naturesaura:nether' }),
                 'naturesaura:tainted_gold',
                 '#botania:runes/fire',
                 '#botania:runes/air'
@@ -107,20 +107,6 @@ onEvent('recipes', (event) => {
                 rolls: 1
             },
             id: `${id_prefix}calling_spirit`
-        },
-        {
-            inputs: [
-                '#forge:storage_blocks/iron',
-                '#forge:dusts/iron',
-                '#forge:gems/fluorite',
-                '#forge:dusts/copper'
-            ],
-            output: {
-                entries: [{ result: { item: 'minecraft:lodestone', count: 1 }, weight: 1 }],
-                empty_weight: 0,
-                rolls: 1
-            },
-            id: `${id_prefix}lodestone`
         },
         {
             inputs: ['6x #botania:petals', '2x botania:quartz_blaze', '#forge:nuggets/nebu'],
