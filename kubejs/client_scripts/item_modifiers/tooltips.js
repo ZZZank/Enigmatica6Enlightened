@@ -28,8 +28,8 @@ onEvent('item.tooltip', (event) => {
         {
             items: [/kubejs:diy/],
             text: [
-                Text.translate(`${id_prefix}some_assembly_required`).green(),
-                Text.translate(`${id_prefix}batteries_not_included`).darkRed()
+                Text.translate(`tooltips.enigmatica.expert.some_assembly_required`).green(),
+                Text.translate(`tooltips.enigmatica.expert.batteries_not_included`).darkRed()
             ]
         },
         {
