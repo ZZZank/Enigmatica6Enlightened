@@ -1,28 +1,76 @@
 'use strict';
+
 onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/create/sequenced_assembly/';
 
     /**
-     * @type {{output: SelfOrArray<Internal.ItemStackJS_>, input: Internal.IngredientJS_,
-     * transitional: Internal.ItemStackJS_, loops: number, id: string,
-     * sequence: {type: 'deploying'|'filling'|'pressing'|'cutting', with?: any[], cuttingTime?:number}[]
+     * @type {{outputs: Internal.ItemStackJS_[], input: Internal.IngredientJS_, transitional: Internal.ItemStackJS_, loops: number, id: string,
+     * sequence: ({type: 'deploying',with: Internal.IngredientJS_} | {type: 'filling',with: Internal.FluidStackJS} | {type: 'pressing'} | {type: 'cutting',cuttingTime: number})[]
      * }[]}
      */
     const sim = [
         {
-            input: '',
-            output: '',
-            transitional: '',
-            loops: 1,
+            input: 'minecraft:enchanted_golden_apple',
+            outputs: ['artifacts:everlasting_beef'],
+            transitional: 'minecraft:enchanted_golden_apple',
+            loops: 50,
             sequence: [
                 {
                     type: 'deploying',
-                    with: []
+                    with: ['minecraft:beef']
+                },
+                {
+                    type: 'deploying',
+                    with: ['minecraft:beef']
+                },
+                {
+                    type: 'filling',
+                    with: Fluid.of('create:potion', 100, {
+                        Bottle: 'LINGERING',
+                        Potion: 'minecraft:strong_regeneration'
+                    })
+                },
+                {
+                    type: 'deploying',
+                    with: ['minecraft:beef']
+                },
+                {
+                    type: 'deploying',
+                    with: ['minecraft:beef']
+                },
+                {
+                    type: 'pressing'
                 }
             ],
-            id: ''
+            id: `${id_prefix}everlasting_beef`
         }
     ];
+
+    sim.forEach((recipe) => {
+        const seq = recipe.sequence.map((process) => {
+            if (process.type == 'cutting') {
+                return event.recipes.create
+                    .cutting(recipe.transitional, recipe.transitional)
+                    .processingTime(process.cuttingTime);
+            } else if (process.type == 'deploying') {
+                return event.recipes.create.deploying(recipe.transitional, [
+                    recipe.transitional,
+                    process.with
+                ]);
+            } else if (process.type == 'pressing') {
+                return event.recipes.create.pressing(recipe.transitional, recipe.transitional);
+            } else if (process.type == 'filling') {
+                return event.recipes.create.filling(recipe.transitional, [recipe.transitional, process.with]);
+            } else {
+                throw 'Invalid process type';
+            }
+        });
+        event.recipes.create
+            .sequenced_assembly(recipe.outputs, recipe.input, seq)
+            .loops(recipe.loops)
+            .transitionalItem(recipe.transitional)
+            .id(recipe.id);
+    });
     const recipes = [
         /*{
             input: 'input_item_here',
@@ -43,51 +91,6 @@ onEvent('recipes', (event) => {
             ],
             id: 'recipe_id_here'
         }*/
-        {
-            input: 'minecraft:enchanted_golden_apple',
-            outputs: ['artifacts:everlasting_beef'],
-            transitionalItem: 'minecraft:enchanted_golden_apple',
-            loops: 50,
-            sequence: [
-                {
-                    type: 'deploying',
-                    input: ['minecraft:enchanted_golden_apple', 'minecraft:beef'],
-                    output: 'minecraft:enchanted_golden_apple'
-                },
-                {
-                    type: 'deploying',
-                    input: ['minecraft:enchanted_golden_apple', 'minecraft:beef'],
-                    output: 'minecraft:enchanted_golden_apple'
-                },
-                {
-                    type: 'filling',
-                    input: [
-                        'minecraft:enchanted_golden_apple',
-                        Fluid.of('create:potion', 100, {
-                            Bottle: 'LINGERING',
-                            Potion: 'minecraft:strong_regeneration'
-                        })
-                    ],
-                    output: 'minecraft:enchanted_golden_apple'
-                },
-                {
-                    type: 'deploying',
-                    input: ['minecraft:enchanted_golden_apple', 'minecraft:beef'],
-                    output: 'minecraft:enchanted_golden_apple'
-                },
-                {
-                    type: 'deploying',
-                    input: ['minecraft:enchanted_golden_apple', 'minecraft:beef'],
-                    output: 'minecraft:enchanted_golden_apple'
-                },
-                {
-                    type: 'pressing',
-                    input: 'minecraft:enchanted_golden_apple',
-                    output: 'minecraft:enchanted_golden_apple'
-                }
-            ],
-            id: `${id_prefix}everlasting_beef`
-        },
         {
             input: 'mekanism:cardboard_box',
             outputs: ['kubejs:engineering_student_meals'],
