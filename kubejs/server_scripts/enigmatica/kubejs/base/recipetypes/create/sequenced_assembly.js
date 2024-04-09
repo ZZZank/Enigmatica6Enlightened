@@ -5,7 +5,7 @@ onEvent('recipes', (event) => {
 
     /**
      * @type {{outputs: Internal.ItemStackJS_[], input: Internal.IngredientJS_, transitional: Internal.ItemStackJS_, loops: number, id: string,
-     * sequence: ({type: 'deploying',with: Internal.IngredientJS_} | {type: 'filling',with: Internal.FluidStackJS} | {type: 'pressing'} | {type: 'cutting',cuttingTime: number})[]
+     * sequence: ({type: 'deploying',with: Internal.IngredientJS_} | {type: 'filling',with: Internal.FluidStackJS} | {type: 'pressing'} | {type: 'cutting',time: number})[]
      * }[]}
      */
     const sim = [
@@ -17,11 +17,11 @@ onEvent('recipes', (event) => {
             sequence: [
                 {
                     type: 'deploying',
-                    with: ['minecraft:beef']
+                    with: 'minecraft:beef'
                 },
                 {
                     type: 'deploying',
-                    with: ['minecraft:beef']
+                    with: 'minecraft:beef'
                 },
                 {
                     type: 'filling',
@@ -32,17 +32,79 @@ onEvent('recipes', (event) => {
                 },
                 {
                     type: 'deploying',
-                    with: ['minecraft:beef']
+                    with: 'minecraft:beef'
                 },
                 {
                     type: 'deploying',
-                    with: ['minecraft:beef']
+                    with: 'minecraft:beef'
                 },
                 {
                     type: 'pressing'
                 }
             ],
             id: `${id_prefix}everlasting_beef`
+        },
+        {
+            input: '#forge:plates/gold',
+            outputs: ['create:precision_mechanism'],
+            transitional: 'create:incomplete_precision_mechanism',
+            loops: 5,
+            sequence: [
+                {
+                    type: 'deploying',
+                    with: 'create:cogwheel'
+                },
+                {
+                    type: 'deploying',
+                    with: 'create:large_cogwheel'
+                },
+                {
+                    type: 'deploying',
+                    with: '#forge:nuggets/iron'
+                },
+                {
+                    type: 'pressing'
+                }
+            ],
+            id: 'create:precision_mechanism'
+        },
+        {
+            input: 'create:andesite_alloy',
+            outputs: ['12x create:cogwheel'],
+            transitional: 'create:incomplete_cogwheel',
+            loops: 4,
+            sequence: [
+                {
+                    type: 'deploying',
+                    with: '#minecraft:wooden_buttons'
+                },
+                {
+                    type: 'cutting',
+                    time: 50
+                }
+            ],
+            id: 'create:sequenced_assembly/cogwheel'
+        },
+        {
+            input: 'create:andesite_alloy',
+            outputs: ['6x create:large_cogwheel'],
+            transitional: 'create:incomplete_large_cogwheel',
+            loops: 3,
+            sequence: [
+                {
+                    type: 'deploying',
+                    with: '#minecraft:planks'
+                },
+                {
+                    type: 'deploying',
+                    with: '#minecraft:wooden_buttons'
+                },
+                {
+                    type: 'cutting',
+                    time: 50
+                }
+            ],
+            id: 'create:sequenced_assembly/large_cogwheel'
         }
     ];
 
@@ -51,7 +113,7 @@ onEvent('recipes', (event) => {
             if (process.type == 'cutting') {
                 return event.recipes.create
                     .cutting(recipe.transitional, recipe.transitional)
-                    .processingTime(process.cuttingTime);
+                    .processingTime(process.time);
             } else if (process.type == 'deploying') {
                 return event.recipes.create.deploying(recipe.transitional, [
                     recipe.transitional,
@@ -480,81 +542,6 @@ onEvent('recipes', (event) => {
                 }
             ],
             id: `${id_prefix}stim_pack`
-        },
-
-        {
-            input: 'create:andesite_alloy',
-            outputs: [Item.of('12x create:cogwheel')],
-            transitionalItem: 'create:incomplete_cogwheel',
-            loops: 4,
-            sequence: [
-                {
-                    type: 'deploying',
-                    input: ['create:incomplete_cogwheel', '#minecraft:wooden_buttons'],
-                    output: 'create:incomplete_cogwheel'
-                },
-                {
-                    type: 'cutting',
-                    input: 'create:incomplete_cogwheel',
-                    output: 'create:incomplete_cogwheel',
-                    processingTime: 50
-                }
-            ],
-            id: 'create:sequenced_assembly/cogwheel'
-        },
-        {
-            input: 'create:andesite_alloy',
-            outputs: [Item.of('6x create:large_cogwheel')],
-            transitionalItem: 'create:incomplete_large_cogwheel',
-            loops: 3,
-            sequence: [
-                {
-                    type: 'deploying',
-                    input: ['create:incomplete_large_cogwheel', '#minecraft:planks'],
-                    output: 'create:incomplete_large_cogwheel'
-                },
-                {
-                    type: 'deploying',
-                    input: ['create:incomplete_large_cogwheel', '#minecraft:wooden_buttons'],
-                    output: 'create:incomplete_large_cogwheel'
-                },
-                {
-                    type: 'cutting',
-                    input: 'create:incomplete_large_cogwheel',
-                    output: 'create:incomplete_large_cogwheel',
-                    processingTime: 50
-                }
-            ],
-            id: 'create:sequenced_assembly/large_cogwheel'
-        },
-        {
-            input: '#forge:plates/gold',
-            outputs: ['create:precision_mechanism'],
-            transitionalItem: 'create:incomplete_precision_mechanism',
-            loops: 5,
-            sequence: [
-                {
-                    type: 'deploying',
-                    input: ['create:incomplete_precision_mechanism', 'create:cogwheel'],
-                    output: 'create:incomplete_precision_mechanism'
-                },
-                {
-                    type: 'deploying',
-                    input: ['create:incomplete_precision_mechanism', 'create:large_cogwheel'],
-                    output: 'create:incomplete_precision_mechanism'
-                },
-                {
-                    type: 'deploying',
-                    input: ['create:incomplete_precision_mechanism', '#forge:nuggets/iron'],
-                    output: 'create:incomplete_precision_mechanism'
-                },
-                {
-                    type: 'pressing',
-                    input: ['create:incomplete_precision_mechanism'],
-                    output: 'create:incomplete_precision_mechanism'
-                }
-            ],
-            id: 'create:precision_mechanism'
         }
     ];
 
