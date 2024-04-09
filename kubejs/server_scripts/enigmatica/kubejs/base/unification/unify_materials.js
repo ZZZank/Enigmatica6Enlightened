@@ -1744,7 +1744,7 @@ onEvent('recipes', (event) => {
                 catalyst: { type: 'block', block: 'naturesaura:generator_limit_remover' },
                 mana: 2000
             })
-            .id(`enigmatica:expert/magical_ore_processing/mana/${material}`);
+            .id(`enigmatica:base/magical_ore_processing/mana/${material}`);
 
         // Step Two: Zap!
         event
@@ -1761,7 +1761,7 @@ onEvent('recipes', (event) => {
                     rolls: 20
                 }
             })
-            .id(`enigmatica:expert/magical_ore_processing/lightning/${material}`);
+            .id(`enigmatica:base/magical_ore_processing/lightning/${material}`);
 
         // Step Three: Crumble!
         event
@@ -1774,7 +1774,7 @@ onEvent('recipes', (event) => {
                 aura: 300,
                 time: 1
             })
-            .id(`enigmatica:expert/magical_ore_processing/aura/${material}`);
+            .id(`enigmatica:base/magical_ore_processing/aura/${material}`);
 
         // Step Four: Freeze!
         event
@@ -1786,8 +1786,8 @@ onEvent('recipes', (event) => {
                 ],
                 output: {
                     entries: [
-                        { result: Ingredient.of(crystalline_sliver).toJson(), weight: 75 },
-                        { result: Ingredient.of('bloodmagic:corrupted_tinydust').toJson(), weight: 25 }
+                        { result: Ingredient.of(crystalline_sliver).toJson(), weight: 90 },
+                        { result: Ingredient.of('bloodmagic:corrupted_tinydust').toJson(), weight: 10 }
                     ],
                     empty_weight: 0,
                     rolls: 20
@@ -1795,7 +1795,7 @@ onEvent('recipes', (event) => {
                 fluid: { fluid: 'astralsorcery:liquid_starlight' },
                 consume_fluid: 0.05
             })
-            .id(`enigmatica:expert/magical_ore_processing/starlight/${material}`);
+            .id(`enigmatica:base/magical_ore_processing/starlight/${material}`);
 
         // Step Five: Blood!
         event.recipes.bloodmagic
@@ -1804,6 +1804,6 @@ onEvent('recipes', (event) => {
             .altarSyphon(18)
             .consumptionRate(18)
             .drainRate(9)
-            .id(`enigmatica:expert/magical_ore_processing/blood/${material}`);
+            .id(`enigmatica:base/magical_ore_processing/blood/${material}`);
     }
 });
