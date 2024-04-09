@@ -106,13 +106,6 @@ onEvent('item.tooltip', (event) => {
                 Text.translate(`${id_prefix}heavy_machinery_schematics`).aqua()
             ]
         },
-        {
-            items: [/kubejs:diy/],
-            text: [
-                Text.translate(`${id_prefix}some_assembly_required`).green(),
-                Text.translate(`${id_prefix}batteries_not_included`).darkRed()
-            ]
-        }
     ];
 
     recipes.forEach((recipe) => {

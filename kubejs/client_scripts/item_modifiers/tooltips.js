@@ -26,6 +26,13 @@ onEvent('item.tooltip', (event) => {
     const eprefix = 'tooltips.enlightened.base.';
     const recipes = [
         {
+            items: [/kubejs:diy/],
+            text: [
+                Text.translate(`${id_prefix}some_assembly_required`).green(),
+                Text.translate(`${id_prefix}batteries_not_included`).darkRed()
+            ]
+        },
+        {
             items: [
                 'integratedtunnels:part_interface_fluid',
                 'integratedtunnels:part_importer_fluid',
