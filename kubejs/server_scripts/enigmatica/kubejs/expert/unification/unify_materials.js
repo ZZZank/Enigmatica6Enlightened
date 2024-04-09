@@ -17,36 +17,15 @@ onEvent('recipes', (event) => {
 
         const crushed_ore = getPreferredItemInTag(Ingredient.of(`#create:crushed_ores/${material}`)).id;
         const ore = getPreferredItemInTag(Ingredient.of(`#forge:ores/${material}`)).id;
-        const mana_cluster = getPreferredItemInTag(Ingredient.of(`#enigmatica:mana_clusters/${material}`)).id;
-        const fulminated_cluster = getPreferredItemInTag(
-            Ingredient.of(`#enigmatica:fulminated_clusters/${material}`)
-        ).id;
-        const levigated_material = getPreferredItemInTag(
-            Ingredient.of(`#enigmatica:levigated_materials/${material}`)
-        ).id;
-        const crystalline_sliver = getPreferredItemInTag(
-            Ingredient.of(`#enigmatica:crystalline_slivers/${material}`)
-        ).id;
 
         ore_ingot_smelting(event, material, ore, ingot);
         gear_unification(event, material, ingot, gem, gear);
-        rod_unification(event, material, ingot, gem, rod, plate);
+        // rod_unification(event, material, ingot, gem, rod, plate);
+        rod_unification(event, material, ingot, gem, rod);
         plate_unification(event, material, ingot, gem, plate);
         wire_unification(event, material, ingot, gem, wire, plate);
 
         immersiveengineering_ore_processing_with_secondary_outputs(event, material, ore, crushed_ore, ingot);
-
-        magical_ore_processing(
-            event,
-            material,
-            ore,
-            ingot,
-            nugget,
-            mana_cluster,
-            fulminated_cluster,
-            levigated_material,
-            crystalline_sliver
-        );
     });
 
     function ore_ingot_smelting(event, material, ore, ingot) {
@@ -244,119 +223,5 @@ onEvent('recipes', (event) => {
                 Item.of('minecraft:gravel').chance(0.18)
             ])
             .id(`immersiveengineering:crusher/ore_${material}`);
-    }
-
-    function magical_ore_processing(
-        event,
-        material,
-        ore,
-        ingot,
-        nugget,
-        mana_cluster,
-        fulminated_cluster,
-        levigated_material,
-        crystalline_sliver
-    ) {
-        if (
-            ore == air ||
-            ingot == air ||
-            nugget == air ||
-            mana_cluster == air ||
-            fulminated_cluster == air ||
-            levigated_material == air ||
-            crystalline_sliver == air
-        ) {
-            return;
-        }
-
-        let secondary_fulminated_cluster,
-            infusing_input = `#forge:ores/${material}`,
-            zapping_input = `#enigmatica:mana_clusters/${material}`,
-            crumbling_input = `#enigmatica:fulminated_clusters/${material}`,
-            freezing_input = `#enigmatica:levigated_materials/${material}`,
-            fusing_input = `#enigmatica:crystalline_slivers/${material}`;
-
-        try {
-            secondary_fulminated_cluster = getPreferredItemInTag(
-                Ingredient.of(
-                    `#enigmatica:fulminated_clusters/${oreProcessingSecondaries[material].secondary}`
-                )
-            ).id;
-        } catch (err) {
-            secondary_fulminated_cluster = getPreferredItemInTag(
-                Ingredient.of(`#mekanism:fulminated_clusters/${material}`)
-            ).id;
-        }
-
-        // Step One: Infuse!
-        event
-            .custom({
-                type: 'botania:mana_infusion',
-                input: Ingredient.of(infusing_input).toJson(),
-                output: { item: mana_cluster, count: 1 },
-                catalyst: { type: 'block', block: 'naturesaura:generator_limit_remover' },
-                mana: 2000
-            })
-            .id(`enigmatica:expert/magical_ore_processing/mana/${material}`);
-
-        // Step Two: Zap!
-        event
-            .custom({
-                type: 'interactio:item_lightning',
-                inputs: [Ingredient.of(zapping_input).toJson()],
-                output: {
-                    entries: [
-                        { result: { item: fulminated_cluster, count: 1 }, weight: 20 },
-                        { result: { item: secondary_fulminated_cluster, count: 1 }, weight: 10 },
-                        { result: { item: 'thermal:slag', count: 1 }, weight: 5 }
-                    ],
-                    empty_weight: 65,
-                    rolls: 20
-                }
-            })
-            .id(`enigmatica:expert/magical_ore_processing/lightning/${material}`);
-
-        // Step Three: Crumble!
-        event
-            .custom({
-                type: 'naturesaura:altar',
-                input: Ingredient.of(crumbling_input).toJson(),
-                output: Ingredient.of(levigated_material).toJson(),
-                catalyst: Ingredient.of('naturesaura:crushing_catalyst').toJson(),
-                aura_type: 'naturesaura:overworld',
-                aura: 300,
-                time: 1
-            })
-            .id(`enigmatica:expert/magical_ore_processing/aura/${material}`);
-
-        // Step Four: Freeze!
-        event
-            .custom({
-                type: 'interactio:item_fluid_transform',
-                inputs: [
-                    Ingredient.of(freezing_input).toJson(),
-                    { tag: 'botania:runes/winter', count: 1, return_chance: 1.0 }
-                ],
-                output: {
-                    entries: [
-                        { result: Ingredient.of(crystalline_sliver).toJson(), weight: 75 },
-                        { result: Ingredient.of('bloodmagic:corrupted_tinydust').toJson(), weight: 25 }
-                    ],
-                    empty_weight: 0,
-                    rolls: 20
-                },
-                fluid: { fluid: 'astralsorcery:liquid_starlight' },
-                consume_fluid: 0.05
-            })
-            .id(`enigmatica:expert/magical_ore_processing/starlight/${material}`);
-
-        // Step Five: Blood!
-        event.recipes.bloodmagic
-            .altar(nugget, fusing_input)
-            .upgradeLevel(4)
-            .altarSyphon(18)
-            .consumptionRate(18)
-            .drainRate(9)
-            .id(`enigmatica:expert/magical_ore_processing/blood/${material}`);
     }
 });

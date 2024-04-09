@@ -91,6 +91,29 @@ onEvent('recipes', (event) => {
         tconstruct_gem_casting(material, block, gem, gear, rod, plate);
 
         material_packing_unpacking(material, block, ingot, gem, nugget);
+
+        const mana_cluster = getPreferredItemInTag(Ingredient.of(`#enigmatica:mana_clusters/${material}`)).id;
+        const fulminated_cluster = getPreferredItemInTag(
+            Ingredient.of(`#enigmatica:fulminated_clusters/${material}`)
+        ).id;
+        const levigated_material = getPreferredItemInTag(
+            Ingredient.of(`#enigmatica:levigated_materials/${material}`)
+        ).id;
+        const crystalline_sliver = getPreferredItemInTag(
+            Ingredient.of(`#enigmatica:crystalline_slivers/${material}`)
+        ).id;
+
+        magical_ore_processing(
+            event,
+            material,
+            ore,
+            ingot,
+            nugget,
+            mana_cluster,
+            fulminated_cluster,
+            levigated_material,
+            crystalline_sliver
+        );
     });
 
     function astralsorcery_ore_processing_infuser(material, ore, ingot, gem, shard) {
@@ -1668,5 +1691,119 @@ onEvent('recipes', (event) => {
                 .metal_press(recipe.output, recipe.input, recipe.mold)
                 .id(`${id_prefix}immersiveengineering/metal_press/${recipe.id_suffix}`);
         });
+    }
+
+    function magical_ore_processing(
+        event,
+        material,
+        ore,
+        ingot,
+        nugget,
+        mana_cluster,
+        fulminated_cluster,
+        levigated_material,
+        crystalline_sliver
+    ) {
+        if (
+            ore == air ||
+            ingot == air ||
+            nugget == air ||
+            mana_cluster == air ||
+            fulminated_cluster == air ||
+            levigated_material == air ||
+            crystalline_sliver == air
+        ) {
+            return;
+        }
+
+        let secondary_fulminated_cluster;
+        const infusing_input = `#forge:ores/${material}`,
+            zapping_input = `#enigmatica:mana_clusters/${material}`,
+            crumbling_input = `#enigmatica:fulminated_clusters/${material}`,
+            freezing_input = `#enigmatica:levigated_materials/${material}`,
+            fusing_input = `#enigmatica:crystalline_slivers/${material}`;
+
+        try {
+            secondary_fulminated_cluster = getPreferredItemInTag(
+                Ingredient.of(
+                    `#enigmatica:fulminated_clusters/${oreProcessingSecondaries[material].secondary}`
+                )
+            ).id;
+        } catch (err) {
+            secondary_fulminated_cluster = getPreferredItemInTag(
+                Ingredient.of(`#mekanism:fulminated_clusters/${material}`)
+            ).id;
+        }
+
+        // Step One: Infuse!
+        event
+            .custom({
+                type: 'botania:mana_infusion',
+                input: Ingredient.of(infusing_input).toJson(),
+                output: { item: mana_cluster, count: 1 },
+                catalyst: { type: 'block', block: 'naturesaura:generator_limit_remover' },
+                mana: 2000
+            })
+            .id(`enigmatica:expert/magical_ore_processing/mana/${material}`);
+
+        // Step Two: Zap!
+        event
+            .custom({
+                type: 'interactio:item_lightning',
+                inputs: [Ingredient.of(zapping_input).toJson()],
+                output: {
+                    entries: [
+                        { result: { item: fulminated_cluster, count: 1 }, weight: 20 },
+                        { result: { item: secondary_fulminated_cluster, count: 1 }, weight: 10 },
+                        { result: { item: 'thermal:slag', count: 1 }, weight: 5 }
+                    ],
+                    empty_weight: 65,
+                    rolls: 20
+                }
+            })
+            .id(`enigmatica:expert/magical_ore_processing/lightning/${material}`);
+
+        // Step Three: Crumble!
+        event
+            .custom({
+                type: 'naturesaura:altar',
+                input: Ingredient.of(crumbling_input).toJson(),
+                output: Ingredient.of(levigated_material).toJson(),
+                catalyst: Ingredient.of('naturesaura:crushing_catalyst').toJson(),
+                aura_type: 'naturesaura:overworld',
+                aura: 300,
+                time: 1
+            })
+            .id(`enigmatica:expert/magical_ore_processing/aura/${material}`);
+
+        // Step Four: Freeze!
+        event
+            .custom({
+                type: 'interactio:item_fluid_transform',
+                inputs: [
+                    Ingredient.of(freezing_input).toJson(),
+                    { tag: 'botania:runes/winter', count: 1, return_chance: 1.0 }
+                ],
+                output: {
+                    entries: [
+                        { result: Ingredient.of(crystalline_sliver).toJson(), weight: 75 },
+                        { result: Ingredient.of('bloodmagic:corrupted_tinydust').toJson(), weight: 25 }
+                    ],
+                    empty_weight: 0,
+                    rolls: 20
+                },
+                fluid: { fluid: 'astralsorcery:liquid_starlight' },
+                consume_fluid: 0.05
+            })
+            .id(`enigmatica:expert/magical_ore_processing/starlight/${material}`);
+
+        // Step Five: Blood!
+        event.recipes.bloodmagic
+            .altar(nugget, fusing_input)
+            .upgradeLevel(4)
+            .altarSyphon(18)
+            .consumptionRate(18)
+            .drainRate(9)
+            .id(`enigmatica:expert/magical_ore_processing/blood/${material}`);
     }
 });
