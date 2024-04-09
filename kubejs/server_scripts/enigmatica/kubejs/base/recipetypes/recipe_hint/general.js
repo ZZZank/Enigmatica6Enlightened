@@ -15,7 +15,7 @@ onEvent('recipes', (event) => {
         {
             inputs: [],
             catalyst: 'industrialforegoing:latex_processing_unit',
-            outputs: ['industrialforegoing:dryrubber'],
+            outputs: ['industrialforegoing:tinydryrubber'],
             additional: (builder) => {
                 builder.requireFluid(Fluid.of('industrialforegoing:latex', 100));
                 builder.requireFluid(Fluid.of('minecraft:water', 500));
