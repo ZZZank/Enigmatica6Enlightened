@@ -285,6 +285,7 @@ onEvent('recipes', (event) => {
         'tconstruct:smeltery/melting/metal/gold/powered_rail', //to prevent dupe loop with Transport
         'tconstruct:smeltery/melting/metal/gold/enchanted_apple',
         'tconstruct:smeltery/melting/metal/gold/apple',
+        'tconstruct:smeltery/melting/metal/netherite/lodestone',
         /tconstruct:smeltery\/melting\/metal\/\w+\/wire/,
         /tconstruct:smeltery\/casting\/filling\/(seared|scorched)_\w+/,
 
