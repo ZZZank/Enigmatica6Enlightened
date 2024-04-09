@@ -2,7 +2,8 @@
 
 onEvent('item.tooltip', (event) => {
     /**
-     * @type {{target:Internal.IngredientJS_,handler:(item:Internal.ItemStackJS,isAdvanced:boolean,tooltips:Internal.List<any>) => void}[]}
+     * @type {{target:Internal.IngredientJS_,
+     * handler:(item:Internal.ItemStackJS,isAdvanced:boolean,tooltips:Internal.List<any>) => void}[]}
      * @param target Item(s) you want to add/modify tooltip(s) for
      * @param handler What to do for targeted item(s)
      */

@@ -22,7 +22,7 @@ declare function maxOf<T>(list: T[]): T;
 
 type CMRecipeHint = {
     inputs: (string | Internal.ItemStackJS)[];
-    catalyst: string | Internal.ItemStackJS;
+    catalyst?: string | Internal.ItemStackJS;
     outputs: Internal.ItemStackJS_[];
     additional?: (a: Internal.CustomMachineJSRecipeBuilder) => void;
     id: string;

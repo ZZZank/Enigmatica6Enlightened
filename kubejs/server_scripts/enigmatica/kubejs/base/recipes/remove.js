@@ -127,7 +127,9 @@ onEvent('recipes', (event) => {
         'thermal:bamboo_block'
     ];
 
-    const patchouli_safe_removals = [];
+    const patchouli_safe_removals = [
+        // { output: 'arsarsenal:source_steel_ingot', id: 'arsarsenal:source_steel_ingot' }
+    ];
 
     const idRemovals = [
         'apotheosis:spawner/max_delay_inverted',

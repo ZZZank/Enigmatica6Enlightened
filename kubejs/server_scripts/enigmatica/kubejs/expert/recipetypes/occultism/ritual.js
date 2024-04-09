@@ -1463,7 +1463,7 @@ onEvent('recipes', (event) => {
                  '10 o'clock',
             ],
     */
-    let mycelial_generators = [
+    const mycelial_generators = [
         { name: 'netherstar', ingredients: ['ars_nouveau:glyph_wither', 'minecraft:nether_star'] },
         { name: 'halitosis', ingredients: ['botania:dragonstone', 'minecraft:dragon_breath'] },
         { name: 'meatallurgic', ingredients: ['kubejs:meat_ingot', 'artifacts:eternal_steak'] },

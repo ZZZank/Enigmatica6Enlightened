@@ -1,5 +1,8 @@
 'use strict';
 onEvent('jei.hide.fluids', (event) => {
+    /**
+     * @type {Registry.minecraft.fluid[]}
+     */
     const disabled = [
         'cofh_core:honey',
         'create:honey',
