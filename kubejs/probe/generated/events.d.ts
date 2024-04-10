@@ -530,7 +530,8 @@ declare function onEvent(name: "worldgen.add", handler: (event: Internal.Worldge
  */
 declare function onEvent(name: "worldgen.remove", handler: (event: Internal.WorldgenRemoveEventJSForge) => void);
 /**
- * General representation of `onEvent()`, seeing this comment usually indicates that such event does not exist, or is unknown to ProbeJS yet
+ * this is the general representation of `onEvent()`, seeing this comment usually indicates that such event does not exist,
+ * or is unknown to ProbeJS yet
  */
 declare function onEvent(name: string, handler: (event: Internal.EventJS) => void);
 
@@ -593,7 +594,6 @@ declare function onForgeEvent(name: "net.minecraftforge.client.event.ClientChatR
 declare function onForgeEvent(name: "net.minecraftforge.client.event.ClientPlayerNetworkEvent$LoggedInEvent", handler: (event: Internal.ClientPlayerNetworkEvent$LoggedInEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.ClientPlayerNetworkEvent$LoggedOutEvent", handler: (event: Internal.ClientPlayerNetworkEvent$LoggedOutEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.DrawHighlightEvent$HighlightBlock", handler: (event: Internal.DrawHighlightEvent$HighlightBlock) => void);
-declare function onForgeEvent(name: "net.minecraftforge.client.event.DrawHighlightEvent$HighlightEntity", handler: (event: Internal.DrawHighlightEvent$HighlightEntity) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.EntityViewRenderEvent$CameraSetup", handler: (event: Internal.EntityViewRenderEvent$CameraSetup) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.EntityViewRenderEvent$FOVModifier", handler: (event: Internal.EntityViewRenderEvent$FOVModifier) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.EntityViewRenderEvent$FogColors", handler: (event: Internal.EntityViewRenderEvent$FogColors) => void);
@@ -614,12 +614,11 @@ declare function onForgeEvent(name: "net.minecraftforge.client.event.GuiScreenEv
 declare function onForgeEvent(name: "net.minecraftforge.client.event.GuiScreenEvent$KeyboardKeyPressedEvent$Pre", handler: (event: Internal.GuiScreenEvent$KeyboardKeyPressedEvent$Pre) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.GuiScreenEvent$KeyboardKeyReleasedEvent$Post", handler: (event: Internal.GuiScreenEvent$KeyboardKeyReleasedEvent$Post) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.GuiScreenEvent$KeyboardKeyReleasedEvent$Pre", handler: (event: Internal.GuiScreenEvent$KeyboardKeyReleasedEvent$Pre) => void);
-declare function onForgeEvent(name: "net.minecraftforge.client.event.GuiScreenEvent$MouseClickedEvent$Post", handler: (event: Internal.GuiScreenEvent$MouseClickedEvent$Post) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.GuiScreenEvent$MouseClickedEvent$Pre", handler: (event: Internal.GuiScreenEvent$MouseClickedEvent$Pre) => void);
+declare function onForgeEvent(name: "net.minecraftforge.client.event.GuiScreenEvent$MouseDragEvent$Post", handler: (event: Internal.GuiScreenEvent$MouseDragEvent$Post) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.GuiScreenEvent$MouseDragEvent$Pre", handler: (event: Internal.GuiScreenEvent$MouseDragEvent$Pre) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.GuiScreenEvent$MouseReleasedEvent$Post", handler: (event: Internal.GuiScreenEvent$MouseReleasedEvent$Post) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.GuiScreenEvent$MouseReleasedEvent$Pre", handler: (event: Internal.GuiScreenEvent$MouseReleasedEvent$Pre) => void);
-declare function onForgeEvent(name: "net.minecraftforge.client.event.InputEvent$ClickInputEvent", handler: (event: Internal.InputEvent$ClickInputEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.InputEvent$KeyInputEvent", handler: (event: Internal.InputEvent$KeyInputEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.InputEvent$MouseInputEvent", handler: (event: Internal.InputEvent$MouseInputEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.InputEvent$MouseScrollEvent", handler: (event: Internal.InputEvent$MouseScrollEvent) => void);
@@ -632,8 +631,8 @@ declare function onForgeEvent(name: "net.minecraftforge.client.event.RenderGameO
 declare function onForgeEvent(name: "net.minecraftforge.client.event.RenderGameOverlayEvent$Pre", handler: (event: Internal.RenderGameOverlayEvent$Pre) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.RenderGameOverlayEvent$Text", handler: (event: Internal.RenderGameOverlayEvent$Text) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.RenderHandEvent", handler: (event: Internal.RenderHandEvent) => void);
-declare function onForgeEvent(name: "net.minecraftforge.client.event.RenderLivingEvent$Post", handler: (event: Internal.RenderLivingEvent$Post<any, any>) => void);
-declare function onForgeEvent(name: "net.minecraftforge.client.event.RenderLivingEvent$Pre", handler: (event: Internal.RenderLivingEvent$Pre<any, any>) => void);
+declare function onForgeEvent(name: "net.minecraftforge.client.event.RenderLivingEvent$Post", handler: (event: Internal.RenderLivingEvent$Post<any,any>) => void);
+declare function onForgeEvent(name: "net.minecraftforge.client.event.RenderLivingEvent$Pre", handler: (event: Internal.RenderLivingEvent$Pre<any,any>) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.RenderNameplateEvent", handler: (event: Internal.RenderNameplateEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.RenderTooltipEvent$Color", handler: (event: Internal.RenderTooltipEvent$Color) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.RenderTooltipEvent$PostBackground", handler: (event: Internal.RenderTooltipEvent$PostBackground) => void);
@@ -683,12 +682,12 @@ declare function onForgeEvent(name: "net.minecraftforge.event.entity.living.Livi
 declare function onForgeEvent(name: "net.minecraftforge.event.entity.living.LivingSpawnEvent$CheckSpawn", handler: (event: Internal.LivingSpawnEvent$CheckSpawn) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.entity.living.LivingSpawnEvent$SpecialSpawn", handler: (event: Internal.LivingSpawnEvent$SpecialSpawn) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.entity.living.LootingLevelEvent", handler: (event: Internal.LootingLevelEvent) => void);
+declare function onForgeEvent(name: "net.minecraftforge.event.entity.living.PotionColorCalculationEvent", handler: (event: Internal.PotionColorCalculationEvent) => void);
+declare function onForgeEvent(name: "net.minecraftforge.event.entity.living.PotionEvent$PotionApplicableEvent", handler: (event: Internal.PotionEvent$PotionApplicableEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.entity.living.PotionEvent$PotionRemoveEvent", handler: (event: Internal.PotionEvent$PotionRemoveEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.entity.player.ItemTooltipEvent", handler: (event: Internal.ItemTooltipEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.entity.player.PlayerContainerEvent$Close", handler: (event: Internal.PlayerContainerEvent$Close) => void);
-declare function onForgeEvent(name: "net.minecraftforge.event.entity.player.PlayerContainerEvent$Open", handler: (event: Internal.PlayerContainerEvent$Open) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.entity.player.PlayerEvent$HarvestCheck", handler: (event: Internal.PlayerEvent$HarvestCheck) => void);
-declare function onForgeEvent(name: "net.minecraftforge.event.entity.player.PlayerEvent$ItemSmeltedEvent", handler: (event: Internal.PlayerEvent$ItemSmeltedEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.entity.player.PlayerEvent$LoadFromFile", handler: (event: Internal.PlayerEvent$LoadFromFile) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.entity.player.PlayerEvent$NameFormat", handler: (event: Internal.PlayerEvent$NameFormat) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.entity.player.PlayerEvent$PlayerLoggedInEvent", handler: (event: Internal.PlayerEvent$PlayerLoggedInEvent) => void);
@@ -696,21 +695,16 @@ declare function onForgeEvent(name: "net.minecraftforge.event.entity.player.Play
 declare function onForgeEvent(name: "net.minecraftforge.event.entity.player.PlayerEvent$StartTracking", handler: (event: Internal.PlayerEvent$StartTracking) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.entity.player.PlayerEvent$StopTracking", handler: (event: Internal.PlayerEvent$StopTracking) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.entity.player.PlayerEvent$TabListNameFormat", handler: (event: Internal.PlayerEvent$TabListNameFormat) => void);
-declare function onForgeEvent(name: "net.minecraftforge.event.entity.player.PlayerFlyableFallEvent", handler: (event: Internal.PlayerFlyableFallEvent) => void);
-declare function onForgeEvent(name: "net.minecraftforge.event.entity.player.PlayerInteractEvent$RightClickBlock", handler: (event: Internal.PlayerInteractEvent$RightClickBlock) => void);
-declare function onForgeEvent(name: "net.minecraftforge.event.entity.player.PlayerInteractEvent$RightClickEmpty", handler: (event: Internal.PlayerInteractEvent$RightClickEmpty) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.furnace.FurnaceFuelBurnTimeEvent", handler: (event: Internal.FurnaceFuelBurnTimeEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.village.VillagerTradesEvent", handler: (event: Internal.VillagerTradesEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.village.WandererTradesEvent", handler: (event: Internal.WandererTradesEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.world.BiomeLoadingEvent", handler: (event: Internal.BiomeLoadingEvent) => void);
-declare function onForgeEvent(name: "net.minecraftforge.event.world.BlockEvent$CropGrowEvent$Post", handler: (event: Internal.BlockEvent$CropGrowEvent$Post) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.world.BlockEvent$CropGrowEvent$Pre", handler: (event: Internal.BlockEvent$CropGrowEvent$Pre) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.world.BlockEvent$NeighborNotifyEvent", handler: (event: Internal.BlockEvent$NeighborNotifyEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.world.ChunkDataEvent$Load", handler: (event: Internal.ChunkDataEvent$Load) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.world.ChunkDataEvent$Save", handler: (event: Internal.ChunkDataEvent$Save) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.world.ChunkEvent$Load", handler: (event: Internal.ChunkEvent$Load) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.world.ChunkEvent$Unload", handler: (event: Internal.ChunkEvent$Unload) => void);
-declare function onForgeEvent(name: "net.minecraftforge.event.world.ChunkWatchEvent$UnWatch", handler: (event: Internal.ChunkWatchEvent$UnWatch) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.world.ChunkWatchEvent$Watch", handler: (event: Internal.ChunkWatchEvent$Watch) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.world.StructureSpawnListGatherEvent", handler: (event: Internal.StructureSpawnListGatherEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.world.WorldEvent$Load", handler: (event: Internal.WorldEvent$Load) => void);
@@ -726,6 +720,7 @@ declare function onForgeEvent(name: "slimeknights.tconstruct.library.events.Mate
 declare function onForgeEvent(name: "slimeknights.tconstruct.library.events.ToolEquipmentChangeEvent", handler: (event: Internal.ToolEquipmentChangeEvent) => void);
 declare function onForgeEvent(name: "squeek.appleskin.api.event.FoodValuesEvent", handler: (event: Internal.FoodValuesEvent) => void);
 declare function onForgeEvent(name: "squeek.appleskin.api.event.TooltipOverlayEvent$Pre", handler: (event: Internal.TooltipOverlayEvent$Pre) => void);
+declare function onForgeEvent(name: "squeek.appleskin.api.event.TooltipOverlayEvent$Render", handler: (event: Internal.TooltipOverlayEvent$Render) => void);
 declare function onForgeEvent(name: "top.theillusivec4.curios.api.event.SlotModifiersUpdatedEvent", handler: (event: Internal.SlotModifiersUpdatedEvent) => void);
 declare function onForgeEvent(name: "top.theillusivec4.diet.api.DietEvent$ApplyEffect", handler: (event: Internal.DietEvent$ApplyEffect) => void);
 declare function onForgeEvent(name: "vazkii.botania.api.mana.ManaItemsEvent", handler: (event: Internal.ManaItemsEvent) => void);
