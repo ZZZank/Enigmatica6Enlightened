@@ -12,6 +12,7 @@ onEvent('recipes', (event) => {
             input: getItemsInTag(Ingredient.of('#forge:ores/diamond')).map((stack) => {
                 return { block: stack.id };
             }),
+            display: { item: 'emendatusenigmatica:diamond_chunk' },
             output: { block: 'emendatusenigmatica:emerald_ore' },
             starlight: 1000,
             id: 'astralsorcery:block_transmutation/diamond_emerald'
