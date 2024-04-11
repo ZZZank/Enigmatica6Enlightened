@@ -16,7 +16,6 @@ onEvent('recipes', (event) => {
             output: 'kubejs:meat_ingot',
             xp: 0.5,
             id: `${id_prefix}meat_ingot`
-
         },
         {
             input: '#forge:ores/amber',

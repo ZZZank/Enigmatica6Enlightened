@@ -4,10 +4,10 @@ onEvent('recipes', (event) => {
     if (global.isNormalMode) {
         return;
     }
-    
+
     const id_prefix = 'enigmatica:expert/masterful_machinery/enigmatic_tree_of_life/';
-    const recipes = []
-    
+    const recipes = [];
+
     recipes.forEach((recipe) => {
         recipe.inputs = recipe.inputs.map((val) => toMMJson(val));
         recipe.outputs = recipe.outputs.map((val) => toMMJson(val));

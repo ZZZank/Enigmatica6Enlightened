@@ -243,7 +243,7 @@ onEvent('recipes', (event) => {
                 }
             ],
             id: `${id_prefix}backplane_alternate`
-        },
+        }
     ];
 
     /// Armor Crafting Loops

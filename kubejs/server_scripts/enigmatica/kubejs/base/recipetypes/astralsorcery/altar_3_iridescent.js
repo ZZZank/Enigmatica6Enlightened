@@ -410,9 +410,8 @@ onEvent('recipes', (event) => {
             ],
             id: `${id_prefix}handheld_worldshaper`
         }
+    ];
 
-    ]
-    
     recipes.forEach((recipe) => {
         const constructed_recipe = {
             type: 'astralsorcery:altar',

@@ -5,7 +5,7 @@ onEvent('item.right_click', (e) => {
     if (player.fake || player.offHandItem.id != 'minecraft:stick' || !player.creativeMode) {
         return;
     }
-    console.warn("tmp script triggered")
+    console.warn('tmp script triggered');
 
     let a = [];
 

@@ -35,7 +35,7 @@ onEvent('recipes', (event) => {
      */
     const structurePattern = {};
     for (let key in structureRaw.legend) {
-        structurePattern[key] = structureRaw.legend[key].block
+        structurePattern[key] = structureRaw.legend[key].block;
     }
 
     recipes.forEach((recipe) => {

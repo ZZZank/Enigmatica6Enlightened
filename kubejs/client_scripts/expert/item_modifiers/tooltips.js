@@ -105,7 +105,7 @@ onEvent('item.tooltip', (event) => {
                 Text.translate(`${id_prefix}machinery_schematics`).blue(),
                 Text.translate(`${id_prefix}heavy_machinery_schematics`).aqua()
             ]
-        },
+        }
     ];
 
     recipes.forEach((recipe) => {

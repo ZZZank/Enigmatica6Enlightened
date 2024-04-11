@@ -4,7 +4,7 @@ onEvent('jei.hide.items', (event) => {
     itemsToHide.push(disabledItems);
 
     materialsToUnify
-        .filter(material => ['iesnium', 'graphite', 'hop_graphite'].indexOf(material) == -1)
+        .filter((material) => ['iesnium', 'graphite', 'hop_graphite'].indexOf(material) == -1)
         .forEach((material) => {
             itemsToHide.push(
                 'occultism:' + material + '_ingot',

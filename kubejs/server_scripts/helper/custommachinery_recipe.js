@@ -47,7 +47,7 @@ const addCMRecipe = (builder, recipe) => {
     //id
     builder.id(recipe.id);
     if (recipe.additional !== undefined) {
-        recipe.additional(builder)
+        recipe.additional(builder);
     }
 };
 

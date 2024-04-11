@@ -3,7 +3,7 @@
 
 const CMHelper = {
     Slot: {
-        fluidSlotPreset:{
+        fluidSlotPreset: {
             // "texture": "mekanism:textures/gui/fluids.png"
             width: 18,
             height: 18
@@ -62,14 +62,14 @@ __CMGrid__.prototype = {
         return this;
     },
     /**
-     * @param {number} dx 
+     * @param {number} dx
      */
     offsetX: function (dx) {
         this._.dx = dx;
         return this;
     },
     /**
-     * @param {number} dy 
+     * @param {number} dy
      */
     offsetY: function (dy) {
         this._.dy = dy;
