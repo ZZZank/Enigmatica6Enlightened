@@ -3,7 +3,7 @@
 onEvent('recipes', (event) => {
     const id_prefix = 'enlightened6:in_world_interaction/';
     /**
-     * @type {{target:string,output:string,holding:string|Internal.ItemStackJS,id:string}[]}
+     * @type {{target:string,output:Internal.ItemStackJS_,holding:string|Internal.ItemStackJS,id:string}[]}
      */
     const recipes = [
         {
@@ -49,6 +49,13 @@ onEvent('recipes', (event) => {
             holding: 'ars_nouveau:carbuncle_charm',
             output: 'ars_nouveau:carbuncle_se',
             id: id_prefix + 'carbuncle_summoning'
+        },
+        {
+            target: 'minecraft:ghast_spawn_egg',
+            holding: Item.of('botania:ender_air_bottle').withName('toward its eyes'),
+            // see ghast_ender_air_crying loottable
+            output: Item.of('minecraft:ghast_tear').chance(1 / 8),
+            id: id_prefix + 'ghast_ender_air_crying'
         }
     ];
 
