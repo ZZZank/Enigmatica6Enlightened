@@ -1,7 +1,6 @@
 'use strict';
 
 onEvent('recipes', (event) => {
-
     /**
      * @type {(CMRecipeHint&{time: number})[]}
      */
@@ -31,9 +30,13 @@ onEvent('recipes', (event) => {
             '-': { block: 'astralsorcery:marble_pillar' }
         }
     };
-    const structurePattern = Object.fromEntries(
-        Object.entries(structureRaw.legend).map(([k, v]) => [k, v.block])
-    );
+    /**
+     * @type {{[x in string]: string}}
+     */
+    const structurePattern = {};
+    for (let key in structureRaw.legend) {
+        structurePattern[key] = structureRaw.legend[key].block
+    }
 
     recipes.forEach((recipe) => {
         const builder = event.recipes.custommachinery
