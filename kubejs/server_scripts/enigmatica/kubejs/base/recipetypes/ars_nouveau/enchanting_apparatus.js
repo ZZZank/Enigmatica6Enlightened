@@ -3,6 +3,13 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:base/ars_nouveau/enchanting_apparatus/';
     const recipes = [
         {
+            inputs: [],
+            sourceCost: 5000,
+            reagent: "kubejs:disabled_recipe_indicator",
+            output: "arsarsenal:source_steel_ingot",
+            id: "arsarsenal:source_steel_ingot"
+        },
+        {
             inputs: [
                 'bloodmagic:etherealslate',
                 '#botania:runes/nidavellir',

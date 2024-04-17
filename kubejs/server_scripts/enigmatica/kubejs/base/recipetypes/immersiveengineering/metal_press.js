@@ -13,7 +13,7 @@ onEvent('recipes', (event) => {
             output: 'arsarsenal:source_steel_ingot',
             input: '#forge:ingots/netherite',
             mold: 'minecraft:dragon_head',
-            id: 'arsarsenal:source_steel_ingot'
+            id: `${id_prefix}source_steel_ingot`
         },
         {
             output: 'mekanism:hdpe_sheet',
