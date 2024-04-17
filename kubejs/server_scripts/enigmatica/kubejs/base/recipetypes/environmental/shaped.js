@@ -19,7 +19,7 @@ onEvent('recipes', (event) => {
             pattern: ['AAA', 'ABA', 'AAA'],
             key: {
                 A: 'minecraft:dirt',
-                B: { type: 'pneumaticcraft:fluid', fluid: 'minecraft:water', amount: 1000 }
+                B: { type: 'immersiveengineering:fluid', tag: 'minecraft:water', amount: 1000 }
             },
             id: 'environmental:building/mud_balls_from_dirt'
         },
