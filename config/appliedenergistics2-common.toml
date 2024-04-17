@@ -30,21 +30,21 @@
 		#No comment
 		InWorldSingularity = true
 		#No comment
-		InWorldFluix = true
+		InWorldFluix = false
 		#No comment
-		InWorldPurification = true
+		InWorldPurification = false
 		#No comment
 		EnableDisassemblyCrafting = true
 
 	[features.World]
 		#No comment
-		CertusQuartzWorldGen = true
+		CertusQuartzWorldGen = false
 		#No comment
-		MeteoriteWorldGen = true
+		MeteoriteWorldGen = false
 		#No comment
-		SpawnPressesInMeteorites = true
+		SpawnPressesInMeteorites = false
 		#No comment
-		VillagerTrading = true
+		VillagerTrading = false
 
 	[features.Rendering]
 		#No comment
@@ -86,25 +86,25 @@
 
 [worldGen]
 	#Range: 0.0 ~ 1.0
-	spawnChargedChance = 0.08
+	spawnChargedChance = 0.0
 	meteoriteBiomeBlacklist = []
-	quartzOresPerCluster = 4
-	quartzOresClusterAmount = 20
+	quartzOresPerCluster = 0
+	quartzOresClusterAmount = 0
 	quartzOresBiomeBlacklist = []
 
 [wireless]
 	wirelessBaseCost = 8.0
 	wirelessCostMultiplier = 1.0
-	wirelessBaseRange = 16.0
-	wirelessBoosterRangeMultiplier = 1.0
-	wirelessBoosterExp = 1.5
+	wirelessBaseRange = 64.0
+	wirelessBoosterRangeMultiplier = 2.0
+	wirelessBoosterExp = 2.0
 	wirelessHighWirelessCount = 64.0
 	wirelessTerminalDrainMultiplier = 1.0
 
 [PowerRatios]
 	ForgeEnergy = 0.5
 	#Range: 0.01 ~ 1.7976931348623157E308
-	UsageMultiplier = 1.0
+	UsageMultiplier = 40.0
 
 [Condenser]
 	MatterBalls = 256
