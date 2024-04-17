@@ -3,7 +3,7 @@
  * @cancellable Yes
  * @at startup, server
  */
-declare function onEvent(name: "block.break", handler: (event: Internal.BlockBreakEventJS) => void);
+declare function onEvent(name: "block.break", handler: (event: Internal.BlockBreakEventJS) => void): void;
 /**
  * @cancellable Yes
  * @at startup, server, client
@@ -228,7 +228,7 @@ declare function onEvent(name: "item.registry.tool_tiers", handler: (event: Inte
  * @cancellable Yes
  * @at startup, server, client
  */
-declare function onEvent(name: "item.right_click", handler: (event: Internal.ItemRightClickEventJS) => void);
+declare function onEvent(name: "item.right_click", handler: (event: Internal.ItemRightClickEventJS) => void): void;
 /**
  * @cancellable No
  * @at startup, client

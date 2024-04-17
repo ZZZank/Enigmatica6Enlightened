@@ -1,5 +1,8 @@
 'use strict';
 onEvent('block.registry', (event) => {
+    /**
+     * @type {{name:string, material:Internal.MaterialJS_, hardness:number, leaves?:boolean}[]}
+     */
     const basicBlocks = [
         { name: 'matter_block', material: 'iron', hardness: 2 },
         { name: 'conductive_frame', material: 'iron', hardness: 5 },

@@ -31,6 +31,6 @@ type CMRecipeHint = {
 declare function addGeneralRecipeHint(
     recipe: CMRecipeHint,
     event: Internal.RecipeEventJS,
-    additional: (a: Internal.CustomMachineJSRecipeBuilder) => void
+    additional?: (a: Internal.CustomMachineJSRecipeBuilder) => void
 ): void;
 declare function addGeneralRecipeHint(recipe: CMRecipeHint, event: Internal.RecipeEventJS): void;
