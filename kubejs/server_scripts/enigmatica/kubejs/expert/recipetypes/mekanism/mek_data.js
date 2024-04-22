@@ -17,8 +17,8 @@ onEvent('recipes', (event) => {
                     nbt: '{graphDmg:0}'
                 },
                 D: {
-                    type: 'pneumaticcraft:fluid',
-                    fluid: 'mekanism:lithium',
+                    type: 'immersiveengineering:fluid',
+                    tag: 'forge:lithium',
                     amount: 1000
                 },
                 E: { tag: 'forge:ingots/signalum' }
@@ -37,8 +37,8 @@ onEvent('recipes', (event) => {
                     nbt: '{graphDmg:0}'
                 },
                 D: {
-                    type: 'pneumaticcraft:fluid',
-                    fluid: 'mekanism:lithium',
+                    type: 'immersiveengineering:fluid',
+                    tag: 'forge:lithium',
                     amount: 1000
                 },
                 E: { tag: 'mekanism:alloys/infused' }
@@ -57,8 +57,8 @@ onEvent('recipes', (event) => {
                     nbt: '{graphDmg:0}'
                 },
                 D: {
-                    type: 'pneumaticcraft:fluid',
-                    fluid: 'mekanism:lithium',
+                    type: 'immersiveengineering:fluid',
+                    tag: 'forge:lithium',
                     amount: 1000
                 },
                 E: { tag: 'mekanism:alloys/reinforced' }
@@ -77,8 +77,8 @@ onEvent('recipes', (event) => {
                     nbt: '{graphDmg:0}'
                 },
                 D: {
-                    type: 'pneumaticcraft:fluid',
-                    fluid: 'mekanism:lithium',
+                    type: 'immersiveengineering:fluid',
+                    tag: 'forge:lithium',
                     amount: 1000
                 },
                 E: { tag: 'mekanism:alloys/atomic' }
