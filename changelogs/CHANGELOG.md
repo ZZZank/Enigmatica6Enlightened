@@ -1,3 +1,59 @@
+## Enlightened6 & Enlightened6Expert - 2.6.0 -> 2.7.0
+
+🚀 Forge-1.16.5-36.2.41 | [📜 Mod Updates](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/changelog_mods_2.7.0.md) | [📋 Modlist](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/modlist_2.7.0.md)
+
+### Added
+
+-   [Rhizo](https://www.curseforge.com/minecraft/mc-mods/rhizo) (by [ZZZank](https://www.curseforge.com/members/ZZZank/projects))
+-   [RoadRunner](https://www.curseforge.com/minecraft/mc-mods/roadrunner) (by [MaxNeedsSnacks](https://www.curseforge.com/members/MaxNeedsSnacks/projects))
+-   [Searchables](https://www.curseforge.com/minecraft/mc-mods/searchables) (by [Jaredlll08](https://www.curseforge.com/members/Jaredlll08/projects))
+
+### Removed
+
+-   [Dynamic View[Forge]](https://www.curseforge.com/minecraft/mc-mods/dynamic-view) (by [someaddon](https://www.curseforge.com/members/someaddon/projects))
+-   [Rhino](https://www.curseforge.com/minecraft/mc-mods/rhino) (by [LatvianModder](https://www.curseforge.com/members/LatvianModder/projects))
+
+### 🌟 Improvements
+
+-   [normal] end-game goal for En6
+    -   completely (sort of) ports end-game goal from En6E to En6, including all custom multiblocks, most of custom end-game recipes, end-game items, and more.
+    -   because of this, some original recipes in normal mode are replaced with expert one to make sure endgame goal is covering contents of most mods.
+-   [normal] some interesting recipes from En6E
+    -   e.g. `minecraft:lodestone`, `astralsorcery:observatory`
+    -   they look really cool, so make sure to check them out if you're playing Normal Mode
+-   Targets of Null Pointer should now be monster, otherwise special effects will not be triggered
+-   removed TCon seared/scorched tank filling recipes
+    -   reducing JEI recipe count by 133\*12=1596
+-   added JEI descriptions will now be batched together
+    -   reducing JEI page count by about 200
+-   redesign recipe hint
+    -   capable of holding more entries in one page, with fluid support
+-   [expert] cheaper `naturasaura:auto_crafter`
+-   makes recipe ids of some dyeing recipe clearer
+-   fix a horribly wrong format in unify_sawables::create_cutting
+-   New translations from E6 Crowdin
+-   restrict custom loot opening and hand-over-your-items to be main-hand only
+-   allow `atum:coin_gold` in Numismatic Dynamo
+-   [expert] crafting celestial_gateway in altar now gives 4 times the output
+-   make chipped workbench easier to craft
+-   [expert] recipe hint for kubejs:xxx_machinery_schematics
+-   new in-world recipe for `bloodmagic:largebloodstonebrick`
+-   buff custom metal processing, 10x -> 12x output
+-   recipe for `artifacts:everlasting_beef`
+-   differ two recipes for `create:precision_mechanism`
+-   recipe hint for hitting ghast with ender air
+-   New fun recipe for `immersiveengineering:dragons_breath` and `arsarsenal:source_steel_ingot`
+-   replace pneumaticcraft:fluid with immersiveengineering:fluid for autocrafting with IE crafter
+
+### 🐛 Fixed Bugs
+
+-   fix loottable in dungeon_witch_common
+-   mek quest displaying invalid items
+-   a TCon modifier requesting empty tag
+-   lang for `kubejs:diy_create_quarry`, how would I forgot that or so long
+
+---
+
 ## Enlightened6 & Enlightened6Expert - 2.5.0 -> 2.6.0
 
 🚀 Forge-1.16.5-36.2.41 | [📜 Mod Updates](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/changelog_mods_2.6.0.md) | [📋 Modlist](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/modlist_2.6.0.md)
