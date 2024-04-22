@@ -117,13 +117,13 @@ onEvent('recipes', (event) => {
         'dustrial_decor:rusty_sheet_metal_door'
     ];
 
-    rusty_items.forEach(item => {
+    rusty_items.forEach((item) => {
         recipes.push({
             outputs: [item],
             input: item.replace('rusty_', ''),
-            id:`${id_prefix}${item.split(':')[1]}`
-        })
-    })
+            id: `${id_prefix}${item.split(':')[1]}`
+        });
+    });
 
     recipes.forEach((recipe) => {
         event.recipes.create.splashing(recipe.outputs, recipe.input).id(recipe.id);

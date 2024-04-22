@@ -5,9 +5,9 @@ onEvent('recipes', (event) => {
         {
             inputs: [],
             sourceCost: 5000,
-            reagent: "kubejs:disabled_recipe_indicator",
-            output: "arsarsenal:source_steel_ingot",
-            id: "arsarsenal:source_steel_ingot"
+            reagent: 'kubejs:disabled_recipe_indicator',
+            output: 'arsarsenal:source_steel_ingot',
+            id: 'arsarsenal:source_steel_ingot'
         },
         {
             inputs: [
