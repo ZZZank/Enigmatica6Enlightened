@@ -5,7 +5,6 @@ onEvent('recipes', (event) => {
     }
 
     const recipes = [
-        ,
         {
             output: Item.of('bloodmagic:woodbrickpath', 4),
             inputs: [
@@ -16,17 +15,6 @@ onEvent('recipes', (event) => {
                 { type: 'bloodmagic:bloodorb', orb_tier: 2 }
             ],
             id: 'bloodmagic:path/path_wood'
-        },
-        {
-            output: Item.of('bloodmagic:largebloodstonebrick', 4),
-            inputs: [
-                'naturesaura:infused_stone',
-                'naturesaura:infused_stone',
-                'naturesaura:infused_stone',
-                'naturesaura:infused_stone',
-                'bloodmagic:weakbloodshard'
-            ],
-            id: 'bloodmagic:largebloodstonebrick'
         }
     ];
 
