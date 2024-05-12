@@ -25,11 +25,5 @@ declare const TOOL_TYPE_SHOVEL: ToolType;
 declare const client: Internal.ClientWrapper;
 declare const console: Internal.ConsoleJS;
 declare const events: Internal.ScriptEventsWrapper;
-declare const global: {
-    jeiRuntime: Internal.JeiRuntime;
-    isExpertMode: boolean;
-    onReload: () => void;
-    packmode: 'expert' | 'normal';
-    isNormalMode: boolean;
-};
+declare const global: {"jeiRuntime":Internal.JeiRuntime,"isExpertMode":true,"onReload":() => any,"packmode":"expert","isNormalMode":false};
 declare const settings: Internal.ServerSettings;
