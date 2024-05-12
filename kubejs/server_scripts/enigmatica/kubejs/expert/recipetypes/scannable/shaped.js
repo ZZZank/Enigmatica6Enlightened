@@ -16,6 +16,9 @@ onEvent('recipes', (event) => {
         }
     */
 
+    /**
+     * @type {ShapedRecipeJSType[]}
+     */
     const recipes = [
         {
             output: 'scannable:scanner',

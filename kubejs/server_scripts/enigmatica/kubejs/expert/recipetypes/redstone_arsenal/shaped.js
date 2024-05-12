@@ -4,7 +4,18 @@ onEvent('recipes', (event) => {
         return;
     }
     const id_prefix = 'enigmatica:expert/redstone_arsenal/';
+    /**
+     * @type {ShapedRecipeJSType[]}
+     */
     const recipes = [
+        {
+            output: "redstone_arsenal:flux_gem_block",
+            pattern: ['AA', 'AA'],
+            key: {
+                A: "redstone_arsenal:flux_gem"
+            },
+            id: "redstone_arsenal:storage/flux_gem_block"
+        },
         {
             output: 'redstone_arsenal:obsidian_rod',
             pattern: ['  A', ' B ', 'A  '],

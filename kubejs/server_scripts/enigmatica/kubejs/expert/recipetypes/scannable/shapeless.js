@@ -4,6 +4,9 @@ onEvent('recipes', (event) => {
         return;
     }
 
+    /**
+     * @type {ShapedlessRecipeJSType[]}
+     */
     const recipes = [
         {
             output: 'scannable:module_range',
