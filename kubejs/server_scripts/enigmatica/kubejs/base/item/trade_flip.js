@@ -43,7 +43,7 @@ onEvent('item.entity_interact', (event) => {
                 offer.sellingStack,
                 offer.buyingStackSecond,
                 offer.buyingStackFirst,
-                0,
+                Math.max(0, offer.uses - 3),
                 offer.maxUses,
                 offer.givenExp,
                 offer.priceMultiplier,
