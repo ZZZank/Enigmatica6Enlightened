@@ -10,13 +10,13 @@ const $Rotation = java("net.minecraft.util.Rotation");
  * @param {string[][]} pattern note that there shall be one (and only one) `0`, marking the center of multiblock
  * @param {{[x in string]: Internal.Block}} keymaps
  */
-function PatchouliMultiblick(id, pattern, keymaps) {
+function PatchouliMultiblock(id, pattern, keymaps) {
     this.id = id;
     this.pattern = pattern;
     this.maps = keymaps;
 }
 
-PatchouliMultiblick.prototype = {
+PatchouliMultiblock.prototype = {
     makePatchouliMultiblock: function () {
         const keymaps = [];
         for (let key in this.maps) {
