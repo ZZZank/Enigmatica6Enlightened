@@ -30,7 +30,7 @@ onEvent('item.entity_interact', (event) => {
         //other name -> target name
         !(!dinnerboneVillager && dinnerboneNameTag)
     ) {
-        return;//skip if no condition matches
+        return; //skip if no condition matches
     }
 
     //flipping trades(sound like swearing)
