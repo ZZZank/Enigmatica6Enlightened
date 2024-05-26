@@ -10,27 +10,18 @@ const $MerchantOffer = java('net.minecraft.item.MerchantOffer');
 onEvent('item.entity_interact', (event) => {
     //filtering: general
     const { item, hand, target } = event;
-    if (
-        item.id != 'minecraft:name_tag' ||
-        hand != MAIN_HAND ||
-        !(target.minecraftEntity instanceof $VillagerEntity)
-    ) {
+    const mcEntity = target.minecraftEntity;
+    if (item.id != 'minecraft:name_tag' || hand != MAIN_HAND || !(mcEntity instanceof $VillagerEntity)) {
         return;
     }
-    const mcEntity = target.minecraftEntity;
 
     //filtering: name
     const dinnerboneVillager = mcEntity.hasCustomName()
         ? mcEntity.getCustomName().getString() == 'Dinnerbone'
         : false;
     const dinnerboneNameTag = item.getName().string == 'Dinnerbone';
-    if (
-        //target name -> other name
-        !(dinnerboneVillager && !dinnerboneNameTag) &&
-        //other name -> target name
-        !(!dinnerboneVillager && dinnerboneNameTag)
-    ) {
-        return;//skip if no condition matches
+    if (dinnerboneVillager == dinnerboneNameTag) {
+        return; //skip if not (target name -> other name) and not (other name -> target name)
     }
 
     //flipping trades(sound like swearing)

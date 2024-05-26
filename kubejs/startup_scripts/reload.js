@@ -2,16 +2,16 @@
 
 global.onReload = () => {
     //reload powah configs
-    let configs = java('owmii.powah.config.Configs');
-    configs.ALL.forEach((config) => config.reload());
+    const $PowahConfigs = java('owmii.powah.config.Configs');
+    $PowahConfigs.ALL.forEach((config) => config.reload());
 
     //reload packmenu config
-    let client = java('shadows.menu.PackMenuClient');
-    client.loadConfig();
+    const $PackMenuClient = java('shadows.menu.PackMenuClient');
+    $PackMenuClient.loadConfig();
 
     //reload randompatches config
-    let randompatches = java('com.therandomlabs.randompatches.RandomPatches');
-    randompatches.reloadConfig();
+    const $RandomPatches = java('com.therandomlabs.randompatches.RandomPatches');
+    $RandomPatches.reloadConfig();
 };
 
 onEvent('postinit', (event) => {

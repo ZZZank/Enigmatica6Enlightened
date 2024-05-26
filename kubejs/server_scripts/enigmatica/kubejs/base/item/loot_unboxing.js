@@ -7,12 +7,11 @@
         108: 'legendary'
     };
     onEvent('item.right_click', (event) => {
-        const player = event.player;
-        const item = event.item;
+        const { player, item } = event;
         if (event.hand != MAIN_HAND || item.empty || player.fake) {
             return;
         }
-        const id = item.id;
+        const { id } = item;
         if (!id.startsWith('kubejs:') || !id.endsWith('_lootbox')) {
             return;
         }
@@ -29,6 +28,6 @@
             } loot enigmatica:chests/quest_${mod}_loot_${rarity}`
         );
         // not handling 'gamemode creative' case, due to performance and rarity of such a case
-        item.count--;
+        item.setCount(item.count - 1);
     });
 }
