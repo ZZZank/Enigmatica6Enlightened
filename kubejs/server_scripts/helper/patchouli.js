@@ -1,16 +1,15 @@
-"use strict";
 
-const $PatchouliAPI = java("vazkii.patchouli.api.PatchouliAPI");
+const { $PatchouliAPI } = require("packages/vazkii/patchouli/api/$PatchouliAPI");
+
 // @ts-ignore
 const $Character = java("java.lang.Character");
-const $Rotation = java("net.minecraft.util.Rotation");
 
 /**
- * @param {ResourceLocation_} id
+ * @param {$ResourceLocation_} id
  * @param {string[][]} pattern note that there shall be one (and only one) `0`, marking the center of multiblock
- * @param {{[x in string]: Internal.Block}} keymaps
+ * @param {{[x in string]: $Block_}} keymaps
  */
-function PatchouliMultiblock(id, pattern, keymaps) {
+export function PatchouliMultiblock(id, pattern, keymaps) {
     this.id = id;
     this.pattern = pattern;
     this.maps = keymaps;
@@ -23,7 +22,7 @@ PatchouliMultiblock.prototype = {
             let value = this.maps[key];
             keymaps.push(new $Character(key), value);
         }
-        return $PatchouliAPI.instance.makeMultiblock(this.pattern, keymaps);
+        return $PatchouliAPI.get().makeMultiblock(this.pattern, keymaps);
     },
     /**
      * the `event` param is only used for informing users that registering should only happens in such event,
@@ -33,6 +32,6 @@ PatchouliMultiblock.prototype = {
      * @param {Internal.StartupEventJS} event
      */
     register: function (event) {
-        $PatchouliAPI.instance.registerMultiblock(this.id, this.makePatchouliMultiblock());
+        $PatchouliAPI.get().registerMultiblock(this.id, this.makePatchouliMultiblock());
     },
 };

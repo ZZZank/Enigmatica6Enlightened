@@ -1,29 +1,15 @@
-'use strict';
-
-global.atum = new PatchouliMultiblock(
-    "kubejs:atum_portal",
-    [
-        ["S   S", "     ", "     ", "     ", "S   S"],
-        ["S   S", "     ", "  0  ", "     ", "S   S"],
-        ["SSSSS", "SPPPS", "SPPPS", "SPPPS", "SSSSS"],
-        ["SSSSS", "SSSSS", "SSSSS", "SSSSS", "SSSSS"],
-    ],
-    {
-        S: Block.getBlock("minecraft:sandstone"),
-        P: Block.getBlock("atum:portal"),
-        // 0: Block.getBlock("mekanism:block_steel"),
-    }
-);
 
 // onEvent("init", (event) => {
 //     global.tMulti.register(event)
 // });
 
+const { PatchouliMultiblock } = require("../../../../helper/patchouli");
+
 onEvent("block.right_click", (event) => {
     const { block, player, item } = event;
-    if (item.id != "atum:scarab" 
-    //TODO: remove server check when using server_script
-        || !event.server) {
+    /** @type {PatchouliMultiblock | null} */
+    const multiblock = VisualizMultiblocks[item.id]
+    if (!multiblock) {
         return;
     }
     player.addItemCooldown(item.item, 10)
@@ -38,7 +24,7 @@ onEvent("block.right_click", (event) => {
     const nbt = item.nbt
     if (nbt == null || nbt.getBoolean(key) != true) {
         $PatchouliAPI.instance.showMultiblock(
-            global.atum.makePatchouliMultiblock(),
+            multiblock.makePatchouliMultiblock(),
             Text.of("Atum Protal"),
             block.pos.up().up(),
             $Rotation.NONE
@@ -49,7 +35,7 @@ onEvent("block.right_click", (event) => {
             item.nbt.putBoolean(key, true)
         }
     } else {
-        player.tell("todo" + event.hand)
+        player.tell("todo")
         item.nbt.remove(key)
     }
 });
