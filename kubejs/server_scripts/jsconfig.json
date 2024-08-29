@@ -11,7 +11,8 @@
             "../../.probe/server/probe-types"
         ],
         "baseUrl": "../../.probe/server/probe-types",
-        "skipLibCheck": true
+        "skipLibCheck": true,
+        "checkJs": true
     },
     "include": [
         "./**/*.js"
