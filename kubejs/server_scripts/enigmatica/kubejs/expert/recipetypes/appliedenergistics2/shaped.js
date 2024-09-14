@@ -47,7 +47,7 @@ onEvent('recipes', (event) => {
                 A: 'appliedenergistics2:advanced_card',
                 G: 'pneumaticcraft:glycerol',
                 L: {
-                    type: 'immersiveengineering:fluid',
+                    type: 'pneumaticcraft:fluid',
                     tag: 'forge:lubricant',
                     amount: 1000
                 }

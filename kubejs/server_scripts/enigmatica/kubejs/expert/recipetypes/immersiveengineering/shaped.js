@@ -167,7 +167,7 @@ onEvent('recipes', (event) => {
                 C: '#forge:plates/lead',
                 D: Item.of('thermal:fluid_cell').ignoreNBT(),
                 E: {
-                    type: 'immersiveengineering:fluid',
+                    type: 'pneumaticcraft:fluid',
                     tag: 'pneumaticcraft:etching_acid',
                     amount: 1000
                 }
@@ -252,8 +252,8 @@ onEvent('recipes', (event) => {
                 A: '#forge:sheetmetals/steel',
                 B: 'create:fluid_pipe',
                 C: {
-                    type: 'immersiveengineering:fluid',
-                    tag: 'minecraft:water',
+                    type: 'pneumaticcraft:fluid',
+                    fluid: 'minecraft:water',
                     amount: 1000
                 }
             },

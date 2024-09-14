@@ -34,7 +34,7 @@ onEvent('recipes', (event) => {
             pattern: ['A', 'B'],
             key: {
                 A: 'atum:emmer_flour',
-                B: { type: 'immersiveengineering:fluid', tag: 'minecraft:water', amount: 1000 }
+                B: { type: 'pneumaticcraft:fluid', fluid: 'minecraft:water', amount: 1000 }
             },
             id: `${id_prefix}emmer_dough`
         },

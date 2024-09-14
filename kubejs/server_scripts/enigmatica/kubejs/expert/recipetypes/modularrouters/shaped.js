@@ -24,7 +24,7 @@ onEvent('recipes', (event) => {
                 A: 'modularrouters:blank_upgrade',
                 B: 'pneumaticcraft:glycerol',
                 C: {
-                    type: 'immersiveengineering:fluid',
+                    type: 'pneumaticcraft:fluid',
                     tag: 'forge:lubricant',
                     amount: 1000
                 }

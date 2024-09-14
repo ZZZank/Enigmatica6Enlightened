@@ -35,7 +35,7 @@ onEvent('recipes', (event) => {
             pattern: ['A', 'B'],
             key: {
                 A: '#forge:dusts/flour',
-                B: { type: 'immersiveengineering:fluid', tag: 'minecraft:water', amount: 1000 }
+                B: { type: 'pneumaticcraft:fluid', fluid: 'minecraft:water', amount: 1000 }
             },
             id: 'create:crafting/appliances/dough'
         }
