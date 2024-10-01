@@ -240,3 +240,4 @@ server_files/mainpack.zip
 server_files_expert/mainpack.zip
 
 .probe
+kubejs/config/web_server.json

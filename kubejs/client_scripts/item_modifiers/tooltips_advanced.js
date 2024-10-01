@@ -2,8 +2,7 @@
 
 onEvent('item.tooltip', (event) => {
     /**
-     * @type {{target:Internal.IngredientJS_,
-     * handler:(item:Internal.ItemStackJS,isAdvanced:boolean,tooltips:Internal.List<any>) => void}[]}
+     * @type {{target:$IngredientJS_, handler:$ItemTooltipEventJS$StaticTooltipHandlerFromJS_}[]}
      * @param target Item(s) you want to add/modify tooltip(s) for
      * @param handler What to do for targeted item(s)
      */
@@ -17,7 +16,7 @@ onEvent('item.tooltip', (event) => {
             ],
             handler: (item, isAdvanced, tooltipList) => {
                 if (item.hasNBT()) {
-                    const mod = item.nbt.mod;
+                    const mod = item.nbt['mod'];
                     if (mod) {
                         tooltipList.add(Text.of(mod).green());
                     }

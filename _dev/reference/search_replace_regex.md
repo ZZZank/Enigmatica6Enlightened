@@ -1,6 +1,16 @@
 
-## item
+##require
+```re
+^const\s?\{\s*(\S+)\s*\}\s*=\s*require\s?\((\S+)\)
 ```
+->
+```
+let $1 = java($2)
+```
+
+
+## item
+```re
 \{ item: '(.+)', count: ([0-9]+) \}
 ```
 ->
@@ -10,7 +20,7 @@ or toJsonWithCount('$2x $1')
 ```
 
 ## tag
-```
+```re
 \{ tag: '(.+)', count: ([0-9]+) \}
 ```
 ->
@@ -20,7 +30,7 @@ or toJsonWithCount('$2x #$1')
 ```
 
 ## trim number
-```
+```re
 '1x (.+)'
 ```
 ->
@@ -29,7 +39,7 @@ or toJsonWithCount('$2x #$1')
 ```
 
 ## masterfulmachinery
-```
+```re
 (\s+)\{
 \s+type: 'masterfulmachinery:items',
 \s+data: (.+)
@@ -55,7 +65,7 @@ captureEvent("$1", (event) => {
 ```
 
 ## quest
-```
+```re
 (\t+)type: "command"
 \s+title: ".+"
 \s+icon: "(.+)"
