@@ -1,10 +1,4 @@
 
-// onEvent("init", (event) => {
-//     global.tMulti.register(event)
-// });
-
-const { PatchouliMultiblock } = require("../../../../helper/patchouli");
-
 onEvent("block.right_click", (event) => {
     const { block, player, item } = event;
     /** @type {PatchouliMultiblock | null} */
@@ -15,7 +9,7 @@ onEvent("block.right_click", (event) => {
     player.addItemCooldown(item.item, 10)
     const key = "kjs$multiblock"
     if (event.hand == OFF_HAND) {
-        $PatchouliAPI.instance.clearMultiblock();
+        $PatchouliAPI.get().clearMultiblock();
         if (item.nbt != null) {
             item.nbt.remove(key)
         }
@@ -23,15 +17,15 @@ onEvent("block.right_click", (event) => {
     }
     const nbt = item.nbt
     if (nbt == null || nbt.getBoolean(key) != true) {
-        $PatchouliAPI.instance.showMultiblock(
+        $PatchouliAPI.get().showMultiblock(
             multiblock.makePatchouliMultiblock(),
             Text.of("Atum Protal"),
-            block.pos.up().up(),
-            $Rotation.NONE
+            block.pos.above().above(),
+            'none'
         );
         if (nbt == null) {
-            item.nbt = {key: true}
-        }else {
+            item.nbt = { key: true }
+        } else {
             item.nbt.putBoolean(key, true)
         }
     } else {
