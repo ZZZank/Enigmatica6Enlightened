@@ -24,40 +24,64 @@
         'white',
     ];
 
-    const cutDownLen = emojis.length * colors.length
-    const splitLen = colors.length
+    const cutDownLen = emojis.length * colorsAe.length
+    const splitLen = colorsAe.length
 
     /**
-     * @param {number} freq
+     * @param {long} freq
      */
     function emojifiedFreq(freq) {
         if (freq == 0) {
-            return '0';
+            return Text.string('0');
         }
-        const emojified = Text.of('Freq: ').green();
+        const emojified = Text.of('Freq').green().append(Text.of(": ").white());
         if (freq < 0) {
             freq = -freq;
             emojified.append('-');
         }
         let hasNext = true;
         while (hasNext) {
-            const cut = freq % cutDownLen;
-            freq = freq / cutDownLen;
-            emojified.append(Text.string(emojis[cut / splitLen]).color(colors[cut % splitLen]))
+            //do not use "const" in loop, fuck you rhino
+            let cut = freq % cutDownLen;
+            freq = Math.floor(freq / cutDownLen);
+            emojified.append(Text.string(emojis[Math.floor(cut / splitLen)]).color(colorsAe[Math.floor(cut % splitLen)]))
             hasNext = (freq != 0);
         }
         return emojified
     }
-    // Text.of("wow").color(colors[0])
+
+    /*
+    onEvent('block.right_click', event=>{
+        const {hand, player, item} = event
+        if (hand != MAIN_HAND
+            || !player.creativeMode
+            || !player.crouching
+            || !item
+            || item.id != "appliedenergistics2:quantum_entangled_singularity"
+        ) {
+            return
+        }
+        const e = emojifiedFreq(item.nbt.getLong(keyNBT))
+        e.siblings.forEach(p => {
+            player.tell(p)
+        })
+        player.tell(emojis)
+        player.tell(emojis.length)
+        player.tell(emojis[0])
+    })
+        */
 
     onEvent('item.tooltip', event => {
         event.addAdvanced(
-            "appliedenergistics2:quantum_entangled_singularity",
+            ["appliedenergistics2:quantum_entangled_singularity"],
             (stack, isAdvanced, tooltips) => {
-                if (!stack.hasNBT() || !stack.nbt.contains(keyNBT)) {
+                if (!stack.hasNBT()) {
                     return
                 }
-                const freq = Number.parseInt(stack.nbt[keyNBT])
+                const freq = stack.nbt.getLong(keyNBT)
+                if (!freq) {
+                    return
+                }
                 tooltips.add(emojifiedFreq(freq))
             }
         )
