@@ -5,22 +5,22 @@
     /**
      * @type {import("packages/dev/latvian/mods/rhino/mod/util/color/$Color").$Color$$Type[]}
      */
-    const colors = [
-        'black',
+    const colorsAe = [
+        // 'black',
         'dark_blue',
         'dark_green',
         'dark_aqua',
-        'dark_red',
+        // 'dark_red',
         'dark_purple',
-        'gold',
+        // 'gold',
         'gray',
-        'dark_gray',
+        // 'dark_gray',
         'blue',
         'green',
         'aqua',
-        'red',
+        // 'red',
         'light_purple',
-        'yellow',
+        // 'yellow',
         'white',
     ];
 
