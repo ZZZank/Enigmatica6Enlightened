@@ -1,9 +1,7 @@
 'use strict';
 
-onEvent('jei.remove.categories', (event) => {
-    // console.log('JEI RECIPE CATEGORIES: ' + event.getCategoryIds());
-
-    const categories = [
+onEvent('kube_jei.deny.categories', event => {
+    event.deny(
         'pneumaticcraft:compressed_iron_explosion',
         'portable_stonecutter:jei_anvil_flattening',
         'masterfulmachinery:machine_structure_auto_iridescent_altar',
@@ -14,7 +12,5 @@ onEvent('jei.remove.categories', (event) => {
         'masterfulmachinery:machine_structure_gaia_reactor',
         'masterfulmachinery:machine_structure_stellar_neutron_activator',
         'occultism:miner'
-    ];
-
-    event.remove(categories);
-});
+    )
+})
