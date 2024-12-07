@@ -2,7 +2,7 @@
 'use strict';
 
 /**
- * @param {Internal.CustomMachineJSRecipeBuilder} builder
+ * @param {$CustomMachineJSRecipeBuilder_} builder
  * @param {CMRecipeHint} recipe
  */
 const addCMRecipe = (builder, recipe) => {

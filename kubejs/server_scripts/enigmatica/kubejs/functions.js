@@ -61,11 +61,12 @@ function randomOf(entries) {
 }
 
 /**
- * @param {Internal.ItemStackJS} item
+ * @param {$ItemStackJS_} item
  * @param {string?} color
  * @returns {string}
  */
 const rawItemStr = (item, color) => {
+    item = Item.of(item)
     const count = item.count > 1 ? `${item.count}*` : '';
     let itemName;
     try {
@@ -74,7 +75,7 @@ const rawItemStr = (item, color) => {
     } catch (e) {
         itemName = { translate: `${item.block ? 'block' : 'item'}.${item.id.replace(':', '.')}` };
     }
-    // not `%s[%s]` because JSON.stringify() seems unable to support multiple elements in an array
+    // not `%s[%s]` because JSON.stringify() is buggy in KubeJS 1.16
     const rawItem = {
         translate: count + '[%s]',
         with: [itemName],
@@ -96,7 +97,7 @@ const rawItemStr = (item, color) => {
 
 /**
  * run `tellraw` command on a player
- * @param {Internal.PlayerJS<any>} player The target of tellraw command
+ * @param {import("packages/dev/latvian/kubejs/player/$PlayerJS").$PlayerJS<any>} player The target of tellraw command
  * @param {string} str The content of tellraw command
  */
 const tellraw = (player, str) => {
@@ -120,8 +121,8 @@ const entryIsBlacklisted = (material, type) => {
 /**
  * get the most prefered item in a tag based on priorities from variable `modPriorities`
  * @see modPriorities
- * @param {Internal.IngredientJS} tag
- * @returns {Internal.ItemStackJS}
+ * @param {$IngredientJS_} tag
+ * @returns {$ItemStackJS_}
  */
 const getPreferredItemInTag = (tag) => {
     const items = getItemsInTag(tag);
@@ -162,18 +163,17 @@ function toPagedArray(arr, pageSize) {
 }
 
 /**
- *
- * @param {Internal.IngredientJS} tag
- * @return {Internal.ItemStackJS[]}
+ * @param {$IngredientJS_} tag
+ * @return {$ItemStackJS_[]}
  */
 const getItemsInTag = (tag) => {
-    return tag.getStacks().toArray();
+    return Ingredient.of(tag).getStacks().toArray();
 };
 
 /**
  * @param {string} a
  * @param {string} b
- * @param {null | string | Internal.IngredientJS} tag
+ * @param {$IngredientJS_?} tag
  */
 const compareIndices = (a, b, tag) => {
     if (a == b) return 0; // iff a == b, they'll be found at the same position in modPriorities
@@ -205,8 +205,8 @@ const getStrippedLogFrom = (logBlock) => {
 
 /**
  *
- * @param {Internal.IngredientJS_} item
- * @param {Internal.PlayerJS<any>} player
+ * @param {$IngredientJS_} item
+ * @param {import("packages/dev/latvian/kubejs/player/$PlayerJS").$PlayerJS<any>} player
  * @returns {boolean}
  */
 const playerHas = (item, player) => {
@@ -234,7 +234,7 @@ const getLowerTiers = (tiers, tier) => {
  * @param {string} tier
  */
 const getNextTier = (tiers, tier) => {
-    let i = tiers.indexOf(tier);
+    const i = tiers.indexOf(tier);
     if (i == tiers.length - 1) {
         return tier;
     }
@@ -243,7 +243,7 @@ const getNextTier = (tiers, tier) => {
 
 /**
  * transplant the md5 from `<type's mod>:kjs_<hash>` onto the supplied prefix
- * @param {Internal.RecipeJS} recipe
+ * @param {$RecipeJS_} recipe
  * @param {string} id_prefix
  */
 const fallback_id = (recipe, id_prefix) => {
