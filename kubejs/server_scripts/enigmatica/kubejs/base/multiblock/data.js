@@ -1,4 +1,4 @@
-'use strict';
+// priority: 1000
 
 const VisualizMultiblocks = {
     "atum:scarab": new PatchouliMultiblock(

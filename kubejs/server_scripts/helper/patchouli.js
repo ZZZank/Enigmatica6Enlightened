@@ -1,3 +1,4 @@
+// priority: 1005
 
 const $PatchouliAPI = java("packages/vazkii/patchouli/api/$PatchouliAPI");
 
