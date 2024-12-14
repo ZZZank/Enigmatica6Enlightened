@@ -10,6 +10,16 @@ onEvent('recipes', (event) => {
      */
     const recipes = [
         // {
+        //     mode: 'inscribe',
+        //     result: "appliedenergistics2:printed_silicon",
+        //     ingredients: {
+        //         top: "appliedenergistics2:silicon_press",
+        //         middle: "emendatusenigmatica:silicon_gem"
+        //     },
+        //     id: "appliedenergistics2:inscriber/silicon_print"
+        // }
+
+        // {
         //     mode: 'press',
         //     result: 'appliedenergistics2:logic_processor',
         //     ingredients: {
