@@ -1,9 +1,8 @@
 // priority: 10000
 
-
 {
-    const $IngredientJS = java("packages/dev/latvian/kubejs/item/ingredient/$IngredientJS")
-    const $ItemStackJS = java("packages/dev/latvian/kubejs/item/$ItemStackJS")
+    const $IngredientJS = java('packages/dev/latvian/kubejs/item/ingredient/$IngredientJS');
+    const $ItemStackJS = java('packages/dev/latvian/kubejs/item/$ItemStackJS');
 
     global['block_conversion'] = {
         /**
@@ -92,7 +91,7 @@
         ],
         /** @type {{[x: Special.Block]: {holding:InstanceType<$ItemStackJS>, output: InstanceType<$ItemStackJS>, additional?:(e:$BlockRightClickEventJS_)=>void}[]}} */
         compiled: {}
-    }
+    };
 
     /**
      * @type {{
@@ -102,18 +101,18 @@
      *  additional?:(e:$BlockRightClickEventJS_)=>void
      * }[]}}
      */
-    const compiled = {}
-    global['block_conversion']['raw_recipes'].forEach(recipe => {
-        const {target, holding, output, additional} = recipe
+    const compiled = {};
+    global['block_conversion']['raw_recipes'].forEach((recipe) => {
+        const { target, holding, output, additional } = recipe;
         if (!compiled[target]) {
-            compiled[target] = []
+            compiled[target] = [];
         }
-        const targeted = compiled[target]
+        const targeted = compiled[target];
         targeted.push({
             holding: Ingredient.of(holding),
             output: Item.of(output),
             additional: additional
-        })
-    })
-    global['block_conversion']['compiled'] = compiled
+        });
+    });
+    global['block_conversion']['compiled'] = compiled;
 }

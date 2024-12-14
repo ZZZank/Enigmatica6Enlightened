@@ -66,7 +66,7 @@ function randomOf(entries) {
  * @returns {string}
  */
 const rawItemStr = (item, color) => {
-    item = Item.of(item)
+    item = Item.of(item);
     const count = item.count > 1 ? `${item.count}*` : '';
     let itemName;
     try {

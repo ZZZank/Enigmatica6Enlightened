@@ -1,6 +1,6 @@
 'use strict';
 
-onEvent('kube_jei.deny.categories', event => {
+onEvent('kube_jei.deny.categories', (event) => {
     event.deny(
         'pneumaticcraft:compressed_iron_explosion',
         'portable_stonecutter:jei_anvil_flattening',
@@ -12,5 +12,5 @@ onEvent('kube_jei.deny.categories', event => {
         'masterfulmachinery:machine_structure_gaia_reactor',
         'masterfulmachinery:machine_structure_stellar_neutron_activator',
         'occultism:miner'
-    )
-})
+    );
+});
