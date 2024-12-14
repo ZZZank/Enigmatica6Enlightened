@@ -3,7 +3,7 @@
 const $GasDeferredRegister = java('mekanism.common.registration.impl.GasDeferredRegister');
 const $SlurryDeferredRegister = java('mekanism.common.registration.impl.SlurryDeferredRegister');
 const $InfuseTypeDeferredRegister = java('mekanism.common.registration.impl.InfuseTypeDeferredRegister');
-const $MinecraftForge = java("net.minecraftforge.common.MinecraftForge")
+const $MinecraftForge = java('net.minecraftforge.common.MinecraftForge');
 
 const GASES = new $GasDeferredRegister('kubejs');
 const SLURRY = new $SlurryDeferredRegister('kubejs');
